@@ -1,0 +1,99 @@
+So far, the run_all.sh script is all you need
+Take a look inside for what is what and which interface to call on which port.
+
+
+OTHERWISE;
+
+
+sbt -Dworkspace.repository.plugin=projectFile -Dworkspace.repository.projectFile.dir=C:\DIC\WorkspaceLiDaKrA\data-integration-workspace\Workspace -Dworkspace.provider.file.dir=C:\DIC\WorkspaceLiDaKrA\data-integration-workspace\Workspace  -Dhttp.port=9005 -Dapplication.context=/silk/ -Dparsers.text.maxLength=1024K "project workbench" run
+
+
+sbt -Dworkspace.repository.plugin=projectFile -Dworkspace.repository.projectFile.dir=/home/mulang/Desktop/Learning/FhG/edsa/silk-workspace/workspace -Dworkspace.provider.file.dir=/home/mulang/Desktop/Learning/FhG/edsa/silk-workspace/workspace  -Dhttp.port=9005 -Dapplication.context=/silk/ -Dparsers.text.maxLength=1024K "project workbench" run
+
+-- REDUCED RUN VERSION ---
+export TERM=xterm-color
+sbt -Dhttp.port=9005 "project workbench" [-Dapplication.context=/silk/] run 
+
+Run steps:
+1. Place the Workspace in the default silk home directory ($home/.silk/workspace/) -- place the folder "edsa" in this directory so that silk can pick the workspace configs
+2. Run the sbt command. If you did 1 above, the you don't need to set the options [-Dworkspace.repository.projectFile.dir | -Dworkspace.provider.file.dir]
+3. Run the Skill Annotations
+4. Run the Data Acquisition as shown below in section 4
+
+
+Browser Link
+------------------------------------
+
+http://localhost:9005/workspace
+
+
+
+
+Possible Error
+---------------------------------
+
+STEP 2: I raised some Issue at Silk Issues but resolved it as indicated below
+
+Silk compiles and runs without errors but when I go to --> localhost:9005
+I get the error:
+
+RuntimeException: No application loader is configured. Please configure an application loader either using the play.application.loader configuration property, or by depending on a module that configures one. You can add the Guice support module by adding "libraryDependencies += guice" to your build.sbt.
+
+Can someone help me here. Urgently needed for some project.
+
+Thanks
+
+
+Solution:
+-----------------------------------
+Another stupid question really as The error message already provides a solution. Should you face the error message, just do what it tells you.
+
+
+
+
+
+
+STEP 3: Skill Annotation
+----------------------------------
+sbt -Dhttp.port=9006 run
+
+Met this error : Failed to construct terminal; falling back to unsupported ---- `sbt console` makes `java.lang.NumberFormatException: For input string: "0x100"`
+
+Try :  << export TERM=xterm-color >>, More info : https://github.com/sanori/spark-sbt/issues/4
+
+WHEN IT RUNS
+
+You need the GATE embedded installed
+And configure the path in application.config
+
+
+
+
+
+
+
+STEP 4: Data Acquisitions
+-----------------------------------------------
+Depends on the other || runs on port 9000 by default 
+
+
+
+API Keys -- Needed by the Data Acquisition module
+----------------------------------------------
+https://us.jooble.org/api/about
+https://www.indeed.com/publisher
+
+
+
+
+
+
+NEXT STEPS :
+
+Separation of the modules
+Hosting the Systems?
+GET Sample output --> Sooner and send to Simon
+Cross check with the diagram --> and tell which sections are OK or not.....
+1. Create docker versions and deploy that.
+2. Digital Ocean
+

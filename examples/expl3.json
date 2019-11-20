@@ -1,0 +1,18 @@
+{
+  "named-Entities": [
+    {
+      "PER": ["Jesper Noehr","martin","Martin Kassing","OOP Writing","C OpenAPI","C TypeScript","FAQ Your","Florian Feichtinger"],
+      "LOC": [
+        "Europe","Berlin","Germany"
+      ],
+      "ORG": [
+        "Company","VISA", "Google"
+      ],
+      "MISC": ["Bitcoin", "Ethereum","HTTP API","SDKs","Bitbucket","Atlassian","VCs","Holtzbrinck Ventures","VP Engineering","CTO",
+      "Upvest","Python Django" , "Django REST","CircleCI","OOP","TICK", "Telegraf", "InfluxDB", "Chronograph", "Kapacitor", 
+      "Google Cloud", "Docker", "Kubernetes", "Terraform","API-based","Technologies","TypeScript","Istio","Tech-FAQ","Agility",
+      "Autonomy","English-speaking","VP","Engineering","Blockchain-tech","Education","Hackescher Markt","Developer Evangelist"]
+      
+    }
+  ]
+}

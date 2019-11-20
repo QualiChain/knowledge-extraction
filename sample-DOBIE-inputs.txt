@@ -1,0 +1,326 @@
+
+
+Adzuna API Key
+curl -X GET 'https://api.adzuna.com/v1/api/jobs/gb/search/1?app_id=d259fd56&app_key=ce757054399cfabd932b10f768dab293&results_per_page=5' -H 'Postman-Token: a79b92d8-f9d5-4d96-b739-d15d245cd649' -H 'cache-control: no-cache'
+ 
+
+Jooble API
+
+curl -X POST https://de.jooble.org/api/023840c6-11cb-47ce-8c93-be016475a3fe -H 'Accept: application/json' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Postman-Token: a980fd3f-e658-4d0d-9631-01217e4d0027' -H 'cache-control: no-cache'
+
+ 
+
+Indeed API
+
+curl -X GET 'https://api.indeed.com/ads/apisearch?q=RDF&st=&jt=&userip=1.2.3.4&latlong=&radius=&filter=&v=2&l=&publisher=126997023285851&sort=&limit=25&chnl=&fromage=&start=0&co=ru' -H 'Postman-Token: e92139bc-999b-4b00-96d1-6db579538768' -H 'cache-control: no-cache'
+
+curl -X GET 'https://api.indeed.com/ads/apisearch?q=tensorflow&st=&jt=&userip=1.2.3.4&latlong=&radius=&filter=&v=2&l=&publisher=126997023285851&sort=&limit=25&chnl=&fromage=&start=0&co=de' -H 'Postman-Token: e92139bc-999b-4b00-96d1-6db579538768' -H 'cache-control: no-cache'
+ 
+
+Annotation Skill Service API   [WORKS BUT NEEDS A BIT OF PRE-PROCESSING OF THE TEXT - E.G Removal of appostrophee etc]
+__________________________________________  
+
+curl -X POST http://localhost:9006/annotate -H 'Content-Type: application/json' -H 'Postman-Token: e779ceb0-8ce9-44bd-ad45-279c05ff8b63' -H 'cache-control: no-cache' -d '{"tasks" : [ {"label" : "eyJhbGciOiJIUzI1NiJ9", "jobDescription" : "Senior Insight Analyst CLIENT I am seeking an experienced Senior Customer Insight Analyst, to join this large creative communications agency situated in the heart of trendy North London. It is an integral position, working with one large global retail client delivering in depth analytics and actionable insightful reports. *Stable, large scale business with stable clients *Urgent vacancy, within interview slots available before Christmas - secure a new job now to start next year! *Excellent opportunity for an experienced analyst looking to gain integrated data and analytics exposure - large scale projects and well known agency name This working environment will suit an ambitious, forward thinking, confident individual, not afraid to ask questions or make creative suggestions. You will be working amongst some of the agency industry lead minds on technology driven marketing, analytics and loyalty marketing. EXPERIENCE REQUIRED/RESPONSIBILITES *Educated to degree level in a numerate subject *Strong experience in marketing or business analytics environment *Proven, commercial experience in statistical analysis, predictive modelling and segmentation *Must be a strong user of SAS Base and SQL for data manipulation and statistical modelling development, plus significant experience with Excel including programming elements *Competent present of actionable insights, and experience of working with large customer data sets (into the millions) POSITION - Senior Insight Analyst LOCATION - North London SALARY - ?50k - ?55k plus excellent benefits TO APPLY For further information or to apply please contact: Kate McDermott Managing Consultant - Blue Pelican Marketing For more vacancies which may suit your needs, please visit us at"} , { "label" : "eyJhbGciOiJIUzI1NiJ8", "jobDescription" : "Senior Insight Analyst CLIENT I am seeking an experienced Senior Customer Insight Analyst, to join this large creative communications agency situated in the heart of trendy North London. It is an integral position, working with one large global retail client delivering in depth analytics and actionable insightful reports."}]}'
+
+ 
+curl -X POST http://localhost:9006/annotate -H 'Content-Type: application/json' -H 'Postman-Token: e779ceb0-8ce9-44bd-ad45-279c05ff8b63' -H 'cache-control: no-cache' -d '{"tasks" : [ {"label" :"95671c903a5b97a9", "jobDescription" : "Moving Mobility Forward Aptiv is making mobility real. We are at the forefront of solving mobility toughest challenges. We have the people, experience, know-how and confidence to turn ideas into solutions. Solutions that move our world from what now to what next, while connecting us like never before. To us, nothing is impossible when you have the people with the passion to make anything possible. Mobility has the power to change the world, and we have the power to change mobility. Join our Innovative Team. Want to do more than just imagine the ways our world will move tomorrow? Here your opportunity. Join the technology company that is transforming the future of mobility today. About Aptiv : Aptiv is a global technology company that develops safer, greener and more connected solutions, which enable the future of mobility. Headquartered in Dublin, Aptiv has 160,000 employees and operates 14 technical centers, as well as manufacturing sites and customer support centers in 45 countries. Visit aptiv.com. About Advanced Safety and User Experience : Advanced Safety and User Experience encompasses our deep expertise in software, centralized computing platforms, advanced safety systems and automated driving focusing on five areas that are transforming mobility: Safety Electronics, Infotainment, User Experience, Autonomous Driving and Connectivity & Security. Responsibilities and duties Development and validation of Autonomous Driving SW Algorithms for Perception. Work with raw sensor data, low-level signal processing and analyze large datasets. Working in an agile environment such as Scrum. Interaction with customers and internal advanced engineering departments. Customer requirements analysis. Implementation of feature functions for embedded hardware. Testing inside SIL environments and vehicle. Issue Analysis, tracking and issue solving with JIRA. Development according to ASPICE & ISO26262. Generation and tracking of key performance indicators. Ability to travel to support customer meetings and occasional test drives. Qualifications: You are a graduate of computer science, mathematics, physics, control engineering or electrical engineering (University FH: degree with very good or good) - comparable qualification possible: You have at least 3 years of relevant working experience in Academia or Industry. Profound knowledge of Matlab/Simulink, C++ is required Experience with ADAS or Autonomous Driving is required. Experience with Linux is required Experience with Radar, LiDAR, GPU/IMUs is beneficial. Experience in Computer vision, pattern recognition, sensor data processing and data fusion, probabilistic perception, point cloud processing, 3D-reconstruction, object tracking, data association, optimization, and/or machine learning/deep learning is a plus. Experience working with one of the following libraries: Tensorflow, Pytorch is a plus. Experience with the following frameworks is appreciated: ROS, ADTF Optional experience with Adaptive AUTOSAR is appreciated Ability to create and support software architecture is an added advantage. PhD beneficial but not required. You have very good English language skills and preferably proficient German language skills Linking own Github projects in the application is welcome. We offer Freedom and interesting tasks in an environment where work is fun and where you can independently analyze problems and develop solutions We value our employees as the most important value of our company We offer flexible and family-friendly working hours We offer challenging projects with innovative technologies. We compensate according to your degree and experience We enable a variety of training opportunities. Your start at Aptiv: Anyone interested in software in the car and autonomous driving, will feel at home with us. Anyone who has mental agility and is prepared to face up to new challenges and become familiar with them is the right candidate for us. What we are looking for are employees who can be briefly described as: Smart and get things done. Moving Mobility Forward: Aptiv is making mobility real. We are at the forefront of solving mobility toughest challenges. We have the people, experience, know-how and confidence to turn ideas into solutions. Solutions that move our world from what now to what next, while connecting us like never before. To us, nothing is impossible when you have the people with the passion to make anything possible. Mobility has the power to change the world, and we have the power to change mobility."}]}'
+
+
+curl -X POST 'http://localhost:9006/annotate' -H 'Content-Type: application/json' -H 'Postman-Token: e779ceb0-8ce9-44bd-ad45-279c05ff8b63' -H 'cache-control: no-cache' -d '{"tasks" : [{"label":"95671c903a5b97a7","title":"Python API Backend Engineer m/f/d Berlin","jobDescription" : "Want to be part of our mission to create the best developer tools for building blockchain applications? Upvest mission is to provide developers with the best tools to build on top of Bitcoin, Ethereum and other major blockchain protocols. We enable developers to focus on their application, not the infrastructure. Taking care of the security, blockchain communication, and legal compliance, providing developers with a simple HTTP API and convenient SDKs to build applications underpinned by the latest blockchain technologies. Founded by serial entrepreneurs Jesper Noehr, founder of Bitbucket, exit to Atlassian and Martin Kassing https://www.linkedin.com/in/martin-kassing/, COO of ShopCo, exit to Klarna, Upvest has generated substantial early stage revenues and is backed by Europe largest VCs e.g. Holtzbrinck Ventures as well as international investors to be announced. We are a hungry bunch of +22 people. Around 75% of our company is composed of engineers and we are proud to single out our strong Engineering culture. With entering Series A, we have enough fuel to create the best developer experience to build blockchain applications. Your Mission: Be part of creating the best developer experience to build blockchain applications Develop and design of API´s to enable companies to integrate blockchain key management and services to their end-users Develop API for live blockchain data, delivered via webhooks, enabling companies and individual developers to build applications that rely on blockchain events and data Build microservice architecture Develop data processing and storing mechanisms Do 75% development and approx. 25% maintenance. As we test everything during development, the need for maintenance is smaller than usual. Reporting directly with our VP Engineering and CTO. Your Profile Your are pro-active in learning and have a high sense of taking ownership You contribute creative problem solving, improve code & process, and generally leave things better than you found them You care about good quality code, reliability, really caring about the product You like to go to meetups and conferences, serving as an evangelist for our mission, having a personal interest in the blockchain space. You are willing to share knowledge and best practices with others, both inside and outside Upvest Proven experience in: API development for end users and 3rd party integrations Python Django and the Django REST framework PostgreSQL NoSQL databases Github CircleCI At least one programming paradigm next to OOP Writing documentation Experience in these fields as a big plus: Strong knowledge in one of these languages: Scala, Go, JS/Node.js, C OpenAPI/Swagger Prometheus or TICK stack Telegraf, InfluxDB, Chronograph, Kapacitor Google Cloud, Docker, Kubernetes, Terraform Prior experience in working with API-based products A practical understanding of cryptography Personal contributions to any kind of open source projects we deeply believe in the power of open-source Technologies we use Python/Scala legacy/Go exploring/C TypeScript/JavaScript ES6/React Google Cloud Platform/Kubernetes/Istio/Docker/CircleCI For more insights, check our Tech-FAQ Your team: Around 75% of our company is composed of engineers and we are proud to single out our strong Engineering culture. We believe in a rewarding collaboration ahead of egos Agility ahead of the process Autonomy ahead of micro-management And customer requirements ahead of presumptions We’re an English-speaking tech team. Most people suit the role of multi-disciplinary. We either work individually or in small groups, taking features from start to finish. With flat hierarchies, everyone responds to the VP of Engineering. Our structure is fairly loose and delivery-oriented. Our core values Never give up Go the extra mile, grow yourself and others to create value Be honest With others, and with yourself. Cut the bullshit, know where you have room for improvement, and be kind Be a community player Do things that help others without a direct benefit Leave it better than you found it Always strive to improve things, do not accept mediocrity Our Offer Work in a key role at one of Europe fastest growing Blockchain-tech companies Be part of a cutting-edge blockchain engineering culture Well-funded venture with top international investors Competitive salary and employee equity Highly dynamic, friendly environment that allows for independent work Open and transparent company culture Education budget for conferences, training and certifications Numerous perks and team events like hackathons and team off-sites nice office in the center of Berlin next to Hackescher Markt Attractive relocation package Full VISA sponsorship for you and your loved ones Paid international arrivals Help with apartment search And anything else we can do to guarantee your smooth arrival to awesome Berlin Interested? We are looking forward to hearing from you! The position is available immediately and offers an undated contract. Company offices are located in in the heart of Berlin Mitte, Germany. Upvest is an equal opportunity employer and encourages applicants from any national origin, sex, sexual orientation, religious background, gender identity and those individuals with disabilities to apply. Who checks all the boxes?! We believe in people with a great attitude and the desire to evolve constantly to make things happen nobody has done before. If you are excited to get in touch, we are happy to get to know you and tell you more about us and our mission! Or feel free to contact us directly - at Upvest our tech recruitment is done by tech people Florian Feichtinger, Developer Evangelist"}]}'
+
+
+
+
+SILK Transfomation Task
+
+curl -X POST http://localhost:9005/transform/tasks/edsa/IndeedTransformationTask/transformInput -H 'Accept: application/ld+json' -H 'Content-Type: application/xml' -H 'Postman-Token: da982d05-32b1-4085-87fb-c564ebb73a57' -H 'cache-control: no-cache' -d '<Transform> <DataSources> <Dataset id="IndeedResultsTransformation"> <DatasetPlugin type="xml"> <Param name="file" value="results"/> <Param name="basePath" value="/response/results/result"/> <Param name="uriPattern" value=""/> </DatasetPlugin> </Dataset> </DataSources> <resource name="results"> <![CDATA[{"count":975508,"results":[{"longitude":-0.744399,"__CLASS__":"Adzuna::API::Response::Job","id":1198625031,"location":{"area":["UK","South East England","Surrey","Camberley"],"display_name":"Camberley, Surrey","__CLASS__":"Adzuna::API::Response::Location"},"description":" Delivery Driver / Food Courier Get a taste of freedom on the road with the UK largest food delivery network. Become a self-employed Delivery Driver and discover a feast of flexible opportunities at Just Eat. Whether you are looking to make some extra cash, or have a car or scooter and are looking to get on the road, this is a great opportunity for you to boost your income. You can work weekdays or weekends, daytime or evenings, a full schedule or bits here and there - this role is flexible an\u2026","latitude":51.340199,"contract_time":"part_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Other/General Jobs","tag":"other-general-jobs"},"title":"Delivery Driver","salary_max":18353.48,"redirect_url":"https://www.adzuna.co.uk/jobs/land/ad/1198625031?se=IERWuuXBS-OFszKY8nmn4g&utm_medium=api&utm_source=d259fd56&v=0DAC709BE71AB04D15CB1C92ABF0D61A083F8E71","salary_is_predicted":"1","created":"2019-07-03T23:55:40Z","salary_min":18353.48,"company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Just Eat"},"contract_type":"contract","adref":"eyJhbGciOiJIUzI1NiJ9.eyJzIjoiSUVSV3V1WEJTLU9Gc3pLWThubW40ZyIsImkiOjExOTg2MjUwMzF9.4IJyiy_sEfIHx8rpSHh-nF8zUdIKyJYhEdI6ceiTUdk"},{"contract_type":"contract","adref":"eyJhbGciOiJIUzI1NiJ9.eyJpIjoxMTk4NTg0NDA5LCJzIjoiSUVSV3V1WEJTLU9Gc3pLWThubW40ZyJ9.XMlko9-CIt-djbFQYXcFP78QCAwueUfZXJ1ps3HAwvU","company":{"display_name":"Just Eat","__CLASS__":"Adzuna::API::Response::Company"},"created":"2019-07-03T23:04:12Z","salary_min":19565.78,"redirect_url":"https://www.adzuna.co.uk/jobs/land/ad/1198584409?se=IERWuuXBS-OFszKY8nmn4g&utm_medium=api&utm_source=d259fd56&v=F26E225269E418D618810BD2C82ED2049737F9D3","title":"Delivery Rider","category":{"tag":"other-general-jobs","__CLASS__":"Adzuna::API::Response::Category","label":"Other/General Jobs"},"salary_max":19565.78,"salary_is_predicted":"1","description":" Delivery Driver / Food Courier Get a taste of freedom on the road with the UK largest food delivery network. Become a self-employed Delivery Driver and discover a feast of flexible opportunities at Just Eat. Whether you  are looking to make some extra cash, or have a car or scooter and are looking to get on the road, this is a great opportunity for you to boost your income. You can work weekdays or weekends, daytime or evenings, a full schedule or bits here and there - this role is flexible an\u2026","latitude":51.078701,"__CLASS__":"Adzuna::API::Response::Job","longitude":1.17409,"location":{"area":["UK","South East England","Kent","Folkestone"],"__CLASS__":"Adzuna::API::Response::Location","display_name":"Folkestone, Kent"},"id":1198584409,"contract_time":"part_time"},{"company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Bobtrade"},"adref":"eyJhbGciOiJIUzI1NiJ9.eyJzIjoiSUVSV3V1WEJTLU9Gc3pLWThubW40ZyIsImkiOjEyNTIyNzE1NjZ9.qwhoYi7kMfYQJfanC0aBcodxWTLxgkVgOsj_vPmpDxs","salary_min":25000,"created":"2019-09-03T17:59:12Z","salary_max":30000,"category":{"tag":"it-jobs","__CLASS__":"Adzuna::API::Response::Category","label":"IT Jobs"},"title":"E-Commerce Listings Manager at Bobtrade.com","redirect_url":"https://www.adzuna.co.uk/jobs/land/ad/1252271566?se=IERWuuXBS-OFszKY8nmn4g&utm_medium=api&utm_source=d259fd56&v=94105AF70CE79F2559A2839EAA2B152AE2A8D22F","salary_is_predicted":"0","location":{"display_name":"London, UK","__CLASS__":"Adzuna::API::Response::Location","area":["UK","London"]},"id":1252271566,"__CLASS__":"Adzuna::API::Response::Job","longitude":-0.139134,"description":"E-Commerce Listings Manager at Bobtrade.com Bobtrade is an exciting technology start-up transforming the construction industry. We are solving the biggest challenges in the market head-on with our groundbreaking supply chain technology solutions.&nbsp; We have recently taken on significant investment and have been joined by some leading players in the market and are now on a mission to scale our team with exceptional individuals.&nbsp; About you We are seeking individuals who are searching for \u2026","latitude":51.503378,"contract_time":"full_time"},{"description":"About the role: A post for a Principal Computational Biologist is currently available within the Manchester Centre for Cancer Biomarker Sciences \(MCCBS\) led by Prof Caroline Dive CBE at the CRUK Manchester Institute \(CRUK MI\) linking with colleagues at the University Single Cell Centre. The MCCBS has an international reputation for liquid biopsies and the post holder will focus on the analysis of genomics data derived from individual cancer cells, including Circulating Tumour Cells \(CTCs, see\u2026","latitude":53.480701,"id":1247988826,"salary_min":31334,"location":{"area":["UK","North West England","Greater Manchester","Manchester"],"display_name":"Manchester, Greater Manchester","__CLASS__":"Adzuna::API::Response::Location"},"__CLASS__":"Adzuna::API::Response::Job","longitude":-2.23438,"created":"2019-08-30T06:31:59Z","adref":"eyJhbGciOiJIUzI1NiJ9.eyJpIjoxMjQ3OTg4ODI2LCJzIjoiSUVSV3V1WEJTLU9Gc3pLWThubW40ZyJ9.4jEjpQZrV9OIL3l3TNlwpX0_nJE3LCBOyU782FKM4us","salary_is_predicted":"0","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"The University of Manchester"},"redirect_url":"https://www.adzuna.co.uk/jobs/land/ad/1247988826?se=IERWuuXBS-OFszKY8nmn4g&utm_medium=api&utm_source=d259fd56&v=5B1B1E1C3B6E68FD792705DC9C132475E49F5C03","salary_max":43000,"category":{"tag":"unknown","__CLASS__":"Adzuna::API::Response::Category","label":"Unknown"},"title":"Principal Computational Biologist"},{"contract_time":"full_time","latitude":51.49345,"description":"Summary &nbsp; We are looking for a motivated and high-achieving Data Scientist based in London to join a team commercialising the next-generation machine learning technology. This is a full-time placement with significant opportunities for personal development. &nbsp; We offer an intellectually stimulating environment, work within an interdisciplinary team and an inclusive culture. We are a high-calibre, mission-driven team building a technology that improves our World. &nbsp; The Company &nbs\u2026","__CLASS__":"Adzuna::API::Response::Job","longitude":-0.218317,"location":{"__CLASS__":"Adzuna::API::Response::Location","display_name":"West London, London","area":["UK","London","West London"]},"id":1253573633,"salary_is_predicted":"0","redirect_url":"https://www.adzuna.co.uk/jobs/land/ad/1253573633?se=IERWuuXBS-OFszKY8nmn4g&utm_medium=api&utm_source=d259fd56&v=A54749C74F8768BDC612C1AA5A61A5E12217C090","title":"Data Scientist - Commercial Team","category":{"tag":"unknown","label":"Unknown","__CLASS__":"Adzuna::API::Response::Category"},"salary_max":90000,"created":"2019-09-05T02:06:55Z","salary_min":35000,"adref":"eyJhbGciOiJIUzI1NiJ9.eyJpIjoxMjUzNTczNjMzLCJzIjoiSUVSV3V1WEJTLU9Gc3pLWThubW40ZyJ9.dUYUBW6HGHka-w2PFsOg-Dvzc8VVnzvbrg3LBADX6OM","company":{"display_name":"causaLens","__CLASS__":"Adzuna::API::Response::Company"}}],"mean":34359.46,"__CLASS__":"Adzuna::API::Response::JobSearchResults"}]]> </resource> </Transform>'
+
+ 
+
+Data Acquisition Service
+
+1. Adzuna Germany
+
+curl -X GET 'http://localhost:9000/fuhsen/edsa/adzuna/job_search?country=de' -H 'Postman-Token: c868fe03-3607-4a52-bdc7-6462be1d1f3f' -H 'cache-control: no-cache'
+ 
+
+2. Indeed France
+
+curl -X GET 'http://localhost:9000/fuhsen/edsa/indeed/job_search?country=fr' -H 'Postman-Token: 2849dd0d-07fb-4d9f-95e4-4ad73e0ba008' -H 'cache-control: no-cache'
+
+
+Adzuna API Key 
+
+curl -X GET 'http://api.adzuna.com/v1/api/jobs/gb/search/1?app_id=3faab787&app_key=736f4a7f3bd58884f48c6f692fa971f8&results_per_page=15' -H 'Postman-Token: a79b92d8-f9d5-4d96-b739-d15d245cd649' -H 'cache-control: no-cache'
+ 
+
+Jooble API
+
+curl -X POST https://de.jooble.org/api/023840c6-11cb-47ce-8c93-be016475a3fe -H 'Accept: application/json' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Postman-Token: a980fd3f-e658-4d0d-9631-01217e4d0027' -H 'cache-control: no-cache'
+
+ 
+
+Indeed API
+
+curl -X GET 'http://api.indeed.com/ads/apisearch}q=RDF&st=&jt=&userip=1.2.3.4&latlong=&radius=&filter=&v=2&l=&publisher=126997023285851&sort=&limit=25&chnl=&fromage=&start=0&co=ru' -H 'Postman-Token: e92139bc-999b-4b00-96d1-6db579538768' -H 'cache-control: no-cache'
+
+ 
+
+Annotation Skill Service API
+
+curl -X GET http://localhost:9006/annotate -H 'Content-Type: application/json' -H 'Postman-Token: e779ceb0-8ce9-44bd-ad45-279c05ff8b63' -H 'cache-control: no-cache' -d '{"tasks" : [ {"label" : "eyJhbGciOiJIUzI1NiJ9","jobDescription" : "Senior Insight Analyst CLIENT I'\''m seeking an experienced Senior Customer Insight Analyst, to join this large creative communications agency situated in the heart of trendy North London. It'\''s an integral position, working with one large global retail client delivering in depth analytics and actionable insightful reports. *Stable, large scale business with stable clients *Urgent vacancy, within interview slots available before Christmas - secure a new job now to start next year! *Excellent opportunity for an experienced analyst looking to gain integrated data and analytics exposure - large scale projects and well known agency name This working environment will suit an ambitious, forward thinking, confident individual, not afraid to ask questions or make creative suggestions. You will be working amongst some of the agency industry'\''s lead minds on technology driven marketing, analytics and loyalty marketing. EXPERIENCE REQUIRED/RESPONSIBILITES *Educated to degree level in a numerate subject *Strong experience in marketing or business analytics environment *Proven, commercial experience in statistical analysis, predictive modelling and segmentation *Must be a strong user of SAS Base and SQL for data manipulation and statistical modelling development, plus significant experience with Excel including programming elements *Competent present of actionable insights, and experience of working with large customer data sets (into the millions) POSITION - Senior Insight Analyst LOCATION - North London SALARY - ?50k - ?55k plus excellent benefits TO APPLY For further information or to apply please contact: Kate McDermott Managing Consultant - Blue Pelican Marketing For more vacancies which may suit your needs, please visit us at"} , {"label" :"eyJhbGciOiJIUzI1NiJ8","jobDescription" : "Senior Insight Analyst CLIENT I'\''m seeking an experienced Senior Customer Insight Analyst, to join this large creative communications agency situated in the heart of trendy North London. It'\''s an integral position, working with one large global retail client delivering in depth analytics and actionable insightful reports."}]}'
+
+ 
+
+SILK Transfomation Task
+
+curl -X POST \
+  http://localhost:9005/transform/tasks/edsa/IndeedTransformationTask/transformInput\
+  -H 'Accept: application/ld+json'\
+  -H 'Content-Type: application/xml'\
+  -H 'Postman-Token: da982d05-32b1-4085-87fb-c564ebb73a57'\
+  -H 'cache-control: no-cache'\
+  -d '<Transform>
+    <DataSources>
+        <Dataset id="IndeedResultsTransformation">
+            <DatasetPlugin type="xml">
+                <Param name="file" value="results"/>
+                <Param name="basePath" value="/response/results/result"/>
+                <Param name="uriPattern" value=""/>
+            </DatasetPlugin>
+        </Dataset>
+    </DataSources>
+    <resource name="results">
+         <![CDATA[
+           <response version="2">
+   <query>java</query>
+   <location>austin</location>
+   <clickedCategories />
+   <paginationPayload />
+   <radius>25</radius>
+   <dupefilter>true</dupefilter>
+   <highlight>false</highlight>
+   <start>1</start>
+   <end>10</end>
+   <pageNumber>0</pageNumber>
+   <totalresults>1054</totalresults>
+   <results>
+      <result>
+         <jobtitle>Software Engineer - Full Stack</jobtitle>
+         <company>CAKE</company>
+         <city>Austin</city>
+        <state>TX</state>
+         <country>US</country>
+         <formattedLocation>Austin, TX</formattedLocation>
+         <source>Cake</source>
+         <date>Sun, 20 Nov 2016 20:37:25 GMT</date>
+         <snippet>Excellent understanding of Java Enterprise patterns, integration patterns, and enterprise engineering best practices....</snippet>
+         <url>http://www.indeed.com/viewjob?jk=b118b129878d368b&amp;qd=Tc6jDt4rh0PweGpMuxZ98IcknrmMbTJo31YTxjp3rfqROdmsHnRECd7QSA2uXN9dQyrg21N6nZp-QdDyfCrb46QRAyX59thpWbfSJ2W_rRo&amp;indpubnum=126997023285851&amp;atk=1b2bb579q53opafr</url>
+         <onmousedown>indeed_clk(this,'\''7880'\'');</onmousedown>
+         <jobkey>b118b129878d368b</jobkey>
+         <sponsored>false</sponsored>
+         <expired>false</expired>
+         <indeedApply>false</indeedApply>
+         <formattedLocationFull>Austin, TX</formattedLocationFull>
+         <formattedRelativeTime>3 days ago</formattedRelativeTime>
+         <stations />
+      </result>
+      <result>
+         <jobtitle>Software Engineer (University Grad)</jobtitle>
+         <company>Electronic Arts</company>
+         <city>Austin</city>
+         <state>TX</state>
+         <country>US</country>
+         <formattedLocation>Austin, TX</formattedLocation>
+         <source>Electronic Arts</source>
+         <date>Mon, 31 Oct 2016 22:26:29 GMT</date>
+         <snippet>Knowledge of Object Oriented Programming Languages, such as Java and C++, in the development of systems, applications and web services, demonstrated by advanced...</snippet>
+         <url>http://www.indeed.com/viewjob?jk=00da668e877a41fd&amp;qd=Tc6jDt4rh0PweGpMuxZ98IcknrmMbTJo31YTxjp3rfqROdmsHnRECd7QSA2uXN9dQyrg21N6nZp-QdDyfCrb46QRAyX59thpWbfSJ2W_rRo&amp;indpubnum=126997023285851&amp;atk=1b2bb579q53opafr</url>
+         <onmousedown>indeed_clk(this,'\''7880'\'');</onmousedown>
+         <jobkey>00da668e877a41fd</jobkey>
+         <sponsored>false</sponsored>
+         <expired>false</expired>
+         <indeedApply>false</indeedApply>
+         <formattedLocationFull>Austin, TX</formattedLocationFull>
+         <formattedRelativeTime>23 days ago</formattedRelativeTime>
+         <stations />
+      </result>
+      <result>
+         <jobtitle>Software Developer I (Contract)</jobtitle>
+         <company>Everi</company>
+         <city>Austin</city>
+         <state>TX</state>
+         <country>US</country>
+         <formattedLocation>Austin, TX</formattedLocation>
+         <source>Everi</source>
+         <date>Mon, 31 Oct 2016 22:25:18 GMT</date>
+         <snippet>JavaScript and C++ or JAVA. Everi was born when two companies that have served the casino industry for decades — Global Cash Access and Multimedia Games —...</snippet>
+         <url>http://www.indeed.com/viewjob?jk=24d5b899667ac8fb&amp;qd=Tc6jDt4rh0PweGpMuxZ98IcknrmMbTJo31YTxjp3rfqROdmsHnRECd7QSA2uXN9dQyrg21N6nZp-QdDyfCrb46QRAyX59thpWbfSJ2W_rRo&amp;indpubnum=126997023285851&amp;atk=1b2bb579q53opafr</url>
+         <onmousedown>indeed_clk(this,'\''7880'\'');</onmousedown>
+         <jobkey>24d5b899667ac8fb</jobkey>
+         <sponsored>false</sponsored>
+         <expired>false</expired>
+         <indeedApply>false</indeedApply>
+         <formattedLocationFull>Austin, TX</formattedLocationFull>
+         <formattedRelativeTime>23 days ago</formattedRelativeTime>
+         <stations />
+      </result>
+      <result>
+         <jobtitle>Entry-Level Software Developer (Java) - Austin, TX</jobtitle>
+         <company>Accenture</company>
+         <city>Austin</city>
+         <state>TX</state>
+         <country>US</country>
+         <formattedLocation>Austin, TX</formattedLocation>
+         <source>Accenture</source>
+         <date>Thu, 13 Oct 2016 04:03:44 GMT</date>
+         <snippet>Entry-Level Java Developer - Austin, TX. From application development and architecture to software maintenance and systems administration, we help turn...</snippet>
+         <url>http://www.indeed.com/viewjob?jk=680b1731ea86499f&amp;qd=Tc6jDt4rh0PweGpMuxZ98IcknrmMbTJo31YTxjp3rfqROdmsHnRECd7QSA2uXN9dQyrg21N6nZp-QdDyfCrb46QRAyX59thpWbfSJ2W_rRo&amp;indpubnum=126997023285851&amp;atk=1b2bb579q53opafr</url>
+         <onmousedown>indeed_clk(this,'\''7880'\'');</onmousedown>
+         <jobkey>680b1731ea86499f</jobkey>
+         <sponsored>false</sponsored>
+         <expired>false</expired>
+         <indeedApply>false</indeedApply>
+         <formattedLocationFull>Austin, TX 78746</formattedLocationFull>
+         <formattedRelativeTime>30+ days ago</formattedRelativeTime>
+         <stations />
+      </result>
+      <result>
+         <jobtitle>J2EE / Java Developer (Remote Opportunity)</jobtitle>
+         <company>Applied Memetics LLC</company>
+         <city>Austin</city>
+         <state>TX</state>
+         <country>US</country>
+         <formattedLocation>Austin, TX</formattedLocation>
+         <source>Applied Memetics LLC</source>
+         <date>Wed, 23 Nov 2016 11:37:32 GMT</date>
+         <snippet>Responsibilities of the J2EE / Java Developer:. The Contracted J2EE / Java Developer shall support mobile health applications by providing maintenance...</snippet>
+         <url>http://www.indeed.com/viewjob?jk=6b1ad8d08ab12ac1&amp;qd=Tc6jDt4rh0PweGpMuxZ98IcknrmMbTJo31YTxjp3rfqROdmsHnRECd7QSA2uXN9dQyrg21N6nZp-QdDyfCrb46QRAyX59thpWbfSJ2W_rRo&amp;indpubnum=126997023285851&amp;atk=1b2bb579q53opafr</url>
+         <onmousedown>indeed_clk(this,'\''7880'\'');</onmousedown>
+         <jobkey>6b1ad8d08ab12ac1</jobkey>
+         <sponsored>false</sponsored>
+         <expired>false</expired>
+         <indeedApply>false</indeedApply>
+         <formattedLocationFull>Austin, TX</formattedLocationFull>
+         <formattedRelativeTime>1 day ago</formattedRelativeTime>
+         <stations />
+      </result>
+      <result>
+         <jobtitle>Entry Level Java Developer</jobtitle>
+         <company>NetCloudTek</company>
+         <city>Austin</city>
+         <state>TX</state>
+         <country>US</country>
+         <formattedLocation>Austin, TX</formattedLocation>
+         <source>NetCloudTek</source>
+         <date>Sat, 05 Nov 2016 03:07:21 GMT</date>
+         <snippet>Job Description About the company- We are an software Development Company of USA is focused on developing a comprehensive workplace that utilizes the unique</snippet>
+         <url>http://www.indeed.com/viewjob?jk=5f8dafad9d3fb287&amp;qd=Tc6jDt4rh0PweGpMuxZ98IcknrmMbTJo31YTxjp3rfqROdmsHnRECd7QSA2uXN9dQyrg21N6nZp-QdDyfCrb46QRAyX59thpWbfSJ2W_rRo&amp;indpubnum=126997023285851&amp;atk=1b2bb579q53opafr</url>
+         <onmousedown>indeed_clk(this,'\''7880'\'');</onmousedown>
+         <jobkey>5f8dafad9d3fb287</jobkey>
+         <sponsored>false</sponsored>
+         <expired>false</expired>
+         <indeedApply>false</indeedApply>
+         <formattedLocationFull>Austin, TX</formattedLocationFull>
+         <formattedRelativeTime>19 days ago</formattedRelativeTime>
+         <stations />
+      </result>
+      <result>
+         <jobtitle>J2EE/JAVA Developer</jobtitle>
+         <company>Best High Technologies LLC.</company>
+         <city>Austin</city>
+         <state>TX</state>
+         <country>US</country>
+         <formattedLocation>Austin, TX</formattedLocation>
+         <source>Indeed</source>
+         <date>Wed, 09 Nov 2016 20:51:11 GMT</date>
+         <snippet>Java / Struts 1 / Hibernate/DB2:. 2 Experience with Java / Struts. Train and document sufficiently to enable TxDMV personnel to provide maintenance and ongoing...</snippet>
+         <url>http://www.indeed.com/viewjob?jk=ed2f173d8f909764&amp;qd=Tc6jDt4rh0PweGpMuxZ98IcknrmMbTJo31YTxjp3rfqROdmsHnRECd7QSA2uXN9dQyrg21N6nZp-QdDyfCrb46QRAyX59thpWbfSJ2W_rRo&amp;indpubnum=126997023285851&amp;atk=1b2bb579q53opafr</url>
+         <onmousedown>indeed_clk(this,'\''7880'\'');</onmousedown>
+         <jobkey>ed2f173d8f909764</jobkey>
+         <sponsored>false</sponsored>
+         <expired>false</expired>
+         <indeedApply>true</indeedApply>
+         <formattedLocationFull>Austin, TX</formattedLocationFull>
+         <formattedRelativeTime>14 days ago</formattedRelativeTime>
+         <stations />
+      </result>
+      <result>
+         <jobtitle>Core Java Developer</jobtitle>
+         <company>Sysmind LLC</company>
+         <city>Austin</city>
+         <state>TX</state>
+         <country>US</country>
+         <formattedLocation>Austin, TX</formattedLocation>
+         <source>Indeed</source>
+         <date>Thu, 17 Nov 2016 16:19:09 GMT</date>
+         <snippet>Core Java Developer*. Java API for RESTful Web Services:. JAX-RS - Java API for RESTful Web Services required....</snippet>
+         <url>http://www.indeed.com/viewjob?jk=348088aa5d04b4dc&amp;qd=Tc6jDt4rh0PweGpMuxZ98IcknrmMbTJo31YTxjp3rfqROdmsHnRECd7QSA2uXN9dQyrg21N6nZp-QdDyfCrb46QRAyX59thpWbfSJ2W_rRo&amp;indpubnum=126997023285851&amp;atk=1b2bb579q53opafr</url>
+         <onmousedown>indeed_clk(this,'\''7880'\'');</onmousedown>
+         <jobkey>348088aa5d04b4dc</jobkey>
+         <sponsored>false</sponsored>
+         <expired>false</expired>
+         <indeedApply>true</indeedApply>
+         <formattedLocationFull>Austin, TX</formattedLocationFull>
+         <formattedRelativeTime>6 days ago</formattedRelativeTime>
+         <stations />
+      </result>
+      <result>
+         <jobtitle>Junior Developer</jobtitle>
+         <company>By Light Professional IT Services</company>
+         <city>Austin</city>
+         <state>TX</state>
+         <country>US</country>
+         <formattedLocation>Austin, TX</formattedLocation>
+         <source>By Light Professional IT Services</source>
+         <date>Mon, 21 Nov 2016 20:12:01 GMT</date>
+         <snippet>Help with the support and maintenance of current applications as well as contributing to the development of new ones....</snippet>
+         <url>http://www.indeed.com/viewjob?jk=c801863e280f6503&amp;qd=Tc6jDt4rh0PweGpMuxZ98IcknrmMbTJo31YTxjp3rfqROdmsHnRECd7QSA2uXN9dQyrg21N6nZp-QdDyfCrb46QRAyX59thpWbfSJ2W_rRo&amp;indpubnum=126997023285851&amp;atk=1b2bb579q53opafr</url>
+         <onmousedown>indeed_clk(this,'\''7880'\'');</onmousedown>
+         <jobkey>c801863e280f6503</jobkey>
+         <sponsored>false</sponsored>
+         <expired>false</expired>
+         <indeedApply>false</indeedApply>
+         <formattedLocationFull>Austin, TX</formattedLocationFull>
+         <formattedRelativeTime>2 days ago</formattedRelativeTime>
+         <stations />
+      </result>
+      <result>
+         <jobtitle>Software Engineer 1</jobtitle>
+         <company>Dematic</company>
+         <city>Austin</city>
+         <state>TX</state>
+         <country>US</country>
+         <formattedLocation>Austin, TX</formattedLocation>
+         <source>Dematic</source>
+         <date>Wed, 02 Nov 2016 18:45:16 GMT</date>
+         <snippet>0-4+ years Java development experience. Assists in routine design, maintenance, enhancement, testing implementation, and support of software....</snippet>
+         <url>http://www.indeed.com/viewjob?jk=d9ddc1ff87b6eb21&amp;qd=Tc6jDt4rh0PweGpMuxZ98IcknrmMbTJo31YTxjp3rfqROdmsHnRECd7QSA2uXN9dQyrg21N6nZp-QdDyfCrb46QRAyX59thpWbfSJ2W_rRo&amp;indpubnum=126997023285851&amp;atk=1b2bb579q53opafr</url>
+         <onmousedown>indeed_clk(this,'\''7880'\'');</onmousedown>
+         <jobkey>d9ddc1ff87b6eb21</jobkey>
+         <sponsored>false</sponsored>
+         <expired>false</expired>
+         <indeedApply>false</indeedApply>
+         <formattedLocationFull>Austin, TX</formattedLocationFull>
+         <formattedRelativeTime>21 days ago</formattedRelativeTime>
+         <stations />
+      </result>
+   </results>
+</response>
+         ]]>
+    </resource>
+</Transform>'
+ 
+
+Data Acquisition Service
+
+1.Adzuna Germany
+
+curl -X GET 'http://localhost:9000/fuhsen/edsa/adzuna/job_search?country=de' -H 'Postman-Token: c868fe03-3607-4a52-bdc7-6462be1d1f3f' -H 'cache-control: no-cache'
+ 
+
+2.       Indeed France
+
+curl -X GET 'http://localhost:9000/fuhsen/edsa/indeed/job_search?country=fr' -H 'Postman-Token: 2849dd0d-07fb-4d9f-95e4-4ad73e0ba008' -H 'cache-control: no-cache' 
+ 
+

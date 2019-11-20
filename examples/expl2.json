@@ -1,0 +1,21 @@
+{
+  "named-Entities": [
+    {
+      "PER": ["SW Algorithms"],
+      "LOC": [
+        "Dublin"
+      ],
+      "ORG": [
+        "Driving","Connectivity & Security"
+      ],
+      "MISC": ["Innovative Team","Aptiv","Advanced Safety",
+      "User Experienc","Safety Electronics","Infotainment",
+      "Autonomous Driving","Autonomous Driving SW Algorithms",
+      "Issue Analysis","Computer vision","pattern recognition",
+      "sensor data processing","data fusion", "probabilistic perception",
+      "point cloud processing","3D-reconstruction","object tracking",
+      "data association", "optimization", "machine learning",
+      "deep learning", "Tensorflow", "Pytorch","English","German","Freedom"]
+    }
+  ]
+}
