@@ -1,7 +1,6 @@
 # knowledge-extraction
-Knowledge Extraction
 
-The Repository consists of the three aspects of the Knowledge Extarction component
+The Repository consists of the three sub components (services) of the Knowledge Extarction component
 
 1. Silk Framework - Configured for DOBIE
 
@@ -9,7 +8,7 @@ The Repository consists of the three aspects of the Knowledge Extarction compone
 
 3. data acquisition - Fetches and process data from job posting portals
 
-To run the varius services. Follows these Instructions
+To run the varius services. Follow these Instructions
 -----------------------------------------------------------------------
 
 So far, the run_all.sh script should run all the three services.
@@ -28,10 +27,12 @@ Run steps:
 
 
 *Option A -- REDUCED RUN VERSION ---*
+
 export TERM=xterm-color
 sbt -Dhttp.port=9005 "project workbench" [-Dapplication.context=/silk/] run
 
 *Option B*
+
 Windows
 sbt -Dworkspace.repository.plugin=projectFile -Dworkspace.repository.projectFile.dir=C:\path-to-workspace\Workspace -Dworkspace.provider.file.dir=C:\path-to-workspace\Workspace  -Dhttp.port=9005 -Dapplication.context=/silk/ -Dparsers.text.maxLength=1024K "project workbench" run
 
@@ -39,29 +40,17 @@ Linux
 sbt -Dworkspace.repository.plugin=projectFile -Dworkspace.repository.projectFile.dir=/path-to-workspace/edsa/silk-workspace/workspace -Dworkspace.provider.file.dir=/path-to-workspace/edsa/silk-workspace/workspace  -Dhttp.port=9005 -Dapplication.context=/silk/ -Dparsers.text.maxLength=1024K "project workbench" run
 
 
-
-Browser Link
-------------------------------------
-
-http://localhost:9005/workspace  OR http://localhost:9005/silk/workspace --- if you specified -Dapplication.context=/silk/
-
-
+Browser Link: http://localhost:9005/workspace  OR http://localhost:9005/silk/workspace --- if you specified -Dapplication.context=/silk/
 
 
 Possible Error
----------------------------------
 
-Silk compiles and runs without errors but when you go to --> localhost:9005
-You get the error:
+Silk compiles and runs without errors but when you go to --> localhost:9005, You get the error:
 
 RuntimeException: No application loader is configured. Please configure an application loader either using the play.application.loader configuration property, or by depending on a module that configures one. You can add the Guice support module by adding "libraryDependencies += guice" to your build.sbt.
 
-Solution:
------------------------------------
+Solution
 Should you face the error message, just do what it tells you :  -- add "libraryDependencies += guice" to your build.sbt
-
-
-
 
 
 
@@ -82,6 +71,7 @@ Depends on the other || runs on port 9000 by default
 
 
 *---DOCKERIZATION---*
+-----------------------------------------------
 Each Sub component has a Dockerfile at its root directory
 
 Use this file to create a docker file of the subcomponent
