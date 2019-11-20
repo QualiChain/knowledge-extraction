@@ -1,0 +1,71 @@
+Phase: skill_type_evaluation
+Input: Lookup
+Options: control = appelt
+
+
+
+Rule: ProductJobSpecificSkill
+(
+  {Lookup.type == "instance", Lookup.classURI == "http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#Product"}
+) :labelproduct
+
+-->
+{
+	AnnotationSet skillAnn = (AnnotationSet) bindings.get("labelproduct");
+	Annotation uriann = skillAnn.iterator().next();
+	FeatureMap features = Factory.newFeatureMap();
+	features.put("kind", "product"); 
+	features.put("rule","ProductJobSpecificSkill");
+	
+	String uri = (String)uriann.getFeatures().get("URI");
+	int hashtagpos = uri.indexOf("#");
+	
+	features.put("string", uri.substring(hashtagpos+1,uri.length()));
+		
+	outputAS.add(skillAnn.firstNode(), skillAnn.lastNode(), "SkillProduct" ,features);
+}
+
+
+
+Rule: ToolJobSpecificSkill
+(
+  {Lookup.type == "instance", Lookup.classURI == "http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#Tool"}
+) :labeltool
+
+-->
+{
+	AnnotationSet skillAnn = (AnnotationSet) bindings.get("labeltool");
+	Annotation uriann = skillAnn.iterator().next();
+	FeatureMap features = Factory.newFeatureMap();
+	features.put("kind", "tool"); 
+	features.put("rule","ToolJobSpecificSkill");
+	String uri = (String)uriann.getFeatures().get("URI");
+	
+	int hashtagpos = uri.indexOf("#");
+	
+	features.put("string", uri.substring(hashtagpos+1,uri.length()));
+	
+	outputAS.add(skillAnn.firstNode(), skillAnn.lastNode(), "SkillTool" ,features);
+}
+
+
+Rule: TopicJobSpecificSkill
+(
+  {Lookup.type == "instance", Lookup.classURI == "http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#Topic"}
+) :labeltopic
+
+-->
+{
+	AnnotationSet skillAnn = (AnnotationSet) bindings.get("labeltopic");
+	Annotation uriann = skillAnn.iterator().next();
+	FeatureMap features = Factory.newFeatureMap();
+	features.put("kind", "topic"); 
+	features.put("rule","TopicJobSpecificSkill");
+	String uri = (String)uriann.getFeatures().get("URI");
+	
+	int hashtagpos = uri.indexOf("#");
+	
+	features.put("string", uri.substring(hashtagpos+1,uri.length()));
+	
+	outputAS.add(skillAnn.firstNode(), skillAnn.lastNode(), "SkillTopic" ,features);
+}

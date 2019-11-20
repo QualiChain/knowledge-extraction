@@ -1,0 +1,50 @@
+<TransformSpec>
+        <TransformRule name="place" targetProperty="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+        <TransformInput id="unnamed_1430" function="constantUri">
+            
+            <Param name="value" value="http://schema.org/Place"/>
+          </TransformInput>
+      </TransformRule><TransformRule name="uri" targetProperty="">
+        <TransformInput id="unnamed_1071" function="concat">
+            <TransformInput id="unnamed_1069" function="constant">
+            
+            <Param name="value" value="http://vocab.dsa.de/search/location/"/>
+          </TransformInput><TransformInput id="regexReplace1" function="regexReplace">
+            <TransformInput id="replace1" function="replace">
+            <Input id="unnamed_1070" path="/location/display_name"/>
+            <Param name="search" value=","/><Param name="replace" value=""/>
+          </TransformInput>
+            <Param name="regex" value="\W+"/><Param name="replace" value="-"/>
+          </TransformInput>
+            <Param name="glue" value=""/>
+          </TransformInput>
+      </TransformRule><TransformRule name="address" targetProperty="http://schema.org/address">
+        <Input id="unnamed_1432" path="/location/display_name"/>
+      </TransformRule><TransformRule name="latitude" targetProperty="http://www.w3.org/2003/01/geo/wgs84_pos#lat">
+        <Input id="unnamed_1434" path="/latitude"/>
+      </TransformRule><TransformRule name="longitude" targetProperty="http://www.w3.org/2003/01/geo/wgs84_pos#long">
+        <Input id="unnamed_1436" path="/longitude"/>
+      </TransformRule><TransformRule name="country" targetProperty="http://www.edsa-project.eu/jobposting/country">
+        <TransformInput id="getValueByIndex1" function="getValueByIndex">
+            <Input id="unnamed_1268" path="/location/area"/>
+            <Param name="index" value="0"/><Param name="failIfNotFound" value="false"/>
+          </TransformInput>
+      </TransformRule><TransformRule name="city" targetProperty="http://www.edsa-project.eu/jobposting/city">
+        <TransformInput id="getValueByIndex1" function="getValueByIndex">
+            <Input id="unnamed_1326" path="/location/area"/>
+            <Param name="index" value="1"/><Param name="failIfNotFound" value="false"/>
+          </TransformInput>
+      </TransformRule><TransformRule name="area" targetProperty="http://www.edsa-project.eu/jobposting/area">
+        <TransformInput id="getValueByIndex1" function="getValueByIndex">
+            <Input id="unnamed_1364" path="/location/area"/>
+            <Param name="index" value="2"/><Param name="failIfNotFound" value="false"/>
+          </TransformInput>
+      </TransformRule><TransformRule name="area2" targetProperty="http://www.edsa-project.eu/jobposting/area">
+        <TransformInput id="getValueByIndex1" function="getValueByIndex">
+            <Input id="unnamed_1412" path="/location/area"/>
+            <Param name="index" value="3"/><Param name="failIfNotFound" value="false"/>
+          </TransformInput>
+      </TransformRule><Outputs>
+        <Output id="Results"></Output>
+      </Outputs>
+      </TransformSpec>

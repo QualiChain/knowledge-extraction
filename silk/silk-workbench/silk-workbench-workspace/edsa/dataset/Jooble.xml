@@ -1,0 +1,6 @@
+<Dataset id="Jooble" type="json">
+  <Param name="file" value="Jooble.json"/>
+  <Param name="basePath" value="jobs"/>
+  <Param name="uriPattern" value=""/>
+  <Param name="charset" value="UTF8"/>
+</Dataset>

@@ -1,0 +1,13 @@
+Phase: skill_update_product
+Input: SkillProductTemp
+Options: control = appelt
+
+
+
+Rule: UpdateSkillProduct
+(
+  {SkillProductTemp}
+) :top
+
+-->
+:top.SkillProduct = { rule= "UpdateSkillProduct"}

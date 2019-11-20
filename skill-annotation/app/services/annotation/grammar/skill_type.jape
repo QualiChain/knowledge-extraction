@@ -1,0 +1,17 @@
+Phase: skill_type
+Input: Lookup
+Options: control = appelt
+
+
+
+Rule: JobSpecificSkill
+(
+  {Lookup.type == "instance", Lookup.classURI == "http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#Product"} |
+  {Lookup.type == "instance", Lookup.classURI == "http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#Tool"} |
+  {Lookup.type == "instance", Lookup.classURI == "http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#Topic"}
+) :label
+
+-->
+:label.Skill = {kind = "jobspecific", rule= "JobSpecificSkill"}
+
+

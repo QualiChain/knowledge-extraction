@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="org.silkframework"
+		module="silk-react-components_2.11"
+		revision="3.0.0-SNAPSHOT"
+		conf="runtime-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20190730223458"/>
+	<dependencies>
+		<module organisation="javax.inject" name="javax.inject">
+			<revision name="1" status="release" pubdate="20091014013500" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/atinject/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="4">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2506" time="0" location="/home/mulang/.ivy2/cache/javax.inject/javax.inject/ivy-1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom"/>
+				<caller organisation="org.silkframework" name="silk-react-components_2.11" conf="compile, runtime-internal, runtime, optional" rev="1" rev-constraint-default="1" rev-constraint-dynamic="1" callerrev="3.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="javax.inject" type="jar" ext="jar" status="no" details="" size="2497" time="0" location="/home/mulang/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-classic">
+			<revision name="1.1.11" status="release" pubdate="20170301203704" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="10567" time="0" location="/home/mulang/.ivy2/cache/ch.qos.logback/logback-classic/ivy-1.1.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.1.11/logback-classic-1.1.11.pom"/>
+				<caller organisation="org.silkframework" name="silk-react-components_2.11" conf="compile, runtime-internal, runtime, optional" rev="1.1.11" rev-constraint-default="1.1.11" rev-constraint-dynamic="1.1.11" callerrev="3.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="logback-classic" type="jar" ext="jar" status="no" details="" size="309130" time="0" location="/home/mulang/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.11.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.1.11/logback-classic-1.1.11.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.22" status="release" pubdate="20161213180525" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="5199" time="0" location="/home/mulang/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.22.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.22/slf4j-api-1.7.22.pom"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="default, compile, runtime, master" rev="1.7.22" rev-constraint-default="1.7.22" rev-constraint-dynamic="1.7.22" callerrev="1.1.11"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="41077" time="0" location="/home/mulang/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.22.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.22/slf4j-api-1.7.22.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-core">
+			<revision name="1.1.11" status="release" pubdate="20170301203605" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="8170" time="0" location="/home/mulang/.ivy2/cache/ch.qos.logback/logback-core/ivy-1.1.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.1.11/logback-core-1.1.11.pom"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="default, compile, runtime, master" rev="1.1.11" rev-constraint-default="1.1.11" rev-constraint-dynamic="1.1.11" callerrev="1.1.11"/>
+				<artifacts>
+					<artifact name="logback-core" type="jar" ext="jar" status="no" details="" size="475477" time="0" location="/home/mulang/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.11.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.1.11/logback-core-1.1.11.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.11.12" status="release" pubdate="20171103023730" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.12/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2656" time="0" location="/home/mulang/.ivy2/cache/org.scala-lang/scala-library/ivy-2.11.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.pom"/>
+				<caller organisation="org.silkframework" name="silk-react-components_2.11" conf="compile, runtime-internal, runtime, optional" rev="2.11.12" rev-constraint-default="2.11.12" rev-constraint-dynamic="2.11.12" callerrev="3.0.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5749423" time="0" location="/home/mulang/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.12.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

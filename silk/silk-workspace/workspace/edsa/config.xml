@@ -1,0 +1,11 @@
+<ProjectConfig>
+  <Prefixes>
+    <Prefix id="rdf" namespace="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix id="saro" namespace="http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#"/>
+    <Prefix id="geo" namespace="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
+    <Prefix id="sdo" namespace="http://schema.org/"/>
+    <Prefix id="edsa" namespace="http://www.edsa-project.eu/edsa#"/>
+    <Prefix id="owl" namespace="http://www.w3.org/2002/07/owl#"/>
+    <Prefix id="rdfs" namespace="http://www.w3.org/2000/01/rdf-schema#"/>
+  </Prefixes>
+</ProjectConfig>

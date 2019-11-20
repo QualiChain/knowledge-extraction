@@ -1,0 +1,13 @@
+Phase: skill_update_topic
+Input: SkillTopicTemp
+Options: control = appelt
+
+
+
+Rule: UpdateSkillTopic
+(
+  {SkillTopicTemp}
+) :top
+
+-->
+:top.SkillTopic = { rule= "UpdateSkillTopic"}

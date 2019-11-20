@@ -1,0 +1,91 @@
+@prefix :     <https://silkframework.org/testOntology/> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+: a owl:Ontology ;
+  rdfs:label "Test Ontology"@en ;
+.
+
+:Movie
+  a owl:Class ;
+  rdfs:label "Film"@de ;
+  rdfs:label "Movie"@en ;
+  dc:description "A film (dc:description)" ;
+  rdfs:isDefinedBy : ;
+.
+
+:Person
+  a rdfs:Class ;
+  rdfs:label "Person"@en ;
+  skos:definition "A Person"@en ;
+  rdfs:isDefinedBy : ;
+.
+
+:hasDate
+  a owl:DatatypeProperty ;
+  rdfs:label "release date"@en ;
+  rdfs:domain :Movie ;
+#  rdfs:range xsd:string ;
+  rdfs:isDefinedBy : ;
+.
+
+:hasDirector
+   a owl:ObjectProperty ;
+   rdfs:label "director0"@dz ;
+   rdfs:label "director5"@az ;
+   rdfs:label "director2"@bz ;
+   rdfs:label "director1"@cz ;
+   rdfs:comment "Director of a movie2"^^xsd:string ;
+   rdfs:comment "Director of a movie" ;
+   rdfs:domain :Movie ;
+   rdfs:range :Person ;
+   rdfs:isDefinedBy : ;
+.
+
+:label
+  a owl:DatatypeProperty ;
+  rdfs:label "label"@en ;
+  skos:prefLabel "pref label"@en ;
+  dct:title "dc title"@en ;
+  dc:identifier "dc identifier"@en ;
+  dct:identifier "dct identifier"@en ;
+  foaf:name "foaf name"@en ;
+  skos:notation "skos notation"@en ;
+  skos:definition "skos definition"@en ;
+  dct:description "dc description"@en ;
+  skos:scopeNote "skos scopeNote"@en ;
+  rdfs:domain :Movie ;
+  rdfs:range xsd:string ;
+  rdfs:isDefinedBy : ;
+.
+
+:Employee
+  a owl:Class ;
+  rdfs:label "employé"@fr ;
+  rdfs:label "Angestellter"@de-DE ;
+  rdfs:label "empleado"@es ;
+  rdfs:comment "Angestellter einer Firma"@de ;
+  skos:scopeNote "Employee of a company"@en ;
+  rdfs:subClassOf :Person ;
+  rdfs:isDefinedBy : ;
+.
+
+_:BlankNodeProperty
+   a owl:ObjectProperty ;
+   rdfs:label "Ignore me"@en ;
+   rdfs:isDefinedBy : ;
+.
+
+_:BlankNodeClass
+  a owl:Class ;
+  rdfs:label "Ignore me"@en ;
+  rdfs:isDefinedBy : ;
+.

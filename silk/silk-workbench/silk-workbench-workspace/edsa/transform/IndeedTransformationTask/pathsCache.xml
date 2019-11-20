@@ -1,0 +1,26 @@
+<EntityDescription>
+  <Type></Type>
+  <Restriction></Restriction>
+  <Paths>
+    <Path>/ID</Path>
+    <Path>/jobtitle</Path>
+    <Path>/company</Path>
+    <Path>/city</Path>
+    <Path>/state</Path>
+    <Path>/country</Path>
+    <Path>/formattedLocation</Path>
+    <Path>/source</Path>
+    <Path>/date</Path>
+    <Path>/snippet</Path>
+    <Path>/url</Path>
+    <Path>/onmousedown</Path>
+    <Path>/latitude</Path>
+    <Path>/longitude</Path>
+    <Path>/jobkey</Path>
+    <Path>/sponsored</Path>
+    <Path>/expired</Path>
+    <Path>/indeedApply</Path>
+    <Path>/formattedLocationFull</Path>
+    <Path>/formattedRelativeTime</Path>
+  </Paths>
+</EntityDescription>

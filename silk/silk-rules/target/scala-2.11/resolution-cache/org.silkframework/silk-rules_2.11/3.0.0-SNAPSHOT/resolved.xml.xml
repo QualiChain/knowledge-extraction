@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="org.silkframework"
+		module="silk-rules_2.11"
+		revision="3.0.0-SNAPSHOT"
+		status="integration"
+		publication="20190730224231"
+	>
+		<description>
+		Silk Rules
+		</description>
+	</info>
+	<configurations>
+		<conf name="compile" visibility="public" description=""/>
+		<conf name="runtime" visibility="public" description="" extends="compile"/>
+		<conf name="test" visibility="public" description="" extends="runtime"/>
+		<conf name="provided" visibility="public" description=""/>
+		<conf name="optional" visibility="public" description=""/>
+		<conf name="compile-internal" visibility="private" description="" extends="compile,optional,provided"/>
+		<conf name="runtime-internal" visibility="private" description="" extends="runtime,optional"/>
+		<conf name="test-internal" visibility="private" description="" extends="test,optional,provided"/>
+		<conf name="plugin" visibility="private" description=""/>
+		<conf name="sources" visibility="public" description=""/>
+		<conf name="docs" visibility="public" description=""/>
+		<conf name="pom" visibility="public" description=""/>
+		<conf name="scala-tool" visibility="private" description=""/>
+	</configurations>
+	<publications>
+		<artifact name="silk-rules_2.11" type="pom" ext="pom" conf="pom"/>
+		<artifact name="silk-rules_2.11" type="jar" ext="jar" conf="compile"/>
+		<artifact name="silk-rules_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		<artifact name="silk-rules_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+	</publications>
+	<dependencies>
+		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.12" conf="scala-tool->default,optional(default)"/>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.11.12" conf="scala-tool->default,optional(default);compile->default(compile)"/>
+		<dependency org="org.silkframework" name="silk-core_2.11" rev="3.0.0-SNAPSHOT" conf="test->test;compile->compile"/>
+		<dependency org="org.silkframework" name="silk-plugins-csv_2.11" rev="3.0.0-SNAPSHOT" conf="test->compile"/>
+		<dependency org="org.scalatest" name="scalatest_2.11" rev="3.0.7" conf="test->default(compile)"/>
+		<dependency org="net.codingwell" name="scala-guice_2.11" rev="4.0.0" conf="test->default(compile)"/>
+		<dependency org="ch.qos.logback" name="logback-classic" rev="1.1.11" conf="compile->default(compile)"/>
+		<dependency org="org.mockito" name="mockito-all" rev="1.9.5" conf="test->default(compile)"/>
+		<dependency org="com.google.inject" name="guice" rev="4.0" conf="test->default(compile)"/>
+		<dependency org="javax.inject" name="javax.inject" rev="1" conf="compile->default(compile)"/>
+		<dependency org="org.postgresql" name="postgresql" rev="42.2.5" conf="compile->default(compile)"/>
+		<dependency org="org.apache.jena" name="jena-core" rev="3.7.0" conf="compile->default(compile)">
+			<exclude org="org.slf4j" module="slf4j-log4j12" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="org.apache.jena" name="jena-arq" rev="3.7.0" conf="compile->default(compile)">
+			<exclude org="org.slf4j" module="slf4j-log4j12" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<override org="io.netty" module="netty" matcher="exact" rev="3.10.5.Final"/>
+		<override org="com.google.code.findbugs" module="jsr305" matcher="exact" rev="3.0.0"/>
+		<override org="javax.servlet" module="javax.servlet-api" matcher="exact" rev="3.1.0"/>
+		<override org="com.google.guava" module="guava" matcher="exact" rev="18.0"/>
+		<override org="org.apache.thrift" module="libthrift" matcher="exact" rev="0.9.3"/>
+		<override org="com.google.inject" module="guice" matcher="exact" rev="4.0"/>
+		<override org="com.fasterxml.jackson.core" module="jackson-databind" matcher="exact" rev="2.6.5"/>
+	</dependencies>
+</ivy-module>

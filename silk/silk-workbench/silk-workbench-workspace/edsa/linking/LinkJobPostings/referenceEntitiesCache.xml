@@ -1,0 +1,23 @@
+<Entities>
+  <Pair>
+    <Source>
+      <EntityDescription>
+        <Type></Type>
+        <Restriction></Restriction>
+        <Paths> </Paths>
+      </EntityDescription>
+    </Source>
+    <Target>
+      <EntityDescription>
+        <Type></Type>
+        <Restriction></Restriction>
+        <Paths> </Paths>
+      </EntityDescription>
+    </Target>
+  </Pair>
+  <SourceEntities> </SourceEntities>
+  <TargetEntities> </TargetEntities>
+  <PositiveLinks> </PositiveLinks>
+  <NegativeLinks> </NegativeLinks>
+  <UnlabeledLinks> </UnlabeledLinks>
+</Entities>

@@ -1,0 +1,27 @@
+<EntityDescription>
+  <Type></Type>
+  <Restriction></Restriction>
+  <Paths>
+    <Path>/salary_max</Path>
+    <Path>/salary_is_predicted</Path>
+    <Path>/salary_min</Path>
+    <Path>/adref</Path>
+    <Path>/location/area</Path>
+    <Path>/location/display_name</Path>
+    <Path>/location/__CLASS__</Path>
+    <Path>/latitude</Path>
+    <Path>/description</Path>
+    <Path>/redirect_url</Path>
+    <Path>/longitude</Path>
+    <Path>/__CLASS__</Path>
+    <Path>/company/__CLASS__</Path>
+    <Path>/company/display_name</Path>
+    <Path>/id</Path>
+    <Path>/category/__CLASS__</Path>
+    <Path>/category/label</Path>
+    <Path>/category/tag</Path>
+    <Path>/contract_type</Path>
+    <Path>/title</Path>
+    <Path>/created</Path>
+  </Paths>
+</EntityDescription>

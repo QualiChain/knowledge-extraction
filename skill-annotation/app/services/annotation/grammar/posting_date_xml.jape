@@ -1,0 +1,14 @@
+Phase: PostingDate
+Input: datePosted
+Options: control = appelt
+
+
+Rule: PostingDate
+( {datePosted}
+) :date
+-->
+:date.datePosted = { rule= "PostingDate"}
+
+
+
+

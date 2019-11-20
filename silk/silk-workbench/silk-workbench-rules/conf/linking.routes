@@ -1,0 +1,60 @@
+# Dialogs
+GET           /dialogs/newLinkingTask/:project                                              controllers.linking.LinkingDialogs.linkingTaskDialog(project: String, task = "", createDialog: Boolean = true)
+GET           /dialogs/editLinkingTask/:project/:task                                       controllers.linking.LinkingDialogs.linkingTaskDialog(project: String, task: String, createDialog: Boolean = false)
+
+# Linkage Rule Editor
+GET           /:project/:task/editor                                                        controllers.linking.LinkingEditor.editor(project: String, task: String)
+GET           /:project/:task/editor/widgets/paths                                          controllers.linking.LinkingEditor.paths(project: String, task: String, groupPaths: Boolean ?= true)
+GET           /:project/:task/editor/widgets/score                                          controllers.linking.LinkingEditor.score(project: String, task: String)
+
+# Evaluate
+GET           /:project/:task/evaluate                                                      controllers.linking.EvaluateLinkingController.generateLinks(project: String, task: String)
+GET           /:project/:task/evaluate/links/:sorting/:filter/:page                         controllers.linking.EvaluateLinkingController.links(project: String, task: String, sorting: String, filter: String, page: Int)
+GET           /:project/:task/evaluate/linksStream                                          controllers.linking.EvaluateLinkingController.linksWebsocket(project: String, task: String)
+
+# Execute
+GET           /:project/:task/execute                                                       controllers.linking.ExecuteLinkingController.execute(project: String, task: String)
+
+# Reference Links
+GET           /:project/:task/referenceLinks                                                controllers.linking.ReferenceLinksManager.referenceLinksView(project: String, task: String)
+GET           /:project/:task/referenceLinks/addLinkDialog                                  controllers.linking.ReferenceLinksManager.addLinkDialog(project: String, task: String)
+GET           /:project/:task/referenceLinks/importDialog                                   controllers.linking.ReferenceLinksManager.importDialog(project: String, task: String)
+GET           /:project/:task/referenceLinks/removeLinksDialog                              controllers.linking.ReferenceLinksManager.removeLinksDialog(project: String, task: String)
+GET           /:project/:task/referenceLinks/:linkType/:sorting/:filter/:page               controllers.linking.ReferenceLinksManager.referenceLinks(project: String, task: String, linkType: String, sorting: String, filter: String, page: Int)
+
+# Learn
+GET           /:project/:task/learnStart                                                    controllers.linking.Learning.start(project: String, task: String)
+GET           /:project/:task/learn                                                         controllers.linking.Learning.learn(project: String, task: String)
+GET           /:project/:task/activeLearn                                                   controllers.linking.Learning.activeLearn(project: String, task: String)
+GET           /:project/:task/learn/rule                                                    controllers.linking.Learning.rule(project: String, task: String)
+GET           /:project/:task/learn/links/:sorting/:filter/:page                            controllers.linking.Learning.links(project: String, task: String, sorting: String, filter: String, page: Int)
+GET           /:project/:task/learn/population                                              controllers.linking.Learning.population(project: String, task: String)
+GET           /:project/:task/learn/populationView/:page                                    controllers.linking.Learning.populationView(project: String, task: String, page: Int)
+GET           /:project/:task/activeLearnDetails                                            controllers.linking.Learning.activeLearnDetails(project: String, task: String)
+POST          /:project/:task/activeLearn/nextCandidate                                     controllers.linking.Learning.activeLearnCandidate(project: String, task: String)
+GET           /:project/:task/activeLearn/resetDialog                                       controllers.linking.Learning.resetActiveLearningDialog(project: String, task: String)
+POST          /:project/:task/activeLearn/reset                                             controllers.linking.Learning.resetActiveLearning(project: String, task: String)
+
+# API
+GET           /tasks/:project/:task                                                 controllers.linking.LinkingTaskApi.getLinkingTask(project: String, task: String)
+POST          /tasks/:project/:task                                                 controllers.linking.LinkingTaskApi.pushLinkingTask(project: String, task: String, createOnly: Boolean = true)
+PUT           /tasks/:project/:task                                                 controllers.linking.LinkingTaskApi.pushLinkingTask(project: String, task: String, createOnly: Boolean = false)
+DELETE        /tasks/:project/:task                                                 controllers.linking.LinkingTaskApi.deleteLinkingTask(project: String, task: String)
+GET           /tasks/:project/:task/rule                                            controllers.linking.LinkingTaskApi.getRule(project: String, task: String)
+PUT           /tasks/:project/:task/rule                                            controllers.linking.LinkingTaskApi.putRule(project: String, task: String)
+GET           /tasks/:project/:task/linkSpec                                        controllers.linking.LinkingTaskApi.getLinkSpec(project: String, task: String)
+PUT           /tasks/:project/:task/linkSpec                                        controllers.linking.LinkingTaskApi.putLinkSpec(project: String, task: String)
+GET           /tasks/:project/:task/referenceLinks                                  controllers.linking.LinkingTaskApi.getReferenceLinks(project: String, task: String)
+PUT           /tasks/:project/:task/referenceLinks                                  controllers.linking.LinkingTaskApi.putReferenceLinks(project: String, task: String, generateNegative: Boolean)
+DELETE        /tasks/:project/:task/referenceLinks                                  controllers.linking.LinkingTaskApi.deleteReferenceLinks(project: String, task: String, positive: Boolean, negative: Boolean, unlabeled: Boolean)
+PUT           /tasks/:project/:task/referenceLink                                   controllers.linking.LinkingTaskApi.putReferenceLink(project: String, task: String, linkType: String, source: String, target: String)
+DELETE        /tasks/:project/:task/referenceLink                                   controllers.linking.LinkingTaskApi.deleteReferenceLink(project: String, task: String, source: String, target: String)
+
+POST          /tasks/:project/:task/reloadCache                                     controllers.linking.LinkingTaskApi.reloadLinkingCache(project: String, task: String)
+PUT           /tasks/:project/:task/writeReferenceLinks                             controllers.linking.LinkingTaskApi.writeReferenceLinks(project: String, task: String)
+PUT           /tasks/:project/:task/learningTask                                    controllers.linking.LinkingTaskApi.learningActivity(project: String, task: String)
+PUT           /tasks/:project/:task/activeLearningTask                              controllers.linking.LinkingTaskApi.activeLearningActivity(project: String, task: String)
+
+GET           /tasks/:project/:task/referenceLinksEvaluated                         controllers.linking.LinkingTaskApi.referenceLinksEvaluated(project: String, task: String)
+
+POST          /tasks/:project/:task/postLinkDatasource                              controllers.linking.LinkingTaskApi.postLinkDatasource(project: String, task: String)

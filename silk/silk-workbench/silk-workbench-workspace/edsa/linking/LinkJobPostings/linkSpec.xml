@@ -1,0 +1,21 @@
+<Interlink id="LinkJobPostings">
+        <SourceDataset dataSource="AdzunaGraph" var="a" typeUri="http://www.edsa-project.eu/edsa#JobPosting">
+        <RestrictTo>
+          
+        </RestrictTo>
+      </SourceDataset>
+        <TargetDataset dataSource="IndeedGraph" var="b" typeUri="http://www.edsa-project.eu/edsa#JobPosting">
+        <RestrictTo>
+          
+        </RestrictTo>
+      </TargetDataset>
+        <LinkageRule linkType="&lt;http://www.w3.org/2002/07/owl#sameAs&gt;">
+        <Compare id="jaro1" required="true" weight="1" metric="jaro" threshold="0.0" indexing="true">
+            <Input id="sourcePath2" path="/&lt;http://schema.org/source&gt;"/><Input id="targetPath2" path="/&lt;http://schema.org/source&gt;"/>
+          </Compare>
+        <Filter/>
+      </LinkageRule>
+        <Outputs>
+          <Output id="CMEM"></Output>
+        </Outputs>
+      </Interlink>

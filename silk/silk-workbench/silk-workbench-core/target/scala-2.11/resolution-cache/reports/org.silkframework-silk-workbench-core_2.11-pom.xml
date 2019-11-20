@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="org.silkframework"
+		module="silk-workbench-core_2.11"
+		revision="3.0.0-SNAPSHOT"
+		conf="pom"
+		confs="universal, universal-docs, universal-src, compile, runtime, test, provided, optional, windows, docker, linux, rpm, web-assets, web-assets-test, web-plugin, debian, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20190731215457"/>
+	<dependencies>
+	</dependencies>
+</ivy-report>

@@ -1,0 +1,14 @@
+Phase:	job_role
+Input: jobTitle
+Options: control = appelt
+
+
+Rule: FindingRole
+( {jobTitle}
+) :rol
+-->
+:rol.jobRole = { rule= "FindingRole"}
+
+
+
+

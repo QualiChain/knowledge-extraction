@@ -1,0 +1,14 @@
+@import org.silkframework.workspace.activity.TaskActivity
+@import org.silkframework.workspace.activity.CachedActivity
+
+@(activity: TaskActivity[_, _], showButtons: Boolean = false)(implicit request: RequestHeader)
+
+@activityControl(
+  project = activity.task.project.name,
+  task = Some(activity.task.id),
+  activity = activity,
+  showProgressBar = true,
+  showStartButton = showButtons,
+  showRestartButton = showButtons && classOf[CachedActivity[_]].isAssignableFrom(activity.control.underlying.getClass),
+  showConfigButton = showButtons && activity.defaultConfig.nonEmpty
+)

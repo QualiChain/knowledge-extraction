@@ -1,0 +1,30 @@
+<EntityDescription>
+  <Type></Type>
+  <Restriction></Restriction>
+  <Paths>
+    <Path>/count</Path>
+    <Path>/__CLASS__</Path>
+    <Path>/mean</Path>
+    <Path>/results/salary_max</Path>
+    <Path>/results/salary_is_predicted</Path>
+    <Path>/results/salary_min</Path>
+    <Path>/results/adref</Path>
+    <Path>/results/location/area</Path>
+    <Path>/results/location/display_name</Path>
+    <Path>/results/location/__CLASS__</Path>
+    <Path>/results/latitude</Path>
+    <Path>/results/description</Path>
+    <Path>/results/redirect_url</Path>
+    <Path>/results/longitude</Path>
+    <Path>/results/__CLASS__</Path>
+    <Path>/results/company/__CLASS__</Path>
+    <Path>/results/company/display_name</Path>
+    <Path>/results/id</Path>
+    <Path>/results/category/__CLASS__</Path>
+    <Path>/results/category/label</Path>
+    <Path>/results/category/tag</Path>
+    <Path>/results/contract_type</Path>
+    <Path>/results/title</Path>
+    <Path>/results/created</Path>
+  </Paths>
+</EntityDescription>

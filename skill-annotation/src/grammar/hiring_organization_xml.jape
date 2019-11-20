@@ -1,0 +1,14 @@
+Phase:	hiring_organization
+Input: hiringOrganization
+Options: control = appelt
+
+
+Rule: FindOrganization
+( {hiringOrganization}
+) :org
+-->
+:org.Organization = { rule = "FindOrganization"}
+
+
+
+

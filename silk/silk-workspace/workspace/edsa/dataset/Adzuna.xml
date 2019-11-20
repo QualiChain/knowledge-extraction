@@ -1,0 +1,6 @@
+<Dataset id="Adzuna" type="json">
+  <Param name="file" value="adzuna.json"/>
+  <Param name="basePath" value="results"/>
+  <Param name="uriPattern" value=""/>
+  <Param name="charset" value="UTF8"/>
+</Dataset>

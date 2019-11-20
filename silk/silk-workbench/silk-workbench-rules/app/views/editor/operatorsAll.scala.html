@@ -1,0 +1,36 @@
+@import org.silkframework.runtime.plugin.PluginDescription
+@import org.silkframework.workspace.Project
+
+@import org.silkframework.runtime.activity.UserContext
+@(name: String,
+opType: String,
+pluginGroup: org.silkframework.runtime.plugin.PluginFactory[_],
+project: Project)(implicit userContext: UserContext)
+
+@for(plugin <- pluginGroup.availablePlugins) {
+  <div id="search_@{opType}_@{plugin.id}" class="operator plugin search-invisible">
+    <div class="operator-index">
+      @plugin.label
+    </div>
+    <div id="@{opType}_@{plugin.categories.head}_@{plugin.id}" class="draggable @name.toLowerCase">
+      <small>@plugin.label</small>
+      <p class="non-breaking-label">@plugin.label</p>
+      @operatorExpanded(plugin)
+    </div>
+    <div class="mdl-defer mdl-tooltip--right" data-mdl-defer="tooltip" for="@{opType}_@{plugin.categories.head}_@{plugin.id}">
+      @plugin.description
+    </div>
+  </div>
+}
+
+@operatorExpanded(plugin: PluginDescription[_]) = {
+  @opType match {
+    case "transform" => { @transformationBox(plugin.id, plugin, parameterValues(plugin), 0, 0, false, project) }
+    case "compare" => { @comparisonBox(plugin.id, false, 1, 0.0, plugin, parameterValues(plugin), 0, 0, false, project) }
+    case "aggregate" => { @aggregationBox(plugin.id, false, 1, plugin, parameterValues(plugin), 0, 0, false, project) }
+  }
+}
+
+@parameterValues(plugin: PluginDescription[_]) = @{
+  for(p <- plugin.parameters) yield p.defaultValue.getOrElse("").toString
+}

@@ -1,0 +1,27 @@
+Phase: Clean
+Input: Sentence Lookup Split Token SpaceToken Description description hiringOrganization RDF requiresSkill source type url jobTitle Location
+Options: control = all
+
+Rule:CleanUnusedAnnotations
+(
+ {Sentence} |
+ {Lookup} |
+ {Split} |
+ {Token}|
+ {SpaceToken} |
+ {Description} |
+ {description} |
+ {hiringOrganization} |
+ {RDF} |
+ {requiresSkill} |
+ {source} |
+ {type} |
+ {url} |
+ {jobTitle} |
+ {Location}
+):temp
+-->
+{
+ gate.AnnotationSet temp = (gate.AnnotationSet)bindings.get("temp");
+ outputAS.removeAll(temp);
+}

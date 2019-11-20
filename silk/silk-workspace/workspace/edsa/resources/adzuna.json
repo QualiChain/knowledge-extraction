@@ -1,0 +1,508 @@
+{
+  "count": 1118601,
+  "__CLASS__": "Adzuna::API::Response::JobSearchResults",
+  "mean": 32988.78,
+  "results": [
+    {
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Uber Driving Partners"
+      },
+      "salary_min": 40659.67,
+      "description": "MAKE GREAT MONEY DRIVING WITH UBER Drive where you want, whenever you want. Sign up to find out why people all over the UK love partnering with Uber. ULTIMATE FLEXIBILITY Need something outside 9-5? Uber is perfect for your schedule. Choose your own hours, make great money and find more time for the things that matter most. NO CAR OR PRIVATE HIRE LICENCE? No problem. We can get you started with your private hire licence through our FREE in-person IGNITION session. We can also let you know about…",
+      "created": "2016-08-02T22:40:56Z",
+      "latitude": 51.405701,
+      "redirect_url": "https://www.adzuna.co.uk/jobs/land/ad/418194506?se=96eUqGwPSE24mhKgx0byVw&utm_medium=api&utm_source=3faab787&v=99092C72ED31F97215BA20829E54D5E14F4FBE70",
+      "contract_type": "contract",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiOTZlVXFHd1BTRTI0bWhLZ3gwYnlWdyIsImkiOjQxODE5NDUwNn0.PU03mSHLnOkg4KZPAZw7s9MdM2DHK_qGohOK0m_2Uck",
+      "longitude": 0.01435,
+      "title": "Independent Contractor - Uber Partner Driver",
+      "salary_is_predicted": "1",
+      "salary_max": 40659.67,
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Other/General Jobs",
+        "tag": "other-general-jobs"
+      },
+      "id": 418194506,
+      "location": {
+        "area": [
+          "UK",
+          "London",
+          "South East London",
+          "Bromley"
+        ],
+        "display_name": "Bromley, South East London",
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job"
+    },
+    {
+      "salary_min": 44933.23,
+      "company": {
+        "display_name": "Uber Driving Partners",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "description": "MAKE GREAT MONEY DRIVING WITH UBER Drive where you want, whenever you want. Sign up to find out why people all over the UK love partnering with Uber. ULTIMATE FLEXIBILITY Need something outside 9-5? Uber is perfect for your schedule. Choose your own hours, make great money and find more time for the things that matter most. NO CAR OR PRIVATE HIRE LICENCE? No problem. We can get you started with your private hire licence through our FREE in-person IGNITION session. We can also let you know about…",
+      "created": "2016-08-02T22:40:56Z",
+      "redirect_url": "https://www.adzuna.co.uk/jobs/land/ad/418194492?se=96eUqGwPSE24mhKgx0byVw&utm_medium=api&utm_source=3faab787&v=CF4CCEB13537FB6265E99A1BBD527FD8563B09D1",
+      "contract_type": "contract",
+      "latitude": 51.4519,
+      "longitude": -0.330531,
+      "title": "Independent Contractor - Uber Partner Driver",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiOTZlVXFHd1BTRTI0bWhLZ3gwYnlWdyIsImkiOjQxODE5NDQ5Mn0.ifkLURMpHxhzVXOQw86BbjbdoIrzKIZm0c0OtWJtJqg",
+      "salary_max": 44933.23,
+      "salary_is_predicted": "1",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "label": "Other/General Jobs",
+        "tag": "other-general-jobs",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "id": 418194492,
+      "location": {
+        "display_name": "Twickenham, London",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "UK",
+          "London",
+          "Twickenham"
+        ]
+      }
+    },
+    {
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "pr-advertising-marketing-jobs",
+        "label": "PR, Advertising & Marketing Jobs"
+      },
+      "id": 420408542,
+      "location": {
+        "display_name": "Manchester, Greater Manchester",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "UK",
+          "North West England",
+          "Greater Manchester",
+          "Manchester"
+        ]
+      },
+      "longitude": -2.23438,
+      "title": "Operations – Events & Transport Coordinator (Senior Supervisor)",
+      "contract_time": "full_time",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiOTZlVXFHd1BTRTI0bWhLZ3gwYnlWdyIsImkiOjQyMDQwODU0Mn0.yUTu_7s7b224Hu6ngCW82rw80sgAM0FnM65Z0UAackU",
+      "salary_max": 22432.46,
+      "salary_is_predicted": "1",
+      "redirect_url": "https://www.adzuna.co.uk/jobs/details/420408542?se=96eUqGwPSE24mhKgx0byVw&utm_medium=api&utm_source=3faab787&v=F152E3A9601839A49E709E71201319004FA37E09",
+      "contract_type": "permanent",
+      "latitude": 53.480701,
+      "salary_min": 22432.46,
+      "company": {
+        "display_name": "Fanatics",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "description": "Operations – Events & Transport Coordinator (Senior Supervisor) Purpose of the Role: To carry out all reasonable requests and all duties required for role. Accountabilities/Responsibilities: To follow Health & Safety Guidelines Carry out all duties to the best of your ability Meet performance targets Follow all company guidelines and procedures Communicate any issues/problems and action plan to rectify General Housekeeping Timekeeping Attendance Organise picking/stock for events Ensure all stoc…",
+      "created": "2016-08-08T17:22:55Z"
+    },
+    {
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "label": "Other/General Jobs",
+        "tag": "other-general-jobs",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "id": 423879312,
+      "location": {
+        "area": [
+          "UK",
+          "Eastern England",
+          "Essex",
+          "Basildon"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Basildon, Essex"
+      },
+      "title": "Part Time - Uber Partner Driver",
+      "longitude": 0.462461,
+      "contract_time": "part_time",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjo0MjM4NzkzMTIsInMiOiI5NmVVcUd3UFNFMjRtaEtneDBieVZ3In0.ln29Etu7MYS8Q1reXUvTw9MiyK9P1W02kMCs2i0c3oY",
+      "salary_max": 28658.16,
+      "salary_is_predicted": "1",
+      "redirect_url": "https://www.adzuna.co.uk/jobs/land/ad/423879312?se=96eUqGwPSE24mhKgx0byVw&utm_medium=api&utm_source=3faab787&v=D64CED6B8F85409D29BCDB166E7D774B5E184F56",
+      "latitude": 51.572201,
+      "salary_min": 28658.16,
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Uber Driving Partners"
+      },
+      "description": "MAKE GREAT MONEY DRIVING WITH UBER Drive where you want, whenever you want. Sign up to find out why people all over the UK love partnering with Uber. ULTIMATE FLEXIBILITY Need something outside 9-5? Uber is perfect for your schedule. Choose your own hours, make great money and find more time for the things that matter most. NO CAR OR PRIVATE HIRE LICENCE? No problem. We can get you started with your private hire licence through our FREE in-person IGNITION session. We can also let you know about…",
+      "created": "2016-08-17T18:43:20Z"
+    },
+    {
+      "id": 418194541,
+      "location": {
+        "display_name": "Bromley, South East London",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "UK",
+          "London",
+          "South East London",
+          "Bromley"
+        ]
+      },
+      "category": {
+        "tag": "other-general-jobs",
+        "label": "Other/General Jobs",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "latitude": 51.405701,
+      "redirect_url": "https://www.adzuna.co.uk/jobs/land/ad/418194541?se=96eUqGwPSE24mhKgx0byVw&utm_medium=api&utm_source=3faab787&v=66728E0CA6BD363B01CFBB475CF9406DD512EDAB",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiOTZlVXFHd1BTRTI0bWhLZ3gwYnlWdyIsImkiOjQxODE5NDU0MX0.s8gCjVxVUoqiOEdIYzRg4JmNci9T24nQbQ0XLcPxhyo",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Uber Driving Partners"
+      },
+      "salary_min": 32183.62,
+      "longitude": 0.01435,
+      "title": "Flexible Hours - Uber Partner Driver",
+      "salary_is_predicted": "1",
+      "created": "2016-08-02T22:40:58Z",
+      "salary_max": 32183.62,
+      "description": "MAKE GREAT MONEY DRIVING WITH UBER Drive where you want, whenever you want. Sign up to find out why people all over the UK love partnering with Uber. ULTIMATE FLEXIBILITY Need something outside 9-5? Uber is perfect for your schedule. Choose your own hours, make great money and find more time for the things that matter most. NO CAR OR PRIVATE HIRE LICENCE? No problem. We can get you started with your private hire licence through our FREE in-person IGNITION session. We can also let you know about…"
+    },
+    {
+      "company": {
+        "display_name": "Uber Driving Partners",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "salary_min": 40687.62,
+      "description": "MAKE GREAT MONEY DRIVING WITH UBER Drive where you want, whenever you want. Sign up to find out why people all over the UK love partnering with Uber. ULTIMATE FLEXIBILITY Need something outside 9-5? Uber is perfect for your schedule. Choose your own hours, make great money and find more time for the things that matter most. NO CAR OR PRIVATE HIRE LICENCE? No problem. We can get you started with your private hire licence through our FREE in-person IGNITION session. We can also let you know about…",
+      "created": "2016-08-25T06:19:54Z",
+      "latitude": 51.455299,
+      "redirect_url": "https://www.adzuna.co.uk/jobs/land/ad/426641019?se=96eUqGwPSE24mhKgx0byVw&utm_medium=api&utm_source=3faab787&v=E97910C41B037668190C542AE8541247FFE888C5",
+      "contract_type": "contract",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiOTZlVXFHd1BTRTI0bWhLZ3gwYnlWdyIsImkiOjQyNjY0MTAxOX0.uo4cnrk9LpU73QAoniYeqRYUyIkOgSZCfaaN9jTz35k",
+      "title": "Independent Contractor - Uber Partner Driver",
+      "longitude": -2.5919,
+      "salary_is_predicted": "1",
+      "salary_max": 40687.62,
+      "category": {
+        "tag": "other-general-jobs",
+        "label": "Other/General Jobs",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "id": 426641019,
+      "location": {
+        "display_name": "Bristol, South West England",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "UK",
+          "South West England",
+          "Bristol"
+        ]
+      },
+      "__CLASS__": "Adzuna::API::Response::Job"
+    },
+    {
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "id": 425832836,
+      "location": {
+        "display_name": "Leeds, West Yorkshire",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "UK",
+          "Yorkshire And The Humber",
+          "West Yorkshire",
+          "Leeds"
+        ]
+      },
+      "category": {
+        "label": "Other/General Jobs",
+        "tag": "other-general-jobs",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "title": "Independent Contractor - Uber Partner Driver",
+      "longitude": -1.54912,
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiOTZlVXFHd1BTRTI0bWhLZ3gwYnlWdyIsImkiOjQyNTgzMjgzNn0.okY3i880NBpMLtO-ADl7Nfhw-3lY2_JE_1yNjv4cF_4",
+      "salary_max": 38320.62,
+      "salary_is_predicted": "1",
+      "contract_type": "contract",
+      "redirect_url": "https://www.adzuna.co.uk/jobs/land/ad/425832836?se=96eUqGwPSE24mhKgx0byVw&utm_medium=api&utm_source=3faab787&v=E0C7C8091B4B95C3F12054D6B6D8DE78CCC63DBE",
+      "latitude": 53.799599,
+      "salary_min": 38320.62,
+      "company": {
+        "display_name": "Uber Driving Partners",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "created": "2016-08-23T05:44:10Z",
+      "description": "MAKE GREAT MONEY DRIVING WITH UBER Drive where you want, whenever you want. Sign up to find out why people all over the UK love partnering with Uber. ULTIMATE FLEXIBILITY Need something outside 9-5? Uber is perfect for your schedule. Choose your own hours, make great money and find more time for the things that matter most. NO CAR OR PRIVATE HIRE LICENCE? No problem. We can get you started with your private hire licence through our FREE in-person IGNITION session. We can also let you know about…"
+    },
+    {
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "other-general-jobs",
+        "label": "Other/General Jobs"
+      },
+      "id": 418194559,
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Hayes, London",
+        "area": [
+          "UK",
+          "London",
+          "Hayes"
+        ]
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "latitude": 51.512699,
+      "redirect_url": "https://www.adzuna.co.uk/jobs/land/ad/418194559?se=96eUqGwPSE24mhKgx0byVw&utm_medium=api&utm_source=3faab787&v=22874AD47335D0FA78231F571BA5D343C795E4A3",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiOTZlVXFHd1BTRTI0bWhLZ3gwYnlWdyIsImkiOjQxODE5NDU1OX0.STK3-TcoPhiJ3VoIVz8Hhcay_VuY3D8U5xqD91IlCQY",
+      "company": {
+        "display_name": "Uber Driving Partners",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "longitude": -0.4211,
+      "title": "Flexible Hours - Uber Partner Driver",
+      "salary_min": 32383.85,
+      "salary_is_predicted": "1",
+      "salary_max": 32383.85,
+      "description": "MAKE GREAT MONEY DRIVING WITH UBER Drive where you want, whenever you want. Sign up to find out why people all over the UK love partnering with Uber. ULTIMATE FLEXIBILITY Need something outside 9-5? Uber is perfect for your schedule. Choose your own hours, make great money and find more time for the things that matter most. NO CAR OR PRIVATE HIRE LICENCE? No problem. We can get you started with your private hire licence through our FREE in-person IGNITION session. We can also let you know about…",
+      "created": "2016-08-02T22:41:00Z"
+    },
+    {
+      "salary_max": 35359.02,
+      "description": "MAKE GREAT MONEY DRIVING WITH UBER Drive where you want, whenever you want. Sign up to find out why people all over the UK love partnering with Uber. ULTIMATE FLEXIBILITY Need something outside 9-5? Uber is perfect for your schedule. Choose your own hours, make great money and find more time for the things that matter most. NO CAR OR PRIVATE HIRE LICENCE? No problem. We can get you started with your private hire licence through our FREE in-person IGNITION session. We can also let you know about…",
+      "created": "2016-08-02T22:40:57Z",
+      "salary_is_predicted": "1",
+      "longitude": 0.183871,
+      "title": "Uber Partner - Driver",
+      "salary_min": 35359.02,
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjo0MTgxOTQ1MjAsInMiOiI5NmVVcUd3UFNFMjRtaEtneDBieVZ3In0.iqDr-VQiGvIxjFl9Wx6sR1m_sxZOM4C_iDG-SNp7sz8",
+      "company": {
+        "display_name": "Uber Driving Partners",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "redirect_url": "https://www.adzuna.co.uk/jobs/land/ad/418194520?se=96eUqGwPSE24mhKgx0byVw&utm_medium=api&utm_source=3faab787&v=B4C7DFE50EEBA3B08A7464672FA709C741A8A1DA",
+      "latitude": 51.5742,
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "label": "Other/General Jobs",
+        "tag": "other-general-jobs",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "id": 418194520,
+      "location": {
+        "area": [
+          "UK",
+          "Eastern England",
+          "Essex",
+          "Romford"
+        ],
+        "display_name": "Romford, Essex",
+        "__CLASS__": "Adzuna::API::Response::Location"
+      }
+    },
+    {
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Other/General Jobs",
+        "tag": "other-general-jobs"
+      },
+      "id": 423879299,
+      "location": {
+        "display_name": "Harlow, Essex",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "UK",
+          "Eastern England",
+          "Essex",
+          "Harlow"
+        ]
+      },
+      "redirect_url": "https://www.adzuna.co.uk/jobs/land/ad/423879299?se=96eUqGwPSE24mhKgx0byVw&utm_medium=api&utm_source=3faab787&v=04E8066CAE6B7871FC0D93388138C4855665B01B",
+      "latitude": 51.776501,
+      "longitude": 0.111317,
+      "title": "Uber Partner - Driver",
+      "salary_min": 32075.09,
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Uber Driving Partners"
+      },
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjo0MjM4NzkyOTksInMiOiI5NmVVcUd3UFNFMjRtaEtneDBieVZ3In0.qeDejr7pwL0pj6SUeMPfNz51g4lh6eiczYRIug-yVIg",
+      "salary_max": 32075.09,
+      "description": "MAKE GREAT MONEY DRIVING WITH UBER Drive where you want, whenever you want. Sign up to find out why people all over the UK love partnering with Uber. ULTIMATE FLEXIBILITY Need something outside 9-5? Uber is perfect for your schedule. Choose your own hours, make great money and find more time for the things that matter most. NO CAR OR PRIVATE HIRE LICENCE? No problem. We can get you started with your private hire licence through our FREE in-person IGNITION session. We can also let you know about…",
+      "created": "2016-08-17T18:43:19Z",
+      "salary_is_predicted": "1"
+    },
+    {
+      "latitude": 51.841806,
+      "redirect_url": "https://www.adzuna.co.uk/jobs/land/ad/423879289?se=96eUqGwPSE24mhKgx0byVw&utm_medium=api&utm_source=3faab787&v=F538AB1DAFDCA3D65737B0456B0999810FBD53C9",
+      "contract_type": "contract",
+      "description": "MAKE GREAT MONEY DRIVING WITH UBER Drive where you want, whenever you want. Sign up to find out why people all over the UK love partnering with Uber. ULTIMATE FLEXIBILITY Need something outside 9-5? Uber is perfect for your schedule. Choose your own hours, make great money and find more time for the things that matter most. NO CAR OR PRIVATE HIRE LICENCE? No problem. We can get you started with your private hire licence through our FREE in-person IGNITION session. We can also let you know about…",
+      "created": "2016-08-17T18:43:18Z",
+      "company": {
+        "display_name": "Uber Driving Partners",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "salary_min": 40410.25,
+      "category": {
+        "label": "Other/General Jobs",
+        "tag": "other-general-jobs",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Hertfordshire, Eastern England",
+        "area": [
+          "UK",
+          "Eastern England",
+          "Hertfordshire"
+        ]
+      },
+      "id": 423879289,
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "salary_is_predicted": "1",
+      "salary_max": 40410.25,
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjo0MjM4NzkyODksInMiOiI5NmVVcUd3UFNFMjRtaEtneDBieVZ3In0.rnKxmamO_B0iClcRylHujtERMqfExJNtInk5avymXJk",
+      "longitude": -0.219628,
+      "title": "Independent Contractor - Uber Partner Driver"
+    },
+    {
+      "created": "2016-08-17T18:43:21Z",
+      "description": "MAKE GREAT MONEY DRIVING WITH UBER Drive where you want, whenever you want. Sign up to find out why people all over the UK love partnering with Uber. ULTIMATE FLEXIBILITY Need something outside 9-5? Uber is perfect for your schedule. Choose your own hours, make great money and find more time for the things that matter most. NO CAR OR PRIVATE HIRE LICENCE? No problem. We can get you started with your private hire licence through our FREE in-person IGNITION session. We can also let you know about…",
+      "salary_max": 36960.38,
+      "salary_is_predicted": "1",
+      "salary_min": 36960.38,
+      "title": "Uber Partner - Driver",
+      "longitude": -0.474902,
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Uber Driving Partners"
+      },
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjo0MjM4NzkzMjksInMiOiI5NmVVcUd3UFNFMjRtaEtneDBieVZ3In0.EB917SEwjYgbnO1uT2Nogu9deBo_wPiEUXLLkJmXMak",
+      "redirect_url": "https://www.adzuna.co.uk/jobs/land/ad/423879329?se=96eUqGwPSE24mhKgx0byVw&utm_medium=api&utm_source=3faab787&v=16DD0F5E16CA360A1A00BA298914E89F0D8DC711",
+      "latitude": 51.7537,
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "id": 423879329,
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Hemel Hempstead, Hertfordshire",
+        "area": [
+          "UK",
+          "Eastern England",
+          "Hertfordshire",
+          "Hemel Hempstead"
+        ]
+      },
+      "category": {
+        "label": "Other/General Jobs",
+        "tag": "other-general-jobs",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      }
+    },
+    {
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Uber Driving Partners"
+      },
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiOTZlVXFHd1BTRTI0bWhLZ3gwYnlWdyIsImkiOjQxODE5NDU0N30.9tR5NdRaywP4L_dWtjJP_it7QYSEP6UYD5LTonz5IM4",
+      "title": "Flexible Hours - Uber Partner Driver",
+      "longitude": 0.219727,
+      "salary_min": 33824.61,
+      "salary_is_predicted": "1",
+      "description": "MAKE GREAT MONEY DRIVING WITH UBER Drive where you want, whenever you want. Sign up to find out why people all over the UK love partnering with Uber. ULTIMATE FLEXIBILITY Need something outside 9-5? Uber is perfect for your schedule. Choose your own hours, make great money and find more time for the things that matter most. NO CAR OR PRIVATE HIRE LICENCE? No problem. We can get you started with your private hire licence through our FREE in-person IGNITION session. We can also let you know about…",
+      "salary_max": 33824.61,
+      "created": "2016-08-02T22:40:59Z",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Other/General Jobs",
+        "tag": "other-general-jobs"
+      },
+      "id": 418194547,
+      "location": {
+        "area": [
+          "UK",
+          "South East England",
+          "Kent",
+          "Dartford"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Dartford, Kent"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "latitude": 51.443901,
+      "redirect_url": "https://www.adzuna.co.uk/jobs/land/ad/418194547?se=96eUqGwPSE24mhKgx0byVw&utm_medium=api&utm_source=3faab787&v=79C58CD5F3DAAD2F1DC25A57FEEC6AAE04F7CC68"
+    },
+    {
+      "salary_max": 39327.58,
+      "salary_is_predicted": "1",
+      "longitude": -2.89783,
+      "title": "Independent Contractor - Uber Partner Driver",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiOTZlVXFHd1BTRTI0bWhLZ3gwYnlWdyIsImkiOjQyNTMxODM2MX0.JDUwV1sOWKfvDWJoHe0Ydz0CI4VwjYihfP-cXfDWXEY",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Other/General Jobs",
+        "tag": "other-general-jobs"
+      },
+      "id": 425318361,
+      "location": {
+        "area": [
+          "UK",
+          "North West England",
+          "Cheshire",
+          "Ellesmere Port"
+        ],
+        "display_name": "Ellesmere Port, Cheshire",
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "description": "MAKE GREAT MONEY DRIVING WITH UBER Drive where you want, whenever you want. Sign up to find out why people all over the UK love partnering with Uber. ULTIMATE FLEXIBILITY Need something outside 9-5? Uber is perfect for your schedule. Choose your own hours, make great money and find more time for the things that matter most. NO CAR OR PRIVATE HIRE LICENCE? No problem. We can get you started with your private hire licence through our FREE in-person IGNITION session. We can also let you know about…",
+      "created": "2016-08-21T04:30:08Z",
+      "salary_min": 39327.58,
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Uber Driving Partners"
+      },
+      "redirect_url": "https://www.adzuna.co.uk/jobs/land/ad/425318361?se=96eUqGwPSE24mhKgx0byVw&utm_medium=api&utm_source=3faab787&v=0331DB12BF208EE1E873F4B764696FC5993326C6",
+      "contract_type": "contract",
+      "latitude": 53.281399
+    },
+    {
+      "redirect_url": "https://www.adzuna.co.uk/jobs/land/ad/425318325?se=96eUqGwPSE24mhKgx0byVw&utm_medium=api&utm_source=3faab787&v=3437A56C232FDA9CEB4BA570983954359CB941DD",
+      "contract_type": "contract",
+      "latitude": 53.3871,
+      "salary_min": 39654.89,
+      "company": {
+        "display_name": "Uber Driving Partners",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "description": "MAKE GREAT MONEY DRIVING WITH UBER Drive where you want, whenever you want. Sign up to find out why people all over the UK love partnering with Uber. ULTIMATE FLEXIBILITY Need something outside 9-5? Uber is perfect for your schedule. Choose your own hours, make great money and find more time for the things that matter most. NO CAR OR PRIVATE HIRE LICENCE? No problem. We can get you started with your private hire licence through our FREE in-person IGNITION session. We can also let you know about…",
+      "created": "2016-08-21T04:30:05Z",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Other/General Jobs",
+        "tag": "other-general-jobs"
+      },
+      "id": 425318325,
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Birkenhead, Merseyside",
+        "area": [
+          "UK",
+          "North West England",
+          "Merseyside",
+          "Birkenhead"
+        ]
+      },
+      "longitude": -3.02213,
+      "title": "Independent Contractor - Uber Partner Driver",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjo0MjUzMTgzMjUsInMiOiI5NmVVcUd3UFNFMjRtaEtneDBieVZ3In0.u-kyGpIPfE1z4yqsfPkVnPz4zUsTGet0LqU8Rhivlbg",
+      "salary_max": 39654.89,
+      "salary_is_predicted": "1"
+    }
+  ]
+}

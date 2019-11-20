@@ -1,0 +1,7 @@
+MultiPhase:	SkillAnnotationGrammars
+Phases:
+skill_type_update
+delete_annotation_from_markup
+job_role_xml
+hiring_organization_xml
+clean_xml

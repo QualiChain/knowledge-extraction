@@ -1,0 +1,52 @@
+package org.silkframework.workspace.xml
+
+import org.silkframework.config._
+import org.silkframework.runtime.resource.{ResourceLoader, ResourceManager}
+import org.silkframework.runtime.serialization.ReadContext
+import org.silkframework.runtime.serialization.XmlSerialization.fromXml
+import org.silkframework.util.Identifier
+import org.silkframework.util.XMLUtils._
+import org.silkframework.workspace.activity.workflow.Workflow
+import org.silkframework.runtime.serialization.XmlSerialization._
+
+import scala.util.Try
+import scala.xml.{Attribute, Null, Text, XML}
+
+private class WorkflowXmlSerializer extends XmlSerializer[Workflow] {
+
+  override def prefix = "workflow"
+
+  /**
+   * Loads all tasks of this module.
+   */
+  override def loadTasksSafe(resources: ResourceLoader, projectResources: ResourceManager): Seq[Try[Task[Workflow]]] = {
+    implicit val readContext = ReadContext(projectResources)
+    val names = resources.list.filter(_.endsWith(".xml"))
+    val tasks =
+      for(name <- names) yield {
+        Try {
+          var xml = resources.get(name).read(XML.load)
+          // Old XML versions do not contain the id
+          if ((xml \ "@id").isEmpty) {
+            xml = xml % Attribute("id", Text(name.stripSuffix(".xml")), Null)
+          }
+          fromXml[Task[Workflow]](xml)
+        }
+      }
+    tasks
+  }
+
+  /**
+   * Writes an updated task.
+   */
+  override def writeTask(task: Task[Workflow], resources: ResourceManager): Unit = {
+    resources.get(task.id.toString + ".xml").write() { os => toXml(task).write(os) }
+  }
+
+  /**
+   * Removes a specific task.
+   */
+  override def removeTask(name: Identifier, resources: ResourceManager): Unit = {
+    resources.delete(name.toString + ".xml")
+  }
+}

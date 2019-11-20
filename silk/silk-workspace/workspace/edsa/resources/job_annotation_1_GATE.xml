@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<GateDocument version="3">
+<AnnotationSet>
+<Annotation Id="799" Type="SkillTopic" StartNode="1294" EndNode="1314">
+<Feature>
+  <Name className="java.lang.String">string</Name>
+  <Value className="java.lang.String">StatisticalAnalysis</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">frequencyOfMention</Name>
+  <Value className="java.lang.Integer">1</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">kind</Name>
+  <Value className="java.lang.String">topic</Value>
+</Feature>
+</Annotation>
+</AnnotationSet>
+</GateDocument>

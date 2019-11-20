@@ -1,0 +1,31 @@
+Phase:	PostingDate
+Input: firstSeen Lookup Token SpaceToken
+Options: control = appelt
+
+
+Rule: PostingDate
+( {firstSeen}
+) :date
+-->
+:date.datePosted = { rule= "PostingDate"}
+
+
+Rule: PostingDateFromJSON
+ (
+ {Token.kind == "punctuation"}
+ {Token.string == "firstSeen"}
+ {Token.kind == "punctuation"}
+ {Token.string == ":"}
+ {SpaceToken.kind == "space"}
+ {Token.kind == "punctuation"}
+ )
+ ({Token.kind == "number", Token.length == "4"}
+  {Token.string == "-"}
+  {Token.kind == "number", Token.length == "2"} 
+  {Token.string == "-"}
+  {Token.kind == "number", Token.length == "2"}
+ ) :postdate
+
+-->
+:postdate.postingdate = {kind = firstSeen}
+

@@ -1,0 +1,28 @@
+<EntityDescription>
+  <Type></Type>
+  <Restriction></Restriction>
+  <Paths>
+    <Path>/jobs/total</Path>
+    <Path>/jobs/items/location/city</Path>
+    <Path>/jobs/items/location/zipcode</Path>
+    <Path>/jobs/items/location/country</Path>
+    <Path>/jobs/items/location/region</Path>
+    <Path>/jobs/items/location/street</Path>
+    <Path>/jobs/items/location/geo_code/accuracy</Path>
+    <Path>/jobs/items/location/geo_code/latitude</Path>
+    <Path>/jobs/items/location/geo_code/longitude</Path>
+    <Path>/jobs/items/contact/company/name</Path>
+    <Path>/jobs/items/contact/company/links/xing</Path>
+    <Path>/jobs/items/contact/company/links/thumbnail</Path>
+    <Path>/jobs/items/contact/company/links/logo</Path>
+    <Path>/jobs/items/company/name</Path>
+    <Path>/jobs/items/company/links/xing</Path>
+    <Path>/jobs/items/company/links/thumbnail</Path>
+    <Path>/jobs/items/company/links/logo</Path>
+    <Path>/jobs/items/links/self</Path>
+    <Path>/jobs/items/links/xing</Path>
+    <Path>/jobs/items/id</Path>
+    <Path>/jobs/items/title</Path>
+    <Path>/jobs/items/published_at</Path>
+  </Paths>
+</EntityDescription>

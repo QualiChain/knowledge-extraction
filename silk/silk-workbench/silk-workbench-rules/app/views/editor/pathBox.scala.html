@@ -1,0 +1,22 @@
+@import org.silkframework.workspace.Project
+
+@import org.silkframework.runtime.activity.UserContext
+@(id: String,
+  isSource: Boolean,
+  path: String,
+  x: Int, y: Int, display: Boolean,
+  project: Project)(implicit userContext: UserContext)
+
+@import org.silkframework.runtime.plugin.PluginDescription
+
+@operatorBox(
+  opType = if(isSource) "Source" else "Target",
+  id = id,
+  plugin = new PluginDescription(id, Seq.empty, "Path", "Path", "", Seq.empty, null),
+  parameterValues = Seq.empty,
+  x = x,
+  y = y,
+  display = display,
+  project = project) {
+    <input class="param_value" type="text" name="path" value="@path" style="width:100%"/>
+  }

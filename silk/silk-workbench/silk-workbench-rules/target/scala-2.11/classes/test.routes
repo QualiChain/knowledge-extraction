@@ -1,0 +1,7 @@
+
+# Routes for running this module locally, for instance during running tests.
+
+->         /core                        core.Routes
+->         /workspace                   workspace.Routes
+->         /transform                   transform.Routes
+->         /linking                     linking.Routes

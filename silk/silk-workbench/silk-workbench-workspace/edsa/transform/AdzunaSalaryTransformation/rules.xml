@@ -1,0 +1,25 @@
+<TransformSpec>
+        <TransformRule name="monetaryAmount" targetProperty="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+        <TransformInput id="unnamed_1990" function="constantUri">
+            
+            <Param name="value" value="http://schema.org/MonetaryAmount"/>
+          </TransformInput>
+      </TransformRule><TransformRule name="uri" targetProperty="">
+        <TransformInput id="unnamed_1998" function="concat">
+            <TransformInput id="unnamed_1995" function="constant">
+            
+            <Param name="value" value="http://vocab.edsa.de/search/jobpost/"/>
+          </TransformInput><Input id="unnamed_1996" path="/id"/><TransformInput id="unnamed_1997" function="constant">
+            
+            <Param name="value" value="/salary"/>
+          </TransformInput>
+            <Param name="glue" value=""/>
+          </TransformInput>
+      </TransformRule><TransformRule name="salaryMaxValue" targetProperty="http://schema.org/maxValue">
+        <Input id="unnamed_2000" path="/salary_max"/>
+      </TransformRule><TransformRule name="salaryMinValue" targetProperty="http://schema.org/minValue">
+        <Input id="unnamed_2002" path="/salary_min"/>
+      </TransformRule><Outputs>
+        <Output id="Results"></Output>
+      </Outputs>
+      </TransformSpec>

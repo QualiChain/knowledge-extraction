@@ -1,0 +1,36 @@
+<Types>
+  <Type frequency="Infinity"></Type>
+  <Type frequency="1.0">/@version</Type>
+  <Type frequency="1.0">/query</Type>
+  <Type frequency="1.0">/location</Type>
+  <Type frequency="1.0">/clickedCategories</Type>
+  <Type frequency="1.0">/paginationPayload</Type>
+  <Type frequency="1.0">/radius</Type>
+  <Type frequency="1.0">/dupefilter</Type>
+  <Type frequency="1.0">/highlight</Type>
+  <Type frequency="1.0">/start</Type>
+  <Type frequency="1.0">/end</Type>
+  <Type frequency="1.0">/pageNumber</Type>
+  <Type frequency="1.0">/totalresults</Type>
+  <Type frequency="1.0">/results</Type>
+  <Type frequency="0.5">/results/result</Type>
+  <Type frequency="0.3333333333333333">/results/result/jobtitle</Type>
+  <Type frequency="0.3333333333333333">/results/result/company</Type>
+  <Type frequency="0.3333333333333333">/results/result/city</Type>
+  <Type frequency="0.3333333333333333">/results/result/state</Type>
+  <Type frequency="0.3333333333333333">/results/result/country</Type>
+  <Type frequency="0.3333333333333333">/results/result/formattedLocation</Type>
+  <Type frequency="0.3333333333333333">/results/result/source</Type>
+  <Type frequency="0.3333333333333333">/results/result/date</Type>
+  <Type frequency="0.3333333333333333">/results/result/snippet</Type>
+  <Type frequency="0.3333333333333333">/results/result/url</Type>
+  <Type frequency="0.3333333333333333">/results/result/onmousedown</Type>
+  <Type frequency="0.3333333333333333">/results/result/latitude</Type>
+  <Type frequency="0.3333333333333333">/results/result/longitude</Type>
+  <Type frequency="0.3333333333333333">/results/result/jobkey</Type>
+  <Type frequency="0.3333333333333333">/results/result/sponsored</Type>
+  <Type frequency="0.3333333333333333">/results/result/expired</Type>
+  <Type frequency="0.3333333333333333">/results/result/indeedApply</Type>
+  <Type frequency="0.3333333333333333">/results/result/formattedLocationFull</Type>
+  <Type frequency="0.3333333333333333">/results/result/formattedRelativeTime</Type>
+</Types>

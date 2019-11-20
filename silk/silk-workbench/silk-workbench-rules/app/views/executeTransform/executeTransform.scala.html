@@ -1,0 +1,38 @@
+@import org.silkframework.rule.execution.ExecuteTransform
+@import views.html.workspace.activity.taskActivityControl
+@import controllers.transform.routes.ExecuteTransformTab
+@import org.silkframework.rule.TransformSpec
+@import controllers.workspace.routes.TaskApi
+@import org.silkframework.workbench.Context
+@import controllers.core.routes.{Assets => CoreAssets}
+@import org.silkframework.workspace.activity.transform.ExecuteTransformFactory
+@import views.html.workspace.activity.autoReload
+
+@(context: Context[TransformSpec])(implicit session: play.api.mvc.Session, request: RequestHeader)
+
+@header = {
+  <script src="@CoreAssets.at("libs/silk-react-components/main.js")" type="text/javascript"></script>
+}
+
+@toolbar = {
+  <ul>
+    <li>
+      @taskActivityControl(context.task.activity[ExecuteTransform], showButtons = true)
+    </li>
+    <li>
+      <a class="mdl-button mdl-js-button mdl-button--icon" href="@{TaskApi.downloadOutput(context.project.name, context.task.id).url}" target="_download">
+        <i class="material-icons">file_download</i>
+      </a>
+    </li>
+  </ul>
+}
+
+@content = {
+  @autoReload(
+    context = context,
+    contentPath = ExecuteTransformTab.executionReport(context.project.name, context.task.id).url,
+    activityId = ExecuteTransformFactory.pluginId
+  )
+}
+
+@main(Some(context), titleLabel = context.task.taskLabel())(header)(toolbar)(content)

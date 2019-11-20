@@ -1,0 +1,32 @@
+@import org.silkframework.entity.Entity
+@import org.silkframework.dataset.DatasetSpec.GenericDatasetSpec
+@import org.silkframework.entity.paths.UntypedPath
+@import org.silkframework.workbench.Context
+
+@(context: Context[GenericDatasetSpec], paths: IndexedSeq[UntypedPath], entities: Seq[Entity])(implicit session: play.api.mvc.Session)
+
+@header = {
+}
+
+@toolbar = {
+}
+
+@content = {
+<table>
+  <tr>
+    @for(path <- paths) {
+      <th>@path.toString<th>
+    }
+  </tr>
+
+  @for(entity <- entities) {
+    <tr>
+      @for(path <- paths) {
+        <td>@entity.evaluate(path)<td>
+      }
+    </tr>
+  }
+</table>
+}
+
+@main(Some(context), titleLabel = context.task.taskLabel())(header)(toolbar)(content)

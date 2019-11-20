@@ -1,0 +1,20 @@
+Phase: Clean_XML
+Input: Sentence Lookup Split Token SpaceToken jobTitle hiringOrganization
+Options: control = all
+
+Rule:CleanUnusedAnnotations
+(
+ {Sentence} |
+ {Split} |
+ {SpaceToken} |
+ {Lookup} |
+ {Token} |
+ {jobTitle} |
+ {hiringOrganization}
+ 
+):temp
+-->
+{
+ gate.AnnotationSet temp = (gate.AnnotationSet)bindings.get("temp");
+ outputAS.removeAll(temp);
+}

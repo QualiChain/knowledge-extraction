@@ -1,0 +1,6 @@
+<Dataset id="Canvas" type="json">
+  <Param name="file" value="Canvas.json"/>
+  <Param name="basePath" value=""/>
+  <Param name="uriPattern" value=""/>
+  <Param name="charset" value="UTF8"/>
+</Dataset>

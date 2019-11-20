@@ -1,0 +1,21 @@
+<EntityDescription>
+  <Type>XML</Type>
+  <Restriction></Restriction>
+  <Paths>
+    <Path>/@version</Path>
+    <Path>/GateDocumentFeatures</Path>
+    <Path>/TextWithNodes/Node</Path>
+    <Path>/TextWithNodes/Node/@id</Path>
+    <Path>/AnnotationSet</Path>
+    <Path>/AnnotationSet/@Name</Path>
+    <Path>/AnnotationSet/Annotation/@EndNode</Path>
+    <Path>/AnnotationSet/Annotation/@StartNode</Path>
+    <Path>/AnnotationSet/Annotation/@Type</Path>
+    <Path>/AnnotationSet/Annotation/@Id</Path>
+    <Path>/AnnotationSet/Annotation/Feature/Name</Path>
+    <Path>/AnnotationSet/Annotation/Feature/Name/@className</Path>
+    <Path>/AnnotationSet/Annotation/Feature/Value</Path>
+    <Path>/AnnotationSet/Annotation/Feature/Value/@className</Path>
+    <Path>/AnnotationSet/Annotation</Path>
+  </Paths>
+</EntityDescription>

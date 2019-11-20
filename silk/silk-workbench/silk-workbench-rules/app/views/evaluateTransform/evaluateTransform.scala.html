@@ -1,0 +1,18 @@
+@import org.silkframework.rule.TransformSpec
+@import controllers.rules.routes.Assets
+@import org.silkframework.workbench.Context
+
+@(context: Context[TransformSpec], offset: Int, limit: Int)(implicit session: play.api.mvc.Session)
+
+@header = {
+  <link type="text/css" href="@Assets.at("stylesheets/evaluateTransform/evaluateTransform.css")" rel="stylesheet" />
+}
+
+@toolbar = {
+}
+
+@content = {
+  <iframe id="generatedEntitiesIFrame" src="evaluate/generatedEntities?offset=@offset&limit=@limit" frameborder="0"></iframe>
+}
+
+@main(Some(context), titleLabel = context.task.taskLabel())(header)(toolbar)(content)

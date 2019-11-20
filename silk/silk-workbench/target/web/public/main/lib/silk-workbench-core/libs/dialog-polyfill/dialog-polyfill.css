@@ -1,0 +1,9 @@
+dialog.mdl-dialog__container {
+  background: transparent;
+  display: none;
+  border: none;
+}
+
+dialog.mdl-dialog__container[open] {
+  display: flex;
+}

@@ -1,0 +1,6 @@
+<Dataset id="Xing" type="json">
+  <Param name="file" value="xing.json"/>
+  <Param name="basePath" value="jobs/items"/>
+  <Param name="uriPattern" value=""/>
+  <Param name="charset" value="UTF8"/>
+</Dataset>

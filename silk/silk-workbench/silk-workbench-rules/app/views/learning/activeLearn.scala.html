@@ -1,0 +1,135 @@
+@import controllers.core.routes.{Assets => CoreAssets}
+@import controllers.rules.routes.Assets
+@import controllers.linking.routes
+@import controllers.linking.routes.Learning
+@import controllers.workspace.routes.ActivityApi
+@import org.silkframework.learning.active.ActiveLearning
+@import views.html.workspace.activity.taskActivityControl
+@import models.linking.LinkCandidateDecision
+@import org.silkframework.rule.LinkSpec
+@import org.silkframework.workbench.Context
+@import org.silkframework.learning.active.ActiveLearningFactory
+@import views.html.workspace.activity.autoReload
+
+@(context: Context[LinkSpec])(implicit session: play.api.mvc.Session, request: RequestHeader)
+
+@header = {
+  <link type="text/css" href="@Assets.at("stylesheets/table.css")" rel="stylesheet" />
+  <link type="text/css" href="@Assets.at("stylesheets/activeLearning.css")" rel="stylesheet" />
+  <link type="text/css" href="@Assets.at("stylesheets/editor/editor.css")" rel="stylesheet" />
+  <link type="text/css" href="@Assets.at("stylesheets/learningEditor.css")" rel="stylesheet" />
+
+  <script src="@CoreAssets.at("libs/twbs-pagination/jquery.twbsPagination.js")" type="text/javascript"></script>
+  <script src="@CoreAssets.at("libs/jsplumb/dist/js/jsplumb.js")" type="text/javascript"></script>
+  <script src="@Assets.at("js/editor/editor.js")" type="text/javascript"></script>
+  <script src="@Assets.at("js/editor/status.js")" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    var inEditorEnv = false;
+    var apiUrl = '@config.baseUrl/linking/tasks/@context.project.name/@context.task.id/referenceLink';
+    var taskUrl = '@config.baseUrl/linking/tasks/@context.project.name/@context.task.id';
+
+    function back() {
+      window.location = "@config.baseUrl/linking/@context.project.name/@context.task.id/learnStart"
+    }
+
+    function showLinkCandidate() {
+      // Show pending icon
+      $('#link-candidate-wrapper').html('<img src="@Assets.at("img/pending.gif")" ></img>');
+      // Request next link candidate
+      var url = '@routes.Learning.activeLearnCandidate(context.project.name, context.task.id).url';
+      $.post(
+        url,
+        {
+          source: "_",
+          target: "_",
+          decision: "@LinkCandidateDecision.pass"
+        },
+        function(data) {
+          $('#link-candidate-wrapper').html(data);
+        })
+        .fail(errorHandler)
+    }
+
+    $(function() {
+      showLinkCandidate();
+    });
+  </script>
+}
+
+@toolbar = {
+  <ul>
+    <li>
+      @taskActivityControl(context.task.activity[ActiveLearning])
+    </li>
+    <li>
+      <button class="mdl-button mdl-js-button mdl-button--raised" onclick="back()">Back</button>
+    </li>
+    <li>
+      <button class="mdl-button mdl-js-button mdl-button--raised" onclick="showDialog('@routes.Learning.resetActiveLearningDialog(context.project.name, context.task.id)')">Reset</button>
+    </li>
+    <li>
+      <button class="mdl-button mdl-js-button mdl-button--raised" onclick="showDialog('@routes.Learning.activeLearnDetails(context.project.name, context.task.id)')">Details</button>
+    </li>
+  </ul>
+}
+
+@content = {
+  <div class="mdl-shadow--2dp">
+    <div class="wrapper-header">
+      <div class="wrapper-title">Linkage Rule Candidate</div>
+      <button id="show_graph_button" class="mdl-button mdl-js-button mdl-button--icon toggle_graph_button" style="display: none;">
+        <i class="material-icons">expand_more</i>
+      </button>
+      <div class="mdl-tooltip mdl-tooltip--left" for="show_graph_button">
+        Show the current Linking Rule Candidate
+      </div>
+      <button id="hide_graph_button" class="mdl-button mdl-js-button mdl-button--icon toggle_graph_button" disabled>
+        <i class="material-icons">expand_less</i>
+      </button>
+      <div class="mdl-tooltip mdl-tooltip--left" for="hide_graph_button">
+        Hide the current Linking Rule Candidate
+      </div>
+      <div id="learning_fitness_info">--</div>
+    </div>
+
+    <div class="wrapper">
+      <div id="rule_view" class="clearfix">
+        @autoReload(
+          context = context,
+          contentPath = Learning.rule(context.project.name, context.task.id).url,
+          activityId = ActiveLearningFactory.pluginId
+        )
+      </div>
+    </div>
+    <script type="text/javascript">
+      $("#show_graph_button").click(function() {
+        $(".toggle_graph_button").toggle();
+        $("#rule_view").slideDown();
+       });
+      $("#hide_graph_button").click(function() {
+        $(".toggle_graph_button").toggle();
+        $("#rule_view").slideUp();
+      });
+    </script>
+  </div>
+
+  <div class="mdl-shadow--2dp">
+    <div class="wrapper-header">
+      <div class="wrapper-title">Uncertain links</div>
+    </div>
+
+    <div class="wrapper" style="overflow: auto;">
+      <div id="tree-header">
+        <div class="middle">
+          <ul class="navigation"></ul>
+        </div>
+      </div>
+
+      <div id="link-candidate-wrapper">
+      </div>
+    </div>
+  </div>
+}
+
+@main(Some(context), titleLabel = context.task.taskLabel())(header)(toolbar)(content)

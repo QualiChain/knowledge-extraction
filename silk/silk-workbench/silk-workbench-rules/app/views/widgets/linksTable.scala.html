@@ -1,0 +1,283 @@
+@import org.silkframework.workspace.{PrefixRegistry, Project}
+@import models.linking.EvalLink._
+@import models.linking._
+@import org.silkframework.entity.Entity
+@import org.silkframework.util.DPair
+@import org.silkframework.rule.evaluation._
+@import controllers.rules.routes.Assets
+@import org.silkframework.entity.paths.UntypedPath
+@import org.silkframework.workspace.ProjectTask
+@import org.silkframework.rule.execution.LinkingStatistics
+@import org.silkframework.rule.LinkSpec
+
+@(project: Project,
+  task: ProjectTask[LinkSpec],
+  links: Seq[EvalLink],
+  linkingStatistics: Option[LinkingStatistics],
+  sorting: LinkSorter,
+  filter: String,
+  page: Int,
+  showStatus: Boolean, showDetails: Boolean, showEntities: Boolean, rateButtons: Boolean)
+
+@getPageLinks() = @{
+  val pageSize = 100
+  val filteredLinks = LinkFilter(links, filter.stripPrefix("filter:"))
+  val sortedLinks = sorting(filteredLinks)
+  val pageLinks = sortedLinks.view(page * pageSize, (page + 1) * pageSize)
+  pageLinks
+}
+
+@render(getPageLinks())
+@for(statistics <- linkingStatistics) {
+  @linkingReport(statistics, links.size)
+}
+
+@render(pageLinks: Seq[EvalLink]) = {
+  <script type="text/javascript">
+    $(document).ready(function() {
+      initPagination(@links.size)
+    })
+  </script>
+
+  <div style="clear: both"></div>
+
+  <p>
+  <div id="results">
+    <div class="link">
+      <div class="link-header heading">
+
+        <div class="link-source">
+          @sortableHeader(SourceUriSorterAscending, SourceUriSorterDescending) {
+            Source:
+            <span class="source-value">
+              @task.data.dataSelections.source.inputId
+            </span>
+          }
+        </div>
+
+        <div class="link-target">
+          @sortableHeader(TargetUriSorterAscending, TargetUriSorterDescending) {
+          Target:
+              <span class="source-value">
+                @task.data.dataSelections.target.inputId
+              </span>
+          }
+        </div>
+
+        <div class="link-confidence">
+          @sortableHeader(ConfidenceSorterAscending, ConfidenceSorterDescending) {
+          Score
+          }
+        </div>
+
+        @if(showStatus) {
+          <div class="link-status">
+            <span>Status</span>
+          </div>
+        }
+
+        <div class="link-buttons">
+          @sortableHeader(CorrectnessSorterAscending, CorrectnessSorterDescending) {
+          <span>Correct</span>
+          }
+        </div>
+
+      </div>
+    </div>
+
+    @for((link, index) <- pageLinks.zipWithIndex) {
+      @renderLink(link, index)
+    }
+  </div>
+  </p>
+
+  <div style="clear:both;"></div>
+
+  <div id="tree-footer">
+    <ul class="navigation"></ul>
+  </div>
+
+  <div style="clear: both"></div>
+}
+
+@sortableHeader(ascendingSorter: LinkSorter, descendingSorter: LinkSorter)(content: Html) = {
+  <a onclick="updateSorting('@if(sorting == ascendingSorter) {@descendingSorter.id} else {@ascendingSorter.id}')">
+    @content
+    <img src="@sorting match {
+                case `ascendingSorter`  => {@Assets.at("img/sort-ascending.png")}
+                case `descendingSorter` => {@Assets.at("img/sort-descending.png")}
+                case _                  => {@Assets.at("img/sort.png")}
+              }"/>
+  </a>
+}
+
+@renderLink(link: EvalLink, counter: Int) = {
+  <div class="link @{link.linkType.name}" id="@id(link)">
+    <div class="@if(counter % 2 == 0) {link-header grey} else {link-header}" onmouseover="$(this).addClass('link-over');" onmouseout="$(this).removeClass('link-over');">
+      <div id="@id(link, "toggle")">
+        <span class="ui-icon ui-icon ui-icon-triangle-1-e"></span>
+      </div>
+      <div class="link-source">
+        <a href="@link.source" target="_blank">
+          @project.config.prefixes.shorten(link.source)
+        </a>
+      </div>
+      <div class="link-target">
+        <a href="@link.target" target="_blank">
+          @project.config.prefixes.shorten(link.target)
+        </a>
+      </div>
+      <div class="link-confidence">
+        @link.details.map { sim =>
+          @renderConfidence(sim.score)
+        }.getOrElse {
+          <div id="@id(link, "missing")" class="confidencebar">Missing</div>
+          <div class="mdl-tooltip" for="@id(link, "missing")">
+            The cache does not provide all values for the linked entities. Try reloading the cache and this page.
+          </div>
+        }
+      </div>
+
+      @if(showStatus) {
+        <div class="link-status">
+          @renderStatus(link.linkType, link.correct)
+        </div>
+      }
+
+      <div class="link-buttons">
+        @renderButtons(link)
+      </div>
+
+    </div>
+
+    <div class="link-details" id="@id(link, "details")">
+      @if(showDetails) {@renderDetails(link.details)} else {}
+      @if(showEntities) {@renderEntities(link.entities.get)} else {}
+    </div>
+    <div style="clear:both"></div>
+  </div>
+}
+
+@renderStatus(linkType: EvalLink.LinkType, correct: EvalLink.Correctness) = {
+  @linkType match {
+    case Positive if correct == Correct => {<div>correct</div>}
+    case Positive if correct == Incorrect => {<div>incorrect</div>}
+    case Negative if correct == Correct => {<div>correct</div>}
+    case Negative if correct == Incorrect => {<div>incorrect</div>}
+    case Generated if correct == Correct => {<div>correct</div>}
+    case Generated if correct == Incorrect => {<div>wrong</div>}
+    case _ => {<div>unknown</div>}
+  }
+}
+
+@renderButtons(link: EvalLink) = {
+  @widgets.linkButtons(link, rateButtons)
+}
+
+@renderEntities(entities: DPair[Entity]) = {
+  <ul class="details-tree">
+    @renderEntity(entities.source, "source")
+    @renderEntity(entities.target, "target")
+  </ul>
+}
+
+@renderEntity(entity: Entity, divClassPrefix: String) = {
+  <li>
+    <span class="@{divClassPrefix}-value">
+      @project.config.prefixes.shorten(entity.uri)
+    </span>
+    <ul>
+      @for(typedPath <- entity.schema.typedPaths;
+           path = typedPath.toUntypedPath) {
+        @renderValues(path, entity.evaluate(path), divClassPrefix)
+      }
+    </ul>
+  </li>
+}
+
+@renderValues(path: UntypedPath, values: Seq[String], divClassPrefix: String) = {
+  <li>
+    @path.serialize()(project.config.prefixes)
+    @values.take(10).map(v => <span class={divClassPrefix + "-value"}>{project.config.prefixes.shorten(v)}</span>)
+    @if(values.size > 10) {...} else {}
+  </li>
+}
+
+@renderDetails(details: Option[Confidence]) = { @details match {
+  case Some(similarity) => {
+    <ul class="details-tree">
+      @renderSimilarity(similarity)
+    </ul>
+  }
+  case None => {No details}
+}}
+
+@renderSimilarity(similarity: Confidence) = { @similarity match {
+  case AggregatorConfidence(value, aggregation, children) => {
+    <li>
+      <span class="aggregation">Aggregation:@aggregation.aggregator.pluginSpec.id (@aggregation.id)</span>
+      @renderConfidence(value)
+      <ul>
+        @children.map(renderSimilarity)
+      </ul>
+    </li>
+  }
+  case ComparisonConfidence(value, comparison, input1, input2) => {
+    <li>
+      <span class="comparison">Comparison:@comparison.metric.pluginSpec.id (@comparison.id)</span>
+      @renderConfidence(value)
+      <ul>
+        @renderValue(input1, "source")
+        @renderValue(input2, "target")
+      </ul>
+    </li>
+  }
+  case SimpleConfidence(value) => {
+    <li>Link Specification is empty</li>
+  }
+}}
+
+@renderValue(value: Value, divClassPrefix: String) = { @value match {
+  case TransformedValue(transform, values, children, error) => {
+    <li>
+      <span class="input">
+        Transform: @transform.transformer.pluginSpec.id (@transform.id)
+        @values.map(v => <span class={divClassPrefix + "-value"}>{v}</span>)
+      </span>
+      <ul>
+        @children.map(v => renderValue(v, divClassPrefix))
+      </ul>
+    </li>
+  }
+  case InputValue(input, values, error) => {
+    <li>
+      <span class="input">
+        Input: @input.path.serialize()(project.config.prefixes) (@input.id)
+        @for(v <- values) {
+          <span class="@(divClassPrefix)-value">@convertToLinkIfDetected(v)</span>
+        }
+      </span>
+    </li>
+  }
+}}
+
+@convertToLinkIfDetected(valueString: String) = {
+  @if(valueString.startsWith("http://") || valueString.startsWith("https://")) {
+    <a target="_blank" href="@valueString">@valueString</a>
+  } else {
+    @valueString
+  }
+}
+
+@renderConfidence(value: Option[Double]) = { @value match {
+  case Some(v) => {
+    <div class="confidencebar">
+      <div class="confidence">@{"%.1f".format((v) * 100)}%</div>
+    </div>
+  }
+  case None => {}
+}}
+
+@id(link: EvalLink, prefix: String = "") = @{
+  prefix + link.hashCode
+}

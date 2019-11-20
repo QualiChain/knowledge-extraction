@@ -1,0 +1,1547 @@
+[{
+		"course" : {
+			"id" : 935784,
+			"name" : "VMLA Example",
+			"account_id" : 81259,
+			"group_weighting_scheme" : null,
+			"workflow_state" : "available",
+			"start_at" : "2015-05-05T14:04:00Z",
+			"conclude_at" : null,
+			"grading_standard_id" : null,
+			"is_public" : true,
+			"allow_student_wiki_edits" : false,
+			"created_at" : "2015-05-05T13:36:10Z",
+			"updated_at" : "2015-10-16T02:21:37Z",
+			"show_public_context_messages" : null,
+			"syllabus_body" : "\u003Cp style=\"text-align: center;\"\u003E \u003C/p\u003E\n\u003Cp\u003E\u003Ciframe src=\"https://docs.google.com/document/d/1UxziQADeEcnAjBpqkoTssgI8e1Y1u78_joLkLWCm0FU/pub?embedded=true\" width=\"764\" height=\"764\"\u003E\u003C/iframe\u003E\u003C/p\u003E",
+			"allow_student_forum_attachments" : true,
+			"default_wiki_editing_roles" : "teachers",
+			"wiki_id" : 431559,
+			"allow_student_organized_groups" : true,
+			"course_code" : "VMLA",
+			"default_view" : "wiki",
+			"abstract_course_id" : null,
+			"root_account_id" : 10,
+			"enrollment_term_id" : 1,
+			"sis_source_id" : null,
+			"sis_batch_id" : null,
+			"open_enrollment" : false,
+			"storage_quota" : 262144000,
+			"tab_configuration" : [{
+					"id" : 0
+				}, {
+					"id" : 10
+				}, {
+					"id" : 1
+				}, {
+					"id" : 14
+				}, {
+					"id" : 3
+				}, {
+					"id" : 6
+				}, {
+					"id" : 8
+				}, {
+					"id" : 11
+				}, {
+					"id" : 4,
+					"hidden" : true
+				}, {
+					"id" : 15,
+					"hidden" : true
+				}, {
+					"id" : 2,
+					"hidden" : true
+				}, {
+					"id" : 5,
+					"hidden" : true
+				}, {
+					"id" : 12,
+					"hidden" : true
+				}, {
+					"id" : 16,
+					"hidden" : true
+				}
+			],
+			"allow_wiki_comments" : null,
+			"turnitin_comments" : null,
+			"self_enrollment" : false,
+			"license" : "private",
+			"indexed" : true,
+			"restrict_enrollments_to_course_dates" : false,
+			"template_course_id" : null,
+			"locale" : null,
+			"settings" : {
+				"public_syllabus" : true,
+				"hide_final_grade" : false,
+				"hide_distribution_graphs" : false,
+				"allow_student_discussion_topics" : true,
+				"is_public_to_auth_users" : false,
+				"restrict_student_past_view" : false,
+				"restrict_student_future_view" : false,
+				"course_format" : "",
+				"allow_student_discussion_editing" : true
+			},
+			"replacement_course_id" : null,
+			"stuck_sis_fields" : ["restrict_enrollments_to_course_dates", "start_at", "workflow_state"],
+			"public_description" : "",
+			"self_enrollment_code" : null,
+			"self_enrollment_limit" : null,
+			"integration_id" : null,
+			"time_zone" : "America/Denver",
+			"lti_context_id" : null,
+			"turnitin_id" : null,
+			"show_announcements_on_home_page" : null,
+			"home_page_announcement_limit" : null
+		}
+	}, {
+		"course" : {
+			"id" : 935793,
+			"name" : "8th Agricultural Science",
+			"account_id" : 81259,
+			"group_weighting_scheme" : null,
+			"workflow_state" : "available",
+			"start_at" : "2015-05-05T15:33:42Z",
+			"conclude_at" : null,
+			"grading_standard_id" : null,
+			"is_public" : true,
+			"allow_student_wiki_edits" : false,
+			"created_at" : "2015-05-05T14:05:32Z",
+			"updated_at" : "2017-04-11T22:06:04Z",
+			"show_public_context_messages" : null,
+			"syllabus_body" : null,
+			"allow_student_forum_attachments" : false,
+			"default_wiki_editing_roles" : "teachers",
+			"wiki_id" : 431569,
+			"allow_student_organized_groups" : true,
+			"course_code" : "103 Ag",
+			"default_view" : "feed",
+			"abstract_course_id" : null,
+			"root_account_id" : 10,
+			"enrollment_term_id" : 1,
+			"sis_source_id" : null,
+			"sis_batch_id" : null,
+			"open_enrollment" : false,
+			"storage_quota" : 262144000,
+			"tab_configuration" : [],
+			"allow_wiki_comments" : null,
+			"turnitin_comments" : null,
+			"self_enrollment" : false,
+			"license" : "public_domain",
+			"indexed" : true,
+			"restrict_enrollments_to_course_dates" : false,
+			"template_course_id" : null,
+			"locale" : null,
+			"settings" : {
+				"public_syllabus" : true,
+				"is_public_to_auth_users" : true,
+				"restrict_student_past_view" : false,
+				"restrict_student_future_view" : false,
+				"course_format" : "",
+				"allow_student_discussion_topics" : true,
+				"allow_student_discussion_editing" : true,
+				"hide_final_grade" : false,
+				"hide_distribution_graphs" : false
+			},
+			"replacement_course_id" : null,
+			"stuck_sis_fields" : ["course_code", "restrict_enrollments_to_course_dates", "start_at", "workflow_state"],
+			"public_description" : "",
+			"self_enrollment_code" : null,
+			"self_enrollment_limit" : null,
+			"integration_id" : null,
+			"time_zone" : "America/New_York",
+			"lti_context_id" : null,
+			"turnitin_id" : null,
+			"show_announcements_on_home_page" : null,
+			"home_page_announcement_limit" : null
+		}
+	}, {
+		"course" : {
+			"id" : 935827,
+			"name" : "Bartlett 1st",
+			"account_id" : 81259,
+			"group_weighting_scheme" : null,
+			"workflow_state" : "available",
+			"start_at" : "2015-08-03T11:00:00Z",
+			"conclude_at" : "2016-05-25T19:00:00Z",
+			"grading_standard_id" : 0,
+			"is_public" : true,
+			"allow_student_wiki_edits" : false,
+			"created_at" : "2015-05-05T16:08:58Z",
+			"updated_at" : "2015-05-05T16:19:47Z",
+			"show_public_context_messages" : null,
+			"syllabus_body" : "\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: x-large;\"\u003E6\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003Eth \u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: x-large;\"\u003EGrade Common Core Mathematics 2014-2015 Pacing Guide\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E6--2014\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold;\"\u003E1\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: xx-small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: xx-small;\"\u003Est \u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold;\"\u003ENine Weeks\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold;\"\u003EJuly 31 \u003C/span\u003E\u003Cspan lang=\"JA\" style=\"font-family: Trebuchet MS,Bold;\"\u003E– \u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold;\"\u003EOctober 2\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003E\u003Ci\u003E\u003C/i\u003E\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003ESeptember 1 (Labor Day Holiday)\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003E\u003Ci\u003E\u003C/i\u003E\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003EUnit 1: Number System Fluency ( 4 weeks; July 31- August 29)\u003C/p\u003E\n\u003Cp\u003ECompute fluently with multi-digit numbers and find common factors and multiples.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003ECC.6.NS.4 \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003EFind the greatest common factor of two whole numbers less than or equal to 100 and the least\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Ecommon multiple of two whole numbers less than or equal to 12. Use the distributive property to\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003Eexpress a sum of two whole numbers 1\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E–\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E100 with a common factor as a multiple of a sum of two whole\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Enumbers with no common factor.\u003C/p\u003E\n\u003Cp\u003EApply and extend previous understandings of multiplication and division to divide fractions by fractions.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003ECC.6.NS.1 \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003EInterpret and compute quotients of fractions, and solve word problems involving division of\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003Efractions by fractions, e.g., by using visual fraction models \u003C/span\u003E\u003C/span\u003E\u003Cstrong\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003Eand \u003C/span\u003E\u003C/span\u003E\u003C/strong\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003Eequations to represent the problem.\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003ECompute fluently with multi-digit numbers and find common factors and multiples.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003ECC.6.NS.2 \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003EFluently divide multi-digit numbers using the \u003C/span\u003E\u003C/span\u003E\u003Cstrong\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003Estandard algorithm.\u003C/span\u003E\u003C/span\u003E\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003ECC.6.NS.3 \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003EFluently add, subtract, multiply, and divide multi-digit decimals using the standard algorithm for\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Eeach operation.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: medium;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: medium;\"\u003EUnit 2: Rate, Ratio, \u0026amp; Proportional Reasoning (MODELS) ( 4 weeks; September 3 \u003C/span\u003E\u003C/span\u003E\u003Cspan lang=\"JA\" style=\"font-family: Trebuchet MS,Bold; font-size: medium;\"\u003E\u003Cspan lang=\"JA\" style=\"font-family: Trebuchet MS,Bold; font-size: medium;\"\u003E– \u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: medium;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: medium;\"\u003EOctober 2)\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003EUnderstand ratio concepts and use ratio reasoning to solve problems.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003ECC.6.RP.1 \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003EUnderstand the concept of a ratio and use ratio language to describe a ratio relationship between\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Etwo quantities.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003ECC.6.RP.2 \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003EUnderstand the concept of a unit rate associated with a ratio with (b not equal to zero), and use\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Erate language in the context of a ratio relationship.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003ECC.6.RP.3 \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003EUse ratio and rate reasoning to solve real-world and mathematical problems, e.g., by reasoning\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Eabout tables of equivalent ratios, tape diagrams, double number line diagrams, or equations.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003E3b. \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003ESolve unit rate problems including those involving unit pricing and constant speed. (MODELS)\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003E3c\u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E. Find a percent of a quantity as a rate per 100 (e.g., 30% of a quantity means 30/100 times the\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Equantity); solve problems involving finding the whole given a part and the percent. Explore and\u003C/p\u003E\n\u003Cp\u003Emodel percents using multiple representations. (MODELS)\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: x-large;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: x-large;\"\u003E6\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003Eth \u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: x-large;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: x-large;\"\u003EGrade Common Core Mathematics 2014-2015 Pacing Guide\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E6--2014\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: large;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: large;\"\u003E2\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: xx-small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: xx-small;\"\u003End \u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: large;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: large;\"\u003ENine Weeks\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Comic Sans MS,Bold;\"\u003EOctober 3 \u003C/span\u003E\u003Cspan style=\"font-family: Comic Sans MS,Bold;\"\u003E– \u003C/span\u003E\u003Cspan style=\"font-family: Comic Sans MS,Bold;\"\u003EDecember 19\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003E\u003Ci\u003E\u003C/i\u003E\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,BoldItalic; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,BoldItalic; font-size: small;\"\u003EOctober 6-9 (Fall Holiday); October 13 (Student Holiday); October 20-24 (ITBS);N\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS,BoldItalic; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,BoldItalic; font-size: small;\"\u003Eovember 11 (Veteran’s\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003E\u003Ci\u003E\u003C/i\u003E\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003EDay); November 24-28 (Thanksgiving Holiday)\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003E\u003Ci\u003E\u003C/i\u003E\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: medium;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: medium;\"\u003EUnit 3: Expressions ( 4 weeks; October 3 \u003C/span\u003E\u003C/span\u003E\u003Cspan lang=\"JA\" style=\"font-family: Trebuchet MS,Bold; font-size: medium;\"\u003E\u003Cspan lang=\"JA\" style=\"font-family: Trebuchet MS,Bold; font-size: medium;\"\u003E– \u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: medium;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: medium;\"\u003ENovember 7)\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003EApply and extend previous understandings of arithmetic to algebraic expressions.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003ECC.6.EE.1 \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003EWrite and evaluate numerical expressions involving whole-number exponents.\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003ECC.6.EE.2 \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003EWrite, read, and evaluate expressions in which letters stand for numbers.\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003E2a\u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E. Write expressions that record operations with numbers and with letters standing for numbers. For\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003Eexample, express the calculation “Subtract y from 5” as –\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E. Translate verbal phrases to algebraic\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Eexpressions Use variables, such as x or y, for unknown quantities in algebraic expressions\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003E2b\u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E. Identify parts of an expression using mathematical terms (sum, term, product, factor, quotient,\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Eand coefficient); view one or more parts of an expression as a single entity. For example, describe\u003C/p\u003E\n\u003Cp\u003Ethe expression as a product of two factors; view as both a single entity and a sum of two terms.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003E2c\u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E. Evaluate expressions at specific values for their variables. Include expressions that arise from\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Eformulas in real-world problems. Perform arithmetic operations, including those involving wholenumber\u003C/p\u003E\n\u003Cp\u003Eexponents, in the conventional order when there are no parentheses to specify a particular\u003C/p\u003E\n\u003Cp\u003Eorder (Order of Operations).\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003ECC.6.EE.3 \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003EApply the properties of operations to generate equivalent expressions. Simplify algebraic\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Eexpressions, using commutative, associative, and distributive properties as appropriate.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003ECC.6.EE.4 \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003EIdentify when two expressions are equivalent (i.e., when the two expressions name the same\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Enumber regardless of which value is substituted into them).\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: medium;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: medium;\"\u003EUnit 4a: Equations \u0026amp; Inequalities ( 4 weeks; November 12 \u003C/span\u003E\u003C/span\u003E\u003Cspan lang=\"JA\" style=\"font-family: Trebuchet MS,Bold; font-size: medium;\"\u003E\u003Cspan lang=\"JA\" style=\"font-family: Trebuchet MS,Bold; font-size: medium;\"\u003E– \u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: medium;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: medium;\"\u003EDecember 16)\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003EReason about and solve one-variable equations and inequalities.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003ECC.6.EE.5 \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003EUnderstand solving an equation or inequality as a process of answering a question: which values\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Efrom a specified set, if any, make the equation or inequality true? Use substitution to determine\u003C/p\u003E\n\u003Cp\u003Ewhether a given number in a specified set makes an equation or inequality true.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003ECC.6.EE.6 \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003EUse variables to represent numbers and write expressions when solving a real-world or\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Emathematical problem; understand that a variable can represent an unknown number, or, depending on\u003C/p\u003E\n\u003Cp\u003Ethe purpose at hand, any number in a specified set. Given a problem, define a variable, write an\u003C/p\u003E\n\u003Cp\u003Eequation.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003ECC.6.EE.7 \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003ESolve real-world and mathematical problems by writing and solving equations of the form\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Ci\u003E\u003C/i\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003E\u003Ci\u003Ex \u003C/i\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E+ \u003C/span\u003E\u003C/span\u003E\u003Ci\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003Ep \u003C/span\u003E\u003C/span\u003E\u003C/i\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E= \u003C/span\u003E\u003C/span\u003E\u003Ci\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003Eq \u003C/span\u003E\u003C/span\u003E\u003C/i\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003Eand \u003C/span\u003E\u003C/span\u003E\u003Ci\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003Epx \u003C/span\u003E\u003C/span\u003E\u003C/i\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E= \u003C/span\u003E\u003C/span\u003E\u003Ci\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003Eq \u003C/span\u003E\u003C/span\u003E\u003C/i\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003Efor cases in which \u003C/span\u003E\u003C/span\u003E\u003Ci\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003Ep\u003C/span\u003E\u003C/span\u003E\u003C/i\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E, \u003C/span\u003E\u003C/span\u003E\u003Ci\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003Eq \u003C/span\u003E\u003C/span\u003E\u003C/i\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003Eand \u003C/span\u003E\u003C/span\u003E\u003Ci\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003Ex \u003C/span\u003E\u003C/span\u003E\u003C/i\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003Eare all non-negative rational numbers.\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003EUnderstand ratio concepts and use ratio reasoning to solve problems.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003ECC.6.RP.3 \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003EUse ratio and rate reasoning to solve real-world and mathematical problems, e.g., by reasoning\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003Eabout tables of equivalent ratios, tape diagrams, double number line diagrams, or equations. \u003C/span\u003E\u003C/span\u003E\u003Cstrong\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E(Connect\u003C/span\u003E\u003C/span\u003E\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003Emodels to equations.)\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003E3b\u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E. Solve unit rate problems including those involving unit pricing and constant speed. For example, if\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Eit took 7 hours to mow 4 lawns, then at that rate, how many lawns could be mowed in 35 hours? At\u003C/p\u003E\n\u003Cp\u003Ewhat rate were lawns being mowed?\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003E3c\u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E. Find a percent of a quantity as a rate per 100 (e.g., 30% of a quantity means 30/100 times the\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Equantity); solve problems involving finding the whole given a part and the percent. Explore and\u003C/p\u003E\n\u003Cp\u003Emodel percents using multiple representations\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003E3d. \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003EUse ratio reasoning to convert measurement units; manipulate and transform units appropriately\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Ewhen multiplying or dividing quantities. Students will convert from one unit to another within one\u003C/p\u003E\n\u003Cp\u003Esystem of measurement (customary or metric) by using proportional relationships. (length,\u003C/p\u003E\n\u003Cp\u003Ecapacity/volume, and mass\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: x-large;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: x-large;\"\u003E6\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003Eth \u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: x-large;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: x-large;\"\u003EGrade Common Core Mathematics 2014-2015 Pacing Guide\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E6--2014\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: large;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: large;\"\u003E3\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: xx-small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: xx-small;\"\u003Erd \u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: large;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: large;\"\u003ENine Weeks\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold;\"\u003EJanuary 6 \u003C/span\u003E\u003Cspan lang=\"JA\" style=\"font-family: Trebuchet MS,Bold;\"\u003E– \u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold;\"\u003EMarch 13\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003E\u003Ci\u003E\u003C/i\u003E\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,BoldItalic; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,BoldItalic; font-size: small;\"\u003EJanuary 19 (MLK Holiday); February 16 (\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS,BoldItalic; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,BoldItalic; font-size: small;\"\u003EPresident’s Day Holiday\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS,BoldItalic; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,BoldItalic; font-size: small;\"\u003E); February 17 (Student Holiday)\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003E\u003Ci\u003E\u003C/i\u003E\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: medium;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: medium;\"\u003EUnit 4b: Equations \u0026amp; Inequalities ( 2.5 weeks; January 7 \u003C/span\u003E\u003C/span\u003E\u003Cspan lang=\"JA\" style=\"font-family: Trebuchet MS,Bold; font-size: medium;\"\u003E\u003Cspan lang=\"JA\" style=\"font-family: Trebuchet MS,Bold; font-size: medium;\"\u003E– \u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: medium;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: medium;\"\u003EJanuary 22)\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003ECC.6.RP.3 \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003EUse ratio and rate reasoning to solve real-world and mathematical problems, e.g., by reasoning\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Eabout tables of equivalent ratios, tape diagrams, double number line diagrams, or equations.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003E3a\u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E. Make tables of equivalent ratios relating quantities with whole-number measurements, find missing\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Evalues in the tables, and plot the pairs of values on the coordinate plane. Use tables to compare\u003C/p\u003E\n\u003Cp\u003Eratios. Analyze and describe patterns arising from mathematical rules, tables, and graphs\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003ECC.6.EE.9 \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003EUse variables to represent two quantities in a real-world problem that change in relationship to\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Eone another; write an equation to express one quantity, thought of as the dependent variable, in terms\u003C/p\u003E\n\u003Cp\u003Eof the other quantity, thought of as the independent variable. Analyze the relationship between the\u003C/p\u003E\n\u003Cp\u003Edependent and independent variables using graphs and tables, and relate these to the equation.\u003C/p\u003E\n\u003Cp\u003EReason about and solve one-variable equations and inequalities.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003ECC.6.EE.5 \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003EUnderstand solving an equation or inequality as a process of answering a question: which values\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Efrom a specified set, if any, make the equation or inequality true? Use substitution to determine\u003C/p\u003E\n\u003Cp\u003Ewhether a given number in a specified set makes an equation or inequality true.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003ECC.6.EE.8 \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003EWrite an inequality of the form \u003C/span\u003E\u003C/span\u003E\u003Ci\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003Ex \u003C/span\u003E\u003C/span\u003E\u003C/i\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u0026gt; \u003C/span\u003E\u003C/span\u003E\u003Ci\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003Ec \u003C/span\u003E\u003C/span\u003E\u003C/i\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003Eor \u003C/span\u003E\u003C/span\u003E\u003Ci\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003Ex \u003C/span\u003E\u003C/span\u003E\u003C/i\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u0026lt; \u003C/span\u003E\u003C/span\u003E\u003Ci\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003Ec \u003C/span\u003E\u003C/span\u003E\u003C/i\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003Eto represent a constraint or condition in a realworld\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003Eor mathematical problem. Recognize that inequalities of the form \u003C/span\u003E\u003C/span\u003E\u003Ci\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003Ex \u003C/span\u003E\u003C/span\u003E\u003C/i\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u0026gt; \u003C/span\u003E\u003C/span\u003E\u003Ci\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003Ec \u003C/span\u003E\u003C/span\u003E\u003C/i\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003Eor \u003C/span\u003E\u003C/span\u003E\u003Ci\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003Ex \u003C/span\u003E\u003C/span\u003E\u003C/i\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u0026lt; \u003C/span\u003E\u003C/span\u003E\u003Ci\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003Ec \u003C/span\u003E\u003C/span\u003E\u003C/i\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003Ehave infinitely\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Emany solutions; represent solutions of such inequalities on number line diagrams. Include inequalities of\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003Ethe form \u003C/span\u003E\u003C/span\u003E\u003Ci\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003Ex c \u003C/span\u003E\u003C/span\u003E\u003C/i\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003Eand \u003C/span\u003E\u003C/span\u003E\u003Ci\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003Ex c\u003C/span\u003E\u003C/span\u003E\u003C/i\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E.\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: medium;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: medium;\"\u003EUnit 5: Area \u0026amp; Volume ( 3 weeks; January 23 \u003C/span\u003E\u003C/span\u003E\u003Cspan lang=\"JA\" style=\"font-family: Trebuchet MS,Bold; font-size: medium;\"\u003E\u003Cspan lang=\"JA\" style=\"font-family: Trebuchet MS,Bold; font-size: medium;\"\u003E– \u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: medium;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: medium;\"\u003EFebruary 13)\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003ESolve real-world and mathematical problems involving area, surface area, and volume.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003ECC.6.G.1 \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003EFind area of right triangles, other triangles, special quadrilaterals, and polygons by composing into\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Erectangles or decomposing into triangles and other shapes; apply these techniques in the context of\u003C/p\u003E\n\u003Cp\u003Esolving real-world and mathematical problems. Find the area of a polygon (regular and irregular) by\u003C/p\u003E\n\u003Cp\u003Edividing it into squares, rectangles, and/or triangles and find the sum of the areas of those shapes.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003ECC.6.G.2 \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003EFind the volume of a right rectangular prism with fractional edge lengths by packing it with unit\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Ecubes of the appropriate unit fraction edge lengths, and show that the volume is the same as would be\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003Efound by multiplying the edge lengths of the prism. Apply the formulas V = \u003C/span\u003E\u003C/span\u003E\u003Ci\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003Elwh \u003C/span\u003E\u003C/span\u003E\u003C/i\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003Eand V = \u003C/span\u003E\u003C/span\u003E\u003Cstrong\u003E\u003Ci\u003E\u003Cspan style=\"font-family: Trebuchet MS,BoldItalic; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,BoldItalic; font-size: small;\"\u003EB\u003C/span\u003E\u003C/span\u003E\u003C/i\u003E\u003C/strong\u003E\u003Ci\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Italic; font-size: small;\"\u003Eh \u003C/span\u003E\u003C/span\u003E\u003C/i\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003Eto find\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Evolumes of right rectangular prisms with fractional edge lengths in the context of solving real-world and\u003C/p\u003E\n\u003Cp\u003Emathematical problems.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003ECC.6.G.4 \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003ERepresent three-dimensional figures using nets made up of rectangles and triangles, and use the\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Enets to find the surface area of these figures. Apply these techniques in the context of solving realworld\u003C/p\u003E\n\u003Cp\u003Eand mathematical problems.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: medium;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: medium;\"\u003EUnit 6: \u003C/span\u003E\u003C/span\u003E\u003Cspan lang=\"JA\" style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan lang=\"JA\" style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003EExploring Rationals: Numbers \u0026amp; their Opposites (≈ \u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E3 weeks; February 18 \u003C/span\u003E\u003C/span\u003E\u003Cspan lang=\"JA\" style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan lang=\"JA\" style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E– \u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003EMarch 13)\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003EApply and extend previous understandings of numbers to the system of rational numbers.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003ECC.6.NS.5 \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003EUnderstand that positive and negative numbers are used together to describe quantities having\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Eopposite directions or values (e.g., temperature above/below zero, elevation above/below sea level,\u003C/p\u003E\n\u003Cp\u003Edebits/credits, positive/negative electric charge); use positive and negative numbers to represent\u003C/p\u003E\n\u003Cp\u003Equantities in real-world contexts, explaining the meaning of 0 in each situation.\u003C/p\u003E\n\u003Cp\u003EStudents will understand the meaning of positive and negative rational numbers\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003ECC.6.NS.6 \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003EUnderstand a rational number as a point on the number line. Extend number line diagrams and\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Ecoordinate axes familiar from previous grades to represent points on the line and in the plane with\u003C/p\u003E\n\u003Cp\u003Enegative number coordinates.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: x-large;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: x-large;\"\u003E6\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003Eth \u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: x-large;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: x-large;\"\u003EGrade Common Core Mathematics 2014-2015 Pacing Guide\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E6--2014\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003E6a. \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003ERecognize opposite signs of numbers as indicating locations on opposite sides of 0 on the number line;\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003Erecognize that the opposite of the opposite of a number is the number itself, e.g., (\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E–\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E3) = 3, and that 0\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Eis its own opposite.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003E6b. \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003EUnderstand signs of numbers in ordered pairs as indicating locations in quadrants of the coordinate\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Eplane; recognize that when two ordered pairs differ only by signs, the locations of the points are\u003C/p\u003E\n\u003Cp\u003Erelated by reflections across one or both axes.\u003C/p\u003E\n\u003Cp\u003EGiven a point in the coordinate plane, determine the coordinates resulting from a reflection.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003E6c. \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003EFind and position integers and other rational numbers on a horizontal or vertical number line diagram;\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Efind and position pairs of integers and other rational numbers on a coordinate plane.\u003C/p\u003E\n\u003Cp\u003ECC.6.NS.7 Understand ordering and absolute value of rational numbers.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003E7a. \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003EInterpret statements of inequality as statements about the relative position of two numbers on a\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003Enumber line diagram. For example, interpret \u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E–– \u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003Eas a statement that \u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E–\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E3 is located to the right of \u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E–\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E7 on a\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Enumber line oriented from left to right.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003E7b. \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003EWrite, interprets, and explains statements of order for rational numbers in real-world contexts. For\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003Eexample, write \u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E–\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E3°C \u0026gt; \u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E–\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E7°C to express the fact that \u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E–\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E3°C is warmer than \u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E–\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E7°C.\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003E7c. \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003EUnderstand the absolute value of a rational number as its distance from 0 on the number line; interpret\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Eabsolute value as magnitude for a positive or negative quantity in a real-world situation. For example,\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003Efor an account balance of \u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E–\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E30 dollars, write |\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E–\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E30| = 30 to describe the size of the debt in dollars.\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003E7d. \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003EDistinguish comparisons of absolute value from statements about order. For example, recognize that an\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003Eaccount balance less than \u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E–\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E30 dollars represents a debt greater than 30 dollars.\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003ECC.6.NS.8 \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003ESolve real-world and mathematical problems by graphing points in all four quadrants of the\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Ecoordinate plane. Include use of coordinates and absolute value to find distances between points with\u003C/p\u003E\n\u003Cp\u003Ethe same first coordinate or the same second coordinate.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003ECC.6.G.3 \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003EDraw polygons in the coordinate plane given coordinates for the vertices; use coordinates to find\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Ethe length of a side joining points with the same first coordinate or the same second coordinate. Apply\u003C/p\u003E\n\u003Cp\u003Ethese techniques in the context of solving real-world and mathematical problems.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: large;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: large;\"\u003E4\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: xx-small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: xx-small;\"\u003Eth \u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: large;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: large;\"\u003ENine Weeks\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold;\"\u003EMarch 16 \u003C/span\u003E\u003Cspan lang=\"JA\" style=\"font-family: Trebuchet MS,Bold;\"\u003E– \u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold;\"\u003EMay 22\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003E\u003Ci\u003E\u003C/i\u003E\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003EMarch 30-April 3 (Spring Break)\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003E\u003Ci\u003E\u003C/i\u003E\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003EUnit 7: \u003C/span\u003E\u003C/span\u003E\u003Cspan lang=\"JA\" style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan lang=\"JA\" style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003EStatistics (≈ \u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E2 weeks; March 16\u003C/span\u003E\u003C/span\u003E\u003Cspan lang=\"JA\" style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan lang=\"JA\" style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E– \u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003EMarch 27)\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003EDevelop understanding of statistical variability.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003ECC.6.SP.1 \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003ERecognize a statistical question as one that anticipates variability in the data related to the\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Equestion and accounts for it in the answers.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003ECC.6.SP.2 \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003EUnderstand that a set of data collected to answer a statistical question has a distribution which\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Ecan be described by its center, spread, and overall shape.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003ECC.6.SP.3 \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003ERecognize that a measure of center for a numerical data set summarizes all of its values with a\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Esingle number, while a measure of variation describes how its values vary with a single number.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: x-large;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: x-large;\"\u003E6\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003Eth \u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: x-large;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: x-large;\"\u003EGrade Common Core Mathematics 2014-2015 Pacing Guide\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E6--2014\u003C/p\u003E\n\u003Cp\u003ESummarize and describe distributions.\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003ECC.6.SP.4 \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003EDisplay numerical data in plots on a number line, including dot plots, histograms, and box plots.\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS,Bold; font-size: small;\"\u003E\u003Cstrong\u003ECC.6.SP.5 \u003C/strong\u003E\u003C/span\u003E\u003C/span\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003E\u003Cspan style=\"font-family: Trebuchet MS; font-size: small;\"\u003ESummarize numerical data sets in relation to their context, such as by:\u003C/span\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003Ea. Reporting the number of observations. Analyze categorical data using frequencies of\u003C/p\u003E\n\u003Cp\u003Ecategories or proportions of categories\u003C/p\u003E\n\u003Cp\u003Eb. Describing the nature of the attribute under investigation, including how it was measured\u003C/p\u003E\n\u003Cp\u003Eand its units of measurement. Students summarize numerical data by providing background\u003C/p\u003E\n\u003Cp\u003Einformation about the attribute being measured, methods and unit of measurement, and the\u003C/p\u003E\n\u003Cp\u003Econtext of data collection activities\u003C/p\u003E\n\u003Cp\u003Ec. Giving quantitative measures of center (median and/or mean) and variability (interquartile range\u003C/p\u003E\n\u003Cp\u003Eand/or mean absolute deviation), as well as describing any overall pattern and any striking\u003C/p\u003E\n\u003Cp\u003Edeviations from the overall pattern with reference to the context in which the data was gathered.\u003C/p\u003E\n\u003Cp\u003EAnalyze numerical data using the appropriate measure of central tendency (mean and/or median).\u003C/p\u003E\n\u003Cp\u003EAnalyze data with respect to the appropriate measures of variation (range, interquartile range,\u003C/p\u003E\n\u003Cp\u003Eand/or mean absolute deviation). The choice of summary measures to report is related to the shape\u003C/p\u003E\n\u003Cp\u003Eof the distribution (symmetry versus skewed to the higher values or skewed to the lower values)\u003C/p\u003E\n\u003Cp\u003Ed. Relating the choice of measures of center and variability to the shape of the data distribution and\u003C/p\u003E\n\u003Cp\u003Ethe context in which the data was gathered.\u003C/p\u003E\n\u003Cp\u003E \u003C/p\u003E",
+			"allow_student_forum_attachments" : false,
+			"default_wiki_editing_roles" : "teachers",
+			"wiki_id" : 431611,
+			"allow_student_organized_groups" : true,
+			"course_code" : "B1",
+			"default_view" : "syllabus",
+			"abstract_course_id" : null,
+			"root_account_id" : 10,
+			"enrollment_term_id" : 1,
+			"sis_source_id" : null,
+			"sis_batch_id" : null,
+			"open_enrollment" : false,
+			"storage_quota" : 262144000,
+			"tab_configuration" : [],
+			"allow_wiki_comments" : null,
+			"turnitin_comments" : null,
+			"self_enrollment" : false,
+			"license" : "public_domain",
+			"indexed" : true,
+			"restrict_enrollments_to_course_dates" : true,
+			"template_course_id" : null,
+			"locale" : "en",
+			"settings" : {
+				"public_syllabus" : true,
+				"is_public_to_auth_users" : true,
+				"restrict_student_past_view" : false,
+				"restrict_student_future_view" : false,
+				"course_format" : "",
+				"allow_student_discussion_topics" : true,
+				"allow_student_discussion_editing" : true,
+				"hide_final_grade" : false,
+				"hide_distribution_graphs" : false
+			},
+			"replacement_course_id" : null,
+			"stuck_sis_fields" : ["conclude_at", "course_code", "restrict_enrollments_to_course_dates", "start_at", "workflow_state"],
+			"public_description" : "",
+			"self_enrollment_code" : null,
+			"self_enrollment_limit" : null,
+			"integration_id" : null,
+			"time_zone" : "America/New_York",
+			"lti_context_id" : null,
+			"turnitin_id" : null,
+			"show_announcements_on_home_page" : null,
+			"home_page_announcement_limit" : null
+		}
+	}, {
+		"course" : {
+			"id" : 935844,
+			"name" : "SoCal CanvasCon 2015",
+			"account_id" : 81259,
+			"group_weighting_scheme" : null,
+			"workflow_state" : "available",
+			"start_at" : "2015-05-05T16:36:00Z",
+			"conclude_at" : null,
+			"grading_standard_id" : null,
+			"is_public" : true,
+			"allow_student_wiki_edits" : false,
+			"created_at" : "2015-05-05T16:36:09Z",
+			"updated_at" : "2016-09-21T17:32:14Z",
+			"show_public_context_messages" : null,
+			"syllabus_body" : null,
+			"allow_student_forum_attachments" : true,
+			"default_wiki_editing_roles" : "teachers",
+			"wiki_id" : 431628,
+			"allow_student_organized_groups" : true,
+			"course_code" : "SOCALCON",
+			"default_view" : "wiki",
+			"abstract_course_id" : null,
+			"root_account_id" : 10,
+			"enrollment_term_id" : 1,
+			"sis_source_id" : null,
+			"sis_batch_id" : null,
+			"open_enrollment" : true,
+			"storage_quota" : 262144000,
+			"tab_configuration" : [{
+					"id" : 0
+				}, {
+					"id" : 14
+				}, {
+					"id" : 8
+				}, {
+					"id" : 6
+				}, {
+					"id" : 2
+				}, {
+					"id" : 11,
+					"hidden" : true
+				}, {
+					"id" : 3,
+					"hidden" : true
+				}, {
+					"id" : 16,
+					"hidden" : true
+				}, {
+					"id" : 1,
+					"hidden" : true
+				}, {
+					"id" : 5,
+					"hidden" : true
+				}, {
+					"id" : 15,
+					"hidden" : true
+				}, {
+					"id" : 4,
+					"hidden" : true
+				}, {
+					"id" : 10,
+					"hidden" : true
+				}, {
+					"id" : 12,
+					"hidden" : true
+				}
+			],
+			"allow_wiki_comments" : null,
+			"turnitin_comments" : null,
+			"self_enrollment" : true,
+			"license" : "public_domain",
+			"indexed" : true,
+			"restrict_enrollments_to_course_dates" : false,
+			"template_course_id" : null,
+			"locale" : null,
+			"settings" : {
+				"public_syllabus" : true,
+				"is_public_to_auth_users" : true,
+				"restrict_student_past_view" : false,
+				"restrict_student_future_view" : false,
+				"course_format" : "",
+				"allow_student_discussion_topics" : true,
+				"allow_student_discussion_editing" : true,
+				"hide_final_grade" : false,
+				"hide_distribution_graphs" : false
+			},
+			"replacement_course_id" : null,
+			"stuck_sis_fields" : ["course_code", "name", "restrict_enrollments_to_course_dates", "start_at", "workflow_state"],
+			"public_description" : "",
+			"self_enrollment_code" : "3LH47L",
+			"self_enrollment_limit" : null,
+			"integration_id" : null,
+			"time_zone" : "America/Denver",
+			"lti_context_id" : "a2bbf4b84da63211901777f86f7a78ac93f1123b",
+			"turnitin_id" : null,
+			"show_announcements_on_home_page" : null,
+			"home_page_announcement_limit" : null
+		}
+	}, {
+		"course" : {
+			"id" : 935897,
+			"name" : "i3@UNC - 2015",
+			"account_id" : 81259,
+			"group_weighting_scheme" : null,
+			"workflow_state" : "available",
+			"start_at" : "2015-05-25T04:00:00Z",
+			"conclude_at" : "2015-09-08T04:00:00Z",
+			"grading_standard_id" : null,
+			"is_public" : false,
+			"allow_student_wiki_edits" : false,
+			"created_at" : "2015-05-05T18:52:09Z",
+			"updated_at" : "2016-10-25T18:52:16Z",
+			"show_public_context_messages" : null,
+			"syllabus_body" : null,
+			"allow_student_forum_attachments" : true,
+			"default_wiki_editing_roles" : "teachers",
+			"wiki_id" : 431687,
+			"allow_student_organized_groups" : true,
+			"course_code" : "i3@UNC 2015",
+			"default_view" : "wiki",
+			"abstract_course_id" : null,
+			"root_account_id" : 10,
+			"enrollment_term_id" : 1,
+			"sis_source_id" : null,
+			"sis_batch_id" : null,
+			"open_enrollment" : false,
+			"storage_quota" : 262144000,
+			"tab_configuration" : [{
+					"id" : 0
+				}, {
+					"id" : 14
+				}, {
+					"id" : 10
+				}, {
+					"id" : 6
+				}, {
+					"id" : 15,
+					"hidden" : true
+				}, {
+					"id" : 3,
+					"hidden" : true
+				}, {
+					"id" : 11,
+					"hidden" : true
+				}, {
+					"id" : 16,
+					"hidden" : true
+				}, {
+					"id" : 5,
+					"hidden" : true
+				}, {
+					"id" : 1,
+					"hidden" : true
+				}, {
+					"id" : 4,
+					"hidden" : true
+				}, {
+					"id" : 12,
+					"hidden" : true
+				}, {
+					"id" : 8,
+					"hidden" : true
+				}, {
+					"id" : 2,
+					"hidden" : true
+				}
+			],
+			"allow_wiki_comments" : null,
+			"turnitin_comments" : null,
+			"self_enrollment" : false,
+			"license" : "private",
+			"indexed" : true,
+			"restrict_enrollments_to_course_dates" : false,
+			"template_course_id" : null,
+			"locale" : null,
+			"settings" : {
+				"public_syllabus" : false,
+				"is_public_to_auth_users" : true,
+				"restrict_student_past_view" : false,
+				"restrict_student_future_view" : false,
+				"course_format" : "online",
+				"allow_student_discussion_topics" : true,
+				"allow_student_discussion_editing" : true,
+				"hide_final_grade" : false,
+				"hide_distribution_graphs" : false
+			},
+			"replacement_course_id" : null,
+			"stuck_sis_fields" : ["conclude_at", "restrict_enrollments_to_course_dates", "start_at", "workflow_state"],
+			"public_description" : "",
+			"self_enrollment_code" : null,
+			"self_enrollment_limit" : null,
+			"integration_id" : null,
+			"time_zone" : "America/New_York",
+			"lti_context_id" : "aae51268df047cf5b4a0faa417d021386d0ebf89",
+			"turnitin_id" : null,
+			"show_announcements_on_home_page" : null,
+			"home_page_announcement_limit" : null
+		}
+	}, {
+		"course" : {
+			"id" : 936232,
+			"name" : "O.N.E.",
+			"account_id" : 81259,
+			"group_weighting_scheme" : null,
+			"workflow_state" : "available",
+			"start_at" : "2015-05-06T06:00:00Z",
+			"conclude_at" : "2016-07-03T06:00:00Z",
+			"grading_standard_id" : null,
+			"is_public" : true,
+			"allow_student_wiki_edits" : false,
+			"created_at" : "2015-05-06T20:49:37Z",
+			"updated_at" : "2015-08-17T22:56:03Z",
+			"show_public_context_messages" : null,
+			"syllabus_body" : null,
+			"allow_student_forum_attachments" : false,
+			"default_wiki_editing_roles" : "teachers",
+			"wiki_id" : 432082,
+			"allow_student_organized_groups" : true,
+			"course_code" : "BCFS-LMS",
+			"default_view" : "modules",
+			"abstract_course_id" : null,
+			"root_account_id" : 10,
+			"enrollment_term_id" : 1,
+			"sis_source_id" : null,
+			"sis_batch_id" : null,
+			"open_enrollment" : false,
+			"storage_quota" : 262144000,
+			"tab_configuration" : [{
+					"id" : 0
+				}, {
+					"id" : 14
+				}, {
+					"id" : 10
+				}, {
+					"id" : 1
+				}, {
+					"id" : 15
+				}, {
+					"id" : 3
+				}, {
+					"id" : 8
+				}, {
+					"id" : 4
+				}, {
+					"id" : 6
+				}, {
+					"id" : 2
+				}, {
+					"id" : 11
+				}, {
+					"id" : 12
+				}, {
+					"id" : 16
+				}, {
+					"id" : 5
+				}
+			],
+			"allow_wiki_comments" : null,
+			"turnitin_comments" : null,
+			"self_enrollment" : false,
+			"license" : "private",
+			"indexed" : true,
+			"restrict_enrollments_to_course_dates" : false,
+			"template_course_id" : null,
+			"locale" : "en",
+			"settings" : {
+				"public_syllabus" : true,
+				"is_public_to_auth_users" : true,
+				"restrict_student_past_view" : true,
+				"restrict_student_future_view" : true,
+				"course_format" : "online",
+				"allow_student_discussion_topics" : true,
+				"allow_student_discussion_editing" : true,
+				"hide_final_grade" : false,
+				"hide_distribution_graphs" : false
+			},
+			"replacement_course_id" : null,
+			"stuck_sis_fields" : ["conclude_at", "course_code", "name", "restrict_enrollments_to_course_dates", "start_at", "workflow_state"],
+			"public_description" : "",
+			"self_enrollment_code" : null,
+			"self_enrollment_limit" : null,
+			"integration_id" : null,
+			"time_zone" : "America/Chicago",
+			"lti_context_id" : null,
+			"turnitin_id" : null,
+			"show_announcements_on_home_page" : null,
+			"home_page_announcement_limit" : null
+		}
+	}, {
+		"course" : {
+			"id" : 936305,
+			"name" : "Motor Vehicle Academy, LLC Drivers Education",
+			"account_id" : 81259,
+			"group_weighting_scheme" : null,
+			"workflow_state" : "available",
+			"start_at" : "2017-01-09T23:15:00Z",
+			"conclude_at" : "2017-01-21T02:30:00Z",
+			"grading_standard_id" : null,
+			"is_public" : false,
+			"allow_student_wiki_edits" : false,
+			"created_at" : "2015-05-07T08:46:16Z",
+			"updated_at" : "2017-02-06T22:43:53Z",
+			"show_public_context_messages" : null,
+			"syllabus_body" : null,
+			"allow_student_forum_attachments" : true,
+			"default_wiki_editing_roles" : "teachers",
+			"wiki_id" : 432163,
+			"allow_student_organized_groups" : false,
+			"course_code" : "DRVED",
+			"default_view" : "feed",
+			"abstract_course_id" : null,
+			"root_account_id" : 10,
+			"enrollment_term_id" : 1,
+			"sis_source_id" : null,
+			"sis_batch_id" : null,
+			"open_enrollment" : true,
+			"storage_quota" : 262144000,
+			"tab_configuration" : [],
+			"allow_wiki_comments" : null,
+			"turnitin_comments" : null,
+			"self_enrollment" : true,
+			"license" : "private",
+			"indexed" : true,
+			"restrict_enrollments_to_course_dates" : false,
+			"template_course_id" : null,
+			"locale" : null,
+			"settings" : {
+				"public_syllabus" : false,
+				"is_public_to_auth_users" : true,
+				"restrict_student_past_view" : false,
+				"restrict_student_future_view" : false,
+				"course_format" : "blended",
+				"allow_student_discussion_topics" : true,
+				"allow_student_discussion_editing" : true,
+				"hide_final_grade" : false,
+				"hide_distribution_graphs" : true,
+				"organize_epub_by_content_type" : false,
+				"image_id" : "47874736",
+				"image_url" : "",
+				"public_syllabus_to_auth" : true
+			},
+			"replacement_course_id" : null,
+			"stuck_sis_fields" : ["conclude_at", "course_code", "name", "restrict_enrollments_to_course_dates", "start_at", "workflow_state"],
+			"public_description" : "",
+			"self_enrollment_code" : "3ANNM4",
+			"self_enrollment_limit" : null,
+			"integration_id" : null,
+			"time_zone" : "America/Denver",
+			"lti_context_id" : "44cf623b3b4ec198ee630f5e59f91285f0940fb7",
+			"turnitin_id" : null,
+			"show_announcements_on_home_page" : false,
+			"home_page_announcement_limit" : 3
+		}
+	}, {
+		"course" : {
+			"id" : 936945,
+			"name" : "Digital Learning",
+			"account_id" : 81259,
+			"group_weighting_scheme" : null,
+			"workflow_state" : "available",
+			"start_at" : null,
+			"conclude_at" : null,
+			"grading_standard_id" : null,
+			"is_public" : true,
+			"allow_student_wiki_edits" : false,
+			"created_at" : "2015-05-11T01:05:49Z",
+			"updated_at" : "2015-08-27T03:31:46Z",
+			"show_public_context_messages" : false,
+			"syllabus_body" : "",
+			"allow_student_forum_attachments" : false,
+			"default_wiki_editing_roles" : "teachers",
+			"wiki_id" : 432917,
+			"allow_student_organized_groups" : false,
+			"course_code" : "DL",
+			"default_view" : "modules",
+			"abstract_course_id" : null,
+			"root_account_id" : 10,
+			"enrollment_term_id" : 1,
+			"sis_source_id" : null,
+			"sis_batch_id" : null,
+			"open_enrollment" : true,
+			"storage_quota" : 262144000,
+			"tab_configuration" : [{
+					"id" : 0
+				}, {
+					"id" : 10
+				}, {
+					"id" : "context_external_tool_72070"
+				}, {
+					"id" : 11,
+					"hidden" : true
+				}, {
+					"id" : 2,
+					"hidden" : true
+				}, {
+					"id" : 6,
+					"hidden" : true
+				}, {
+					"id" : 5,
+					"hidden" : true
+				}, {
+					"id" : 15,
+					"hidden" : true
+				}, {
+					"id" : 1,
+					"hidden" : true
+				}, {
+					"id" : 3,
+					"hidden" : true
+				}, {
+					"id" : 8,
+					"hidden" : true
+				}, {
+					"id" : 4,
+					"hidden" : true
+				}, {
+					"id" : 14,
+					"hidden" : true
+				}, {
+					"id" : 16,
+					"hidden" : true
+				}, {
+					"id" : 12,
+					"hidden" : true
+				}
+			],
+			"allow_wiki_comments" : null,
+			"turnitin_comments" : null,
+			"self_enrollment" : true,
+			"license" : "cc_by_nc_sa",
+			"indexed" : true,
+			"restrict_enrollments_to_course_dates" : false,
+			"template_course_id" : null,
+			"locale" : "en-AU",
+			"settings" : {
+				"public_syllabus" : false,
+				"is_public_to_auth_users" : false,
+				"restrict_student_past_view" : false,
+				"restrict_student_future_view" : false,
+				"course_format" : "",
+				"allow_student_discussion_topics" : false,
+				"allow_student_discussion_editing" : true,
+				"hide_final_grade" : false,
+				"hide_distribution_graphs" : false
+			},
+			"replacement_course_id" : null,
+			"stuck_sis_fields" : ["course_code", "restrict_enrollments_to_course_dates", "start_at", "workflow_state"],
+			"public_description" : "",
+			"self_enrollment_code" : "PJ7NT6",
+			"self_enrollment_limit" : null,
+			"integration_id" : null,
+			"time_zone" : "Australia/Melbourne",
+			"lti_context_id" : "2beb9da7890d4125f45cf190899fa3295484c53b",
+			"turnitin_id" : null,
+			"show_announcements_on_home_page" : null,
+			"home_page_announcement_limit" : null
+		}
+	}, {
+		"course" : {
+			"id" : 938013,
+			"name" : "English for Nursing",
+			"account_id" : 81259,
+			"group_weighting_scheme" : null,
+			"workflow_state" : "available",
+			"start_at" : "2015-05-19T13:44:00Z",
+			"conclude_at" : null,
+			"grading_standard_id" : null,
+			"is_public" : true,
+			"allow_student_wiki_edits" : false,
+			"created_at" : "2015-05-14T17:18:57Z",
+			"updated_at" : "2015-07-07T13:21:12Z",
+			"show_public_context_messages" : null,
+			"syllabus_body" : "\u003Cp\u003E\u003Cstrong\u003EEnglish for Nursing\u003C/strong\u003E is an online English session course composed of 8 topics relating to the Professional Nursing Field.  \u003C/p\u003E\n\u003Cp\u003EIt provides teacher to student meetings through Skype and Canvas,  providing listening and speaking practice through this technology.\u003C/p\u003E\n\u003Cp\u003EIt also reinforces these skills through the guided Canvas modules, student handbook practices and assignments that are graded and serve as guides for further skills reinforcement. \u003C/p\u003E\n\u003Cp\u003EThe canvas modules are infused with vocabulary practice not only for accent reduction, but for correct grammatical and functional use within the nursing field.\u003C/p\u003E\n\u003Cp\u003EThe topics are enriched with students prior knowledge thus creating an easy transition form one language to another and helping students acquire the academic English needed to succeed in their profession.\u003C/p\u003E\n\u003Cp\u003E \u003C/p\u003E\n\u003Cp\u003E \u003C/p\u003E\n\u003Cp\u003E \u003C/p\u003E",
+			"allow_student_forum_attachments" : false,
+			"default_wiki_editing_roles" : "teachers",
+			"wiki_id" : 434279,
+			"allow_student_organized_groups" : true,
+			"course_code" : "English",
+			"default_view" : "syllabus",
+			"abstract_course_id" : null,
+			"root_account_id" : 10,
+			"enrollment_term_id" : 1,
+			"sis_source_id" : null,
+			"sis_batch_id" : null,
+			"open_enrollment" : false,
+			"storage_quota" : 262144000,
+			"tab_configuration" : [],
+			"allow_wiki_comments" : null,
+			"turnitin_comments" : null,
+			"self_enrollment" : false,
+			"license" : "private",
+			"indexed" : true,
+			"restrict_enrollments_to_course_dates" : false,
+			"template_course_id" : null,
+			"locale" : null,
+			"settings" : {
+				"public_syllabus" : true,
+				"is_public_to_auth_users" : true,
+				"restrict_student_past_view" : false,
+				"restrict_student_future_view" : false,
+				"course_format" : "online",
+				"allow_student_discussion_topics" : true,
+				"allow_student_discussion_editing" : true,
+				"hide_final_grade" : false,
+				"hide_distribution_graphs" : false
+			},
+			"replacement_course_id" : null,
+			"stuck_sis_fields" : ["restrict_enrollments_to_course_dates", "start_at", "workflow_state"],
+			"public_description" : "",
+			"self_enrollment_code" : null,
+			"self_enrollment_limit" : null,
+			"integration_id" : null,
+			"time_zone" : "America/New_York",
+			"lti_context_id" : null,
+			"turnitin_id" : null,
+			"show_announcements_on_home_page" : null,
+			"home_page_announcement_limit" : null
+		}
+	}, {
+		"course" : {
+			"id" : 938128,
+			"name" : "Awesome Banners for your Canvas Course",
+			"account_id" : 81259,
+			"group_weighting_scheme" : null,
+			"workflow_state" : "available",
+			"start_at" : "2015-12-12T16:37:00Z",
+			"conclude_at" : null,
+			"grading_standard_id" : null,
+			"is_public" : true,
+			"allow_student_wiki_edits" : false,
+			"created_at" : "2015-05-15T01:22:49Z",
+			"updated_at" : "2016-12-29T21:13:45Z",
+			"show_public_context_messages" : null,
+			"syllabus_body" : "\u003Cp\u003E\u003Cspan\u003ESet your Canvas course apart by creating a banner that interests your students. It can be used throughout your course pages to provide recognition and identity. Banners maybe created with several computer programs to combine images and words that represent your class well.\u003C/span\u003E\u003C/p\u003E\n\u003Cul\u003E\n\u003Cli\u003E\u003Ca id=\"\" class=\"\" title=\"Course Textbook Image\" href=\"/courses/938128/pages/course-textbook-image\"\u003ECourse Textbook Image\u003C/a\u003E\u003C/li\u003E\n\u003Cli\u003E\u003Ca id=\"\" class=\"\" title=\"Banner Width?\" href=\"/courses/938128/pages/banner-width\"\u003EBanner Width?\u003C/a\u003E\u003C/li\u003E\n\u003C/ul\u003E",
+			"allow_student_forum_attachments" : true,
+			"default_wiki_editing_roles" : "teachers",
+			"wiki_id" : 434425,
+			"allow_student_organized_groups" : true,
+			"course_code" : "Awesome Banners for your Canvas Course",
+			"default_view" : "wiki",
+			"abstract_course_id" : null,
+			"root_account_id" : 10,
+			"enrollment_term_id" : 1,
+			"sis_source_id" : null,
+			"sis_batch_id" : null,
+			"open_enrollment" : true,
+			"storage_quota" : 262144000,
+			"tab_configuration" : [],
+			"allow_wiki_comments" : null,
+			"turnitin_comments" : null,
+			"self_enrollment" : true,
+			"license" : "private",
+			"indexed" : true,
+			"restrict_enrollments_to_course_dates" : false,
+			"template_course_id" : null,
+			"locale" : null,
+			"settings" : {
+				"public_syllabus" : true,
+				"is_public_to_auth_users" : true,
+				"restrict_student_past_view" : false,
+				"restrict_student_future_view" : false,
+				"course_format" : "online",
+				"allow_student_discussion_topics" : true,
+				"allow_student_discussion_editing" : true,
+				"hide_final_grade" : false,
+				"hide_distribution_graphs" : false,
+				"organize_epub_by_content_type" : false
+			},
+			"replacement_course_id" : null,
+			"stuck_sis_fields" : ["course_code", "name", "restrict_enrollments_to_course_dates", "start_at", "workflow_state"],
+			"public_description" : "Set your Canvas course apart by creating a banner that interests your students. It can be used throughout your course pages to provide recognition and identity. Banners maybe created with several computer programs to combine images and words that represent your class well.",
+			"self_enrollment_code" : "BBWRDF",
+			"self_enrollment_limit" : null,
+			"integration_id" : null,
+			"time_zone" : "America/Phoenix",
+			"lti_context_id" : "3e479c5cbcfa5e24f41b29fe4ef2b3456effcfcf",
+			"turnitin_id" : null,
+			"show_announcements_on_home_page" : null,
+			"home_page_announcement_limit" : null
+		}
+	}, {
+		"course" : {
+			"id" : 938208,
+			"name" : "College \u0026 Career Readiness - Texas",
+			"account_id" : 81259,
+			"group_weighting_scheme" : null,
+			"workflow_state" : "available",
+			"start_at" : "2015-05-15T18:56:40Z",
+			"conclude_at" : null,
+			"grading_standard_id" : null,
+			"is_public" : true,
+			"allow_student_wiki_edits" : false,
+			"created_at" : "2015-05-15T15:02:35Z",
+			"updated_at" : "2015-05-15T19:00:18Z",
+			"show_public_context_messages" : null,
+			"syllabus_body" : "\u003Cp\u003E\u003Cimg src=\"/courses/938208/files/34660335/preview\" alt=\"213-1764519370984896485-cWs0iEGv.JPG\" width=\"199\" height=\"199\"\u003E \u003Cspan style=\"font-size: 24pt;\"\u003E\u003Cstrong\u003ECollege \u0026amp; Career Readiness - Texas\u003C/strong\u003E\u003C/span\u003E\u003C/p\u003E\n\u003Cp\u003E \u003C/p\u003E\n\u003Cp\u003EEducators, Parents, and Students: \u003Cbr\u003EThis course will provide you with the latest information and resources for preparing students for post secondary opportunities. The purpose of this course is to ensure everyone has access to every tool and resource available for increasing student achievement; so you can be up-to-date on your college and/or career search.\u003C/p\u003E\n\u003Cp\u003EThis course includes information about scholarships, important announces and dates, tips for essay writing, upcoming college trips, and more. I will continue to add information to this course which means you will always have the latest and greatest information. This is my passion and gift. So many times we forget to go back and give back so that others may also succeed. I am here to be your free professional resource. Contact me if you have suggestions, additions, or questions. The beauty of this particular technology is that I can tailor this course to meet the needs of different communities anywhere in the world. I will continue to update the format to make the search for information more efficient for users.\u003C/p\u003E\n\u003Cp\u003EThis is my FREE service, or charity. Enjoy and refer friends, family, and educators.\u003C/p\u003E\n\u003Cp\u003EAlways working to make the world a better place, \u003Cbr\u003EChris Harvey, Ed.D\u003C/p\u003E\n\u003Cp\u003E \u003C/p\u003E\n\u003Cp\u003ECourse Activities\u003C/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EWhy Should I Go to College?\u003C/li\u003E\n\u003Cli\u003EGetting College Ready\u003C/li\u003E\n\u003Cli\u003EFinancing Your College or Career School Experience\u003C/li\u003E\n\u003Cli\u003EApplying to Colleges and Universities\u003C/li\u003E\n\u003Cli\u003ECommunity and Technical Colleges\u003C/li\u003E\n\u003Cli\u003EDual (Credit) Enrollment and Concurrent Enrollment \u003C/li\u003E\n\u003Cli\u003ETexas Success Initiative\u003C/li\u003E\n\u003Cli\u003EHouse Bill 5 (HB5)\u003C/li\u003E\n\u003Cli\u003EArmed Services/Military Options\u003C/li\u003E\n\u003Cli\u003ENon-US Citizenship \u0026amp; Immigration\u003C/li\u003E\n\u003Cli\u003EDigital Citizenship\u003C/li\u003E\n\u003Cli\u003EParent Involvement\u003C/li\u003E\n\u003C/ul\u003E",
+			"allow_student_forum_attachments" : true,
+			"default_wiki_editing_roles" : "teachers",
+			"wiki_id" : 434540,
+			"allow_student_organized_groups" : false,
+			"course_code" : "1301 CCRTX",
+			"default_view" : "syllabus",
+			"abstract_course_id" : null,
+			"root_account_id" : 10,
+			"enrollment_term_id" : 1,
+			"sis_source_id" : null,
+			"sis_batch_id" : null,
+			"open_enrollment" : false,
+			"storage_quota" : 262144000,
+			"tab_configuration" : [],
+			"allow_wiki_comments" : null,
+			"turnitin_comments" : null,
+			"self_enrollment" : false,
+			"license" : "public_domain",
+			"indexed" : true,
+			"restrict_enrollments_to_course_dates" : false,
+			"template_course_id" : null,
+			"locale" : "en",
+			"settings" : {
+				"public_syllabus" : true,
+				"is_public_to_auth_users" : true,
+				"restrict_student_past_view" : false,
+				"restrict_student_future_view" : false,
+				"course_format" : "online",
+				"allow_student_discussion_topics" : true,
+				"allow_student_discussion_editing" : true,
+				"hide_final_grade" : true,
+				"hide_distribution_graphs" : true
+			},
+			"replacement_course_id" : null,
+			"stuck_sis_fields" : ["course_code", "name", "restrict_enrollments_to_course_dates", "start_at", "workflow_state"],
+			"public_description" : "Educators, Parents, and Students: \nThis course will provide you with the latest information and resources for preparing students for post secondary opportunities.  The purpose of this course is to ensure everyone has access to every tool and resource available for increasing student achievement; so you can be up-to-date on your college and/or career search.  \n\nThis course includes information about scholarships, important announces and dates, tips for essay writing, upcoming college trips, and more.  I will continue to add information to this course which means you will always have the latest and greatest information.  This is my passion and gift.  So many times we forget to go back and give back so that others may also succeed.  I am here to be your free professional resource.  Contact me if you have suggestions, additions, or questions.  The beauty of this particular technology is that I can tailor this course to meet the needs of different communities anywhere in the world.  I will continue to update the format to make the search for information more efficient for users.  \n\nThis is my FREE service, or charity.  Enjoy and refer friends, family, and educators. \n\nAlways working to make the world a better place, \nChris Harvey",
+			"self_enrollment_code" : null,
+			"self_enrollment_limit" : null,
+			"integration_id" : null,
+			"time_zone" : "America/Chicago",
+			"lti_context_id" : null,
+			"turnitin_id" : null,
+			"show_announcements_on_home_page" : null,
+			"home_page_announcement_limit" : null
+		}
+	}, {
+		"course" : {
+			"id" : 938283,
+			"name" : "Course 200.1, Mathematics",
+			"account_id" : 81259,
+			"group_weighting_scheme" : null,
+			"workflow_state" : "available",
+			"start_at" : "2015-06-04T19:32:09Z",
+			"conclude_at" : null,
+			"grading_standard_id" : null,
+			"is_public" : true,
+			"allow_student_wiki_edits" : false,
+			"created_at" : "2015-05-15T21:03:27Z",
+			"updated_at" : "2015-06-13T10:45:42Z",
+			"show_public_context_messages" : null,
+			"syllabus_body" : null,
+			"allow_student_forum_attachments" : false,
+			"default_wiki_editing_roles" : "teachers",
+			"wiki_id" : 434639,
+			"allow_student_organized_groups" : true,
+			"course_code" : "Maths 1",
+			"default_view" : "feed",
+			"abstract_course_id" : null,
+			"root_account_id" : 10,
+			"enrollment_term_id" : 1,
+			"sis_source_id" : null,
+			"sis_batch_id" : null,
+			"open_enrollment" : false,
+			"storage_quota" : 262144000,
+			"tab_configuration" : [],
+			"allow_wiki_comments" : null,
+			"turnitin_comments" : null,
+			"self_enrollment" : false,
+			"license" : "public_domain",
+			"indexed" : true,
+			"restrict_enrollments_to_course_dates" : false,
+			"template_course_id" : null,
+			"locale" : null,
+			"settings" : {
+				"public_syllabus" : true,
+				"is_public_to_auth_users" : true,
+				"restrict_student_past_view" : false,
+				"restrict_student_future_view" : false,
+				"course_format" : "",
+				"allow_student_discussion_topics" : true,
+				"allow_student_discussion_editing" : true,
+				"hide_final_grade" : false,
+				"hide_distribution_graphs" : false
+			},
+			"replacement_course_id" : null,
+			"stuck_sis_fields" : ["name", "restrict_enrollments_to_course_dates", "start_at", "workflow_state"],
+			"public_description" : "",
+			"self_enrollment_code" : "HT88YP",
+			"self_enrollment_limit" : null,
+			"integration_id" : null,
+			"time_zone" : "America/Denver",
+			"lti_context_id" : null,
+			"turnitin_id" : null,
+			"show_announcements_on_home_page" : null,
+			"home_page_announcement_limit" : null
+		}
+	}, {
+		"course" : {
+			"id" : 938390,
+			"name" : "Unmanned Aerial Systems Basic Course",
+			"account_id" : 81259,
+			"group_weighting_scheme" : null,
+			"workflow_state" : "available",
+			"start_at" : "2015-05-05T14:00:00Z",
+			"conclude_at" : "2015-06-01T03:59:00Z",
+			"grading_standard_id" : 0,
+			"is_public" : true,
+			"allow_student_wiki_edits" : false,
+			"created_at" : "2015-05-17T01:03:48Z",
+			"updated_at" : "2015-09-15T18:54:42Z",
+			"show_public_context_messages" : null,
+			"syllabus_body" : "\u003Ch2\u003E\u003Cstrong\u003E\u003Cspan style=\"text-decoration: underline;\"\u003EUnmanned Aerial Systems Course (Basic)\u003C/span\u003E\u003C/strong\u003E\u003C/h2\u003E\n\u003Cp\u003EThe course will consist of 12 sessions. Each session will be taught in the classroom, however, the slide deck for that session will be made available immediately following the session. Attendance at the in person classroom session of the online replay of the session is highly recommended.\u003C/p\u003E\n\u003Cp\u003EWhile the material is not especially complicated it is complex and each session builds upon the previous ones.\u003C/p\u003E\n\u003Cp\u003EMaterials required for the readings are provided for you in the DividedSky Aerial Solutions GDrive. This drive is only accessible via an emailed link.\u003C/p\u003E\n\u003Cp\u003EThe course will be graded through seven online quizzes (280 points), two simulator practical exercises (200 points), a land navigation practical exercise (100 points) and a final exam (420 points) for a total of 1000 possible points. Students must achieve a minimum of a 70% on each graded activity and therefore a cumulative grade of at least 70% of the points possible. For each activity that a 70% is not achieved the student will be given the opportunity for a retest.\u003C/p\u003E\n\u003Cp\u003EThis course is a requirement for all \u003Ca href=\"http://www.dividedskyaerials.com\"\u003EDividedSky Aerial Solutions\u003C/a\u003E employees that will be involved with flight operations of the UAVs/UASs. Successful completion of the course will allow you to begin working as a safety officer during flight operations.\u003C/p\u003E\n\u003Cp\u003EFollow on courses include advanced flight operations, maintenance and repair operations, and camera operator certification.\u003C/p\u003E\n\u003Cp\u003EPlease feel free to contact me via my contact information should you have any questions.\u003C/p\u003E\n\u003Cp\u003EEnjoy the course!\u003C/p\u003E\n\u003Cp\u003ESincerely,\u003C/p\u003E\n\u003Cp\u003ETodd Boward\u003C/p\u003E\n\u003Cp\u003E \u003C/p\u003E",
+			"allow_student_forum_attachments" : true,
+			"default_wiki_editing_roles" : "teachers",
+			"wiki_id" : 434773,
+			"allow_student_organized_groups" : true,
+			"course_code" : "UASBC",
+			"default_view" : "syllabus",
+			"abstract_course_id" : null,
+			"root_account_id" : 10,
+			"enrollment_term_id" : 1,
+			"sis_source_id" : null,
+			"sis_batch_id" : null,
+			"open_enrollment" : true,
+			"storage_quota" : 262144000,
+			"tab_configuration" : [{
+					"id" : 0
+				}, {
+					"id" : 14
+				}, {
+					"id" : 3
+				}, {
+					"id" : 8
+				}, {
+					"id" : 5
+				}, {
+					"id" : 6
+				}, {
+					"id" : 2
+				}, {
+					"id" : 11
+				}, {
+					"id" : 1
+				}, {
+					"id" : 15
+				}, {
+					"id" : 4
+				}, {
+					"id" : 10
+				}, {
+					"id" : 12
+				}, {
+					"id" : 16
+				}
+			],
+			"allow_wiki_comments" : null,
+			"turnitin_comments" : null,
+			"self_enrollment" : true,
+			"license" : "private",
+			"indexed" : true,
+			"restrict_enrollments_to_course_dates" : true,
+			"template_course_id" : null,
+			"locale" : "en",
+			"settings" : {
+				"public_syllabus" : true,
+				"is_public_to_auth_users" : true,
+				"restrict_student_past_view" : false,
+				"restrict_student_future_view" : true,
+				"course_format" : "online",
+				"allow_student_discussion_topics" : true,
+				"allow_student_discussion_editing" : true,
+				"hide_final_grade" : false,
+				"hide_distribution_graphs" : false,
+				"show_total_grade_as_points" : true
+			},
+			"replacement_course_id" : null,
+			"stuck_sis_fields" : ["conclude_at", "course_code", "name", "restrict_enrollments_to_course_dates", "start_at", "workflow_state"],
+			"public_description" : "In this course will review the basic concepts of Unmanned Aerial Systems. This course is not designed to make you a UAV or UAS pilot. It is designed to introduce you to most of the major aspects surrounding and dealing with the UAS today. It is also designed to educate you on the responsible and safe uses of UAS's and how they can be incorporated into your workflow, while understanding that a Section 333 Exemption is currently required to conduct commercial UAS operations in the United States.",
+			"self_enrollment_code" : "4JTFA8",
+			"self_enrollment_limit" : null,
+			"integration_id" : null,
+			"time_zone" : "America/New_York",
+			"lti_context_id" : "71d62ab8c41390b6a65c7ee8cfdabe6628631eda",
+			"turnitin_id" : null,
+			"show_announcements_on_home_page" : null,
+			"home_page_announcement_limit" : null
+		}
+	}, {
+		"course" : {
+			"id" : 938538,
+			"name" : "Rutgers Community of Practice for Strategic Educational Support Programs and Practitioners",
+			"account_id" : 81259,
+			"group_weighting_scheme" : null,
+			"workflow_state" : "available",
+			"start_at" : "2015-05-04T00:00:00Z",
+			"conclude_at" : "2015-07-01T00:00:00Z",
+			"grading_standard_id" : null,
+			"is_public" : true,
+			"allow_student_wiki_edits" : false,
+			"created_at" : "2015-05-18T10:39:13Z",
+			"updated_at" : "2015-06-05T17:30:21Z",
+			"show_public_context_messages" : null,
+			"syllabus_body" : "",
+			"allow_student_forum_attachments" : false,
+			"default_wiki_editing_roles" : "teachers",
+			"wiki_id" : 434956,
+			"allow_student_organized_groups" : true,
+			"course_code" : "NYCOP",
+			"default_view" : "wiki",
+			"abstract_course_id" : null,
+			"root_account_id" : 10,
+			"enrollment_term_id" : 1,
+			"sis_source_id" : null,
+			"sis_batch_id" : null,
+			"open_enrollment" : false,
+			"storage_quota" : 262144000,
+			"tab_configuration" : [],
+			"allow_wiki_comments" : null,
+			"turnitin_comments" : null,
+			"self_enrollment" : false,
+			"license" : "private",
+			"indexed" : true,
+			"restrict_enrollments_to_course_dates" : false,
+			"template_course_id" : null,
+			"locale" : null,
+			"settings" : {
+				"public_syllabus" : true,
+				"is_public_to_auth_users" : true,
+				"restrict_student_past_view" : false,
+				"restrict_student_future_view" : false,
+				"course_format" : "online",
+				"allow_student_discussion_topics" : true,
+				"allow_student_discussion_editing" : true,
+				"hide_final_grade" : false,
+				"hide_distribution_graphs" : false
+			},
+			"replacement_course_id" : null,
+			"stuck_sis_fields" : ["conclude_at", "restrict_enrollments_to_course_dates", "start_at", "workflow_state"],
+			"public_description" : "",
+			"self_enrollment_code" : null,
+			"self_enrollment_limit" : null,
+			"integration_id" : null,
+			"time_zone" : "America/New_York",
+			"lti_context_id" : null,
+			"turnitin_id" : null,
+			"show_announcements_on_home_page" : null,
+			"home_page_announcement_limit" : null
+		}
+	}, {
+		"course" : {
+			"id" : 938554,
+			"name" : "Algebra 1",
+			"account_id" : 81259,
+			"group_weighting_scheme" : null,
+			"workflow_state" : "available",
+			"start_at" : "2015-05-04T20:03:00Z",
+			"conclude_at" : "2015-06-29T03:59:00Z",
+			"grading_standard_id" : 0,
+			"is_public" : true,
+			"allow_student_wiki_edits" : false,
+			"created_at" : "2015-05-18T13:38:21Z",
+			"updated_at" : "2016-09-27T17:08:09Z",
+			"show_public_context_messages" : null,
+			"syllabus_body" : "\u003Cp\u003E\u003Cstrong\u003ECourse title\u003C/strong\u003E: Algebra 1\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003EInstructor Information\u003C/strong\u003E: Mr. Charles Bowman \u003C/p\u003E\n\u003Cp\u003E\u003Ca href=\"mailto:ke_cbowman@kentschools.net\"\u003Eke_cbowman@kentschools.net\u003C/a\u003E (Please feel free to email me)\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003EOffice hours\u003C/strong\u003E: By appointment\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003EPhone number\u003C/strong\u003E: 330-673-9595\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003ECellphone: \u003C/strong\u003E330-418-7457 (Text for help)\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003ETextbook\u003C/strong\u003E : Algebra I, Prentice Hall, by Bellman, Bragg, and Handlin Sr.\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003EGrading\u003C/strong\u003E: This course will follow the grade system in the handbook.\u003C/p\u003E\n\u003Cp\u003E\u003Cem\u003E\u003Cstrong\u003EA\u003C/strong\u003E\u003C/em\u003E 100-93      \u003Cstrong\u003E\u003Cem\u003EA-\u003C/em\u003E\u003C/strong\u003E 92-90      \u003Cstrong\u003E\u003Cem\u003EB\u003C/em\u003E\u003C/strong\u003E 89-83      \u003Cstrong\u003E\u003Cem\u003EB-\u003C/em\u003E\u003C/strong\u003E 82-80      \u003Cstrong\u003E\u003Cem\u003EC\u003C/em\u003E \u003C/strong\u003E79-73      \u003Cem\u003E\u003Cstrong\u003EC-\u003C/strong\u003E \u003C/em\u003E72-70      \u003Cem\u003E\u003Cstrong\u003ED\u003C/strong\u003E \u003C/em\u003E69-63      \u003Cem\u003E\u003Cstrong\u003ED-\u003C/strong\u003E \u003C/em\u003E62-60      \u003Cem\u003E\u003Cstrong\u003EF\u003C/strong\u003E \u003C/em\u003E59-0\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003EGrades will consist of two parts:\u003C/strong\u003E 25% Homework, 25% Discussion Post, 50% Quizzes/Tests/Projects\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003EGrades will be made up of: \u003C/strong\u003Edaily homework and assessments (quizzes and test). All tests will be in AP format: multiple choice (calculator and non-calculator), free response (calculator and non-calculator\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003ELate Work\u003C/strong\u003E- will be accepted for partial credit the next day ONLY. You must stay on top of the material. Remember to go to the website to get any assignments and/or notes.\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003EMake up Quizzes and Tests\u003C/strong\u003E – With excused absence, you may make up a quiz or test. If you are absent the day of a test or quiz you will be expected to make up the assessment immediately. If you miss a review day, you will still be expected to take the test or quiz: all review will be posted on website. In general, you will have the number of days you were absent to turn in any missed assignments or make up any assessments.\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003EGrade Reports\u003C/strong\u003E – will be given out numerous times throughout the semester, or keep a close eye on Progress Book for up to date grades.\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003EHandbook Policies\u003C/strong\u003E– All policies outlined in the handbook are enforced.\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003ESuggestions for Success: \u003C/strong\u003E-Be a responsible classroom contributor. Respect other student’s right to learn. Always do your homework. Bring a positive attitude and smile every day. Be an active participant by listening and sharing. Ask questions when you do not understand a concept.\u003C/p\u003E\n\u003Cp\u003E-Study for quizzes and tests by: reviewing text material, reviewing notes and vocabulary, reworking any homework problems you originally misunderstood or made a mistake on, doing the practice test or study guide.\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003ERemember the three R’s:\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003ERespect for self\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003ERespect for others Responsibility for all your actions\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003E \u003C/strong\u003E\u003C/p\u003E",
+			"allow_student_forum_attachments" : false,
+			"default_wiki_editing_roles" : "teachers",
+			"wiki_id" : 434978,
+			"allow_student_organized_groups" : true,
+			"course_code" : "Algebra 1",
+			"default_view" : "modules",
+			"abstract_course_id" : null,
+			"root_account_id" : 10,
+			"enrollment_term_id" : 1,
+			"sis_source_id" : null,
+			"sis_batch_id" : null,
+			"open_enrollment" : false,
+			"storage_quota" : 262144000,
+			"tab_configuration" : [],
+			"allow_wiki_comments" : null,
+			"turnitin_comments" : null,
+			"self_enrollment" : false,
+			"license" : "private",
+			"indexed" : true,
+			"restrict_enrollments_to_course_dates" : true,
+			"template_course_id" : null,
+			"locale" : null,
+			"settings" : {
+				"public_syllabus" : true,
+				"is_public_to_auth_users" : true,
+				"restrict_student_past_view" : true,
+				"restrict_student_future_view" : true,
+				"course_format" : "online",
+				"allow_student_discussion_topics" : true,
+				"allow_student_discussion_editing" : true,
+				"hide_final_grade" : false,
+				"hide_distribution_graphs" : false
+			},
+			"replacement_course_id" : null,
+			"stuck_sis_fields" : ["conclude_at", "restrict_enrollments_to_course_dates", "start_at", "workflow_state"],
+			"public_description" : "",
+			"self_enrollment_code" : null,
+			"self_enrollment_limit" : null,
+			"integration_id" : null,
+			"time_zone" : "America/Denver",
+			"lti_context_id" : "d15e7c3b1e955e49c71a7f834fd6d2e469a5017e",
+			"turnitin_id" : null,
+			"show_announcements_on_home_page" : null,
+			"home_page_announcement_limit" : null
+		}
+	}, {
+		"course" : {
+			"id" : 938589,
+			"name" : "CPR Recertification Course",
+			"account_id" : 81259,
+			"group_weighting_scheme" : null,
+			"workflow_state" : "available",
+			"start_at" : "2015-05-28T00:35:00Z",
+			"conclude_at" : "2015-07-04T04:00:00Z",
+			"grading_standard_id" : null,
+			"is_public" : true,
+			"allow_student_wiki_edits" : false,
+			"created_at" : "2015-05-18T15:21:42Z",
+			"updated_at" : "2017-04-29T21:44:03Z",
+			"show_public_context_messages" : null,
+			"syllabus_body" : null,
+			"allow_student_forum_attachments" : true,
+			"default_wiki_editing_roles" : "teachers",
+			"wiki_id" : 435022,
+			"allow_student_organized_groups" : true,
+			"course_code" : "CPR - Recert",
+			"default_view" : "modules",
+			"abstract_course_id" : null,
+			"root_account_id" : 10,
+			"enrollment_term_id" : 1,
+			"sis_source_id" : null,
+			"sis_batch_id" : null,
+			"open_enrollment" : true,
+			"storage_quota" : 262144000,
+			"tab_configuration" : [],
+			"allow_wiki_comments" : null,
+			"turnitin_comments" : null,
+			"self_enrollment" : true,
+			"license" : "private",
+			"indexed" : true,
+			"restrict_enrollments_to_course_dates" : false,
+			"template_course_id" : null,
+			"locale" : "en",
+			"settings" : {
+				"public_syllabus" : false,
+				"is_public_to_auth_users" : false,
+				"restrict_student_past_view" : false,
+				"restrict_student_future_view" : false,
+				"course_format" : "online",
+				"allow_student_discussion_topics" : true,
+				"allow_student_discussion_editing" : true,
+				"hide_final_grade" : false,
+				"hide_distribution_graphs" : false
+			},
+			"replacement_course_id" : null,
+			"stuck_sis_fields" : ["conclude_at", "restrict_enrollments_to_course_dates", "start_at", "workflow_state"],
+			"public_description" : "",
+			"self_enrollment_code" : "TTK6MB",
+			"self_enrollment_limit" : null,
+			"integration_id" : null,
+			"time_zone" : "America/New_York",
+			"lti_context_id" : "5f46c773199617ee839fe74e8648525714e0db17",
+			"turnitin_id" : null,
+			"show_announcements_on_home_page" : null,
+			"home_page_announcement_limit" : null
+		}
+	}, {
+		"course" : {
+			"id" : 938743,
+			"name" : "Summer 2015 Bus 269 AZH (55160)",
+			"account_id" : 81259,
+			"group_weighting_scheme" : "percent",
+			"workflow_state" : "available",
+			"start_at" : "2015-06-29T07:00:00Z",
+			"conclude_at" : "2015-09-04T07:00:00Z",
+			"grading_standard_id" : 0,
+			"is_public" : true,
+			"allow_student_wiki_edits" : false,
+			"created_at" : "2015-05-19T00:08:50Z",
+			"updated_at" : "2015-09-04T22:56:25Z",
+			"show_public_context_messages" : false,
+			"syllabus_body" : "\u003Cp\u003E\u003Cstrong style=\"color: inherit; font-family: inherit; line-height: 40px; font-size: 1.8em;\"\u003ECOURSE DESCRIPTION:\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003EIntroduces students to warehousing and logistics. Topics include warehouse storage, movement, control, and protection, including, software information systems used in warehousing, and warehouse safety. The class will include hands-on activities in relation to warehousing and logistics.\u003C/p\u003E\n\u003Cp\u003EThe course also includes OSHA 10 Outreach Training Program for General Industry which provides training for entry level workers and employers on the recognition, avoidance, abatement, and prevention of safety and health hazards in workplaces in general industry. The program also provides information regarding workers' rights, employer responsibilities, and how to file a complaint. Through this training, OSHA helps to ensure that workers are more knowledgeable about workplace hazards and their rights\u003C/p\u003E\n\u003Cp\u003ETransfer credit: CSU.\u003C/p\u003E\n\u003Ch2\u003E \u003C/h2\u003E\n\u003Ch2\u003E\n\u003Cstrong\u003ESTUDENT LEARNING OUTCOMES:\u003Cbr\u003E\u003C/strong\u003EUpon successful completion of the course the student will be able to:\u003C/h2\u003E\n\u003Col\u003E\n\u003Cli\u003EDemonstrate a thorough understanding of the functions of a warehouse, as in, storage,       movement, control and protection.\u003C/li\u003E\n\u003Cli\u003EDefine the jobs and their functions in a warehouse.\u003C/li\u003E\n\u003Cli\u003EWork safely in a warehouse setting.\u003C/li\u003E\n\u003Cli\u003ESetup and maintain a working warehouse.\u003C/li\u003E\n\u003Cli\u003ECompare and contrast the relationships between warehousing safety regulations and actual potential safety hazards in warehousing. Understand how to ship and receive hazardous materials.\u003C/li\u003E\n\u003Cli\u003EFollow and practice good work habits, such as good attendance and follow company work rules.\u003C/li\u003E\n\u003Cli\u003EIdentify fundamentals of Logistics, such as, Domestic Transportation, International Logistics, Export/Import, Warehousing/Inventory Management, Logistics Technology, Logistics Outsourcing, and Negotiation Strategies.\u003C/li\u003E\n\u003Cli\u003EExplain the importance of OSHA in providing a safe and healthful workplace to workers covered by OSHA\u003C/li\u003E\n\u003Cli\u003EApply the OSHA regulations for walking and working surfaces to avoid slips, trips, and falls in the workplace, and recognize safe work practices for installing, maintaining, and using stairs, ladders, and scaffolds\u003C/li\u003E\n\u003Cli\u003EExplain the OSHA requirements for exit routes and Emergency Action plans and describe OSHA requirements for Fire Prevention plans and portable fire extinguishers\u003C/li\u003E\n\u003Cli\u003EIdentify safe work practices around electricity, including understanding electrical terms, basic electrical safety principles, and regulations which pertain to electrical safety\u003C/li\u003E\n\u003Cli\u003ESelect a variety of PPE based on a workplace evaluation and the types of hazards, and take responsibility for correctly fitting, maintaining, and using personal protective equipment\u003C/li\u003E\n\u003Cli\u003EIdentify the elements of the Hazard Communication Standard, identify physical and health hazards of chemicals included on a Hazardous Chemical Inventory, recognize the information required on Safety Data Sheets (SDS) and warning labels, as well as how they are used and maintained, and the meaning of pictograms, under the Globally Harmonized System (GHS), and identify training program requirements\u003C/li\u003E\n\u003Cli\u003EIdentify bloodborne pathogens and common symptoms, and list engineering and work practice control measures that protect employees against exposure to bloodborne pathogens\u003C/li\u003E\n\u003Cli\u003EIdentify a confined space, its hazards, requirements for confined spaces as listed under the Permit-Required Confined Spaces Standard, and duties and responsibilities of confined space workers\u003C/li\u003E\n\u003Cli\u003EIdentify hazardous energy sources and use appropriate energy-isolating devices, and describe the procedures for conducting a lockout/tagout\u003C/li\u003E\n\u003Cli\u003ERecognize safe operating procedures for forklifts, workplace hazards, and how to handle special types of forklifts.\u003C/li\u003E\n\u003C/ol\u003E\u003Cp\u003E \u003C/p\u003E\n\u003Ch2\u003E \u003C/h2\u003E\n\u003Ch2\u003E\u003Cstrong\u003ETEXTBOOK AND OTHER MATERIALS:\u003C/strong\u003E\u003C/h2\u003E\n\u003Ch2\u003ERequired and/or Recommended:\u003C/h2\u003E\n\u003Cp\u003EAllan Howie. \u003Cem\u003EFundamentals of Warehousing \u0026amp; Distribution An Introductory Course in Material Handling\u003C/em\u003E. A Material Handling Industry of America (MHIA).  2008.\u003C/p\u003E\n\u003Ch2\u003EMaterial Handling Industry of America (MHIA) \u003Cem\u003EFundamentals of Warehousing \u0026amp; Distribution, Volume 2: Warehouse Operations, 2012\u003C/em\u003E\n\u003C/h2\u003E\n\u003Ch2\u003EMaterial Handling Industry (MHI) and Material Handling Education Foundation, Inc (MHEFI) \u003Cem\u003EFundamentals of Warehousing \u0026amp; Distribution, Volume 3: Warehouse \u0026amp; Personal Performance, 2013\u003C/em\u003E\n\u003C/h2\u003E\n\u003Ch2\u003E\u003Cstrong\u003E \u003C/strong\u003E\u003C/h2\u003E\n\u003Ch2\u003E\u003Cstrong\u003EREQUIREMENTS:\u003C/strong\u003E\u003C/h2\u003E\n\u003Cp\u003EA. Group Project \u0026amp; Presentation. Written paper to be turned in.\u003C/p\u003E\n\u003Cp\u003EB. Homework/Quizzes/Final Exam\u003C/p\u003E\n\u003Cp\u003EC. Attendance \u0026amp; Participation\u003C/p\u003E\n\u003Cp\u003E \u003C/p\u003E\n\u003Ch2\u003E\u003Cstrong\u003ECLASS FORMAT:\u003C/strong\u003E\u003C/h2\u003E\n\u003Cp\u003EClassroom Lectures\u003C/p\u003E\n\u003Cp\u003ELaboratory/Warehouse projects\u003C/p\u003E\n\u003Cp\u003EOnline Modules\u003C/p\u003E\n\u003Cp\u003EDiscussion\u003C/p\u003E\n\u003Cp\u003E \u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003EOHSA 10 REPRESENTATIVE METHODS OF EVALUATION\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003ERepresentative methods of evaluation may include:\u003C/p\u003E\n\u003Cp\u003E \u003C/p\u003E\n\u003Cp\u003EEach module contains a brief assessment, which must be successfully completed before the student can move on to the next module. Once all modules have been viewed and the corresponding assessments are passed there is a comprehensive final assessment.\u003C/p\u003E\n\u003Cp\u003E \u003C/p\u003E\n\u003Ch2\u003E\u003Cstrong\u003ECLASSROOM POLICIES \u0026amp; PROCEDURES:\u003C/strong\u003E\u003C/h2\u003E\n\u003Cp\u003EA. Attendance is taken. Three (3) unexcused absences are grounds for dropping a student from class. To avoid having an absence counted as unexcused, notify the instructor as soon as you know that you are going to be absent.\u003C/p\u003E\n\u003Cp\u003EB. No eating or drinking in class.\u003C/p\u003E\n\u003Cp\u003EC. No cheating or plagiarism allowed. An “F” grade will be assigned if student is found cheating or plagiarism is found in assignments or project.\u003C/p\u003E\n\u003Cp\u003ED. Cellular phones on vibrate or turned off during classroom and lab/warehouse projects.\u003C/p\u003E\n\u003Cp\u003E \u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003EHAZARDOUS MATERIAL TRAINING:\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003EA special trainer will be teaching this material. Date and time to be determined.\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003E \u003C/strong\u003E\u003C/p\u003E\n\u003Ch2\u003E\u003Cstrong\u003EGRADING POLICY:\u003C/strong\u003E\u003C/h2\u003E\n\u003Cp\u003EGrades will be based on the weightings on the following categories:\u003C/p\u003E\n\u003Cp\u003ELab/Warehouse                               20%\u003C/p\u003E\n\u003Cp\u003EFinal Project                                      20%\u003C/p\u003E\n\u003Cp\u003EFinal Exam                                         20%\u003C/p\u003E\n\u003Cp\u003EAttendance                                      10%\u003C/p\u003E\n\u003Cp\u003EClass Participation                           10%\u003C/p\u003E\n\u003Cp\u003EQuizzes                                               20%\u003C/p\u003E",
+			"allow_student_forum_attachments" : true,
+			"default_wiki_editing_roles" : "teachers",
+			"wiki_id" : 435204,
+			"allow_student_organized_groups" : true,
+			"course_code" : "Bus 269 AZH (55160)",
+			"default_view" : "modules",
+			"abstract_course_id" : null,
+			"root_account_id" : 10,
+			"enrollment_term_id" : 1,
+			"sis_source_id" : null,
+			"sis_batch_id" : null,
+			"open_enrollment" : false,
+			"storage_quota" : 262144000,
+			"tab_configuration" : [{
+					"id" : 0
+				}, {
+					"id" : 8
+				}, {
+					"id" : 4
+				}, {
+					"id" : 5
+				}, {
+					"id" : 11
+				}, {
+					"id" : 1
+				}, {
+					"id" : 14,
+					"hidden" : true
+				}, {
+					"id" : 6,
+					"hidden" : true
+				}, {
+					"id" : 12,
+					"hidden" : true
+				}, {
+					"id" : 15,
+					"hidden" : true
+				}, {
+					"id" : 10,
+					"hidden" : true
+				}, {
+					"id" : 2,
+					"hidden" : true
+				}, {
+					"id" : 16,
+					"hidden" : true
+				}, {
+					"id" : 3,
+					"hidden" : true
+				}
+			],
+			"allow_wiki_comments" : null,
+			"turnitin_comments" : null,
+			"self_enrollment" : false,
+			"license" : "cc_by_nc",
+			"indexed" : true,
+			"restrict_enrollments_to_course_dates" : false,
+			"template_course_id" : null,
+			"locale" : null,
+			"settings" : {
+				"public_syllabus" : false,
+				"hide_final_grade" : true,
+				"hide_distribution_graphs" : false,
+				"allow_student_discussion_topics" : false,
+				"show_total_grade_as_points" : false,
+				"is_public_to_auth_users" : false,
+				"restrict_student_past_view" : false,
+				"restrict_student_future_view" : false,
+				"course_format" : "",
+				"allow_student_discussion_editing" : true
+			},
+			"replacement_course_id" : null,
+			"stuck_sis_fields" : ["conclude_at", "name", "restrict_enrollments_to_course_dates", "start_at", "workflow_state"],
+			"public_description" : "",
+			"self_enrollment_code" : null,
+			"self_enrollment_limit" : null,
+			"integration_id" : null,
+			"time_zone" : "America/Los_Angeles",
+			"lti_context_id" : null,
+			"turnitin_id" : null,
+			"show_announcements_on_home_page" : null,
+			"home_page_announcement_limit" : null
+		}
+	}, {
+		"course" : {
+			"id" : 938759,
+			"name" : "Pedroza Sandbox",
+			"account_id" : 81259,
+			"group_weighting_scheme" : null,
+			"workflow_state" : "available",
+			"start_at" : "2015-05-07T03:45:00Z",
+			"conclude_at" : null,
+			"grading_standard_id" : 0,
+			"is_public" : true,
+			"allow_student_wiki_edits" : false,
+			"created_at" : "2015-05-19T02:22:54Z",
+			"updated_at" : "2015-06-07T04:05:32Z",
+			"show_public_context_messages" : null,
+			"syllabus_body" : "\u003Cp\u003E\u003Cspan style=\"font-size: 14pt;\"\u003E\u003Cstrong\u003E Click on this file to open my sandbox syllabus\u003C/strong\u003E\u003C/span\u003E \u003Ca id=\"\" class=\" instructure_scribd_file instructure_file_link\" title=\"2nd Syllabus J.docx\" href=\"/courses/938759/files/34912235/download?wrap=1\"\u003E2nd Syllabus J.docx\u003C/a\u003E\u003C/p\u003E",
+			"allow_student_forum_attachments" : false,
+			"default_wiki_editing_roles" : "teachers",
+			"wiki_id" : 435225,
+			"allow_student_organized_groups" : true,
+			"course_code" : "Pedroza",
+			"default_view" : "modules",
+			"abstract_course_id" : null,
+			"root_account_id" : 10,
+			"enrollment_term_id" : 1,
+			"sis_source_id" : null,
+			"sis_batch_id" : null,
+			"open_enrollment" : false,
+			"storage_quota" : 262144000,
+			"tab_configuration" : [],
+			"allow_wiki_comments" : null,
+			"turnitin_comments" : null,
+			"self_enrollment" : false,
+			"license" : "private",
+			"indexed" : true,
+			"restrict_enrollments_to_course_dates" : false,
+			"template_course_id" : null,
+			"locale" : null,
+			"settings" : {
+				"public_syllabus" : false,
+				"is_public_to_auth_users" : true,
+				"restrict_student_past_view" : true,
+				"restrict_student_future_view" : true,
+				"course_format" : "",
+				"allow_student_discussion_topics" : true,
+				"allow_student_discussion_editing" : true,
+				"hide_final_grade" : false,
+				"hide_distribution_graphs" : false
+			},
+			"replacement_course_id" : null,
+			"stuck_sis_fields" : ["restrict_enrollments_to_course_dates", "start_at", "workflow_state"],
+			"public_description" : "",
+			"self_enrollment_code" : null,
+			"self_enrollment_limit" : null,
+			"integration_id" : null,
+			"time_zone" : "America/Los_Angeles",
+			"lti_context_id" : null,
+			"turnitin_id" : null,
+			"show_announcements_on_home_page" : null,
+			"home_page_announcement_limit" : null
+		}
+	}, {
+		"course" : {
+			"id" : 939176,
+			"name" : "SKODA A1-A2",
+			"account_id" : 81259,
+			"group_weighting_scheme" : null,
+			"workflow_state" : "available",
+			"start_at" : null,
+			"conclude_at" : null,
+			"grading_standard_id" : 0,
+			"is_public" : true,
+			"allow_student_wiki_edits" : false,
+			"created_at" : "2015-05-20T16:20:56Z",
+			"updated_at" : "2017-04-09T20:06:04Z",
+			"show_public_context_messages" : null,
+			"syllabus_body" : "",
+			"allow_student_forum_attachments" : false,
+			"default_wiki_editing_roles" : "teachers",
+			"wiki_id" : 435690,
+			"allow_student_organized_groups" : true,
+			"course_code" : "SKODAA1A2",
+			"default_view" : "wiki",
+			"abstract_course_id" : null,
+			"root_account_id" : 10,
+			"enrollment_term_id" : 1,
+			"sis_source_id" : null,
+			"sis_batch_id" : null,
+			"open_enrollment" : true,
+			"storage_quota" : 262144000,
+			"tab_configuration" : [{
+					"id" : 0
+				}, {
+					"id" : 14
+				}, {
+					"id" : 5
+				}, {
+					"id" : 10
+				}, {
+					"id" : 8
+				}, {
+					"id" : 3,
+					"hidden" : true
+				}, {
+					"id" : 11,
+					"hidden" : true
+				}, {
+					"id" : 12,
+					"hidden" : true
+				}, {
+					"id" : 4,
+					"hidden" : true
+				}, {
+					"id" : 16,
+					"hidden" : true
+				}, {
+					"id" : 15,
+					"hidden" : true
+				}, {
+					"id" : 1,
+					"hidden" : true
+				}, {
+					"id" : 2,
+					"hidden" : true
+				}, {
+					"id" : 6,
+					"hidden" : true
+				}
+			],
+			"allow_wiki_comments" : null,
+			"turnitin_comments" : null,
+			"self_enrollment" : true,
+			"license" : "private",
+			"indexed" : true,
+			"restrict_enrollments_to_course_dates" : false,
+			"template_course_id" : null,
+			"locale" : "en",
+			"settings" : {
+				"public_syllabus" : false,
+				"is_public_to_auth_users" : true,
+				"restrict_student_past_view" : false,
+				"restrict_student_future_view" : false,
+				"course_format" : "online",
+				"allow_student_discussion_topics" : true,
+				"allow_student_discussion_editing" : true,
+				"hide_final_grade" : false,
+				"hide_distribution_graphs" : false
+			},
+			"replacement_course_id" : null,
+			"stuck_sis_fields" : ["course_code", "name", "restrict_enrollments_to_course_dates", "start_at", "workflow_state"],
+			"public_description" : "",
+			"self_enrollment_code" : "6G4FP9",
+			"self_enrollment_limit" : null,
+			"integration_id" : null,
+			"time_zone" : "America/Los_Angeles",
+			"lti_context_id" : "06f5580e5b43e250708f39bd8c960a33811b5c9e",
+			"turnitin_id" : null,
+			"show_announcements_on_home_page" : null,
+			"home_page_announcement_limit" : null
+		}
+	}, {
+		"course" : {
+			"id" : 939729,
+			"name" : "Advancing Clinical Teachers",
+			"account_id" : 81259,
+			"group_weighting_scheme" : null,
+			"workflow_state" : "available",
+			"start_at" : "2015-06-02T18:06:22Z",
+			"conclude_at" : null,
+			"grading_standard_id" : null,
+			"is_public" : true,
+			"allow_student_wiki_edits" : false,
+			"created_at" : "2015-05-22T16:51:01Z",
+			"updated_at" : "2016-04-20T20:41:04Z",
+			"show_public_context_messages" : null,
+			"syllabus_body" : null,
+			"allow_student_forum_attachments" : true,
+			"default_wiki_editing_roles" : "teachers",
+			"wiki_id" : 436312,
+			"allow_student_organized_groups" : true,
+			"course_code" : "ACT",
+			"default_view" : "wiki",
+			"abstract_course_id" : null,
+			"root_account_id" : 10,
+			"enrollment_term_id" : 1,
+			"sis_source_id" : null,
+			"sis_batch_id" : null,
+			"open_enrollment" : true,
+			"storage_quota" : 262144000,
+			"tab_configuration" : [{
+					"id" : 0
+				}, {
+					"id" : 14
+				}, {
+					"id" : 3
+				}, {
+					"id" : 8
+				}, {
+					"id" : 5
+				}, {
+					"id" : 6
+				}, {
+					"id" : 2
+				}, {
+					"id" : 11
+				}, {
+					"id" : 15
+				}, {
+					"id" : 4
+				}, {
+					"id" : 10
+				}, {
+					"id" : 12
+				}, {
+					"id" : 16
+				}, {
+					"id" : 1,
+					"hidden" : true
+				}
+			],
+			"allow_wiki_comments" : null,
+			"turnitin_comments" : null,
+			"self_enrollment" : true,
+			"license" : "private",
+			"indexed" : true,
+			"restrict_enrollments_to_course_dates" : false,
+			"template_course_id" : null,
+			"locale" : null,
+			"settings" : {
+				"public_syllabus" : true,
+				"is_public_to_auth_users" : true,
+				"restrict_student_past_view" : false,
+				"restrict_student_future_view" : false,
+				"course_format" : "",
+				"allow_student_discussion_topics" : true,
+				"allow_student_discussion_editing" : true,
+				"hide_final_grade" : false,
+				"hide_distribution_graphs" : false
+			},
+			"replacement_course_id" : null,
+			"stuck_sis_fields" : ["restrict_enrollments_to_course_dates", "start_at", "workflow_state"],
+			"public_description" : "",
+			"self_enrollment_code" : "XGMECM",
+			"self_enrollment_limit" : null,
+			"integration_id" : null,
+			"time_zone" : "America/Denver",
+			"lti_context_id" : null,
+			"turnitin_id" : null,
+			"show_announcements_on_home_page" : null,
+			"home_page_announcement_limit" : null
+		}
+	}
+]

@@ -1,0 +1,30 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# User Interface routes
+GET     /                                                   controllers.Application.index()
+GET     /keyword                                            controllers.Application.getKeyword()
+
+# REST API Wrappers
+GET     /ldw/restApiWrapper                                 controllers.de.fuhsen.wrappers.WrapperController.wrapperIds()
+
+GET     /:wrapperId/getToken                                controllers.de.fuhsen.wrappers.security.TokenRetrievalController.getToken(wrapperId: String)
+GET     /:wrapperId/code2token                              controllers.de.fuhsen.wrappers.security.TokenRetrievalController.code2token(code:String, wrapperId: String)
+GET     /:wrapperId/code2tokenX                             controllers.de.fuhsen.wrappers.security.TokenRetrievalController.code2tokenX(wrapperId: String, oauth_token:String, oauth_verifier:String)
+GET     /:wrapperId/getTokenLifeLength                      controllers.Application.TokenLifeLength(wrapperId: String)
+
+# EDSA endpoints
+GET     /edsa/:edsaWrapperId/job_search                     controllers.de.fuhsen.wrappers.WrapperController.demand_analysis(edsaWrapperId: String, country: Option[String])
+GET     /edsa/:edsaWrapperId/course_search                  controllers.de.fuhsen.wrappers.WrapperController.suply_analysis(edsaWrapperId: String)
+GET     /edsa/rdf2json                                      controllers.de.fuhsen.wrappers.WrapperController.edsa_rdf2json_transform()
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file                                       controllers.Assets.versioned(path="/public", file: Asset)
+
+# QMine
+GET     /qminer/sent                                        controllers.de.fuhsen.engine.QMinerController.send(date: String, source:String, limit:Int, offset:Int)
+POST    /qminer/receive                                     controllers.de.fuhsen.engine.QMinerController.receive
+
+#Linking Datasets
+GET     /edsa/link/job                                      controllers.de.fuhsen.engine.LinkingController.linkJobPostings

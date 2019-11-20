@@ -1,0 +1,62 @@
+<TransformSpec id="OpenEdXTransformationTask">
+        <SourceDataset dataSource="OpenEdX" var="a" typeUri="">
+        <RestrictTo>
+          
+        </RestrictTo>
+      </SourceDataset><TransformRule name="type1">
+        <TransformInput id="generateType" function="constantUri">
+        
+        <Param name="value" value="http://www.edsa-project.eu/edsa#CourseInstance"/>
+      </TransformInput><MappingTarget uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+        <ValueType nodeType="UriValueType"/>
+      </MappingTarget>
+      </TransformRule><TransformRule name="uri">
+        <TransformInput id="unnamed_488" function="concat">
+        <TransformInput id="constant0" function="constant">
+        
+        <Param name="value" value="http://www.edsa-project.eu/course/"/>
+      </TransformInput><TransformInput id="encode1" function="urlEncode">
+        <Input id="path1" path="/id"/>
+        <Param name="encoding" value="UTF-8"/>
+      </TransformInput>
+        <Param name="glue" value=""/>
+      </TransformInput>
+      </TransformRule><TransformRule name="sourcePath1">
+        <Input id="sourcePath1" path="/name"/><MappingTarget uri="http://schema.org/name">
+        <ValueType nodeType="AutoDetectValueType"/>
+      </MappingTarget>
+      </TransformRule><TransformRule name="sourcePath2">
+        <Input id="sourcePath2" path="/description"/><MappingTarget uri="http://schema.org/description">
+        <ValueType nodeType="AutoDetectValueType"/>
+      </MappingTarget>
+      </TransformRule><TransformRule name="sourcePath3">
+        <Input id="sourcePath3" path="/start"/><MappingTarget uri="http://schema.org/startDate">
+        <ValueType nodeType="AutoDetectValueType"/>
+      </MappingTarget>
+      </TransformRule><TransformRule name="sourcePath4">
+        <Input id="sourcePath4" path="/end"/><MappingTarget uri="http://schema.org/endDate">
+        <ValueType nodeType="AutoDetectValueType"/>
+      </MappingTarget>
+      </TransformRule><TransformRule name="object1">
+        <TransformInput id="unnamed_495" function="concat">
+        <TransformInput id="constant0" function="constant">
+        
+        <Param name="value" value="edsa:edX"/>
+      </TransformInput>
+        <Param name="glue" value=""/>
+      </TransformInput><MappingTarget uri="http://schema.org/organizer">
+        <ValueType nodeType="UriValueType"/>
+      </MappingTarget>
+      </TransformRule><TransformRule name="sourcePath5">
+        <TransformInput id="constant1" function="constant">
+        
+        <Param name="value" value="edX"/>
+      </TransformInput><MappingTarget uri="foundIn">
+        <ValueType nodeType="AutoDetectValueType"/>
+      </MappingTarget>
+      </TransformRule><Outputs>
+        <Output id="Results"></Output>
+      </Outputs><TargetVocabularies>
+        
+      </TargetVocabularies>
+      </TransformSpec>

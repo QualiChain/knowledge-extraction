@@ -1,0 +1,48 @@
+@import org.silkframework.workbench.Context
+
+@(context: Context[org.silkframework.dataset.DatasetSpec.GenericDatasetSpec],
+  endpoint: org.silkframework.dataset.rdf.SparqlEndpoint,
+  query: String,
+  queryResults: Option[org.silkframework.dataset.rdf.SparqlResults])(implicit session: play.api.mvc.Session)
+
+@header = {
+
+}
+
+@toolbar = {
+
+}
+
+@content = {
+<form action="sparql">
+  <textarea name="query" cols="70" rows="25">
+@if(query.isEmpty) {@for((prefix, namespace) <- context.project.config.prefixes.prefixMap) {PREFIX @prefix: &lt;@namespace&gt;
+}
+SELECT * WHERE {
+  ?s ?p ?o
+}
+LIMIT 20} else {@query}
+  </textarea>
+  <br/>
+  <input type="submit" value="Submit">
+</form>
+
+<table>
+  <tr>
+    @for(results <- queryResults.toList;
+         variable <- results.variables) {
+      <th>@variable<th>
+    }
+  </tr>
+
+  @for(results <- queryResults.toList; bindings <- results.bindings) {
+    <tr>
+      @for((variable, node) <- bindings) {
+        <td>@node.value<td>
+      }
+    </tr>
+  }
+</table>
+}
+
+@main(Some(context), titleLabel = context.task.taskLabel())(header)(toolbar)(content)

@@ -1,0 +1,32 @@
+Phase: delete_annotation_from_markup
+Input: title Lookup SkillToolTemp SkillProductTemp SkillTopicTemp identifier
+Options: control = appelt
+
+
+Rule: DeleteAnnotationFromTitle
+(
+  {SkillToolTemp within title} | {SkillProductTemp within title} | {SkillTopicTemp within title}
+) : lookup
+
+-->
+{
+	gate.AnnotationSet actions = (gate.AnnotationSet)bindings.get("lookup");
+				outputAS.removeAll(actions);
+
+	//System.out.println("Size of the list" + actions.size());
+}
+
+
+
+Rule: DeleteAnnotationFromIdentifier
+(
+  {SkillToolTemp within identifier} | {SkillProductTemp within identifier} | {SkillTopicTemp within identifier}
+) : lookup
+
+-->
+{
+	gate.AnnotationSet actions = (gate.AnnotationSet)bindings.get("lookup");
+				outputAS.removeAll(actions);
+
+	
+}

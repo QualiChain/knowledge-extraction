@@ -1,0 +1,59 @@
+{
+	"results" : [{
+			"media" : {
+				"course_image" : {
+					"uri" : "/c4x/edX/example/asset/just_a_test.jpg",
+					"name" : "Course Image"
+				}
+			},
+			"description" : "An example course.",
+			"end" : "2015-09-19T18:00:00Z",
+			"enrollment_end" : "2015-07-15T00:00:00Z",
+			"enrollment_start" : "2015-06-15T00:00:00Z",
+			"id" : "edX/example/2012_Fall",
+			"name" : "Example Course",
+			"number" : "example",
+			"org" : "edX",
+			"start" : "2015-07-17T12:00:00Z",
+			"start_display" : "July 17, 2015",
+			"start_type" : "timestamp"
+		}, {
+			"media" : {
+				"course_image" : {
+					"uri" : "/c4x/edX/example/asset/just_a_test.jpg",
+					"name" : "Course Image"
+				}
+			},
+			"description" : "An example course.",
+			"end" : "2015-09-19T18:00:00Z",
+			"enrollment_end" : "2015-07-15T00:00:00Z",
+			"enrollment_start" : "2015-06-15T00:00:00Z",
+			"id" : "edX/example/201_Fall",
+			"name" : "Example Course",
+			"number" : "example",
+			"org" : "edX",
+			"start" : "2015-07-17T12:00:00Z",
+			"start_display" : "July 17, 2015",
+			"start_type" : "timestamp"
+		}, {
+			"media" : {
+				"course_image" : {
+					"uri" : "/c4x/edX/example/asset/just_a_test.jpg",
+					"name" : "Course Image"
+				}
+			},
+			"description" : "An example course.",
+			"end" : "2015-09-19T18:00:00Z",
+			"enrollment_end" : "2015-07-15T00:00:00Z",
+			"enrollment_start" : "2015-06-15T00:00:00Z",
+			"id" : "edX/example/2013_Fall",
+			"name" : "Example Course",
+			"number" : "example",
+			"org" : "edX",
+			"start" : "2015-07-17T12:00:00Z",
+			"start_display" : "July 17, 2015",
+			"start_type" : "timestamp"
+		}
+
+	]
+}

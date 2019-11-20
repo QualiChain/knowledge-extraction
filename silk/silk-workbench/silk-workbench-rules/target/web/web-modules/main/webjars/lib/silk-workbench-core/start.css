@@ -1,0 +1,15 @@
+#content {
+  background: #ffffff;
+}
+
+#toolbar {
+  display:none;
+}
+
+#welcome {
+  margin-right: 50px;
+}
+
+#welcome img.logo {
+  float: right;
+}

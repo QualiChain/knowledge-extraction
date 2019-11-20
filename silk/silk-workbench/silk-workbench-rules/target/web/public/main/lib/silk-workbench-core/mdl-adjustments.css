@@ -1,0 +1,461 @@
+/*
+* Generic Stuff
+*/
+
+.mdl-layout__header-row {
+    padding: 0 1rem 0 1rem;
+}
+
+.button-set .mdl-button {
+  margin-right: 5px;
+}
+
+.mdl-tooltip {
+  word-wrap: break-word;
+}
+
+/*
+* Linking Rule Editor Toolbar
+*/
+
+#toolbar {
+  margin-top: 2px;
+  background: none;
+  min-height: 40px;
+}
+
+#toolbar li {
+  margin-right: 5px;
+}
+
+
+#toolbar .mdl-button {
+  font-size: 12px;
+  height: 31px;
+  line-height: 33px;
+}
+
+#toolbar .spacer {
+  width: 10px;
+}
+
+#select_link_limit {
+  width: 90px;
+}
+
+#input_link_type {
+  width: 150px;
+}
+
+#toolbar .mdl-textfield {
+  padding: 0px;
+}
+
+#toolbar .mdl-textfield__input {
+  font-size: 14px;
+  height: 17px;
+}
+
+#toolbar .mdl-selectfield {
+  padding: 0px;
+}
+
+#toolbar .mdl-selectfield__select {
+  font-size: 14px;
+}
+
+#toolbar label {
+  font-size: 12px;
+  color: #3f51b5;
+}
+
+#error-icons {
+  display: inline-block;
+  float: right;
+}
+
+/*
+* Transform Editor Toolbar
+*/
+
+#input_rulename {
+  width: 150px;
+}
+
+#input_targetproperty {
+  width: 150px;
+}
+
+/*
+* Linking Rule Editor Canvas
+*/
+
+.droppable-canvas h5 {
+  margin: 0px;
+}
+
+/*
+* Operators / Linking Rule Editor Component List
+*/
+
+.palette-block {
+  margin-top: 10px;
+}
+
+#refresh {
+  background: none;
+}
+
+#operators .mdl-selectfield {
+  padding: 0px;
+  margin-left: 5px;
+  width: auto;
+  color: #000000;
+  font-size: 14px;
+}
+
+.scrollboxes {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.block-header {
+  padding: 5px 0px 5px 0px;
+  height: 24px;
+}
+
+.operator-type {
+  font-weight: bold;
+}
+
+
+.draggables {
+  border: 1px solid #d9d9d9;
+}
+
+.dragDiv input.mdl-textfield__input.param_value {
+  width: calc(100% - 3px);
+}
+
+.dragDiv .mdl-textfield,.dragDiv .mdl-selectfield {
+  padding: 0px 0 !important;
+  padding-top: 16px !important;
+}
+
+.dragDiv label.mdl-textfield__label:after,.dragDiv label.mdl-selectfield__label:after {
+  bottom: 0px;
+}
+
+.dragDiv input[type="checkbox"] {
+	cursor: pointer;
+	width: 14px;
+	height: 14px;
+	vertical-align: bottom;
+	background: #eee;
+	border:1px solid #ddd;
+}
+
+/*
+.scrollboxes {
+  min-height: 82px;
+  max-height: 190px;
+}
+*/
+
+/*
+* Reference Links Toolbar
+*/
+
+#selectLinks {
+  margin-top: 5px;
+}
+
+/*
+* Operator Styles
+*/
+
+.dragDiv h5 {
+  border-radius: 3px 3px 0px 0px;
+}
+
+.operator_footer {
+  border-radius: 0px 0px 3px 3px;
+  line-height: 15px;
+}
+
+
+/*
+* Linking Editor Paths
+*/
+
+.path_type {
+  display: block;
+  float: left;
+  width: 100px;
+}
+
+.path_id {
+  width: 132px;
+  display: block;
+  float: left;
+/*
+  word-wrap: break-word;
+*/
+  white-space: nowrap;
+  word-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#source_id, #target_id {
+  border-radius: 3px;
+}
+
+/*
+* New Editor Component Colors
+* see https://www.google.com/design/spec/style/color.html#color-color-palette
+*
+*                   light       dark      MDL Name
+* Source:           #E1BEE7     #CE93D8   (Purple) 100-200
+* Target:           #C5CAE9     #9FA8DA   (Indigo) 100-200
+* Transformations:  #CFD8DC     #B0BEC5   (Blue Grey) 100-200
+* Comparators:      #BBDEFB     #90CAF9   (Blue) 100-200
+* Aggregators:      #B2DFDB     #80CBC4   (Teal) 100-200
+*/
+
+
+.sourceDiv h5 {
+  background-color: #CE93D8;
+}
+.sourcePaths {
+  background-color: #E1BEE7;
+  border:1px dotted #CE93D8;
+}
+.sourceDiv .content {
+  border-color: #CE93D8;
+}
+.sourceDiv:hover {
+  background-color:#FFF;
+  box-shadow: 1px 1px 6px #CE93D8;
+}
+.operator_footer.sourceDiv {
+  background-color: #E1BEE7;
+  border-color: #CE93D8;
+}
+#source_id {
+  border: 1px solid #CE93D8;
+  background-color: #E1BEE7;
+}
+
+
+.targetDiv h5 {
+  background-color: #9FA8DA;
+}
+.targetPaths {
+  background-color: #C5CAE9;
+  border:1px dotted #9FA8DA;
+}
+.targetDiv .content {
+  border-color: #9FA8DA;
+}
+.targetDiv:hover {
+  background-color: #FFF;
+  box-shadow: 1px 1px 6px #9FA8DA;
+}
+.operator_footer.targetDiv {
+  background-color: #C5CAE9;
+  border-color: #9FA8DA;
+}
+#target_id {
+  color: #4f2b2b;
+  border: 1px solid #9FA8DA;
+  background-color: #C5CAE9;
+}
+
+
+.transformHeader {
+  color: #B0BEC5;
+}
+.transformDiv h5 {
+  background-color: #B0BEC5;
+}
+.transformations {
+  background-color: #CFD8DC;
+  border:1px dotted #B0BEC5;
+}
+.transformDiv .content {
+  border-color: #B0BEC5;
+}
+.transformDiv:hover {
+  background-color: #FFF;
+  box-shadow: 1px 1px 6px #B0BEC5;
+}
+.operator_footer.transformDiv {
+  background-color: #CFD8DC;
+  border-color: #B0BEC5;
+}
+
+
+.compareHeader {
+  color: #90CAF9;
+}
+.compareDiv h5 {
+  background-color: #90CAF9;
+}
+.comparators {
+  background-color: #BBDEFB;
+  border:1px dotted #90CAF9;
+}
+.compareDiv .content {
+  border-color: #90CAF9;
+}
+.compareDiv:hover {
+  background-color: #FFF;
+  box-shadow: 1px 1px 6px #90CAF9;
+}
+.operator_footer.compareDiv {
+  background-color: #BBDEFB;
+  border-color: #90CAF9;
+}
+
+
+.aggregateHeader {
+  color: #80CBC4;
+}
+.aggregateDiv h5 {
+  background-color:#80CBC4;
+}
+.aggregators {
+	background-color: #B2DFDB;
+	border:1px dotted #80CBC4;
+}
+.aggregateDiv .content {
+  border-color: #80CBC4;
+}
+.aggregateDiv:hover {
+  background-color: #FFF;
+  box-shadow: 1px 1px 6px #80CBC4;
+}
+.operator_footer.aggregateDiv {
+  background-color: #B2DFDB;
+  border-color: #80CBC4;
+}
+
+
+
+/*
+* General Editor/Workflow Colors
+*/
+
+.toolboxOperator {
+  background-color: #B2DFDB;
+}
+
+.operatorHeader {
+  background-color: #80CBC4;
+}
+
+/*
+* Active Learning
+*/
+
+.learning_path_label {
+  font-weight: bold;
+}
+
+/*
+* Generate Links
+*/
+
+#results a {
+  color: #000000;
+}
+
+#link-candidate-wrapper .source-value, #link-candidate-wrapper .target-value {
+  word-wrap: break-word;
+}
+
+
+/*
+* Dialogs
+*/
+
+.mdl-dialog__title .mdl-spinner {
+  float: right;
+  display: none;
+}
+
+.delete-dialog-resource {
+  font-weight: bold;
+}
+
+.mdl-tabs__tab {
+  outline:none;
+}
+
+/* Plugin Dialog */
+
+.no-data-avaliable {
+  color: red;
+  font-style: italic;
+}
+
+/* Resource Dialog */
+
+#resource-resources-box {
+  padding: 10px 10px 5px 10px;
+  border: 1px solid rgba(0, 0, 0, .34);
+  border-radius: 3px;
+}
+
+
+.resource-chip {
+  color: rgba(0, 0, 0, .87);
+  background-color: rgba(0, 0, 0, 0.0588235);
+  border-radius: 16px;
+  line-height: 32px;
+  padding-left: 12px;
+  padding-right: 7px;
+  font-size: 13px;
+  margin: 0 5px 5px 0;
+  display: inline-block;
+}
+
+.resource-chip-icon {
+  background-color: rgba(0, 0, 0, .54);
+  color: #eee;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 2px;
+  border-radius: 8px;
+  vertical-align: middle;
+  margin-left: 2px;
+  cursor: pointer;
+}
+
+#resource-tab-panels .mdl-tabs__panel {
+  margin-top: 20px;
+}
+
+.mdl-file-upload {
+  padding: 20px 0;
+}
+
+.mdl-file-upload input {
+  font-size: 16px;
+}
+
+/* Fix blurry tooltip problem */
+.mdl-tooltip {
+  will-change: unset;
+}
+
+/**
+We sometimes defer mdl elements like tooltips, we want them to be as invisible as possible,
+while also needing space in the layout (so that we can filter for :visible mdl-defers)
+ */
+.mdl-defer {
+  font-size: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+}

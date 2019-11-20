@@ -1,0 +1,15 @@
+<Types>
+  <Type frequency="Infinity"></Type>
+  <Type frequency="1.0">/@version</Type>
+  <Type frequency="1.0">/AnnotationSet</Type>
+  <Type frequency="0.5">/AnnotationSet/Annotation</Type>
+  <Type frequency="0.3333333333333333">/AnnotationSet/Annotation/@EndNode</Type>
+  <Type frequency="0.3333333333333333">/AnnotationSet/Annotation/@StartNode</Type>
+  <Type frequency="0.3333333333333333">/AnnotationSet/Annotation/@Type</Type>
+  <Type frequency="0.3333333333333333">/AnnotationSet/Annotation/@Id</Type>
+  <Type frequency="0.3333333333333333">/AnnotationSet/Annotation/Feature</Type>
+  <Type frequency="0.25">/AnnotationSet/Annotation/Feature/Name</Type>
+  <Type frequency="0.2">/AnnotationSet/Annotation/Feature/Name/@className</Type>
+  <Type frequency="0.25">/AnnotationSet/Annotation/Feature/Value</Type>
+  <Type frequency="0.2">/AnnotationSet/Annotation/Feature/Value/@className</Type>
+</Types>

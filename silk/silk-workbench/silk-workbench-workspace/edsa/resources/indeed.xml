@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<response version="2">
+    <query>java</query>
+    <location>austin, tx</location>
+    <clickedCategories></clickedCategories>
+    <paginationPayload></paginationPayload>
+    <radius>25</radius>
+    <dupefilter>true</dupefilter>
+    <highlight>false</highlight>
+    <start>1</start>
+    <end>10</end>
+    <pageNumber>0</pageNumber>
+    <totalresults>1101</totalresults>
+    <results>
+        <result>
+            <jobtitle>Entry Level Java Developer</jobtitle>
+            <company>NDDSystem llc</company>
+            <city>Austin</city>
+            <state>TX</state>
+            <country>US</country>
+            <formattedLocation>Austin, TX</formattedLocation>
+            <source>NDDSystem llc</source>
+            <date>Thu, 01 Sep 2016 03:07:12 GMT</date>
+            <snippet>Entry Level Java Developer. We are looking for a motivated and confident Entry Level Java Developer who has a strong thirst for learning and a drive to succeed...</snippet>
+            <url>http://www.indeed.com/viewjob?jk=41d388b5084235ab&amp;qd=Tc6jDt4rh0PweGpMuxZ98IcknrmMbTJo31YTxjp3rfqQM8Fp4swq5uKehVNPma9rl_wkxxOi8_BMTR1R4xVNtVpmZr_LKTpHt441hi8Azxw&amp;indpubnum=126997023285851&amp;atk=1arvl7jhk0mq34jk</url>
+            <onmousedown>indeed_clk(this,'7584');</onmousedown>
+            <latitude>30.266483</latitude>
+            <longitude>-97.74176</longitude>
+            <jobkey>41d388b5084235ab</jobkey>
+            <sponsored>false</sponsored>
+            <expired>false</expired>
+            <indeedApply>false</indeedApply>
+            <formattedLocationFull>Austin, TX</formattedLocationFull>
+            <formattedRelativeTime>5 days ago</formattedRelativeTime>
+        </result>
+        <result>
+            <jobtitle>Entry level Software Developer</jobtitle>
+            <company>Nazama management services</company>
+            <city>Austin</city>
+            <state>TX</state>
+            <country>US</country>
+            <formattedLocation>Austin, TX</formattedLocation>
+            <source>Indeed</source>
+            <date>Fri, 02 Sep 2016 12:57:13 GMT</date>
+            <snippet>Basic programming language (c, c++, java). Applies a systematic, disciplined, quantifiable approach for the software development of major portions of a system...</snippet>
+            <url>http://www.indeed.com/viewjob?jk=1ae5b341804942bd&amp;qd=Tc6jDt4rh0PweGpMuxZ98IcknrmMbTJo31YTxjp3rfqQM8Fp4swq5uKehVNPma9rl_wkxxOi8_BMTR1R4xVNtVpmZr_LKTpHt441hi8Azxw&amp;indpubnum=126997023285851&amp;atk=1arvl7jhk0mq34jk</url>
+            <onmousedown>indeed_clk(this,'7584');</onmousedown>
+            <latitude>30.266483</latitude>
+            <longitude>-97.74176</longitude>
+            <jobkey>1ae5b341804942bd</jobkey>
+            <sponsored>false</sponsored>
+            <expired>false</expired>
+            <indeedApply>true</indeedApply>
+            <formattedLocationFull>Austin, TX</formattedLocationFull>
+            <formattedRelativeTime>3 days ago</formattedRelativeTime>
+        </result>
+        <result>
+            <jobtitle>Entry Level Software Developer</jobtitle>
+            <company>Social Solutions</company>
+            <city>Austin</city>
+            <state>TX</state>
+            <country>US</country>
+            <formattedLocation>Austin, TX</formattedLocation>
+            <source>Social Solutions</source>
+            <date>Fri, 02 Sep 2016 06:07:49 GMT</date>
+            <snippet>Who We Are : Mission focused and results oriented! Social Solutions’ main purpose and software solution (SaaS) helps some of the most vulnerable human beings...</snippet>
+            <url>http://www.indeed.com/viewjob?jk=5e812eee4329605b&amp;qd=Tc6jDt4rh0PweGpMuxZ98IcknrmMbTJo31YTxjp3rfqQM8Fp4swq5uKehVNPma9rl_wkxxOi8_BMTR1R4xVNtVpmZr_LKTpHt441hi8Azxw&amp;indpubnum=126997023285851&amp;atk=1arvl7jhk0mq34jk</url>
+            <onmousedown>indeed_clk(this,'7584');</onmousedown>
+            <latitude>30.266483</latitude>
+            <longitude>-97.74176</longitude>
+            <jobkey>5e812eee4329605b</jobkey>
+            <sponsored>false</sponsored>
+            <expired>false</expired>
+            <indeedApply>false</indeedApply>
+            <formattedLocationFull>Austin, TX</formattedLocationFull>
+            <formattedRelativeTime>4 days ago</formattedRelativeTime>
+        </result>
+        <result>
+            <jobtitle>Full Stack Java Developer</jobtitle>
+            <company>Express Scripts</company>
+            <city>Austin</city>
+            <state>TX</state>
+            <country>US</country>
+            <formattedLocation>Austin, TX</formattedLocation>
+            <source>Express Scripts</source>
+            <date>Wed, 31 Aug 2016 23:00:10 GMT</date>
+            <snippet>Constructing solutions while progressing towards the approved enterprise. Full-time Job ID:....</snippet>
+            <url>http://www.indeed.com/viewjob?jk=03e590d90755a1f0&amp;qd=Tc6jDt4rh0PweGpMuxZ98IcknrmMbTJo31YTxjp3rfqQM8Fp4swq5uKehVNPma9rl_wkxxOi8_BMTR1R4xVNtVpmZr_LKTpHt441hi8Azxw&amp;indpubnum=126997023285851&amp;atk=1arvl7jhk0mq34jk</url>
+            <onmousedown>indeed_clk(this,'7584');</onmousedown>
+            <latitude>30.266483</latitude>
+            <longitude>-97.74176</longitude>
+            <jobkey>03e590d90755a1f0</jobkey>
+            <sponsored>false</sponsored>
+            <expired>false</expired>
+            <indeedApply>false</indeedApply>
+            <formattedLocationFull>Austin, TX</formattedLocationFull>
+            <formattedRelativeTime>5 days ago</formattedRelativeTime>
+        </result>
+        <result>
+            <jobtitle>Java/J2EE Developer</jobtitle>
+            <company>Sonsoft Inc</company>
+            <city>Austin</city>
+            <state>TX</state>
+            <country>US</country>
+            <formattedLocation>Austin, TX</formattedLocation>
+            <source>Sonsoft Inc</source>
+            <date>Sat, 03 Sep 2016 03:07:27 GMT</date>
+            <snippet>At least 3 years of experience in Java object oriented design API development using Java, REST, Spring, Jersey, Hibernate, SQL....</snippet>
+            <url>http://www.indeed.com/viewjob?jk=17c0de7315ab1827&amp;qd=Tc6jDt4rh0PweGpMuxZ98IcknrmMbTJo31YTxjp3rfqQM8Fp4swq5uKehVNPma9rl_wkxxOi8_BMTR1R4xVNtVpmZr_LKTpHt441hi8Azxw&amp;indpubnum=126997023285851&amp;atk=1arvl7jhk0mq34jk</url>
+            <onmousedown>indeed_clk(this,'7584');</onmousedown>
+            <latitude>30.266483</latitude>
+            <longitude>-97.74176</longitude>
+            <jobkey>17c0de7315ab1827</jobkey>
+            <sponsored>false</sponsored>
+            <expired>false</expired>
+            <indeedApply>false</indeedApply>
+            <formattedLocationFull>Austin, TX</formattedLocationFull>
+            <formattedRelativeTime>3 days ago</formattedRelativeTime>
+        </result>
+        <result>
+            <jobtitle>Java/J2EE Developer (Rest/SOAP/Hibernate)</jobtitle>
+            <company>Sonsoft Inc</company>
+            <city>Austin</city>
+            <state>TX</state>
+            <country>US</country>
+            <formattedLocation>Austin, TX</formattedLocation>
+            <source>Sonsoft Inc</source>
+            <date>Sat, 03 Sep 2016 03:07:26 GMT</date>
+            <snippet>At least 3 years of experience in Java object oriented design API development using Java, REST, Spring, Jersey, Hibernate, SQL....</snippet>
+            <url>http://www.indeed.com/viewjob?jk=7bb1f48304c3f24b&amp;qd=Tc6jDt4rh0PweGpMuxZ98IcknrmMbTJo31YTxjp3rfqQM8Fp4swq5uKehVNPma9rl_wkxxOi8_BMTR1R4xVNtVpmZr_LKTpHt441hi8Azxw&amp;indpubnum=126997023285851&amp;atk=1arvl7jhk0mq34jk</url>
+            <onmousedown>indeed_clk(this,'7584');</onmousedown>
+            <latitude>30.266483</latitude>
+            <longitude>-97.74176</longitude>
+            <jobkey>7bb1f48304c3f24b</jobkey>
+            <sponsored>false</sponsored>
+            <expired>false</expired>
+            <indeedApply>false</indeedApply>
+            <formattedLocationFull>Austin, TX</formattedLocationFull>
+            <formattedRelativeTime>3 days ago</formattedRelativeTime>
+        </result>
+        <result>
+            <jobtitle>Sr. Software Developer (Austin, TX or Remote) Job</jobtitle>
+            <company>3M</company>
+            <city>Austin</city>
+            <state>TX</state>
+            <country>US</country>
+            <formattedLocation>Austin, TX</formattedLocation>
+            <source>3M</source>
+            <date>Wed, 03 Aug 2016 23:09:21 GMT</date>
+            <snippet>Maintain existing Java based applications; 3M is seeking a Senior Software Developer for the Traffic Safety&amp;amp; Security Division located in Austin, Texas or the...</snippet>
+            <url>http://www.indeed.com/viewjob?jk=983c89a304e4ad94&amp;qd=Tc6jDt4rh0PweGpMuxZ98IcknrmMbTJo31YTxjp3rfqQM8Fp4swq5uKehVNPma9rl_wkxxOi8_BMTR1R4xVNtVpmZr_LKTpHt441hi8Azxw&amp;indpubnum=126997023285851&amp;atk=1arvl7jhk0mq34jk</url>
+            <onmousedown>indeed_clk(this,'7584');</onmousedown>
+            <latitude>30.342592</latitude>
+            <longitude>-97.69632</longitude>
+            <jobkey>983c89a304e4ad94</jobkey>
+            <sponsored>false</sponsored>
+            <expired>false</expired>
+            <indeedApply>false</indeedApply>
+            <formattedLocationFull>Austin, TX 78753</formattedLocationFull>
+            <formattedRelativeTime>30+ days ago</formattedRelativeTime>
+        </result>
+        <result>
+            <jobtitle>Java Developer</jobtitle>
+            <company>AgileAssets Inc.</company>
+            <city>Austin</city>
+            <state>TX</state>
+            <country>US</country>
+            <formattedLocation>Austin, TX</formattedLocation>
+            <source>AgileAssets Inc.</source>
+            <date>Wed, 24 Aug 2016 08:52:10 GMT</date>
+            <snippet>Java programming expertise. Java Developer Job Description:. AgileAssets is the leading global provider of integrated infrastructure asset management software...</snippet>
+            <url>http://www.indeed.com/viewjob?jk=8ba10d95d9d0add4&amp;qd=Tc6jDt4rh0PweGpMuxZ98IcknrmMbTJo31YTxjp3rfqQM8Fp4swq5uKehVNPma9rl_wkxxOi8_BMTR1R4xVNtVpmZr_LKTpHt441hi8Azxw&amp;indpubnum=126997023285851&amp;atk=1arvl7jhk0mq34jk</url>
+            <onmousedown>indeed_clk(this,'7584');</onmousedown>
+            <latitude>30.266483</latitude>
+            <longitude>-97.74176</longitude>
+            <jobkey>8ba10d95d9d0add4</jobkey>
+            <sponsored>false</sponsored>
+            <expired>false</expired>
+            <indeedApply>false</indeedApply>
+            <formattedLocationFull>Austin, TX</formattedLocationFull>
+            <formattedRelativeTime>13 days ago</formattedRelativeTime>
+        </result>
+        <result>
+            <jobtitle>Software Engineer (Core Java Developer)</jobtitle>
+            <company>Sailotech Pvt Ltd</company>
+            <city>Austin</city>
+            <state>TX</state>
+            <country>US</country>
+            <formattedLocation>Austin, TX</formattedLocation>
+            <source>Indeed</source>
+            <date>Fri, 02 Sep 2016 16:34:35 GMT</date>
+            <snippet>Software Engineer (Core Java)*. Core Java developer, working with the spring framework, web applications in Java and web services....</snippet>
+            <url>http://www.indeed.com/viewjob?jk=9bb1616ff06f588e&amp;qd=Tc6jDt4rh0PweGpMuxZ98IcknrmMbTJo31YTxjp3rfqQM8Fp4swq5uKehVNPma9rl_wkxxOi8_BMTR1R4xVNtVpmZr_LKTpHt441hi8Azxw&amp;indpubnum=126997023285851&amp;atk=1arvl7jhk0mq34jk</url>
+            <onmousedown>indeed_clk(this,'7584');</onmousedown>
+            <latitude>30.266483</latitude>
+            <longitude>-97.74176</longitude>
+            <jobkey>9bb1616ff06f588e</jobkey>
+            <sponsored>false</sponsored>
+            <expired>false</expired>
+            <indeedApply>true</indeedApply>
+            <formattedLocationFull>Austin, TX</formattedLocationFull>
+            <formattedRelativeTime>3 days ago</formattedRelativeTime>
+        </result>
+        <result>
+            <jobtitle>Senior Software Developer - Bee Cave, Tx</jobtitle>
+            <company>TimeClock Plus</company>
+            <city>Austin</city>
+            <state>TX</state>
+            <country>US</country>
+            <formattedLocation>Austin, TX</formattedLocation>
+            <source>TimeClock Plus</source>
+            <date>Thu, 01 Sep 2016 01:53:21 GMT</date>
+            <snippet>Recent experience with C# and/or Java development and Web Application development preferred. TimeClock Plus develops time and attendance solutions for employee...</snippet>
+            <url>http://www.indeed.com/viewjob?jk=d3c1d50e49c65141&amp;qd=Tc6jDt4rh0PweGpMuxZ98IcknrmMbTJo31YTxjp3rfqQM8Fp4swq5uKehVNPma9rl_wkxxOi8_BMTR1R4xVNtVpmZr_LKTpHt441hi8Azxw&amp;indpubnum=126997023285851&amp;atk=1arvl7jhk0mq34jk</url>
+            <onmousedown>indeed_clk(this,'7584');</onmousedown>
+            <latitude>30.266483</latitude>
+            <longitude>-97.74176</longitude>
+            <jobkey>d3c1d50e49c65141</jobkey>
+            <sponsored>false</sponsored>
+            <expired>false</expired>
+            <indeedApply>false</indeedApply>
+            <formattedLocationFull>Austin, TX</formattedLocationFull>
+            <formattedRelativeTime>5 days ago</formattedRelativeTime>
+        </result>
+    </results>
+</response>

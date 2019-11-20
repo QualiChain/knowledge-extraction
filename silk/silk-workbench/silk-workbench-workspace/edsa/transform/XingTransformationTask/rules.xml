@@ -1,0 +1,23 @@
+<TransformSpec>
+        <TransformRule name="type" targetProperty="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+        <TransformInput id="unnamed_275" function="constantUri">
+            
+            <Param name="value" value="http://www.edsa-project.eu/edsa#JobPosting"/>
+          </TransformInput>
+      </TransformRule><TransformRule name="uri" targetProperty="">
+        <TransformInput id="unnamed_282" function="concat">
+            <TransformInput id="unnamed_280" function="constant">
+            
+            <Param name="value" value="http://www.edsa-project.eu/jobpost/"/>
+          </TransformInput><Input id="unnamed_281" path="/id"/>
+            <Param name="glue" value=""/>
+          </TransformInput>
+      </TransformRule><TransformRule name="source" targetProperty="http://schema.org/source">
+        <TransformInput id="constant1" function="constant">
+            
+            <Param name="value" value="xing"/>
+          </TransformInput>
+      </TransformRule><Outputs>
+        <Output id="Results"></Output>
+      </Outputs>
+      </TransformSpec>

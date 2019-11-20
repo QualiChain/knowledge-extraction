@@ -1,0 +1,47 @@
+Phase: add_string
+Input: Lookup Token SkillTool SkillProduct SkillTopic
+Options: control = appelt
+
+
+Rule: AddFrequencyOfMention
+(
+  {SkillProduct}
+) :tok
+
+-->
+{
+	gate.AnnotationSet tokAnnots = (gate.AnnotationSet) bindings.get("tok");
+	//System.out.println(tokAnnots.size());
+	ArrayList<String> stringList = new ArrayList<String>();
+	
+	for (Annotation a : tokAnnots) {
+	FeatureMap fm = a.getFeatures();
+	String str = (String)fm.get("string");
+	
+	stringList.add(str);
+	}
+	
+	//Convert to an array
+	String[] array = stringList.toArray(new String[stringList.size()]);
+	
+	for (Annotation a : tokAnnots) {
+	FeatureMap fm = a.getFeatures();
+	String str = (String)fm.get("string");
+	int temp = 0;
+	for (int i = 0; i < array.length; i++){
+	//System.out.println(" Inside the array with length " + array.length + " is " + array[i]);
+	if(str.equals(array[i])) {
+		temp++;
+		
+		//System.out.println(str + " equals to " + array[i]);
+	}
+	}
+	
+	tokAnnots.iterator().next().getFeatures().put("frequencyOfMention", temp);
+	}
+	
+	
+}
+
+
+

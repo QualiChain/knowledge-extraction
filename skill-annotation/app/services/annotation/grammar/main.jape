@@ -1,0 +1,7 @@
+MultiPhase:	SkillAnnotationGrammarsForEvaluation
+Phases:
+skill_type_evaluation
+delete_annotation_from_markup_evaluation
+hiring_organization
+job_role
+Clean

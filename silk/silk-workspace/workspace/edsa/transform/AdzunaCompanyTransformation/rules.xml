@@ -1,0 +1,23 @@
+<TransformSpec>
+        <TransformRule name="organization" targetProperty="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+        <TransformInput id="unnamed_1606" function="constantUri">
+            
+            <Param name="value" value="http://schema.org/Organization"/>
+          </TransformInput>
+      </TransformRule><TransformRule name="uri" targetProperty="">
+        <TransformInput id="concat1" function="concat">
+            <TransformInput id="constant1" function="constant">
+            
+            <Param name="value" value="http://vocab.dsa.de/search/organization/"/>
+          </TransformInput><TransformInput id="regexReplace1" function="regexReplace">
+            <Input id="sourcePath1" path="/company/display_name"/>
+            <Param name="regex" value="\W+"/><Param name="replace" value="-"/>
+          </TransformInput>
+            <Param name="glue" value=""/>
+          </TransformInput>
+      </TransformRule><TransformRule name="name" targetProperty="http://schema.org/name">
+        <Input id="unnamed_1608" path="/company/display_name"/>
+      </TransformRule><Outputs>
+        <Output id="Results"></Output>
+      </Outputs>
+      </TransformSpec>

@@ -1,0 +1,174 @@
+<EntityDescription>
+  <Type></Type>
+  <Restriction></Restriction>
+  <Paths>
+    <TypedPath>
+      <Path> /id </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /sis_course_id </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /integration_id </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /name </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /course_code </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /workflow_state </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /account_id </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /root_account_id </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /enrollment_term_id </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /grading_standard_id </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /start_at </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /end_at </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /locale </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /enrollments </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /total_students </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /calendar </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /default_view </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /syllabus_body </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /needs_grading_count </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /term </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /course_progress </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /apply_assignment_group_weights </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /permissions/create_discussion_topic </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /permissions/create_announcement </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /is_public </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /is_public_to_auth_users </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /public_syllabus </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /public_syllabus_to_auth </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /public_description </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /storage_quota_mb </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /storage_quota_used_mb </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /hide_final_grades </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /license </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /allow_student_assignment_edits </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /allow_wiki_comments </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /allow_student_forum_attachments </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /open_enrollment </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /self_enrollment </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /restrict_enrollments_to_course_dates </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /course_format </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /access_restricted_by_date </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+    <TypedPath>
+      <Path> /time_zone </Path>
+      <ValueType nodeType="StringValueType"/>
+    </TypedPath>
+  </Paths>
+</EntityDescription>

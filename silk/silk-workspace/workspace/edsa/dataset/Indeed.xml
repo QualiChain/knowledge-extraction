@@ -1,0 +1,5 @@
+<Dataset id="Indeed" type="xml">
+  <Param name="file" value="indeed.xml"/>
+  <Param name="basePath" value="/results/result"/>
+  <Param name="uriPattern" value=""/>
+</Dataset>

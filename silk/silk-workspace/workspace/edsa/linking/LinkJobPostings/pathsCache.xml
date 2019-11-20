@@ -1,0 +1,26 @@
+<Pair>
+  <Source>
+    <EntityDescription>
+      <Type>http://www.edsa-project.eu/edsa#JobPosting</Type>
+      <Restriction></Restriction>
+      <Paths>
+        <TypedPath>
+          <Path> /&lt;http://schema.org/source&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+      </Paths>
+    </EntityDescription>
+  </Source>
+  <Target>
+    <EntityDescription>
+      <Type>http://www.edsa-project.eu/edsa#JobPosting</Type>
+      <Restriction></Restriction>
+      <Paths>
+        <TypedPath>
+          <Path> /&lt;http://schema.org/source&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+      </Paths>
+    </EntityDescription>
+  </Target>
+</Pair>

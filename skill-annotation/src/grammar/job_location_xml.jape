@@ -1,0 +1,14 @@
+Phase:	job_location
+Input: jobLocation
+Options: control = appelt
+
+
+Rule: FindLocation
+( {jobLocation}
+) :loc
+-->
+:loc.Location = { rule= "FindLocation"}
+
+
+
+

@@ -1,0 +1,18 @@
+<TransformSpec>
+        <TransformRule name="type" targetProperty="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+        <TransformInput id="unnamed_45" function="constantUri">
+            
+            <Param name="value" value="http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#JobPosting"/>
+          </TransformInput>
+      </TransformRule><TransformRule name="uri" targetProperty="">
+        <TransformInput id="unnamed_52" function="concat">
+            <TransformInput id="unnamed_50" function="constant">
+            
+            <Param name="value" value="http://example.org/"/>
+          </TransformInput><Input id="unnamed_51" path="/AnnotationSet/@Name"/>
+            <Param name="glue" value=""/>
+          </TransformInput>
+      </TransformRule><Outputs>
+        <Output id="Results"></Output>
+      </Outputs>
+      </TransformSpec>

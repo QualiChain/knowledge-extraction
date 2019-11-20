@@ -1,0 +1,81 @@
+<TransformSpec id="CanvasTransformationTask">
+        <SourceDataset dataSource="Canvas" var="a" typeUri="">
+        <RestrictTo>
+          
+        </RestrictTo>
+      </SourceDataset><TransformRule name="type1">
+        <TransformInput id="generateType" function="constantUri">
+        
+        <Param name="value" value="http://www.edsa-project.eu/edsa#"/>
+      </TransformInput><MappingTarget uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+        <ValueType nodeType="UriValueType"/>
+      </MappingTarget>
+      </TransformRule><TransformRule name="type2">
+        <TransformInput id="generateType" function="constantUri">
+        
+        <Param name="value" value="CourseInstance"/>
+      </TransformInput><MappingTarget uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+        <ValueType nodeType="UriValueType"/>
+      </MappingTarget>
+      </TransformRule><TransformRule name="uri">
+        <TransformInput id="unnamed_112" function="concat">
+        <TransformInput id="constant0" function="constant">
+        
+        <Param name="value" value="http://www.edsa-project.eu/course/"/>
+      </TransformInput><TransformInput id="encode1" function="urlEncode">
+        <Input id="path1" path="/course/id"/>
+        <Param name="encoding" value="UTF-8"/>
+      </TransformInput>
+        <Param name="glue" value=""/>
+      </TransformInput>
+      </TransformRule><TransformRule name="sourcePath1">
+        <Input id="sourcePath1" path="/course/name"/><MappingTarget uri="http://schema.org/name">
+        <ValueType nodeType="AutoDetectValueType"/>
+      </MappingTarget>
+      </TransformRule><TransformRule name="sourcePath2">
+        <Input id="sourcePath2" path="/course/public_description"/><MappingTarget uri="http://schema.org/description">
+        <ValueType nodeType="AutoDetectValueType"/>
+      </MappingTarget>
+      </TransformRule><TransformRule name="sourcePath3">
+        <Input id="sourcePath3" path="/course/syllabus_body"/><MappingTarget uri="http://schema.org/about">
+        <ValueType nodeType="AutoDetectValueType"/>
+      </MappingTarget>
+      </TransformRule><TransformRule name="sourcePath4">
+        <Input id="sourcePath4" path="/course/start_at"/><MappingTarget uri="http://schema.org/startDate">
+        <ValueType nodeType="AutoDetectValueType"/>
+      </MappingTarget>
+      </TransformRule><TransformRule name="sourcePath5">
+        <Input id="sourcePath5" path="/course/conclude_at"/><MappingTarget uri="http://schema.org/endDate">
+        <ValueType nodeType="AutoDetectValueType"/>
+      </MappingTarget>
+      </TransformRule><TransformRule name="object1">
+        <TransformInput id="unnamed_120" function="concat">
+        <TransformInput id="constant0" function="constant">
+        
+        <Param name="value" value="edsa:Canvas"/>
+      </TransformInput>
+        <Param name="glue" value=""/>
+      </TransformInput><MappingTarget uri="http://schema.org/organizer">
+        <ValueType nodeType="UriValueType"/>
+      </MappingTarget>
+      </TransformRule><TransformRule name="sourcePath6">
+        <Input id="sourcePath6" path="/course/locale"/><MappingTarget uri="http://schema.org/inLanguage">
+        <ValueType nodeType="AutoDetectValueType"/>
+      </MappingTarget>
+      </TransformRule><TransformRule name="sourcePath7">
+        <Input id="sourcePath7" path="/course/course_format"/><MappingTarget uri="http://schema.org/courseMode">
+        <ValueType nodeType="AutoDetectValueType"/>
+      </MappingTarget>
+      </TransformRule><TransformRule name="sourcePath8">
+        <TransformInput id="constant1" function="constant">
+        
+        <Param name="value" value="Canvas"/>
+      </TransformInput><MappingTarget uri="http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#foundIn">
+        <ValueType nodeType="AutoDetectValueType"/>
+      </MappingTarget>
+      </TransformRule><Outputs>
+        <Output id="Results"></Output>
+      </Outputs><TargetVocabularies>
+        
+      </TargetVocabularies>
+      </TransformSpec>

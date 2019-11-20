@@ -1,0 +1,50 @@
+@import org.silkframework.rule.LinkSpec
+@import org.silkframework.workbench.Context
+
+@(context: Context[LinkSpec])(implicit session: play.api.mvc.Session)
+
+@header = {
+  <script type="text/javascript">
+    var taskUrl = '@config.baseUrl/linking/tasks/@context.project.name/@context.task.id';
+
+    function startLearning() {
+      $.ajax({
+        type: 'PUT',
+        url: taskUrl + '/learningTask',
+        data: '',
+        success: function(response) {
+          window.location = "learn"
+        },
+        error: function(request) {
+          alert(request.responseText);
+        }
+      });
+    }
+    
+    function startActiveLearning() {
+      window.location = "activeLearn"
+    }
+  </script>
+}
+
+@toolbar = {}
+
+@content = {
+  @if(false) { @* disabled, because supervised learning UI is broken and we focus on active learning for now context.task.data.referenceLinks.isDefined) {*@
+    <span>
+      There are already @context.task.data.referenceLinks.positive.size positive and @context.task.data.referenceLinks.positive.size negative reference links.
+      Start learning a linkage rules from existing reference links: 
+      <button class="mdl-button mdl-js-button mdl-button--raised" onClick="startLearning()">Start</button>
+      <br/>
+      Start with existing reference links but find new reference links:
+      <button class="mdl-button mdl-js-button mdl-button--raised" onClick="startActiveLearning()">Start</button>
+    </span>
+  } else {
+    <span>
+      Start active learning: 
+      <button class="mdl-button mdl-js-button mdl-button--raised" onClick="startActiveLearning()">Start</button>
+    </span>
+  }
+}
+
+@main(Some(context), titleLabel = context.task.taskLabel())(header)(toolbar)(content)

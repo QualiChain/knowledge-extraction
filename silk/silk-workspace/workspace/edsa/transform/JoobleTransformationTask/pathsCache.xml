@@ -1,0 +1,16 @@
+<EntityDescription>
+  <Type></Type>
+  <Restriction></Restriction>
+  <Paths>
+    <Path>/totalCount</Path>
+    <Path>/jobs/source</Path>
+    <Path>/jobs/location</Path>
+    <Path>/jobs/snippet</Path>
+    <Path>/jobs/company</Path>
+    <Path>/jobs/salary</Path>
+    <Path>/jobs/id</Path>
+    <Path>/jobs/updated</Path>
+    <Path>/jobs/link</Path>
+    <Path>/jobs/title</Path>
+  </Paths>
+</EntityDescription>

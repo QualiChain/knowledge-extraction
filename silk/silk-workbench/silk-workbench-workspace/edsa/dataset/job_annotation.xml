@@ -1,0 +1,5 @@
+<Dataset id="job_annotation" type="xml">
+  <Param name="file" value="job_annotation_1_GATE.xml"/>
+  <Param name="basePath" value="/GateDocument/AnnotationSet/Annotation"/>
+  <Param name="uriPattern" value=""/>
+</Dataset>
