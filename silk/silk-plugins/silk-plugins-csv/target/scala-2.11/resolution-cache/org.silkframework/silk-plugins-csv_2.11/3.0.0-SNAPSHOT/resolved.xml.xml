@@ -4,7 +4,7 @@
 		module="silk-plugins-csv_2.11"
 		revision="3.0.0-SNAPSHOT"
 		status="integration"
-		publication="20190730224231"
+		publication="20191215092702"
 	>
 		<description>
 		Silk Plugins CSV
@@ -43,11 +43,11 @@
 		<dependency org="javax.inject" name="javax.inject" rev="1" conf="compile->default(compile)"/>
 		<dependency org="com.univocity" name="univocity-parsers" rev="2.7.6" conf="compile->default(compile)"/>
 		<override org="io.netty" module="netty" matcher="exact" rev="3.10.5.Final"/>
+		<override org="com.google.inject" module="guice" matcher="exact" rev="4.0"/>
 		<override org="com.google.code.findbugs" module="jsr305" matcher="exact" rev="3.0.0"/>
+		<override org="org.apache.thrift" module="libthrift" matcher="exact" rev="0.9.3"/>
+		<override org="com.fasterxml.jackson.core" module="jackson-databind" matcher="exact" rev="2.6.5"/>
 		<override org="javax.servlet" module="javax.servlet-api" matcher="exact" rev="3.1.0"/>
 		<override org="com.google.guava" module="guava" matcher="exact" rev="18.0"/>
-		<override org="org.apache.thrift" module="libthrift" matcher="exact" rev="0.9.3"/>
-		<override org="com.google.inject" module="guice" matcher="exact" rev="4.0"/>
-		<override org="com.fasterxml.jackson.core" module="jackson-databind" matcher="exact" rev="2.6.5"/>
 	</dependencies>
 </ivy-module>

@@ -7,7 +7,7 @@
 		revision="3.0.0-SNAPSHOT"
 		conf="compile"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20190730224235"/>
+		date="20191215092707"/>
 	<dependencies>
 		<module organisation="com.typesafe.play" name="play-ws_2.11">
 			<revision name="2.6.23" status="release" pubdate="20190514112022" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" extra-info.apiURL="https://www.playframework.com/documentation/2.6.23/api/scala/index.html" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="65">
@@ -102,7 +102,7 @@
 			</revision>
 		</module>
 		<module organisation="org.silkframework" name="silk-rules_2.11">
-			<revision name="3.0.0-SNAPSHOT" status="integration" pubdate="20190730224231" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="1">
+			<revision name="3.0.0-SNAPSHOT" status="integration" pubdate="20191215092704" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="1">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="org.silkframework" name="silk-workspace_2.11" conf="compile" rev="3.0.0-SNAPSHOT" rev-constraint-default="3.0.0-SNAPSHOT" rev-constraint-dynamic="3.0.0-SNAPSHOT" callerrev="3.0.0-SNAPSHOT"/>
 				<artifacts>
@@ -365,7 +365,7 @@
 			</revision>
 		</module>
 		<module organisation="org.silkframework" name="silk-core_2.11">
-			<revision name="3.0.0-SNAPSHOT" status="integration" pubdate="20190730224230" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile" position="2">
+			<revision name="3.0.0-SNAPSHOT" status="integration" pubdate="20191215092702" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile" position="2">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="org.silkframework" name="silk-rules_2.11" conf="compile" rev="3.0.0-SNAPSHOT" rev-constraint-default="3.0.0-SNAPSHOT" rev-constraint-dynamic="3.0.0-SNAPSHOT" callerrev="3.0.0-SNAPSHOT"/>
 				<artifacts>

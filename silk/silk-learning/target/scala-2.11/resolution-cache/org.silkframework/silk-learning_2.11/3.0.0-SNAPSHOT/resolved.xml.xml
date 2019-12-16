@@ -4,7 +4,7 @@
 		module="silk-learning_2.11"
 		revision="3.0.0-SNAPSHOT"
 		status="integration"
-		publication="20190731215449"
+		publication="20191215092707"
 	>
 		<description>
 		Silk Learning
@@ -42,12 +42,12 @@
 		<dependency org="org.mockito" name="mockito-all" rev="1.9.5" conf="test->default(compile)"/>
 		<dependency org="com.google.inject" name="guice" rev="4.0" conf="test->default(compile)"/>
 		<dependency org="javax.inject" name="javax.inject" rev="1" conf="compile->default(compile)"/>
-		<override org="com.fasterxml.jackson.core" module="jackson-databind" matcher="exact" rev="2.6.5"/>
-		<override org="org.apache.thrift" module="libthrift" matcher="exact" rev="0.9.3"/>
-		<override org="com.google.code.findbugs" module="jsr305" matcher="exact" rev="3.0.0"/>
 		<override org="io.netty" module="netty" matcher="exact" rev="3.10.5.Final"/>
-		<override org="javax.servlet" module="javax.servlet-api" matcher="exact" rev="3.1.0"/>
 		<override org="com.google.inject" module="guice" matcher="exact" rev="4.0"/>
+		<override org="com.google.code.findbugs" module="jsr305" matcher="exact" rev="3.0.0"/>
+		<override org="org.apache.thrift" module="libthrift" matcher="exact" rev="0.9.3"/>
+		<override org="com.fasterxml.jackson.core" module="jackson-databind" matcher="exact" rev="2.6.5"/>
+		<override org="javax.servlet" module="javax.servlet-api" matcher="exact" rev="3.1.0"/>
 		<override org="com.google.guava" module="guava" matcher="exact" rev="18.0"/>
 	</dependencies>
 </ivy-module>

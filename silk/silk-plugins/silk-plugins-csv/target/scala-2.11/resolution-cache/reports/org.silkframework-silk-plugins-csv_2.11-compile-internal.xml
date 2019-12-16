@@ -7,7 +7,7 @@
 		revision="3.0.0-SNAPSHOT"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20190730224231"/>
+		date="20191215092704"/>
 	<dependencies>
 		<module organisation="com.univocity" name="univocity-parsers">
 			<revision name="2.7.6" status="release" pubdate="20180925081551" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/univocity/univocity-parsers" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="48">
@@ -51,7 +51,7 @@
 			</revision>
 		</module>
 		<module organisation="org.silkframework" name="silk-core_2.11">
-			<revision name="3.0.0-SNAPSHOT" status="integration" pubdate="20190730224230" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="1">
+			<revision name="3.0.0-SNAPSHOT" status="integration" pubdate="20191215092702" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="1">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="org.silkframework" name="silk-plugins-csv_2.11" conf="compile-internal, compile, provided, optional" rev="3.0.0-SNAPSHOT" rev-constraint-default="3.0.0-SNAPSHOT" rev-constraint-dynamic="3.0.0-SNAPSHOT" callerrev="3.0.0-SNAPSHOT"/>
 				<artifacts>

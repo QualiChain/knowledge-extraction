@@ -7,7 +7,7 @@
 		revision="3.0.0-SNAPSHOT"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20190730223458"/>
+		date="20191215092702"/>
 	<dependencies>
 		<module organisation="org.mockito" name="mockito-all">
 			<revision name="1.9.5" status="release" pubdate="20121014121023" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.mockito.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="15">

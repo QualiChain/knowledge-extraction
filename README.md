@@ -8,30 +8,42 @@ The Repository consists of the three sub components (services) of the Knowledge 
 
 3. data acquisition - Fetches and process data from job posting portals
 
-To run the varius services. Follow these Instructions
+
+## RUNNING
+### --- Dockerization ---
+-----------------------------------------------
+Each Sub component has a Dockerfile at its root directory, this docker file contains instructions to run
+a ReadMe file is also contained with it that would provide more instructions.
+
+Use this file to create a docker file of the subcomponent
+Run the dockerized file
+
+
+### None Docker Versions : To run the varius services. Follow these Instructions
 -----------------------------------------------------------------------
 
 So far, the run_all.sh script should run all the three services.
 Take a look inside for what is what and which interface to call on which port.
 
 
-OTHERWISE, YOU CAN RUN THE DIFFERENT SERVICES SEPARATELY;
+### RUNNING THE SERVICES SEPARATELY;
 
-TO RUN SILK :
+#### To run Silk :
 
 Run steps:
 1. Place the Workspace in the default silk home directory ($home/.silk/workspace/) -- place the folder "edsa" in this directory so that silk can pick the workspace configs
+   [This repository already has this step done]
 2. Run the sbt command. If you did 1 above --- Take Option A below (You don't need to set the options [-Dworkspace.repository.projectFile.dir | -Dworkspace.provider.file.dir])
 3. Run the Skill Annotations
 4. Run the Data Acquisition as shown below in section 4
 
 
-*Option A -- REDUCED RUN VERSION ---*
+#### Option A -- REDUCED RUN VERSION
 
 export TERM=xterm-color
 sbt -Dhttp.port=9005 "project workbench" [-Dapplication.context=/silk/] run
 
-*Option B*
+#### Option B
 
 Windows
 sbt -Dworkspace.repository.plugin=projectFile -Dworkspace.repository.projectFile.dir=C:\path-to-workspace\Workspace -Dworkspace.provider.file.dir=C:\path-to-workspace\Workspace  -Dhttp.port=9005 -Dapplication.context=/silk/ -Dparsers.text.maxLength=1024K "project workbench" run
@@ -54,25 +66,19 @@ Should you face the error message, just do what it tells you :  -- add "libraryD
 
 
 
-STEP 3: Skill Annotation
+#### STEP 3: Skill Annotation
 ----------------------------------
 You need the GATE embedded installed
 And configure the path in application.config
 
 export TERM=xterm-color
+
 sbt -Dhttp.port=9006 run
 
 
 
-STEP 4: Data Acquisitions
+#### STEP 4: Data Acquisitions
 -----------------------------------------------
-Depends on the other || runs on port 9000 by default 
+Depends on the other modules || runs on port 9000 by default 
+sbt run
 
-
-
-*---DOCKERIZATION---*
------------------------------------------------
-Each Sub component has a Dockerfile at its root directory
-
-Use this file to create a docker file of the subcomponent
-Run the dockerized file

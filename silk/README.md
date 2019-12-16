@@ -17,51 +17,22 @@ Community documentation is maintained in the [doc](doc/) folder.
 
 ## Requirements
 
-### Local build
-
-- JDK 8
-- [Simple Build Tool](http://www.scala-sbt.org/) (sbt)
-- [Yarn](https://yarnpkg.com) for React/JavaScript build pipeline (>= 1.3)
-
-Downloading and installing sbt is not necessary as it is available from this directory. Depending on the operating system you may need to adapt the commands below to run it from the local directory, i.e., by using `./sbt` instead of `sbt`
+This Folder contains a Version of Silk customised for DOBIE pipline -- Fo the general Silk framework please visit the Silk [website](http://silkframework.org)
 
 ### docker based build
 
 - docker (version >=17.05-xx)
 
-## Running the Silk Workbench
+## Running the Silk Workbench Without Docker
 
-- Execute: `sbt "project workbench" run`
+- Execute: export TERM=xterm-color
+- Execute; sbt -Dhttp.port=9005 "project workbench" [-Dapplication.context=/silk/] run
 - In your browser, navigate to 'http://localhost:9000'
 
 ## Running the Silk Workbench as docker container
 
-- Build or pull the latest docker image:
-  - Build the docker image with: `docker build -t silkframework/silk-workbench:latest .` (This maybe take some minutes)
-  - Pull the docker image via: docker pull silkframework/silk-workbench
-- Run the docker container with: `docker run -d --name silk-workbench -p 80:80 silkframework/silk-workbench:latest`
-- In your browser, navigate to 'http://DOCKER_HOST:80'
+- Use the dockerfile to create the docker image:
+  - Build the docker image with: `docker build -t qualichain/silk-qc .` (This maybe take some minutes)
+- Run the docker container with: `docker run --rm -it -p 9005:9005 --name silk-qc qualichain/silk-qc /bin/bash`
+- In your browser, navigate to 'http://DOCKER_HOST:9005'
 - To make the userdata available from outside the docker container you can add a volume mount, therefore add `-v $PWD:/opt/silk/workspace` to the docker run command.
-
-__Example__
-
-```bash
-docker run -d --name silk-workbench -v $PWD:/opt/silk/workspace -p 80:80 silkframework/silk-workbench:latest
-```
-This will start a silk-workbench with a docker container and can be accessed via http port 80.
-
-## Packaging the Silk Workbench as archive
-
-- Execute: `sbt "project workbench" universal:package-zip-tarball`
-- The package should be available in the folder `silk-workbench/target/universal`
-
-## Packaging the Silk Workbench as WAR
-
-- Execute: `sbt "project workbench" war`
-- The package should be available in the folder `silk-workbench/target/`
-
-## Building a Silk Single Machine Jar
-
-- Execute: `sbt "project singlemachine" assembly`
-- The package should be available in the folder `silk-tools/silk-singlemachine/target/scala-{version}`.
-- The generated jar can be executed with: `java -DconfigFile=<Silk-LSL file> [-DlinkSpec=<Interlink ID>] [-Dthreads=<threads>]  [-DlogQueries=(true/false)] [-Dreload=(true/false)] -jar silk.jar`

@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/mulang/Desktop/Learning/FhG/qualichain/silk/silk-workbench/silk-workbench-workspace/conf/test.routes
-// @DATE:Tue Jul 30 22:35:15 CEST 2019
+// @SOURCE:/home/mulang/Desktop/Learning/FhG/knowledge-extraction/silk/silk-workbench/silk-workbench-workspace/conf/test.routes
+// @DATE:Sun Dec 15 09:27:22 CET 2019
 
 package test
 

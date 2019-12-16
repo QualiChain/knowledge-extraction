@@ -7,7 +7,7 @@
 		revision="3.0.0-SNAPSHOT"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20190730224232"/>
+		date="20191215092705"/>
 	<dependencies>
 		<module organisation="com.google.code.findbugs" name="jsr305">
 			<revision name="3.0.0" status="release" pubdate="20140710135548" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://findbugs.sourceforge.net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="52">
@@ -52,7 +52,7 @@
 			</revision>
 		</module>
 		<module organisation="org.silkframework" name="silk-core_2.11">
-			<revision name="3.0.0-SNAPSHOT" status="integration" pubdate="20190730224230" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, test, runtime" position="1">
+			<revision name="3.0.0-SNAPSHOT" status="integration" pubdate="20191215092702" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, test, runtime" position="1">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="org.silkframework" name="silk-plugins-json_2.11" conf="test, compile, runtime" rev="3.0.0-SNAPSHOT" rev-constraint-default="3.0.0-SNAPSHOT" rev-constraint-dynamic="3.0.0-SNAPSHOT" callerrev="3.0.0-SNAPSHOT"/>
 				<artifacts>

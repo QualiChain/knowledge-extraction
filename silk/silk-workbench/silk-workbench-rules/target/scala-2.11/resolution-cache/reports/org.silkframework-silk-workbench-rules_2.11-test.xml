@@ -7,10 +7,10 @@
 		revision="3.0.0-SNAPSHOT"
 		conf="test"
 		confs="universal, universal-docs, universal-src, compile, runtime, test, provided, optional, windows, docker, linux, rpm, web-assets, web-assets-test, web-plugin, debian, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20190731215507"/>
+		date="20191215092717"/>
 	<dependencies>
 		<module organisation="org.silkframework" name="silk-learning_2.11">
-			<revision name="3.0.0-SNAPSHOT" status="integration" pubdate="20190731215449" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="144">
+			<revision name="3.0.0-SNAPSHOT" status="integration" pubdate="20191215092707" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="144">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="org.silkframework" name="silk-workbench-rules_2.11" conf="test, compile, runtime" rev="3.0.0-SNAPSHOT" rev-constraint-default="3.0.0-SNAPSHOT" rev-constraint-dynamic="3.0.0-SNAPSHOT" callerrev="3.0.0-SNAPSHOT"/>
 				<artifacts>
@@ -60,7 +60,7 @@
 			</revision>
 		</module>
 		<module organisation="org.silkframework" name="silk-workbench-workspace_2.11">
-			<revision name="3.0.0-SNAPSHOT" status="integration" pubdate="20190731215449" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, test, runtime" position="1">
+			<revision name="3.0.0-SNAPSHOT" status="integration" pubdate="20191215092707" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, test, runtime" position="1">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="org.silkframework" name="silk-workbench-rules_2.11" conf="test, compile, runtime" rev="3.0.0-SNAPSHOT" rev-constraint-default="3.0.0-SNAPSHOT" rev-constraint-dynamic="3.0.0-SNAPSHOT" callerrev="3.0.0-SNAPSHOT"/>
 				<artifacts>
@@ -68,7 +68,7 @@
 			</revision>
 		</module>
 		<module organisation="org.silkframework" name="silk-plugins-xml_2.11">
-			<revision name="3.0.0-SNAPSHOT" status="integration" pubdate="20190731215448" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile" position="135">
+			<revision name="3.0.0-SNAPSHOT" status="integration" pubdate="20191215092707" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile" position="135">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="org.silkframework" name="silk-workbench-workspace_2.11" conf="test, compile, runtime" rev="3.0.0-SNAPSHOT" rev-constraint-default="3.0.0-SNAPSHOT" rev-constraint-dynamic="3.0.0-SNAPSHOT" callerrev="3.0.0-SNAPSHOT"/>
 				<caller organisation="org.silkframework" name="silk-workbench-rules_2.11" conf="test, compile, runtime" rev="3.0.0-SNAPSHOT" rev-constraint-default="3.0.0-SNAPSHOT" rev-constraint-dynamic="3.0.0-SNAPSHOT" callerrev="3.0.0-SNAPSHOT"/>
@@ -89,7 +89,7 @@
 			</revision>
 		</module>
 		<module organisation="org.silkframework" name="silk-plugins-rdf_2.11">
-			<revision name="3.0.0-SNAPSHOT" status="integration" pubdate="20190731215448" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="132">
+			<revision name="3.0.0-SNAPSHOT" status="integration" pubdate="20191215092704" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="132">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="org.silkframework" name="silk-workbench-workspace_2.11" conf="compile, test, runtime" rev="3.0.0-SNAPSHOT" rev-constraint-default="3.0.0-SNAPSHOT" rev-constraint-dynamic="3.0.0-SNAPSHOT" callerrev="3.0.0-SNAPSHOT"/>
 				<artifacts>
@@ -97,7 +97,7 @@
 			</revision>
 		</module>
 		<module organisation="org.silkframework" name="silk-workbench-core_2.11">
-			<revision name="3.0.0-SNAPSHOT" status="integration" pubdate="20190731215448" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, test, runtime" position="2">
+			<revision name="3.0.0-SNAPSHOT" status="integration" pubdate="20191215092707" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, test, runtime" position="2">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="org.silkframework" name="silk-workbench-workspace_2.11" conf="compile, test, runtime" rev="3.0.0-SNAPSHOT" rev-constraint-default="3.0.0-SNAPSHOT" rev-constraint-dynamic="3.0.0-SNAPSHOT" callerrev="3.0.0-SNAPSHOT"/>
 				<artifacts>
@@ -347,7 +347,7 @@
 			</revision>
 		</module>
 		<module organisation="org.silkframework" name="silk-react-components_2.11">
-			<revision name="3.0.0-SNAPSHOT" status="integration" pubdate="20190731215448" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="79">
+			<revision name="3.0.0-SNAPSHOT" status="integration" pubdate="20191215092702" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="79">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="org.silkframework" name="silk-workbench-core_2.11" conf="compile, test, runtime" rev="3.0.0-SNAPSHOT" rev-constraint-default="3.0.0-SNAPSHOT" rev-constraint-dynamic="3.0.0-SNAPSHOT" callerrev="3.0.0-SNAPSHOT"/>
 				<artifacts>
@@ -355,7 +355,7 @@
 			</revision>
 		</module>
 		<module organisation="org.silkframework" name="silk-serialization-json_2.11">
-			<revision name="3.0.0-SNAPSHOT" status="integration" pubdate="20190731215448" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="78">
+			<revision name="3.0.0-SNAPSHOT" status="integration" pubdate="20191215092704" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="78">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="org.silkframework" name="silk-workbench-core_2.11" conf="compile, test, runtime" rev="3.0.0-SNAPSHOT" rev-constraint-default="3.0.0-SNAPSHOT" rev-constraint-dynamic="3.0.0-SNAPSHOT" callerrev="3.0.0-SNAPSHOT"/>
 				<artifacts>
@@ -363,7 +363,7 @@
 			</revision>
 		</module>
 		<module organisation="org.silkframework" name="silk-workspace_2.11">
-			<revision name="3.0.0-SNAPSHOT" status="integration" pubdate="20190731215448" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="test, compile, runtime, default(compile)" position="3">
+			<revision name="3.0.0-SNAPSHOT" status="integration" pubdate="20191215092704" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="test, compile, runtime, default(compile)" position="3">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="org.silkframework" name="silk-learning_2.11" conf="compile" rev="3.0.0-SNAPSHOT" rev-constraint-default="3.0.0-SNAPSHOT" rev-constraint-dynamic="3.0.0-SNAPSHOT" callerrev="3.0.0-SNAPSHOT"/>
 				<caller organisation="org.silkframework" name="silk-workbench-core_2.11" conf="compile, test, runtime" rev="3.0.0-SNAPSHOT" rev-constraint-default="3.0.0-SNAPSHOT" rev-constraint-dynamic="3.0.0-SNAPSHOT" callerrev="3.0.0-SNAPSHOT"/>
@@ -989,7 +989,7 @@
 			</revision>
 		</module>
 		<module organisation="org.silkframework" name="silk-plugins-json_2.11">
-			<revision name="3.0.0-SNAPSHOT" status="integration" pubdate="20190731215448" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, test, runtime" position="77">
+			<revision name="3.0.0-SNAPSHOT" status="integration" pubdate="20191215092704" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, test, runtime" position="77">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="org.silkframework" name="silk-workbench-rules_2.11" conf="test, compile, runtime" rev="3.0.0-SNAPSHOT" rev-constraint-default="3.0.0-SNAPSHOT" rev-constraint-dynamic="3.0.0-SNAPSHOT" callerrev="3.0.0-SNAPSHOT"/>
 				<caller organisation="org.silkframework" name="silk-workspace_2.11" conf="test, compile, runtime" rev="3.0.0-SNAPSHOT" rev-constraint-default="3.0.0-SNAPSHOT" rev-constraint-dynamic="3.0.0-SNAPSHOT" callerrev="3.0.0-SNAPSHOT"/>
@@ -998,7 +998,7 @@
 			</revision>
 		</module>
 		<module organisation="org.silkframework" name="silk-rules_2.11">
-			<revision name="3.0.0-SNAPSHOT" status="integration" pubdate="20190731215448" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="4">
+			<revision name="3.0.0-SNAPSHOT" status="integration" pubdate="20191215092704" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="4">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="org.silkframework" name="silk-learning_2.11" conf="compile" rev="3.0.0-SNAPSHOT" rev-constraint-default="3.0.0-SNAPSHOT" rev-constraint-dynamic="3.0.0-SNAPSHOT" callerrev="3.0.0-SNAPSHOT"/>
 				<caller organisation="org.silkframework" name="silk-workspace_2.11" conf="compile, test, runtime" rev="3.0.0-SNAPSHOT" rev-constraint-default="3.0.0-SNAPSHOT" rev-constraint-dynamic="3.0.0-SNAPSHOT" callerrev="3.0.0-SNAPSHOT"/>
@@ -1327,7 +1327,7 @@
 			</revision>
 		</module>
 		<module organisation="org.silkframework" name="silk-plugins-csv_2.11">
-			<revision name="3.0.0-SNAPSHOT" status="integration" pubdate="20190731215448" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile" position="133">
+			<revision name="3.0.0-SNAPSHOT" status="integration" pubdate="20191215092702" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile" position="133">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="org.silkframework" name="silk-workbench-workspace_2.11" conf="test, compile, runtime" rev="3.0.0-SNAPSHOT" rev-constraint-default="3.0.0-SNAPSHOT" rev-constraint-dynamic="3.0.0-SNAPSHOT" callerrev="3.0.0-SNAPSHOT"/>
 				<artifacts>
@@ -1347,7 +1347,7 @@
 			</revision>
 		</module>
 		<module organisation="org.silkframework" name="silk-core_2.11">
-			<revision name="3.0.0-SNAPSHOT" status="integration" pubdate="20190731215448" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="test, compile, runtime, default(compile)" position="5">
+			<revision name="3.0.0-SNAPSHOT" status="integration" pubdate="20191215092702" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="test, compile, runtime, default(compile)" position="5">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="org.silkframework" name="silk-workbench-core_2.11" conf="compile, test, runtime" rev="3.0.0-SNAPSHOT" rev-constraint-default="3.0.0-SNAPSHOT" rev-constraint-dynamic="3.0.0-SNAPSHOT" callerrev="3.0.0-SNAPSHOT"/>
 				<caller organisation="org.silkframework" name="silk-plugins-json_2.11" conf="compile, test, runtime" rev="3.0.0-SNAPSHOT" rev-constraint-default="3.0.0-SNAPSHOT" rev-constraint-dynamic="3.0.0-SNAPSHOT" callerrev="3.0.0-SNAPSHOT"/>

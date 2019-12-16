@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/mulang/Desktop/Learning/FhG/qualichain/silk/silk-workbench/silk-workbench-rules/conf/transform.routes
-// @DATE:Tue Jul 30 22:35:14 CEST 2019
+// @SOURCE:/home/mulang/Desktop/Learning/FhG/knowledge-extraction/silk/silk-workbench/silk-workbench-rules/conf/transform.routes
+// @DATE:Sun Dec 15 09:27:21 CET 2019
 
 import play.api.routing.JavaScriptReverseRoute
 

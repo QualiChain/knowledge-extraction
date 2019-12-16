@@ -7,7 +7,7 @@
 		revision="3.0.0-SNAPSHOT"
 		conf="optional"
 		confs="universal, universal-docs, universal-src, compile, runtime, test, provided, optional, windows, docker, linux, rpm, web-assets, web-assets-test, web-plugin, debian, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20190731215457"/>
+		date="20191215092711"/>
 	<dependencies>
 	</dependencies>
 </ivy-report>

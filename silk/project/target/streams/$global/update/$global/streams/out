@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/home/mulang/Desktop/Learning/FhG/qualichain/silk/project/}silk-build...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/home/mulang/Desktop/Learning/FhG/knowledge-extraction/silk/project/}silk-build...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: default#silk-build;0.1-SNAPSHOT[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -15454,21 +15454,21 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#template-resolver;0.1!template-resolver.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.7!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1319ms :: artifacts dl 21ms[0m
-[0m[[0mdebug[0m] [0m	report for default#silk-build;0.1-SNAPSHOT compile produced in /home/mulang/Desktop/Learning/FhG/qualichain/silk/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-silk-build-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#silk-build;0.1-SNAPSHOT runtime produced in /home/mulang/Desktop/Learning/FhG/qualichain/silk/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-silk-build-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#silk-build;0.1-SNAPSHOT test produced in /home/mulang/Desktop/Learning/FhG/qualichain/silk/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-silk-build-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#silk-build;0.1-SNAPSHOT provided produced in /home/mulang/Desktop/Learning/FhG/qualichain/silk/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-silk-build-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#silk-build;0.1-SNAPSHOT optional produced in /home/mulang/Desktop/Learning/FhG/qualichain/silk/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-silk-build-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#silk-build;0.1-SNAPSHOT compile-internal produced in /home/mulang/Desktop/Learning/FhG/qualichain/silk/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-silk-build-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#silk-build;0.1-SNAPSHOT runtime-internal produced in /home/mulang/Desktop/Learning/FhG/qualichain/silk/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-silk-build-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#silk-build;0.1-SNAPSHOT test-internal produced in /home/mulang/Desktop/Learning/FhG/qualichain/silk/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-silk-build-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#silk-build;0.1-SNAPSHOT plugin produced in /home/mulang/Desktop/Learning/FhG/qualichain/silk/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-silk-build-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#silk-build;0.1-SNAPSHOT sources produced in /home/mulang/Desktop/Learning/FhG/qualichain/silk/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-silk-build-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#silk-build;0.1-SNAPSHOT docs produced in /home/mulang/Desktop/Learning/FhG/qualichain/silk/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-silk-build-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#silk-build;0.1-SNAPSHOT pom produced in /home/mulang/Desktop/Learning/FhG/qualichain/silk/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-silk-build-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#silk-build;0.1-SNAPSHOT scala-tool produced in /home/mulang/Desktop/Learning/FhG/qualichain/silk/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-silk-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (1319ms resolve - 21ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1806ms :: artifacts dl 37ms[0m
+[0m[[0mdebug[0m] [0m	report for default#silk-build;0.1-SNAPSHOT compile produced in /home/mulang/Desktop/Learning/FhG/knowledge-extraction/silk/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-silk-build-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#silk-build;0.1-SNAPSHOT runtime produced in /home/mulang/Desktop/Learning/FhG/knowledge-extraction/silk/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-silk-build-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#silk-build;0.1-SNAPSHOT test produced in /home/mulang/Desktop/Learning/FhG/knowledge-extraction/silk/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-silk-build-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#silk-build;0.1-SNAPSHOT provided produced in /home/mulang/Desktop/Learning/FhG/knowledge-extraction/silk/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-silk-build-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#silk-build;0.1-SNAPSHOT optional produced in /home/mulang/Desktop/Learning/FhG/knowledge-extraction/silk/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-silk-build-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#silk-build;0.1-SNAPSHOT compile-internal produced in /home/mulang/Desktop/Learning/FhG/knowledge-extraction/silk/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-silk-build-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#silk-build;0.1-SNAPSHOT runtime-internal produced in /home/mulang/Desktop/Learning/FhG/knowledge-extraction/silk/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-silk-build-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#silk-build;0.1-SNAPSHOT test-internal produced in /home/mulang/Desktop/Learning/FhG/knowledge-extraction/silk/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-silk-build-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#silk-build;0.1-SNAPSHOT plugin produced in /home/mulang/Desktop/Learning/FhG/knowledge-extraction/silk/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-silk-build-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#silk-build;0.1-SNAPSHOT sources produced in /home/mulang/Desktop/Learning/FhG/knowledge-extraction/silk/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-silk-build-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#silk-build;0.1-SNAPSHOT docs produced in /home/mulang/Desktop/Learning/FhG/knowledge-extraction/silk/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-silk-build-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#silk-build;0.1-SNAPSHOT pom produced in /home/mulang/Desktop/Learning/FhG/knowledge-extraction/silk/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-silk-build-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#silk-build;0.1-SNAPSHOT scala-tool produced in /home/mulang/Desktop/Learning/FhG/knowledge-extraction/silk/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-silk-build-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (1806ms resolve - 37ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
 [0m[[33mwarn[0m] [0mFound version conflict(s) in library dependencies; some are suspected to be binary incompatible:[0m
 [0m[[33mwarn[0m] [0m[0m
