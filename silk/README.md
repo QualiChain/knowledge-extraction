@@ -33,6 +33,6 @@ This Folder contains a Version of Silk customised for DOBIE pipline -- Fo the ge
 
 - Use the dockerfile to create the docker image:
   - Build the docker image with: `docker build -t qualichain/silk-qc .` (This maybe take some minutes)
-- Run the docker container with: `docker run --rm -it -p 9005:9005 --name silk-qc qualichain/silk-qc /bin/bash`
+- Run the docker container with: `docker run --rm -it -p 9005:9005 --name silk-qc qualichain/silk-qc `
 - In your browser, navigate to 'http://DOCKER_HOST:9005'
 - To make the userdata available from outside the docker container you can add a volume mount, therefore add `-v $PWD:/opt/silk/workspace` to the docker run command.
