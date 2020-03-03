@@ -13,9 +13,12 @@ The Repository consists of the three sub components (services) of the Knowledge 
 ### --- Dockerization ---
 -----------------------------------------------
 Each Sub component has a Dockerfile at its root directory, this docker file contains instructions to run
+
 a ReadMe file is also contained with it that would provide more instructions.
 
+
 Use this file to create a docker file of the subcomponent
+
 Run the dockerized file
 
 
@@ -41,14 +44,17 @@ Run steps:
 #### Option A -- REDUCED RUN VERSION
 
 export TERM=xterm-color
+
 sbt -Dhttp.port=9005 "project workbench" [-Dapplication.context=/silk/] run
 
 #### Option B
 
 Windows
+
 sbt -Dworkspace.repository.plugin=projectFile -Dworkspace.repository.projectFile.dir=C:\path-to-workspace\Workspace -Dworkspace.provider.file.dir=C:\path-to-workspace\Workspace  -Dhttp.port=9005 -Dapplication.context=/silk/ -Dparsers.text.maxLength=1024K "project workbench" run
 
 Linux
+
 sbt -Dworkspace.repository.plugin=projectFile -Dworkspace.repository.projectFile.dir=/path-to-workspace/edsa/silk-workspace/workspace -Dworkspace.provider.file.dir=/path-to-workspace/edsa/silk-workspace/workspace  -Dhttp.port=9005 -Dapplication.context=/silk/ -Dparsers.text.maxLength=1024K "project workbench" run
 
 
@@ -61,7 +67,7 @@ Silk compiles and runs without errors but when you go to --> localhost:9005, You
 
 RuntimeException: No application loader is configured. Please configure an application loader either using the play.application.loader configuration property, or by depending on a module that configures one. You can add the Guice support module by adding "libraryDependencies += guice" to your build.sbt.
 
-Solution
+Solution:
 Should you face the error message, just do what it tells you :  -- add "libraryDependencies += guice" to your build.sbt
 
 
@@ -69,6 +75,7 @@ Should you face the error message, just do what it tells you :  -- add "libraryD
 #### STEP 3: Skill Annotation
 ----------------------------------
 You need the GATE embedded installed
+
 And configure the path in application.config
 
 export TERM=xterm-color
