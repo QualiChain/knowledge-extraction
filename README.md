@@ -82,10 +82,17 @@ export TERM=xterm-color
 
 sbt -Dhttp.port=9006 run
 
+DOCKERISED VERSION: there is a dockerfile in the Skill annotations folder, use this file to create docker image and execute, at the beggining of docker file, there are commands for creating
+the image as well for running it.
+
+There is also a read me in the folder containing instructions specific for Skill Annotation.
+
+Examples: For an example on how to call the Skill annotation: Take a look into the "Skill annotations example" under the examples folder
 
 
 #### STEP 4: Data Acquisitions
 -----------------------------------------------
-Depends on the other modules || runs on port 9000 by default 
+Depends on the other modules || runs on port 9000 by default
+ 
 sbt run
 
