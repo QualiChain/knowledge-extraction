@@ -22,7 +22,7 @@ Use this file to create a docker file of the subcomponent
 Run the dockerized file
 
 
-### None Docker Versions : To run the varius services. Follow these Instructions
+### None Docker Versions : To run the variuos services. Follow these Instructions
 -----------------------------------------------------------------------
 
 So far, the run_all.sh script should run all the three services.
