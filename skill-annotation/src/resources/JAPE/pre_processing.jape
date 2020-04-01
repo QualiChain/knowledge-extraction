@@ -1,0 +1,62 @@
+Phase:	preProcessing
+Input: Token SpaceToken
+Options: control = appelt
+
+Rule: enumerator
+(
+({Token.kind == punctuation , Token.string == "("})?
+({Token.string == "i"}|{Token.string == "ii"}|{Token.string == "iii"}|{Token.string == "iv"}|{Token.string == "v"}|{Token.string == "vi"}|
+{Token.string == "vii"}|{Token.string == "viii"}|{Token.string == "ix"}|{Token.string == "x"}|{Token.string == "xi"}|{Token.string == "xii"}|
+{Token.string == "xiii"}|{Token.string == "xiv"}|{Token.string == "xv"}|{Token.string == "xvi"}|
+{Token.string == "I"}|{Token.string == "II"}|{Token.string == "III"}|{Token.string == "IV"}|{Token.string == "V"}|{Token.string == "VI"}|
+{Token.string == "VII"}|{Token.string == "VIII"}|{Token.string == "IX"}|{Token.string == "X"}|{Token.string == "XI"}|{Token.string == "XII"}|
+{Token.string == "XIII"}|{Token.string == "XIV"}|{Token.string == "XV"}|{Token.string == "XVI"}|{Token.kind == word, Token.length == 1}|{Token.kind == number}|
+({Token.kind == number}{Token.kind == word, Token.length == 1}))
+{Token.kind == punctuation , Token.string == ")"}
+): label
+-->
+:label.Enumerator = {kind = "enumerator1", rule = "enumerator"}
+
+
+
+Rule: greekNum
+(
+{Token.string == "i"}|{Token.string == "ii"}|{Token.string == "iii"}|{Token.string == "iv"}|{Token.string == "v"}|{Token.string == "vi"}|
+{Token.string == "vii"}|{Token.string == "viii"}|{Token.string == "ix"}|{Token.string == "x"}|{Token.string == "xi"}|{Token.string == "xii"}|
+{Token.string == "xiii"}|{Token.string == "xiv"}|{Token.string == "xv"}|{Token.string == "xvi"}|
+{Token.string == "I"}|{Token.string == "II"}|{Token.string == "III"}|{Token.string == "IV"}|{Token.string == "V"}|{Token.string == "VI"}|
+{Token.string == "VII"}|{Token.string == "VIII"}|{Token.string == "IX"}|{Token.string == "X"}|{Token.string == "XI"}|{Token.string == "XII"}|
+{Token.string == "XIII"}|{Token.string == "XIV"}|{Token.string == "XV"}|{Token.string == "XVI"}
+): label
+-->
+:label.GreekNumber = {kind = "greekNum", rule = "greekNum"}
+
+
+
+Rule:	bachelor
+  (        
+	({Token.string == "B"}{Token.string == ".", Token.kind == punctuation}{Token.string == "S"}{Token.string == ".", Token.kind == punctuation})|
+	({Token.string == "B"}{Token.string == ".", Token.kind == punctuation}{Token.string == "Sc"}{Token.string == ".", Token.kind == punctuation})|
+	{Token.root == "bsc"}|{Token.string == "BS"}	
+  )
+:label -->
+  :label.CertificateDegree = {kind = "degree", rule = "bachelor", string = "bsc"}
+
+
+Rule:	master
+  (        
+	({Token.string == "M"}{Token.string == ".", Token.kind == punctuation}{Token.string == "S"}{Token.string == ".", Token.kind == punctuation})|
+	({Token.string == "M"}{Token.string == ".", Token.kind == punctuation}{Token.string == "Sc"}{Token.string == ".", Token.kind == punctuation})|
+	{Token.root == "msc"}|{Token.string == "MS"}	
+  )
+:label -->
+  :label.CertificateDegree = {kind = "degree", rule = "master", string = "msc"}
+  
+
+Rule:	phd
+  (        
+	({Token.string == "Ph"}{Token.string == ".", Token.kind == punctuation}{Token.string == "D"}{Token.string == ".", Token.kind == punctuation})|
+	{Token.root == "phd"}|{Token.string == "DPhil"}	
+  )
+:label -->
+  :label.CertificateDegree = {kind = "degree", rule = "master", string = "phd"}  

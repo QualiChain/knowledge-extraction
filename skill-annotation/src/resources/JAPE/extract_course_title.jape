@@ -1,0 +1,33 @@
+Phase:	extractCourseTitle
+Input: Token SpaceToken ComputerProgramming GreekNumber
+Options: control = appelt
+
+
+
+
+Rule:	courseTitle1
+(
+	{ComputerProgramming}
+	(
+		{SpaceToken.kind == control}|
+		({SpaceToken.kind == space}{GreekNumber})
+	)
+):label	
+-->
+
+{
+	gate.AnnotationSet annotations = (gate.AnnotationSet)bindings.get("label"); 
+	gate.FeatureMap features = Factory.newFeatureMap();
+	features.put("rule", "courseTitle1");
+	features.put("kind", "InformaticCourseTitle");	
+	String str = "";
+	try{
+		str = doc.getContent().getContent(annotations.firstNode().getOffset(), annotations.lastNode().getOffset()).toString();
+	}catch(Exception e){
+		e.printStackTrace();
+	}	
+	features.put("string", str);	
+
+			
+	outputAS.add(annotations.firstNode(), annotations.lastNode(), "CourseTitleTemp", features);
+}

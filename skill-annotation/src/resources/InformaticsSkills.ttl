@@ -1,0 +1,2157 @@
+@prefix : <http://w3id.org/saro/> .
+@prefix esco: <http://data.europa.eu/esco/model#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://w3id.org/saro/> .
+
+<http://w3id.org/saro/> rdf:type owl:Ontology .
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label a owl:AnnotationProperty .
+
+
+:Topic a owl:Class ;
+    rdfs:label "Topic"@en .
+
+:Tool a owl:Class ;
+    rdfs:label "Tool"@en .
+
+:Product a owl:Class ;
+    rdfs:label "Product"@en .
+
+:TransversalSkill a owl:Class ;
+    rdfs:label "Transversal Skill"@en .
+	
+	
+###### instances ######	
+
+:memcached a :Product ;
+	 rdfs:label "memcached" .
+
+:userInteraction a :TransversalSkill ;
+	 rdfs:label "user interaction" .
+
+:centos a :Product ;
+	 rdfs:label "centos" .
+
+:win32 a :Tool ;
+	 rdfs:label "win32" .
+
+:pig a :Tool ;
+	 rdfs:label "pig" .
+
+:awsOpsworks a :Product ;
+	 rdfs:label "aws opsworks" .
+
+:rdf a :Topic ;
+	 rdfs:label "rdf" .
+
+:linearProgramming a :Topic ;
+	 rdfs:label "linear programming" .
+
+:flask a :Tool ;
+	 rdfs:label "flask" .
+
+:jbehave a :Product ;
+	 rdfs:label "jbehave" .
+
+:less a :Topic ;
+	 rdfs:label "less" .
+
+:h.265 a :Product ;
+	 rdfs:label "h.265" .
+
+:resin a :Product ;
+	 rdfs:label "resin" .
+
+:nines a :Product ;
+	 rdfs:label "nines" .
+
+:agileProjectManagement a :Topic ;
+	 rdfs:label "agile project management" .
+
+:ansible a :Tool ;
+	 rdfs:label "ansible" .
+
+:dataConversion a :Topic ;
+	 rdfs:label "data conversion" .
+
+:network a :Topic ;
+	 rdfs:label "network" .
+
+:java a :Tool ;
+	 rdfs:label "java" .
+
+:oracle a :Product ;
+	 rdfs:label "oracle" .
+
+:wordpress a :Tool ;
+	 rdfs:label "wordpress" .
+
+:staticAnalysis a :Topic ;
+	 rdfs:label "static analysis" .
+
+:integrationTesting a :Topic ;
+	 rdfs:label "integration testing" .
+
+:googlePlayServices a :Tool ;
+	 rdfs:label "google play services" .
+
+:varnish a :Tool ;
+	 rdfs:label "varnish" .
+
+:database a :Topic ;
+	 rdfs:label "database" .
+
+:ravendb a :Product ;
+	 rdfs:label "ravendb" .
+
+:softwareEngineering a :Topic ;
+	 rdfs:label "software engineering" .
+
+:cad a :Topic ;
+	 rdfs:label "cad" .
+
+:webServices a :Topic ;
+	 rdfs:label "web services" .
+
+:designPatterns a :Topic ;
+	 rdfs:label "design patterns" .
+
+:shellScripting a :Topic ;
+	 rdfs:label "shell scripting" .
+
+:meteor a :Tool ;
+	 rdfs:label "meteor" .
+
+:reactjs a :Tool ;
+	 rdfs:label "reactjs" .
+
+:solr a :Tool ;
+	 rdfs:label "solr" .
+
+:androidIde a :Tool ;
+	 rdfs:label "android ide" .
+
+:ooad a :Topic ;
+	 rdfs:label "ooad" .
+
+:ros a :Tool ;
+	 rdfs:label "ros" .
+
+:trac a :Product ;
+	 rdfs:label "trac" .
+
+:ssrs a :Tool ;
+	 rdfs:label "ssrs" .
+
+:supervisedLearning a :Topic ;
+	 rdfs:label "supervised learning" .
+
+:tts a :Topic ;
+	 rdfs:label "tts" .
+
+:jasmine a :Tool ;
+	 rdfs:label "jasmine" .
+
+:netsuite a :Product ;
+	 rdfs:label "netsuite" .
+
+:sass a :Tool ;
+	 rdfs:label "sass" .
+
+:abTesting a :Topic ;
+	 rdfs:label "ab testing" .
+
+:softwareDesign a :Topic ;
+	 rdfs:label "software design" .
+
+:magento a :Product ;
+	 rdfs:label "magento" .
+
+:vb6 a :Tool ;
+	 rdfs:label "vb6" .
+
+:delphi a :Tool ;
+	 rdfs:label "delphi" .
+
+:virtualization a :Topic ;
+	 rdfs:label "virtualization" .
+
+:netty a :Product ;
+	 rdfs:label "netty" .
+
+:rdbms a :Topic ;
+	 rdfs:label "rdbms" .
+
+:rubyOnRails a :Tool ;
+	 rdfs:label "ruby on rails" .
+
+:webApplications a :Topic ;
+	 rdfs:label "web applications" .
+
+:meshing a :Tool ;
+	 rdfs:label "meshing" .
+
+:gaap a :Product ;
+	 rdfs:label "gaap" .
+
+:matlab a :Tool ;
+	 rdfs:label "matlab" .
+
+:flaskRestful a :Topic ;
+	 rdfs:label "flask restful" .
+
+:design a :Topic ;
+	 rdfs:label "design" .
+
+:chef a :Product ;
+	 rdfs:label "chef" .
+
+:commandLine a :Tool ;
+	 rdfs:label "command line" .
+
+:vb.net a :Tool ;
+	 rdfs:label "vb.net" .
+
+:dba a :Topic ;
+	 rdfs:label "dba" .
+
+:css a :Tool ;
+	 rdfs:label "css" .
+
+:jboss a :Product ;
+	 rdfs:label "jboss" .
+
+:vmware a :Product ;
+	 rdfs:label "vmware" .
+
+:azure a :Tool ;
+	 rdfs:label "azure" .
+
+:aem a :Tool ;
+	 rdfs:label "aem" .
+
+:sqlalchemy a :Product ;
+	 rdfs:label "sqlalchemy" .
+
+:websphere a :Product ;
+	 rdfs:label "websphere" .
+
+:capybara a :Tool ;
+	 rdfs:label "capybara" .
+
+:dotNetFramework a :Product ;
+	 rdfs:label ".net framework" .
+
+:gradle a :Tool ;
+	 rdfs:label "gradle" .
+
+:activeDirectory a :Tool ;
+	 rdfs:label "active directory" .
+
+:hql a :Tool ;
+	 rdfs:label "hql" .
+
+:objectiveC a :Tool ;
+	 rdfs:label "objective c" .
+
+:cloud a :Topic ;
+	 rdfs:label "cloud" .
+
+:ssrs2008 a :Tool ;
+	 rdfs:label "ssrs 2008" .
+
+:sqlServer2008 a :Product ;
+	 rdfs:label "sql server 2008" .
+
+:hybernate a :Tool ;
+	 rdfs:label "hybernate" .
+
+:opencl a :Product ;
+	 rdfs:label "opencl" .
+
+:cisco a :Product ;
+	 rdfs:label "cisco" .
+
+:distributedDatabase a :Topic ;
+	 rdfs:label "distributed database" .
+
+:apacheKafka a :Product ;
+	 rdfs:label "apache kafka" .
+
+:apacheSpark a :Product ;
+	 rdfs:label "apache spark" .
+
+:php a :Tool ;
+	 rdfs:label "php" .
+
+:visualforce a :Tool ;
+	 rdfs:label "visualforce" .
+
+:excelVba a :Tool ;
+	 rdfs:label "excel vba" .
+
+:architect a :Topic ;
+	 rdfs:label "architect" .
+
+:continuousDeployment a :Topic ;
+	 rdfs:label "continuous deployment" .
+
+:frontEnd a :Topic ;
+	 rdfs:label "front end" .
+
+:ejb a :Product ;
+	 rdfs:label "ejb" .
+
+:wpf a :Topic ;
+	 rdfs:label "wpf" .
+
+:adobecq a :Product ;
+	 rdfs:label "adobecq" .
+
+:awsSdk a :Tool ;
+	 rdfs:label "aws sdk" .
+
+:cPlus a :Tool ;
+	 rdfs:label "c+" .
+
+:rubyOnRails3 a :Tool ;
+	 rdfs:label "ruby on rails 3" .
+
+:automatedDeployment a :Topic ;
+	 rdfs:label "automated deployment" .
+
+:dataDriven a :Topic ;
+	 rdfs:label "data driven" .
+
+:typescript a :Tool ;
+	 rdfs:label "typescript" .
+
+:fpga a :Topic ;
+	 rdfs:label "fpga" .
+
+:cloudfoundry a :Tool ;
+	 rdfs:label "cloudfoundry" .
+
+:cocoaTouch a :Product ;
+	 rdfs:label "cocoa touch" .
+
+:semanticWeb a :Topic ;
+	 rdfs:label "semantic web" .
+
+:pciE a :Product ;
+	 rdfs:label "pci e" .
+
+:java8 a :Tool ;
+	 rdfs:label "java 8" .
+
+:reportingServices a :Topic ;
+	 rdfs:label "reporting services" .
+
+:boost a :Product ;
+	 rdfs:label "boost" .
+
+:dataBinding a :Topic ;
+	 rdfs:label "data binding" .
+
+:redis a :Product ;
+	 rdfs:label "redis" .
+
+:webapplications a :Topic ;
+	 rdfs:label "webapplications" .
+
+:mysql a :Tool ;
+	 rdfs:label "mysql" .
+
+:npm a :Product ;
+	 rdfs:label "npm" .
+
+:twitterBootstrap a :Tool ;
+	 rdfs:label "twitter bootstrap" .
+
+:git a :Tool ;
+	 rdfs:label "git" .
+
+:angularjs a :Product ;
+	 rdfs:label "angularjs" .
+
+:openlayers a :Tool ;
+	 rdfs:label "openlayers" .
+
+:rest a :Tool ;
+	 rdfs:label "rest" .
+
+:css3 a :Tool ;
+	 rdfs:label "css3" .
+
+:lisp a :Tool ;
+	 rdfs:label "lisp" .
+
+:modeling a :Topic ;
+	 rdfs:label "modeling" .
+
+:extremeProgramming a :Topic ;
+	 rdfs:label "extreme programming" .
+
+:backbone a :Tool ;
+	 rdfs:label "backbone" .
+
+:scom a :Tool ;
+	 rdfs:label "scom" .
+
+:backbone.js a :Tool ;
+	 rdfs:label "backbone.js" .
+
+:siem a :Product ;
+	 rdfs:label "siem" .
+
+:datomic a :Product ;
+	 rdfs:label "datomic" .
+
+:cascading a :Tool ;
+	 rdfs:label "cascading" .
+
+:visio a :Tool ;
+	 rdfs:label "visio" .
+
+:nosql a :Tool ;
+	 rdfs:label "nosql" .
+
+:sqlite a :Product ;
+	 rdfs:label "sqlite" .
+
+:exchangeServer a :Product ;
+	 rdfs:label "exchange server" .
+
+:linkedData a :Topic ;
+	 rdfs:label "linked data" .
+
+:drupal a :Tool ;
+	 rdfs:label "drupal" .
+
+:analytics a :Topic ;
+	 rdfs:label "analytics" .
+
+:googleAnalyticsApi a :Tool ;
+	 rdfs:label "google analytics api" .
+
+:mapi a :Tool ;
+	 rdfs:label "mapi" .
+
+:vsphere a :Product ;
+	 rdfs:label "vsphere" .
+
+:aurelia a :Tool ;
+	 rdfs:label "aurelia" .
+
+:uiux a :Topic ;
+	 rdfs:label "uiux" .
+
+:gulp a :Tool ;
+	 rdfs:label "gulp" .
+
+:gridComputing a :Topic ;
+	 rdfs:label "grid computing" .
+
+:jsp a :Product ;
+	 rdfs:label "jsp" .
+
+:oodesign a :Topic ;
+	 rdfs:label "oodesign" .
+
+:development a :Topic ;
+	 rdfs:label "development" .
+
+:gnu a :Product ;
+	 rdfs:label "gnu" .
+
+:hardware a :Topic ;
+	 rdfs:label "hardware" .
+
+:yii a :Product ;
+	 rdfs:label "yii" .
+
+:kafka a :Tool ;
+	 rdfs:label "kafka" .
+
+:xhtml a :Tool ;
+	 rdfs:label "xhtml" .
+
+:nunit a :Tool ;
+	 rdfs:label "nunit" .
+
+:springMvc a :Topic ;
+	 rdfs:label "spring mvc" .
+
+:dataAnalysis a :Topic ;
+	 rdfs:label "data analysis" .
+
+:fingerprinting a :Topic ;
+	 rdfs:label "fingerprinting" .
+
+:mercurial a :Product ;
+	 rdfs:label "mercurial" .
+
+:smpp a :Tool ;
+	 rdfs:label "smpp" .
+
+:windows a :Product ;
+	 rdfs:label "windows" .
+
+:continuousDelivery a :TransversalSkill ;
+	 rdfs:label "continuous delivery" .
+
+:regressionTesting a :Topic ;
+	 rdfs:label "regression testing" .
+
+:saltStack a :Tool ;
+	 rdfs:label "salt stack" .
+
+:qnx a :Tool ;
+	 rdfs:label "qnx" .
+
+:cassandra a :Product ;
+	 rdfs:label "cassandra" .
+
+:dns a :Tool ;
+	 rdfs:label "dns" .
+
+:javascript a :Tool ;
+	 rdfs:label "javascript" .
+
+:amazonEmr a :Tool ;
+	 rdfs:label "amazon emr" .
+
+:wolframMathematica a :Tool ;
+	 rdfs:label "wolfram mathematica" .
+
+:parallelProcessing a :Topic ;
+	 rdfs:label "parallel processing" .
+
+:coldfusion a :Tool ;
+	 rdfs:label "coldfusion" .
+
+:asp.netMvc a :Tool ;
+	 rdfs:label "asp.net mvc" .
+
+:serversideJavascript a :Tool ;
+	 rdfs:label "serverside javascript" .
+
+:wave a :Product ;
+	 rdfs:label "wave" .
+
+:visualization a :Topic ;
+	 rdfs:label "visualization" .
+
+:responsiveWebDesign a :Topic ;
+	 rdfs:label "responsive web design" .
+
+:jndi a :Tool ;
+	 rdfs:label "jndi" .
+
+:watir a :Tool ;
+	 rdfs:label "watir" .
+
+:tcl a :Tool ;
+	 rdfs:label "tcl" .
+
+:networkProgramming a :Topic ;
+	 rdfs:label "network programming" .
+
+:sipServer a :Product ;
+	 rdfs:label "sip server" .
+
+:voip a :Topic ;
+	 rdfs:label "voip" .
+
+:meanStack a :Topic ;
+	 rdfs:label "mean stack" .
+
+:firewall a :Product ;
+	 rdfs:label "firewall" .
+
+:netcdf a :Product ;
+	 rdfs:label "netcdf" .
+
+:sql a :Tool ;
+	 rdfs:label "sql" .
+
+:hbase a :Product ;
+	 rdfs:label "hbase" .
+
+:pandas a :Tool ;
+	 rdfs:label "pandas" .
+
+:balsamiq a :Tool ;
+	 rdfs:label "balsamiq" .
+
+:lxc a :Tool ;
+	 rdfs:label "lxc" .
+
+:sybase a :Product ;
+	 rdfs:label "sybase" .
+
+:dataEngineer a :Topic ;
+	 rdfs:label "data engineer" .
+
+:fullStack a :Topic ;
+	 rdfs:label "full stack" .
+
+:riak a :Tool ;
+	 rdfs:label "riak" .
+
+:servicestack a :Tool ;
+	 rdfs:label "servicestack" .
+
+:yarn a :Product ;
+	 rdfs:label "yarn" .
+
+:vldb a :Product ;
+	 rdfs:label "vldb" .
+
+:apache a :Product ;
+	 rdfs:label "apache" .
+
+:cPlusPlus a :Tool ;
+	 rdfs:label "c++" .
+
+:simulation a :Topic ;
+	 rdfs:label "simulation" .
+
+:twisted a :Tool ;
+	 rdfs:label "twisted" .
+
+:ecmascript-6 a :Tool ;
+	 rdfs:label "ecmascript 6" .
+
+:excel a :Product ;
+	 rdfs:label "excel" .
+
+:html5 a :Tool ;
+	 rdfs:label "html5" .
+
+:salesforce a :Product ;
+	 rdfs:label "salesforce" .
+
+:aerospike a :Tool ;
+	 rdfs:label "aerospike" .
+
+:nas a :Product ;
+	 rdfs:label "nas" .
+
+:fabric a :Tool ;
+	 rdfs:label "fabric" .
+
+:crm a :Topic ;
+	 rdfs:label "crm" .
+
+:wiki a :Product ;
+	 rdfs:label "wiki" .
+
+:ember.js a :Product ;
+	 rdfs:label "ember.js" .
+
+:cloudera a :Product ;
+	 rdfs:label "cloudera" .
+
+:tcpIp a :Tool ;
+	 rdfs:label "tcp ip" .
+
+:perl a :Tool ;
+	 rdfs:label "perl" .
+
+:androidIntent a :Topic ;
+	 rdfs:label "android intent" .
+
+:programming a :Topic ;
+	 rdfs:label "programming" .
+
+:deviceDriver a :Tool ;
+	 rdfs:label "device driver" .
+
+:businessIntelligence a :Topic ;
+	 rdfs:label "business intelligence" .
+
+:gsm a :Product ;
+	 rdfs:label "gsm" .
+
+:zookeeper a :Product ;
+	 rdfs:label "zookeeper" .
+
+:netapp a :Product ;
+	 rdfs:label "netapp" .
+
+:linearAlgebra a :Topic ;
+	 rdfs:label "linear algebra" .
+
+:chefRecipe a :Product ;
+	 rdfs:label "chef recipe" .
+
+:plsql a :Tool ;
+	 rdfs:label "plsql" .
+
+:jaxb a :Tool ;
+	 rdfs:label "jaxb" .
+
+:tbb a :Tool ;
+	 rdfs:label "tbb" .
+
+:softwareEngineer a :Topic ;
+	 rdfs:label "software engineer" .
+
+:oneplus a :Product ;
+	 rdfs:label "oneplus" .
+
+:tableau a :Product ;
+	 rdfs:label "tableau" .
+
+:udp a :Tool ;
+	 rdfs:label "udp" .
+
+:sdn a :Topic ;
+	 rdfs:label "sdn" .
+
+:dotNet a :Product ;
+	 rdfs:label ".net" .
+
+:mongodb a :Product ;
+	 rdfs:label "mongodb" .
+
+:ipsec a :Tool ;
+	 rdfs:label "ipsec" .
+
+:django a :Product ;
+	 rdfs:label "django" .
+
+:tastypie a :Tool ;
+	 rdfs:label "tastypie" .
+
+:swift a :Tool ;
+	 rdfs:label "swift" .
+
+:qt a :Product ;
+	 rdfs:label "qt" .
+
+:arcgis a :Product ;
+	 rdfs:label "arcgis" .
+
+:coffeescript a :Tool ;
+	 rdfs:label "coffeescript" .
+
+:responsiveDesign a :Topic ;
+	 rdfs:label "responsive design" .
+
+:cvs a :Tool ;
+	 rdfs:label "cvs" .
+
+:bower a :Product ;
+	 rdfs:label "bower" .
+
+:computerScience a owl:NamedIndividual ,
+							 :Topic;
+				 rdfs:label "computer science"@en .
+
+:xaml a :Tool ;
+	 rdfs:label "xaml" .
+
+:vba a :Tool ;
+	 rdfs:label "vba" .
+
+:pci a :Tool ;
+	 rdfs:label "pci" .
+
+:debugging a :Topic ;
+	 rdfs:label "debugging" .
+
+:identityManagement a :Topic ;
+	 rdfs:label "identity management" .
+
+:jee a :Tool ;
+	 rdfs:label "jee" .
+
+:sharepoint2007 a :Product ;
+	 rdfs:label "sharepoint 2007" .
+
+:oop a :Topic ;
+	 rdfs:label "oop" .
+
+:reporting a :Topic ;
+	 rdfs:label "reporting" .
+
+:bioinformatics a :Topic ;
+	 rdfs:label "bioinformatics" .
+
+:html a :Tool ;
+	 rdfs:label "html" .
+
+:nginx a :Tool ;
+	 rdfs:label "nginx" .
+
+:scipy a :Tool ;
+	 rdfs:label "scipy" .
+
+:maven a :Tool ;
+	 rdfs:label "maven" .
+
+:linuxDeviceDriver a :Tool ;
+	 rdfs:label "linux device driver" .
+
+:restfulAuthentication a :Topic ;
+	 rdfs:label "restful authentication" .
+
+:imageProcessing a :Topic ;
+	 rdfs:label "image processing" .
+
+:artificialIntelligence a :Topic ;
+	 rdfs:label "artificial intelligence" .
+
+:androidDeveloper a :Topic ;
+	 rdfs:label "android developer" .
+
+:bash a :Tool ;
+	 rdfs:label "bash" .
+
+:multicast a :Product ;
+	 rdfs:label "multicast" .
+
+:playframework-2.0 a :Product ;
+	 rdfs:label "playframework 2.0" .
+
+:playframework a :Product ;
+	 rdfs:label "playframework" .
+
+:jade a :Tool ;
+	 rdfs:label "jade" .
+
+:office365 a :Product ;
+	 rdfs:label "office365" .
+
+:cordova a :Product ;
+	 rdfs:label "cordova" .
+
+:mysqli a :Tool ;
+	 rdfs:label "mysqli" .
+
+:ss7 a :Tool ;
+	 rdfs:label "ss7" .
+
+:adobe a :Product ;
+	 rdfs:label "adobe" .
+
+:golang a :Tool ;
+	 rdfs:label "golang" .
+
+:restfulArchitecture a :Topic ;
+	 rdfs:label "restful architecture" .
+
+:asp.netWebApi a :Tool ;
+	 rdfs:label "asp.net web api" .
+
+:tools a :Topic ;
+	 rdfs:label "tools" .
+
+:objectOrientedAnalysis a :Topic ;
+	 rdfs:label "object oriented analysis" .
+
+:s3 a :Tool ;
+	 rdfs:label "s3" .
+
+:togaf a :Tool ;
+	 rdfs:label "togaf" .
+
+:etl a :Tool ;
+	 rdfs:label "etl" .
+
+:functionalProgramming a :Topic ;
+	 rdfs:label "functional programming" .
+
+:soa a :Topic ;
+	 rdfs:label "soa" .
+
+:ssis a :Product ;
+	 rdfs:label "ssis" .
+
+:dataScience a :Topic ;
+	 rdfs:label "data science" .
+
+:webSecurity a :Topic ;
+	 rdfs:label "web security" .
+
+:dataManagement a :Topic ;
+	 rdfs:label "data management" .
+
+:cloudHosting a :Topic ;
+	 rdfs:label "cloud hosting" .
+
+:cobol a :Tool ;
+	 rdfs:label "cobol" .
+
+:sqlServer2014 a :Product ;
+	 rdfs:label "sql server 2014" .
+
+:iis-7 a :Product ;
+	 rdfs:label "iis 7" .
+
+:iam a :Topic ;
+	 rdfs:label "iam" .
+
+:rubyOnRails4 a :Tool ;
+	 rdfs:label "ruby on rails 4" .
+
+:opengl a :Tool ;
+	 rdfs:label "opengl" .
+
+:statistics a :Topic ;
+	 rdfs:label "statistics" .
+
+:math a :Tool ;
+	 rdfs:label "math" .
+
+:python a :Tool ;
+	 rdfs:label "python" .
+
+:tfs a :Product ;
+	 rdfs:label "tfs" .
+
+:tdd a :Topic ;
+	 rdfs:label "tdd" .
+
+:paas a :Topic ;
+	 rdfs:label "paas" .
+
+:soapui a :Tool ;
+	 rdfs:label "soapui" .
+
+:objectOriented a :Topic ;
+	 rdfs:label "object oriented" .
+
+:scrumMaster a :Topic ;
+	 rdfs:label "scrum master" .
+
+:wireless a :Topic ;
+	 rdfs:label "wireless" .
+
+:nodejs a :Tool ;
+	 rdfs:label "nodejs" .
+
+:amazonRedshift a :Product ;
+	 rdfs:label "amazon redshift" .
+
+:boostPython a :Tool ;
+	 rdfs:label "boost python" .
+
+:falcor a :Tool ;
+	 rdfs:label "falcor" .
+
+:indexing a :Topic ;
+	 rdfs:label "indexing" .
+
+:postgresql a :Tool ;
+	 rdfs:label "postgresql" .
+
+:microservices a :Topic ;
+	 rdfs:label "microservices" .
+
+:apex a :Tool ;
+	 rdfs:label "apex" .
+
+:opencv a :Tool ;
+	 rdfs:label "opencv" .
+
+:psql a :Tool ;
+	 rdfs:label "psql" .
+
+:github a :Tool ;
+	 rdfs:label "github" .
+
+:cucumber a :Tool ;
+	 rdfs:label "cucumber" .
+
+:softwareArchitecture a :Topic ;
+	 rdfs:label "software architecture" .
+
+:penetrationTesting a :Topic ;
+	 rdfs:label "penetration testing" .
+
+:machineLearning a :Topic ;
+	 rdfs:label "machine learning" .
+
+:machineCode a :Product ;
+	 rdfs:label "machine code" .
+
+:tsql a :Tool ;
+	 rdfs:label "tsql" .
+
+:androidUi a :Product ;
+	 rdfs:label "android ui" .
+
+:windowsMobile a :Topic ;
+	 rdfs:label "windows mobile" .
+
+:mybatis a :Product ;
+	 rdfs:label "mybatis" .
+
+:domainDrivenDesign a :Topic ;
+	 rdfs:label "domain driven design" .
+
+:sdlc a :Topic ;
+	 rdfs:label "sdlc" .
+
+:polymer a :Tool ;
+	 rdfs:label "polymer" .
+
+:spring a :Tool ;
+	 rdfs:label "spring" .
+
+:clusterComputing a :Topic ;
+	 rdfs:label "cluster computing" .
+
+:ruby a :Tool ;
+	 rdfs:label "ruby" .
+
+:ipython a :Tool ;
+	 rdfs:label "ipython" .
+
+:dataMining a :Topic ;
+	 rdfs:label "data mining" .
+
+:olap a :Tool ;
+	 rdfs:label "olap" .
+
+:expresso a :Tool ;
+	 rdfs:label "expresso" .
+
+:dataVisualization a :Topic ;
+	 rdfs:label "data visualization" .
+
+:dataStructures a :Topic ;
+	 rdfs:label "data structures" .
+
+:d3.js a :Tool ;
+	 rdfs:label "d3.js" .
+
+:j2ee a :Tool ;
+	 rdfs:label "j2ee" .
+
+:leadership a :TransversalSkill ;
+	 rdfs:label "leadership" .
+
+:ec2 a :Tool ;
+	 rdfs:label "ec2" .
+
+:riskManagement a :Topic ;
+	 rdfs:label "risk management" .
+
+:scriptingLanguage a :Topic ;
+	 rdfs:label "scripting language" .
+
+:directx a :Tool ;
+	 rdfs:label "directx" .
+
+:compassSass a :Tool ;
+	 rdfs:label "compass sass" .
+
+:msAccess a :Product ;
+	 rdfs:label "ms access" .
+
+:clojure a :Tool ;
+	 rdfs:label "clojure" .
+
+:seleniumWebdriver a :Product ;
+	 rdfs:label "selenium webdriver" .
+
+:networks a :Topic ;
+	 rdfs:label "networks" .
+
+:dropwizard a :Tool ;
+	 rdfs:label "dropwizard" .
+
+:gherkin a :Tool ;
+	 rdfs:label "gherkin" .
+
+:scala a :Tool ;
+	 rdfs:label "scala" .
+
+:sqlServer a :Product ;
+	 rdfs:label "sql server" .
+
+:mahout a :Product ;
+	 rdfs:label "mahout" .
+
+:jaxp a :Tool ;
+	 rdfs:label "jaxp" .
+
+:devops a :Topic ;
+	 rdfs:label "devops" .
+
+:wireframing a :Topic ;
+	 rdfs:label "wireframing" .
+
+:webCrawler a :Topic ;
+	 rdfs:label "web crawler" .
+
+:cuda a :Tool ;
+	 rdfs:label "cuda" .
+
+:amazonWebServices a :Product ;
+	 rdfs:label "amazon web services" .
+
+:agile a :Topic ;
+	 rdfs:label "agile" .
+
+:edi a :Topic ;
+	 rdfs:label "edi" .
+
+:fullstack a :Topic ;
+	 rdfs:label "fullstack" .
+
+:networking a :Topic ;
+	 rdfs:label "networking" .
+
+:mvvm a :Topic ;
+	 rdfs:label "mvvm" .
+
+:zendFramework a :Product ;
+	 rdfs:label "zend framework" .
+
+:lucene a :Tool ;
+	 rdfs:label "lucene" .
+
+:visualStudio2012 a :Product ;
+	 rdfs:label "visual studio 2012" .
+
+:sed a :Tool ;
+	 rdfs:label "sed" .
+
+:sas a :Product ;
+	 rdfs:label "sas" .
+
+:linux a :Product ;
+	 rdfs:label "linux" .
+
+:sharepoint a :Product ;
+	 rdfs:label "sharepoint" .
+
+:ieee a :Topic ;
+	 rdfs:label "ieee" .
+
+:http a :Tool ;
+	 rdfs:label "http" .
+
+:go a :Product ;
+	 rdfs:label "go" .
+
+:xilinx a :Tool ;
+	 rdfs:label "xilinx" .
+
+:haproxy a :Product ;
+	 rdfs:label "haproxy" .
+
+:analysis a :Topic ;
+	 rdfs:label "analysis" .
+
+:unix a :Product ;
+	 rdfs:label "unix" .
+
+:stata a :Product ;
+	 rdfs:label "stata" .
+
+:openstack a :Product ;
+	 rdfs:label "openstack" .
+
+:node.js a :Tool ;
+	 rdfs:label "node.js" .
+
+:storm a :Tool ;
+	 rdfs:label "storm" .
+
+:linq a :Tool ;
+	 rdfs:label "linq" .
+
+:joomla a :Tool ;
+	 rdfs:label "joomla" .
+
+:googleApps a :Product ;
+	 rdfs:label "google apps" .
+
+:redhat a :Product ;
+	 rdfs:label "redhat" .
+
+:dhtml a :Tool ;
+	 rdfs:label "dhtml" .
+
+:jwplayer a :Product ;
+	 rdfs:label "jwplayer" .
+
+:softwareDevelopment a :Topic ;
+	 rdfs:label "software development" .
+
+:aix a :Product ;
+	 rdfs:label "aix" .
+
+:silverlight a :Tool ;
+	 rdfs:label "silverlight" .
+
+:sympy a :Tool ;
+	 rdfs:label "sympy" .
+
+:lampstack a :Product ;
+	 rdfs:label "lampstack" .
+
+:rom a :Topic ;
+	 rdfs:label "rom" .
+
+:webgl a :Tool ;
+	 rdfs:label "webgl" .
+
+:nancy a :Product ;
+	 rdfs:label "nancy" .
+
+:impala a :Product ;
+	 rdfs:label "impala" .
+
+:bdd a :Topic ;
+	 rdfs:label "bdd" .
+
+:prestashop a :Product ;
+	 rdfs:label "prestashop" .
+
+:developer a :Topic ;
+	 rdfs:label "developer" .
+
+:angular.js a :Product ;
+	 rdfs:label "angular.js" .
+
+:vpn a :Topic ;
+	 rdfs:label "vpn" .
+
+:r a :Tool ;
+	 rdfs:label "r" .
+
+:https a :Tool ;
+	 rdfs:label "https" .
+
+:extjs a :Product ;
+	 rdfs:label "extjs" .
+
+:ajax a :Tool ;
+	 rdfs:label "ajax" .
+
+:tSql a :Tool ;
+	 rdfs:label "t sql" .
+
+:thirdPartyApi a :Topic ;
+	 rdfs:label "third party api" .
+
+:pmp a :Topic ;
+	 rdfs:label "pmp" .
+
+:analyst a :Topic ;
+	 rdfs:label "analyst" .
+
+:scientificComputing a :Topic ;
+	 rdfs:label "scientific computing" .
+
+:relationalDatabases a :Topic ;
+	 rdfs:label "relational databases" .
+
+:iot a :Topic ;
+	 rdfs:label "iot" .
+
+:androidStudio a :Product ;
+	 rdfs:label "android studio" .
+
+:titanium a :Product ;
+	 rdfs:label "titanium" .
+
+:jquery a :Tool ;
+	 rdfs:label "jquery" .
+
+:ipc a :Topic ;
+	 rdfs:label "ipc" .
+
+:hl7 a :Product ;
+	 rdfs:label "hl7" .
+
+:scrum a :Topic ;
+	 rdfs:label "scrum" .
+
+:vowpalwabbit a :Tool ;
+	 rdfs:label "vowpalwabbit" .
+
+:solaris a :Product ;
+	 rdfs:label "solaris" .
+
+:quantitativeFinance a :Topic ;
+	 rdfs:label "quantitative finance" .
+
+:selenium a :Tool ;
+	 rdfs:label "selenium" .
+
+:underscore.js a :Tool ;
+	 rdfs:label "underscore.js" .
+
+:iphone a :Product ;
+	 rdfs:label "iphone" .
+
+:amazonS3 a :Product ;
+	 rdfs:label "amazon s3" .
+
+:elasticMapReduce a :Tool ;
+	 rdfs:label "elastic map reduce" .
+
+:winapi a :Tool ;
+	 rdfs:label "winapi" .
+
+:pega a :Product ;
+	 rdfs:label "pega" .
+
+:computerForensics a :Topic ;
+	 rdfs:label "computer forensics" .
+
+:embeddedLinux a :Topic ;
+	 rdfs:label "embedded linux" .
+
+:ant a :Tool ;
+	 rdfs:label "ant" .
+
+:virtualMachine a :Topic ;
+	 rdfs:label "virtual machine" .
+
+:d3 a :Tool ;
+	 rdfs:label "d3" .
+
+:llvm a :Tool ;
+	 rdfs:label "llvm" .
+
+:dotNet-4.0 a :Product ;
+	 rdfs:label ".net 4.0" .
+
+:cryptography a :Topic ;
+	 rdfs:label "cryptography" .
+
+:rhel5 a :Product ;
+	 rdfs:label "rhel5" .
+
+:lmax a :Product ;
+	 rdfs:label "lmax" .
+
+:linuxKernel a :Product ;
+	 rdfs:label "linux kernel" .
+
+:marionette a :Tool ;
+	 rdfs:label "marionette" .
+
+:doctrine a :Product ;
+	 rdfs:label "doctrine" .
+
+:android a :Product ;
+	 rdfs:label "android" .
+
+:activemq a :Tool ;
+	 rdfs:label "activemq" .
+
+:ultrasound a :Product ;
+	 rdfs:label "ultrasound" .
+
+:mobileDevelopment a :Topic ;
+	 rdfs:label "mobile development" .
+
+:tomcat a :Tool ;
+	 rdfs:label "tomcat" .
+
+:glsl a :Tool ;
+	 rdfs:label "glsl" .
+
+:erlang a :Tool ;
+	 rdfs:label "erlang" .
+
+:visualStudio2010 a :Product ;
+	 rdfs:label "visual studio 2010" .
+
+:giraph a :Tool ;
+	 rdfs:label "giraph" .
+
+:cocoapods a :Tool ;
+	 rdfs:label "cocoapods" .
+
+:supercomputers a :Topic ;
+	 rdfs:label "supercomputers" .
+
+:heroku a :Tool ;
+	 rdfs:label "heroku" .
+
+:waterfall a :Topic ;
+	 rdfs:label "waterfall" .
+
+:cheminformatics a :Topic ;
+	 rdfs:label "cheminformatics" .
+
+:versionControl a :Topic ;
+	 rdfs:label "version control" .
+
+:eclipse a :Product ;
+	 rdfs:label "eclipse" .
+
+:protractor a :Tool ;
+	 rdfs:label "protractor" .
+
+:symfony2 a :Tool ;
+	 rdfs:label "symfony2" .
+
+:bpm a :Topic ;
+	 rdfs:label "bpm" .
+
+:scada a :Product ;
+	 rdfs:label "scada" .
+
+:hibernate a :Product ;
+	 rdfs:label "hibernate" .
+
+:tcp a :Tool ;
+	 rdfs:label "tcp" .
+
+:dom a :Tool ;
+	 rdfs:label "dom" .
+
+:specflow a :Tool ;
+	 rdfs:label "specflow" .
+
+:titaniumMobile a :Product ;
+	 rdfs:label "titanium mobile" .
+
+:cics a :Tool ;
+	 rdfs:label "cics" .
+
+:frontend a :Topic ;
+	 rdfs:label "frontend" .
+
+:symfony-2.3 a :Tool ;
+	 rdfs:label "symfony 2.3" .
+
+:tester a :Topic ;
+	 rdfs:label "tester" .
+
+:elixir a :Tool ;
+	 rdfs:label "elixir" .
+
+:automation a :Topic ;
+	 rdfs:label "automation" .
+
+:sharepoint2010 a :Product ;
+	 rdfs:label "sharepoint 2010" .
+
+:agileProcesses a :Topic ;
+	 rdfs:label "agile processes" .
+
+:postgis a :Tool ;
+	 rdfs:label "postgis" .
+
+:api a :Tool ;
+	 rdfs:label "api" .
+
+:newsgator a :Product ;
+	 rdfs:label "newsgator" .
+
+:powershell a :Tool ;
+	 rdfs:label "powershell" .
+
+:sdk a :Topic ;
+	 rdfs:label "sdk" .
+
+:nagios a :Product ;
+	 rdfs:label "nagios" .
+
+:hadoop a :Product ;
+	 rdfs:label "hadoop" .
+
+:vsam a :Topic ;
+	 rdfs:label "vsam" .
+
+:haskell a :Tool ;
+	 rdfs:label "haskell" .
+
+:msOffice a :Product ;
+	 rdfs:label "ms office" .
+
+:osx a :Product ;
+	 rdfs:label "osx" .
+
+:hudson a :Tool ;
+	 rdfs:label "hudson" .
+
+:elasticsearch a :Product ;
+	 rdfs:label "elasticsearch" .
+
+:robotics a :Topic ;
+	 rdfs:label "robotics" .
+
+:fintech a :Product ;
+	 rdfs:label "fintech" .
+
+:rhel a :Product ;
+	 rdfs:label "rhel" .
+
+:swing a :Tool ;
+	 rdfs:label "swing" .
+
+:projectManagement a :Topic ;
+	 rdfs:label "project management" .
+	  
+:c a :Tool ;
+	 rdfs:label "c" .
+
+:jdbc a :Tool ;
+	 rdfs:label "jdbc" .
+
+:angular a :Product ;
+	 rdfs:label "angular" .
+
+:episerver a :Product ;
+	 rdfs:label "episerver" .
+
+:leadDeveloper a :TransversalSkill ;
+	 rdfs:label "lead developer" .
+
+:powerbuilder a :Tool ;
+	 rdfs:label "powerbuilder" .
+
+:administrator a :Topic ;
+	 rdfs:label "administrator" .
+
+:zeromq a :Tool ;
+	 rdfs:label "zeromq" .
+
+:reactNative a :Tool ;
+	 rdfs:label "react native" .
+
+:biztalk a :Product ;
+	 rdfs:label "biztalk" .
+
+:otrs a :Product ;
+	 rdfs:label "otrs" .
+
+:googleAppEngine a :Product ;
+	 rdfs:label "google app engine" .
+
+:rtos a :Product ;
+	 rdfs:label "rtos" .
+
+:confluence a :Tool ;
+	 rdfs:label "confluence" .
+
+:rtsp a :Tool ;
+	 rdfs:label "rtsp" .
+
+:photoshop a :Tool ;
+	 rdfs:label "photoshop" .
+
+:rspec a :Tool ;
+	 rdfs:label "rspec" .
+
+:businessObjects a :Product ;
+	 rdfs:label "business objects" .
+
+:rails a :Tool ;
+	 rdfs:label "rails" .
+
+:laravel a :Product ;
+	 rdfs:label "laravel" .
+
+:dataWarehouse a :Topic ;
+	 rdfs:label "data warehouse" .
+
+:javaj2ee a :Tool ;
+	 rdfs:label "javaj2ee" .
+
+:xamarin a :Product ;
+	 rdfs:label "xamarin" .
+
+:disasterRecovery a :Topic ;
+	 rdfs:label "disaster recovery" .
+
+:jira a :Tool ;
+	 rdfs:label "jira" .
+
+:ux a :Tool ;
+	 rdfs:label "ux" .
+
+:metadata a :Topic ;
+	 rdfs:label "metadata" .
+
+:ui a :Topic ;
+	 rdfs:label "ui" .
+
+:grails a :Product ;
+	 rdfs:label "grails" .
+
+:wcf a :Tool ;
+	 rdfs:label "wcf" .
+
+:ember a :Product ;
+	 rdfs:label "ember" .
+
+:videoStreaming a :Topic ;
+	 rdfs:label "video streaming" .
+
+:websocket a :Tool ;
+	 rdfs:label "websocket" .
+
+:haml a :Tool ;
+	 rdfs:label "haml" .
+
+:pki a :Topic ;
+	 rdfs:label "pki" .
+
+:openglEs-2.0 a :Tool ;
+	 rdfs:label "opengl es 2.0" .
+
+:junit a :Tool ;
+	 rdfs:label "junit" .
+
+:autosar a :Tool ;
+	 rdfs:label "autosar" .
+
+:numericalMethods a :Topic ;
+	 rdfs:label "numerical methods" .
+
+:peoplesoft a :Product ;
+	 rdfs:label "peoplesoft" .
+
+:html5Canvas a :Tool ;
+	 rdfs:label "html5 canvas" .
+
+:databaseDesign a :Topic ;
+	 rdfs:label "database design" .
+
+:xcode a :Tool ;
+	 rdfs:label "xcode" .
+
+:hybris a :Product ;
+	 rdfs:label "hybris" .
+
+:jenkins a :Tool ;
+	 rdfs:label "jenkins" .
+
+:bigData a :Topic ;
+	 rdfs:label "big data" .
+
+:unitTesting a :Topic ;
+	 rdfs:label "unit testing" .
+
+:sqoop a :Tool ;
+	 rdfs:label "sqoop" .
+
+:postgres a :Tool ;
+	 rdfs:label "postgres" .
+
+:assurance a :Topic ;
+	 rdfs:label "assurance" .
+
+:umbraco a :Tool ;
+	 rdfs:label "umbraco" .
+
+:akka a :Tool ;
+	 rdfs:label "akka" .
+
+:ipad a :Product ;
+	 rdfs:label "ipad" .
+
+:multithreading a :Topic ;
+	 rdfs:label "multithreading" .
+
+:stateflow a :Tool ;
+	 rdfs:label "stateflow" .
+
+:highAvailability a :TransversalSkill ;
+	 rdfs:label "high availability" .
+
+:jvm a :Tool ;
+	 rdfs:label "jvm" .
+
+:thrift a :Tool ;
+	 rdfs:label "thrift" .
+
+:ocaml a :Tool ;
+	 rdfs:label "ocaml" .
+
+:rackspace a :Tool ;
+	 rdfs:label "rackspace" .
+
+:zend a :Tool ;
+	 rdfs:label "zend" .
+
+:mockito a :Tool ;
+	 rdfs:label "mockito" .
+
+:security a :Topic ;
+	 rdfs:label "security" .
+
+:xslt a :Tool ;
+	 rdfs:label "xslt" .
+
+:aws a :Tool ;
+	 rdfs:label "aws" .
+
+:automatedTests a :Topic ;
+	 rdfs:label "automated tests" .
+
+:dagger a :Tool ;
+	 rdfs:label "dagger" .
+
+:xml a :Tool ;
+	 rdfs:label "xml" .
+
+:visualStudio a :Product ;
+	 rdfs:label "visual studio" .
+
+:reverseEngineering a :Topic ;
+	 rdfs:label "reverse engineering" .
+
+:sencha a :Tool ;
+	 rdfs:label "sencha" .
+
+:mapreduce a :Product ;
+	 rdfs:label "mapreduce" .
+
+:i2c a :Product ;
+	 rdfs:label "i2c" .
+
+:unity3d a :Product ;
+	 rdfs:label "unity3d" .
+
+:debian a :Product ;
+	 rdfs:label "debian" .
+
+:webComponent a :Topic ;
+	 rdfs:label "web component" .
+
+:eclipsePlugin a :Tool ;
+	 rdfs:label "eclipse plugin" .
+
+:wicket a :Product ;
+	 rdfs:label "wicket" .
+
+:flux a :Tool ;
+	 rdfs:label "flux" .
+
+:mpi a :Product ;
+	 rdfs:label "mpi" .
+
+:rds a :Product ;
+	 rdfs:label "rds" .
+
+:hdfs a :Topic ;
+	 rdfs:label "hdfs" .
+
+:rhel6 a :Product ;
+	 rdfs:label "rhel6" .
+
+:apacheSparkMl a :Product ;
+	 rdfs:label "apache spark ml" .
+
+:vaadin a :Tool ;
+	 rdfs:label "vaadin" .
+
+:jpa a :Tool ;
+	 rdfs:label "jpa" .
+
+:cem a :Product ;
+	 rdfs:label "cem" .
+
+:objectOrientedDatabase a :Topic ;
+	 rdfs:label "object oriented database" .
+
+:socket.io a :Tool ;
+	 rdfs:label "socket.io" .
+
+:vim a :Tool ;
+	 rdfs:label "vim" .
+
+:xmpp a :Product ;
+	 rdfs:label "xmpp" .
+
+:djangoRestFramework a :Product ;
+	 rdfs:label "django rest framework" .
+
+:qml a :Tool ;
+	 rdfs:label "qml" .
+
+:pii a :Product ;
+	 rdfs:label "pii" .
+
+:winforms a :Tool ;
+	 rdfs:label "winforms" .
+
+:spark a :Product ;
+	 rdfs:label "spark" .
+
+:gpu a :Topic ;
+	 rdfs:label "gpu" .
+
+:ios7 a :Product ;
+	 rdfs:label "ios7" .
+
+:refactoring a :Topic ;
+	 rdfs:label "refactoring" .
+
+:wireshark a :Product ;
+	 rdfs:label "wireshark" .
+
+:jsf a :Tool ;
+	 rdfs:label "jsf" .
+
+:couchbase a :Product ;
+	 rdfs:label "couchbase" .
+
+:saas a :Topic ;
+	 rdfs:label "saas" .
+
+:dataModeling a :Topic ;
+	 rdfs:label "data modeling" .
+
+:gwt a :Product ;
+	 rdfs:label "gwt" .
+
+:celery a :Product ;
+	 rdfs:label "celery" .
+
+:frontEnd a :Topic ;
+	 rdfs:label "front end" .
+
+:ldap a :Tool ;
+	 rdfs:label "ldap" .
+
+:webFrameworks a :Topic ;
+	 rdfs:label "web frameworks" .
+
+:scrapy a :Tool ;
+	 rdfs:label "scrapy" .
+
+:ionicFramework a :Product ;
+	 rdfs:label "ionic framework" .
+
+:rxJava a :Tool ;
+	 rdfs:label "rx java" .
+
+:mvc a :Topic ;
+	 rdfs:label "mvc" .
+
+:concurrentProgramming a :Topic ;
+	 rdfs:label "concurrent programming" .
+
+:symfony a :Tool ;
+	 rdfs:label "symfony" .
+
+:osgi a :Product ;
+	 rdfs:label "osgi" .
+
+:lua a :Tool ;
+	 rdfs:label "lua" .
+
+:goGolang a :Tool ;
+	 rdfs:label "go golang" .
+
+:struts a :Tool ;
+	 rdfs:label "struts" .
+
+:labview a :Tool ;
+	 rdfs:label "labview" .
+
+:amazonEc2 a :Tool ;
+	 rdfs:label "amazon ec2" .
+
+:nio a :Tool ;
+	 rdfs:label "nio" .
+
+:logAnalysis a :Tool ;
+	 rdfs:label "log analysis" .
+
+:arm a :Tool ;
+	 rdfs:label "arm" .
+
+:complexEventProcessing a :Topic ;
+	 rdfs:label "complex event processing" .
+
+:pentaho a :Product ;
+	 rdfs:label "pentaho" .
+
+:hive a :Tool ;
+	 rdfs:label "hive" .
+
+:stl a :Topic ;
+	 rdfs:label "stl" .
+
+:userExperience a :TransversalSkill ;
+	 rdfs:label "user experience" .
+
+:compiler a :Topic ;
+	 rdfs:label "compiler" .
+
+:rabbitmq a :Tool ;
+	 rdfs:label "rabbitmq" .
+
+:scripting a :Tool ;
+	 rdfs:label "scripting" .
+
+:finance a :Topic ;
+	 rdfs:label "finance" .
+
+:customerSupport a :Topic ;
+	 rdfs:label "customer support" .
+
+:ios a :Product ;
+	 rdfs:label "ios" .
+
+:asic a :Product ;
+	 rdfs:label "asic" .
+
+:json a :Product ;
+	 rdfs:label "json" .
+
+:coreos a :Product ;
+	 rdfs:label "coreos" .
+
+:react a :Tool ;
+	 rdfs:label "react" .
+
+:databaseAdministration a :Topic ;
+	 rdfs:label "database administration" .
+
+:dsl a :Topic ;
+	 rdfs:label "dsl" .
+
+:sqlAzure a :Product ;
+	 rdfs:label "sql azure" .
+
+:monitoring a :Topic ;
+	 rdfs:label "monitoring" .
+
+:sitecore a :Product ;
+	 rdfs:label "sitecore" .
+
+:oracle11g a :Product ;
+	 rdfs:label "oracle11g" .
+
+:atlassian a :Tool ;
+	 rdfs:label "atlassian" .
+
+:hpc a :Product ;
+	 rdfs:label "hpc" .
+
+:m2m a :Topic ;
+	 rdfs:label "m2m" .
+
+:performanceTesting a :Topic ;
+	 rdfs:label "performance testing" .
+
+:neo4j a :Product ;
+	 rdfs:label "neo4j" .
+
+:cPlusPlus11 a :Tool ;
+	 rdfs:label "c++11" .
+
+:dojo a :Tool ;
+	 rdfs:label "dojo" .
+
+:orchestration a :Topic ;
+	 rdfs:label "orchestration" .
+
+:troubleshooting a :Topic ;
+	 rdfs:label "troubleshooting" .
+
+:backend a :Topic ;
+	 rdfs:label "backend" .
+
+:modelViewController a :Topic ;
+	 rdfs:label "model view controller" .
+
+:lambda a :Product ;
+	 rdfs:label "lambda" .
+
+:fortran a :Tool ;
+	 rdfs:label "fortran" .
+
+:erp a :Product ;
+	 rdfs:label "erp" .
+
+:jmeter a :Tool ;
+	 rdfs:label "jmeter" .
+
+:retrolambda a :Tool ;
+	 rdfs:label "retrolambda" .
+
+:buildAutomation a :Topic ;
+	 rdfs:label "build automation" .
+
+:shell a :Tool ;
+	 rdfs:label "shell" .
+
+:productManagement a :Topic ;
+	 rdfs:label "product management" .
+
+:unity a :Product ;
+	 rdfs:label "unity" .
+
+:apacheCamel a :Tool ;
+	 rdfs:label "apache camel" .
+
+:owasp a :Tool ;
+	 rdfs:label "owasp" .
+
+:javaEE a :Tool ;
+	 rdfs:label "java-ee" .
+
+:groovy a :Tool ;
+	 rdfs:label "groovy" .
+
+:pubnub a :Product ;
+	 rdfs:label "pubnub" .
+
+:storage a :Topic ;
+	 rdfs:label "storage" .
+
+:soap a :Tool ;
+	 rdfs:label "soap" .
+
+:disassembling a :Topic ;
+	 rdfs:label "disassembling" .
+
+:relationalDatabase a :Topic ;
+	 rdfs:label "relational database" .
+
+:pciDss a :Tool ;
+	 rdfs:label "pci dss" .
+
+:devexpress a :Product ;
+	 rdfs:label "devexpress" .
+
+:durandal a :Product ;
+	 rdfs:label "durandal" .
+
+:tcpip a :Tool ;
+	 rdfs:label "tcpip" .
+
+:algorithmicTrading a :Topic ;
+	 rdfs:label "algorithmic trading" .
+
+:webAnalytics a :Topic ;
+	 rdfs:label "web analytics" .
+
+:webFrontend a :Topic ;
+	 rdfs:label "web frontend" .
+
+:prototype a :Topic ;
+	 rdfs:label "prototype" .
+
+:continuousIntegration a :Topic ;
+	 rdfs:label "continuous integration" .
+
+:rhel7 a :Product ;
+	 rdfs:label "rhel7" .
+
+:sysadmin a :Tool ;
+	 rdfs:label "sysadmin" .
+
+:asp.net a :Tool ;
+	 rdfs:label "asp.net" .
+
+:numpy a :Tool ;
+	 rdfs:label "numpy" .
+
+:mesos a :Tool ;
+	 rdfs:label "mesos" .
+
+:docker a :Product ;
+	 rdfs:label "docker" .
+
+:knockout.js a :Tool ;
+	 rdfs:label "knockout.js" .
+
+:iis a :Product ;
+	 rdfs:label "iis" .
+
+:systemAdministration a :Topic ;
+	 rdfs:label "system administration" .
+
+:lamp a :Product ;
+	 rdfs:label "lamp" .
+
+:geolocation a :Tool ;
+	 rdfs:label "geolocation" .
+
+:pyramid a :Product ;
+	 rdfs:label "pyramid" .
+
+:uml a :Tool ;
+	 rdfs:label "uml" .
+
+:puppet a :Tool ;
+	 rdfs:label "puppet" .
+
+:ospf a :Topic ;
+	 rdfs:label "ospf" .
+
+:oracleSql a :Product ;
+	 rdfs:label "oracle sql" .
+
+:storedProcedures a :Topic ;
+	 rdfs:label "stored procedures" .
+
+:gis a :Topic ;
+	 rdfs:label "gis" .
+
+:osmdroid a :Tool ;
+	 rdfs:label "osmdroid" .
+
+:nlp a :Topic ;
+	 rdfs:label "nlp" .
+
+:distributedComputing a :Topic ;
+	 rdfs:label "distributed computing" .
+
+:jruby a :Tool ;
+	 rdfs:label "jruby" .
+
+:sales a :TransversalSkill ;
+	 rdfs:label "sales" .
+
+:webforms a :Topic ;
+	 rdfs:label "webforms" .
+
+:userInterface a :Topic ;
+	 rdfs:label "user interface" .
+
+:apacheSparkSql a :Product ;
+	 rdfs:label "apache spark sql" .
+
+:cocoa a :Tool ;
+	 rdfs:label "cocoa" .
+
+:linuxUnix a :Product ;
+	 rdfs:label "linux unix" .
+
+:svn a :Tool ;
+	 rdfs:label "svn" .
+
+:webSocket a :Tool ;
+	 rdfs:label "web socket" .
+
+:socketIO a :Tool ;
+	 rdfs:label "socket.IO" .
+
+:gruntJs a :Tool ;
+	 rdfs:label "grunt.js" .
+
+:jaxRS a :Tool ;
+	 rdfs:label "jax rs" .
+
+:msSql a :Product ;
+	 rdfs:label "MS.SQL" .
+	
+	

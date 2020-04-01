@@ -1,0 +1,95 @@
+Phase: skill_type_update
+Input: Lookup ExperienceTemp QualificationTemp Unknown
+Options: control = appelt
+
+
+
+Rule: ProductJobSpecificSkill
+(
+  {Lookup.type == "instance", Lookup.classURI == "http://w3id.org/saro/Product", !ExperienceTemp}
+) :labelproduct
+
+-->
+{
+	AnnotationSet skillAnn = (AnnotationSet) bindings.get("labelproduct");
+	Annotation uriann = skillAnn.iterator().next();
+	FeatureMap features = Factory.newFeatureMap();
+	features.put("kind", "product"); 
+	features.put("rule","ProductJobSpecificSkill");
+	
+	String uri = (String)uriann.getFeatures().get("URI");
+	int hashtagpos = uri.lastIndexOf("/");
+	
+	features.put("string", uri.substring(hashtagpos+1,uri.length()));
+		
+	outputAS.add(skillAnn.firstNode(), skillAnn.lastNode(), "SkillProductTemp" ,features);
+}
+
+
+
+Rule: ToolJobSpecificSkill
+(
+  {Lookup.type == "instance", Lookup.classURI == "http://w3id.org/saro/Tool", !ExperienceTemp, !QualificationTemp}
+) :labeltool
+
+-->
+{
+	AnnotationSet skillAnn = (AnnotationSet) bindings.get("labeltool");
+	Annotation uriann = skillAnn.iterator().next();
+	FeatureMap features = Factory.newFeatureMap();
+	features.put("kind", "tool"); 
+	features.put("rule","ToolJobSpecificSkill");
+	String uri = (String)uriann.getFeatures().get("URI");
+	
+	int hashtagpos = uri.lastIndexOf("/");
+	
+	features.put("string", uri.substring(hashtagpos+1,uri.length()));
+	
+	outputAS.add(skillAnn.firstNode(), skillAnn.lastNode(), "SkillToolTemp" ,features);
+}
+
+
+Rule: TopicJobSpecificSkill
+(
+  {Lookup.type == "instance", Lookup.classURI == "http://w3id.org/saro/Topic", !ExperienceTemp}
+) :labeltopic
+
+-->
+{
+	AnnotationSet skillAnn = (AnnotationSet) bindings.get("labeltopic");
+	Annotation uriann = skillAnn.iterator().next();
+	FeatureMap features = Factory.newFeatureMap();
+	features.put("kind", "topic"); 
+	features.put("rule","TopicJobSpecificSkill");
+	String uri = (String)uriann.getFeatures().get("URI");
+	
+	int hashtagpos = uri.lastIndexOf("/");
+	
+	features.put("string", uri.substring(hashtagpos+1,uri.length()));
+	
+	outputAS.add(skillAnn.firstNode(), skillAnn.lastNode(), "SkillTopicTemp" ,features);
+}
+
+
+Rule: FalconAnnotations
+(
+	{Unknown , !Lookup.type == "instance"}
+):label	
+-->
+
+{
+	gate.AnnotationSet annotations = (gate.AnnotationSet)bindings.get("label"); 
+	gate.FeatureMap features = Factory.newFeatureMap();
+	features.put("rule", "FalconAnnotations");
+	features.put("kind", "Unknown");	
+	String str = "";
+	try{
+		str = doc.getContent().getContent(annotations.firstNode().getOffset(), annotations.lastNode().getOffset()).toString();
+	}catch(Exception e){
+		e.printStackTrace();
+	}	
+	features.put("string", str);	
+
+			
+	outputAS.add(annotations.firstNode(), annotations.lastNode(), "UnknownTemp", features);
+}

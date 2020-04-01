@@ -1,0 +1,32 @@
+Phase:	extractCourseLecturer
+Input: Token SpaceToken
+Options: control = appelt
+
+
+//The candidates should have:
+//a)	BSc in Computer Science   
+
+Rule:	Lecturer1
+	({Token.root == "lecturer"}|{Token.root == "lecturers"})({Token.kind == punctuation}|{SpaceToken})*
+	(
+		(	
+			{Token.category == NNP}(({Token.kind == punctuation, Token.string == ","}{SpaceToken})|{SpaceToken})
+		)+
+ 	): label
+ 
+-->
+
+{
+	gate.AnnotationSet lecturers = (gate.AnnotationSet)bindings.get("label"); 
+	gate.FeatureMap features = Factory.newFeatureMap();
+	features.put("rule", "Lecturer1");
+	features.put("kind", "seperatedByComma");	
+	String str = "";
+	try{
+		str = doc.getContent().getContent(lecturers.firstNode().getOffset(), lecturers.lastNode().getOffset()).toString();
+	}catch(Exception e){
+		e.printStackTrace();
+	}	
+	features.put("string", str.trim());
+	outputAS.add(lecturers.firstNode(), lecturers.lastNode(), "LecturerTemp", features);
+}

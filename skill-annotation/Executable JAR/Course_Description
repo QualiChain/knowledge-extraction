@@ -1,0 +1,13 @@
+Programming Languages I
+Code	3.4.3061.6
+Semester	6th
+Flow	L - Computer Software
+Category	Obligatory (half flow)
+Credits	5
+Class Hours - Lab Hours	3 - 1
+Lecturers	Nikolaos Papaspyrou, Kostis Sagonas, Petros Potikas (T & R Associates)
+Links	 MyCourses,  Course's Website
+Description
+This course studies the theoretical basis of modern programming languages and main aspects of their design and implementation.
+Historical introduction to programming languages, design considerations, principles of lexical and syntax analysis, data types and their operations. Introduction to strongly typed functional programming languages using a suitable language (e.g., ML or Haskell). Type inference and polymorphism. Names and scopes. Activation records. Introduction to object-oriented programming languages using a suitable language (e.g. C++, Java or C#). Memory management. Exception handling. Parameters and parameter passing. Introduction to logic programming languages and their foundations using Prolog.
+
