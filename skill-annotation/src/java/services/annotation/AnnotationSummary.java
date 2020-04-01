@@ -21,26 +21,14 @@ import gate.Node;
 import gate.creole.*;
 import gate.creole.gazetteer.Gazetteer;
 import gate.creole.ontology.Ontology;
-import gate.gui.MainFrame;
 import gate.util.GateException;
-import gate.util.InvalidOffsetException;
 import org.apache.commons.io.IOUtils;
-import org.apache.jena.query.Dataset;
-import org.apache.jena.query.DatasetFactory;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
-import org.apache.jena.riot.Lang;
 import org.apache.jena.riot.RDFDataMgr;
 import org.apache.jena.riot.RDFFormat;
-import org.apache.jena.riot.WriterDatasetRIOT;
-import org.apache.jena.sparql.core.DatasetGraph;
 import org.apache.jena.update.UpdateAction;
-import org.apache.jena.vocabulary.RDF;
 import org.apache.jena.vocabulary.RDFS;
-import org.apache.log4j.PropertyConfigurator;
-
-import javax.print.DocFlavor;
-import javax.swing.*;
 
 public class AnnotationSummary {
 		//initialize variable for corpus

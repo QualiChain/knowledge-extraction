@@ -1,14 +1,9 @@
 package services.annotation;
 
 import java.io.*;
-import java.net.URISyntaxException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Set;
-import java.util.Vector;
+
 
 import org.apache.jena.ontology.OntModelSpec;
-import org.apache.jena.query.Dataset;
 import org.apache.jena.query.Query;
 import org.apache.jena.query.QueryExecution;
 import org.apache.jena.query.QueryExecutionFactory;
@@ -18,29 +13,12 @@ import org.apache.jena.query.ResultSet;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.Resource;
-import org.apache.jena.riot.RDFDataMgr;
-import org.apache.jena.riot.RDFFormat;
-import org.apache.jena.update.UpdateAction;
+
 
 import org.apache.jena.vocabulary.RDF;
-import gate.Annotation;
-import gate.AnnotationSet;
-import gate.Gate;
-import gate.util.GateException;
-import gate.creole.ontology.AnnotationProperty;
-import gate.creole.ontology.LiteralOrONodeID;
-import gate.creole.ontology.OClass;
-import gate.creole.ontology.OConstants;
-import gate.creole.ontology.OConstants.Closure;
-import gate.creole.ontology.OInstance;
-import gate.creole.ontology.ONodeID;
-import gate.creole.ontology.OResource;
-import gate.creole.ontology.OURI;
+
 import gate.creole.ontology.Ontology;
-import gate.creole.ontology.OntologyTupleQuery;
-import gate.creole.ontology.RDFProperty;
-import gate.Factory;
-import gate.FeatureMap;
+
 
 public class CreateInstancesFile {
     private static GateResources gr;

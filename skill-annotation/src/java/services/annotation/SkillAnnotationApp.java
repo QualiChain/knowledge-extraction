@@ -7,14 +7,6 @@ import gate.creole.gazetteer.FlexibleGazetteer;
 import gate.creole.gazetteer.Gazetteer;
 
 import java.util.ArrayList;
-import java.io.File;
-import java.net.MalformedURLException;
-import java.util.Collections;
-import java.util.List;
-
-import org.apache.log4j.PropertyConfigurator;
-
-import javax.swing.*;
 
 public class SkillAnnotationApp {
 

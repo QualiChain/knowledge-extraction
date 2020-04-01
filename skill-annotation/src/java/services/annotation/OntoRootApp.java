@@ -4,13 +4,8 @@ import gate.Gate;
 import gate.creole.Plugin;
 import gate.util.GateException;
 import gate.Factory;
-import gate.creole.ANNIEConstants;
 import gate.creole.SerialAnalyserController;
 import gate.CorpusController;
-import java.io.File;
-import java.net.MalformedURLException;
-
-import org.apache.log4j.PropertyConfigurator;
 
 
 public class OntoRootApp {

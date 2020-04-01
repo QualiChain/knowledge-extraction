@@ -1,23 +1,16 @@
 package services.annotation;
 import java.util.*;
-import java.util.jar.JarEntry;
-import java.util.jar.JarFile;
 
 import gate.creole.gazetteer.Gazetteer;
 import gate.creole.ontology.Ontology;
-import org.apache.commons.io.*;
-import org.apache.commons.lang.StringUtils;
 
 import java.io.*;
 import java.net.*;
-import java.nio.charset.Charset;
 
 
 import gate.*;
 import gate.creole.*;
-import gate.gui.MainFrame;
 import gate.util.*;
-import gate.util.persistence.PersistenceManager;
 
 /**
  * Class to get all data from the document using GATE modules. 
