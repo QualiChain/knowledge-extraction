@@ -5,105 +5,80 @@
 #
 # 2) Test DOBIE in a container. Run the following docker command for testing
 #
-#    $ docker run --rm -it -p 9006:9006 --name dobie qualichain/dobie:v1.1.0 /bin/bash
+#    $ docker run --rm -it -p 5000:5000 --name dobie qualichain/dobie:v1.1.0
 #
 # 3) Detach from the container with Ctrl-p Ctrl-q
 
+FROM openjdk:8-jdk as builder
 
-# Pull base image
+COPY . /build
+WORKDIR /build
+RUN \
+  echo "Install Maven 3.3.x" \
+  && curl -sL https://archive.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz | tar -xz -C /opt \
+  && echo "Link current Maven" \
+  && ln -s /opt/apache-maven-3.3.9 /opt/maven \
+  && echo "\ncurrent maven version:" \
+  && /opt/maven/bin/mvn --version \
+  && echo "install yarn" \
+  && apt-get update -y \
+  && apt-get install -y apt-transport-https curl \
+  && curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
+  && echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list \
+  && apt-get update -y \
+  && curl -sL https://deb.nodesource.com/setup_9.x | bash - \
+  && apt-get install -y nodejs yarn \
+  && curl -L https://www.npmjs.com/install.sh | sh \
+  && echo "\ncurrent yarn version:" \
+  && npm install -g npm \
+  && yarn --version \
+  && echo "fetch jai-core to fix bug with missing maven artifacts" \
+  && /opt/maven/bin/mvn dependency:get -DremoteRepositories=http://maven.geotoolkit.org -Dartifact=javax.media:jai_core:1.1.3 -Ddest=/tmp
+#RUN \
+#  ./sbt "project workbench" universal:package-zip-tarball || echo "" \
+#  && ./sbt "project workbench" universal:package-zip-tarball || echo ""
 
-FROM ubuntu:18.04
+FROM openjdk:8u151-jre
 
-MAINTAINER Isaiah Mulang' Onando <mulangonando@gmail.com>
+RUN mkdir /opt/dobie
 
-# Install Java 8.
-
-#RUN apt-get update && \
-#    apt-get upgrade -y && \
-#    apt-get install -y  software-properties-common && \
-#    add-apt-repository ppa:webupd8team/java && \
-#    add-apt-repository ppa:linuxuprising/java && \
-#    apt-get update && \
-#    #echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | /usr/bin/debconf-set-selections && \
-#    apt install oracle-java10-set-default && \
-#    apt-get clean
-
-# Install OpenJDK-8
 RUN apt-get update && \
-    apt-get install -y openjdk-8-jdk && \
-    apt-get install -y ant && \
-    apt-get clean;
-
-# Fix certificate issues
-RUN apt-get update && \
-    apt-get install ca-certificates-java && \
+    apt-get install -y --no-install-recommends p7zip-full && \
     apt-get clean && \
-    update-ca-certificates -f;
+    rm -rf /var/lib/apt/lists/* && \
+    7z -h
 
-# Define JAVA_HOME and TERM environment variable -- useful for docker commandline
 ENV \
-  WORKDIR="/home/dobie/" \
+  DOBIE_HOME="/opt/dobie" \
+  # WORKDIR=${DOBIE_HOME} \
   # set JAVA OPTIONS
   # provide a random env better suited for headless work such as docker images \
   # http:\/\/www.labouisse.com\/misc\/2014\/06\/19\/tomcat-startup-time-surprises \
   DEFAULT_JAVA_OPTS="-server -Djava.security.egd=file:/dev/./urandom" \
   JAVA_OPTS="-Xms1g -Xmx2g" \
   # configure application port and expose it
-  PORT=9006 \
-  JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/ \
-  TERM=xterm-color
+  PORT=5000 \
+  SERVER_CONTEXTPATH="/"
 
-RUN export TERM
-RUN export JAVA_HOME
+#CMD ["COPY","Executable\ JAR/skill-annotation-1.0-SNAPSHOT-jar-with-dependencies.jar", ${DOBIE_HOME}]
+#CMD ["COPY","Executable\ JAR/gate", ${DOBIE_HOME}]
+#CMD ["COPY","Executable\ JAR/Course_Description", ${DOBIE_HOME}]
+#CMD ["COPY","Executable\ JAR/readme.txt", ${DOBIE_HOME}]
 
-# Install  network tools (ifconfig, netstat, ping, ip)
-RUN apt-get update && \
-    apt-get install -y net-tools && \
-    apt-get install -y iputils-ping && \
-    apt-get install -y iproute2
+COPY ./Executable_JAR/ /opt/dobie/
 
-# Install vi for editing
-RUN apt-get update && \
-    apt-get install -y vim
+#RUN ls /opt/dobie/
 
-# Copy OCCRP SSL Certificate
-# COPY  certs/data.occrp.org.cer $JAVA_HOME/jre/lib/security/
+WORKDIR ./opt/dobie/
 
-# Install the OCCRP SSL certificate
-#WORKDIR $JAVA_HOME/jre/lib/security/
-#RUN keytool -importcert -alias occrp -keystore cacerts -storepass changeit -file data.occrp.org.cer -noprompt
+RUN ls -lh
 
-# INSTALL CURL
-RUN apt-get update && \
-    apt-get install -y curl && \
-    apt-get install -y unzip 
-    CMD /bin/bash
+RUN pwd
 
-#INSTALL SBT
-RUN apt-get install -y gnupg2
-RUN curl -O -J -L www.scala-lang.org/files/archive/scala-2.11.8.deb
-RUN dpkg -i scala-2.11.8.deb
-RUN echo "deb https://dl.bintray.com/sbt/debian /" | tee -a /etc/apt/sources.list.d/sbt.list
-RUN curl -sL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x2EE0EA64E40A89B84B2DF73499E82A75642AC823" | apt-key add
-RUN apt-get update
-RUN apt-get install -y sbt
+RUN 7z e ./skill-annotation-1.0-SNAPSHOT-jar-with-dependencies.jar.7z
+RUN rm ./skill-annotation-1.0-SNAPSHOT-jar-with-dependencies.jar.7z
+#RUN rm -rf Executable_JAR
 
-# Download and Configure GATE 8.4
-RUN curl -O -J -L https://sourceforge.net/projects/gate/files/gate/8.4.1/gate-8.4.1-build5753-BIN.zip/download
-#RUN wget https://sourceforge.net/projects/gate/files/gate/8.4.1/gate-8.4.1-build5753-BIN.zip
-RUN mv gate-8.4.1-build5753-BIN.zip /home
-WORKDIR /home
-RUN unzip gate-8.4.1-build5753-BIN.zip && \
-    rm /home/gate-8.4.1-build5753-BIN.zip && \
-    mv gate-8.4.1-build5753-BIN /home/gate-8.4
+EXPOSE 5000
 
-#COPY THE FILES TO the docker home DIR
-RUN mkdir dobie
-COPY . dobie/ 
-
-WORKDIR ./dobie/
-
-EXPOSE ${PORT}
-CMD  sbt -Dhttp.port=9006 run
-
-
+CMD java -jar skill-annotation-1.0-SNAPSHOT-jar-with-dependencies.jar "gate"
