@@ -1,7 +1,7 @@
 # Dockerfile for DOBIE Domain Ontologie Based Information Extraction
 # 1) Build an image using this docker file. Run the following docker command
 #
-#    $ docker build -t qualichain/dobie:v1.1.0 .
+#    $ docker build . -f Dockerfile -t qualichain/dobie:v1.1.0.
 #
 # 2) Test DOBIE in a container. Run the following docker command for testing
 #
