@@ -16,7 +16,7 @@ import java.net.URI;
  */
 public class Main {
     // Base URI the Grizzly HTTP server will listen on
-    public static final String BASE_URI = "http://localhost:5000/";
+    public static final String BASE_URI = "http://0.0.0.0:5000/";
 //    public static final String BASE_URI = "http://129.26.77.77:5000/";
 
 
