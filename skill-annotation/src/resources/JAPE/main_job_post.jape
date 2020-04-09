@@ -2,7 +2,7 @@ MultiPhase:	SkillAnnotationGrammars
 Phases:
 pre_processing
 extract_qualification
-extract_experience
+extract_job_post_experiences
 skill_type_update
 delete_annotation_from_markup
 job_role_xml

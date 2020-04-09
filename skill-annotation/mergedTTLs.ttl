@@ -1,0 +1,63 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix so:    <http://schema.org/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+############### Course ########################
+
+:NikolaosPapaspyrou  a  saro:EducatororTrainer ;
+        saro:develops  :Course_Description .
+
+:PetrosPotikas  a      saro:EducatororTrainer ;
+        saro:develops  :Course_Description .
+
+:KostisSagonas  a      saro:EducatororTrainer ;
+        saro:develops  :Course_Description .
+
+:Course_Description  a  saro:TrainingResource ;
+        rdfs:label      "Programming Languages I" ;
+        saro:relatedTo  saro:cPlusPlus , saro:programming , saro:java , saro:functionalProgramming , saro:c , saro:haskell , saro:r , saro:design , saro:analysis .
+
+############## Job Post ###########################
+
+saro:computerScience  so:educationLevel
+                "BSc" .
+				
+saro:java  qc:experienceDurationText  "three years (at least) of work experience" ;
+        qc:minExperienceDuration   "P3Y" .
+
+:job_post  a            saro:JobPosting ;
+        saro:describes  :job_post_JobRole .
+
+:job_post_JobRole  a               saro:JobRoleOrType ;
+        rdfs:label                 "unknown"@en ;
+        saro:requiresExperience    saro:java ;
+        saro:requiresQualificaton  saro:computerScience ;
+        saro:requiresSkill         saro:computerScience , saro:oracle , saro:webServices , saro:projectManagement , saro:c , saro:developer .
+
+################# CV ################################
+
+saro:less  qc:experienceDuration   "P1Y" ;
+        qc:experienceDurationText  "(Less than 1 year)" .
+
+saro:java  qc:experienceDuration   "P1Y" ;
+        qc:experienceDurationText  "(Less than 1 year)" .
+
+saro:c  qc:experienceDuration      "P1Y" ;
+        qc:experienceDurationText  "(Less than 1 year)" .
+
+:CV     a                          cv:CV ;
+        qc:refersToAccomplishment  saro:linux , saro:less , saro:cPlusPlus , saro:development , saro:programming , saro:java , saro:oracle , saro:https , saro:peoplesoft , saro:machineLearning , saro:c , saro:r , saro:database , saro:backend ;
+        qc:refersToExperience      saro:less , saro:java , saro:c , saro:database .
+
+saro:database  qc:experienceDuration  "P1Y" ;
+        qc:experienceDurationText  "(Less than 1 year)" .
+ 

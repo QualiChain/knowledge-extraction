@@ -116,3 +116,11 @@ companies_uk_lower.lst:organization:company
 music-artists.lst:person_full:music
 religious_adj.lst:religious_adj
 computer_programming.lst:computerScience:::ComputerProgramming
+information_science.lst:computerScience:::informationScience
+networking.lst:computerScience:::networking
+operating_systems.lst:computerScience:::operatingSystems
+artificial_intelligence.lst:computerScience:::artificialIntelligence
+theory_logic_design.lst:computerScience:::theoryLogicDesign
+multimedia.lst:computerScience:::multimedia
+applied_computer_science.lst:computerScience:::appliedComputerScience
+other_courses.lst:computerScience:::otherCourseCS

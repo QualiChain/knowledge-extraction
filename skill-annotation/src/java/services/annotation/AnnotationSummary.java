@@ -1,6 +1,7 @@
 package services.annotation;
 
 import java.io.*;
+import java.lang.reflect.AnnotatedArrayType;
 import java.lang.reflect.InvocationTargetException;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
@@ -21,14 +22,20 @@ import gate.Node;
 import gate.creole.*;
 import gate.creole.gazetteer.Gazetteer;
 import gate.creole.ontology.Ontology;
+import gate.gui.MainFrame;
 import gate.util.GateException;
 import org.apache.commons.io.IOUtils;
+import org.apache.jena.query.*;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.riot.RDFDataMgr;
 import org.apache.jena.riot.RDFFormat;
 import org.apache.jena.update.UpdateAction;
+import org.apache.jena.vocabulary.RDF;
 import org.apache.jena.vocabulary.RDFS;
+
+import javax.swing.*;
+import services.annotation.GateResources.SortedAnnotationList;
 
 public class AnnotationSummary {
 		//initialize variable for corpus
@@ -43,10 +50,7 @@ public class AnnotationSummary {
 
 
 		public List<String> Pipeline (String gateHome, ArrayList<File> files, String type) throws Exception {
-//			PropertyConfigurator.configure("log4j.properties");
 
-			//step 1: initialize the GATE library
-//			Gate.init();
             loadResources(gateHome);
 			
 			//create corpus consists of job posting files
@@ -92,6 +96,37 @@ public class AnnotationSummary {
 //		return saveToList(corpus);
 	}
 
+	private ResultSet sparqlQueryExample () throws FileNotFoundException {
+		Model model =  ModelFactory.createDefaultModel();
+		model.read( new FileInputStream(("mergedTTLs.ttl")),null,"TTL");
+
+		String queryString = "" +
+				"prefix saro: <" + "http://w3id.org/saro/" + ">\n" +
+				"prefix qc: <" + "http://w3id.org/qualichain/" + ">\n" +
+				"prefix rdf: <" + RDF.getURI() + ">\n" +
+				"SELECT  ?entity ?type   \n" +
+				"WHERE {   \n" +
+				"?entity rdf:type ?type.  \n" +
+				"{?entity saro:relatedTo saro:java. }  \n" +
+				"UNION  \n" +
+				"{?entity qc:refersToExperience saro:java. }  \n" +
+				"}";
+
+		System.out.println(queryString);
+
+		Query query= QueryFactory.create(queryString);
+		QueryExecution qexec = QueryExecutionFactory.create(query, model);
+		ResultSet rs = qexec.execSelect();
+
+
+		for ( ; rs.hasNext() ; ) {
+			QuerySolution soln = rs.nextSolution();
+			String entity = soln.get("entity").asResource().getURI();
+			String entityType = soln.get("type").toString();
+			System.out.println(entity + "     " + entityType);
+		}
+		return rs;
+	}
 
     public void loadResources(String gateFolder) throws GateException, IOException, URISyntaxException, InvocationTargetException,InterruptedException {
         String gateHome = "";
@@ -111,11 +146,11 @@ public class AnnotationSummary {
         File pluginsHome = new File(gateHome,"plugins");
         Gate.setPluginsHome(pluginsHome);
         Gate.init();
-//        SwingUtilities.invokeAndWait(new Runnable() {
-//        public void run() {
-//                MainFrame.getInstance().setVisible(true);
-//                }
-//        });
+        SwingUtilities.invokeAndWait(new Runnable() {
+        public void run() {
+                MainFrame.getInstance().setVisible(true);
+                }
+        });
 /*
         gr = GateResources.getInstance();
         gr.initializePipeLines();
@@ -186,17 +221,33 @@ public class AnnotationSummary {
             AnnotationSet experiences = outputAnnSet.get("Experience");
             for ( Annotation experience: experiences) {
                 FeatureMap features = experience.getFeatures();
-                exp = exp.concat("saro:" + features.get("string") + " , ");
-                Annotation expDuration = (Annotation)features.get("durationPeriod");
-                AnnotationSet expDurationText = (AnnotationSet)features.get("durationText");
-                String expDurationStr = expDuration.getFeatures().get("string").toString();
-                if (expDuration.getFeatures().get("kind").toString().equals("word")){
-                    expDurationStr = convertNumberStrToInt(expDurationStr);
-                }
-                String expDurationTextStr = currDoc.getContent().getContent(expDurationText.firstNode().getOffset(),expDurationText.lastNode().getOffset()).toString();
-                String sql = "saro:" + features.get("string") + experienceProperty + "\"P".concat(expDurationStr).concat("Y\"") + " ;\n" +
-                        "                   qc:experienceDurationText   \"" + expDurationTextStr + "\"" + " .\n";
-                expInsert = expInsert.concat(sql);
+				Annotation expDuration = (Annotation)features.get("durationPeriod");
+				AnnotationSet expDurationText = (AnnotationSet)features.get("durationText");
+				String expDurationStr = expDuration.getFeatures().get("string").toString();
+				if (expDuration.getFeatures().get("kind").toString().equals("word")){
+					expDurationStr = convertNumberStrToInt(expDurationStr);
+				}
+				String expDurationTextStr = currDoc.getContent().getContent(expDurationText.firstNode().getOffset(),expDurationText.lastNode().getOffset()).toString();
+				expDurationTextStr = expDurationTextStr.replaceAll("\\r", "");
+				expDurationTextStr = expDurationTextStr.replaceAll("\\n", "");
+
+				if (features.get("kind").toString().equals("bundledExperience")){
+					AnnotationSet allExperiences = (AnnotationSet)features.get("allExperiences");
+					ArrayList<String> saroExps = convertAnnSetToStr(allExperiences);
+					for(String saroExp: saroExps){
+						exp = exp.concat("saro:" + saroExp + " , ");
+						String sql = "saro:" + saroExp + experienceProperty + "\"P".concat(expDurationStr).concat("Y\"") + " ;\n" +
+								"                   qc:experienceDurationText   \"" + expDurationTextStr + "\"" + " .\n";
+						expInsert = expInsert.concat(sql);
+
+					}
+				}else {
+					exp = exp.concat("saro:" + features.get("string") + " , ");
+					String sql = "saro:" + features.get("string") + experienceProperty + "\"P".concat(expDurationStr).concat("Y\"") + " ;\n" +
+							"                   qc:experienceDurationText   \"" + expDurationTextStr + "\"" + " .\n";
+					expInsert = expInsert.concat(sql);
+
+				}
 
             }
 
@@ -245,6 +296,8 @@ public class AnnotationSummary {
                 String[] allLecturers = lecturersStr.split(",");
                 for (String lecturer : allLecturers){
                     String sql = ":" + lecturer.replaceAll(" ", "") + "  a saro:EducatororTrainer; \n" +
+									"			a	qc:Person; \n" +
+									"			foaf:name	\"" + lecturer + "\"@en ; \n" +
                                     "           saro:develops    :" + docName + ". \n";
                     lecturerInsert = lecturerInsert.concat(sql);
                 }
@@ -259,12 +312,37 @@ public class AnnotationSummary {
             insertStatement = insertStatement.concat(lecturerInsert);
 
         }else if(type.equals(Consts.CV_TYPE)){
+			String firstName = "";
+			String lastName = "";
+			String gender = "";
+			String personQueryInsert = "";
+			AnnotationSet persons = outputAnnSet.get("Person");
+			if (persons.size() > 0) {
+				SortedAnnotationList sortedAnnots = new SortedAnnotationList();
+				for(Annotation an: persons){
+					sortedAnnots.addSortedExclusive(an);
+				}
+				Annotation firstIdentified = (Annotation) sortedAnnots.iterator().next();
+				FeatureMap features = firstIdentified.getFeatures();
+				firstName = features.get("firstName").toString();
+				lastName = features.get("surname").toString();
+				gender = features.get("gender").toString();
+				personQueryInsert = ":" + firstName + lastName + "	a	qc:Person; \n" +
+									"			qc:hasResume	:" + docName + "; \n" +
+									"			foaf:name	\"" + firstName + " " + lastName + "\"@en; \n" +
+									"			foaf:firstName	\"" + firstName  + "\"@en; \n" +
+									"			foaf:lastName	\"" + lastName  + "\"@en; \n" +
+						(gender.equals("")? "" : (" 	foaf:gender	\"" + gender + "\"@en ;\n"));
+				personQueryInsert = personQueryInsert.substring(0, personQueryInsert.lastIndexOf(";")).concat(".");
+			}
+
 			insertStatement = ":" + docName + "	a 	cv:CV; \n" +
+                    (personQueryInsert.equals("") ? "" : ("			cv:aboutPerson	:" + firstName + lastName + ";\n")) +
                     (exp.equals("") ? "" : ("					qc:refersToExperience	" + exp.substring(0,exp.lastIndexOf(",")) + "	;\n")) +
                     (skills.equals("")? "" : (" 					qc:refersToAccomplishment	" + skills.substring(0,skills.lastIndexOf(","))  + " ;\n"));
 
             insertStatement = insertStatement.substring(0, insertStatement.lastIndexOf(";")).concat(".");
-            insertStatement = insertStatement.concat(expInsert);
+            insertStatement = insertStatement.concat(expInsert).concat(personQueryInsert);
 
 
         }else{
@@ -272,6 +350,7 @@ public class AnnotationSummary {
 		}
         String finalInsert = "prefix saro: <" + "http://w3id.org/saro/" + ">\n" +
                 "prefix xsd: <" + "http://www.w3.org/2001/XMLSchema#" + ">\n" +
+                "prefix foaf: <" + "http://xmlns.com/foaf/0.1/" + ">\n" +
                 "prefix qc: <" + "http://w3id.org/qualichain/" + ">\n" +
                 "prefix cv: <" + "http://rdfs.org/resume-rdf/cv.rdfs#" + ">\n" +
                 "prefix so: <" + "http://schema.org/" + ">\n" +
@@ -291,18 +370,33 @@ public class AnnotationSummary {
 		currentFileAnnotations.close();
 	}
 
+	private ArrayList<String> convertAnnSetToStr (AnnotationSet annSet) {
+			ArrayList<String> temp = new ArrayList<String>();
+			for(Annotation ann: annSet) {
+				FeatureMap features = ann.getFeatures();
+				if (features.get("URI") != null) {
+					String uri = features.get("URI").toString();
+					int hashtagpos = uri.lastIndexOf("/");
+					if(!temp.contains(uri.substring(hashtagpos + 1))) {
+						temp.add(uri.substring(hashtagpos + 1));
+					}
+				}
+			}
+			return temp;
+	}
 	private Model aSimpleModel() {
 		Model m = ModelFactory.createDefaultModel();
 		m.setNsPrefix("so", "http://schema.org/");
 		m.setNsPrefix("cv", "http://rdfs.org/resume-rdf/cv.rdfs#");
 		m.setNsPrefix("rdfs", "http://www.w3.org/2000/01/rdf-schema#");
+		m.setNsPrefix("foaf", "http://xmlns.com/foaf/0.1/");
 		m.setNsPrefix("xsd", "http://www.w3.org/2001/XMLSchema#");
 		m.setNsPrefix("xml", "http://www.w3.org/XML/1998/namespace");
 		m.setNsPrefix("rdf", "http://www.w3.org/1999/02/22-rdf-syntax-ns#");
 		m.setNsPrefix("owl", "http://www.w3.org/2002/07/owl#");
 		m.setNsPrefix("dbo", "http://dbpedia.org/ontology/");
 		m.setNsPrefix("esco", "http://data.europa.eu/esco/model#");
-		m.setNsPrefix("qc", "http://w3id.org/qualichain");
+		m.setNsPrefix("qc", "http://w3id.org/qualichain/");
 		m.setNsPrefix("saro", "http://w3id.org/saro/");
 		m.setNsPrefix("", "https://qualichain-project.eu/");
 		return m;
@@ -311,14 +405,22 @@ public class AnnotationSummary {
 
 	private String convertNumberStrToInt (String digitStr) throws Exception {
 	    digitStr = digitStr.toLowerCase();
-	    if(digitStr.equals("one"))
-	        return "1";
-	    else if(digitStr.equals("two"))
-	        return "2";
-	    else if (digitStr.equals("three"))
-	        return "3";
-	    else
-	        throw new Exception("Error in Experience Duration!");
+		switch (digitStr) {
+			case "one":
+				return "1";
+			case "two":
+				return "2";
+			case "three":
+				return "3";
+			case "four":
+				return "4";
+			case "five":
+				return "5";
+			case "six":
+				return "6";
+			default:
+				throw new Exception("Error in Experience Duration!");
+		}
     }
     private List<String> saveToList(Corpus corp) throws GateException, IOException {
         Iterator documentIterator = corp.iterator();
@@ -386,13 +488,19 @@ public class AnnotationSummary {
 
                   Document d = (Document) Factory.createResource("gate.corpora.DocumentImpl", params);
                   d.setName(file.getName());
-                  if (file.getName().toLowerCase().contains("job post")) {
-                      d.getFeatures().put("docType", "jobPost");
-                  } else if (file.getName().toLowerCase().contains("course description")) {
-                      d.getFeatures().put("docType", "courseDescription");
-                  } else{
-                      d.getFeatures().put("docType", "cv");
-                  }
+				  switch (type) {
+					  case "jobPost":
+						  d.getFeatures().put("docType", "jobPost");
+						  break;
+					  case "courseDescription":
+						  d.getFeatures().put("docType", "courseDescription");
+						  break;
+					  case "cv":
+						  d.getFeatures().put("docType", "cv");
+						  break;
+					  default:
+						  throw new Exception("File Type not recognized");
+				  }
                   corpus.add(d);
 		    	  //corpus.add(Factory.newDocument(file));
                   System.out.println(" -- success");
@@ -796,6 +904,7 @@ public class AnnotationSummary {
 		String kind = "";
 		Annotation durationPeriod = null;
 		AnnotationSet durationText = null;
+		AnnotationSet allExperiences = null;
 		Annotation certificateDegree = null;
 		for (int i = 0; i < tempList.size(); i++){
 			for (Annotation annot : annotationSet){
@@ -805,6 +914,7 @@ public class AnnotationSummary {
                 if(annsetName.equals("ExperienceTemp")) {
                     durationPeriod = (Annotation)annot.getFeatures().get("durationPeriod");
                     durationText = (AnnotationSet)annot.getFeatures().get("durationText");
+					allExperiences = (AnnotationSet)annot.getFeatures().get("allExperiences");
                 }
                 if(annsetName.equals("QualificationTemp")) {
                     certificateDegree = (Annotation)annot.getFeatures().get("certificateDegree");
@@ -826,6 +936,7 @@ public class AnnotationSummary {
 				if(annsetName.equals("ExperienceTemp")){
                     features1.put("durationPeriod", durationPeriod);
                     features1.put("durationText", durationText);
+                    features1.put("allExperiences", allExperiences);
                 }
                 if(annsetName.equals("QualificationTemp")){
                     features1.put("certificateDegree", certificateDegree);
@@ -858,7 +969,7 @@ public class AnnotationSummary {
 
 			  }
 //			  if(currDoc.getName().toLowerCase().contains("job post") || currDoc.getName().toLowerCase().contains("cv")) {
-			  String type = "courseDescription";
+			  String type = "jobPost";
 			  try
 			  {
 

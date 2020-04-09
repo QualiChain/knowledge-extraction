@@ -1,0 +1,91 @@
+Phase:	extractJobPostExperiences
+Input: Token SpaceToken Lookup enumeratedEntry
+Options: control = appelt
+	
+
+//three years (at least) of work experience as JAVA frameworks
+Rule:	experience1
+	(
+	  ({Token.category == CD}): duration	  
+	  ({SpaceToken}{Token.root == "year"}{SpaceToken})
+	  (
+		({Token.kind == punctuation}|{Token.kind == word})({SpaceToken})?
+	  )*
+	  ({Token.root == "experience"})
+	): durationText  
+	{SpaceToken}
+	({Token.root == "as"}|{Token.root == "in"}){SpaceToken}
+	({Lookup.type == "instance", Lookup.classURI == "http://w3id.org/saro/Product"}|
+	{Lookup.type == "instance", Lookup.classURI == "http://w3id.org/saro/Tool"}|
+	{Lookup.type == "instance", Lookup.classURI == "http://w3id.org/saro/Topic"}): label
+  
+  
+-->
+
+{
+	gate.AnnotationSet skillAnn = (gate.AnnotationSet)bindings.get("label"); 
+	gate.Annotation uriann = skillAnn.iterator().next();
+    gate.AnnotationSet duration = (gate.AnnotationSet)bindings.get("duration"); 
+    gate.AnnotationSet durationText = (gate.AnnotationSet)bindings.get("durationText"); 
+	gate.FeatureMap features = Factory.newFeatureMap();
+	features.put("rule", "experience1");
+	features.put("kind", "digitOrStr");	
+	String uri = (String)uriann.getFeatures().get("URI");
+	int hashtagpos = uri.lastIndexOf("/");
+	features.put("string", uri.substring(hashtagpos+1,uri.length()));
+	gate.Annotation durationPeriod = (gate.Annotation)duration.iterator().next();
+	features.put("durationPeriod", durationPeriod);	
+	features.put("durationText", durationText);	
+
+				
+
+	outputAS.add(skillAnn.firstNode(), skillAnn.lastNode(), "ExperienceTemp", features);
+}
+
+
+
+//Work Experience:
+//Two (2) years (at least)
+//• Design and implementation of SQL SERVER (T-SQL)
+
+Rule:	experience2
+	({Token.root == "work"}{SpaceToken}{Token.root == "experience"})
+	(
+		({Token.kind == punctuation}|{Token.kind == word, Token.category != CD})({SpaceToken})?
+	)*	
+	(
+	  ({Token.category == CD}): duration
+	  {SpaceToken.kind == space}
+	  ({Token}({SpaceToken.kind == space})?)*	  
+	  ({Token.root == "year"}{SpaceToken})
+	  ({Token notWithin enumeratedEntry}({SpaceToken})?)*
+	): durationText  
+  	(
+		(({enumeratedEntry})+)|
+		(({Token within Sentence}({SpaceToken})?)*)
+
+	): label
+
+-->
+
+{
+	gate.AnnotationSet enumeratedEntries = (gate.AnnotationSet)bindings.get("label"); 
+	// get Skills info from within enumeratedEntries annotation
+	AnnotationSet allExperiences = inputAS.get("Lookup", enumeratedEntries.firstNode().getOffset(), enumeratedEntries.lastNode().getOffset());
+	
+    gate.AnnotationSet duration = (gate.AnnotationSet)bindings.get("duration"); 
+    gate.AnnotationSet durationText = (gate.AnnotationSet)bindings.get("durationText"); 
+	gate.FeatureMap features = Factory.newFeatureMap();
+	features.put("rule", "experience2");
+	features.put("kind", "bundledExperience");	
+	features.put("string", "str");	
+	gate.Annotation durationPeriod = (gate.Annotation)duration.iterator().next();
+	features.put("durationPeriod", durationPeriod);	
+	features.put("durationText", durationText);	
+	features.put("allExperiences", allExperiences);	
+
+				
+	outputAS.add(enumeratedEntries.firstNode(), enumeratedEntries.lastNode(), "ExperienceTemp", features);
+
+}
+

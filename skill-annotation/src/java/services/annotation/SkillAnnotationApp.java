@@ -38,7 +38,7 @@ public class SkillAnnotationApp {
 
 
 		String[] processingResources = {
-				"gate.creole.splitter.RegexSentenceSplitter",
+				"gate.creole.splitter.SentenceSplitter",
 				"gate.creole.POSTagger",
 		        "gate.creole.morph.Morph",
 				"gate.creole.ANNIETransducer"};

@@ -1,14 +1,19 @@
 Phase: Clean_XML
-Input: Sentence Lookup Split Token SpaceToken jobTitle hiringOrganization
+Input: Sentence Lookup Token Split  SpaceToken jobTitle hiringOrganization ComputerProgramming Date Enumerator Money UnknownTemp
 Options: control = all
 
 Rule:CleanUnusedAnnotations
 (
- {Sentence} |
  {Split} |
  {SpaceToken} |
  {Lookup} |
  {Token} |
+ {ComputerProgramming} |
+ {Date} |
+ {Money} |
+ {Enumerator} |
+ {UnknownTemp} |
+ {Sentence} |
  {jobTitle} |
  {hiringOrganization}
  

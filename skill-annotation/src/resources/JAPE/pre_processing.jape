@@ -1,6 +1,7 @@
 Phase:	preProcessing
-Input: Token SpaceToken
+Input: Token SpaceToken Lookup
 Options: control = appelt
+	
 
 Rule: enumerator
 (
@@ -60,3 +61,25 @@ Rule:	phd
   )
 :label -->
   :label.CertificateDegree = {kind = "degree", rule = "master", string = "phd"}  
+  
+
+Rule: enumeratedEntries
+(
+	{Token.string == "•"}{SpaceToken.kind == space}
+	(
+		({Token.string != "•"})({SpaceToken})?
+	)*
+): label
+-->
+{
+	gate.AnnotationSet enumeratedEntries = (gate.AnnotationSet)bindings.get("label"); 
+
+
+	gate.FeatureMap features = Factory.newFeatureMap();
+	features.put("rule", "enumeratedEntries");
+	features.put("kind", "enumeratedEntries");	
+
+	outputAS.add(enumeratedEntries.firstNode(), enumeratedEntries.lastNode(), "enumeratedEntry", features);
+}
+
+
