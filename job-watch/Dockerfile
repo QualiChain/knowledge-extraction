@@ -1,27 +1,27 @@
-# Dockerfile for Fuhsen-reactive
+# Dockerfile for JobWatch
 # 1) Build an image using this docker file. Run the following docker command
 #
-#    $ docker build -t qualichain/acquisition:v1.1.0 .
+#    $ docker build -t jobwatch/jobwatch:v1.1.0 .
 #
-# 2) Test Fuhsen in a container. Run the following docker command for testing
+# 2) Test JobWatch in a container. Run the following docker command for testing
 #
-#    $ docker run --rm -it -p 9000:9000 --name acquisition qualichain/acquisition:v1.1.0 /bin/bash
+#    $ docker run --rm -it -p 9000:9000 --name jobwatch jobwatch/jobwatch:v1.1.0 /bin/bash
 #
-# 3) The Aquisition Service needs API keys to access Job Posting sites. The keys are stored in conf/application.conf
+# 3) The JobWatch Service needs API keys to access Job Posting sites. The keys are stored in conf/application.conf
 # For security reason the application.conf file on Github does not contain the keys. The config file
 # must be provided in a Docker data volume loaded with the config file. As an example copy the config file in 
-# a folder in the server host (e.g. /home/qualichain/acquisition-conf) then run a container using an image
+# a folder in the server host (e.g. /home/jobwatch/jobwatch-conf) then run a container using an image
 # already available or a small one like alpine (a small Linux version) mapping the folder with the config file
 # in the host to the folder conf/ in the container.
 # 
-#    $ docker run -d -v /home/acquisition/acquisition-conf/application.conf:/home/acquisition/conf/application.conf:ro \
-#                                         --name acquisition-conf alpine echo "Acquisition Config File"
+#    $ docker run -d -v /home/jobwatch/jobwatch-conf/application.conf:/home/jobwatch/conf/application.conf:ro \
+#                                         --name jobwatch-conf alpine echo "JobWatch Config File"
 #
-# 4) Start a container with data-acquisition using the config file in the data volume
+# 4) Start a container with jobwatch using the config file in the data volume
 #
-#    $ docker run -it -p 9000:9000 --volumes-from acquisition-conf --name acquisition qualichain/acquisition:v1.1.0 /bin/bash 
+#    $ docker run -it -p 9000:9000 --volumes-from jobwatch-conf --name jobwatch jobwatch/jobwatch:v1.1.0 /bin/bash 
 #
-# 5) Within the container check that the application.conf is right and start the data acquisition  ./bin/acquisition
+# 5) Within the container check that the application.conf is right and start the jobwatch  ./bin/jobwatch
 #
 # 6) Detach from the container with Ctrl-p Ctrl-q
 
@@ -106,10 +106,10 @@ RUN apt-get install -y sbt
 WORKDIR /home
 
 #COPY THE FILES TO the docker home DIR
-RUN mkdir acquisition
-COPY . acquisition/ 
+RUN mkdir jobwatch
+COPY . jobwatch/ 
 
-WORKDIR ./acquisition/
+WORKDIR ./jobwatch/
 
 EXPOSE ${PORT}
 
