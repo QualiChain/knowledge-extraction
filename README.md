@@ -10,6 +10,10 @@ The Repository consists of the three sub components (services) of the Knowledge 
 
 **Note**: This DOBIE distribution is customised for the Job Market Monitoring use-case, as one of the QualiChain areas for which knowledge extraction is required (in addition to job posts, DOBIE will also process course descriptions and anonimised personal CVs). It therefore includes the domain ontology - QualiChain Ontology https://vocol.iais.fraunhofer.de/QualiChain/visualization)  as a domain ontology, and the data acquisition service is also customised (JobWatch) to extract the relevant data (Job postings from online portals).
 
+The DOBIE pipeline runs as shown in the following figure:
+
+![DOBIE](images/dobie-generic-pipeline.png?raw=true "Domain Ontology Based Information Extraction Pipeline")
+
 ## RUNNING
 ### --- Dockerization ---
 -----------------------------------------------
