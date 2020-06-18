@@ -14,7 +14,7 @@ The DOBIE pipeline runs as shown in the following figure:
 
 ![DOBIE](images/dobie-generic-pipeline.png?raw=true "Domain Ontology Based Information Extraction Pipeline")
 
-## RUNNING
+## RUNNING AND DEPLOYMENT
 ### --- Dockerization ---
 -----------------------------------------------
 Each Sub component has a Dockerfile at its root directory, this docker file contains instructions to run
