@@ -6,8 +6,9 @@ The Repository consists of the three sub components (services) of the Knowledge 
 
 2. skill-annotation - Contains the DOBIE pipeline
 
-3. data acquisition - Fetches and process data from job posting portals
+3. JobWatch - Fetches and process data from job posting portals
 
+**Note**: This DOBIE distribution is customised for the Job Market Monitoring use-case. It therefore includes the domain ontology - QualiChain Ontology https://vocol.iais.fraunhofer.de/QualiChain/visualization)  as a domain ontology, and the data acquisition service is also customised (JobWatch) to extract the relevant data (Job postings from online portals).
 
 ## RUNNING
 ### --- Dockerization ---
@@ -90,7 +91,7 @@ There is also a read me in the folder containing instructions specific for Skill
 Examples: For an example on how to call the Skill annotation: Take a look into the "Skill annotations example" under the examples folder
 
 
-#### STEP 4: Data Acquisitions
+#### STEP 4: JobWatch
 -----------------------------------------------
 Depends on the other modules || runs on port 9000 by default
  
