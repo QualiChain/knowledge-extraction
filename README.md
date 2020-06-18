@@ -1,14 +1,14 @@
 # knowledge-extraction
 
-The Repository consists of the three sub components (services) of the Knowledge Extarction component
+The Repository consists of the three sub components (services) of the Knowledge Extraction component in the QualiChain project https://qualichain-project.eu/
 
 1. Silk Framework - Configured for DOBIE
 
-2. skill-annotation - Contains the DOBIE pipeline
+2. skill-annotation - Contains the DOBIE pipeline configured for the Skills domain (SARO Ontology - see note below)
 
-3. JobWatch - Fetches and process data from job posting portals
+3. JobWatch - Fetches and process data from job posting portals 
 
-**Note**: This DOBIE distribution is customised for the Job Market Monitoring use-case. It therefore includes the domain ontology - QualiChain Ontology https://vocol.iais.fraunhofer.de/QualiChain/visualization)  as a domain ontology, and the data acquisition service is also customised (JobWatch) to extract the relevant data (Job postings from online portals).
+**Note**: This DOBIE distribution is customised for the Job Market Monitoring use-case, as one of the QualiChain areas for which knowledge extraction is required (in addition to job posts, DOBIE will also process course descriptions and anonimised personal CVs). It therefore includes the domain ontology - QualiChain Ontology https://vocol.iais.fraunhofer.de/QualiChain/visualization)  as a domain ontology, and the data acquisition service is also customised (JobWatch) to extract the relevant data (Job postings from online portals).
 
 ## RUNNING
 ### --- Dockerization ---
