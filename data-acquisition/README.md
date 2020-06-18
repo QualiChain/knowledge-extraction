@@ -1,4 +1,4 @@
-# Data Acquisition Service
+# JobWatch Service
 
 ## Description
 A scala version of the data acquisition service for job portals: **JobWatch**.
