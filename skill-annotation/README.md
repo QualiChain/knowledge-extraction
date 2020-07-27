@@ -1,4 +1,4 @@
-Skill Annotation Tool
+Domain Ontology Based Information Extraction (DOB-IE) Tool
 =================================
 
 This service is able to annotate the skills from a job posting description using a Ontology approach.
