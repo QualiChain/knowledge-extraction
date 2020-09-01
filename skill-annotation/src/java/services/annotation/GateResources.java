@@ -104,7 +104,7 @@ public class GateResources {
 		Out.prln("Creating Gate document for " + u);
 		Document d = (Document) Factory.createResource("gate.corpora.DocumentImpl", params);
 //		d.setName(file.getName());
-		if (type.equals(Consts.JOB_POST_TYPE)) {
+		if (type.equals(Consts.JOB_POST_TYPE) || type.equals(Consts.JOB_WATCH_TYPE)) {
 			d.getFeatures().put("docType", "jobPost");
 		} else if (type.equals(Consts.COURSE_TYPE)) {
 			d.getFeatures().put("docType", "courseDescription");

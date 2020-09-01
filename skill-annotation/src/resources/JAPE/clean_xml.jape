@@ -1,5 +1,5 @@
 Phase: Clean_XML
-Input: Sentence Lookup Token Split  SpaceToken jobTitle hiringOrganization ComputerProgramming Date Enumerator Money UnknownTemp
+Input: Sentence Lookup Token Split  SpaceToken jobTitle hiringOrganization ComputerProgramming Date Enumerator Money UnknownTemp saroSkill
 Options: control = all
 
 Rule:CleanUnusedAnnotations
@@ -7,6 +7,7 @@ Rule:CleanUnusedAnnotations
  {Split} |
  {SpaceToken} |
  {Lookup} |
+ {saroSkill} |
  {Token} |
  {ComputerProgramming} |
  {Date} |

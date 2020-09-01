@@ -76,7 +76,7 @@ public class AnnotationSummary {
 			skillann.execute();
 
 			//Calculate the number of the skills - we take the absolute number
-			return displayDocumentFeatures(corpus, type);
+			return displayDocumentFeatures(corpus, type, "" , "", "");
 			
 			//saveToXML(corpus);
 //            return saveToList(corpus);
@@ -92,7 +92,16 @@ public class AnnotationSummary {
         gr.buildCorpusWithDoc(u, type);
         gr.execute();
         Corpus corpus = gr.getCorpus();
-		return displayDocumentFeatures(corpus, type);
+		return displayDocumentFeatures(corpus, type, "", "", "");
+//		return saveToList(corpus);
+	}
+
+	public List<String> generateJobWatchAnnotation (URL u, String type, String title, String location, String company) throws Exception {
+		GateResources gr = GateResources.getInstance();
+		gr.buildCorpusWithDoc(u, type);
+		gr.execute();
+		Corpus corpus = gr.getCorpus();
+		return displayDocumentFeatures(corpus, type, title, location, company);
 //		return saveToList(corpus);
 	}
 
@@ -169,7 +178,7 @@ public class AnnotationSummary {
 
 
     }
-	private void produceRDF(Document currDoc, String type) throws Exception {
+	private void produceRDF(Document currDoc, String type,  String title, String location, String company) throws Exception {
 		System.out.println("Type of Document: " + type);
 
 		String filename = currDoc.getName();
@@ -268,18 +277,38 @@ public class AnnotationSummary {
                 qualiInsert = qualiInsert.concat(sql);
 
             }
+            String organisation = "";
+            String organisationSql = "";
+            if (company.length() > 0) {
+				company = company.replaceAll("-" , " ");
+				if (company.contains("(")) {
+					company = company.substring(0,company.indexOf("("));
+				}
+            	if (!company.contains(" ")) {
+					organisation = company.toLowerCase();
+				} else {
+            		String[] splittedCompanyName = company.toLowerCase().trim().split(" ");
+					organisation = splittedCompanyName[0];
+            		for (int i = 1; i < splittedCompanyName.length; i++) {
+            			organisation += splittedCompanyName[i].substring(0,1).toUpperCase() + splittedCompanyName[i].substring(1).toLowerCase();
+					}
+
+				}
+				organisationSql = ":" + organisation + "	a	so:Organisation , saro:Recruiter .";
+			}
 
                     insertStatement = ":" + docName + "	a 	saro:JobPosting; \n" +
 					" 					saro:describes	:" + docName + "_JobRole" + " .\n" +
 					":" + docName + "_JobRole" + "	a	saro:JobRoleOrType ; \n" +
-					"					rdfs:label \"unknown\"@en ;\n" +
+					"					rdfs:label \"" + (title.equals("") ? "unknown" : title.trim()) + "\"@en ;\n" +
+                    (company.equals("") ? "" : ("					so:hiringOrganisation	:" + organisation + "	;\n")) +
                     (skills.equals("") ? "" : ("					saro:requiresSkill	" + skills.substring(0,skills.lastIndexOf(",")) + "	;\n")) +
                     (exp.equals("") ? "" : ("					saro:requiresExperience	" + exp.substring(0,exp.lastIndexOf(",")) + "	;\n")) +
                     (quali.equals("") ? "" : ("					saro:requiresQualificaton	" + quali.substring(0,quali.lastIndexOf(",")) + "	;\n"));
 
             insertStatement = insertStatement.substring(0, insertStatement.lastIndexOf(";")).concat(".");
 
-            insertStatement = insertStatement.concat(expInsert + qualiInsert);
+            insertStatement = insertStatement.concat(expInsert + qualiInsert + organisationSql);
 
 		}else if(type.equals(Consts.COURSE_TYPE)) {
             AnnotationSet courseTitlesAnn = outputAnnSet.get("CourseTitle");
@@ -297,7 +326,7 @@ public class AnnotationSummary {
                 for (String lecturer : allLecturers){
                     String sql = ":" + lecturer.replaceAll(" ", "") + "  a saro:EducatororTrainer; \n" +
 									"			a	qc:Person; \n" +
-									"			foaf:name	\"" + lecturer + "\"@en ; \n" +
+									"			foaf:name	\"" + lecturer.trim() + "\"@en ; \n" +
                                     "           saro:develops    :" + docName + ". \n";
                     lecturerInsert = lecturerInsert.concat(sql);
                 }
@@ -456,9 +485,7 @@ public class AnnotationSummary {
 			FeatureMap params = Factory.newFeatureMap();
 			params.put("ontology", ontforgaz);
 			params.put("rootFinderApplication", rootFinder.createResources());
-//			params.put("considerProperties", true);
-			params.put("useResourceUri", true);
-			params.put("propertiesToInclude", "http://www.w3.org/2000/01/rdf-schema#label");
+//			params.put("caseSensitive", false);
 
 
 			return (Gazetteer) Factory.createResource("gate.clone.ql.OntoRootGaz",params);
@@ -551,7 +578,7 @@ public class AnnotationSummary {
 		
 		
 			
-		private List<String> displayDocumentFeatures(Corpus corp, String type) throws Exception {
+		private List<String> displayDocumentFeatures(Corpus corp, String type, String title, String location, String company) throws Exception {
 			Iterator documentIterator = corp.iterator();
 			List<String> ttlFiles = new ArrayList<String>();
 			while(documentIterator.hasNext()) {
@@ -561,7 +588,7 @@ public class AnnotationSummary {
 			           //   + currDoc.getSourceUrl().getFile() + "\" are:");
 			    int firstseen = 0;
 			    currDoc.getFeatures().clear();
-			    
+
 			    AnnotationSet inputAnnSet = (inputASname == null || inputASname.length() == 0)
 			            ? currDoc.getAnnotations()
 			            : currDoc.getAnnotations(inputASname);
@@ -569,8 +596,8 @@ public class AnnotationSummary {
 			    AnnotationSet outputAnnSet = (outputASname == null || outputASname.length() == 0)
 			            ? currDoc.getAnnotations()
 			            : currDoc.getAnnotations(outputASname);
-			    
-			            
+
+
 			    // put the number lookup feature for the document        
 			    try {
 			    		/*currDoc.getFeatures().put(
@@ -692,7 +719,7 @@ public class AnnotationSummary {
 				//important to use the parameter below to keep the default annotation set has all the annotation types for the evaluation related task
 				//params1.put("copyAnnotations","true"); 
 
-				produceRDF(currDoc, type);
+				produceRDF(currDoc, type, title, location, company);
 				System.out.println("TTL file saved");
 				File ttl = new File(ttlFolder,currDoc.getName()+".ttl");
 				String RDFdata = IOUtils.toString(new FileInputStream(ttl), StandardCharsets.UTF_8);
@@ -910,19 +937,18 @@ public class AnnotationSummary {
 			for (Annotation annot : annotationSet){
 
 				String str = (String) annot.getFeatures().get("string");
-				kind = annot.getFeatures().get("kind").toString();
-                if(annsetName.equals("ExperienceTemp")) {
-                    durationPeriod = (Annotation)annot.getFeatures().get("durationPeriod");
-                    durationText = (AnnotationSet)annot.getFeatures().get("durationText");
-					allExperiences = (AnnotationSet)annot.getFeatures().get("allExperiences");
-                }
-                if(annsetName.equals("QualificationTemp")) {
-                    certificateDegree = (Annotation)annot.getFeatures().get("certificateDegree");
-                }
-
-				if (str.equalsIgnoreCase(tempList.get(i))){
+				if (str.equalsIgnoreCase(tempList.get(i))) {
 					count ++;
 					flag = true;
+					kind = annot.getFeatures().get("kind").toString();
+					if(annsetName.equals("ExperienceTemp")) {
+						durationPeriod = (Annotation)annot.getFeatures().get("durationPeriod");
+						durationText = (AnnotationSet)annot.getFeatures().get("durationText");
+						allExperiences = (AnnotationSet)annot.getFeatures().get("allExperiences");
+					}
+					if(annsetName.equals("QualificationTemp")) {
+						certificateDegree = (Annotation)annot.getFeatures().get("certificateDegree");
+					}
 					startnode = annot.getStartNode();
 					endnode = annot.getEndNode();
 				}
@@ -949,8 +975,6 @@ public class AnnotationSummary {
 			endnode = null;
 
 		}
-
-		//delete all annotation with 'SkillProductTemp' annotation
 		inputAS.removeAll(annotationSet);
 	}
 
@@ -969,7 +993,7 @@ public class AnnotationSummary {
 
 			  }
 //			  if(currDoc.getName().toLowerCase().contains("job post") || currDoc.getName().toLowerCase().contains("cv")) {
-			  String type = "jobPost";
+			  String type = "cv";
 			  try
 			  {
 

@@ -3,7 +3,57 @@ Input: Token SpaceToken Lookup
 Options: control = appelt
 	
 
+
+Rule:	skill
+Priority: 40
+(
+  (        
+	{Lookup.type == "instance", Lookup.classURI == "http://w3id.org/saro/Product"}|
+	{Lookup.type == "instance", Lookup.classURI == "http://w3id.org/saro/Tool"}|
+	{Lookup.type == "instance", Lookup.classURI == "http://w3id.org/saro/Topic"}
+  ): label
+  ({SpaceToken}|{Token.kind == punctuation})
+)  
+-->
+{
+	gate.AnnotationSet saroSkills = (gate.AnnotationSet)bindings.get("label"); 
+	gate.Annotation saroSkill = saroSkills.iterator().next();
+	String uri = (String)saroSkill.getFeatures().get("URI");
+	int hashtagpos = uri.lastIndexOf("/");
+	String str = uri.substring(hashtagpos+1,uri.length());
+	gate.FeatureMap features = Factory.newFeatureMap();
+	features.put("rule", "skill");
+	features.put("kind", "skill");	
+	features.put("classURI", saroSkill.getFeatures().get("classURI").toString());	
+	features.put("string", str);	
+	
+	String peropertyValue = "";
+	if(saroSkill.getFeatures().get("propertyValue") != null) {
+		peropertyValue = saroSkill.getFeatures().get("propertyValue").toString();
+		peropertyValue = peropertyValue.toLowerCase().replaceAll(" " , "");
+	}else{
+		peropertyValue = str.toLowerCase();
+	}
+
+
+	String tokensStr = "";
+	try{
+		tokensStr = doc.getContent().getContent(saroSkill.getStartNode().getOffset(), saroSkill.getEndNode().getOffset()).toString();
+		tokensStr = tokensStr.toLowerCase().replaceAll(" " , "");
+
+	}catch(Exception e){
+		e.printStackTrace();
+	}
+	
+	if(peropertyValue.equals(tokensStr)){
+		outputAS.add(saroSkills.firstNode(), saroSkills.lastNode(), "saroSkill", features);
+	}
+}
+  
+
 Rule: enumerator
+Priority: 50
+
 (
 ({Token.kind == punctuation , Token.string == "("})?
 ({Token.string == "i"}|{Token.string == "ii"}|{Token.string == "iii"}|{Token.string == "iv"}|{Token.string == "v"}|{Token.string == "vi"}|
@@ -62,24 +112,5 @@ Rule:	phd
 :label -->
   :label.CertificateDegree = {kind = "degree", rule = "master", string = "phd"}  
   
-
-Rule: enumeratedEntries
-(
-	{Token.string == "•"}{SpaceToken.kind == space}
-	(
-		({Token.string != "•"})({SpaceToken})?
-	)*
-): label
--->
-{
-	gate.AnnotationSet enumeratedEntries = (gate.AnnotationSet)bindings.get("label"); 
-
-
-	gate.FeatureMap features = Factory.newFeatureMap();
-	features.put("rule", "enumeratedEntries");
-	features.put("kind", "enumeratedEntries");	
-
-	outputAS.add(enumeratedEntries.firstNode(), enumeratedEntries.lastNode(), "enumeratedEntry", features);
-}
 
 

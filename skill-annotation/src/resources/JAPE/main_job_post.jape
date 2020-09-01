@@ -1,6 +1,6 @@
 MultiPhase:	SkillAnnotationGrammars
 Phases:
-pre_processing
+job_post_pre_processing
 extract_qualification
 extract_job_post_experiences
 skill_type_update

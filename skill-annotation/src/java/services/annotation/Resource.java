@@ -1,12 +1,15 @@
 package services.annotation;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
+import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
 import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import org.apache.commons.io.IOUtils;
+
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
@@ -21,11 +24,14 @@ import javax.ws.rs.core.Response;
 
 import org.glassfish.jersey.media.multipart.FormDataContentDisposition;
 import org.glassfish.jersey.media.multipart.FormDataParam;
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 
 /**
  * Root resource (exposed at "resource" path)
  */
-@Path("dobie")
+@Path("")
 public class Resource {
 
     /**
@@ -57,32 +63,37 @@ public class Resource {
 	@Consumes(MediaType.MULTIPART_FORM_DATA)
 //    @Produces(MediaType.APPLICATION_XML)
 	@Produces(MediaType.TEXT_PLAIN)
-	public Response uploadFileJSON(
+	public Response uploadFile(
 		@PathParam("type") String type,
 		@FormDataParam("file") InputStream uploadedInputStream,
 		@FormDataParam("file") FormDataContentDisposition fileDetail) throws Exception {
 
-    	File file = new File("Files");
-    	
-    	if(!file.exists()){
-    		if(file.mkdir()){
-    			System.out.println(file.toString() + " has been created!");
-    		}else{
-    			System.out.println("Failed to create directory \"Files/\"");
-    		}
-    	}
-    		
-    	String filename = fileDetail.getFileName();
-		String uploadedFileLocation = file.toString() + "/" + validateFilename(filename);		
-		
-		writeToFile(uploadedInputStream, uploadedFileLocation);
-		
 
-    	URL fileUrl = new File(uploadedFileLocation).toURI().toURL();
-    	System.out.println("starting to annotate the file");
-    	try{
-			AnnotationSummary annotationSummary = new AnnotationSummary();
-			List<String> TTLs = annotationSummary.generateAnnotation(fileUrl, type);
+//    	String filename = fileDetail.getFileName();
+//		writeToFile(uploadedInputStream, uploadedFileLocation);
+		AnnotationSummary annotationSummary = new AnnotationSummary();
+		List<String> TTLs = new ArrayList<String>();
+		try {
+			if (type.equals(Consts.JOB_WATCH_TYPE)) {
+				String JSON_DATA = IOUtils.toString(uploadedInputStream);
+				final JSONObject obj = new JSONObject(JSON_DATA);
+				if (obj.getJSONArray("jobPost") != null){
+					JSONArray jobWatch = obj.getJSONArray("jobPost");
+					if (jobWatch.length() > 0){
+						JSONObject job = jobWatch.getJSONObject(0);
+						job.getString("location");
+
+						String jobSnippet = job.getString("description");
+						InputStream jobSnippetStream = new ByteArrayInputStream(jobSnippet.getBytes(StandardCharsets.UTF_8));
+						URL fileUrl = stream2file(jobSnippetStream).toURI().toURL();
+						TTLs = annotationSummary.generateJobWatchAnnotation(fileUrl, Consts.JOB_POST_TYPE, job.getString("title"), job.getString("location"), job.getString("company"));
+					}
+				}
+			} else {
+				URL fileUrl = stream2file(uploadedInputStream).toURI().toURL();
+				TTLs = annotationSummary.generateAnnotation(fileUrl, type);
+			}
+			System.out.println("starting to annotate the file");
 			System.out.println("Annotation finished!");
 			return Response.ok().entity(new GenericEntity<String>(TTLs.get(0)){})
 					.header("Access-Control-Allow-Origin", "*")
@@ -98,57 +109,38 @@ public class Resource {
 
 
 
-    
-/*    @POST
-	@Path("/urlUploadJSON")  
-    @Consumes(MediaType.TEXT_PLAIN)
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response uploadUrlJSON(
-    		String eula
-    		) throws Exception {
+    @POST
+	@Path("/jsonUpload/{type}")
+	@Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.TEXT_PLAIN)
+	public Response uploadFileJSON(
+			@PathParam("type") String type,
+			@FormDataParam("file") InputStream uploadedInputStream,
+			@FormDataParam("file") FormDataContentDisposition fileDetail) throws Exception {
 
-
-    	Document doc = Jsoup.connect(eula).get();
-		
-    	String text = doc.body().text();
-    	String title = doc.title();
-    	System.out.print("Title: "+title);
-
-    	File file = new File("Files");
-    	
-    	if(!file.exists()){
-    		if(file.mkdir()){
-    			System.out.println(file.toString() + " has been created!");
-    		}else{
-    			System.out.println("Failed to create directory \"Files/\"");
-    		}
-    	}
-    	
-    	String filename = title + ".txt";    	
-		String uploadedFileLocation = file.toString() + "/" + validateFilename(filename);
-
-		InputStream inputStream = IOUtils.toInputStream(text, "windows-1252");
-		writeToFile(inputStream, uploadedFileLocation);
-		
-    	ThreadDao tDao = new ThreadDao();
-    	URL fileUrl = new File(uploadedFileLocation).toURI().toURL();
-    	
-    	Summary summary = tDao.getSummaryForDoc(fileUrl);
-		summary.setSubject(title);		
-		
-		return Response.ok().entity(new GenericEntity<Summary>(summary){})
+//    public Response uploadJSON(	@PathParam("type") String type,  Data data) throws Exception {
+		return Response.ok().entity(new GenericEntity<String>("DONE"){})
 				.header("Access-Control-Allow-Origin", "*")
 				.header("Access-Control-Allow-Methods", "*")
 				.build();
-	}*/
-    
+	}
+
+	private File stream2file (InputStream in) throws IOException {
+		String PREFIX = "stream2file";
+		String SUFFIX = ".tmp";
+		final File tempFile = File.createTempFile(PREFIX, SUFFIX);
+		tempFile.deleteOnExit();
+		try (FileOutputStream out = new FileOutputStream(tempFile)) {
+			IOUtils.copy(in, out);
+		}
+		return tempFile;
+	}
 	// save uploaded file to new location
 	private void writeToFile(InputStream uploadedInputStream,
 		String uploadedFileLocation) {
 
 		try {
-			OutputStream out = new FileOutputStream(new File(
-					uploadedFileLocation));
+			OutputStream out;
 			int read = 0;
 			byte[] bytes = new byte[1024];
 
@@ -193,5 +185,22 @@ public class Resource {
 
 		}
     }
+
+}
+
+class Data {
+	private double id;
+	private String text;
+
+	@JsonCreator
+	public Data(@JsonProperty("id") double latitude,
+				@JsonProperty("text") String time) {
+		this.id = latitude;
+		this.text = text;
+	}
+
+	public String getText() {
+		return text;
+	}
 
 }

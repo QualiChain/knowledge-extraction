@@ -1,5 +1,5 @@
 Phase:	extractQualification
-Input: Token SpaceToken Enumerator CertificateDegree Lookup
+Input: Token SpaceToken Enumerator CertificateDegree saroSkill
 Options: control = appelt
 
 
@@ -14,20 +14,18 @@ Rule:	qualification1
 	({Enumerator}{SpaceToken})?
 	({CertificateDegree}): degree
 	({SpaceToken}{Token.root == "in"}{SpaceToken})
-	({Lookup.type == "instance", Lookup.classURI == "http://w3id.org/saro/Topic"}): label
+	({saroSkill.classURI == "http://w3id.org/saro/Topic" ,  saroSkill notWithin Enumerator}): label
   
 -->
 
 {
 	gate.AnnotationSet skillTopicAnn = (gate.AnnotationSet)bindings.get("label"); 
-	gate.Annotation uriann = skillTopicAnn.iterator().next();
+	gate.Annotation ann = skillTopicAnn.iterator().next();
     gate.AnnotationSet degree = (gate.AnnotationSet)bindings.get("degree"); 
 	gate.FeatureMap features = Factory.newFeatureMap();
 	features.put("rule", "qualification1");
 	features.put("kind", "qualificationInSkillTopic");	
-	String uri = (String)uriann.getFeatures().get("URI");
-	int hashtagpos = uri.lastIndexOf("/");
-	features.put("string", uri.substring(hashtagpos+1,uri.length()));
+	features.put("string", ann.getFeatures().get("string"));
 	gate.Annotation certificateDegree = (gate.Annotation)degree.iterator().next();
 	features.put("certificateDegree", certificateDegree);	
 
@@ -44,20 +42,19 @@ Rule:	qualification2
 	({SpaceToken.kind == control}{Token.root == "degree"}({Token.kind == punctuation})?({SpaceToken})?)
 	({CertificateDegree}): degree
 	({SpaceToken}{Token.root == "in"}{SpaceToken})
-	({Lookup.type == "instance", Lookup.classURI == "http://w3id.org/saro/Topic"}): label
+	({saroSkill.classURI == "http://w3id.org/saro/Topic" , saroSkill notWithin Enumerator}): label
   
 -->
 
 {
 	gate.AnnotationSet skillTopicAnn = (gate.AnnotationSet)bindings.get("label"); 
-	gate.Annotation uriann = skillTopicAnn.iterator().next();
+	gate.Annotation ann = skillTopicAnn.iterator().next();
     gate.AnnotationSet degree = (gate.AnnotationSet)bindings.get("degree"); 
 	gate.FeatureMap features = Factory.newFeatureMap();
 	features.put("rule", "qualification1");
 	features.put("kind", "qualificationInSkillTopic");	
-	String uri = (String)uriann.getFeatures().get("URI");
-	int hashtagpos = uri.lastIndexOf("/");
-	features.put("string", uri.substring(hashtagpos+1,uri.length()));
+
+	features.put("string", ann.getFeatures().get("string"));
 	gate.Annotation certificateDegree = (gate.Annotation)degree.iterator().next();
 	features.put("certificateDegree", certificateDegree);	
 
