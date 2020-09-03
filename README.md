@@ -4,7 +4,7 @@ The Repository consists of the three sub components (services) of the Knowledge 
 
 1. Silk Framework - Configured for DOBIE
 
-2. skill-annotation - Contains the DOBIE pipeline configured for the Skills domain (SARO Ontology - see note below)
+2. dob-ie - Contains the DOBIE pipeline configured for the Skills domain (SARO Ontology - see note below)
 
 3. JobWatch - Fetches and process data from job posting portals 
 
@@ -77,7 +77,7 @@ Should you face the error message, just do what it tells you :  -- add "libraryD
 
 
 
-#### STEP 3: Skill Annotation
+#### STEP 3: bomain ontologie based information extraction (dob-ie)
 ----------------------------------
 You need the GATE embedded installed
 
@@ -87,12 +87,12 @@ export TERM=xterm-color
 
 sbt -Dhttp.port=9006 run
 
-DOCKERISED VERSION: there is a dockerfile in the Skill annotations folder, use this file to create docker image and execute, at the beggining of docker file, there are commands for creating
+DOCKERISED VERSION: there is a dockerfile in the dob-ie folder, use this file to create docker image and execute, at the beggining of docker file, there are commands for creating
 the image as well for running it.
 
-There is also a read me in the folder containing instructions specific for Skill Annotation.
+There is also a read me in the folder containing instructions specific for dob-ie.
 
-Examples: For an example on how to call the Skill annotation: Take a look into the "Skill annotations example" under the examples folder
+Examples: For an example on how to call the dob-ie: Take a look into the "dob-ie example" under the examples folder
 
 
 #### STEP 4: JobWatch
