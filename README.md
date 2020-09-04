@@ -1,16 +1,18 @@
 # knowledge-extraction
 
-The Repository consists of the three sub components (services) of the Knowledge Extraction component in the QualiChain project https://qualichain-project.eu/
+The Repository consists of the four sub components (services) of the Knowledge Extraction component in the QualiChain project https://qualichain-project.eu/
 
-1. Silk Framework - Configured for DOBIE
+1. Silk Framework - Contains the latest version of Silk Configured for dobie
 
-2. dob-ie - Contains the DOBIE pipeline configured for the Skills domain (SARO Ontology - see note below)
+2. dobie - Contains the dobie pipeline configured for the Skills domain (SARO Ontology - see note below)
 
 3. JobWatch - Fetches and process data from job posting portals 
 
-**Note**: This DOBIE distribution is customised for the Job Market Monitoring use-case, as one of the QualiChain areas for which knowledge extraction is required (in addition to job posts, DOBIE will also process course descriptions and anonimised personal CVs). It therefore includes the domain ontology - QualiChain Ontology https://vocol.iais.fraunhofer.de/QualiChain/visualization)  as a domain ontology, and the data acquisition service is also customised (JobWatch) to extract the relevant data (Job postings from online portals).
+4. SEAS-Extractor - SEmi Automatic Skills (SEAS) Extraction tool
 
-The DOBIE pipeline runs as shown in the following figure:
+**Note**: This dobie distribution is customised for the Job Market Monitoring use-case, as one of the QualiChain areas for which knowledge extraction is required (in addition to job posts, dobie will also process course descriptions and anonimised personal CVs). It therefore includes the domain ontology - QualiChain Ontology https://vocol.iais.fraunhofer.de/QualiChain/visualization)  as a domain ontology, and the data acquisition service is also customised (JobWatch) to extract the relevant data (Job postings from online portals).
+
+The dobie pipeline runs as shown in the following figure:
 
 ![DOBIE](images/dobie-generic-pipeline.png?raw=true "Domain Ontology Based Information Extraction Pipeline")
 
@@ -77,7 +79,7 @@ Should you face the error message, just do what it tells you :  -- add "libraryD
 
 
 
-#### STEP 3: bomain ontologie based information extraction (dob-ie)
+#### STEP 3: domain ontologie based information extraction (dobie)
 ----------------------------------
 You need the GATE embedded installed
 
@@ -87,12 +89,12 @@ export TERM=xterm-color
 
 sbt -Dhttp.port=9006 run
 
-DOCKERISED VERSION: there is a dockerfile in the dob-ie folder, use this file to create docker image and execute, at the beggining of docker file, there are commands for creating
+DOCKERISED VERSION: there is a dockerfile in the dobie folder, use this file to create docker image and execute, at the beggining of docker file, there are commands for creating
 the image as well for running it.
 
-There is also a read me in the folder containing instructions specific for dob-ie.
+There is also a read me in the folder containing instructions specific for dobie.
 
-Examples: For an example on how to call the dob-ie: Take a look into the "dob-ie example" under the examples folder
+Examples: For an example on how to call the dobie: Take a look into the "dobie example" under the examples folder
 
 
 #### STEP 4: JobWatch
