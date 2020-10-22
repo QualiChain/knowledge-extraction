@@ -11,13 +11,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import org.apache.commons.io.IOUtils;
 
 
-import javax.ws.rs.Consumes;
-import javax.ws.rs.GET;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
-import javax.ws.rs.QueryParam;
+import javax.ws.rs.*;
 import javax.ws.rs.core.GenericEntity;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -77,7 +71,7 @@ public class Resource {
 			if (type.equals(Consts.JOB_WATCH_TYPE)) {
 				String JSON_DATA = IOUtils.toString(uploadedInputStream);
 				final JSONObject obj = new JSONObject(JSON_DATA);
-				if (obj.getJSONArray("jobPost") != null){
+				if (obj.getJSONArray("jobPost") != null) {
 					JSONArray jobWatch = obj.getJSONArray("jobPost");
 					if (jobWatch.length() > 0){
 						JSONObject job = jobWatch.getJSONObject(0);
@@ -107,7 +101,39 @@ public class Resource {
 
 	}
 
+	@POST
+	@Path("/jsonData/{type}")
+	@Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.TEXT_PLAIN)
+	public Response jobPostNTUA(@PathParam("type") String type, String metadata) {
+		AnnotationSummary annotationSummary = new AnnotationSummary();
+		List<String> TTLs = new ArrayList<String>();
+		try {
+			if (type.equals(Consts.NTUA_JOB_POST)) {
+			final JSONObject obj = new JSONObject(metadata);
+				if (obj.getJSONArray("tasks") != null) {
+					JSONArray jobWatch = obj.getJSONArray("tasks");
+					if (jobWatch.length() > 0){
+						JSONObject job = jobWatch.getJSONObject(0);
+						String jobSnippet = job.getString("jobDescription");
+						InputStream jobSnippetStream = new ByteArrayInputStream(jobSnippet.getBytes(StandardCharsets.UTF_8));
+						URL fileUrl = stream2file(jobSnippetStream).toURI().toURL();
+						TTLs = annotationSummary.generateAnnotation(fileUrl, Consts.JOB_POST_TYPE);
+					}
+				}
+			}
+			System.out.println("starting to annotate the job post description");
+			System.out.println("Annotation finished!");
+			return Response.ok().entity(new GenericEntity<String>(TTLs.get(0)){})
+					.header("Access-Control-Allow-Origin", "*")
+					.header("Access-Control-Allow-Methods", "*")
+					.build();
+		} catch (Exception e) {
+			e.printStackTrace();
+			return Response.ok().entity("Error running the pipeline").build();
 
+		}
+    }
 
     @POST
 	@Path("/jsonUpload/{type}")
@@ -187,7 +213,16 @@ public class Resource {
     }
 
 }
+class Agent {
+	private Name name;
+	// getters and setters
 
+	public static class Name {
+		private String first;
+		private String last;
+		// getters and setters
+	}
+}
 class Data {
 	private double id;
 	private String text;

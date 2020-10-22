@@ -6,6 +6,7 @@ public class Consts {
     public static final String COURSE_TYPE = "courseDescription";
     public static final String JOB_POST_TYPE = "jobPost";
     public static final String JOB_WATCH_TYPE = "jobWatch";
+    public static final String NTUA_JOB_POST = "jobPostNTUA";
     public static final int NOT_FOUND = -1;
 
     /** System property - <tt>line.separator</tt>*/
