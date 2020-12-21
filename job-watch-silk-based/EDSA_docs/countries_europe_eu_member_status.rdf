@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rdf:RDF xmlns:cc="http://creativecommons.org/ns#"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:gn="http://www.geonames.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
+         xmlns:edsa="http://www.edsa-project.eu/edsa#">
+<gn:Feature rdf:about="http://sws.geonames.org/3017382/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/3017382/about.rdf"/>
+<gn:name>France</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EU"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/390903/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/390903/about.rdf"/>
+<gn:name>Greece</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EU"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/2661886/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2661886/about.rdf"/>
+<gn:name>Sweden</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EU"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/3144096/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/3144096/about.rdf"/>
+<gn:name>Norway</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EEA"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/3175395/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/3175395/about.rdf"/>
+<gn:name>Italy</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EU"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/3202326/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/3202326/about.rdf"/>
+<gn:name>Croatia</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EU"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/2264397/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2264397/about.rdf"/>
+<gn:name>Portugal</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EU"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/2017370/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2017370/about.rdf"/>
+<gn:name>Russia</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/2921044/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2921044/about.rdf"/>
+<gn:name>Germany</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EU"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/2510769/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2510769/about.rdf"/>
+<gn:name>Spain</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EU"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/2635167/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2635167/about.rdf"/>
+<gn:name>United Kingdom</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EU"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/660013/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/660013/about.rdf"/>
+<gn:name>Finland</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EU"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/798544/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/798544/about.rdf"/>
+<gn:name>Poland</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EU"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/798549/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/798549/about.rdf"/>
+<gn:name>Romania</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EU"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/630336/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/630336/about.rdf"/>
+<gn:name>Belarus</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/690791/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/690791/about.rdf"/>
+<gn:name>Ukraine</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/458258/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/458258/about.rdf"/>
+<gn:name>Latvia</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EU"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/453733/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/453733/about.rdf"/>
+<gn:name>Estonia</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EU"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/146669/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/146669/about.rdf"/>
+<gn:name>Cyprus</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EU"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/3277605/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/3277605/about.rdf"/>
+<gn:name>Bosnia and Herzegovina</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="POTENTIAL_CANDIDATE"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/3057568/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/3057568/about.rdf"/>
+<gn:name>Slovakia</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EU"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/3077311/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/3077311/about.rdf"/>
+<gn:name>Czech Republic</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EU"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/3190538/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/3190538/about.rdf"/>
+<gn:name>Slovenia</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EU"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/2782113/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2782113/about.rdf"/>
+<gn:name>Austria</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EU"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/2802361/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2802361/about.rdf"/>
+<gn:name>Belgium</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EU"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/2623032/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2623032/about.rdf"/>
+<gn:name>Denmark</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EU"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/2750405/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2750405/about.rdf"/>
+<gn:name>Netherlands</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EU"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/2629691/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2629691/about.rdf"/>
+<gn:name>Iceland</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EEA"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/2658434/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2658434/about.rdf"/>
+<gn:name>Switzerland</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EFTA"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/2963597/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2963597/about.rdf"/>
+<gn:name>Ireland</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EU"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/718075/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/718075/about.rdf"/>
+<gn:name>Macedonia</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="CANDIDATE"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/719819/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/719819/about.rdf"/>
+<gn:name>Hungary</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EU"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/6290252/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/6290252/about.rdf"/>
+<gn:name>Serbia</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="CANDIDATE"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/597427/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/597427/about.rdf"/>
+<gn:name>Lithuania</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EU"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/732800/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/732800/about.rdf"/>
+<gn:name>Bulgaria</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EU"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/617790/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/617790/about.rdf"/>
+<gn:name>Moldova</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/831053/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/831053/about.rdf"/>
+<gn:name>Kosovo</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="POTENTIAL_CANDIDATE"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/783754/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/783754/about.rdf"/>
+<gn:name>Albania</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="CANDIDATE"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/2993457/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2993457/about.rdf"/>
+<gn:name>Monaco</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EUCX"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/3168068/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/3168068/about.rdf"/>
+<gn:name>San Marino</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EUCX"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/3041565/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/3041565/about.rdf"/>
+<gn:name>Andorra</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EUCX"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/3042058/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/3042058/about.rdf"/>
+<gn:name>Liechtenstein</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EEA"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/3194884/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/3194884/about.rdf"/>
+<gn:name>Montenegro</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="CANDIDATE"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/3164670/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/3164670/about.rdf"/>
+<gn:name>Vatican City</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EUCX"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/2562770/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2562770/about.rdf"/>
+<gn:name>Malta</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EU"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/2960313/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2960313/about.rdf"/>
+<gn:name>Luxembourg</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EU"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/2411586/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2411586/about.rdf"/>
+<gn:name>Gibraltar</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EU"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/2622320/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/2622320/about.rdf"/>
+<gn:name>Faroe Islands</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EUCX"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/661882/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/661882/about.rdf"/>
+<gn:name>Aland</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EUCX"/>
+</gn:Feature>
+<gn:Feature rdf:about="http://sws.geonames.org/607072/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/607072/about.rdf"/>
+<gn:name>Svalbard and Jan Mayen</gn:name>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/6255148/" edsa:memberState="EUCX"/>
+</gn:Feature>
+</rdf:RDF>
