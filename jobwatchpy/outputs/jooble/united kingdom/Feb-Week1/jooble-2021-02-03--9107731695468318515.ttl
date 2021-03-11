@@ -1,0 +1,84 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:networking  a               saro:Topic ;
+        rdfs:label               "Networking" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file16543875093094427617_tmp_01365
+        a               saro:JobPosting ;
+        saro:describes  :stream2file16543875093094427617_tmp_01365_JobRole .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  109 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  9 .
+
+saro:penetrationTesting
+        a                        saro:Topic ;
+        rdfs:label               "penetration testing" ;
+        saro:frequencyOfMention  6 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:dataManagement  a           saro:Topic ;
+        rdfs:label               "data management" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  6 .
+
+saro:jira  a                     saro:Tool ;
+        rdfs:label               "Jira" ;
+        saro:frequencyOfMention  3 .
+
+saro:riskManagement  a           saro:Topic ;
+        rdfs:label               "risk management" ;
+        saro:frequencyOfMention  6 .
+
+saro:disasterRecovery
+        a                        saro:Topic ;
+        rdfs:label               "disaster recovery" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file16543875093094427617_tmp_01365_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Information Security Specialist"@en ;
+        so:hiringOrganisation  :cyberaptRecruitment ;
+        saro:requiresSkill     saro:disasterRecovery , saro:confluence , saro:networking , saro:analyst , saro:reporting , saro:jira , saro:analysis , saro:dataManagement , saro:go , saro:security , saro:development , saro:riskManagement , saro:penetrationTesting , saro:design .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  6 .
+
+saro:analyst  a                  saro:Topic ;
+        rdfs:label               "analyst" ;
+        saro:frequencyOfMention  6 .
+
+saro:confluence  a               saro:Tool ;
+        rdfs:label               "confluence" ;
+        saro:frequencyOfMention  3 .
+
+:cyberaptRecruitment  a  saro:Recruiter , so:Organisation .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  3 .
+

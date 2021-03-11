@@ -1,0 +1,192 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:assurance  a                saro:Topic ;
+        rdfs:label               "assurance" ;
+        saro:frequencyOfMention  16 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  3 .
+
+saro:jmeter  a                   saro:Tool ;
+        rdfs:label               "Jmeter" ;
+        saro:frequencyOfMention  3 .
+
+saro:automation  a               saro:Topic ;
+        rdfs:label               "automation" ;
+        saro:frequencyOfMention  29 .
+
+saro:selenium  a                 saro:Tool ;
+        rdfs:label               "Selenium" ;
+        saro:frequencyOfMention  9 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  3 .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  9 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file11916222224905166790_tmp_0098D_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Senior Quality Assurance Engineer"@en ;
+        so:hiringOrganisation  :manpower ;
+        saro:requiresSkill     saro:jmeter , saro:automation , saro:tools , saro:c , saro:assurance , saro:development , saro:agile , saro:softwareDevelopment , saro:dotNet , saro:design , saro:dataDriven , saro:analysis , saro:go , saro:reporting , saro:selenium , saro:performanceTesting , saro:tester .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  6 .
+
+saro:performanceTesting
+        a                        saro:Topic ;
+        rdfs:label               "performance testing" ;
+        saro:frequencyOfMention  3 .
+
+saro:dotNet  a                   saro:Product ;
+        rdfs:label               ".net" ;
+        saro:frequencyOfMention  6 .
+
+:manpower  a    saro:Recruiter , so:Organisation .
+
+:stream2file11916222224905166790_tmp_0098D
+        a               saro:JobPosting ;
+        saro:describes  :stream2file11916222224905166790_tmp_0098D_JobRole .
+
+saro:c  a                        saro:Tool ;
+        rdfs:label               "c" ;
+        saro:frequencyOfMention  3 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "agile" ;
+        saro:frequencyOfMention  3 .
+
+saro:tester  a                   saro:Topic ;
+        rdfs:label               "Tester" ;
+        saro:frequencyOfMention  6 .
+
+saro:softwareDevelopment
+        a                        saro:Topic ;
+        rdfs:label               "software development" ;
+        saro:frequencyOfMention  3 .
+
+saro:dataDriven  a               saro:Topic ;
+        rdfs:label               "data driven" ;
+        saro:frequencyOfMention  3 .
+
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:assurance  a                saro:Topic ;
+        rdfs:label               "assurance" ;
+        saro:frequencyOfMention  16 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  3 .
+
+saro:jmeter  a                   saro:Tool ;
+        rdfs:label               "Jmeter" ;
+        saro:frequencyOfMention  3 .
+
+saro:automation  a               saro:Topic ;
+        rdfs:label               "automation" ;
+        saro:frequencyOfMention  29 .
+
+saro:selenium  a                 saro:Tool ;
+        rdfs:label               "Selenium" ;
+        saro:frequencyOfMention  9 .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  9 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  6 .
+
+saro:performanceTesting
+        a                        saro:Topic ;
+        rdfs:label               "performance testing" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file16052043515896839688_tmp_00BFD
+        a               saro:JobPosting ;
+        saro:describes  :stream2file16052043515896839688_tmp_00BFD_JobRole .
+
+:stream2file16052043515896839688_tmp_00BFD_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Senior Quality Assurance Engineer"@en ;
+        so:hiringOrganisation  :manpower ;
+        saro:requiresSkill     saro:jmeter , saro:go , saro:assurance , saro:agile , saro:tester , saro:c , saro:softwareDevelopment , saro:selenium , saro:tools , saro:dotNet , saro:dataDriven , saro:reporting , saro:analysis , saro:automation , saro:performanceTesting , saro:development , saro:design .
+
+saro:dotNet  a                   saro:Product ;
+        rdfs:label               ".net" ;
+        saro:frequencyOfMention  6 .
+
+:manpower  a    saro:Recruiter , so:Organisation .
+
+saro:c  a                        saro:Tool ;
+        rdfs:label               "c" ;
+        saro:frequencyOfMention  3 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "agile" ;
+        saro:frequencyOfMention  3 .
+
+saro:tester  a                   saro:Topic ;
+        rdfs:label               "Tester" ;
+        saro:frequencyOfMention  6 .
+
+saro:softwareDevelopment
+        a                        saro:Topic ;
+        rdfs:label               "software development" ;
+        saro:frequencyOfMention  3 .
+
+saro:dataDriven  a               saro:Topic ;
+        rdfs:label               "data driven" ;
+        saro:frequencyOfMention  3 .
+

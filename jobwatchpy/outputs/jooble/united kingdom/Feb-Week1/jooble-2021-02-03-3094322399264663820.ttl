@@ -1,0 +1,131 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+:understandingRecruitment
+        a       saro:Recruiter , so:Organisation .
+
+saro:hive  a                     saro:Tool ;
+        rdfs:label               "hive" ;
+        saro:frequencyOfMention  6 .
+
+saro:spark  a                    saro:Product ;
+        rdfs:label               "spark" ;
+        saro:frequencyOfMention  3 .
+
+saro:cloudera  a                 saro:Product ;
+        rdfs:label               "Cloudera" ;
+        saro:frequencyOfMention  3 .
+
+saro:analytics  a                saro:Topic ;
+        rdfs:label               "analytics" ;
+        saro:frequencyOfMention  3 .
+
+saro:hadoop  a                   saro:Product ;
+        rdfs:label               "hadoop" ;
+        saro:frequencyOfMention  9 .
+
+saro:apache  a                   saro:Product ;
+        rdfs:label               "Apache" ;
+        saro:frequencyOfMention  23 .
+
+saro:etl  a                      saro:Tool ;
+        rdfs:label               "etl" ;
+        saro:frequencyOfMention  3 .
+
+saro:azure  a                    saro:Tool ;
+        rdfs:label               "azure" ;
+        saro:frequencyOfMention  3 .
+
+saro:scipy  a                    saro:Tool ;
+        rdfs:label               "scipy" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  9 .
+
+saro:machineLearning  a          saro:Topic ;
+        rdfs:label               "Machine Learning" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  12 .
+
+saro:hbase  a                    saro:Product ;
+        rdfs:label               "hbase" ;
+        saro:frequencyOfMention  3 .
+
+saro:bigData  a                  saro:Topic ;
+        rdfs:label               "big data" ;
+        saro:frequencyOfMention  46 .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  6 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  6 .
+
+saro:linux  a                    saro:Product ;
+        rdfs:label               "Linux" ;
+        saro:frequencyOfMention  3 .
+
+saro:developer  a                saro:Topic ;
+        rdfs:label               "developer" ;
+        saro:frequencyOfMention  12 .
+
+saro:mapreduce  a                saro:Product ;
+        rdfs:label               "mapreduce" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file4448025218706326752_tmp_00F61_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Big Data Developer"@en ;
+        so:hiringOrganisation  :understandingRecruitment ;
+        saro:requiresSkill     saro:machineLearning , saro:scipy , saro:programming , saro:developer , saro:python , saro:mapreduce , saro:design , saro:development , saro:cloudera , saro:hadoop , saro:hive , saro:bigData , saro:apacheSpark , saro:linux , saro:azure , saro:apache , saro:analytics , saro:go , saro:tools , saro:hbase , saro:spark , saro:security , saro:etl , saro:cloud , saro:sql , saro:docker .
+
+saro:programming  a              saro:Topic ;
+        rdfs:label               "programming" ;
+        saro:frequencyOfMention  3 .
+
+saro:docker  a                   saro:Product ;
+        rdfs:label               "Docker" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file4448025218706326752_tmp_00F61
+        a               saro:JobPosting ;
+        saro:describes  :stream2file4448025218706326752_tmp_00F61_JobRole .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "Cloud" ;
+        saro:frequencyOfMention  6 .
+
+saro:apacheSpark  a              saro:Product ;
+        rdfs:label               "Apache Spark" ;
+        saro:frequencyOfMention  3 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "Python" ;
+        saro:frequencyOfMention  21 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  3 .
+

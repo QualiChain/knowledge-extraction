@@ -1,0 +1,130 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+:stream2file2230920673392052431_tmp_00D15_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Lead Data Scientist"@en ;
+        so:datePosted          "2021-02-12"^^xsd:date ;
+        so:hiringOrganisation  :xcede ;
+        so:jobLocation         :United_Kingdom ;
+        saro:requiresSkill     saro:go , saro:dataAnalysis , saro:agile , saro:machineLearning , saro:dataScience , saro:reporting , saro:programming , saro:statistics , saro:rom , saro:versionControl , saro:r , saro:spark , saro:bigData , saro:python , saro:hive , saro:cloudera , saro:hadoop , saro:elasticsearch , saro:nlp , saro:analytics , saro:lucene , saro:numpy , saro:tools , saro:pandas , saro:design .
+
+saro:elasticsearch  a            saro:Product ;
+        rdfs:label               "elasticsearch" ;
+        saro:frequencyOfMention  3 .
+
+:xcede  a       saro:Recruiter , so:Organisation .
+
+saro:statistics  a               saro:Topic ;
+        rdfs:label               "statistics" ;
+        saro:frequencyOfMention  3 .
+
+saro:hive  a                     saro:Tool ;
+        rdfs:label               "hive" ;
+        saro:frequencyOfMention  3 .
+
+saro:nlp  a                      saro:Topic ;
+        rdfs:label               "NLP" ;
+        saro:frequencyOfMention  6 .
+
+saro:spark  a                    saro:Product ;
+        rdfs:label               "spark" ;
+        saro:frequencyOfMention  3 .
+
+saro:cloudera  a                 saro:Product ;
+        rdfs:label               "Cloudera" ;
+        saro:frequencyOfMention  3 .
+
+saro:analytics  a                saro:Topic ;
+        rdfs:label               "analytics" ;
+        saro:frequencyOfMention  12 .
+
+saro:hadoop  a                   saro:Product ;
+        rdfs:label               "hadoop" ;
+        saro:frequencyOfMention  6 .
+
+:United_Kingdom  a  so:Place .
+
+saro:r  a                        saro:Tool ;
+        rdfs:label               "R" ;
+        saro:frequencyOfMention  3 .
+
+saro:numpy  a                    saro:Tool ;
+        rdfs:label               "numpy" ;
+        saro:frequencyOfMention  3 .
+
+saro:pandas  a                   saro:Tool ;
+        rdfs:label               "pandas" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  9 .
+
+saro:machineLearning  a          saro:Topic ;
+        rdfs:label               "machine learning" ;
+        saro:frequencyOfMention  22 .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  3 .
+
+saro:dataScience  a              saro:Topic ;
+        rdfs:label               "data science" ;
+        saro:frequencyOfMention  3 .
+
+saro:bigData  a                  saro:Topic ;
+        rdfs:label               "Big Data" ;
+        saro:frequencyOfMention  6 .
+
+saro:versionControl  a           saro:Topic ;
+        rdfs:label               "version control" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "Design" ;
+        saro:frequencyOfMention  3 .
+
+saro:dataAnalysis  a             saro:Topic ;
+        rdfs:label               "data analysis" ;
+        saro:frequencyOfMention  3 .
+
+saro:programming  a              saro:Topic ;
+        rdfs:label               "programming" ;
+        saro:frequencyOfMention  3 .
+
+saro:rom  a                      saro:Topic ;
+        rdfs:label               "rom" ;
+        saro:frequencyOfMention  3 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "agile" ;
+        saro:frequencyOfMention  6 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "Python" ;
+        saro:frequencyOfMention  12 .
+
+:stream2file2230920673392052431_tmp_00D15
+        a               saro:JobPosting ;
+        saro:describes  :stream2file2230920673392052431_tmp_00D15_JobRole .
+
+saro:lucene  a                   saro:Tool ;
+        rdfs:label               "lucene" ;
+        saro:frequencyOfMention  3 .
+

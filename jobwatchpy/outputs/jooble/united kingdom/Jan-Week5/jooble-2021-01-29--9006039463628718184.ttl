@@ -1,0 +1,60 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:businessIntelligence
+        a                        saro:Topic ;
+        rdfs:label               "Business Intelligence" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file2950788044247191940_tmp_00925_JobRole
+        a                   saro:JobRoleOrType ;
+        rdfs:label          "unknown"@en ;
+        saro:requiresSkill  saro:analysis , saro:iot , saro:development , saro:go , saro:reporting , saro:database , saro:analytics , saro:businessIntelligence , saro:tools .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  6 .
+
+saro:iot  a                      saro:Topic ;
+        rdfs:label               "iot" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  4 .
+
+saro:database  a                 saro:Topic ;
+        rdfs:label               "database" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file2950788044247191940_tmp_00925
+        a               saro:JobPosting ;
+        saro:describes  :stream2file2950788044247191940_tmp_00925_JobRole .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  6 .
+
+saro:analytics  a                saro:Topic ;
+        rdfs:label               "analytics" ;
+        saro:frequencyOfMention  6 .
+

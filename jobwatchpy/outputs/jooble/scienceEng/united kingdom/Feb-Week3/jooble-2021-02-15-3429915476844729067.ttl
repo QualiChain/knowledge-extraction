@@ -1,0 +1,149 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:softwareEngineering
+        a                        saro:Topic ;
+        rdfs:label               "software engineering" ;
+        saro:frequencyOfMention  4 .
+
+saro:backend  a                  saro:Topic ;
+        rdfs:label               "backend" ;
+        saro:frequencyOfMention  3 .
+
+saro:networking  a               saro:Topic ;
+        rdfs:label               "Networking" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file17922408443696014350_tmp_00B7D_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "CTO (Chief Technology Officer)"@en ;
+        so:datePosted          "2021-02-10"^^xsd:date ;
+        so:hiringOrganisation  :fluento ;
+        so:jobLocation         :United_Kingdom ;
+        saro:requiresSkill     saro:tools , saro:backend , saro:agile , saro:storage , saro:go , saro:asp.net , saro:cloud , saro:development , saro:identityManagement , saro:softwareDevelopment , saro:mysql , saro:activeDirectory , saro:monitoring , saro:database , saro:dataScience , saro:react , saro:crm , saro:softwareEngineering , saro:node.js , saro:sql , saro:c , saro:dotNet , saro:dataWarehouse , saro:angular , saro:networking , saro:javascript , saro:azure , saro:webApplications , saro:programming .
+
+saro:react  a                    saro:Tool ;
+        rdfs:label               "react" ;
+        saro:frequencyOfMention  3 .
+
+saro:monitoring  a               saro:Topic ;
+        rdfs:label               "monitoring" ;
+        saro:frequencyOfMention  3 .
+
+:United_Kingdom  a  so:Place .
+
+saro:dataWarehouse  a            saro:Topic ;
+        rdfs:label               "DataWarehouse" ;
+        saro:frequencyOfMention  3 .
+
+saro:azure  a                    saro:Tool ;
+        rdfs:label               "azure" ;
+        saro:frequencyOfMention  15 .
+
+saro:node.js  a                  saro:Tool ;
+        rdfs:label               "node.js" ;
+        saro:frequencyOfMention  3 .
+
+saro:database  a                 saro:Topic ;
+        rdfs:label               "database" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  18 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  4 .
+
+saro:asp.net  a                  saro:Tool ;
+        rdfs:label               "asp.net" ;
+        saro:frequencyOfMention  3 .
+
+saro:dataScience  a              saro:Topic ;
+        rdfs:label               "data science" ;
+        saro:frequencyOfMention  3 .
+
+:fluento  a     saro:Recruiter , so:Organisation .
+
+saro:identityManagement
+        a                        saro:Topic ;
+        rdfs:label               "Identity Management" ;
+        saro:frequencyOfMention  3 .
+
+saro:angular  a                  saro:Product ;
+        rdfs:label               "angular" ;
+        saro:frequencyOfMention  3 .
+
+saro:crm  a                      saro:Topic ;
+        rdfs:label               "CRM" ;
+        saro:frequencyOfMention  3 .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  3 .
+
+saro:javascript  a               saro:Tool ;
+        rdfs:label               "Javascript" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file17922408443696014350_tmp_00B7D
+        a               saro:JobPosting ;
+        saro:describes  :stream2file17922408443696014350_tmp_00B7D_JobRole .
+
+saro:storage  a                  saro:Topic ;
+        rdfs:label               "storage" ;
+        saro:frequencyOfMention  3 .
+
+saro:activeDirectory  a          saro:Tool ;
+        rdfs:label               "Active Directory" ;
+        saro:frequencyOfMention  3 .
+
+saro:programming  a              saro:Topic ;
+        rdfs:label               "programming" ;
+        saro:frequencyOfMention  3 .
+
+saro:dotNet  a                   saro:Product ;
+        rdfs:label               ".net" ;
+        saro:frequencyOfMention  3 .
+
+saro:mysql  a                    saro:Tool ;
+        rdfs:label               "mysql" ;
+        saro:frequencyOfMention  3 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "Cloud" ;
+        saro:frequencyOfMention  3 .
+
+saro:webApplications  a          saro:Topic ;
+        rdfs:label               "web applications" ;
+        saro:frequencyOfMention  3 .
+
+saro:c  a                        saro:Tool ;
+        rdfs:label               "c" ;
+        saro:frequencyOfMention  6 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "agile" ;
+        saro:frequencyOfMention  6 .
+
+saro:softwareDevelopment
+        a                        saro:Topic ;
+        rdfs:label               "software development" ;
+        saro:frequencyOfMention  6 .
+

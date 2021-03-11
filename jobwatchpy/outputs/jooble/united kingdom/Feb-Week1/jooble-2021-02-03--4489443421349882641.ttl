@@ -1,0 +1,54 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:networking  a               saro:Topic ;
+        rdfs:label               "Networking" ;
+        saro:frequencyOfMention  3 .
+
+saro:sdk  a                      saro:Topic ;
+        rdfs:label               "sdk" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file9264820122958129122_tmp_0182D_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Builder"@en ;
+        so:hiringOrganisation  :yubo ;
+        saro:requiresSkill     saro:developer , saro:sdk , saro:networking , saro:unity , saro:fintech , saro:development , saro:go .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:unity  a                    saro:Product ;
+        rdfs:label               "unity" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  3 .
+
+:yubo   a       saro:Recruiter , so:Organisation .
+
+saro:developer  a                saro:Topic ;
+        rdfs:label               "developer" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file9264820122958129122_tmp_0182D
+        a               saro:JobPosting ;
+        saro:describes  :stream2file9264820122958129122_tmp_0182D_JobRole .
+
+saro:fintech  a                  saro:Product ;
+        rdfs:label               "FinTech" ;
+        saro:frequencyOfMention  9 .
+

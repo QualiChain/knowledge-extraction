@@ -1,0 +1,74 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  15 .
+
+saro:dataAnalysis  a             saro:Topic ;
+        rdfs:label               "data analysis" ;
+        saro:frequencyOfMention  3 .
+
+saro:dataStructures  a           saro:Topic ;
+        rdfs:label               "data structures" ;
+        saro:frequencyOfMention  3 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "Analysis" ;
+        saro:frequencyOfMention  6 .
+
+saro:netsuite  a                 saro:Product ;
+        rdfs:label               "NetSuite" ;
+        saro:frequencyOfMention  3 .
+
+saro:javascript  a               saro:Tool ;
+        rdfs:label               "JavaScript" ;
+        saro:frequencyOfMention  12 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  9 .
+
+saro:salesforce  a               saro:Product ;
+        rdfs:label               "salesforce" ;
+        saro:frequencyOfMention  3 .
+
+:hays   a       saro:Recruiter , so:Organisation .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file2617713765875406791_tmp_00F41
+        a               saro:JobPosting ;
+        saro:describes  :stream2file2617713765875406791_tmp_00F41_JobRole .
+
+saro:analyst  a                  saro:Topic ;
+        rdfs:label               "analyst" ;
+        saro:frequencyOfMention  6 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "Cloud" ;
+        saro:frequencyOfMention  9 .
+
+saro:erp  a                      saro:Product ;
+        rdfs:label               "erp" ;
+        saro:frequencyOfMention  15 .
+
+:stream2file2617713765875406791_tmp_00F41_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Senior Application Support Engineer"@en ;
+        so:hiringOrganisation  :hays ;
+        saro:requiresSkill     saro:javascript , saro:dataAnalysis , saro:go , saro:netsuite , saro:salesforce , saro:analysis , saro:dataStructures , saro:development , saro:analyst , saro:sql , saro:erp , saro:cloud .
+

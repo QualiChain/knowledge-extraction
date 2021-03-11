@@ -1,0 +1,162 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:nginx  a                    saro:Tool ;
+        rdfs:label               "nginx" ;
+        saro:frequencyOfMention  3 .
+
+saro:automation  a               saro:Topic ;
+        rdfs:label               "Automation" ;
+        saro:frequencyOfMention  6 .
+
+saro:django  a                   saro:Product ;
+        rdfs:label               "django" ;
+        saro:frequencyOfMention  3 .
+
+saro:monitoring  a               saro:Topic ;
+        rdfs:label               "monitoring" ;
+        saro:frequencyOfMention  3 .
+
+saro:azure  a                    saro:Tool ;
+        rdfs:label               "azure" ;
+        saro:frequencyOfMention  3 .
+
+:United_Kingdom  a  so:Place .
+
+saro:databaseAdministration
+        a                        saro:Topic ;
+        rdfs:label               "database administration" ;
+        saro:frequencyOfMention  3 .
+
+saro:artificialIntelligence
+        a                        saro:Topic ;
+        rdfs:label               "artificial intelligence" ;
+        saro:frequencyOfMention  3 .
+
+saro:r  a                        saro:Tool ;
+        rdfs:label               "R" ;
+        saro:frequencyOfMention  6 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file10312600338449349803_tmp_00735_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "AWS Support Engineer"@en ;
+        so:datePosted          "2021-02-11"^^xsd:date ;
+        so:hiringOrganisation  :unboxed ;
+        so:jobLocation         :United_Kingdom ;
+        saro:requiresSkill     saro:systemAdministration , saro:linux , saro:rubyOnRails , saro:chef , saro:development , saro:softwareDevelopment , saro:r , saro:administrator , saro:nginx , saro:flask , saro:reporting , saro:agile , saro:monitoring , saro:networks , saro:automation , saro:sql , saro:puppet , saro:design , saro:databaseAdministration , saro:webApplications , saro:developer , saro:cloud , saro:artificialIntelligence , saro:ansible , saro:security , saro:database , saro:django , saro:go , saro:machineLearning , saro:azure , saro:tools , saro:fullStack .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  9 .
+
+saro:database  a                 saro:Topic ;
+        rdfs:label               "database" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  21 .
+
+saro:machineLearning  a          saro:Topic ;
+        rdfs:label               "Machine Learning" ;
+        saro:frequencyOfMention  3 .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  3 .
+
+saro:chef  a                     saro:Product ;
+        rdfs:label               "chef" ;
+        saro:frequencyOfMention  3 .
+
+saro:administrator  a            saro:Topic ;
+        rdfs:label               "administrator" ;
+        saro:frequencyOfMention  3 .
+
+saro:rubyOnRails  a              saro:Tool ;
+        rdfs:label               "Ruby on Rails" ;
+        saro:frequencyOfMention  3 .
+
+saro:puppet  a                   saro:Tool ;
+        rdfs:label               "Puppet" ;
+        saro:frequencyOfMention  3 .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  9 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  6 .
+
+saro:developer  a                saro:Topic ;
+        rdfs:label               "developer" ;
+        saro:frequencyOfMention  11 .
+
+saro:linux  a                    saro:Product ;
+        rdfs:label               "Linux" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file10312600338449349803_tmp_00735
+        a               saro:JobPosting ;
+        saro:describes  :stream2file10312600338449349803_tmp_00735_JobRole .
+
+saro:networks  a                 saro:Topic ;
+        rdfs:label               "networks" ;
+        saro:frequencyOfMention  3 .
+
+saro:ansible  a                  saro:Tool ;
+        rdfs:label               "ansible" ;
+        saro:frequencyOfMention  3 .
+
+saro:fullStack  a                saro:Topic ;
+        rdfs:label               "full stack" ;
+        saro:frequencyOfMention  3 .
+
+saro:flask  a                    saro:Tool ;
+        rdfs:label               "Flask" ;
+        saro:frequencyOfMention  3 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "cloud" ;
+        saro:frequencyOfMention  3 .
+
+saro:webApplications  a          saro:Topic ;
+        rdfs:label               "web applications" ;
+        saro:frequencyOfMention  6 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "agile" ;
+        saro:frequencyOfMention  3 .
+
+saro:systemAdministration
+        a                        saro:Topic ;
+        rdfs:label               "system administration" ;
+        saro:frequencyOfMention  3 .
+
+:unboxed  a     saro:Recruiter , so:Organisation .
+
+saro:softwareDevelopment
+        a                        saro:Topic ;
+        rdfs:label               "software development" ;
+        saro:frequencyOfMention  3 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  10 .
+

@@ -1,0 +1,50 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  64 .
+
+:stream2file4993732085195537099_tmp_0169D
+        a               saro:JobPosting ;
+        saro:describes  :stream2file4993732085195537099_tmp_0169D_JobRole .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  9 .
+
+saro:riskManagement  a           saro:Topic ;
+        rdfs:label               "risk management" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file4993732085195537099_tmp_0169D_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Security Engineer"@en ;
+        so:hiringOrganisation  :ssrPersonnel ;
+        saro:requiresSkill     saro:react , saro:go , saro:less , saro:riskManagement , saro:cloud , saro:security .
+
+:ssrPersonnel  a  saro:Recruiter , so:Organisation .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "Cloud" ;
+        saro:frequencyOfMention  3 .
+
+saro:less  a                     saro:Topic ;
+        rdfs:label               "less" ;
+        saro:frequencyOfMention  3 .
+
+saro:react  a                    saro:Tool ;
+        rdfs:label               "react" ;
+        saro:frequencyOfMention  3 .
+

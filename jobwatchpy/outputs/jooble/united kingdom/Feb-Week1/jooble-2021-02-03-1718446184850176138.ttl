@@ -1,0 +1,56 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+:stream2file6351866302311478285_tmp_01829_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Publisher"@en ;
+        so:hiringOrganisation  :urbanDigitalRecruitmentLtd ;
+        saro:requiresSkill     saro:developer , saro:softwareEngineering , saro:cloud , saro:sdk , saro:go , saro:unity , saro:development .
+
+saro:sdk  a                      saro:Topic ;
+        rdfs:label               "sdk" ;
+        saro:frequencyOfMention  6 .
+
+:urbanDigitalRecruitmentLtd
+        a       saro:Recruiter , so:Organisation .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:unity  a                    saro:Product ;
+        rdfs:label               "unity" ;
+        saro:frequencyOfMention  3 .
+
+saro:developer  a                saro:Topic ;
+        rdfs:label               "developer" ;
+        saro:frequencyOfMention  6 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file6351866302311478285_tmp_01829
+        a               saro:JobPosting ;
+        saro:describes  :stream2file6351866302311478285_tmp_01829_JobRole .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "cloud" ;
+        saro:frequencyOfMention  3 .
+
+saro:softwareEngineering
+        a                        saro:Topic ;
+        rdfs:label               "software engineering" ;
+        saro:frequencyOfMention  3 .
+

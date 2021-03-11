@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>403 Forbidden</title>
+</head><body>
+<h1>Forbidden</h1>
+<p>You don't have permission to access this resource.</p>
+</body></html>
+
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:assurance  a                saro:Topic ;
+        rdfs:label               "assurance" ;
+        saro:frequencyOfMention  3 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  3 .
+
+saro:backend  a                  saro:Topic ;
+        rdfs:label               "backend" ;
+        saro:frequencyOfMention  3 .
+
+saro:rest  a                     saro:Tool ;
+        rdfs:label               "rest" ;
+        saro:frequencyOfMention  3 .
+
+saro:spark  a                    saro:Product ;
+        rdfs:label               "spark" ;
+        saro:frequencyOfMention  3 .
+
+saro:cloudera  a                 saro:Product ;
+        rdfs:label               "Cloudera" ;
+        saro:frequencyOfMention  3 .
+
+saro:analytics  a                saro:Topic ;
+        rdfs:label               "analytics" ;
+        saro:frequencyOfMention  3 .
+
+saro:etl  a                      saro:Tool ;
+        rdfs:label               "etl" ;
+        saro:frequencyOfMention  6 .
+
+saro:apache  a                   saro:Product ;
+        rdfs:label               "Apache" ;
+        saro:frequencyOfMention  9 .
+
+saro:productManagement
+        a                        saro:Topic ;
+        rdfs:label               "product management" ;
+        saro:frequencyOfMention  3 .
+
+saro:dataWarehouse  a            saro:Topic ;
+        rdfs:label               "data warehouse" ;
+        saro:frequencyOfMention  3 .
+
+saro:java  a                     saro:Tool ;
+        rdfs:label               "java" ;
+        saro:frequencyOfMention  3 .
+
+saro:frontEnd  a                 saro:Topic ;
+        rdfs:label               "frontend" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file12507582800305574651_tmp_014A5_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Data Engineer"@en ;
+        so:hiringOrganisation  :essence ;
+        saro:requiresSkill     saro:go , saro:spark , saro:backend , saro:reporting , saro:frontEnd , saro:businessIntelligence , saro:computerScience , saro:troubleshooting , saro:python , saro:analytics , saro:tools , saro:dataWarehouse , saro:rest , saro:agile , saro:cloudera , saro:wiki , saro:dataAnalysis , saro:visualization , saro:productManagement , saro:softwareDevelopment , saro:assurance , saro:apache , saro:sql , saro:development , saro:cloud , saro:design , saro:java , saro:analysis , saro:linux , saro:dataEngineer , saro:etl .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  9 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  18 .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  15 .
+
+saro:wiki  a                     saro:Product ;
+        rdfs:label               "wiki" ;
+        saro:frequencyOfMention  3 .
+
+saro:dataEngineer  a             saro:Topic ;
+        rdfs:label               "data engineer" ;
+        saro:frequencyOfMention  3 .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  9 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "Design" ;
+        saro:frequencyOfMention  9 .
+
+saro:linux  a                    saro:Product ;
+        rdfs:label               "Linux" ;
+        saro:frequencyOfMention  3 .
+
+saro:dataAnalysis  a             saro:Topic ;
+        rdfs:label               "data analysis" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file12507582800305574651_tmp_014A5
+        a               saro:JobPosting ;
+        saro:describes  :stream2file12507582800305574651_tmp_014A5_JobRole .
+
+saro:troubleshooting  a          saro:Topic ;
+        rdfs:label               "troubleshooting" ;
+        saro:frequencyOfMention  6 .
+
+saro:visualization  a            saro:Topic ;
+        rdfs:label               "visualization" ;
+        saro:frequencyOfMention  3 .
+
+saro:businessIntelligence
+        a                        saro:Topic ;
+        rdfs:label               "business intelligence" ;
+        saro:frequencyOfMention  9 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "Cloud" ;
+        saro:frequencyOfMention  15 .
+
+saro:computerScience  a          saro:Topic ;
+        rdfs:label               "computer science" ;
+        saro:frequencyOfMention  3 .
+
+:essence  a     saro:Recruiter , so:Organisation .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "agile" ;
+        saro:frequencyOfMention  9 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "Python" ;
+        saro:frequencyOfMention  9 .
+
+saro:softwareDevelopment
+        a                        saro:Topic ;
+        rdfs:label               "software development" ;
+        saro:frequencyOfMention  3 .
+

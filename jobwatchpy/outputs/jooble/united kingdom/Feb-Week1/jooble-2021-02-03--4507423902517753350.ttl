@@ -1,0 +1,107 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+:stream2file10137845659457033272_tmp_01D21
+        a               saro:JobPosting ;
+        saro:describes  :stream2file10137845659457033272_tmp_01D21_JobRole .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  3 .
+
+saro:backend  a                  saro:Topic ;
+        rdfs:label               "backend" ;
+        saro:frequencyOfMention  3 .
+
+saro:automation  a               saro:Topic ;
+        rdfs:label               "automation" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file10137845659457033272_tmp_01D21_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Data Engineer"@en ;
+        so:hiringOrganisation  :amicusRecruitment ;
+        saro:requiresSkill     saro:bigData , saro:dataWarehouse , saro:analysis , saro:design , saro:automation , saro:etl , saro:go , saro:reporting , saro:azure , saro:backend , saro:riskManagement , saro:python , saro:development , saro:hive , saro:agile , saro:sql , saro:analytics , saro:cloud , saro:businessIntelligence , saro:storage .
+
+saro:hive  a                     saro:Tool ;
+        rdfs:label               "hive" ;
+        saro:frequencyOfMention  3 .
+
+:amicusRecruitment  a  saro:Recruiter , so:Organisation .
+
+saro:analytics  a                saro:Topic ;
+        rdfs:label               "analytics" ;
+        saro:frequencyOfMention  3 .
+
+saro:etl  a                      saro:Tool ;
+        rdfs:label               "etl" ;
+        saro:frequencyOfMention  3 .
+
+saro:dataWarehouse  a            saro:Topic ;
+        rdfs:label               "data warehouse" ;
+        saro:frequencyOfMention  3 .
+
+saro:azure  a                    saro:Tool ;
+        rdfs:label               "azure" ;
+        saro:frequencyOfMention  18 .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  12 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:bigData  a                  saro:Topic ;
+        rdfs:label               "Big Data" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  6 .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  9 .
+
+saro:storage  a                  saro:Topic ;
+        rdfs:label               "Storage" ;
+        saro:frequencyOfMention  3 .
+
+saro:businessIntelligence
+        a                        saro:Topic ;
+        rdfs:label               "Business Intelligence" ;
+        saro:frequencyOfMention  3 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "cloud" ;
+        saro:frequencyOfMention  9 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "agile" ;
+        saro:frequencyOfMention  3 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "Python" ;
+        saro:frequencyOfMention  7 .
+
+saro:riskManagement  a           saro:Topic ;
+        rdfs:label               "risk management" ;
+        saro:frequencyOfMention  4 .
+

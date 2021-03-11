@@ -1,0 +1,63 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  6 .
+
+:cnSalesRecruitmentLtd
+        a       saro:Recruiter , so:Organisation .
+
+saro:finance  a                  saro:Topic ;
+        rdfs:label               "Finance" ;
+        saro:frequencyOfMention  12 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  9 .
+
+saro:crm  a                      saro:Topic ;
+        rdfs:label               "CRM" ;
+        saro:frequencyOfMention  3 .
+
+saro:database  a                 saro:Topic ;
+        rdfs:label               "database" ;
+        saro:frequencyOfMention  6 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file500972223151962799_tmp_01F39_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Senior Sales Consultant"@en ;
+        so:hiringOrganisation  :cnSalesRecruitmentLtd ;
+        saro:requiresSkill     saro:go , saro:database , saro:crm , saro:security , saro:development , saro:cloud , saro:finance , saro:reporting , saro:tools .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  4 .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  8 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "cloud" ;
+        saro:frequencyOfMention  4 .
+
+:stream2file500972223151962799_tmp_01F39
+        a               saro:JobPosting ;
+        saro:describes  :stream2file500972223151962799_tmp_01F39_JobRole .
+

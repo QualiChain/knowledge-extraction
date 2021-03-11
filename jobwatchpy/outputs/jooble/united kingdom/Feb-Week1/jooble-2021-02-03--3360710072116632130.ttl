@@ -1,0 +1,68 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:customerSupport  a          saro:Topic ;
+        rdfs:label               "customer support" ;
+        saro:frequencyOfMention  6 .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  3 .
+
+saro:systemAdministration
+        a                        saro:Topic ;
+        rdfs:label               "System administration" ;
+        saro:frequencyOfMention  3 .
+
+:eaton  a       saro:Recruiter , so:Organisation .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:database  a                 saro:Topic ;
+        rdfs:label               "database" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  21 .
+
+saro:analyst  a                  saro:Topic ;
+        rdfs:label               "analyst" ;
+        saro:frequencyOfMention  9 .
+
+:stream2file6135401574765887934_tmp_00EED_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Technical Application Engineer"@en ;
+        so:hiringOrganisation  :eaton ;
+        saro:requiresSkill     saro:databaseAdministration , saro:analyst , saro:systemAdministration , saro:database , saro:sql , saro:customerSupport , saro:development , saro:design , saro:storage , saro:go .
+
+:stream2file6135401574765887934_tmp_00EED
+        a               saro:JobPosting ;
+        saro:describes  :stream2file6135401574765887934_tmp_00EED_JobRole .
+
+saro:databaseAdministration
+        a                        saro:Topic ;
+        rdfs:label               "database administration" ;
+        saro:frequencyOfMention  3 .
+
+saro:storage  a                  saro:Topic ;
+        rdfs:label               "storage" ;
+        saro:frequencyOfMention  9 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  10 .
+

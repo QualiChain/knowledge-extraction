@@ -1,0 +1,156 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:cucumber  a                 saro:Tool ;
+        rdfs:label               "Cucumber" ;
+        saro:frequencyOfMention  4 .
+
+saro:jmeter  a                   saro:Tool ;
+        rdfs:label               "JMeter" ;
+        saro:frequencyOfMention  6 .
+
+saro:automation  a               saro:Topic ;
+        rdfs:label               "Automation" ;
+        saro:frequencyOfMention  88 .
+
+saro:architect  a                saro:Topic ;
+        rdfs:label               "architect" ;
+        saro:frequencyOfMention  3 .
+
+:motorolaSolutions  a  saro:Recruiter , so:Organisation .
+
+saro:selenium  a                 saro:Tool ;
+        rdfs:label               "Selenium" ;
+        saro:frequencyOfMention  10 .
+
+saro:junit  a                    saro:Tool ;
+        rdfs:label               "junit" ;
+        saro:frequencyOfMention  3 .
+
+saro:java  a                     saro:Tool ;
+        rdfs:label               "java" ;
+        saro:frequencyOfMention  7 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  4 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  28 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  18 .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  16 .
+
+saro:prototype  a                saro:Topic ;
+        rdfs:label               "prototype" ;
+        saro:frequencyOfMention  3 .
+
+saro:versionControl  a           saro:Topic ;
+        rdfs:label               "version control" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file2099830518755133456_tmp_017F9_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Automation Test Engineer (OSS-BSS-Mobile App)"@en ;
+        so:hiringOrganisation  :motorolaSolutions ;
+        saro:requiresSkill     saro:security , saro:tools , saro:developer , saro:storage , saro:selenium , saro:c , saro:automation , saro:prototype , saro:python , saro:reporting , saro:go , saro:networks , saro:continuousIntegration , saro:projectManagement , saro:javascript , saro:cucumber , saro:virtualization , saro:java , saro:agile , saro:design , saro:bdd , saro:jmeter , saro:webApplications , saro:development , saro:programming , saro:junit , saro:cloud , saro:scrum , saro:unity , saro:git , saro:versionControl , saro:architect .
+
+saro:javascript  a               saro:Tool ;
+        rdfs:label               "JavaScript" ;
+        saro:frequencyOfMention  7 .
+
+saro:scrum  a                    saro:Topic ;
+        rdfs:label               "scrum" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  9 .
+
+saro:developer  a                saro:Topic ;
+        rdfs:label               "developer" ;
+        saro:frequencyOfMention  6 .
+
+saro:bdd  a                      saro:Topic ;
+        rdfs:label               "bdd" ;
+        saro:frequencyOfMention  6 .
+
+saro:continuousIntegration
+        a                        saro:Topic ;
+        rdfs:label               "continuous integration" ;
+        saro:frequencyOfMention  3 .
+
+saro:unity  a                    saro:Product ;
+        rdfs:label               "unity" ;
+        saro:frequencyOfMention  12 .
+
+:stream2file2099830518755133456_tmp_017F9
+        a               saro:JobPosting ;
+        saro:describes  :stream2file2099830518755133456_tmp_017F9_JobRole .
+
+saro:projectManagement
+        a                        saro:Topic ;
+        rdfs:label               "project management" ;
+        saro:frequencyOfMention  3 .
+
+saro:storage  a                  saro:Topic ;
+        rdfs:label               "storage" ;
+        saro:frequencyOfMention  3 .
+
+saro:networks  a                 saro:Topic ;
+        rdfs:label               "networks" ;
+        saro:frequencyOfMention  3 .
+
+saro:programming  a              saro:Topic ;
+        rdfs:label               "programming" ;
+        saro:frequencyOfMention  9 .
+
+saro:git  a                      saro:Tool ;
+        rdfs:label               "Git" ;
+        saro:frequencyOfMention  6 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "cloud" ;
+        saro:frequencyOfMention  3 .
+
+saro:webApplications  a          saro:Topic ;
+        rdfs:label               "web applications" ;
+        saro:frequencyOfMention  4 .
+
+saro:virtualization  a           saro:Topic ;
+        rdfs:label               "virtualization" ;
+        saro:frequencyOfMention  3 .
+
+saro:c  a                        saro:Tool ;
+        rdfs:label               "c" ;
+        saro:frequencyOfMention  3 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "Agile" ;
+        saro:frequencyOfMention  6 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "Python" ;
+        saro:frequencyOfMention  3 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  24 .
+

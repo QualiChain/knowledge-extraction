@@ -1,0 +1,238 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:assurance  a                saro:Topic ;
+        rdfs:label               "assurance" ;
+        saro:frequencyOfMention  10 .
+
+saro:backend  a                  saro:Topic ;
+        rdfs:label               "backend" ;
+        saro:frequencyOfMention  3 .
+
+saro:rest  a                     saro:Tool ;
+        rdfs:label               "Rest" ;
+        saro:frequencyOfMention  3 .
+
+saro:tdd  a                      saro:Topic ;
+        rdfs:label               "TDD" ;
+        saro:frequencyOfMention  3 .
+
+saro:automation  a               saro:Topic ;
+        rdfs:label               "automation" ;
+        saro:frequencyOfMention  6 .
+
+saro:selenium  a                 saro:Tool ;
+        rdfs:label               "Selenium" ;
+        saro:frequencyOfMention  3 .
+
+saro:rspec  a                    saro:Tool ;
+        rdfs:label               "RSpec" ;
+        saro:frequencyOfMention  6 .
+
+saro:java  a                     saro:Tool ;
+        rdfs:label               "java" ;
+        saro:frequencyOfMention  3 .
+
+saro:frontEnd  a                 saro:Topic ;
+        rdfs:label               "Frontend" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:administrator  a            saro:Topic ;
+        rdfs:label               "administrator" ;
+        saro:frequencyOfMention  4 .
+
+saro:rubyOnRails  a              saro:Tool ;
+        rdfs:label               "ruby on rails" ;
+        saro:frequencyOfMention  3 .
+
+saro:jira  a                     saro:Tool ;
+        rdfs:label               "Jira" ;
+        saro:frequencyOfMention  3 .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  3 .
+
+saro:bdd  a                      saro:Topic ;
+        rdfs:label               "bdd" ;
+        saro:frequencyOfMention  3 .
+
+saro:automatedTests  a           saro:Topic ;
+        rdfs:label               "automated tests" ;
+        saro:frequencyOfMention  3 .
+
+saro:projectManagement
+        a                        saro:Topic ;
+        rdfs:label               "project management" ;
+        saro:frequencyOfMention  3 .
+
+saro:ruby  a                     saro:Tool ;
+        rdfs:label               "Ruby" ;
+        saro:frequencyOfMention  3 .
+
+saro:git  a                      saro:Tool ;
+        rdfs:label               "Git" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file16612162782434943305_tmp_00981_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Quality Control Administrator"@en ;
+        so:hiringOrganisation  :wildstone ;
+        saro:requiresSkill     saro:selenium , saro:assurance , saro:bdd , saro:development , saro:automation , saro:rspec , saro:jira , saro:frontEnd , saro:ruby , saro:sql , saro:rest , saro:java , saro:automatedTests , saro:capybara , saro:rubyOnRails , saro:tools , saro:administrator , saro:backend , saro:go , saro:projectManagement , saro:git , saro:tdd , saro:agile .
+
+:stream2file16612162782434943305_tmp_00981
+        a               saro:JobPosting ;
+        saro:describes  :stream2file16612162782434943305_tmp_00981_JobRole .
+
+saro:capybara  a                 saro:Tool ;
+        rdfs:label               "capybara" ;
+        saro:frequencyOfMention  3 .
+
+:wildstone  a   saro:Recruiter , so:Organisation .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "Agile" ;
+        saro:frequencyOfMention  6 .
+
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:assurance  a                saro:Topic ;
+        rdfs:label               "assurance" ;
+        saro:frequencyOfMention  10 .
+
+saro:backend  a                  saro:Topic ;
+        rdfs:label               "backend" ;
+        saro:frequencyOfMention  3 .
+
+saro:rest  a                     saro:Tool ;
+        rdfs:label               "Rest" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file3302702995390116135_tmp_00BF1_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Quality Control Administrator"@en ;
+        so:hiringOrganisation  :wildstone ;
+        saro:requiresSkill     saro:jira , saro:selenium , saro:rest , saro:assurance , saro:tools , saro:rspec , saro:go , saro:agile , saro:sql , saro:git , saro:backend , saro:development , saro:tdd , saro:bdd , saro:capybara , saro:java , saro:projectManagement , saro:ruby , saro:automation , saro:frontEnd , saro:automatedTests , saro:rubyOnRails , saro:administrator .
+
+saro:automation  a               saro:Topic ;
+        rdfs:label               "automation" ;
+        saro:frequencyOfMention  6 .
+
+saro:tdd  a                      saro:Topic ;
+        rdfs:label               "TDD" ;
+        saro:frequencyOfMention  3 .
+
+saro:selenium  a                 saro:Tool ;
+        rdfs:label               "Selenium" ;
+        saro:frequencyOfMention  3 .
+
+saro:rspec  a                    saro:Tool ;
+        rdfs:label               "RSpec" ;
+        saro:frequencyOfMention  6 .
+
+saro:java  a                     saro:Tool ;
+        rdfs:label               "java" ;
+        saro:frequencyOfMention  3 .
+
+saro:frontEnd  a                 saro:Topic ;
+        rdfs:label               "Frontend" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:administrator  a            saro:Topic ;
+        rdfs:label               "administrator" ;
+        saro:frequencyOfMention  4 .
+
+saro:rubyOnRails  a              saro:Tool ;
+        rdfs:label               "ruby on rails" ;
+        saro:frequencyOfMention  3 .
+
+saro:jira  a                     saro:Tool ;
+        rdfs:label               "Jira" ;
+        saro:frequencyOfMention  3 .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  3 .
+
+saro:bdd  a                      saro:Topic ;
+        rdfs:label               "bdd" ;
+        saro:frequencyOfMention  3 .
+
+saro:automatedTests  a           saro:Topic ;
+        rdfs:label               "automated tests" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file3302702995390116135_tmp_00BF1
+        a               saro:JobPosting ;
+        saro:describes  :stream2file3302702995390116135_tmp_00BF1_JobRole .
+
+saro:projectManagement
+        a                        saro:Topic ;
+        rdfs:label               "project management" ;
+        saro:frequencyOfMention  3 .
+
+saro:ruby  a                     saro:Tool ;
+        rdfs:label               "Ruby" ;
+        saro:frequencyOfMention  3 .
+
+saro:git  a                      saro:Tool ;
+        rdfs:label               "Git" ;
+        saro:frequencyOfMention  3 .
+
+saro:capybara  a                 saro:Tool ;
+        rdfs:label               "capybara" ;
+        saro:frequencyOfMention  3 .
+
+:wildstone  a   saro:Recruiter , so:Organisation .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "Agile" ;
+        saro:frequencyOfMention  6 .
+

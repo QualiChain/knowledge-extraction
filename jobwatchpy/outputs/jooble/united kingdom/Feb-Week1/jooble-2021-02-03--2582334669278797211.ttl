@@ -1,0 +1,78 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  3 .
+
+saro:dataScience  a              saro:Topic ;
+        rdfs:label               "data science" ;
+        saro:frequencyOfMention  6 .
+
+saro:computerScience  a          saro:Topic ;
+        rdfs:label               "computer science" ;
+        saro:frequencyOfMention  3 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file13425865258477397458_tmp_00DDD
+        a               saro:JobPosting ;
+        saro:describes  :stream2file13425865258477397458_tmp_00DDD_JobRole .
+
+saro:programming  a              saro:Topic ;
+        rdfs:label               "programming" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file13425865258477397458_tmp_00DDD_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Senior Data Scientist"@en ;
+        so:hiringOrganisation  :harnham ;
+        saro:requiresSkill     saro:machineLearning , saro:analytics , saro:r , saro:computerScience , saro:sql , saro:nlp , saro:python , saro:finance , saro:dataScience , saro:go , saro:programming , saro:fullStack , saro:analysis .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:finance  a                  saro:Topic ;
+        rdfs:label               "finance" ;
+        saro:frequencyOfMention  3 .
+
+saro:fullStack  a                saro:Topic ;
+        rdfs:label               "full stack" ;
+        saro:frequencyOfMention  3 .
+
+:harnham  a     saro:Recruiter , so:Organisation .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "Python" ;
+        saro:frequencyOfMention  12 .
+
+saro:machineLearning  a          saro:Topic ;
+        rdfs:label               "Machine Learning" ;
+        saro:frequencyOfMention  16 .
+
+saro:nlp  a                      saro:Topic ;
+        rdfs:label               "NLP" ;
+        saro:frequencyOfMention  6 .
+
+saro:r  a                        saro:Tool ;
+        rdfs:label               "R" ;
+        saro:frequencyOfMention  6 .
+
+saro:analytics  a                saro:Topic ;
+        rdfs:label               "analytics" ;
+        saro:frequencyOfMention  4 .
+

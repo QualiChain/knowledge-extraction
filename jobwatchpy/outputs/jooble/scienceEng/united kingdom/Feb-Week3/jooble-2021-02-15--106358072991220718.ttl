@@ -1,0 +1,134 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:reportingServices
+        a                        saro:Topic ;
+        rdfs:label               "reporting services" ;
+        saro:frequencyOfMention  3 .
+
+saro:softwareEngineering
+        a                        saro:Topic ;
+        rdfs:label               "software engineering" ;
+        saro:frequencyOfMention  3 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "Analysis" ;
+        saro:frequencyOfMention  3 .
+
+saro:neo4j  a                    saro:Product ;
+        rdfs:label               "Neo4j" ;
+        saro:frequencyOfMention  3 .
+
+saro:automation  a               saro:Topic ;
+        rdfs:label               "automation" ;
+        saro:frequencyOfMention  3 .
+
+saro:excel  a                    saro:Product ;
+        rdfs:label               "excel" ;
+        saro:frequencyOfMention  3 .
+
+saro:architect  a                saro:Topic ;
+        rdfs:label               "Architect" ;
+        saro:frequencyOfMention  3 .
+
+saro:databaseDesign  a           saro:Topic ;
+        rdfs:label               "Database Design" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file409105283481721636_tmp_00B45_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Technology Services Manager"@en ;
+        so:datePosted          "2021-02-12"^^xsd:date ;
+        so:hiringOrganisation  :costaCoffee ;
+        so:jobLocation         :United_Kingdom ;
+        saro:requiresSkill     saro:go , saro:architect , saro:cloud , saro:reportingServices , saro:productManagement , saro:projectManagement , saro:analysis , saro:design , saro:databaseDesign , saro:security , saro:database , saro:dotNet , saro:dataAnalysis , saro:webServices , saro:azure , saro:agile , saro:automation , saro:excel , saro:softwareEngineering , saro:wcf , saro:neo4j , saro:tools , saro:development , saro:etl , saro:webApplications .
+
+:costaCoffee  a  saro:Recruiter , so:Organisation .
+
+saro:etl  a                      saro:Tool ;
+        rdfs:label               "etl" ;
+        saro:frequencyOfMention  3 .
+
+saro:productManagement
+        a                        saro:Topic ;
+        rdfs:label               "Product Management" ;
+        saro:frequencyOfMention  6 .
+
+:United_Kingdom  a  so:Place .
+
+saro:azure  a                    saro:Tool ;
+        rdfs:label               "azure" ;
+        saro:frequencyOfMention  3 .
+
+saro:webServices  a              saro:Topic ;
+        rdfs:label               "web services" ;
+        saro:frequencyOfMention  3 .
+
+saro:database  a                 saro:Topic ;
+        rdfs:label               "database" ;
+        saro:frequencyOfMention  6 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  37 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:wcf  a                      saro:Tool ;
+        rdfs:label               "wcf" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  45 .
+
+saro:projectManagement
+        a                        saro:Topic ;
+        rdfs:label               "project management" ;
+        saro:frequencyOfMention  3 .
+
+saro:dataAnalysis  a             saro:Topic ;
+        rdfs:label               "data analysis" ;
+        saro:frequencyOfMention  3 .
+
+saro:dotNet  a                   saro:Product ;
+        rdfs:label               ".net" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file409105283481721636_tmp_00B45
+        a               saro:JobPosting ;
+        saro:describes  :stream2file409105283481721636_tmp_00B45_JobRole .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "Cloud" ;
+        saro:frequencyOfMention  3 .
+
+saro:webApplications  a          saro:Topic ;
+        rdfs:label               "web applications" ;
+        saro:frequencyOfMention  3 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "Agile" ;
+        saro:frequencyOfMention  3 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  6 .
+

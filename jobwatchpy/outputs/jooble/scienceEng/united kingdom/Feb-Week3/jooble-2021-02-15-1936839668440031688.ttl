@@ -1,0 +1,74 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:arm  a                      saro:Tool ;
+        rdfs:label               "arm" ;
+        saro:frequencyOfMention  3 .
+
+saro:swift  a                    saro:Tool ;
+        rdfs:label               "swift" ;
+        saro:frequencyOfMention  3 .
+
+saro:salesforce  a               saro:Product ;
+        rdfs:label               "salesforce" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  9 .
+
+:stream2file683279585540704459_tmp_00901
+        a               saro:JobPosting ;
+        saro:describes  :stream2file683279585540704459_tmp_00901_JobRole .
+
+saro:adobe  a                    saro:Product ;
+        rdfs:label               "adobe" ;
+        saro:frequencyOfMention  6 .
+
+saro:crm  a                      saro:Topic ;
+        rdfs:label               "CRM" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file683279585540704459_tmp_00901_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Financial Planner"@en ;
+        so:datePosted          "2021-02-08"^^xsd:date ;
+        so:hiringOrganisation  :benchmarkCapital ;
+        so:jobLocation         :United_Kingdom ;
+        saro:requiresSkill     saro:crm , saro:c , saro:adobe , saro:swift , saro:arm , saro:photoshop , saro:salesforce , saro:analyst , saro:design , saro:go , saro:development .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  3 .
+
+:United_Kingdom  a  so:Place .
+
+saro:analyst  a                  saro:Topic ;
+        rdfs:label               "analyst" ;
+        saro:frequencyOfMention  6 .
+
+:benchmarkCapital  a  saro:Recruiter , so:Organisation .
+
+saro:photoshop  a                saro:Tool ;
+        rdfs:label               "Photoshop" ;
+        saro:frequencyOfMention  3 .
+
+saro:c  a                        saro:Tool ;
+        rdfs:label               "c" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  9 .
+

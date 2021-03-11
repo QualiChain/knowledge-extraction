@@ -1,0 +1,64 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:continuousIntegration
+        a                        saro:Topic ;
+        rdfs:label               "continuous integration" ;
+        saro:frequencyOfMention  3 .
+
+:edisonHillSearch  a  saro:Recruiter , so:Organisation .
+
+:stream2file5319396387452605817_tmp_00BAD_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Chief Technology Officer CTO"@en ;
+        so:datePosted          "2021-02-12"^^xsd:date ;
+        so:hiringOrganisation  :edisonHillSearch ;
+        so:jobLocation         :United_Kingdom ;
+        saro:requiresSkill     saro:tools , saro:rest , saro:architect , saro:monitoring , saro:design , saro:projectManagement , saro:continuousIntegration , saro:go .
+
+saro:rest  a                     saro:Tool ;
+        rdfs:label               "rest" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  9 .
+
+saro:projectManagement
+        a                        saro:Topic ;
+        rdfs:label               "project management" ;
+        saro:frequencyOfMention  4 .
+
+:United_Kingdom  a  so:Place .
+
+saro:monitoring  a               saro:Topic ;
+        rdfs:label               "monitoring" ;
+        saro:frequencyOfMention  3 .
+
+saro:architect  a                saro:Topic ;
+        rdfs:label               "Architect" ;
+        saro:frequencyOfMention  2 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file5319396387452605817_tmp_00BAD
+        a               saro:JobPosting ;
+        saro:describes  :stream2file5319396387452605817_tmp_00BAD_JobRole .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "Design" ;
+        saro:frequencyOfMention  6 .
+

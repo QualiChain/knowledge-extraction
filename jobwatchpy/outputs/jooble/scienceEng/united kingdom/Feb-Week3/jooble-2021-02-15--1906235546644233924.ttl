@@ -1,0 +1,66 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:ux  a                       saro:Tool ;
+        rdfs:label               "ux" ;
+        saro:frequencyOfMention  3 .
+
+saro:hardware  a                 saro:Topic ;
+        rdfs:label               "hardware" ;
+        saro:frequencyOfMention  3 .
+
+saro:programming  a              saro:Topic ;
+        rdfs:label               "programming" ;
+        saro:frequencyOfMention  3 .
+
+saro:rest  a                     saro:Tool ;
+        rdfs:label               "rest" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file7617775988496643199_tmp_00821_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Web Designer"@en ;
+        so:datePosted          "2021-02-12"^^xsd:date ;
+        so:hiringOrganisation  :careerMovesGroup ;
+        so:jobLocation         :United_Kingdom ;
+        saro:requiresSkill     saro:go , saro:programming , saro:agile , saro:design , saro:development , saro:ux , saro:rest , saro:hardware , saro:analytics .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  7 .
+
+:United_Kingdom  a  so:Place .
+
+:careerMovesGroup  a  saro:Recruiter , so:Organisation .
+
+saro:analytics  a                saro:Topic ;
+        rdfs:label               "analytics" ;
+        saro:frequencyOfMention  3 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "Agile" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file7617775988496643199_tmp_00821
+        a               saro:JobPosting ;
+        saro:describes  :stream2file7617775988496643199_tmp_00821_JobRole .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "Design" ;
+        saro:frequencyOfMention  39 .
+

@@ -1,0 +1,234 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:assurance  a                saro:Topic ;
+        rdfs:label               "assurance" ;
+        saro:frequencyOfMention  11 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  3 .
+
+saro:scripting  a                saro:Tool ;
+        rdfs:label               "scripting" ;
+        saro:frequencyOfMention  6 .
+
+saro:automation  a               saro:Topic ;
+        rdfs:label               "automation" ;
+        saro:frequencyOfMention  19 .
+
+saro:algorithmicTrading
+        a                        saro:Topic ;
+        rdfs:label               "algorithmic trading" ;
+        saro:frequencyOfMention  6 .
+
+saro:java  a                     saro:Tool ;
+        rdfs:label               "java" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file16885477595555119403_tmp_009B9_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Quality Assurance Automation Engineer"@en ;
+        so:hiringOrganisation  :selbyJennings ;
+        saro:requiresSkill     saro:analyst , saro:development , saro:automatedTests , saro:automation , saro:python , saro:tools , saro:linux , saro:scripting , saro:bash , saro:go , saro:java , saro:design , saro:analysis , saro:algorithmicTrading , saro:arm , saro:programming , saro:svn , saro:git , saro:assurance , saro:sql .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  12 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  6 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+:selbyJennings  a  saro:Recruiter , so:Organisation .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  9 .
+
+:stream2file16885477595555119403_tmp_009B9
+        a               saro:JobPosting ;
+        saro:describes  :stream2file16885477595555119403_tmp_009B9_JobRole .
+
+saro:linux  a                    saro:Product ;
+        rdfs:label               "Linux" ;
+        saro:frequencyOfMention  3 .
+
+saro:automatedTests  a           saro:Topic ;
+        rdfs:label               "automated tests" ;
+        saro:frequencyOfMention  3 .
+
+saro:programming  a              saro:Topic ;
+        rdfs:label               "programming" ;
+        saro:frequencyOfMention  6 .
+
+saro:svn  a                      saro:Tool ;
+        rdfs:label               "svn" ;
+        saro:frequencyOfMention  3 .
+
+saro:git  a                      saro:Tool ;
+        rdfs:label               "Git" ;
+        saro:frequencyOfMention  3 .
+
+saro:analyst  a                  saro:Topic ;
+        rdfs:label               "analyst" ;
+        saro:frequencyOfMention  3 .
+
+saro:arm  a                      saro:Tool ;
+        rdfs:label               "arm" ;
+        saro:frequencyOfMention  3 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "Python" ;
+        saro:frequencyOfMention  3 .
+
+saro:bash  a                     saro:Tool ;
+        rdfs:label               "Bash" ;
+        saro:frequencyOfMention  3 .
+
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+:stream2file12420556042481305238_tmp_00C11_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Quality Assurance Automation Engineer"@en ;
+        so:hiringOrganisation  :selbyJennings ;
+        saro:requiresSkill     saro:r , saro:computerScience , saro:reporting , saro:design , saro:development , saro:arm , saro:php , saro:git , saro:excel , saro:scripting , saro:statistics , saro:assurance , saro:go , saro:automatedTests , saro:svn , saro:java , saro:automation , saro:linux , saro:analysis , saro:programming , saro:python , saro:algorithmicTrading , saro:sql , saro:bash , saro:tools .
+
+saro:assurance  a                saro:Topic ;
+        rdfs:label               "assurance" ;
+        saro:frequencyOfMention  14 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  6 .
+
+saro:scripting  a                saro:Tool ;
+        rdfs:label               "scripting" ;
+        saro:frequencyOfMention  6 .
+
+saro:automation  a               saro:Topic ;
+        rdfs:label               "automation" ;
+        saro:frequencyOfMention  19 .
+
+saro:statistics  a               saro:Topic ;
+        rdfs:label               "statistics" ;
+        saro:frequencyOfMention  3 .
+
+saro:excel  a                    saro:Product ;
+        rdfs:label               "excel" ;
+        saro:frequencyOfMention  3 .
+
+saro:algorithmicTrading
+        a                        saro:Topic ;
+        rdfs:label               "algorithmic trading" ;
+        saro:frequencyOfMention  6 .
+
+saro:php  a                      saro:Tool ;
+        rdfs:label               "PHP" ;
+        saro:frequencyOfMention  6 .
+
+saro:java  a                     saro:Tool ;
+        rdfs:label               "java" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file12420556042481305238_tmp_00C11
+        a               saro:JobPosting ;
+        saro:describes  :stream2file12420556042481305238_tmp_00C11_JobRole .
+
+saro:r  a                        saro:Tool ;
+        rdfs:label               "r" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  6 .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  18 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+:selbyJennings  a  saro:Recruiter , so:Organisation .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  6 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  18 .
+
+saro:linux  a                    saro:Product ;
+        rdfs:label               "Linux" ;
+        saro:frequencyOfMention  3 .
+
+saro:automatedTests  a           saro:Topic ;
+        rdfs:label               "automated tests" ;
+        saro:frequencyOfMention  3 .
+
+saro:programming  a              saro:Topic ;
+        rdfs:label               "programming" ;
+        saro:frequencyOfMention  6 .
+
+saro:svn  a                      saro:Tool ;
+        rdfs:label               "svn" ;
+        saro:frequencyOfMention  3 .
+
+saro:git  a                      saro:Tool ;
+        rdfs:label               "Git" ;
+        saro:frequencyOfMention  3 .
+
+saro:arm  a                      saro:Tool ;
+        rdfs:label               "arm" ;
+        saro:frequencyOfMention  3 .
+
+saro:computerScience  a          saro:Topic ;
+        rdfs:label               "computer science" ;
+        saro:frequencyOfMention  3 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "Python" ;
+        saro:frequencyOfMention  3 .
+
+saro:bash  a                     saro:Tool ;
+        rdfs:label               "Bash" ;
+        saro:frequencyOfMention  3 .
+

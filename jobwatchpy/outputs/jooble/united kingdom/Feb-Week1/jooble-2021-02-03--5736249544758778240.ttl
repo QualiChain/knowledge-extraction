@@ -1,0 +1,125 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:riskManagement  a           saro:Topic ;
+        rdfs:label               "risk management" ;
+        saro:frequencyOfMention  31 .
+
+saro:assurance  a                saro:Topic ;
+        rdfs:label               "assurance" ;
+        saro:frequencyOfMention  6 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  3 .
+
+:talent  a      saro:Recruiter , so:Organisation .
+
+saro:architect  a                saro:Topic ;
+        rdfs:label               "Architect" ;
+        saro:frequencyOfMention  7 .
+
+:stream2file16368724104507999826_tmp_0132D
+        a               saro:JobPosting ;
+        saro:describes  :stream2file16368724104507999826_tmp_0132D_JobRole .
+
+:stream2file16368724104507999826_tmp_0132D_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Information Security Architect"@en ;
+        so:hiringOrganisation  :talent ;
+        saro:requiresSkill     saro:development , saro:analysis , saro:agile , saro:go , saro:troubleshooting , saro:design , saro:storage , saro:reporting , saro:projectManagement , saro:architect , saro:cloud , saro:riskManagement , saro:assurance , saro:security , saro:tools .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  12 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  9 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  6 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  21 .
+
+saro:projectManagement
+        a                        saro:Topic ;
+        rdfs:label               "project management" ;
+        saro:frequencyOfMention  6 .
+
+saro:storage  a                  saro:Topic ;
+        rdfs:label               "storage" ;
+        saro:frequencyOfMention  3 .
+
+saro:troubleshooting  a          saro:Topic ;
+        rdfs:label               "troubleshooting" ;
+        saro:frequencyOfMention  3 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "Cloud" ;
+        saro:frequencyOfMention  45 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "Agile" ;
+        saro:frequencyOfMention  6 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  200 .
+
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "go" ;
+        saro:frequencyOfMention  1 .
+
+:talent  a      saro:Recruiter , so:Organisation .
+
+:stream2file18267117768358905334_tmp_01961_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Information Security Architect"@en ;
+        so:hiringOrganisation  :talent ;
+        saro:requiresSkill     saro:go , saro:cloud , saro:security .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "Cloud" ;
+        saro:frequencyOfMention  1 .
+
+:stream2file18267117768358905334_tmp_01961
+        a               saro:JobPosting ;
+        saro:describes  :stream2file18267117768358905334_tmp_01961_JobRole .
+

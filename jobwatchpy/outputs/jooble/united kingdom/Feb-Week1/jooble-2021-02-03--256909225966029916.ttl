@@ -1,0 +1,210 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:assurance  a                saro:Topic ;
+        rdfs:label               "assurance" ;
+        saro:frequencyOfMention  10 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  6 .
+
+saro:rest  a                     saro:Tool ;
+        rdfs:label               "rest" ;
+        saro:frequencyOfMention  3 .
+
+saro:tableau  a                  saro:Product ;
+        rdfs:label               "tableau" ;
+        saro:frequencyOfMention  3 .
+
+saro:dataMining  a               saro:Topic ;
+        rdfs:label               "data mining" ;
+        saro:frequencyOfMention  3 .
+
+saro:excel  a                    saro:Product ;
+        rdfs:label               "excel" ;
+        saro:frequencyOfMention  3 .
+
+saro:architect  a                saro:Topic ;
+        rdfs:label               "architect" ;
+        saro:frequencyOfMention  3 .
+
+:m3GlobalResearchUk  a  saro:Recruiter , so:Organisation .
+
+saro:monitoring  a               saro:Topic ;
+        rdfs:label               "monitoring" ;
+        saro:frequencyOfMention  7 .
+
+:stream2file15035099822778052501_tmp_00A19_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Data Quality Manager"@en ;
+        so:hiringOrganisation  :m3GlobalResearchUk ;
+        saro:requiresSkill     saro:security , saro:sql , saro:fingerprinting , saro:architect , saro:assurance , saro:commandLine , saro:reporting , saro:projectManagement , saro:linux , saro:monitoring , saro:rest , saro:go , saro:dataMining , saro:tools , saro:tableau , saro:tester , saro:excel , saro:analysis , saro:finance , saro:computerScience , saro:development .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  3 .
+
+saro:linux  a                    saro:Product ;
+        rdfs:label               "Linux" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file15035099822778052501_tmp_00A19
+        a               saro:JobPosting ;
+        saro:describes  :stream2file15035099822778052501_tmp_00A19_JobRole .
+
+saro:fingerprinting  a           saro:Topic ;
+        rdfs:label               "fingerprinting" ;
+        saro:frequencyOfMention  3 .
+
+saro:projectManagement
+        a                        saro:Topic ;
+        rdfs:label               "project management" ;
+        saro:frequencyOfMention  3 .
+
+saro:commandLine  a              saro:Tool ;
+        rdfs:label               "command line" ;
+        saro:frequencyOfMention  3 .
+
+saro:computerScience  a          saro:Topic ;
+        rdfs:label               "computer science" ;
+        saro:frequencyOfMention  3 .
+
+saro:finance  a                  saro:Topic ;
+        rdfs:label               "finance" ;
+        saro:frequencyOfMention  3 .
+
+saro:tester  a                   saro:Topic ;
+        rdfs:label               "Tester" ;
+        saro:frequencyOfMention  6 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  3 .
+
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:assurance  a                saro:Topic ;
+        rdfs:label               "assurance" ;
+        saro:frequencyOfMention  7 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  6 .
+
+saro:rest  a                     saro:Tool ;
+        rdfs:label               "rest" ;
+        saro:frequencyOfMention  3 .
+
+saro:tableau  a                  saro:Product ;
+        rdfs:label               "tableau" ;
+        saro:frequencyOfMention  3 .
+
+saro:dataMining  a               saro:Topic ;
+        rdfs:label               "data mining" ;
+        saro:frequencyOfMention  3 .
+
+saro:architect  a                saro:Topic ;
+        rdfs:label               "architect" ;
+        saro:frequencyOfMention  3 .
+
+saro:excel  a                    saro:Product ;
+        rdfs:label               "excel" ;
+        saro:frequencyOfMention  3 .
+
+:m3GlobalResearchUk  a  saro:Recruiter , so:Organisation .
+
+saro:monitoring  a               saro:Topic ;
+        rdfs:label               "monitoring" ;
+        saro:frequencyOfMention  7 .
+
+:stream2file7445793365175286280_tmp_00C89
+        a               saro:JobPosting ;
+        saro:describes  :stream2file7445793365175286280_tmp_00C89_JobRole .
+
+:stream2file7445793365175286280_tmp_00C89_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Data Quality Manager"@en ;
+        so:hiringOrganisation  :m3GlobalResearchUk ;
+        saro:requiresSkill     saro:fingerprinting , saro:finance , saro:tools , saro:tableau , saro:design , saro:sql , saro:architect , saro:excel , saro:assurance , saro:rest , saro:go , saro:computerScience , saro:analysis , saro:dataMining , saro:reporting , saro:monitoring , saro:projectManagement , saro:development .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  6 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  3 .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  3 .
+
+saro:fingerprinting  a           saro:Topic ;
+        rdfs:label               "fingerprinting" ;
+        saro:frequencyOfMention  3 .
+
+saro:projectManagement
+        a                        saro:Topic ;
+        rdfs:label               "project management" ;
+        saro:frequencyOfMention  3 .
+
+saro:computerScience  a          saro:Topic ;
+        rdfs:label               "computer science" ;
+        saro:frequencyOfMention  3 .
+
+saro:finance  a                  saro:Topic ;
+        rdfs:label               "finance" ;
+        saro:frequencyOfMention  3 .
+

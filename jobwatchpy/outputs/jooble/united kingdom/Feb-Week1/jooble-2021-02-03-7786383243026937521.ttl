@@ -1,0 +1,98 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:adobe  a                    saro:Product ;
+        rdfs:label               "adobe" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file9626006953478309226_tmp_00A31
+        a               saro:JobPosting ;
+        saro:describes  :stream2file9626006953478309226_tmp_00A31_JobRole .
+
+saro:oracle  a                   saro:Product ;
+        rdfs:label               "oracle" ;
+        saro:frequencyOfMention  3 .
+
+saro:automation  a               saro:Topic ;
+        rdfs:label               "automation" ;
+        saro:frequencyOfMention  6 .
+
+saro:azure  a                    saro:Tool ;
+        rdfs:label               "azure" ;
+        saro:frequencyOfMention  6 .
+
+saro:fintech  a                  saro:Product ;
+        rdfs:label               "FinTech" ;
+        saro:frequencyOfMention  11 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+:talentedge  a  saro:Recruiter , so:Organisation .
+
+:stream2file9626006953478309226_tmp_00A31_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Manager"@en ;
+        so:hiringOrganisation  :talentedge ;
+        saro:requiresSkill     saro:automation , saro:sharepoint , saro:adobe , saro:azure , saro:oracle , saro:agile , saro:go , saro:security , saro:finance , saro:design , saro:activeDirectory , saro:fintech , saro:sql , saro:hardware , saro:c , saro:tools , saro:linux , saro:arm .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  3 .
+
+saro:linux  a                    saro:Product ;
+        rdfs:label               "Linux" ;
+        saro:frequencyOfMention  3 .
+
+saro:activeDirectory  a          saro:Tool ;
+        rdfs:label               "Active Directory" ;
+        saro:frequencyOfMention  3 .
+
+saro:sharepoint  a               saro:Product ;
+        rdfs:label               "SharePoint" ;
+        saro:frequencyOfMention  3 .
+
+saro:arm  a                      saro:Tool ;
+        rdfs:label               "arm" ;
+        saro:frequencyOfMention  3 .
+
+saro:finance  a                  saro:Topic ;
+        rdfs:label               "finance" ;
+        saro:frequencyOfMention  12 .
+
+saro:c  a                        saro:Tool ;
+        rdfs:label               "c" ;
+        saro:frequencyOfMention  3 .
+
+saro:hardware  a                 saro:Topic ;
+        rdfs:label               "hardware" ;
+        saro:frequencyOfMention  3 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "agile" ;
+        saro:frequencyOfMention  3 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  9 .
+

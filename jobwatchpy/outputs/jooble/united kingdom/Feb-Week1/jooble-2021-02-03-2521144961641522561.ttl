@@ -1,0 +1,116 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:virtualMachine  a           saro:Topic ;
+        rdfs:label               "virtual machine" ;
+        saro:frequencyOfMention  3 .
+
+saro:softwareEngineering
+        a                        saro:Topic ;
+        rdfs:label               "software engineering" ;
+        saro:frequencyOfMention  6 .
+
+saro:assurance  a                saro:Topic ;
+        rdfs:label               "assurance" ;
+        saro:frequencyOfMention  3 .
+
+saro:scripting  a                saro:Tool ;
+        rdfs:label               "scripting" ;
+        saro:frequencyOfMention  3 .
+
+saro:vmware  a                   saro:Product ;
+        rdfs:label               "vmware" ;
+        saro:frequencyOfMention  3 .
+
+saro:unix  a                     saro:Product ;
+        rdfs:label               "unix" ;
+        saro:frequencyOfMention  7 .
+
+saro:monitoring  a               saro:Topic ;
+        rdfs:label               "monitoring" ;
+        saro:frequencyOfMention  9 .
+
+saro:redhat  a                   saro:Product ;
+        rdfs:label               "RedHat" ;
+        saro:frequencyOfMention  16 .
+
+:clientServerLtd  a  saro:Recruiter , so:Organisation .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  9 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  4 .
+
+:stream2file11427743039730426122_tmp_019C9
+        a               saro:JobPosting ;
+        saro:describes  :stream2file11427743039730426122_tmp_019C9_JobRole .
+
+saro:administrator  a            saro:Topic ;
+        rdfs:label               "administrator" ;
+        saro:frequencyOfMention  23 .
+
+saro:orchestration  a            saro:Topic ;
+        rdfs:label               "orchestration" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  3 .
+
+saro:linux  a                    saro:Product ;
+        rdfs:label               "Linux" ;
+        saro:frequencyOfMention  61 .
+
+saro:sysadmin  a                 saro:Tool ;
+        rdfs:label               "sysadmin" ;
+        saro:frequencyOfMention  7 .
+
+saro:projectManagement
+        a                        saro:Topic ;
+        rdfs:label               "project management" ;
+        saro:frequencyOfMention  6 .
+
+saro:storage  a                  saro:Topic ;
+        rdfs:label               "storage" ;
+        saro:frequencyOfMention  3 .
+
+saro:activeDirectory  a          saro:Tool ;
+        rdfs:label               "Active Directory" ;
+        saro:frequencyOfMention  3 .
+
+saro:programming  a              saro:Topic ;
+        rdfs:label               "programming" ;
+        saro:frequencyOfMention  3 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "Python" ;
+        saro:frequencyOfMention  10 .
+
+:stream2file11427743039730426122_tmp_019C9_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Linux Engineer (Senior) RedHat Linux - Hedge Fund"@en ;
+        so:hiringOrganisation  :clientServerLtd ;
+        saro:requiresSkill     saro:scripting , saro:unix , saro:development , saro:projectManagement , saro:programming , saro:orchestration , saro:softwareEngineering , saro:activeDirectory , saro:python , saro:vmware , saro:design , saro:linux , saro:redhat , saro:sysadmin , saro:go , saro:administrator , saro:security , saro:bash , saro:monitoring , saro:virtualMachine , saro:assurance , saro:storage .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "Security" ;
+        saro:frequencyOfMention  12 .
+
+saro:bash  a                     saro:Tool ;
+        rdfs:label               "bash" ;
+        saro:frequencyOfMention  10 .
+

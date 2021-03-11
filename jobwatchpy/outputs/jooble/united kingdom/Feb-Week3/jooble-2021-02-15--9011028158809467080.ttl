@@ -1,0 +1,102 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:softwareEngineering
+        a                        saro:Topic ;
+        rdfs:label               "software engineering" ;
+        saro:frequencyOfMention  3 .
+
+saro:relationalDatabase
+        a                        saro:Topic ;
+        rdfs:label               "relational database" ;
+        saro:frequencyOfMention  3 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  3 .
+
+:axisGroupIntegratedServices
+        a       saro:Recruiter , so:Organisation .
+
+:United_Kingdom  a  so:Place .
+
+saro:softwareEngineer
+        a                        saro:Topic ;
+        rdfs:label               "software engineer" ;
+        saro:frequencyOfMention  3 .
+
+saro:html  a                     saro:Tool ;
+        rdfs:label               "html" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  9 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "go" ;
+        saro:frequencyOfMention  9 .
+
+saro:prototype  a                saro:Topic ;
+        rdfs:label               "prototype" ;
+        saro:frequencyOfMention  6 .
+
+saro:css  a                      saro:Tool ;
+        rdfs:label               "css" ;
+        saro:frequencyOfMention  3 .
+
+saro:ux  a                       saro:Tool ;
+        rdfs:label               "ux" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file16317750905131323508_tmp_0070D
+        a               saro:JobPosting ;
+        saro:describes  :stream2file16317750905131323508_tmp_0070D_JobRole .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  9 .
+
+saro:linux  a                    saro:Product ;
+        rdfs:label               "Linux" ;
+        saro:frequencyOfMention  3 .
+
+saro:sqlalchemy  a               saro:Product ;
+        rdfs:label               "SqlAlchemy" ;
+        saro:frequencyOfMention  3 .
+
+saro:rails  a                    saro:Tool ;
+        rdfs:label               "rails" ;
+        saro:frequencyOfMention  3 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "cloud" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file16317750905131323508_tmp_0070D_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Night CCTV Controller"@en ;
+        so:datePosted          "2021-02-13"^^xsd:date ;
+        so:hiringOrganisation  :axisGroupIntegratedServices ;
+        so:jobLocation         :United_Kingdom ;
+        saro:requiresSkill     saro:ux , saro:cloud , saro:html , saro:go , saro:softwareEngineer , saro:rails , saro:security , saro:softwareEngineering , saro:analysis , saro:sqlalchemy , saro:prototype , saro:python , saro:linux , saro:design , saro:relationalDatabase , saro:css , saro:development .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "python" ;
+        saro:frequencyOfMention  6 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  66 .
+

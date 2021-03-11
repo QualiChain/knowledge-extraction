@@ -1,0 +1,261 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:softwareEngineering
+        a                        saro:Topic ;
+        rdfs:label               "software engineering" ;
+        saro:frequencyOfMention  3 .
+
+saro:assurance  a                saro:Topic ;
+        rdfs:label               "assurance" ;
+        saro:frequencyOfMention  3 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  15 .
+
+saro:scripting  a                saro:Tool ;
+        rdfs:label               "scripting" ;
+        saro:frequencyOfMention  3 .
+
+saro:dataMining  a               saro:Topic ;
+        rdfs:label               "data mining" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file14114202381566293774_tmp_00B3D
+        a               saro:JobPosting ;
+        saro:describes  :stream2file14114202381566293774_tmp_00B3D_JobRole .
+
+:theWellsTobiasGroup  a  saro:Recruiter , so:Organisation .
+
+saro:excel  a                    saro:Product ;
+        rdfs:label               "excel" ;
+        saro:frequencyOfMention  3 .
+
+saro:nlp  a                      saro:Topic ;
+        rdfs:label               "NLP" ;
+        saro:frequencyOfMention  9 .
+
+saro:analytics  a                saro:Topic ;
+        rdfs:label               "analytics" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file14114202381566293774_tmp_00B3D_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Data Scientist"@en ;
+        so:hiringOrganisation  :theWellsTobiasGroup ;
+        saro:requiresSkill     saro:math , saro:dataAnalysis , saro:database , saro:reporting , saro:assurance , saro:analysis , saro:analytics , saro:python , saro:security , saro:nlp , saro:dataMining , saro:design , saro:scripting , saro:go , saro:finance , saro:r , saro:machineLearning , saro:numpy , saro:development , saro:dataStructures , saro:dataScience , saro:agile , saro:scipy , saro:excel , saro:softwareEngineering .
+
+saro:math  a                     saro:Tool ;
+        rdfs:label               "math" ;
+        saro:frequencyOfMention  3 .
+
+saro:scipy  a                    saro:Tool ;
+        rdfs:label               "scipy" ;
+        saro:frequencyOfMention  3 .
+
+saro:numpy  a                    saro:Tool ;
+        rdfs:label               "numpy" ;
+        saro:frequencyOfMention  3 .
+
+saro:r  a                        saro:Tool ;
+        rdfs:label               "R" ;
+        saro:frequencyOfMention  6 .
+
+saro:dataStructures  a           saro:Topic ;
+        rdfs:label               "data structures" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:database  a                 saro:Topic ;
+        rdfs:label               "database" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  3 .
+
+saro:machineLearning  a          saro:Topic ;
+        rdfs:label               "machine learning" ;
+        saro:frequencyOfMention  27 .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  3 .
+
+saro:dataScience  a              saro:Topic ;
+        rdfs:label               "data science" ;
+        saro:frequencyOfMention  6 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "Design" ;
+        saro:frequencyOfMention  12 .
+
+saro:dataAnalysis  a             saro:Topic ;
+        rdfs:label               "data analysis" ;
+        saro:frequencyOfMention  3 .
+
+saro:finance  a                  saro:Topic ;
+        rdfs:label               "Finance" ;
+        saro:frequencyOfMention  3 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "Agile" ;
+        saro:frequencyOfMention  3 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "Python" ;
+        saro:frequencyOfMention  6 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  3 .
+
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:assurance  a                saro:Topic ;
+        rdfs:label               "assurance" ;
+        saro:frequencyOfMention  3 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  15 .
+
+saro:scripting  a                saro:Tool ;
+        rdfs:label               "scripting" ;
+        saro:frequencyOfMention  3 .
+
+saro:dataMining  a               saro:Topic ;
+        rdfs:label               "data mining" ;
+        saro:frequencyOfMention  3 .
+
+saro:statistics  a               saro:Topic ;
+        rdfs:label               "statistics" ;
+        saro:frequencyOfMention  3 .
+
+:theWellsTobiasGroup  a  saro:Recruiter , so:Organisation .
+
+saro:excel  a                    saro:Product ;
+        rdfs:label               "excel" ;
+        saro:frequencyOfMention  3 .
+
+saro:analytics  a                saro:Topic ;
+        rdfs:label               "analytics" ;
+        saro:frequencyOfMention  6 .
+
+saro:r  a                        saro:Tool ;
+        rdfs:label               "R" ;
+        saro:frequencyOfMention  9 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:dataStructures  a           saro:Topic ;
+        rdfs:label               "data structures" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  3 .
+
+saro:database  a                 saro:Topic ;
+        rdfs:label               "database" ;
+        saro:frequencyOfMention  3 .
+
+saro:machineLearning  a          saro:Topic ;
+        rdfs:label               "machine learning" ;
+        saro:frequencyOfMention  12 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  3 .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  3 .
+
+saro:dataScience  a              saro:Topic ;
+        rdfs:label               "data science" ;
+        saro:frequencyOfMention  3 .
+
+saro:kafka  a                    saro:Tool ;
+        rdfs:label               "kafka" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file5054999221690502508_tmp_00DA9_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Data Scientist"@en ;
+        so:hiringOrganisation  :theWellsTobiasGroup ;
+        saro:requiresSkill     saro:finance , saro:dataScience , saro:programming , saro:excel , saro:analytics , saro:development , saro:tools , saro:analysis , saro:reporting , saro:apacheSpark , saro:machineLearning , saro:python , saro:design , saro:assurance , saro:dataStructures , saro:database , saro:agile , saro:dataMining , saro:go , saro:scripting , saro:r , saro:dataAnalysis , saro:kafka , saro:statistics , saro:security .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "Design" ;
+        saro:frequencyOfMention  12 .
+
+saro:dataAnalysis  a             saro:Topic ;
+        rdfs:label               "data analysis" ;
+        saro:frequencyOfMention  3 .
+
+saro:programming  a              saro:Topic ;
+        rdfs:label               "programming" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file5054999221690502508_tmp_00DA9
+        a               saro:JobPosting ;
+        saro:describes  :stream2file5054999221690502508_tmp_00DA9_JobRole .
+
+saro:finance  a                  saro:Topic ;
+        rdfs:label               "Finance" ;
+        saro:frequencyOfMention  3 .
+
+saro:apacheSpark  a              saro:Product ;
+        rdfs:label               "Apache Spark" ;
+        saro:frequencyOfMention  3 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "Agile" ;
+        saro:frequencyOfMention  3 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "Python" ;
+        saro:frequencyOfMention  9 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  3 .
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>403 Forbidden</title>
+</head><body>
+<h1>Forbidden</h1>
+<p>You don't have permission to access this resource.</p>
+</body></html>
+

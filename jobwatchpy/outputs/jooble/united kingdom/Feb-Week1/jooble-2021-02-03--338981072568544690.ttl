@@ -1,0 +1,156 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  6 .
+
+saro:sdk  a                      saro:Topic ;
+        rdfs:label               "sdk" ;
+        saro:frequencyOfMention  3 .
+
+saro:automation  a               saro:Topic ;
+        rdfs:label               "automation" ;
+        saro:frequencyOfMention  3 .
+
+saro:react  a                    saro:Tool ;
+        rdfs:label               "react" ;
+        saro:frequencyOfMention  10 .
+
+saro:databaseDesign  a           saro:Topic ;
+        rdfs:label               "database design" ;
+        saro:frequencyOfMention  3 .
+
+saro:jquery  a                   saro:Tool ;
+        rdfs:label               "jquery" ;
+        saro:frequencyOfMention  4 .
+
+saro:typescript  a               saro:Tool ;
+        rdfs:label               "typescript" ;
+        saro:frequencyOfMention  6 .
+
+saro:analytics  a                saro:Topic ;
+        rdfs:label               "analytics" ;
+        saro:frequencyOfMention  6 .
+
+saro:php  a                      saro:Tool ;
+        rdfs:label               "PHP" ;
+        saro:frequencyOfMention  7 .
+
+:stream2file8037683462062335391_tmp_01899
+        a               saro:JobPosting ;
+        saro:describes  :stream2file8037683462062335391_tmp_01899_JobRole .
+
+saro:googleAppEngine  a          saro:Product ;
+        rdfs:label               "Google App engine" ;
+        saro:frequencyOfMention  3 .
+
+saro:database  a                 saro:Topic ;
+        rdfs:label               "database" ;
+        saro:frequencyOfMention  6 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  18 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  15 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:github  a                   saro:Tool ;
+        rdfs:label               "Github" ;
+        saro:frequencyOfMention  3 .
+
+saro:webAnalytics  a             saro:Topic ;
+        rdfs:label               "web analytics" ;
+        saro:frequencyOfMention  3 .
+
+saro:versionControl  a           saro:Topic ;
+        rdfs:label               "version control" ;
+        saro:frequencyOfMention  3 .
+
+saro:ux  a                       saro:Tool ;
+        rdfs:label               "ux" ;
+        saro:frequencyOfMention  3 .
+
+saro:orchestration  a            saro:Topic ;
+        rdfs:label               "orchestration" ;
+        saro:frequencyOfMention  3 .
+
+saro:crm  a                      saro:Topic ;
+        rdfs:label               "CRM" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  3 .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  6 .
+
+saro:functionalProgramming
+        a                        saro:Topic ;
+        rdfs:label               "functional programming" ;
+        saro:frequencyOfMention  3 .
+
+saro:docker  a                   saro:Product ;
+        rdfs:label               "Docker" ;
+        saro:frequencyOfMention  3 .
+
+saro:fullStack  a                saro:Topic ;
+        rdfs:label               "full stack" ;
+        saro:frequencyOfMention  3 .
+
+:goodlord  a    saro:Recruiter , so:Organisation .
+
+saro:mysql  a                    saro:Tool ;
+        rdfs:label               "mysql" ;
+        saro:frequencyOfMention  3 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "Cloud" ;
+        saro:frequencyOfMention  36 .
+
+saro:webApplications  a          saro:Topic ;
+        rdfs:label               "web applications" ;
+        saro:frequencyOfMention  3 .
+
+saro:virtualization  a           saro:Topic ;
+        rdfs:label               "virtualization" ;
+        saro:frequencyOfMention  3 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "agile" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file8037683462062335391_tmp_01899_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Senior Engineer"@en ;
+        so:hiringOrganisation  :goodlord ;
+        saro:requiresSkill     saro:webAnalytics , saro:mysql , saro:github , saro:functionalProgramming , saro:versionControl , saro:fullStack , saro:googleAppEngine , saro:orchestration , saro:database , saro:tools , saro:react , saro:go , saro:cloud , saro:analysis , saro:php , saro:databaseDesign , saro:agile , saro:development , saro:virtualization , saro:ux , saro:softwareDevelopment , saro:crm , saro:docker , saro:webApplications , saro:automation , saro:sql , saro:typescript , saro:design , saro:symfony , saro:analytics , saro:sdk , saro:jquery .
+
+saro:symfony  a                  saro:Tool ;
+        rdfs:label               "symfony" ;
+        saro:frequencyOfMention  3 .
+
+saro:softwareDevelopment
+        a                        saro:Topic ;
+        rdfs:label               "software development" ;
+        saro:frequencyOfMention  3 .
+

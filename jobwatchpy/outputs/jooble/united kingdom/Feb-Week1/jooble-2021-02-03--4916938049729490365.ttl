@@ -1,0 +1,112 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  28 .
+
+saro:statistics  a               saro:Topic ;
+        rdfs:label               "statistics" ;
+        saro:frequencyOfMention  3 .
+
+saro:excel  a                    saro:Product ;
+        rdfs:label               "excel" ;
+        saro:frequencyOfMention  12 .
+
+saro:analytics  a                saro:Topic ;
+        rdfs:label               "analytics" ;
+        saro:frequencyOfMention  9 .
+
+saro:etl  a                      saro:Tool ;
+        rdfs:label               "etl" ;
+        saro:frequencyOfMention  3 .
+
+saro:backbone  a                 saro:Tool ;
+        rdfs:label               "backbone" ;
+        saro:frequencyOfMention  3 .
+
+saro:math  a                     saro:Tool ;
+        rdfs:label               "math" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  19 .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  21 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  12 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "go" ;
+        saro:frequencyOfMention  9 .
+
+saro:vba  a                      saro:Tool ;
+        rdfs:label               "VBA" ;
+        saro:frequencyOfMention  6 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  7 .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  6 .
+
+saro:dataAnalysis  a             saro:Topic ;
+        rdfs:label               "data analysis" ;
+        saro:frequencyOfMention  6 .
+
+saro:storage  a                  saro:Topic ;
+        rdfs:label               "storage" ;
+        saro:frequencyOfMention  3 .
+
+saro:mysql  a                    saro:Tool ;
+        rdfs:label               "mysql" ;
+        saro:frequencyOfMention  3 .
+
+saro:analyst  a                  saro:Topic ;
+        rdfs:label               "analyst" ;
+        saro:frequencyOfMention  13 .
+
+:stream2file11650318375362747631_tmp_01219_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Data Analyst"@en ;
+        so:hiringOrganisation  :kelly ;
+        saro:requiresSkill     saro:dataVisualization , saro:storage , saro:analysis , saro:mysql , saro:etl , saro:tools , saro:design , saro:vba , saro:backbone , saro:reporting , saro:sql , saro:statistics , saro:analytics , saro:development , saro:dataDriven , saro:math , saro:analyst , saro:go , saro:excel , saro:businessIntelligence , saro:dataAnalysis .
+
+saro:businessIntelligence
+        a                        saro:Topic ;
+        rdfs:label               "Business Intelligence" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file11650318375362747631_tmp_01219
+        a               saro:JobPosting ;
+        saro:describes  :stream2file11650318375362747631_tmp_01219_JobRole .
+
+saro:dataVisualization
+        a                        saro:Topic ;
+        rdfs:label               "data visualization" ;
+        saro:frequencyOfMention  6 .
+
+:kelly  a       saro:Recruiter , so:Organisation .
+
+saro:dataDriven  a               saro:Topic ;
+        rdfs:label               "data driven" ;
+        saro:frequencyOfMention  3 .
+

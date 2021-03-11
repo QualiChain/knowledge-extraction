@@ -1,0 +1,91 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:oracle  a                   saro:Product ;
+        rdfs:label               "oracle" ;
+        saro:frequencyOfMention  21 .
+
+:nigelWrightGroup  a  saro:Recruiter , so:Organisation .
+
+saro:productManagement
+        a                        saro:Topic ;
+        rdfs:label               "Product Management" ;
+        saro:frequencyOfMention  3 .
+
+saro:r  a                        saro:Tool ;
+        rdfs:label               "R" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  9 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file1472167361590861669_tmp_01C7D_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Application Developer"@en ;
+        so:hiringOrganisation  :nigelWrightGroup ;
+        saro:requiresSkill     saro:cloud , saro:developer , saro:sharepoint , saro:productManagement , saro:hardware , saro:dotNet , saro:oracle , saro:finance , saro:sql , saro:erp , saro:less , saro:r , saro:networks , saro:go , saro:development , saro:design .
+
+saro:less  a                     saro:Topic ;
+        rdfs:label               "less" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  7 .
+
+:stream2file1472167361590861669_tmp_01C7D
+        a               saro:JobPosting ;
+        saro:describes  :stream2file1472167361590861669_tmp_01C7D_JobRole .
+
+saro:developer  a                saro:Topic ;
+        rdfs:label               "developer" ;
+        saro:frequencyOfMention  4 .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  3 .
+
+saro:networks  a                 saro:Topic ;
+        rdfs:label               "networks" ;
+        saro:frequencyOfMention  3 .
+
+saro:sharepoint  a               saro:Product ;
+        rdfs:label               "SharePoint" ;
+        saro:frequencyOfMention  3 .
+
+saro:dotNet  a                   saro:Product ;
+        rdfs:label               ".net" ;
+        saro:frequencyOfMention  3 .
+
+saro:erp  a                      saro:Product ;
+        rdfs:label               "erp" ;
+        saro:frequencyOfMention  27 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "Cloud" ;
+        saro:frequencyOfMention  12 .
+
+saro:finance  a                  saro:Topic ;
+        rdfs:label               "Finance" ;
+        saro:frequencyOfMention  3 .
+
+saro:hardware  a                 saro:Topic ;
+        rdfs:label               "hardware" ;
+        saro:frequencyOfMention  3 .
+

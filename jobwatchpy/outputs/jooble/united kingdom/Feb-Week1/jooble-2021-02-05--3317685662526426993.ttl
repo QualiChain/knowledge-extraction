@@ -1,0 +1,113 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  12 .
+
+saro:tableau  a                  saro:Product ;
+        rdfs:label               "tableau" ;
+        saro:frequencyOfMention  3 .
+
+saro:excel  a                    saro:Product ;
+        rdfs:label               "excel" ;
+        saro:frequencyOfMention  3 .
+
+:venturiLtd  a  saro:Recruiter , so:Organisation .
+
+saro:etl  a                      saro:Tool ;
+        rdfs:label               "etl" ;
+        saro:frequencyOfMention  3 .
+
+saro:fintech  a                  saro:Product ;
+        rdfs:label               "FinTech" ;
+        saro:frequencyOfMention  7 .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  6 .
+
+saro:machineLearning  a          saro:Topic ;
+        rdfs:label               "machine learning" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:ux  a                       saro:Tool ;
+        rdfs:label               "ux" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  6 .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  3 .
+
+saro:projectManagement
+        a                        saro:Topic ;
+        rdfs:label               "project management" ;
+        saro:frequencyOfMention  3 .
+
+saro:dataAnalysis  a             saro:Topic ;
+        rdfs:label               "data analysis" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file1691356750466959818_tmp_01DE1
+        a               saro:JobPosting ;
+        saro:describes  :stream2file1691356750466959818_tmp_01DE1_JobRole .
+
+saro:programming  a              saro:Topic ;
+        rdfs:label               "programming" ;
+        saro:frequencyOfMention  3 .
+
+saro:analyst  a                  saro:Topic ;
+        rdfs:label               "analyst" ;
+        saro:frequencyOfMention  23 .
+
+saro:businessIntelligence
+        a                        saro:Topic ;
+        rdfs:label               "Business Intelligence" ;
+        saro:frequencyOfMention  15 .
+
+saro:finance  a                  saro:Topic ;
+        rdfs:label               "finance" ;
+        saro:frequencyOfMention  4 .
+
+saro:dataVisualization
+        a                        saro:Topic ;
+        rdfs:label               "data visualization" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file1691356750466959818_tmp_01DE1_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Product Analyst"@en ;
+        so:hiringOrganisation  :venturiLtd ;
+        saro:requiresSkill     saro:excel , saro:sql , saro:machineLearning , saro:python , saro:analysis , saro:reporting , saro:dataAnalysis , saro:development , saro:tableau , saro:design , saro:ux , saro:tools , saro:businessIntelligence , saro:go , saro:finance , saro:projectManagement , saro:etl , saro:fintech , saro:programming , saro:dataVisualization , saro:analyst .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "Python" ;
+        saro:frequencyOfMention  6 .
+

@@ -1,0 +1,146 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "Analysis" ;
+        saro:frequencyOfMention  12 .
+
+saro:dataMining  a               saro:Topic ;
+        rdfs:label               "data mining" ;
+        saro:frequencyOfMention  6 .
+
+saro:hive  a                     saro:Tool ;
+        rdfs:label               "hive" ;
+        saro:frequencyOfMention  3 .
+
+saro:excel  a                    saro:Product ;
+        rdfs:label               "excel" ;
+        saro:frequencyOfMention  3 .
+
+saro:nlp  a                      saro:Topic ;
+        rdfs:label               "NLP" ;
+        saro:frequencyOfMention  3 .
+
+saro:spark  a                    saro:Product ;
+        rdfs:label               "spark" ;
+        saro:frequencyOfMention  3 .
+
+saro:analytics  a                saro:Topic ;
+        rdfs:label               "analytics" ;
+        saro:frequencyOfMention  35 .
+
+saro:dataManagement  a           saro:Topic ;
+        rdfs:label               "data management" ;
+        saro:frequencyOfMention  3 .
+
+saro:hadoop  a                   saro:Product ;
+        rdfs:label               "hadoop" ;
+        saro:frequencyOfMention  3 .
+
+saro:apache  a                   saro:Product ;
+        rdfs:label               "Apache" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file8643393152840273388_tmp_00B25
+        a               saro:JobPosting ;
+        saro:describes  :stream2file8643393152840273388_tmp_00B25_JobRole .
+
+saro:azure  a                    saro:Tool ;
+        rdfs:label               "azure" ;
+        saro:frequencyOfMention  3 .
+
+saro:solr  a                     saro:Tool ;
+        rdfs:label               "solr" ;
+        saro:frequencyOfMention  3 .
+
+saro:r  a                        saro:Tool ;
+        rdfs:label               "R" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  3 .
+
+saro:machineLearning  a          saro:Topic ;
+        rdfs:label               "machine learning" ;
+        saro:frequencyOfMention  24 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:imageProcessing  a          saro:Topic ;
+        rdfs:label               "image processing" ;
+        saro:frequencyOfMention  3 .
+
+saro:dataScience  a              saro:Topic ;
+        rdfs:label               "data science" ;
+        saro:frequencyOfMention  15 .
+
+saro:bigData  a                  saro:Topic ;
+        rdfs:label               "Big Data" ;
+        saro:frequencyOfMention  9 .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  9 .
+
+saro:storage  a                  saro:Topic ;
+        rdfs:label               "storage" ;
+        saro:frequencyOfMention  3 .
+
+saro:programming  a              saro:Topic ;
+        rdfs:label               "programming" ;
+        saro:frequencyOfMention  3 .
+
+:harnham  a     saro:Recruiter , so:Organisation .
+
+:stream2file8643393152840273388_tmp_00B25_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Data Scientist"@en ;
+        so:hiringOrganisation  :harnham ;
+        saro:requiresSkill     saro:sql , saro:spark , saro:finance , saro:excel , saro:lucene , saro:dataMining , saro:dataManagement , saro:hadoop , saro:tools , saro:mahout , saro:analysis , saro:python , saro:hardware , saro:azure , saro:machineLearning , saro:programming , saro:r , saro:analytics , saro:nlp , saro:storage , saro:hive , saro:solr , saro:iot , saro:go , saro:imageProcessing , saro:bigData , saro:apache , saro:analyst , saro:dataScience , saro:cloud .
+
+saro:analyst  a                  saro:Topic ;
+        rdfs:label               "analyst" ;
+        saro:frequencyOfMention  11 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "cloud" ;
+        saro:frequencyOfMention  3 .
+
+saro:finance  a                  saro:Topic ;
+        rdfs:label               "finance" ;
+        saro:frequencyOfMention  3 .
+
+saro:hardware  a                 saro:Topic ;
+        rdfs:label               "hardware" ;
+        saro:frequencyOfMention  3 .
+
+saro:iot  a                      saro:Topic ;
+        rdfs:label               "iot" ;
+        saro:frequencyOfMention  6 .
+
+saro:mahout  a                   saro:Product ;
+        rdfs:label               "mahout" ;
+        saro:frequencyOfMention  3 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "Python" ;
+        saro:frequencyOfMention  6 .
+
+saro:lucene  a                   saro:Tool ;
+        rdfs:label               "lucene" ;
+        saro:frequencyOfMention  3 .
+

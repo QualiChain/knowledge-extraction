@@ -1,0 +1,70 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+:lucasBlake  a  saro:Recruiter , so:Organisation .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  6 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:dataManagement  a           saro:Topic ;
+        rdfs:label               "data management" ;
+        saro:frequencyOfMention  3 .
+
+saro:crm  a                      saro:Topic ;
+        rdfs:label               "CRM" ;
+        saro:frequencyOfMention  6 .
+
+saro:salesforce  a               saro:Product ;
+        rdfs:label               "salesforce" ;
+        saro:frequencyOfMention  9 .
+
+:stream2file353590097702250668_tmp_01B05
+        a               saro:JobPosting ;
+        saro:describes  :stream2file353590097702250668_tmp_01B05_JobRole .
+
+:stream2file353590097702250668_tmp_01B05_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Storage System Engineer"@en ;
+        so:hiringOrganisation  :lucasBlake ;
+        saro:requiresSkill     saro:go , saro:analysis , saro:cloud , saro:c , saro:erp , saro:analyst , saro:storage , saro:security , saro:salesforce , saro:dataManagement , saro:crm .
+
+saro:analyst  a                  saro:Topic ;
+        rdfs:label               "analyst" ;
+        saro:frequencyOfMention  9 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "cloud" ;
+        saro:frequencyOfMention  6 .
+
+saro:c  a                        saro:Tool ;
+        rdfs:label               "c" ;
+        saro:frequencyOfMention  7 .
+
+saro:erp  a                      saro:Product ;
+        rdfs:label               "erp" ;
+        saro:frequencyOfMention  3 .
+
+saro:storage  a                  saro:Topic ;
+        rdfs:label               "storage" ;
+        saro:frequencyOfMention  10 .
+

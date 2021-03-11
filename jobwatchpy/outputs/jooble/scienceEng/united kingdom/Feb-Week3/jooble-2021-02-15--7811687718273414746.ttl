@@ -1,0 +1,163 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:gherkin  a                  saro:Tool ;
+        rdfs:label               "Gherkin" ;
+        saro:frequencyOfMention  3 .
+
+saro:networking  a               saro:Topic ;
+        rdfs:label               "networking" ;
+        saro:frequencyOfMention  3 .
+
+saro:rest  a                     saro:Tool ;
+        rdfs:label               "rest" ;
+        saro:frequencyOfMention  3 .
+
+saro:automation  a               saro:Topic ;
+        rdfs:label               "automation" ;
+        saro:frequencyOfMention  17 .
+
+:starleaf  a    saro:Recruiter , so:Organisation .
+
+saro:selenium  a                 saro:Tool ;
+        rdfs:label               "Selenium" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file6785599437979515379_tmp_00C01_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Senior Test Engineer"@en ;
+        so:datePosted          "2021-02-11"^^xsd:date ;
+        so:hiringOrganisation  :starleaf ;
+        so:jobLocation         :United_Kingdom ;
+        saro:requiresSkill     saro:webServices , saro:jira , saro:go , saro:git , saro:design , saro:computerScience , saro:networking , saro:gherkin , saro:selenium , saro:tester , saro:r , saro:webApplications , saro:programming , saro:development , saro:oop , saro:c , saro:versionControl , saro:specflow , saro:reporting , saro:scrum , saro:java , saro:svn , saro:bdd , saro:azure , saro:saltStack , saro:agile , saro:cloud , saro:automation , saro:rest , saro:tools , saro:frontEnd , saro:seleniumWebdriver , saro:sdlc .
+
+:United_Kingdom  a  so:Place .
+
+saro:java  a                     saro:Tool ;
+        rdfs:label               "java" ;
+        saro:frequencyOfMention  3 .
+
+saro:azure  a                    saro:Tool ;
+        rdfs:label               "azure" ;
+        saro:frequencyOfMention  3 .
+
+saro:specflow  a                 saro:Tool ;
+        rdfs:label               "Specflow" ;
+        saro:frequencyOfMention  3 .
+
+saro:r  a                        saro:Tool ;
+        rdfs:label               "R" ;
+        saro:frequencyOfMention  3 .
+
+saro:frontEnd  a                 saro:Topic ;
+        rdfs:label               "front end" ;
+        saro:frequencyOfMention  6 .
+
+saro:webServices  a              saro:Topic ;
+        rdfs:label               "web services" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  9 .
+
+saro:sdlc  a                     saro:Topic ;
+        rdfs:label               "sdlc" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  6 .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  3 .
+
+saro:versionControl  a           saro:Topic ;
+        rdfs:label               "version control" ;
+        saro:frequencyOfMention  3 .
+
+saro:jira  a                     saro:Tool ;
+        rdfs:label               "Jira" ;
+        saro:frequencyOfMention  6 .
+
+saro:seleniumWebdriver
+        a                        saro:Product ;
+        rdfs:label               "selenium webdriver" ;
+        saro:frequencyOfMention  3 .
+
+saro:scrum  a                    saro:Topic ;
+        rdfs:label               "scrum" ;
+        saro:frequencyOfMention  6 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "Design" ;
+        saro:frequencyOfMention  3 .
+
+saro:bdd  a                      saro:Topic ;
+        rdfs:label               "bdd" ;
+        saro:frequencyOfMention  6 .
+
+saro:oop  a                      saro:Topic ;
+        rdfs:label               "OOP" ;
+        saro:frequencyOfMention  3 .
+
+saro:programming  a              saro:Topic ;
+        rdfs:label               "programming" ;
+        saro:frequencyOfMention  3 .
+
+saro:git  a                      saro:Tool ;
+        rdfs:label               "Git" ;
+        saro:frequencyOfMention  9 .
+
+saro:svn  a                      saro:Tool ;
+        rdfs:label               "svn" ;
+        saro:frequencyOfMention  3 .
+
+saro:webApplications  a          saro:Topic ;
+        rdfs:label               "web applications" ;
+        saro:frequencyOfMention  6 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "cloud" ;
+        saro:frequencyOfMention  12 .
+
+saro:computerScience  a          saro:Topic ;
+        rdfs:label               "computer science" ;
+        saro:frequencyOfMention  3 .
+
+saro:c  a                        saro:Tool ;
+        rdfs:label               "c" ;
+        saro:frequencyOfMention  6 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "Agile" ;
+        saro:frequencyOfMention  12 .
+
+saro:saltStack  a                saro:Tool ;
+        rdfs:label               "Saltstack" ;
+        saro:frequencyOfMention  3 .
+
+saro:tester  a                   saro:Topic ;
+        rdfs:label               "Tester" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file6785599437979515379_tmp_00C01
+        a               saro:JobPosting ;
+        saro:describes  :stream2file6785599437979515379_tmp_00C01_JobRole .
+

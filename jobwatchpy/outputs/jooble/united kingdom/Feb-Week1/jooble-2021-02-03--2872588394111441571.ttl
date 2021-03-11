@@ -1,0 +1,74 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:cad  a                      saro:Topic ;
+        rdfs:label               "cad" ;
+        saro:frequencyOfMention  6 .
+
+saro:programming  a              saro:Topic ;
+        rdfs:label               "programming" ;
+        saro:frequencyOfMention  21 .
+
+saro:cPlusPlus  a                saro:Tool ;
+        rdfs:label               "c++" ;
+        saro:frequencyOfMention  6 .
+
+saro:debugging  a                saro:Topic ;
+        rdfs:label               "debugging" ;
+        saro:frequencyOfMention  3 .
+
+saro:assurance  a                saro:Topic ;
+        rdfs:label               "assurance" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  9 .
+
+saro:developer  a                saro:Topic ;
+        rdfs:label               "developer" ;
+        saro:frequencyOfMention  3 .
+
+saro:database  a                 saro:Topic ;
+        rdfs:label               "database" ;
+        saro:frequencyOfMention  3 .
+
+:psbRecruitment  a  saro:Recruiter , so:Organisation .
+
+saro:monitoring  a               saro:Topic ;
+        rdfs:label               "monitoring" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  6 .
+
+saro:c  a                        saro:Tool ;
+        rdfs:label               "c" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file8898119396874326422_tmp_01B91
+        a               saro:JobPosting ;
+        saro:describes  :stream2file8898119396874326422_tmp_01B91_JobRole .
+
+:stream2file8898119396874326422_tmp_01B91_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Engine Programmer"@en ;
+        so:hiringOrganisation  :psbRecruitment ;
+        saro:requiresSkill     saro:development , saro:c , saro:go , saro:cad , saro:programming , saro:database , saro:developer , saro:cPlusPlus , saro:tools , saro:monitoring , saro:debugging , saro:assurance .
+

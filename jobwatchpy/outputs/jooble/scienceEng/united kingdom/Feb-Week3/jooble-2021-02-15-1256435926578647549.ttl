@@ -1,0 +1,83 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:tomcat  a                   saro:Tool ;
+        rdfs:label               "tomcat" ;
+        saro:frequencyOfMention  3 .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  3 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  3 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  3 .
+
+saro:assurance  a                saro:Topic ;
+        rdfs:label               "assurance" ;
+        saro:frequencyOfMention  12 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  9 .
+
+saro:jmeter  a                   saro:Tool ;
+        rdfs:label               "Jmeter" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file5890242782458936428_tmp_00C31_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Engineering Technical Specialist"@en ;
+        so:datePosted          "2021-02-10"^^xsd:date ;
+        so:hiringOrganisation  :aeropeopleLtd ;
+        so:jobLocation         :United_Kingdom ;
+        saro:requiresSkill     saro:analysis , saro:go , saro:design , saro:tools , saro:assurance , saro:sql , saro:security , saro:monitoring , saro:performanceTesting , saro:tomcat , saro:jmeter , saro:development , saro:architect .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  18 .
+
+:United_Kingdom  a  so:Place .
+
+saro:monitoring  a               saro:Topic ;
+        rdfs:label               "monitoring" ;
+        saro:frequencyOfMention  6 .
+
+saro:architect  a                saro:Topic ;
+        rdfs:label               "Architect" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file5890242782458936428_tmp_00C31
+        a               saro:JobPosting ;
+        saro:describes  :stream2file5890242782458936428_tmp_00C31_JobRole .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  15 .
+
+saro:performanceTesting
+        a                        saro:Topic ;
+        rdfs:label               "Performance testing" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  18 .
+
+:aeropeopleLtd  a  saro:Recruiter , so:Organisation .
+

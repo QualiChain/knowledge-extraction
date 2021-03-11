@@ -1,0 +1,139 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "Analysis" ;
+        saro:frequencyOfMention  3 .
+
+saro:networking  a               saro:Topic ;
+        rdfs:label               "networking" ;
+        saro:frequencyOfMention  3 .
+
+saro:oracle  a                   saro:Product ;
+        rdfs:label               "oracle" ;
+        saro:frequencyOfMention  3 .
+
+saro:vmware  a                   saro:Product ;
+        rdfs:label               "vmware" ;
+        saro:frequencyOfMention  3 .
+
+saro:excel  a                    saro:Product ;
+        rdfs:label               "excel" ;
+        saro:frequencyOfMention  3 .
+
+:United_Kingdom  a  so:Place .
+
+saro:java  a                     saro:Tool ;
+        rdfs:label               "java" ;
+        saro:frequencyOfMention  3 .
+
+saro:azure  a                    saro:Tool ;
+        rdfs:label               "azure" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file5625792467958897697_tmp_00AF9_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Information Technology Security Engineer"@en ;
+        so:datePosted          "2021-02-10"^^xsd:date ;
+        so:hiringOrganisation  :expandExecutiveSearch ;
+        so:jobLocation         :United_Kingdom ;
+        saro:requiresSkill     saro:azure , saro:security , saro:mysql , saro:couchbase , saro:oracle , saro:java , saro:swift , saro:linux , saro:computerScience , saro:bash , saro:design , saro:docker , saro:vsphere , saro:python , saro:vmware , saro:tools , saro:vpn , saro:networking , saro:analysis , saro:siem , saro:database , saro:powershell , saro:cloud , saro:excel , saro:sharepoint , saro:development , saro:go .
+
+saro:database  a                 saro:Topic ;
+        rdfs:label               "database" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  6 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:couchbase  a                saro:Product ;
+        rdfs:label               "couchbase" ;
+        saro:frequencyOfMention  3 .
+
+saro:powershell  a               saro:Tool ;
+        rdfs:label               "powershell" ;
+        saro:frequencyOfMention  3 .
+
+saro:swift  a                    saro:Tool ;
+        rdfs:label               "swift" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  3 .
+
+saro:linux  a                    saro:Product ;
+        rdfs:label               "Linux" ;
+        saro:frequencyOfMention  3 .
+
+:expandExecutiveSearch
+        a       saro:Recruiter , so:Organisation .
+
+saro:siem  a                     saro:Product ;
+        rdfs:label               "SIEM" ;
+        saro:frequencyOfMention  6 .
+
+saro:vsphere  a                  saro:Product ;
+        rdfs:label               "vsphere" ;
+        saro:frequencyOfMention  3 .
+
+saro:sharepoint  a               saro:Product ;
+        rdfs:label               "SharePoint" ;
+        saro:frequencyOfMention  3 .
+
+saro:docker  a                   saro:Product ;
+        rdfs:label               "Docker" ;
+        saro:frequencyOfMention  3 .
+
+saro:mysql  a                    saro:Tool ;
+        rdfs:label               "mysql" ;
+        saro:frequencyOfMention  3 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "Cloud" ;
+        saro:frequencyOfMention  12 .
+
+saro:computerScience  a          saro:Topic ;
+        rdfs:label               "computer science" ;
+        saro:frequencyOfMention  3 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "Python" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file5625792467958897697_tmp_00AF9
+        a               saro:JobPosting ;
+        saro:describes  :stream2file5625792467958897697_tmp_00AF9_JobRole .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  58 .
+
+saro:vpn  a                      saro:Topic ;
+        rdfs:label               "vpn" ;
+        saro:frequencyOfMention  3 .
+
+saro:bash  a                     saro:Tool ;
+        rdfs:label               "Bash" ;
+        saro:frequencyOfMention  3 .
+

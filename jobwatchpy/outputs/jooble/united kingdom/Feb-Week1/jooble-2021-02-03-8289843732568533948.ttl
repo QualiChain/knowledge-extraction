@@ -1,0 +1,136 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:math  a                     saro:Tool ;
+        rdfs:label               "math" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file1581807053758094909_tmp_00A41_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Salon Manager"@en ;
+        so:hiringOrganisation  :nbarLondon ;
+        saro:requiresSkill     saro:css , saro:cloud , saro:architect , saro:development , saro:tools , saro:ux , saro:finance , saro:tester , saro:math , saro:dotNet , saro:agile , saro:go , saro:azure .
+
+:stream2file1581807053758094909_tmp_00A41
+        a               saro:JobPosting ;
+        saro:describes  :stream2file1581807053758094909_tmp_00A41_JobRole .
+
+saro:azure  a                    saro:Tool ;
+        rdfs:label               "azure" ;
+        saro:frequencyOfMention  3 .
+
+saro:finance  a                  saro:Topic ;
+        rdfs:label               "finance" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:css  a                      saro:Tool ;
+        rdfs:label               "css" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  3 .
+
+saro:dotNet  a                   saro:Product ;
+        rdfs:label               ".net" ;
+        saro:frequencyOfMention  3 .
+
+saro:architect  a                saro:Topic ;
+        rdfs:label               "architect" ;
+        saro:frequencyOfMention  3 .
+
+saro:tester  a                   saro:Topic ;
+        rdfs:label               "tester" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  6 .
+
+:nbarLondon  a  saro:Recruiter , so:Organisation .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "cloud" ;
+        saro:frequencyOfMention  3 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "agile" ;
+        saro:frequencyOfMention  9 .
+
+saro:ux  a                       saro:Tool ;
+        rdfs:label               "ux" ;
+        saro:frequencyOfMention  3 .
+
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:math  a                     saro:Tool ;
+        rdfs:label               "math" ;
+        saro:frequencyOfMention  3 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file457350810241483390_tmp_00CB1_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Salon Manager"@en ;
+        so:hiringOrganisation  :nbarLondon ;
+        saro:requiresSkill     saro:development , saro:reporting , saro:go , saro:analysis , saro:css , saro:tools , saro:finance , saro:math .
+
+saro:finance  a                  saro:Topic ;
+        rdfs:label               "finance" ;
+        saro:frequencyOfMention  19 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:css  a                      saro:Tool ;
+        rdfs:label               "css" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file457350810241483390_tmp_00CB1
+        a               saro:JobPosting ;
+        saro:describes  :stream2file457350810241483390_tmp_00CB1_JobRole .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  6 .
+
+:nbarLondon  a  saro:Recruiter , so:Organisation .
+

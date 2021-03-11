@@ -1,0 +1,193 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  27 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+:raytheonUk  a  saro:Recruiter , so:Organisation .
+
+saro:hibernate  a                saro:Product ;
+        rdfs:label               "Hibernate" ;
+        saro:frequencyOfMention  3 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  9 .
+
+saro:javascript  a               saro:Tool ;
+        rdfs:label               "JavaScript" ;
+        saro:frequencyOfMention  9 .
+
+saro:typescript  a               saro:Tool ;
+        rdfs:label               "typescript" ;
+        saro:frequencyOfMention  3 .
+
+saro:tdd  a                      saro:Topic ;
+        rdfs:label               "TDD" ;
+        saro:frequencyOfMention  3 .
+
+saro:frontEnd  a                 saro:Topic ;
+        rdfs:label               "front end" ;
+        saro:frequencyOfMention  9 .
+
+saro:dba  a                      saro:Topic ;
+        rdfs:label               "dba" ;
+        saro:frequencyOfMention  3 .
+
+saro:ux  a                       saro:Tool ;
+        rdfs:label               "ux" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "Design" ;
+        saro:frequencyOfMention  10 .
+
+saro:continuousIntegration
+        a                        saro:Topic ;
+        rdfs:label               "continuous integration" ;
+        saro:frequencyOfMention  3 .
+
+saro:oop  a                      saro:Topic ;
+        rdfs:label               "OOP" ;
+        saro:frequencyOfMention  3 .
+
+saro:angular  a                  saro:Product ;
+        rdfs:label               "angular" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file13553554288367581743_tmp_01D01_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Software Engineer"@en ;
+        so:hiringOrganisation  :raytheonUk ;
+        saro:requiresSkill     saro:apacheKafka , saro:docker , saro:development , saro:continuousIntegration , saro:tdd , saro:frontEnd , saro:dotNet , saro:javascript , saro:react , saro:go , saro:css , saro:ux , saro:dba , saro:developer , saro:agile , saro:storage , saro:design , saro:security , saro:webApplications , saro:responsiveWebDesign , saro:networking , saro:softwareDevelopment , saro:java , saro:angular , saro:git , saro:hibernate , saro:jee , saro:mongodb , saro:orchestration , saro:bdd , saro:tester , saro:html , saro:golang , saro:spring , saro:cloud , saro:tools , saro:typescript , saro:architect , saro:azure , saro:finance , saro:oop .
+
+saro:networking  a               saro:Topic ;
+        rdfs:label               "networking" ;
+        saro:frequencyOfMention  3 .
+
+saro:tester  a                   saro:Topic ;
+        rdfs:label               "Tester" ;
+        saro:frequencyOfMention  15 .
+
+saro:css  a                      saro:Tool ;
+        rdfs:label               "css" ;
+        saro:frequencyOfMention  9 .
+
+saro:webApplications  a          saro:Topic ;
+        rdfs:label               "web applications" ;
+        saro:frequencyOfMention  3 .
+
+saro:softwareDevelopment
+        a                        saro:Topic ;
+        rdfs:label               "software development" ;
+        saro:frequencyOfMention  3 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "agile" ;
+        saro:frequencyOfMention  18 .
+
+saro:azure  a                    saro:Tool ;
+        rdfs:label               "azure" ;
+        saro:frequencyOfMention  6 .
+
+saro:golang  a                   saro:Tool ;
+        rdfs:label               "golang" ;
+        saro:frequencyOfMention  3 .
+
+saro:react  a                    saro:Tool ;
+        rdfs:label               "react" ;
+        saro:frequencyOfMention  3 .
+
+saro:git  a                      saro:Tool ;
+        rdfs:label               "GIT" ;
+        saro:frequencyOfMention  6 .
+
+saro:mongodb  a                  saro:Product ;
+        rdfs:label               "MongoDB" ;
+        saro:frequencyOfMention  3 .
+
+saro:spring  a                   saro:Tool ;
+        rdfs:label               "spring" ;
+        saro:frequencyOfMention  3 .
+
+saro:html  a                     saro:Tool ;
+        rdfs:label               "html" ;
+        saro:frequencyOfMention  9 .
+
+saro:storage  a                  saro:Topic ;
+        rdfs:label               "storage" ;
+        saro:frequencyOfMention  3 .
+
+saro:responsiveWebDesign
+        a                        saro:Topic ;
+        rdfs:label               "responsive web design" ;
+        saro:frequencyOfMention  3 .
+
+saro:developer  a                saro:Topic ;
+        rdfs:label               "developer" ;
+        saro:frequencyOfMention  27 .
+
+saro:orchestration  a            saro:Topic ;
+        rdfs:label               "orchestration" ;
+        saro:frequencyOfMention  3 .
+
+saro:bdd  a                      saro:Topic ;
+        rdfs:label               "bdd" ;
+        saro:frequencyOfMention  3 .
+
+saro:architect  a                saro:Topic ;
+        rdfs:label               "architect" ;
+        saro:frequencyOfMention  3 .
+
+saro:jee  a                      saro:Tool ;
+        rdfs:label               "JEE" ;
+        saro:frequencyOfMention  3 .
+
+saro:docker  a                   saro:Product ;
+        rdfs:label               "Docker" ;
+        saro:frequencyOfMention  3 .
+
+saro:apacheKafka  a              saro:Product ;
+        rdfs:label               "apache kafka" ;
+        saro:frequencyOfMention  3 .
+
+saro:java  a                     saro:Tool ;
+        rdfs:label               "java" ;
+        saro:frequencyOfMention  3 .
+
+saro:dotNet  a                   saro:Product ;
+        rdfs:label               ".net" ;
+        saro:frequencyOfMention  12 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "Cloud" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file13553554288367581743_tmp_01D01
+        a               saro:JobPosting ;
+        saro:describes  :stream2file13553554288367581743_tmp_01D01_JobRole .
+
+saro:finance  a                  saro:Topic ;
+        rdfs:label               "finance" ;
+        saro:frequencyOfMention  3 .
+

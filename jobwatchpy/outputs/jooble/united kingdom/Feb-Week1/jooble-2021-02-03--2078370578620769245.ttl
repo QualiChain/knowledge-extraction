@@ -1,0 +1,127 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:backend  a                  saro:Topic ;
+        rdfs:label               "backend" ;
+        saro:frequencyOfMention  6 .
+
+saro:ios  a                      saro:Product ;
+        rdfs:label               "ios" ;
+        saro:frequencyOfMention  23 .
+
+saro:rest  a                     saro:Tool ;
+        rdfs:label               "Rest" ;
+        saro:frequencyOfMention  6 .
+
+saro:automation  a               saro:Topic ;
+        rdfs:label               "automation" ;
+        saro:frequencyOfMention  3 .
+
+saro:architect  a                saro:Topic ;
+        rdfs:label               "Architect" ;
+        saro:frequencyOfMention  3 .
+
+:orbisConsultants  a  saro:Recruiter , so:Organisation .
+
+saro:java  a                     saro:Tool ;
+        rdfs:label               "java" ;
+        saro:frequencyOfMention  3 .
+
+saro:fintech  a                  saro:Product ;
+        rdfs:label               "FinTech" ;
+        saro:frequencyOfMention  15 .
+
+saro:json  a                     saro:Product ;
+        rdfs:label               "json" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  15 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  9 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  9 .
+
+saro:mvvm  a                     saro:Topic ;
+        rdfs:label               "mvvm" ;
+        saro:frequencyOfMention  3 .
+
+saro:github  a                   saro:Tool ;
+        rdfs:label               "GitHub" ;
+        saro:frequencyOfMention  3 .
+
+saro:swift  a                    saro:Tool ;
+        rdfs:label               "swift" ;
+        saro:frequencyOfMention  12 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  3 .
+
+saro:developer  a                saro:Topic ;
+        rdfs:label               "developer" ;
+        saro:frequencyOfMention  9 .
+
+saro:scrum  a                    saro:Topic ;
+        rdfs:label               "scrum" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file11477313009605486723_tmp_018C1
+        a               saro:JobPosting ;
+        saro:describes  :stream2file11477313009605486723_tmp_018C1_JobRole .
+
+saro:docker  a                   saro:Product ;
+        rdfs:label               "Docker" ;
+        saro:frequencyOfMention  3 .
+
+saro:unitTesting  a              saro:Topic ;
+        rdfs:label               "unit testing" ;
+        saro:frequencyOfMention  3 .
+
+saro:git  a                      saro:Tool ;
+        rdfs:label               "Git" ;
+        saro:frequencyOfMention  3 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "Cloud" ;
+        saro:frequencyOfMention  11 .
+
+:stream2file11477313009605486723_tmp_018C1_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Cloud Architect"@en ;
+        so:hiringOrganisation  :orbisConsultants ;
+        saro:requiresSkill     saro:docker , saro:java , saro:backend , saro:architect , saro:mvvm , saro:softwareDevelopment , saro:github , saro:tools , saro:rest , saro:fintech , saro:automation , saro:bash , saro:design , saro:python , saro:unitTesting , saro:agile , saro:git , saro:ios , saro:cloud , saro:go , saro:json , saro:developer , saro:development , saro:scrum , saro:swift .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "Agile" ;
+        saro:frequencyOfMention  12 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "Python" ;
+        saro:frequencyOfMention  3 .
+
+saro:softwareDevelopment
+        a                        saro:Topic ;
+        rdfs:label               "software development" ;
+        saro:frequencyOfMention  3 .
+
+saro:bash  a                     saro:Tool ;
+        rdfs:label               "Bash" ;
+        saro:frequencyOfMention  3 .
+

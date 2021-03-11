@@ -1,0 +1,160 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:riskManagement  a           saro:Topic ;
+        rdfs:label               "risk management" ;
+        saro:frequencyOfMention  3 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  21 .
+
+saro:objectOriented  a           saro:Topic ;
+        rdfs:label               "object oriented" ;
+        saro:frequencyOfMention  3 .
+
+saro:automation  a               saro:Topic ;
+        rdfs:label               "automation" ;
+        saro:frequencyOfMention  3 .
+
+saro:excel  a                    saro:Product ;
+        rdfs:label               "excel" ;
+        saro:frequencyOfMention  3 .
+
+:United_Kingdom  a  so:Place .
+
+saro:java  a                     saro:Tool ;
+        rdfs:label               "java" ;
+        saro:frequencyOfMention  18 .
+
+saro:softwareEngineer
+        a                        saro:Topic ;
+        rdfs:label               "software engineer" ;
+        saro:frequencyOfMention  3 .
+
+saro:r  a                        saro:Tool ;
+        rdfs:label               "R" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file6089685616553674859_tmp_00759
+        a               saro:JobPosting ;
+        saro:describes  :stream2file6089685616553674859_tmp_00759_JobRole .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  12 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  21 .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  6 .
+
+saro:confluence  a               saro:Tool ;
+        rdfs:label               "confluence" ;
+        saro:frequencyOfMention  3 .
+
+saro:kafka  a                    saro:Tool ;
+        rdfs:label               "kafka" ;
+        saro:frequencyOfMention  3 .
+
+saro:cPlusPlus  a                saro:Tool ;
+        rdfs:label               "c++" ;
+        saro:frequencyOfMention  6 .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  3 .
+
+saro:jira  a                     saro:Tool ;
+        rdfs:label               "Jira" ;
+        saro:frequencyOfMention  6 .
+
+saro:crm  a                      saro:Topic ;
+        rdfs:label               "CRM" ;
+        saro:frequencyOfMention  3 .
+
+saro:linux  a                    saro:Product ;
+        rdfs:label               "Linux" ;
+        saro:frequencyOfMention  6 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  6 .
+
+saro:scrum  a                    saro:Topic ;
+        rdfs:label               "Scrum" ;
+        saro:frequencyOfMention  3 .
+
+:electusRecruitmentSolutions
+        a       saro:Recruiter , so:Organisation .
+
+saro:ansible  a                  saro:Tool ;
+        rdfs:label               "ansible" ;
+        saro:frequencyOfMention  3 .
+
+saro:programming  a              saro:Topic ;
+        rdfs:label               "programming" ;
+        saro:frequencyOfMention  3 .
+
+saro:docker  a                   saro:Product ;
+        rdfs:label               "Docker" ;
+        saro:frequencyOfMention  6 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "cloud" ;
+        saro:frequencyOfMention  9 .
+
+saro:finance  a                  saro:Topic ;
+        rdfs:label               "finance" ;
+        saro:frequencyOfMention  11 .
+
+saro:c  a                        saro:Tool ;
+        rdfs:label               "c" ;
+        saro:frequencyOfMention  3 .
+
+saro:gaap  a                     saro:Product ;
+        rdfs:label               "gaap" ;
+        saro:frequencyOfMention  3 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "Agile" ;
+        saro:frequencyOfMention  6 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "python" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file6089685616553674859_tmp_00759_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Senior Software Engineer"@en ;
+        so:datePosted          "2021-02-11"^^xsd:date ;
+        so:hiringOrganisation  :electusRecruitmentSolutions ;
+        so:jobLocation         :United_Kingdom ;
+        saro:requiresSkill     saro:jira , saro:gaap , saro:sql , saro:kafka , saro:linux , saro:automation , saro:finance , saro:tools , saro:r , saro:dataDriven , saro:ansible , saro:cloud , saro:agile , saro:docker , saro:programming , saro:confluence , saro:reporting , saro:scrum , saro:riskManagement , saro:c , saro:cPlusPlus , saro:softwareEngineer , saro:security , saro:excel , saro:design , saro:go , saro:crm , saro:development , saro:analysis , saro:python , saro:java , saro:objectOriented .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  8 .
+
+saro:dataDriven  a               saro:Topic ;
+        rdfs:label               "data driven" ;
+        saro:frequencyOfMention  3 .
+

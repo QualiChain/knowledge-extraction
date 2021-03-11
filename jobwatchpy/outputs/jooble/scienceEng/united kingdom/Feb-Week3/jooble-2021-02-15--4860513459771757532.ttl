@@ -1,0 +1,83 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:selenium  a                 saro:Tool ;
+        rdfs:label               "Selenium" ;
+        saro:frequencyOfMention  3 .
+
+:itecco  a      saro:Recruiter , so:Organisation .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:reactNative  a              saro:Tool ;
+        rdfs:label               "ReactNative" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file15533954000364948871_tmp_009B5_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Software Engineer"@en ;
+        so:datePosted          "2021-02-14"^^xsd:date ;
+        so:hiringOrganisation  :itecco ;
+        so:jobLocation         :United_Kingdom ;
+        saro:requiresSkill     saro:fintech , saro:cloud , saro:react , saro:tools , saro:design , saro:selenium , saro:automatedDeployment , saro:automation , saro:development , saro:go , saro:frontEnd , saro:developer , saro:reactNative .
+
+saro:developer  a                saro:Topic ;
+        rdfs:label               "developer" ;
+        saro:frequencyOfMention  14 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  12 .
+
+:United_Kingdom  a  so:Place .
+
+saro:automation  a               saro:Topic ;
+        rdfs:label               "Automation" ;
+        saro:frequencyOfMention  15 .
+
+:stream2file15533954000364948871_tmp_009B5
+        a               saro:JobPosting ;
+        saro:describes  :stream2file15533954000364948871_tmp_009B5_JobRole .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  6 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "Cloud" ;
+        saro:frequencyOfMention  9 .
+
+saro:fintech  a                  saro:Product ;
+        rdfs:label               "fintech" ;
+        saro:frequencyOfMention  3 .
+
+saro:frontEnd  a                 saro:Topic ;
+        rdfs:label               "frontend" ;
+        saro:frequencyOfMention  21 .
+
+saro:react  a                    saro:Tool ;
+        rdfs:label               "react" ;
+        saro:frequencyOfMention  3 .
+
+saro:automatedDeployment
+        a                        saro:Topic ;
+        rdfs:label               "automated deployment" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  6 .
+

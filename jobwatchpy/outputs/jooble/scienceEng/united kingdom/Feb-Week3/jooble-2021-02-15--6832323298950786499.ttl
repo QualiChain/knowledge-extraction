@@ -1,0 +1,89 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:softwareEngineering
+        a                        saro:Topic ;
+        rdfs:label               "software engineering" ;
+        saro:frequencyOfMention  3 .
+
+saro:automation  a               saro:Topic ;
+        rdfs:label               "automation" ;
+        saro:frequencyOfMention  9 .
+
+saro:monitoring  a               saro:Topic ;
+        rdfs:label               "monitoring" ;
+        saro:frequencyOfMention  3 .
+
+:United_Kingdom  a  so:Place .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  3 .
+
+saro:math  a                     saro:Tool ;
+        rdfs:label               "math" ;
+        saro:frequencyOfMention  3 .
+
+:nobleFoodsLtd  a  saro:Recruiter , so:Organisation .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file2428769197897782323_tmp_0096D
+        a               saro:JobPosting ;
+        saro:describes  :stream2file2428769197897782323_tmp_0096D_JobRole .
+
+saro:scrum  a                    saro:Topic ;
+        rdfs:label               "scrum" ;
+        saro:frequencyOfMention  3 .
+
+saro:continuousIntegration
+        a                        saro:Topic ;
+        rdfs:label               "continuous integration" ;
+        saro:frequencyOfMention  3 .
+
+saro:functionalProgramming
+        a                        saro:Topic ;
+        rdfs:label               "functional programming" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file2428769197897782323_tmp_0096D_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Engineer"@en ;
+        so:datePosted          "2021-02-12"^^xsd:date ;
+        so:hiringOrganisation  :nobleFoodsLtd ;
+        so:jobLocation         :United_Kingdom ;
+        saro:requiresSkill     saro:monitoring , saro:go , saro:automation , saro:cloud , saro:continuousIntegration , saro:tools , saro:ansible , saro:c , saro:security , saro:scrum , saro:functionalProgramming , saro:math , saro:softwareEngineering , saro:agile .
+
+saro:ansible  a                  saro:Tool ;
+        rdfs:label               "ansible" ;
+        saro:frequencyOfMention  3 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "cloud" ;
+        saro:frequencyOfMention  9 .
+
+saro:c  a                        saro:Tool ;
+        rdfs:label               "c" ;
+        saro:frequencyOfMention  3 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "agile" ;
+        saro:frequencyOfMention  3 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  9 .
+

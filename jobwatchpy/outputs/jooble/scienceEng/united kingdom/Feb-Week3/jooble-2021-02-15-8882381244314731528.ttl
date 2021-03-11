@@ -1,0 +1,127 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:adobe  a                    saro:Product ;
+        rdfs:label               "adobe" ;
+        saro:frequencyOfMention  3 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  3 .
+
+saro:automation  a               saro:Topic ;
+        rdfs:label               "automation" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file4781447293134148827_tmp_00D51
+        a               saro:JobPosting ;
+        saro:describes  :stream2file4781447293134148827_tmp_00D51_JobRole .
+
+saro:statistics  a               saro:Topic ;
+        rdfs:label               "statistics" ;
+        saro:frequencyOfMention  3 .
+
+:oliverBernard  a  saro:Recruiter , so:Organisation .
+
+saro:spark  a                    saro:Product ;
+        rdfs:label               "spark" ;
+        saro:frequencyOfMention  3 .
+
+saro:analytics  a                saro:Topic ;
+        rdfs:label               "analytics" ;
+        saro:frequencyOfMention  3 .
+
+saro:hadoop  a                   saro:Product ;
+        rdfs:label               "hadoop" ;
+        saro:frequencyOfMention  3 .
+
+saro:productManagement
+        a                        saro:Topic ;
+        rdfs:label               "product management" ;
+        saro:frequencyOfMention  3 .
+
+:United_Kingdom  a  so:Place .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  3 .
+
+saro:machineLearning  a          saro:Topic ;
+        rdfs:label               "Machine Learning" ;
+        saro:frequencyOfMention  6 .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  3 .
+
+saro:dataScience  a              saro:Topic ;
+        rdfs:label               "data science" ;
+        saro:frequencyOfMention  6 .
+
+saro:nosql  a                    saro:Tool ;
+        rdfs:label               "nosql" ;
+        saro:frequencyOfMention  3 .
+
+saro:bigData  a                  saro:Topic ;
+        rdfs:label               "Big Data" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  3 .
+
+saro:dataAnalysis  a             saro:Topic ;
+        rdfs:label               "data analysis" ;
+        saro:frequencyOfMention  3 .
+
+saro:programming  a              saro:Topic ;
+        rdfs:label               "programming" ;
+        saro:frequencyOfMention  3 .
+
+saro:computerScience  a          saro:Topic ;
+        rdfs:label               "computer science" ;
+        saro:frequencyOfMention  3 .
+
+saro:iot  a                      saro:Topic ;
+        rdfs:label               "iot" ;
+        saro:frequencyOfMention  3 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "agile" ;
+        saro:frequencyOfMention  3 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "Python" ;
+        saro:frequencyOfMention  12 .
+
+saro:dataDriven  a               saro:Topic ;
+        rdfs:label               "data driven" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file4781447293134148827_tmp_00D51_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Senior Data Scientist - Ecommerce"@en ;
+        so:datePosted          "2021-02-10"^^xsd:date ;
+        so:hiringOrganisation  :oliverBernard ;
+        so:jobLocation         :United_Kingdom ;
+        saro:requiresSkill     saro:spark , saro:dataScience , saro:adobe , saro:dataAnalysis , saro:statistics , saro:reporting , saro:development , saro:computerScience , saro:dataDriven , saro:machineLearning , saro:agile , saro:programming , saro:automation , saro:hadoop , saro:bigData , saro:analytics , saro:nosql , saro:design , saro:analysis , saro:python , saro:productManagement , saro:go , saro:tools , saro:iot .
+

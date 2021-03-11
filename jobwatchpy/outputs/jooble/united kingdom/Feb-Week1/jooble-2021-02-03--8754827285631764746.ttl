@@ -1,0 +1,114 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:riskManagement  a           saro:Topic ;
+        rdfs:label               "risk management" ;
+        saro:frequencyOfMention  6 .
+
+saro:assurance  a                saro:Topic ;
+        rdfs:label               "assurance" ;
+        saro:frequencyOfMention  6 .
+
+saro:networking  a               saro:Topic ;
+        rdfs:label               "Networking" ;
+        saro:frequencyOfMention  6 .
+
+saro:oracle  a                   saro:Product ;
+        rdfs:label               "oracle" ;
+        saro:frequencyOfMention  3 .
+
+saro:vmware  a                   saro:Product ;
+        rdfs:label               "vmware" ;
+        saro:frequencyOfMention  3 .
+
+saro:analytics  a                saro:Topic ;
+        rdfs:label               "analytics" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file360438368493821909_tmp_0140D
+        a               saro:JobPosting ;
+        saro:describes  :stream2file360438368493821909_tmp_0140D_JobRole .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:database  a                 saro:Topic ;
+        rdfs:label               "database" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  6 .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  6 .
+
+saro:powershell  a               saro:Tool ;
+        rdfs:label               "powershell" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "Design" ;
+        saro:frequencyOfMention  15 .
+
+:chinaTelecomEurope  a  saro:Recruiter , so:Organisation .
+
+:stream2file360438368493821909_tmp_0140D_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Senior Information Technology Manager"@en ;
+        so:hiringOrganisation  :chinaTelecomEurope ;
+        saro:requiresSkill     saro:finance , saro:firewall , saro:powershell , saro:networking , saro:vmware , saro:development , saro:go , saro:security , saro:virtualMachine , saro:cloud , saro:tools , saro:database , saro:riskManagement , saro:storage , saro:vpn , saro:networks , saro:erp , saro:analytics , saro:reporting , saro:assurance , saro:design , saro:oracle .
+
+saro:storage  a                  saro:Topic ;
+        rdfs:label               "storage" ;
+        saro:frequencyOfMention  3 .
+
+saro:networks  a                 saro:Topic ;
+        rdfs:label               "networks" ;
+        saro:frequencyOfMention  3 .
+
+saro:erp  a                      saro:Product ;
+        rdfs:label               "erp" ;
+        saro:frequencyOfMention  3 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "cloud" ;
+        saro:frequencyOfMention  3 .
+
+saro:finance  a                  saro:Topic ;
+        rdfs:label               "finance" ;
+        saro:frequencyOfMention  3 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  22 .
+
+saro:vpn  a                      saro:Topic ;
+        rdfs:label               "vpn" ;
+        saro:frequencyOfMention  3 .
+
+saro:firewall  a                 saro:Product ;
+        rdfs:label               "firewall" ;
+        saro:frequencyOfMention  6 .
+
+saro:virtualMachine  a           saro:Topic ;
+        rdfs:label               "virtual machine" ;
+        saro:frequencyOfMention  3 .
+

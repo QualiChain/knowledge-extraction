@@ -1,0 +1,103 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:adobe  a                    saro:Product ;
+        rdfs:label               "adobe" ;
+        saro:frequencyOfMention  6 .
+
+saro:assurance  a                saro:Topic ;
+        rdfs:label               "assurance" ;
+        saro:frequencyOfMention  3 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  12 .
+
+saro:tableau  a                  saro:Product ;
+        rdfs:label               "tableau" ;
+        saro:frequencyOfMention  6 .
+
+saro:architect  a                saro:Topic ;
+        rdfs:label               "architect" ;
+        saro:frequencyOfMention  3 .
+
+saro:excel  a                    saro:Product ;
+        rdfs:label               "excel" ;
+        saro:frequencyOfMention  3 .
+
+saro:analytics  a                saro:Topic ;
+        rdfs:label               "analytics" ;
+        saro:frequencyOfMention  9 .
+
+saro:r  a                        saro:Tool ;
+        rdfs:label               "R" ;
+        saro:frequencyOfMention  6 .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "go" ;
+        saro:frequencyOfMention  9 .
+
+:stream2file10525037124482755119_tmp_01EBD_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Lead Analyst"@en ;
+        so:hiringOrganisation  :harnham ;
+        saro:requiresSkill     saro:analytics , saro:reporting , saro:architect , saro:projectManagement , saro:design , saro:analysis , saro:go , saro:development , saro:cem , saro:assurance , saro:r , saro:tableau , saro:sql , saro:python , saro:adobe , saro:analyst , saro:webAnalytics , saro:tools , saro:excel .
+
+saro:webAnalytics  a             saro:Topic ;
+        rdfs:label               "web analytics" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "Design" ;
+        saro:frequencyOfMention  6 .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file10525037124482755119_tmp_01EBD
+        a               saro:JobPosting ;
+        saro:describes  :stream2file10525037124482755119_tmp_01EBD_JobRole .
+
+saro:projectManagement
+        a                        saro:Topic ;
+        rdfs:label               "project management" ;
+        saro:frequencyOfMention  3 .
+
+:harnham  a     saro:Recruiter , so:Organisation .
+
+saro:analyst  a                  saro:Topic ;
+        rdfs:label               "analyst" ;
+        saro:frequencyOfMention  14 .
+
+saro:cem  a                      saro:Product ;
+        rdfs:label               "CEM" ;
+        saro:frequencyOfMention  3 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "Python" ;
+        saro:frequencyOfMention  6 .
+

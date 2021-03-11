@@ -1,0 +1,118 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:riskManagement  a           saro:Topic ;
+        rdfs:label               "risk management" ;
+        saro:frequencyOfMention  3 .
+
+saro:assurance  a                saro:Topic ;
+        rdfs:label               "assurance" ;
+        saro:frequencyOfMention  9 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  6 .
+
+saro:oracle  a                   saro:Product ;
+        rdfs:label               "oracle" ;
+        saro:frequencyOfMention  6 .
+
+saro:excel  a                    saro:Product ;
+        rdfs:label               "excel" ;
+        saro:frequencyOfMention  3 .
+
+saro:analytics  a                saro:Topic ;
+        rdfs:label               "analytics" ;
+        saro:frequencyOfMention  3 .
+
+saro:redhat  a                   saro:Product ;
+        rdfs:label               "RedHat" ;
+        saro:frequencyOfMention  3 .
+
+:United_Kingdom  a  so:Place .
+
+saro:database  a                 saro:Topic ;
+        rdfs:label               "database" ;
+        saro:frequencyOfMention  3 .
+
+:espireInfolabs  a  saro:Recruiter , so:Organisation .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  13 .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file9117451867993097698_tmp_00DAD
+        a               saro:JobPosting ;
+        saro:describes  :stream2file9117451867993097698_tmp_00DAD_JobRole .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  6 .
+
+saro:linux  a                    saro:Product ;
+        rdfs:label               "Linux" ;
+        saro:frequencyOfMention  3 .
+
+saro:developer  a                saro:Topic ;
+        rdfs:label               "developer" ;
+        saro:frequencyOfMention  2 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  9 .
+
+saro:scrum  a                    saro:Topic ;
+        rdfs:label               "scrum" ;
+        saro:frequencyOfMention  3 .
+
+saro:troubleshooting  a          saro:Topic ;
+        rdfs:label               "troubleshooting" ;
+        saro:frequencyOfMention  3 .
+
+saro:shellScripting  a           saro:Topic ;
+        rdfs:label               "shell scripting" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file9117451867993097698_tmp_00DAD_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "JDA Dispatcher Senior Developer/Lead"@en ;
+        so:datePosted          "2021-02-11"^^xsd:date ;
+        so:hiringOrganisation  :espireInfolabs ;
+        so:jobLocation         :United_Kingdom ;
+        saro:requiresSkill     saro:assurance , saro:development , saro:developer , saro:agile , saro:excel , saro:analytics , saro:troubleshooting , saro:linux , saro:analysis , saro:go , saro:sql , saro:oracle , saro:redhat , saro:database , saro:reporting , saro:cloud , saro:design , saro:adobe , saro:security , saro:riskManagement , saro:shellScripting , saro:scrum .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "Cloud" ;
+        saro:frequencyOfMention  15 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "Agile" ;
+        saro:frequencyOfMention  3 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  12 .
+
+saro:adobe  a                    saro:Product ;
+        rdfs:label               "adobe" ;
+        saro:frequencyOfMention  3 .
+

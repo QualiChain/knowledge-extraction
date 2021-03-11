@@ -1,0 +1,82 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:java  a                     saro:Tool ;
+        rdfs:label               "java" ;
+        saro:frequencyOfMention  3 .
+
+saro:visio  a                    saro:Tool ;
+        rdfs:label               "visio" ;
+        saro:frequencyOfMention  3 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file1261514762337627936_tmp_01AA9_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "System Engineer"@en ;
+        so:hiringOrganisation  :salt ;
+        saro:requiresSkill     saro:visio , saro:analysis , saro:tools , saro:spring , saro:design , saro:java , saro:development , saro:go , saro:simulation , saro:excel , saro:developer , saro:dotNet , saro:cloud , saro:matlab .
+
+:stream2file1261514762337627936_tmp_01AA9
+        a               saro:JobPosting ;
+        saro:describes  :stream2file1261514762337627936_tmp_01AA9_JobRole .
+
+saro:matlab  a                   saro:Tool ;
+        rdfs:label               "matlab" ;
+        saro:frequencyOfMention  3 .
+
+saro:spring  a                   saro:Tool ;
+        rdfs:label               "spring" ;
+        saro:frequencyOfMention  3 .
+
+saro:simulation  a               saro:Topic ;
+        rdfs:label               "simulation" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  9 .
+
+saro:excel  a                    saro:Product ;
+        rdfs:label               "excel" ;
+        saro:frequencyOfMention  3 .
+
+saro:developer  a                saro:Topic ;
+        rdfs:label               "developer" ;
+        saro:frequencyOfMention  6 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  6 .
+
+saro:dotNet  a                   saro:Product ;
+        rdfs:label               ".net" ;
+        saro:frequencyOfMention  3 .
+
+:salt   a       saro:Recruiter , so:Organisation .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  9 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "cloud" ;
+        saro:frequencyOfMention  21 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  6 .
+

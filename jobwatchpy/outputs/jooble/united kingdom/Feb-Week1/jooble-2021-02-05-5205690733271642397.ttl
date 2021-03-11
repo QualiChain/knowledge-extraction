@@ -1,0 +1,78 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  16 .
+
+:dvfRecruitment  a  saro:Recruiter , so:Organisation .
+
+:stream2file185594723415373257_tmp_01E05
+        a               saro:JobPosting ;
+        saro:describes  :stream2file185594723415373257_tmp_01E05_JobRole .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "Analysis" ;
+        saro:frequencyOfMention  3 .
+
+saro:programming  a              saro:Topic ;
+        rdfs:label               "programming" ;
+        saro:frequencyOfMention  4 .
+
+saro:arm  a                      saro:Tool ;
+        rdfs:label               "arm" ;
+        saro:frequencyOfMention  3 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "Python" ;
+        saro:frequencyOfMention  7 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:database  a                 saro:Topic ;
+        rdfs:label               "database" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file185594723415373257_tmp_01E05_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Exposure Analyst"@en ;
+        so:hiringOrganisation  :dvfRecruitment ;
+        saro:requiresSkill     saro:crm , saro:analysis , saro:r , saro:database , saro:programming , saro:tools , saro:design , saro:vba , saro:sql , saro:go , saro:arm , saro:python , saro:analyst .
+
+saro:crm  a                      saro:Topic ;
+        rdfs:label               "CRM" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  6 .
+
+saro:analyst  a                  saro:Topic ;
+        rdfs:label               "analyst" ;
+        saro:frequencyOfMention  15 .
+
+saro:vba  a                      saro:Tool ;
+        rdfs:label               "VBA" ;
+        saro:frequencyOfMention  4 .
+
+saro:r  a                        saro:Tool ;
+        rdfs:label               "r" ;
+        saro:frequencyOfMention  4 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  3 .
+

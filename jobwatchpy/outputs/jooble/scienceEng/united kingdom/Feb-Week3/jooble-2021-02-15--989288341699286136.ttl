@@ -1,0 +1,134 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:softwareEngineering
+        a                        saro:Topic ;
+        rdfs:label               "software engineering" ;
+        saro:frequencyOfMention  3 .
+
+saro:rest  a                     saro:Tool ;
+        rdfs:label               "rest" ;
+        saro:frequencyOfMention  3 .
+
+saro:react  a                    saro:Tool ;
+        rdfs:label               "react" ;
+        saro:frequencyOfMention  9 .
+
+saro:algorithmicTrading
+        a                        saro:Topic ;
+        rdfs:label               "algorithmic trading" ;
+        saro:frequencyOfMention  3 .
+
+:United_Kingdom  a  so:Place .
+
+saro:softwareEngineer
+        a                        saro:Topic ;
+        rdfs:label               "software engineer" ;
+        saro:frequencyOfMention  5 .
+
+saro:sqlAzure  a                 saro:Product ;
+        rdfs:label               "sql azure" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  15 .
+
+saro:database  a                 saro:Topic ;
+        rdfs:label               "database" ;
+        saro:frequencyOfMention  3 .
+
+saro:machineLearning  a          saro:Topic ;
+        rdfs:label               "Machine Learning" ;
+        saro:frequencyOfMention  13 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file8835478055489235951_tmp_00D95_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Senior Lead Software Engineer"@en ;
+        so:datePosted          "2021-02-12"^^xsd:date ;
+        so:hiringOrganisation  :bigCloud ;
+        so:jobLocation         :United_Kingdom ;
+        saro:requiresSkill     saro:rubyOnRails , saro:c , saro:react , saro:go , saro:softwareEngineer , saro:development , saro:python , saro:computerScience , saro:database , saro:postgresql , saro:security , saro:softwareEngineering , saro:javascript , saro:fullStack , saro:rest , saro:softwareDevelopment , saro:sqlAzure , saro:cPlusPlus , saro:docker , saro:directx , saro:algorithmicTrading , saro:cloud , saro:developer , saro:machineLearning , saro:design .
+
+:bigCloud  a    saro:Recruiter , so:Organisation .
+
+saro:cPlusPlus  a                saro:Tool ;
+        rdfs:label               "c++" ;
+        saro:frequencyOfMention  6 .
+
+saro:rubyOnRails  a              saro:Tool ;
+        rdfs:label               "Ruby on Rails" ;
+        saro:frequencyOfMention  9 .
+
+:stream2file8835478055489235951_tmp_00D95
+        a               saro:JobPosting ;
+        saro:describes  :stream2file8835478055489235951_tmp_00D95_JobRole .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  6 .
+
+saro:developer  a                saro:Topic ;
+        rdfs:label               "developer" ;
+        saro:frequencyOfMention  3 .
+
+saro:javascript  a               saro:Tool ;
+        rdfs:label               "JavaScript" ;
+        saro:frequencyOfMention  3 .
+
+saro:directx  a                  saro:Tool ;
+        rdfs:label               "directx" ;
+        saro:frequencyOfMention  3 .
+
+saro:docker  a                   saro:Product ;
+        rdfs:label               "Docker" ;
+        saro:frequencyOfMention  3 .
+
+saro:fullStack  a                saro:Topic ;
+        rdfs:label               "full stack" ;
+        saro:frequencyOfMention  6 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "Cloud" ;
+        saro:frequencyOfMention  6 .
+
+saro:computerScience  a          saro:Topic ;
+        rdfs:label               "computer science" ;
+        saro:frequencyOfMention  3 .
+
+saro:c  a                        saro:Tool ;
+        rdfs:label               "c" ;
+        saro:frequencyOfMention  6 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "Python" ;
+        saro:frequencyOfMention  3 .
+
+saro:postgresql  a               saro:Tool ;
+        rdfs:label               "postgresql" ;
+        saro:frequencyOfMention  3 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  3 .
+
+saro:softwareDevelopment
+        a                        saro:Topic ;
+        rdfs:label               "software development" ;
+        saro:frequencyOfMention  3 .
+

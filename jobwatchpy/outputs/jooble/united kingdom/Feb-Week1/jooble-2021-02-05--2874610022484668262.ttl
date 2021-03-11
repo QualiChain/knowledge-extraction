@@ -1,0 +1,64 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:assurance  a                saro:Topic ;
+        rdfs:label               "assurance" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file11017180506248546634_tmp_01E9D_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Commercial Insurance Account Handler"@en ;
+        so:hiringOrganisation  :mattBurtonAssociates ;
+        saro:requiresSkill     saro:algorithmicTrading , saro:unix , saro:excel , saro:development , saro:analyst , saro:agile , saro:assurance , saro:go , saro:linux .
+
+saro:excel  a                    saro:Product ;
+        rdfs:label               "excel" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  10 .
+
+:stream2file11017180506248546634_tmp_01E9D
+        a               saro:JobPosting ;
+        saro:describes  :stream2file11017180506248546634_tmp_01E9D_JobRole .
+
+:mattBurtonAssociates
+        a       saro:Recruiter , so:Organisation .
+
+saro:algorithmicTrading
+        a                        saro:Topic ;
+        rdfs:label               "Algorithmic Trading" ;
+        saro:frequencyOfMention  6 .
+
+saro:linux  a                    saro:Product ;
+        rdfs:label               "Linux" ;
+        saro:frequencyOfMention  6 .
+
+saro:analyst  a                  saro:Topic ;
+        rdfs:label               "analyst" ;
+        saro:frequencyOfMention  36 .
+
+saro:unix  a                     saro:Product ;
+        rdfs:label               "unix" ;
+        saro:frequencyOfMention  6 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "Agile" ;
+        saro:frequencyOfMention  3 .
+

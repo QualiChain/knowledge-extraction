@@ -1,0 +1,195 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+:stream2file18201950614906199394_tmp_01545
+        a               saro:JobPosting ;
+        saro:describes  :stream2file18201950614906199394_tmp_01545_JobRole .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:postgresql  a               saro:Tool ;
+        rdfs:label               "postgresql" ;
+        saro:frequencyOfMention  3 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  3 .
+
+saro:pega  a                     saro:Product ;
+        rdfs:label               "PEGA" ;
+        saro:frequencyOfMention  9 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  3 .
+
+saro:spark  a                    saro:Product ;
+        rdfs:label               "spark" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file18201950614906199394_tmp_01545_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Data Engineer"@en ;
+        so:hiringOrganisation  :ing ;
+        saro:requiresSkill     saro:azure , saro:apacheSpark , saro:dataDriven , saro:cassandra , saro:machineLearning , saro:etl , saro:go , saro:storage , saro:development , saro:sqlServer , saro:apache , saro:nosql , saro:spark , saro:programming , saro:bash , saro:security , saro:mysql , saro:apacheKafka , saro:analysis , saro:kafka , saro:analyst , saro:dotNet , saro:cPlusPlus , saro:java , saro:pega , saro:crm , saro:automation , saro:scripting , saro:postgresql , saro:python , saro:agile , saro:tools , saro:linux , saro:s3 , saro:design , saro:continuousIntegration , saro:bigData , saro:analytics , saro:sql , saro:docker , saro:cloud , saro:c .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "Design" ;
+        saro:frequencyOfMention  6 .
+
+saro:s3  a                       saro:Tool ;
+        rdfs:label               "S3" ;
+        saro:frequencyOfMention  6 .
+
+saro:continuousIntegration
+        a                        saro:Topic ;
+        rdfs:label               "continuous integration" ;
+        saro:frequencyOfMention  3 .
+
+saro:cPlusPlus  a                saro:Tool ;
+        rdfs:label               "c++" ;
+        saro:frequencyOfMention  3 .
+
+saro:dataDriven  a               saro:Topic ;
+        rdfs:label               "data driven" ;
+        saro:frequencyOfMention  4 .
+
+saro:analytics  a                saro:Topic ;
+        rdfs:label               "analytics" ;
+        saro:frequencyOfMention  3 .
+
+saro:scripting  a                saro:Tool ;
+        rdfs:label               "scripting" ;
+        saro:frequencyOfMention  3 .
+
+saro:kafka  a                    saro:Tool ;
+        rdfs:label               "kafka" ;
+        saro:frequencyOfMention  3 .
+
+saro:machineLearning  a          saro:Topic ;
+        rdfs:label               "machine learning" ;
+        saro:frequencyOfMention  6 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "agile" ;
+        saro:frequencyOfMention  3 .
+
+saro:azure  a                    saro:Tool ;
+        rdfs:label               "azure" ;
+        saro:frequencyOfMention  9 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "Python" ;
+        saro:frequencyOfMention  9 .
+
+saro:cassandra  a                saro:Product ;
+        rdfs:label               "cassandra" ;
+        saro:frequencyOfMention  6 .
+
+saro:sqlServer  a                saro:Product ;
+        rdfs:label               "sql server" ;
+        saro:frequencyOfMention  3 .
+
+saro:storage  a                  saro:Topic ;
+        rdfs:label               "storage" ;
+        saro:frequencyOfMention  6 .
+
+saro:apacheSpark  a              saro:Product ;
+        rdfs:label               "Apache Spark" ;
+        saro:frequencyOfMention  3 .
+
+:ing    a       saro:Recruiter , so:Organisation .
+
+saro:bigData  a                  saro:Topic ;
+        rdfs:label               "Big Data" ;
+        saro:frequencyOfMention  4 .
+
+saro:linux  a                    saro:Product ;
+        rdfs:label               "Linux" ;
+        saro:frequencyOfMention  3 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  3 .
+
+saro:mysql  a                    saro:Tool ;
+        rdfs:label               "mysql" ;
+        saro:frequencyOfMention  3 .
+
+saro:crm  a                      saro:Topic ;
+        rdfs:label               "CRM" ;
+        saro:frequencyOfMention  3 .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  18 .
+
+saro:docker  a                   saro:Product ;
+        rdfs:label               "Docker" ;
+        saro:frequencyOfMention  6 .
+
+saro:apacheKafka  a              saro:Product ;
+        rdfs:label               "apache kafka" ;
+        saro:frequencyOfMention  3 .
+
+saro:java  a                     saro:Tool ;
+        rdfs:label               "java" ;
+        saro:frequencyOfMention  3 .
+
+saro:bash  a                     saro:Tool ;
+        rdfs:label               "Bash" ;
+        saro:frequencyOfMention  3 .
+
+saro:c  a                        saro:Tool ;
+        rdfs:label               "c" ;
+        saro:frequencyOfMention  3 .
+
+saro:dotNet  a                   saro:Product ;
+        rdfs:label               ".net" ;
+        saro:frequencyOfMention  3 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "cloud" ;
+        saro:frequencyOfMention  6 .
+
+saro:automation  a               saro:Topic ;
+        rdfs:label               "Automation" ;
+        saro:frequencyOfMention  6 .
+
+saro:nosql  a                    saro:Tool ;
+        rdfs:label               "nosql" ;
+        saro:frequencyOfMention  6 .
+
+saro:programming  a              saro:Topic ;
+        rdfs:label               "programming" ;
+        saro:frequencyOfMention  9 .
+
+saro:analyst  a                  saro:Topic ;
+        rdfs:label               "analyst" ;
+        saro:frequencyOfMention  3 .
+
+saro:etl  a                      saro:Tool ;
+        rdfs:label               "etl" ;
+        saro:frequencyOfMention  7 .
+
+saro:apache  a                   saro:Product ;
+        rdfs:label               "Apache" ;
+        saro:frequencyOfMention  24 .
+

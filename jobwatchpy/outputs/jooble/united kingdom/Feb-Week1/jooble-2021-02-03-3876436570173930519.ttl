@@ -1,0 +1,99 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:firewall  a                 saro:Product ;
+        rdfs:label               "firewall" ;
+        saro:frequencyOfMention  3 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  4 .
+
+saro:networking  a               saro:Topic ;
+        rdfs:label               "Networking" ;
+        saro:frequencyOfMention  3 .
+
+saro:voip  a                     saro:Topic ;
+        rdfs:label               "voip" ;
+        saro:frequencyOfMention  3 .
+
+saro:vmware  a                   saro:Product ;
+        rdfs:label               "vmware" ;
+        saro:frequencyOfMention  3 .
+
+saro:dataManagement  a           saro:Topic ;
+        rdfs:label               "data management" ;
+        saro:frequencyOfMention  3 .
+
+saro:tcp  a                      saro:Tool ;
+        rdfs:label               "TCP" ;
+        saro:frequencyOfMention  3 .
+
+:vertexSolutionsInternationalLtd
+        a       saro:Recruiter , so:Organisation .
+
+saro:azure  a                    saro:Tool ;
+        rdfs:label               "azure" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file17481059780303617679_tmp_01B01_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Information Technology Business System Analyst"@en ;
+        so:hiringOrganisation  :vertexSolutionsInternationalLtd ;
+        saro:requiresSkill     saro:activeDirectory , saro:c , saro:analysis , saro:analyst , saro:go , saro:vsphere , saro:security , saro:networking , saro:storage , saro:cloud , saro:azure , saro:voip , saro:android , saro:vmware , saro:tcp , saro:design , saro:dataManagement , saro:firewall .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  6 .
+
+saro:android  a                  saro:Product ;
+        rdfs:label               "Android" ;
+        saro:frequencyOfMention  3 .
+
+saro:storage  a                  saro:Topic ;
+        rdfs:label               "storage" ;
+        saro:frequencyOfMention  10 .
+
+saro:activeDirectory  a          saro:Tool ;
+        rdfs:label               "Active Directory" ;
+        saro:frequencyOfMention  6 .
+
+saro:vsphere  a                  saro:Product ;
+        rdfs:label               "vsphere" ;
+        saro:frequencyOfMention  3 .
+
+saro:analyst  a                  saro:Topic ;
+        rdfs:label               "analyst" ;
+        saro:frequencyOfMention  9 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "Cloud" ;
+        saro:frequencyOfMention  3 .
+
+saro:c  a                        saro:Tool ;
+        rdfs:label               "c" ;
+        saro:frequencyOfMention  3 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file17481059780303617679_tmp_01B01
+        a               saro:JobPosting ;
+        saro:describes  :stream2file17481059780303617679_tmp_01B01_JobRole .
+

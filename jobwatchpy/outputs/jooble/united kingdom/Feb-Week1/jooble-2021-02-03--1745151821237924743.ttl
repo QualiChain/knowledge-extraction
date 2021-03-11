@@ -1,0 +1,68 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:vpn  a                      saro:Topic ;
+        rdfs:label               "vpn" ;
+        saro:frequencyOfMention  3 .
+
+saro:computerScience  a          saro:Topic ;
+        rdfs:label               "computer science" ;
+        saro:frequencyOfMention  3 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  55 .
+
+saro:troubleshooting  a          saro:Topic ;
+        rdfs:label               "troubleshooting" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file17276596115941853275_tmp_013F1_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Information Technology Audit Manager"@en ;
+        so:hiringOrganisation  :devonshireHayesRecruitment ;
+        saro:requiresSkill     saro:design , saro:security , saro:go , saro:storage , saro:computerScience , saro:projectManagement , saro:vpn , saro:cloud , saro:development , saro:troubleshooting .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:projectManagement
+        a                        saro:Topic ;
+        rdfs:label               "project management" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file17276596115941853275_tmp_013F1
+        a               saro:JobPosting ;
+        saro:describes  :stream2file17276596115941853275_tmp_013F1_JobRole .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  3 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "Cloud" ;
+        saro:frequencyOfMention  3 .
+
+:devonshireHayesRecruitment
+        a       saro:Recruiter , so:Organisation .
+
+saro:storage  a                  saro:Topic ;
+        rdfs:label               "Storage" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  9 .
+

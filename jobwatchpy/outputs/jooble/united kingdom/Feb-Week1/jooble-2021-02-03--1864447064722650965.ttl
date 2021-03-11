@@ -1,0 +1,115 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:softwareEngineering
+        a                        saro:Topic ;
+        rdfs:label               "software engineering" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file2618374709477444730_tmp_0161D_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Chief Technology Officer"@en ;
+        so:hiringOrganisation  :fourthline ;
+        saro:requiresSkill     saro:php , saro:go , saro:azure , saro:cPlusPlus , saro:docker , saro:couchbase , saro:reactNative , saro:cloud , saro:kafka , saro:development , saro:crm , saro:react , saro:design , saro:nginx , saro:mvc , saro:r , saro:programming , saro:rabbitmq , saro:agile , saro:softwareEngineering , saro:node.js , saro:angular .
+
+saro:nginx  a                    saro:Tool ;
+        rdfs:label               "Nginx" ;
+        saro:frequencyOfMention  3 .
+
+saro:react  a                    saro:Tool ;
+        rdfs:label               "react" ;
+        saro:frequencyOfMention  6 .
+
+saro:php  a                      saro:Tool ;
+        rdfs:label               "PHP" ;
+        saro:frequencyOfMention  3 .
+
+saro:azure  a                    saro:Tool ;
+        rdfs:label               "azure" ;
+        saro:frequencyOfMention  3 .
+
+saro:reactNative  a              saro:Tool ;
+        rdfs:label               "react native" ;
+        saro:frequencyOfMention  3 .
+
+saro:node.js  a                  saro:Tool ;
+        rdfs:label               "node.js" ;
+        saro:frequencyOfMention  3 .
+
+saro:r  a                        saro:Tool ;
+        rdfs:label               "R" ;
+        saro:frequencyOfMention  3 .
+
+saro:mvc  a                      saro:Topic ;
+        rdfs:label               "MVC" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  27 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+:fourthline  a  saro:Recruiter , so:Organisation .
+
+saro:couchbase  a                saro:Product ;
+        rdfs:label               "couchbase" ;
+        saro:frequencyOfMention  3 .
+
+saro:kafka  a                    saro:Tool ;
+        rdfs:label               "kafka" ;
+        saro:frequencyOfMention  3 .
+
+saro:cPlusPlus  a                saro:Tool ;
+        rdfs:label               "c++" ;
+        saro:frequencyOfMention  3 .
+
+saro:rabbitmq  a                 saro:Tool ;
+        rdfs:label               "RabbitMQ" ;
+        saro:frequencyOfMention  3 .
+
+saro:angular  a                  saro:Product ;
+        rdfs:label               "angular" ;
+        saro:frequencyOfMention  6 .
+
+saro:crm  a                      saro:Topic ;
+        rdfs:label               "crm" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  3 .
+
+saro:programming  a              saro:Topic ;
+        rdfs:label               "programming" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file2618374709477444730_tmp_0161D
+        a               saro:JobPosting ;
+        saro:describes  :stream2file2618374709477444730_tmp_0161D_JobRole .
+
+saro:docker  a                   saro:Product ;
+        rdfs:label               "Docker" ;
+        saro:frequencyOfMention  3 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "Cloud" ;
+        saro:frequencyOfMention  3 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "Agile" ;
+        saro:frequencyOfMention  3 .
+

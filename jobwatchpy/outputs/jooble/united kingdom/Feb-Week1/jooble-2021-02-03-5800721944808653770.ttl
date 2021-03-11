@@ -1,0 +1,96 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:softwareEngineering
+        a                        saro:Topic ;
+        rdfs:label               "software engineering" ;
+        saro:frequencyOfMention  3 .
+
+saro:architect  a                saro:Topic ;
+        rdfs:label               "Architect" ;
+        saro:frequencyOfMention  7 .
+
+saro:monitoring  a               saro:Topic ;
+        rdfs:label               "monitoring" ;
+        saro:frequencyOfMention  3 .
+
+saro:apache  a                   saro:Product ;
+        rdfs:label               "Apache" ;
+        saro:frequencyOfMention  3 .
+
+saro:azure  a                    saro:Tool ;
+        rdfs:label               "azure" ;
+        saro:frequencyOfMention  6 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  6 .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:less  a                     saro:Topic ;
+        rdfs:label               "less" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file7960268158719680323_tmp_014CD_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Data Architect"@en ;
+        so:hiringOrganisation  :clickRecruitment ;
+        saro:requiresSkill     saro:orchestration , saro:azure , saro:reporting , saro:softwareEngineering , saro:sql , saro:cloud , saro:less , saro:architect , saro:design , saro:apache , saro:businessIntelligence , saro:tools , saro:storage , saro:monitoring , saro:dataDriven , saro:python , saro:go .
+
+:stream2file7960268158719680323_tmp_014CD
+        a               saro:JobPosting ;
+        saro:describes  :stream2file7960268158719680323_tmp_014CD_JobRole .
+
+saro:orchestration  a            saro:Topic ;
+        rdfs:label               "orchestration" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "Design" ;
+        saro:frequencyOfMention  18 .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  3 .
+
+saro:storage  a                  saro:Topic ;
+        rdfs:label               "storage" ;
+        saro:frequencyOfMention  6 .
+
+saro:businessIntelligence
+        a                        saro:Topic ;
+        rdfs:label               "business intelligence" ;
+        saro:frequencyOfMention  3 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "cloud" ;
+        saro:frequencyOfMention  12 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "python" ;
+        saro:frequencyOfMention  3 .
+
+:clickRecruitment  a  saro:Recruiter , so:Organisation .
+
+saro:dataDriven  a               saro:Topic ;
+        rdfs:label               "data driven" ;
+        saro:frequencyOfMention  3 .
+

@@ -1,0 +1,59 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:hardware  a                 saro:Topic ;
+        rdfs:label               "hardware" ;
+        saro:frequencyOfMention  9 .
+
+:stream2file4699778583012225360_tmp_00689
+        a               saro:JobPosting ;
+        saro:describes  :stream2file4699778583012225360_tmp_00689_JobRole .
+
+:stream2file4699778583012225360_tmp_00689_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Experienced vet surgeon"@en ;
+        so:datePosted          "2021-02-14"^^xsd:date ;
+        so:hiringOrganisation  :zamanRecruitment ;
+        so:jobLocation         :United_Kingdom ;
+        saro:requiresSkill     saro:ultrasound , saro:hardware , saro:go , saro:systemAdministration , saro:design , saro:database , saro:security .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  12 .
+
+saro:systemAdministration
+        a                        saro:Topic ;
+        rdfs:label               "system administration" ;
+        saro:frequencyOfMention  3 .
+
+:zamanRecruitment  a  saro:Recruiter , so:Organisation .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  2 .
+
+saro:database  a                 saro:Topic ;
+        rdfs:label               "database" ;
+        saro:frequencyOfMention  3 .
+
+:United_Kingdom  a  so:Place .
+
+saro:ultrasound  a               saro:Product ;
+        rdfs:label               "ultrasound" ;
+        saro:frequencyOfMention  6 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "Design" ;
+        saro:frequencyOfMention  3 .
+

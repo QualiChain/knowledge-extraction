@@ -1,0 +1,67 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:hardware  a                 saro:Topic ;
+        rdfs:label               "hardware" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file2154911664884461379_tmp_01BAD
+        a               saro:JobPosting ;
+        saro:describes  :stream2file2154911664884461379_tmp_01BAD_JobRole .
+
+saro:cad  a                      saro:Topic ;
+        rdfs:label               "cad" ;
+        saro:frequencyOfMention  3 .
+
+saro:programming  a              saro:Topic ;
+        rdfs:label               "programming" ;
+        saro:frequencyOfMention  6 .
+
+saro:debugging  a                saro:Topic ;
+        rdfs:label               "debugging" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file2154911664884461379_tmp_01BAD_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Computer Numerical Control Programmer"@en ;
+        so:hiringOrganisation  :manpower ;
+        saro:requiresSkill     saro:debugging , saro:simulation , saro:hardware , saro:softwareEngineering , saro:go , saro:programming , saro:design , saro:fpga , saro:cad , saro:development .
+
+saro:simulation  a               saro:Topic ;
+        rdfs:label               "simulation" ;
+        saro:frequencyOfMention  3 .
+
+:manpower  a    saro:Recruiter , so:Organisation .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  19 .
+
+saro:fpga  a                     saro:Topic ;
+        rdfs:label               "FPGA" ;
+        saro:frequencyOfMention  9 .
+
+saro:softwareEngineering
+        a                        saro:Topic ;
+        rdfs:label               "software engineering" ;
+        saro:frequencyOfMention  9 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  6 .
+

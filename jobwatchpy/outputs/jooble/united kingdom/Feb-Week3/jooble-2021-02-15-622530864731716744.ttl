@@ -1,0 +1,115 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:softwareEngineering
+        a                        saro:Topic ;
+        rdfs:label               "software engineering" ;
+        saro:frequencyOfMention  3 .
+
+saro:networking  a               saro:Topic ;
+        rdfs:label               "networking" ;
+        saro:frequencyOfMention  3 .
+
+saro:rest  a                     saro:Tool ;
+        rdfs:label               "REST" ;
+        saro:frequencyOfMention  6 .
+
+saro:excel  a                    saro:Product ;
+        rdfs:label               "excel" ;
+        saro:frequencyOfMention  3 .
+
+saro:cisco  a                    saro:Product ;
+        rdfs:label               "cisco" ;
+        saro:frequencyOfMention  3 .
+
+:United_Kingdom  a  so:Place .
+
+saro:php  a                      saro:Tool ;
+        rdfs:label               "PHP" ;
+        saro:frequencyOfMention  3 .
+
+saro:laravel  a                  saro:Product ;
+        rdfs:label               "Laravel" ;
+        saro:frequencyOfMention  3 .
+
+saro:softwareEngineer
+        a                        saro:Topic ;
+        rdfs:label               "software engineer" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  15 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:less  a                     saro:Topic ;
+        rdfs:label               "less" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file5489616375629644083_tmp_00699_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "VP Global Editorial Operations"@en ;
+        so:datePosted          "2021-02-13"^^xsd:date ;
+        so:hiringOrganisation  :storyterrace ;
+        so:jobLocation         :United_Kingdom ;
+        saro:requiresSkill     saro:docker , saro:customerSupport , saro:softwareEngineer , saro:php , saro:rest , saro:softwareEngineering , saro:c , saro:continuousIntegration , saro:scriptingLanguage , saro:webApplications , saro:dataDriven , saro:less , saro:devein-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:softwareEngineering
+        a                        saro:Topic ;
+        rdfs:label               "software engineering" ;
+        saro:frequencyOfMention  3 .
+
+saro:networking  a               saro:Topic ;
+        rdfs:label               "networking" ;
+        saro:frequencyOfMention  3 .
+
+saro:rest  a                     saro:Tool ;
+        rdfs:label               "REST" ;
+        saro:frequencyOfMention  6 .
+
+saro:excel  a                    saro:Product ;
+        rdfs:label               "excel" ;
+        saro:frequencyOfMention  3 .
+
+saro:cisco  a                    saro:Product ;
+        rdfs:label               "cisco" ;
+        saro:frequencyOfMention  3 .
+
+:United_Kingdom  a  so:Place .
+
+saro:php  a                      saro:Tool ;
+        rdfs:label               "PHP" ;
+        saro:frequencyOfMention  3 .
+
+saro:laravel  a                  saro:Product ;
+        rdfs:label               "Laravel" ;
+        saro:frequencyOfMention  3 .
+
+saro:softwareEngineer
+        a      

@@ -1,0 +1,117 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:softwareEngineering
+        a                        saro:Topic ;
+        rdfs:label               "software engineering" ;
+        saro:frequencyOfMention  6 .
+
+saro:assurance  a                saro:Topic ;
+        rdfs:label               "assurance" ;
+        saro:frequencyOfMention  3 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  6 .
+
+saro:scripting  a                saro:Tool ;
+        rdfs:label               "scripting" ;
+        saro:frequencyOfMention  3 .
+
+saro:automation  a               saro:Topic ;
+        rdfs:label               "Automation" ;
+        saro:frequencyOfMention  3 .
+
+:techData  a    saro:Recruiter , so:Organisation .
+
+saro:redhat  a                   saro:Product ;
+        rdfs:label               "RedHat" ;
+        saro:frequencyOfMention  12 .
+
+saro:r  a                        saro:Tool ;
+        rdfs:label               "R" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  19 .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  9 .
+
+saro:bigData  a                  saro:Topic ;
+        rdfs:label               "big data" ;
+        saro:frequencyOfMention  15 .
+
+saro:administrator  a            saro:Topic ;
+        rdfs:label               "administrator" ;
+        saro:frequencyOfMention  10 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "Design" ;
+        saro:frequencyOfMention  9 .
+
+saro:linux  a                    saro:Product ;
+        rdfs:label               "Linux" ;
+        saro:frequencyOfMention  25 .
+
+saro:projectManagement
+        a                        saro:Topic ;
+        rdfs:label               "project management" ;
+        saro:frequencyOfMention  3 .
+
+saro:programming  a              saro:Topic ;
+        rdfs:label               "programming" ;
+        saro:frequencyOfMention  6 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "cloud" ;
+        saro:frequencyOfMention  21 .
+
+:stream2file6128884712458316938_tmp_01BD9_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "European Marketing Campaign Programme Manager"@en ;
+        so:hiringOrganisation  :techData ;
+        saro:requiresSkill     saro:go , saro:development , saro:reporting , saro:automation , saro:networking , saro:finance , saro:programming , saro:design , saro:bigData , saro:security , saro:administrator , saro:redhat , saro:r , saro:scripting , saro:python , saro:analysis , saro:linux , saro:cloud , saro:systemAdministration , saro:projectManagement , saro:softwareEngineering , saro:assurance .
+
+saro:finance  a                  saro:Topic ;
+        rdfs:label               "finance" ;
+        saro:frequencyOfMention  6 .
+
+saro:systemAdministration
+        a                        saro:Topic ;
+        rdfs:label               "System Administration" ;
+        saro:frequencyOfMention  9 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "Python" ;
+        saro:frequencyOfMention  15 .
+
+:stream2file6128884712458316938_tmp_01BD9
+        a               saro:JobPosting ;
+        saro:describes  :stream2file6128884712458316938_tmp_01BD9_JobRole .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  12 .
+
+saro:networking  a               saro:Topic ;
+        rdfs:label               "networking" ;
+        saro:frequencyOfMention  3 .
+

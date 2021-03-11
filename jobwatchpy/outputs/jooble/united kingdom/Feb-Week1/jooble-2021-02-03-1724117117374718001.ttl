@@ -1,0 +1,109 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:softwareEngineering
+        a                        saro:Topic ;
+        rdfs:label               "software engineering" ;
+        saro:frequencyOfMention  3 .
+
+saro:dba  a                      saro:Topic ;
+        rdfs:label               "dba" ;
+        saro:frequencyOfMention  12 .
+
+saro:assurance  a                saro:Topic ;
+        rdfs:label               "assurance" ;
+        saro:frequencyOfMention  3 .
+
+:iGemAssociates  a  saro:Recruiter , so:Organisation .
+
+saro:oracle  a                   saro:Product ;
+        rdfs:label               "oracle" ;
+        saro:frequencyOfMention  37 .
+
+:stream2file10542837410559420078_tmp_01B99
+        a               saro:JobPosting ;
+        saro:describes  :stream2file10542837410559420078_tmp_01B99_JobRole .
+
+saro:unix  a                     saro:Product ;
+        rdfs:label               "unix" ;
+        saro:frequencyOfMention  3 .
+
+saro:monitoring  a               saro:Topic ;
+        rdfs:label               "monitoring" ;
+        saro:frequencyOfMention  3 .
+
+saro:databaseAdministration
+        a                        saro:Topic ;
+        rdfs:label               "database administration" ;
+        saro:frequencyOfMention  3 .
+
+saro:azure  a                    saro:Tool ;
+        rdfs:label               "azure" ;
+        saro:frequencyOfMention  3 .
+
+saro:database  a                 saro:Topic ;
+        rdfs:label               "database" ;
+        saro:frequencyOfMention  8 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  6 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  6 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:cPlusPlus  a                saro:Tool ;
+        rdfs:label               "c++" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file10542837410559420078_tmp_01B99_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Game Programmer"@en ;
+        so:hiringOrganisation  :iGemAssociates ;
+        saro:requiresSkill     saro:assurance , saro:database , saro:cPlusPlus , saro:softwareEngineering , saro:dba , saro:databaseAdministration , saro:linux , saro:cad , saro:oracle , saro:debugging , saro:monitoring , saro:azure , saro:programming , saro:development , saro:design , saro:go , saro:c , saro:unix , saro:systemAdministration , saro:tools .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "Design" ;
+        saro:frequencyOfMention  3 .
+
+saro:linux  a                    saro:Product ;
+        rdfs:label               "Linux" ;
+        saro:frequencyOfMention  6 .
+
+saro:debugging  a                saro:Topic ;
+        rdfs:label               "debugging" ;
+        saro:frequencyOfMention  3 .
+
+saro:programming  a              saro:Topic ;
+        rdfs:label               "programming" ;
+        saro:frequencyOfMention  12 .
+
+saro:cad  a                      saro:Topic ;
+        rdfs:label               "cad" ;
+        saro:frequencyOfMention  6 .
+
+saro:c  a                        saro:Tool ;
+        rdfs:label               "c" ;
+        saro:frequencyOfMention  3 .
+
+saro:systemAdministration
+        a                        saro:Topic ;
+        rdfs:label               "System Administration" ;
+        saro:frequencyOfMention  3 .
+

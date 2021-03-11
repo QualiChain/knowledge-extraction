@@ -1,0 +1,127 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:riskManagement  a           saro:Topic ;
+        rdfs:label               "risk management" ;
+        saro:frequencyOfMention  3 .
+
+saro:softwareEngineering
+        a                        saro:Topic ;
+        rdfs:label               "software engineering" ;
+        saro:frequencyOfMention  3 .
+
+saro:nginx  a                    saro:Tool ;
+        rdfs:label               "Nginx" ;
+        saro:frequencyOfMention  3 .
+
+saro:react  a                    saro:Tool ;
+        rdfs:label               "react" ;
+        saro:frequencyOfMention  6 .
+
+saro:php  a                      saro:Tool ;
+        rdfs:label               "PHP" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file7939872964057228778_tmp_01625
+        a               saro:JobPosting ;
+        saro:describes  :stream2file7939872964057228778_tmp_01625_JobRole .
+
+saro:azure  a                    saro:Tool ;
+        rdfs:label               "azure" ;
+        saro:frequencyOfMention  3 .
+
+saro:reactNative  a              saro:Tool ;
+        rdfs:label               "react native" ;
+        saro:frequencyOfMention  3 .
+
+saro:node.js  a                  saro:Tool ;
+        rdfs:label               "node.js" ;
+        saro:frequencyOfMention  3 .
+
+saro:r  a                        saro:Tool ;
+        rdfs:label               "R" ;
+        saro:frequencyOfMention  3 .
+
+saro:mvc  a                      saro:Topic ;
+        rdfs:label               "MVC" ;
+        saro:frequencyOfMention  3 .
+
+saro:machineLearning  a          saro:Topic ;
+        rdfs:label               "Machine learning" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  18 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:prototype  a                saro:Topic ;
+        rdfs:label               "prototype" ;
+        saro:frequencyOfMention  3 .
+
+saro:couchbase  a                saro:Product ;
+        rdfs:label               "couchbase" ;
+        saro:frequencyOfMention  3 .
+
+saro:kafka  a                    saro:Tool ;
+        rdfs:label               "kafka" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file7939872964057228778_tmp_01625_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Chief Technology Officer"@en ;
+        so:hiringOrganisation  :talentPoint ;
+        saro:requiresSkill     saro:azure , saro:go , saro:prototype , saro:c , saro:softwareEngineering , saro:nginx , saro:node.js , saro:r , saro:cloud , saro:docker , saro:rabbitmq , saro:programming , saro:development , saro:crm , saro:reactNative , saro:mvc , saro:react , saro:kafka , saro:couchbase , saro:php , saro:cPlusPlus , saro:angular , saro:machineLearning , saro:riskManagement , saro:finance .
+
+saro:cPlusPlus  a                saro:Tool ;
+        rdfs:label               "c++" ;
+        saro:frequencyOfMention  3 .
+
+saro:rabbitmq  a                 saro:Tool ;
+        rdfs:label               "RabbitMQ" ;
+        saro:frequencyOfMention  3 .
+
+saro:angular  a                  saro:Product ;
+        rdfs:label               "angular" ;
+        saro:frequencyOfMention  6 .
+
+saro:crm  a                      saro:Topic ;
+        rdfs:label               "CRM" ;
+        saro:frequencyOfMention  3 .
+
+saro:programming  a              saro:Topic ;
+        rdfs:label               "programming" ;
+        saro:frequencyOfMention  3 .
+
+saro:docker  a                   saro:Product ;
+        rdfs:label               "Docker" ;
+        saro:frequencyOfMention  3 .
+
+:talentPoint  a  saro:Recruiter , so:Organisation .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "Cloud" ;
+        saro:frequencyOfMention  3 .
+
+saro:finance  a                  saro:Topic ;
+        rdfs:label               "finance" ;
+        saro:frequencyOfMention  6 .
+
+saro:c  a                        saro:Tool ;
+        rdfs:label               "c" ;
+        saro:frequencyOfMention  3 .
+

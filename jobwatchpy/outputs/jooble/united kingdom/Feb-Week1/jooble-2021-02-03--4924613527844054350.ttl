@@ -1,0 +1,171 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+:stream2file7019963822782654938_tmp_018A1
+        a               saro:JobPosting ;
+        saro:describes  :stream2file7019963822782654938_tmp_018A1_JobRole .
+
+:stream2file7019963822782654938_tmp_018A1_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "System Administrator"@en ;
+        so:hiringOrganisation  :vonage ;
+        saro:requiresSkill     saro:administrator , saro:dataManagement , saro:storage , saro:troubleshooting , saro:html5 , saro:virtualization , saro:googleAppEngine , saro:azure , saro:agile , saro:cloud , saro:orchestration , saro:fabric , saro:development , saro:design , saro:sharepoint , saro:tools , saro:go , saro:confluence , saro:jira , saro:softwareDevelopment , saro:sql , saro:analytics , saro:hardware , saro:css3 , saro:database , saro:javascript , saro:databaseDesign , saro:react , saro:mvc , saro:developer , saro:asp.net , saro:c , saro:typescript , saro:sdk .
+
+saro:sdk  a                      saro:Topic ;
+        rdfs:label               "sdk" ;
+        saro:frequencyOfMention  3 .
+
+saro:react  a                    saro:Tool ;
+        rdfs:label               "react" ;
+        saro:frequencyOfMention  3 .
+
+saro:databaseDesign  a           saro:Topic ;
+        rdfs:label               "database design" ;
+        saro:frequencyOfMention  3 .
+
+saro:typescript  a               saro:Tool ;
+        rdfs:label               "typescript" ;
+        saro:frequencyOfMention  3 .
+
+saro:dataManagement  a           saro:Topic ;
+        rdfs:label               "data management" ;
+        saro:frequencyOfMention  3 .
+
+saro:analytics  a                saro:Topic ;
+        rdfs:label               "analytics" ;
+        saro:frequencyOfMention  6 .
+
+saro:azure  a                    saro:Tool ;
+        rdfs:label               "azure" ;
+        saro:frequencyOfMention  6 .
+
+saro:html5  a                    saro:Tool ;
+        rdfs:label               "html5" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:googleAppEngine  a          saro:Product ;
+        rdfs:label               "Google App engine" ;
+        saro:frequencyOfMention  3 .
+
+saro:database  a                 saro:Topic ;
+        rdfs:label               "database" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  24 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  9 .
+
+saro:mvc  a                      saro:Topic ;
+        rdfs:label               "MVC" ;
+        saro:frequencyOfMention  3 .
+
+saro:confluence  a               saro:Tool ;
+        rdfs:label               "confluence" ;
+        saro:frequencyOfMention  4 .
+
+saro:asp.net  a                  saro:Tool ;
+        rdfs:label               "asp.net" ;
+        saro:frequencyOfMention  3 .
+
+saro:administrator  a            saro:Topic ;
+        rdfs:label               "administrator" ;
+        saro:frequencyOfMention  3 .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  3 .
+
+saro:orchestration  a            saro:Topic ;
+        rdfs:label               "orchestration" ;
+        saro:frequencyOfMention  3 .
+
+saro:jira  a                     saro:Tool ;
+        rdfs:label               "Jira" ;
+        saro:frequencyOfMention  4 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  3 .
+
+saro:developer  a                saro:Topic ;
+        rdfs:label               "developer" ;
+        saro:frequencyOfMention  12 .
+
+saro:javascript  a               saro:Tool ;
+        rdfs:label               "JavaScript" ;
+        saro:frequencyOfMention  3 .
+
+saro:fabric  a                   saro:Tool ;
+        rdfs:label               "Fabric" ;
+        saro:frequencyOfMention  3 .
+
+saro:storage  a                  saro:Topic ;
+        rdfs:label               "storage" ;
+        saro:frequencyOfMention  6 .
+
+saro:troubleshooting  a          saro:Topic ;
+        rdfs:label               "troubleshooting" ;
+        saro:frequencyOfMention  3 .
+
+saro:sharepoint  a               saro:Product ;
+        rdfs:label               "SharePoint" ;
+        saro:frequencyOfMention  46 .
+
+:vonage  a      saro:Recruiter , so:Organisation .
+
+saro:c  a                        saro:Tool ;
+        rdfs:label               "c" ;
+        saro:frequencyOfMention  3 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "cloud" ;
+        saro:frequencyOfMention  36 .
+
+saro:css3  a                     saro:Tool ;
+        rdfs:label               "css3" ;
+        saro:frequencyOfMention  3 .
+
+saro:virtualization  a           saro:Topic ;
+        rdfs:label               "virtualization" ;
+        saro:frequencyOfMention  3 .
+
+saro:hardware  a                 saro:Topic ;
+        rdfs:label               "hardware" ;
+        saro:frequencyOfMention  3 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "Agile" ;
+        saro:frequencyOfMention  3 .
+
+saro:softwareDevelopment
+        a                        saro:Topic ;
+        rdfs:label               "software development" ;
+        saro:frequencyOfMention  3 .
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>403 Forbidden</title>
+</head><body>
+<h1>Forbidden</h1>
+<p>You don't have permission to access this resource.</p>
+</body></html>
+

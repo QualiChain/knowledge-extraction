@@ -1,0 +1,127 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+:stream2file4756926338749744382_tmp_00C91_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Field Test Engineer"@en ;
+        so:datePosted          "2021-02-13"^^xsd:date ;
+        so:hiringOrganisation  :umlautCompany ;
+        so:jobLocation         :United_Kingdom ;
+        saro:requiresSkill     saro:jmeter , saro:c , saro:dotNet , saro:pyramid , saro:assurance , saro:ieee , saro:networks , saro:gsm , saro:automation , saro:softwareDevelopment , saro:bdd , saro:designPatterns , saro:go , saro:design , saro:computerScience , saro:reporting , saro:rest , saro:automatedTests , saro:webServices , saro:analysis , saro:tools , saro:selenium , saro:tdd , saro:agile .
+
+saro:assurance  a                saro:Topic ;
+        rdfs:label               "assurance" ;
+        saro:frequencyOfMention  6 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "Analysis" ;
+        saro:frequencyOfMention  7 .
+
+saro:rest  a                     saro:Tool ;
+        rdfs:label               "REST" ;
+        saro:frequencyOfMention  3 .
+
+saro:jmeter  a                   saro:Tool ;
+        rdfs:label               "Jmeter" ;
+        saro:frequencyOfMention  3 .
+
+saro:tdd  a                      saro:Topic ;
+        rdfs:label               "TDD" ;
+        saro:frequencyOfMention  6 .
+
+saro:automation  a               saro:Topic ;
+        rdfs:label               "automation" ;
+        saro:frequencyOfMention  33 .
+
+saro:ieee  a                     saro:Topic ;
+        rdfs:label               "ieee" ;
+        saro:frequencyOfMention  3 .
+
+saro:selenium  a                 saro:Tool ;
+        rdfs:label               "Selenium" ;
+        saro:frequencyOfMention  6 .
+
+:United_Kingdom  a  so:Place .
+
+saro:designPatterns  a           saro:Topic ;
+        rdfs:label               "design patterns" ;
+        saro:frequencyOfMention  3 .
+
+saro:webServices  a              saro:Topic ;
+        rdfs:label               "Web Services" ;
+        saro:frequencyOfMention  3 .
+
+saro:pyramid  a                  saro:Product ;
+        rdfs:label               "pyramid" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  6 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file4756926338749744382_tmp_00C91
+        a               saro:JobPosting ;
+        saro:describes  :stream2file4756926338749744382_tmp_00C91_JobRole .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  6 .
+
+saro:bdd  a                      saro:Topic ;
+        rdfs:label               "bdd" ;
+        saro:frequencyOfMention  6 .
+
+saro:automatedTests  a           saro:Topic ;
+        rdfs:label               "automated tests" ;
+        saro:frequencyOfMention  3 .
+
+saro:networks  a                 saro:Topic ;
+        rdfs:label               "networks" ;
+        saro:frequencyOfMention  3 .
+
+saro:dotNet  a                   saro:Product ;
+        rdfs:label               ".net" ;
+        saro:frequencyOfMention  3 .
+
+saro:computerScience  a          saro:Topic ;
+        rdfs:label               "computer science" ;
+        saro:frequencyOfMention  4 .
+
+saro:c  a                        saro:Tool ;
+        rdfs:label               "c" ;
+        saro:frequencyOfMention  3 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "Agile" ;
+        saro:frequencyOfMention  3 .
+
+:umlautCompany  a  saro:Recruiter , so:Organisation .
+
+saro:gsm  a                      saro:Product ;
+        rdfs:label               "gsm" ;
+        saro:frequencyOfMention  3 .
+
+saro:softwareDevelopment
+        a                        saro:Topic ;
+        rdfs:label               "software development" ;
+        saro:frequencyOfMention  3 .
+

@@ -1,0 +1,94 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:statistics  a               saro:Topic ;
+        rdfs:label               "statistics" ;
+        saro:frequencyOfMention  3 .
+
+saro:nlp  a                      saro:Topic ;
+        rdfs:label               "NLP" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file1472467800266836767_tmp_0146D
+        a               saro:JobPosting ;
+        saro:describes  :stream2file1472467800266836767_tmp_0146D_JobRole .
+
+saro:azure  a                    saro:Tool ;
+        rdfs:label               "azure" ;
+        saro:frequencyOfMention  3 .
+
+saro:artificialIntelligence
+        a                        saro:Topic ;
+        rdfs:label               "artificial intelligence" ;
+        saro:frequencyOfMention  3 .
+
+saro:fintech  a                  saro:Product ;
+        rdfs:label               "Fintech" ;
+        saro:frequencyOfMention  6 .
+
+saro:machineLearning  a          saro:Topic ;
+        rdfs:label               "Machine Learning" ;
+        saro:frequencyOfMention  12 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:dataScience  a              saro:Topic ;
+        rdfs:label               "data science" ;
+        saro:frequencyOfMention  4 .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  3 .
+
+saro:projectManagement
+        a                        saro:Topic ;
+        rdfs:label               "project management" ;
+        saro:frequencyOfMention  3 .
+
+saro:programming  a              saro:Topic ;
+        rdfs:label               "programming" ;
+        saro:frequencyOfMention  3 .
+
+saro:businessIntelligence
+        a                        saro:Topic ;
+        rdfs:label               "Business Intelligence" ;
+        saro:frequencyOfMention  3 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "cloud" ;
+        saro:frequencyOfMention  3 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "agile" ;
+        saro:frequencyOfMention  4 .
+
+:stream2file1472467800266836767_tmp_0146D_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Data Science Manager"@en ;
+        so:hiringOrganisation  :starActuarialFutures ;
+        saro:requiresSkill     saro:businessIntelligence , saro:ssis , saro:cloud , saro:machineLearning , saro:dataScience , saro:development , saro:go , saro:statistics , saro:projectManagement , saro:sql , saro:fintech , saro:azure , saro:programming , saro:artificialIntelligence , saro:agile , saro:nlp .
+
+saro:ssis  a                     saro:Product ;
+        rdfs:label               "ssis" ;
+        saro:frequencyOfMention  3 .
+
+:starActuarialFutures
+        a       saro:Recruiter , so:Organisation .
+

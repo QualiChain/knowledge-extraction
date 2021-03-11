@@ -1,0 +1,58 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+:technetImmersive  a  saro:Recruiter , so:Organisation .
+
+:stream2file1389872442864723594_tmp_00689
+        a               saro:JobPosting ;
+        saro:describes  :stream2file1389872442864723594_tmp_00689_JobRole .
+
+saro:simulation  a               saro:Topic ;
+        rdfs:label               "simulation" ;
+        saro:frequencyOfMention  6 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:unity  a                    saro:Product ;
+        rdfs:label               "unity" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  3 .
+
+saro:monitoring  a               saro:Topic ;
+        rdfs:label               "monitoring" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  3 .
+
+saro:photoshop  a                saro:Tool ;
+        rdfs:label               "Photoshop" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file1389872442864723594_tmp_00689_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Lighting Artist"@en ;
+        so:hiringOrganisation  :technetImmersive ;
+        saro:requiresSkill     saro:go , saro:design , saro:development , saro:unity , saro:monitoring , saro:tools , saro:photoshop , saro:simulation .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  36 .
+

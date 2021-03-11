@@ -1,0 +1,114 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:rest  a                     saro:Tool ;
+        rdfs:label               "REST" ;
+        saro:frequencyOfMention  4 .
+
+saro:s3  a                       saro:Tool ;
+        rdfs:label               "S3" ;
+        saro:frequencyOfMention  3 .
+
+saro:microservices  a            saro:Topic ;
+        rdfs:label               "microservices" ;
+        saro:frequencyOfMention  4 .
+
+saro:react  a                    saro:Tool ;
+        rdfs:label               "react" ;
+        saro:frequencyOfMention  18 .
+
+saro:excel  a                    saro:Product ;
+        rdfs:label               "excel" ;
+        saro:frequencyOfMention  3 .
+
+saro:typescript  a               saro:Tool ;
+        rdfs:label               "typescript" ;
+        saro:frequencyOfMention  6 .
+
+:graftonRecruitment  a  saro:Recruiter , so:Organisation .
+
+saro:java  a                     saro:Tool ;
+        rdfs:label               "java" ;
+        saro:frequencyOfMention  3 .
+
+saro:reactNative  a              saro:Tool ;
+        rdfs:label               "react native" ;
+        saro:frequencyOfMention  3 .
+
+saro:html  a                     saro:Tool ;
+        rdfs:label               "html" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  7 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:confluence  a               saro:Tool ;
+        rdfs:label               "confluence" ;
+        saro:frequencyOfMention  4 .
+
+saro:css  a                      saro:Tool ;
+        rdfs:label               "css" ;
+        saro:frequencyOfMention  3 .
+
+saro:github  a                   saro:Tool ;
+        rdfs:label               "GitHub" ;
+        saro:frequencyOfMention  4 .
+
+saro:atlassian  a                saro:Tool ;
+        rdfs:label               "Atlassian" ;
+        saro:frequencyOfMention  4 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  3 .
+
+saro:jira  a                     saro:Tool ;
+        rdfs:label               "JIRA" ;
+        saro:frequencyOfMention  4 .
+
+saro:developer  a                saro:Topic ;
+        rdfs:label               "developer" ;
+        saro:frequencyOfMention  12 .
+
+:stream2file9951180184564429197_tmp_01D65
+        a               saro:JobPosting ;
+        saro:describes  :stream2file9951180184564429197_tmp_01D65_JobRole .
+
+saro:javascript  a               saro:Tool ;
+        rdfs:label               "Javascript" ;
+        saro:frequencyOfMention  2 .
+
+saro:docker  a                   saro:Product ;
+        rdfs:label               "Docker" ;
+        saro:frequencyOfMention  3 .
+
+saro:fullStack  a                saro:Topic ;
+        rdfs:label               "full stack" ;
+        saro:frequencyOfMention  6 .
+
+saro:analyst  a                  saro:Topic ;
+        rdfs:label               "analyst" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file9951180184564429197_tmp_01D65_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Javascript Developer"@en ;
+        so:hiringOrganisation  :graftonRecruitment ;
+        saro:requiresSkill     saro:css , saro:s3 , saro:rest , saro:developer , saro:microservices , saro:docker , saro:reactNative , saro:github , saro:design , saro:go , saro:atlassian , saro:fullStack , saro:excel , saro:typescript , saro:javascript , saro:html , saro:confluence , saro:tools , saro:react , saro:jira , saro:java , saro:analyst .
+

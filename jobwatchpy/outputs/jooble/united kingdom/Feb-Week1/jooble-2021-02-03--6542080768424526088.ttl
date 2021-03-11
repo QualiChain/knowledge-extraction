@@ -1,0 +1,191 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  30 .
+
+saro:github  a                   saro:Tool ;
+        rdfs:label               "Github" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:hibernate  a                saro:Product ;
+        rdfs:label               "Hibernate" ;
+        saro:frequencyOfMention  3 .
+
+saro:database  a                 saro:Topic ;
+        rdfs:label               "database" ;
+        saro:frequencyOfMention  12 .
+
+saro:javascript  a               saro:Tool ;
+        rdfs:label               "JavaScript" ;
+        saro:frequencyOfMention  6 .
+
+saro:designPatterns  a           saro:Topic ;
+        rdfs:label               "design patterns" ;
+        saro:frequencyOfMention  6 .
+
+saro:statistics  a               saro:Topic ;
+        rdfs:label               "statistics" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "Design" ;
+        saro:frequencyOfMention  18 .
+
+saro:databaseAdministration
+        a                        saro:Topic ;
+        rdfs:label               "database administration" ;
+        saro:frequencyOfMention  3 .
+
+saro:cPlusPlus  a                saro:Tool ;
+        rdfs:label               "c++" ;
+        saro:frequencyOfMention  9 .
+
+saro:oracle  a                   saro:Product ;
+        rdfs:label               "oracle" ;
+        saro:frequencyOfMention  15 .
+
+saro:css  a                      saro:Tool ;
+        rdfs:label               "css" ;
+        saro:frequencyOfMention  3 .
+
+saro:sybase  a                   saro:Product ;
+        rdfs:label               "sybase" ;
+        saro:frequencyOfMention  3 .
+
+saro:softwareDevelopment
+        a                        saro:Topic ;
+        rdfs:label               "software development" ;
+        saro:frequencyOfMention  6 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "agile" ;
+        saro:frequencyOfMention  3 .
+
+saro:golang  a                   saro:Tool ;
+        rdfs:label               "golang" ;
+        saro:frequencyOfMention  13 .
+
+saro:css3  a                     saro:Tool ;
+        rdfs:label               "css3" ;
+        saro:frequencyOfMention  3 .
+
+saro:objectOrientedAnalysis
+        a                        saro:Topic ;
+        rdfs:label               "Object Oriented analysis" ;
+        saro:frequencyOfMention  6 .
+
+saro:xml  a                      saro:Tool ;
+        rdfs:label               "xml" ;
+        saro:frequencyOfMention  6 .
+
+saro:soap  a                     saro:Tool ;
+        rdfs:label               "soap" ;
+        saro:frequencyOfMention  3 .
+
+saro:cassandra  a                saro:Product ;
+        rdfs:label               "cassandra" ;
+        saro:frequencyOfMention  3 .
+
+saro:spring  a                   saro:Tool ;
+        rdfs:label               "spring" ;
+        saro:frequencyOfMention  6 .
+
+saro:debugging  a                saro:Topic ;
+        rdfs:label               "debugging" ;
+        saro:frequencyOfMention  3 .
+
+saro:html  a                     saro:Tool ;
+        rdfs:label               "html" ;
+        saro:frequencyOfMention  3 .
+
+saro:webServices  a              saro:Topic ;
+        rdfs:label               "Web Services" ;
+        saro:frequencyOfMention  6 .
+
+saro:developer  a                saro:Topic ;
+        rdfs:label               "developer" ;
+        saro:frequencyOfMention  13 .
+
+saro:jquery  a                   saro:Tool ;
+        rdfs:label               "jquery" ;
+        saro:frequencyOfMention  3 .
+
+saro:html5  a                    saro:Tool ;
+        rdfs:label               "html5" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file5611969684629559381_tmp_00F4D_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Developer"@en ;
+        so:hiringOrganisation  :levelup ;
+        saro:requiresSkill     saro:debugging , saro:hibernate , saro:apex , saro:spring , saro:oracle , saro:cassandra , saro:design , saro:jquery , saro:java , saro:sql , saro:css , saro:programming , saro:webServices , saro:developer , saro:development , saro:html5 , saro:agile , saro:unitTesting , saro:soap , saro:nosql , saro:go , saro:databaseAdministration , saro:softwareDevelopment , saro:sybase , saro:objectOrientedAnalysis , saro:fullStack , saro:cloud , saro:responsiveDesign , saro:database , saro:html , saro:xml , saro:cPlusPlus , saro:javascript , saro:github , saro:golang , saro:relationalDatabases , saro:statistics , saro:designPatterns , saro:automation , saro:css3 .
+
+:stream2file5611969684629559381_tmp_00F4D
+        a               saro:JobPosting ;
+        saro:describes  :stream2file5611969684629559381_tmp_00F4D_JobRole .
+
+saro:relationalDatabases
+        a                        saro:Topic ;
+        rdfs:label               "Relational Databases" ;
+        saro:frequencyOfMention  3 .
+
+saro:responsiveDesign
+        a                        saro:Topic ;
+        rdfs:label               "Responsive Design" ;
+        saro:frequencyOfMention  3 .
+
+saro:fullStack  a                saro:Topic ;
+        rdfs:label               "full stack" ;
+        saro:frequencyOfMention  3 .
+
+saro:unitTesting  a              saro:Topic ;
+        rdfs:label               "unit testing" ;
+        saro:frequencyOfMention  3 .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  15 .
+
+:levelup  a     saro:Recruiter , so:Organisation .
+
+saro:java  a                     saro:Tool ;
+        rdfs:label               "java" ;
+        saro:frequencyOfMention  6 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "Cloud" ;
+        saro:frequencyOfMention  3 .
+
+saro:automation  a               saro:Topic ;
+        rdfs:label               "automation" ;
+        saro:frequencyOfMention  3 .
+
+saro:nosql  a                    saro:Tool ;
+        rdfs:label               "nosql" ;
+        saro:frequencyOfMention  3 .
+
+saro:programming  a              saro:Topic ;
+        rdfs:label               "programming" ;
+        saro:frequencyOfMention  3 .
+
+saro:apex  a                     saro:Tool ;
+        rdfs:label               "APEX" ;
+        saro:frequencyOfMention  18 .
+

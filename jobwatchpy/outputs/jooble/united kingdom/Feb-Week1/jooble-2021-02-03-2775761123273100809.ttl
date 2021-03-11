@@ -1,0 +1,225 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  12 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:puppet  a                   saro:Tool ;
+        rdfs:label               "Puppet" ;
+        saro:frequencyOfMention  3 .
+
+saro:flask  a                    saro:Tool ;
+        rdfs:label               "Flask" ;
+        saro:frequencyOfMention  3 .
+
+:claremontConsulting  a  saro:Recruiter , so:Organisation .
+
+saro:statistics  a               saro:Topic ;
+        rdfs:label               "statistics" ;
+        saro:frequencyOfMention  9 .
+
+saro:frontEnd  a                 saro:Topic ;
+        rdfs:label               "front end" ;
+        saro:frequencyOfMention  3 .
+
+saro:computerScience  a          saro:Topic ;
+        rdfs:label               "computer science" ;
+        saro:frequencyOfMention  9 .
+
+saro:dataScience  a              saro:Topic ;
+        rdfs:label               "data science" ;
+        saro:frequencyOfMention  9 .
+
+saro:rest  a                     saro:Tool ;
+        rdfs:label               "rest" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  9 .
+
+saro:customerSupport  a          saro:Topic ;
+        rdfs:label               "customer support" ;
+        saro:frequencyOfMention  3 .
+
+saro:ansible  a                  saro:Tool ;
+        rdfs:label               "ansible" ;
+        saro:frequencyOfMention  3 .
+
+saro:hbase  a                    saro:Product ;
+        rdfs:label               "hbase" ;
+        saro:frequencyOfMention  3 .
+
+saro:maven  a                    saro:Tool ;
+        rdfs:label               "maven" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  6 .
+
+saro:cPlusPlus  a                saro:Tool ;
+        rdfs:label               "c++" ;
+        saro:frequencyOfMention  3 .
+
+saro:r  a                        saro:Tool ;
+        rdfs:label               "R" ;
+        saro:frequencyOfMention  16 .
+
+saro:mahout  a                   saro:Product ;
+        rdfs:label               "mahout" ;
+        saro:frequencyOfMention  3 .
+
+saro:analytics  a                saro:Topic ;
+        rdfs:label               "analytics" ;
+        saro:frequencyOfMention  24 .
+
+saro:machineLearning  a          saro:Topic ;
+        rdfs:label               "machine learning" ;
+        saro:frequencyOfMention  21 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "agile" ;
+        saro:frequencyOfMention  6 .
+
+saro:django  a                   saro:Product ;
+        rdfs:label               "django" ;
+        saro:frequencyOfMention  3 .
+
+saro:scipy  a                    saro:Tool ;
+        rdfs:label               "scipy" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file382388381012367631_tmp_00E05
+        a               saro:JobPosting ;
+        saro:describes  :stream2file382388381012367631_tmp_00E05_JobRole .
+
+saro:git  a                      saro:Tool ;
+        rdfs:label               "Git" ;
+        saro:frequencyOfMention  3 .
+
+saro:elasticsearch  a            saro:Product ;
+        rdfs:label               "elasticsearch" ;
+        saro:frequencyOfMention  3 .
+
+saro:mongodb  a                  saro:Product ;
+        rdfs:label               "MongoDB" ;
+        saro:frequencyOfMention  3 .
+
+saro:projectManagement
+        a                        saro:Topic ;
+        rdfs:label               "project management" ;
+        saro:frequencyOfMention  3 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "Python" ;
+        saro:frequencyOfMention  16 .
+
+saro:gradle  a                   saro:Tool ;
+        rdfs:label               "gradle" ;
+        saro:frequencyOfMention  3 .
+
+saro:opencv  a                   saro:Tool ;
+        rdfs:label               "OpenCV" ;
+        saro:frequencyOfMention  3 .
+
+saro:swing  a                    saro:Tool ;
+        rdfs:label               "Swing" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file382388381012367631_tmp_00E05_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Senior Data Scientist"@en ;
+        so:hiringOrganisation  :claremontConsulting ;
+        saro:requiresSkill     saro:swing , saro:linux , saro:bash , saro:dataScience , saro:rest , saro:mongodb , saro:django , saro:statistics , saro:scriptingLanguage , saro:ansible , saro:agile , saro:go , saro:neo4j , saro:gradle , saro:c , saro:flask , saro:frontEnd , saro:programming , saro:tools , saro:python , saro:projectManagement , saro:analyst , saro:cloud , saro:r , saro:computerScience , saro:puppet , saro:mysql , saro:git , saro:reporting , saro:mahout , saro:lucene , saro:elasticsearch , saro:softwareEngineering , saro:design , saro:nosql , saro:opencv , saro:numpy , saro:development , saro:java , saro:couchbase , saro:cPlusPlus , saro:sql , saro:analytics , saro:machineLearning , saro:scipy , saro:hbase , saro:docker , saro:maven , saro:customerSupport .
+
+saro:scriptingLanguage
+        a                        saro:Topic ;
+        rdfs:label               "scripting language" ;
+        saro:frequencyOfMention  3 .
+
+saro:softwareEngineering
+        a                        saro:Topic ;
+        rdfs:label               "software engineering" ;
+        saro:frequencyOfMention  3 .
+
+saro:numpy  a                    saro:Tool ;
+        rdfs:label               "numpy" ;
+        saro:frequencyOfMention  3 .
+
+saro:linux  a                    saro:Product ;
+        rdfs:label               "Linux" ;
+        saro:frequencyOfMention  3 .
+
+saro:mysql  a                    saro:Tool ;
+        rdfs:label               "mysql" ;
+        saro:frequencyOfMention  3 .
+
+saro:couchbase  a                saro:Product ;
+        rdfs:label               "couchbase" ;
+        saro:frequencyOfMention  3 .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  10 .
+
+saro:docker  a                   saro:Product ;
+        rdfs:label               "Docker" ;
+        saro:frequencyOfMention  3 .
+
+saro:java  a                     saro:Tool ;
+        rdfs:label               "java" ;
+        saro:frequencyOfMention  3 .
+
+saro:bash  a                     saro:Tool ;
+        rdfs:label               "bash" ;
+        saro:frequencyOfMention  3 .
+
+saro:lucene  a                   saro:Tool ;
+        rdfs:label               "lucene" ;
+        saro:frequencyOfMention  3 .
+
+saro:c  a                        saro:Tool ;
+        rdfs:label               "c" ;
+        saro:frequencyOfMention  6 .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  3 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "cloud" ;
+        saro:frequencyOfMention  3 .
+
+saro:neo4j  a                    saro:Product ;
+        rdfs:label               "Neo4j" ;
+        saro:frequencyOfMention  3 .
+
+saro:nosql  a                    saro:Tool ;
+        rdfs:label               "nosql" ;
+        saro:frequencyOfMention  3 .
+
+saro:programming  a              saro:Topic ;
+        rdfs:label               "programming" ;
+        saro:frequencyOfMention  3 .
+
+saro:analyst  a                  saro:Topic ;
+        rdfs:label               "analyst" ;
+        saro:frequencyOfMention  3 .
+

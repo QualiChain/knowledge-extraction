@@ -1,0 +1,103 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:assurance  a                saro:Topic ;
+        rdfs:label               "assurance" ;
+        saro:frequencyOfMention  3 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  12 .
+
+:stream2file15347874779470733_tmp_01EB9_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Actuarial Student - Life Insurance"@en ;
+        so:hiringOrganisation  :igaTalentSolutions ;
+        saro:requiresSkill     saro:analyst , saro:go , saro:projectManagement , saro:assurance , saro:c , saro:pmp , saro:r , saro:userInterface , saro:python , saro:computerScience , saro:salesforce , saro:development , saro:websphere , saro:analysis , saro:cloud , saro:agile , saro:design , saro:sdlc , saro:magento .
+
+saro:websphere  a                saro:Product ;
+        rdfs:label               "WebSphere" ;
+        saro:frequencyOfMention  3 .
+
+saro:salesforce  a               saro:Product ;
+        rdfs:label               "salesforce" ;
+        saro:frequencyOfMention  3 .
+
+saro:magento  a                  saro:Product ;
+        rdfs:label               "Magento" ;
+        saro:frequencyOfMention  3 .
+
+saro:r  a                        saro:Tool ;
+        rdfs:label               "R" ;
+        saro:frequencyOfMention  6 .
+
+saro:sdlc  a                     saro:Topic ;
+        rdfs:label               "sdlc" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  12 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+:igaTalentSolutions  a  saro:Recruiter , so:Organisation .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file15347874779470733_tmp_01EB9
+        a               saro:JobPosting ;
+        saro:describes  :stream2file15347874779470733_tmp_01EB9_JobRole .
+
+saro:projectManagement
+        a                        saro:Topic ;
+        rdfs:label               "project management" ;
+        saro:frequencyOfMention  3 .
+
+saro:pmp  a                      saro:Topic ;
+        rdfs:label               "PMP" ;
+        saro:frequencyOfMention  3 .
+
+saro:analyst  a                  saro:Topic ;
+        rdfs:label               "analyst" ;
+        saro:frequencyOfMention  15 .
+
+saro:userInterface  a            saro:Topic ;
+        rdfs:label               "user interface" ;
+        saro:frequencyOfMention  3 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "Cloud" ;
+        saro:frequencyOfMention  3 .
+
+saro:computerScience  a          saro:Topic ;
+        rdfs:label               "computer science" ;
+        saro:frequencyOfMention  3 .
+
+saro:c  a                        saro:Tool ;
+        rdfs:label               "c" ;
+        saro:frequencyOfMention  3 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "agile" ;
+        saro:frequencyOfMention  3 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "Python" ;
+        saro:frequencyOfMention  6 .
+

@@ -1,0 +1,137 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  6 .
+
+saro:networking  a               saro:Topic ;
+        rdfs:label               "Networking" ;
+        saro:frequencyOfMention  3 .
+
+saro:elasticsearch  a            saro:Product ;
+        rdfs:label               "elasticsearch" ;
+        saro:frequencyOfMention  3 .
+
+saro:vmware  a                   saro:Product ;
+        rdfs:label               "vmware" ;
+        saro:frequencyOfMention  3 .
+
+saro:disasterRecovery
+        a                        saro:Topic ;
+        rdfs:label               "disaster recovery" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file8805088223680694105_tmp_01A0D_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Linux System Administrator"@en ;
+        so:hiringOrganisation  :thoughtMachine ;
+        saro:requiresSkill     saro:analyst , saro:docker , saro:monitoring , saro:analysis , saro:linux , saro:systemAdministration , saro:go , saro:softwareDevelopment , saro:virtualization , saro:redhat , saro:cloud , saro:elasticsearch , saro:python , saro:database , saro:design , saro:disasterRecovery , saro:reporting , saro:storage , saro:powershell , saro:vmware , saro:tools , saro:fintech , saro:bash , saro:networking , saro:administrator , saro:security , saro:development .
+
+:thoughtMachine  a  saro:Recruiter , so:Organisation .
+
+saro:redhat  a                   saro:Product ;
+        rdfs:label               "Redhat" ;
+        saro:frequencyOfMention  3 .
+
+saro:monitoring  a               saro:Topic ;
+        rdfs:label               "monitoring" ;
+        saro:frequencyOfMention  3 .
+
+saro:fintech  a                  saro:Product ;
+        rdfs:label               "Fintech" ;
+        saro:frequencyOfMention  6 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  9 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  12 .
+
+saro:database  a                 saro:Topic ;
+        rdfs:label               "database" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  12 .
+
+:stream2file8805088223680694105_tmp_01A0D
+        a               saro:JobPosting ;
+        saro:describes  :stream2file8805088223680694105_tmp_01A0D_JobRole .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  3 .
+
+saro:powershell  a               saro:Tool ;
+        rdfs:label               "powershell" ;
+        saro:frequencyOfMention  3 .
+
+saro:administrator  a            saro:Topic ;
+        rdfs:label               "administrator" ;
+        saro:frequencyOfMention  9 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  3 .
+
+saro:linux  a                    saro:Product ;
+        rdfs:label               "Linux" ;
+        saro:frequencyOfMention  34 .
+
+saro:storage  a                  saro:Topic ;
+        rdfs:label               "storage" ;
+        saro:frequencyOfMention  12 .
+
+saro:docker  a                   saro:Product ;
+        rdfs:label               "Docker" ;
+        saro:frequencyOfMention  3 .
+
+saro:analyst  a                  saro:Topic ;
+        rdfs:label               "analyst" ;
+        saro:frequencyOfMention  6 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "Cloud" ;
+        saro:frequencyOfMention  21 .
+
+saro:virtualization  a           saro:Topic ;
+        rdfs:label               "virtualization" ;
+        saro:frequencyOfMention  3 .
+
+saro:systemAdministration
+        a                        saro:Topic ;
+        rdfs:label               "System administration" ;
+        saro:frequencyOfMention  4 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "python" ;
+        saro:frequencyOfMention  6 .
+
+saro:softwareDevelopment
+        a                        saro:Topic ;
+        rdfs:label               "software development" ;
+        saro:frequencyOfMention  3 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  6 .
+
+saro:bash  a                     saro:Tool ;
+        rdfs:label               "bash" ;
+        saro:frequencyOfMention  3 .
+

@@ -1,0 +1,125 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:virtualMachine  a           saro:Topic ;
+        rdfs:label               "virtual machine" ;
+        saro:frequencyOfMention  3 .
+
+saro:softwareEngineering
+        a                        saro:Topic ;
+        rdfs:label               "software engineering" ;
+        saro:frequencyOfMention  6 .
+
+saro:assurance  a                saro:Topic ;
+        rdfs:label               "assurance" ;
+        saro:frequencyOfMention  3 .
+
+saro:scripting  a                saro:Tool ;
+        rdfs:label               "scripting" ;
+        saro:frequencyOfMention  3 .
+
+:boeingCompany  a  saro:Recruiter , so:Organisation .
+
+saro:vmware  a                   saro:Product ;
+        rdfs:label               "vmware" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file15122390484259378974_tmp_019C5_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Principal Project Mangement Specialist"@en ;
+        so:hiringOrganisation  :boeingCompany ;
+        saro:requiresSkill     saro:python , saro:design , saro:sysadmin , saro:unix , saro:go , saro:programming , saro:assurance , saro:activeDirectory , saro:storage , saro:softwareEngineering , saro:businessIntelligence , saro:linux , saro:projectManagement , saro:scripting , saro:orchestration , saro:administrator , saro:redhat , saro:security , saro:virtualMachine , saro:development , saro:monitoring , saro:bash , saro:vmware , saro:agile .
+
+saro:unix  a                     saro:Product ;
+        rdfs:label               "unix" ;
+        saro:frequencyOfMention  6 .
+
+saro:redhat  a                   saro:Product ;
+        rdfs:label               "RedHat" ;
+        saro:frequencyOfMention  16 .
+
+saro:monitoring  a               saro:Topic ;
+        rdfs:label               "monitoring" ;
+        saro:frequencyOfMention  9 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  12 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:administrator  a            saro:Topic ;
+        rdfs:label               "administrator" ;
+        saro:frequencyOfMention  21 .
+
+saro:orchestration  a            saro:Topic ;
+        rdfs:label               "orchestration" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  3 .
+
+saro:linux  a                    saro:Product ;
+        rdfs:label               "Linux" ;
+        saro:frequencyOfMention  58 .
+
+saro:sysadmin  a                 saro:Tool ;
+        rdfs:label               "sysadmin" ;
+        saro:frequencyOfMention  6 .
+
+saro:projectManagement
+        a                        saro:Topic ;
+        rdfs:label               "project management" ;
+        saro:frequencyOfMention  6 .
+
+saro:storage  a                  saro:Topic ;
+        rdfs:label               "storage" ;
+        saro:frequencyOfMention  3 .
+
+saro:activeDirectory  a          saro:Tool ;
+        rdfs:label               "Active Directory" ;
+        saro:frequencyOfMention  3 .
+
+saro:programming  a              saro:Topic ;
+        rdfs:label               "programming" ;
+        saro:frequencyOfMention  3 .
+
+saro:businessIntelligence
+        a                        saro:Topic ;
+        rdfs:label               "business intelligence" ;
+        saro:frequencyOfMention  3 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "Agile" ;
+        saro:frequencyOfMention  6 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "Python" ;
+        saro:frequencyOfMention  9 .
+
+saro:bash  a                     saro:Tool ;
+        rdfs:label               "BASH" ;
+        saro:frequencyOfMention  9 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  15 .
+
+:stream2file15122390484259378974_tmp_019C5
+        a               saro:JobPosting ;
+        saro:describes  :stream2file15122390484259378974_tmp_019C5_JobRole .
+

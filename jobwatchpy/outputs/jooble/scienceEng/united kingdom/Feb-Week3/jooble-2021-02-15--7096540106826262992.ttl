@@ -1,0 +1,158 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:wordpress  a                saro:Tool ;
+        rdfs:label               "WordPress" ;
+        saro:frequencyOfMention  3 .
+
+saro:rest  a                     saro:Tool ;
+        rdfs:label               "REST" ;
+        saro:frequencyOfMention  3 .
+
+saro:statistics  a               saro:Topic ;
+        rdfs:label               "statistics" ;
+        saro:frequencyOfMention  9 .
+
+:xcede  a       saro:Recruiter , so:Organisation .
+
+saro:microservices  a            saro:Topic ;
+        rdfs:label               "microservices" ;
+        saro:frequencyOfMention  3 .
+
+saro:jquery  a                   saro:Tool ;
+        rdfs:label               "jquery" ;
+        saro:frequencyOfMention  6 .
+
+:United_Kingdom  a  so:Place .
+
+saro:php  a                      saro:Tool ;
+        rdfs:label               "PHP" ;
+        saro:frequencyOfMention  3 .
+
+saro:azure  a                    saro:Tool ;
+        rdfs:label               "azure" ;
+        saro:frequencyOfMention  6 .
+
+saro:frontEnd  a                 saro:Topic ;
+        rdfs:label               "Frontend" ;
+        saro:frequencyOfMention  15 .
+
+saro:json  a                     saro:Product ;
+        rdfs:label               "json" ;
+        saro:frequencyOfMention  3 .
+
+saro:r  a                        saro:Tool ;
+        rdfs:label               "R" ;
+        saro:frequencyOfMention  3 .
+
+saro:html  a                     saro:Tool ;
+        rdfs:label               "html" ;
+        saro:frequencyOfMention  6 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  30 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:dataScience  a              saro:Topic ;
+        rdfs:label               "data science" ;
+        saro:frequencyOfMention  12 .
+
+saro:css  a                      saro:Tool ;
+        rdfs:label               "css" ;
+        saro:frequencyOfMention  6 .
+
+saro:nosql  a                    saro:Tool ;
+        rdfs:label               "nosql" ;
+        saro:frequencyOfMention  3 .
+
+saro:ux  a                       saro:Tool ;
+        rdfs:label               "ux" ;
+        saro:frequencyOfMention  3 .
+
+saro:jira  a                     saro:Tool ;
+        rdfs:label               "JIRA" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file15765337572702167965_tmp_00DC9
+        a               saro:JobPosting ;
+        saro:describes  :stream2file15765337572702167965_tmp_00DC9_JobRole .
+
+saro:angular  a                  saro:Product ;
+        rdfs:label               "angular" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "DESIGN" ;
+        saro:frequencyOfMention  18 .
+
+saro:developer  a                saro:Topic ;
+        rdfs:label               "developer" ;
+        saro:frequencyOfMention  29 .
+
+saro:soa  a                      saro:Topic ;
+        rdfs:label               "SOA" ;
+        saro:frequencyOfMention  3 .
+
+saro:storm  a                    saro:Tool ;
+        rdfs:label               "storm" ;
+        saro:frequencyOfMention  3 .
+
+saro:storage  a                  saro:Topic ;
+        rdfs:label               "storage" ;
+        saro:frequencyOfMention  3 .
+
+saro:docker  a                   saro:Product ;
+        rdfs:label               "Docker" ;
+        saro:frequencyOfMention  3 .
+
+saro:dotNet  a                   saro:Product ;
+        rdfs:label               ".net" ;
+        saro:frequencyOfMention  3 .
+
+saro:arm  a                      saro:Tool ;
+        rdfs:label               "arm" ;
+        saro:frequencyOfMention  3 .
+
+saro:xamarin  a                  saro:Product ;
+        rdfs:label               "xamarin" ;
+        saro:frequencyOfMention  3 .
+
+saro:c  a                        saro:Tool ;
+        rdfs:label               "c" ;
+        saro:frequencyOfMention  3 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "agile" ;
+        saro:frequencyOfMention  6 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "PYTHON" ;
+        saro:frequencyOfMention  9 .
+
+:stream2file15765337572702167965_tmp_00DC9_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Senior / Lead Frontend Developer - E-Commerce / Fashion"@en ;
+        so:datePosted          "2021-02-11"^^xsd:date ;
+        so:hiringOrganisation  :xcede ;
+        so:jobLocation         :United_Kingdom ;
+        saro:requiresSkill     saro:storm , saro:design , saro:xamarin , saro:development , saro:microservices , saro:agile , saro:jira , saro:azure , saro:docker , saro:nosql , saro:dataScience , saro:dotNet , saro:arm , saro:tools , saro:angular , saro:go , saro:python , saro:json , saro:storage , saro:statistics , saro:rest , saro:php , saro:html , saro:developer , saro:soa , saro:ux , saro:jquery , saro:wordpress , saro:r , saro:c , saro:css , saro:frontEnd .
+

@@ -1,0 +1,76 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:softwareDevelopment
+        a                        saro:Topic ;
+        rdfs:label               "software development" ;
+        saro:frequencyOfMention  3 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  12 .
+
+saro:finance  a                  saro:Topic ;
+        rdfs:label               "Finance" ;
+        saro:frequencyOfMention  6 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "go" ;
+        saro:frequencyOfMention  10 .
+
+:stream2file17625992700914191746_tmp_00B39_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Chief Technology Officer"@en ;
+        so:datePosted          "2021-02-10"^^xsd:date ;
+        so:hiringOrganisation  :ometria ;
+        so:jobLocation         :United_Kingdom ;
+        saro:requiresSkill     saro:agile , saro:go , saro:development , saro:softwareDevelopment , saro:softwareEngineering , saro:finance , saro:tools , saro:frontEnd , saro:reporting , saro:backend , saro:security .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  15 .
+
+:United_Kingdom  a  so:Place .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  3 .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  9 .
+
+:stream2file17625992700914191746_tmp_00B39
+        a               saro:JobPosting ;
+        saro:describes  :stream2file17625992700914191746_tmp_00B39_JobRole .
+
+saro:backend  a                  saro:Topic ;
+        rdfs:label               "backend" ;
+        saro:frequencyOfMention  6 .
+
+saro:frontEnd  a                 saro:Topic ;
+        rdfs:label               "frontend" ;
+        saro:frequencyOfMention  3 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "agile" ;
+        saro:frequencyOfMention  3 .
+
+saro:softwareEngineering
+        a                        saro:Topic ;
+        rdfs:label               "software engineering" ;
+        saro:frequencyOfMention  12 .
+
+:ometria  a     saro:Recruiter , so:Organisation .
+

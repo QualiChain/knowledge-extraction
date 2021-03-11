@@ -1,0 +1,148 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:assurance  a                saro:Topic ;
+        rdfs:label               "assurance" ;
+        saro:frequencyOfMention  3 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  6 .
+
+saro:jmeter  a                   saro:Tool ;
+        rdfs:label               "Jmeter" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file4378193104268218353_tmp_00C25
+        a               saro:JobPosting ;
+        saro:describes  :stream2file4378193104268218353_tmp_00C25_JobRole .
+
+saro:automation  a               saro:Topic ;
+        rdfs:label               "Automation" ;
+        saro:frequencyOfMention  11 .
+
+saro:vmware  a                   saro:Product ;
+        rdfs:label               "vmware" ;
+        saro:frequencyOfMention  3 .
+
+saro:architect  a                saro:Topic ;
+        rdfs:label               "Architect" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file4378193104268218353_tmp_00C25_JobRole
+        a                        saro:JobRoleOrType ;
+        rdfs:label               "Performance Test Engineer"@en ;
+        so:datePosted            "2021-02-13"^^xsd:date ;
+        so:hiringOrganisation    :wiproDigital ;
+        so:jobLocation           :United_Kingdom ;
+        saro:requiresExperience  saro:seleniumWebdriver ;
+        saro:requiresSkill       saro:programming , saro:performanceTesting , saro:activeDirectory , saro:java , saro:jmeter , saro:azure , saro:xml , saro:architect , saro:go , saro:projectManagement , saro:networks , saro:tester , saro:assurance , saro:sql , saro:json , saro:monitoring , saro:analysis , saro:automation , saro:tools , saro:powershell , saro:storage , saro:vpn , saro:seleniumWebdriver , saro:vmware , saro:security , saro:spring , saro:jira , saro:cloud .
+
+saro:monitoring  a               saro:Topic ;
+        rdfs:label               "monitoring" ;
+        saro:frequencyOfMention  3 .
+
+:United_Kingdom  a  so:Place .
+
+saro:java  a                     saro:Tool ;
+        rdfs:label               "java" ;
+        saro:frequencyOfMention  3 .
+
+saro:azure  a                    saro:Tool ;
+        rdfs:label               "azure" ;
+        saro:frequencyOfMention  3 .
+
+saro:xml  a                      saro:Tool ;
+        rdfs:label               "xml" ;
+        saro:frequencyOfMention  3 .
+
+saro:json  a                     saro:Product ;
+        rdfs:label               "json" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  12 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:powershell  a               saro:Tool ;
+        rdfs:label               "powershell" ;
+        saro:frequencyOfMention  3 .
+
+:wiproDigital  a  saro:Recruiter , so:Organisation .
+
+saro:jira  a                     saro:Tool ;
+        rdfs:label               "Jira" ;
+        saro:frequencyOfMention  3 .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  3 .
+
+saro:seleniumWebdriver
+        a                          saro:Product ;
+        rdfs:label                 "selenium webdriver" ;
+        qc:experienceDurationText  "4 years of experience" ;
+        qc:minExperienceDuration   "P4Y" ;
+        saro:frequencyOfMention    3 .
+
+saro:performanceTesting
+        a                        saro:Topic ;
+        rdfs:label               "Performance testing" ;
+        saro:frequencyOfMention  6 .
+
+saro:spring  a                   saro:Tool ;
+        rdfs:label               "spring" ;
+        saro:frequencyOfMention  3 .
+
+saro:projectManagement
+        a                        saro:Topic ;
+        rdfs:label               "project management" ;
+        saro:frequencyOfMention  3 .
+
+saro:storage  a                  saro:Topic ;
+        rdfs:label               "storage" ;
+        saro:frequencyOfMention  3 .
+
+saro:activeDirectory  a          saro:Tool ;
+        rdfs:label               "Active directory" ;
+        saro:frequencyOfMention  3 .
+
+saro:networks  a                 saro:Topic ;
+        rdfs:label               "networks" ;
+        saro:frequencyOfMention  3 .
+
+saro:programming  a              saro:Topic ;
+        rdfs:label               "programming" ;
+        saro:frequencyOfMention  6 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "cloud" ;
+        saro:frequencyOfMention  6 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  3 .
+
+saro:tester  a                   saro:Topic ;
+        rdfs:label               "Tester" ;
+        saro:frequencyOfMention  3 .
+
+saro:vpn  a                      saro:Topic ;
+        rdfs:label               "vpn" ;
+        saro:frequencyOfMention  3 .
+

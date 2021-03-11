@@ -1,0 +1,120 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:softwareEngineering
+        a                        saro:Topic ;
+        rdfs:label               "software engineering" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file13604411788442847667_tmp_018E9_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Technical Lead"@en ;
+        so:hiringOrganisation  :venturiLtd ;
+        saro:requiresSkill     saro:docker , saro:crm , saro:apex , saro:ux , saro:lambda , saro:react , saro:development , saro:heroku , saro:css , saro:go , saro:activeDirectory , saro:softwareEngineering , saro:typescript , saro:salesforce , saro:administrator , saro:cloud , saro:amazonWebServices , saro:networks , saro:fintech , saro:javascript , saro:agile , saro:office365 , saro:refactoring .
+
+saro:react  a                    saro:Tool ;
+        rdfs:label               "react" ;
+        saro:frequencyOfMention  13 .
+
+saro:typescript  a               saro:Tool ;
+        rdfs:label               "typescript" ;
+        saro:frequencyOfMention  16 .
+
+:venturiLtd  a  saro:Recruiter , so:Organisation .
+
+saro:refactoring  a              saro:Topic ;
+        rdfs:label               "refactoring" ;
+        saro:frequencyOfMention  3 .
+
+saro:fintech  a                  saro:Product ;
+        rdfs:label               "FinTech" ;
+        saro:frequencyOfMention  6 .
+
+saro:office365  a                saro:Product ;
+        rdfs:label               "office365" ;
+        saro:frequencyOfMention  3 .
+
+saro:salesforce  a               saro:Product ;
+        rdfs:label               "salesforce" ;
+        saro:frequencyOfMention  39 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  9 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  9 .
+
+saro:css  a                      saro:Tool ;
+        rdfs:label               "css" ;
+        saro:frequencyOfMention  3 .
+
+saro:ux  a                       saro:Tool ;
+        rdfs:label               "ux" ;
+        saro:frequencyOfMention  3 .
+
+saro:administrator  a            saro:Topic ;
+        rdfs:label               "administrator" ;
+        saro:frequencyOfMention  3 .
+
+saro:lambda  a                   saro:Product ;
+        rdfs:label               "Lambda" ;
+        saro:frequencyOfMention  10 .
+
+saro:crm  a                      saro:Topic ;
+        rdfs:label               "CRM" ;
+        saro:frequencyOfMention  3 .
+
+saro:javascript  a               saro:Tool ;
+        rdfs:label               "Javascript" ;
+        saro:frequencyOfMention  6 .
+
+saro:heroku  a                   saro:Tool ;
+        rdfs:label               "Heroku" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file13604411788442847667_tmp_018E9
+        a               saro:JobPosting ;
+        saro:describes  :stream2file13604411788442847667_tmp_018E9_JobRole .
+
+saro:activeDirectory  a          saro:Tool ;
+        rdfs:label               "Active Directory" ;
+        saro:frequencyOfMention  6 .
+
+saro:networks  a                 saro:Topic ;
+        rdfs:label               "networks" ;
+        saro:frequencyOfMention  3 .
+
+saro:docker  a                   saro:Product ;
+        rdfs:label               "Docker" ;
+        saro:frequencyOfMention  9 .
+
+saro:amazonWebServices
+        a                        saro:Product ;
+        rdfs:label               "Amazon Web Services" ;
+        saro:frequencyOfMention  3 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "cloud" ;
+        saro:frequencyOfMention  4 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "agile" ;
+        saro:frequencyOfMention  3 .
+
+saro:apex  a                     saro:Tool ;
+        rdfs:label               "Apex" ;
+        saro:frequencyOfMention  3 .
+

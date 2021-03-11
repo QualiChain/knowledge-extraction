@@ -1,0 +1,119 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:automation  a               saro:Topic ;
+        rdfs:label               "automation" ;
+        saro:frequencyOfMention  3 .
+
+saro:microservices  a            saro:Topic ;
+        rdfs:label               "microservices" ;
+        saro:frequencyOfMention  3 .
+
+saro:refactoring  a              saro:Topic ;
+        rdfs:label               "refactoring" ;
+        saro:frequencyOfMention  3 .
+
+:United_Kingdom  a  so:Place .
+
+saro:azure  a                    saro:Tool ;
+        rdfs:label               "azure" ;
+        saro:frequencyOfMention  3 .
+
+saro:softwareEngineer
+        a                        saro:Topic ;
+        rdfs:label               "software engineer" ;
+        saro:frequencyOfMention  7 .
+
+saro:database  a                 saro:Topic ;
+        rdfs:label               "database" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  6 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  9 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:prototype  a                saro:Topic ;
+        rdfs:label               "prototype" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file1181374069033364206_tmp_00979
+        a               saro:JobPosting ;
+        saro:describes  :stream2file1181374069033364206_tmp_00979_JobRole .
+
+saro:bigData  a                  saro:Topic ;
+        rdfs:label               "big data" ;
+        saro:frequencyOfMention  3 .
+
+saro:javascript  a               saro:Tool ;
+        rdfs:label               "Javascript" ;
+        saro:frequencyOfMention  6 .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  15 .
+
+saro:developer  a                saro:Topic ;
+        rdfs:label               "developer" ;
+        saro:frequencyOfMention  3 .
+
+saro:scrum  a                    saro:Topic ;
+        rdfs:label               "scrum" ;
+        saro:frequencyOfMention  3 .
+
+:ecom   a       saro:Recruiter , so:Organisation .
+
+:stream2file1181374069033364206_tmp_00979_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Software Engineer"@en ;
+        so:datePosted          "2021-02-14"^^xsd:date ;
+        so:hiringOrganisation  :ecom ;
+        so:jobLocation         :United_Kingdom ;
+        saro:requiresSkill     saro:softwareEngineer , saro:microservices , saro:prototype , saro:javascript , saro:go , saro:agile , saro:cad , saro:development , saro:database , saro:networks , saro:bigData , saro:azure , saro:c , saro:dotNet , saro:developer , saro:design , saro:automation , saro:sql , saro:refactoring , saro:tools , saro:scrum , saro:cloud .
+
+saro:networks  a                 saro:Topic ;
+        rdfs:label               "networks" ;
+        saro:frequencyOfMention  3 .
+
+saro:dotNet  a                   saro:Product ;
+        rdfs:label               ".net" ;
+        saro:frequencyOfMention  6 .
+
+saro:cad  a                      saro:Topic ;
+        rdfs:label               "cad" ;
+        saro:frequencyOfMention  3 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "Cloud" ;
+        saro:frequencyOfMention  6 .
+
+saro:c  a                        saro:Tool ;
+        rdfs:label               "c" ;
+        saro:frequencyOfMention  6 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "agile" ;
+        saro:frequencyOfMention  9 .
+

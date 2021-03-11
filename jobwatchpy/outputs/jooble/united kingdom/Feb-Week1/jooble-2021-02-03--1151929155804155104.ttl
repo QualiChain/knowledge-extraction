@@ -1,0 +1,93 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:riskManagement  a           saro:Topic ;
+        rdfs:label               "risk management" ;
+        saro:frequencyOfMention  3 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  6 .
+
+saro:simulation  a               saro:Topic ;
+        rdfs:label               "simulation" ;
+        saro:frequencyOfMention  9 .
+
+saro:productManagement
+        a                        saro:Topic ;
+        rdfs:label               "product management" ;
+        saro:frequencyOfMention  3 .
+
+saro:artificialIntelligence
+        a                        saro:Topic ;
+        rdfs:label               "artificial intelligence" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  3 .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  16 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+:brandingScienceGroup
+        a       saro:Recruiter , so:Organisation .
+
+saro:ux  a                       saro:Tool ;
+        rdfs:label               "ux" ;
+        saro:frequencyOfMention  9 .
+
+:stream2file17701669463821560756_tmp_01711_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Research Executive"@en ;
+        so:hiringOrganisation  :brandingScienceGroup ;
+        saro:requiresSkill     saro:go , saro:productManagement , saro:riskManagement , saro:opencl , saro:computerScience , saro:reporting , saro:ux , saro:simulation , saro:tools , saro:gpu , saro:design , saro:analysis , saro:dataAnalysis , saro:compiler , saro:artificialIntelligence , saro:development .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  27 .
+
+saro:opencl  a                   saro:Product ;
+        rdfs:label               "OpenCL" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file17701669463821560756_tmp_01711
+        a               saro:JobPosting ;
+        saro:describes  :stream2file17701669463821560756_tmp_01711_JobRole .
+
+saro:dataAnalysis  a             saro:Topic ;
+        rdfs:label               "data analysis" ;
+        saro:frequencyOfMention  6 .
+
+saro:computerScience  a          saro:Topic ;
+        rdfs:label               "computer science" ;
+        saro:frequencyOfMention  6 .
+
+saro:gpu  a                      saro:Topic ;
+        rdfs:label               "gpu" ;
+        saro:frequencyOfMention  18 .
+
+saro:compiler  a                 saro:Topic ;
+        rdfs:label               "compiler" ;
+        saro:frequencyOfMention  9 .
+

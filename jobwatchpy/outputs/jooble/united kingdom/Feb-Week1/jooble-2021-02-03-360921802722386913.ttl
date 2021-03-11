@@ -1,0 +1,110 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  3 .
+
+saro:backend  a                  saro:Topic ;
+        rdfs:label               "backend" ;
+        saro:frequencyOfMention  3 .
+
+saro:oracle  a                   saro:Product ;
+        rdfs:label               "oracle" ;
+        saro:frequencyOfMention  4 .
+
+saro:ipad  a                     saro:Product ;
+        rdfs:label               "ipad" ;
+        saro:frequencyOfMention  3 .
+
+:orbisConsultants  a  saro:Recruiter , so:Organisation .
+
+saro:etl  a                      saro:Tool ;
+        rdfs:label               "etl" ;
+        saro:frequencyOfMention  16 .
+
+saro:designPatterns  a           saro:Topic ;
+        rdfs:label               "design patterns" ;
+        saro:frequencyOfMention  3 .
+
+saro:umbraco  a                  saro:Tool ;
+        rdfs:label               "umbraco" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  3 .
+
+saro:database  a                 saro:Topic ;
+        rdfs:label               "database" ;
+        saro:frequencyOfMention  7 .
+
+saro:mvc  a                      saro:Topic ;
+        rdfs:label               "MVC" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  15 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file17035402451456217835_tmp_01C45
+        a               saro:JobPosting ;
+        saro:describes  :stream2file17035402451456217835_tmp_01C45_JobRole .
+
+saro:bigData  a                  saro:Topic ;
+        rdfs:label               "Big Data" ;
+        saro:frequencyOfMention  4 .
+
+saro:versionControl  a           saro:Topic ;
+        rdfs:label               "version control" ;
+        saro:frequencyOfMention  3 .
+
+saro:angular  a                  saro:Product ;
+        rdfs:label               "angular" ;
+        saro:frequencyOfMention  9 .
+
+saro:crm  a                      saro:Topic ;
+        rdfs:label               "CRM" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  7 .
+
+saro:developer  a                saro:Topic ;
+        rdfs:label               "developer" ;
+        saro:frequencyOfMention  6 .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  3 .
+
+saro:dotNet  a                   saro:Product ;
+        rdfs:label               ".net" ;
+        saro:frequencyOfMention  21 .
+
+:stream2file17035402451456217835_tmp_01C45_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Data Engineer"@en ;
+        so:hiringOrganisation  :orbisConsultants ;
+        saro:requiresSkill     saro:bigData , saro:mvc , saro:etl , saro:development , saro:tools , saro:oracle , saro:ipad , saro:crm , saro:designPatterns , saro:xamarin , saro:sql , saro:go , saro:backend , saro:design , saro:dotNet , saro:database , saro:versionControl , saro:developer , saro:umbraco , saro:analysis , saro:angular .
+
+saro:xamarin  a                  saro:Product ;
+        rdfs:label               "xamarin" ;
+        saro:frequencyOfMention  3 .
+

@@ -1,0 +1,159 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+:fdmGroup  a    saro:Recruiter , so:Organisation .
+
+saro:cucumber  a                 saro:Tool ;
+        rdfs:label               "Cucumber" ;
+        saro:frequencyOfMention  3 .
+
+saro:networking  a               saro:Topic ;
+        rdfs:label               "networking" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file7211957182415998264_tmp_00BFD_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Technical Trainer - Software Testing"@en ;
+        so:datePosted          "2021-02-09"^^xsd:date ;
+        so:hiringOrganisation  :fdmGroup ;
+        so:jobLocation         :United_Kingdom ;
+        saro:requiresSkill     saro:frontEnd , saro:sql , saro:finance , saro:cloud , saro:programming , saro:c , saro:versionControl , saro:go , saro:docker , saro:oop , saro:networking , saro:cucumber , saro:bdd , saro:development , saro:saltStack , saro:fintech , saro:git , saro:automation , saro:reporting , saro:tools , saro:javascript , saro:svn , saro:gherkin , saro:jira , saro:java , saro:react , saro:seleniumWebdriver , saro:agile , saro:tdd , saro:rest , saro:r , saro:design .
+
+saro:rest  a                     saro:Tool ;
+        rdfs:label               "REST" ;
+        saro:frequencyOfMention  6 .
+
+saro:tdd  a                      saro:Topic ;
+        rdfs:label               "TDD" ;
+        saro:frequencyOfMention  3 .
+
+saro:automation  a               saro:Topic ;
+        rdfs:label               "Automation" ;
+        saro:frequencyOfMention  6 .
+
+saro:react  a                    saro:Tool ;
+        rdfs:label               "react" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file7211957182415998264_tmp_00BFD
+        a               saro:JobPosting ;
+        saro:describes  :stream2file7211957182415998264_tmp_00BFD_JobRole .
+
+:United_Kingdom  a  so:Place .
+
+saro:java  a                     saro:Tool ;
+        rdfs:label               "java" ;
+        saro:frequencyOfMention  6 .
+
+saro:fintech  a                  saro:Product ;
+        rdfs:label               "fintech" ;
+        saro:frequencyOfMention  3 .
+
+saro:frontEnd  a                 saro:Topic ;
+        rdfs:label               "Frontend" ;
+        saro:frequencyOfMention  3 .
+
+saro:r  a                        saro:Tool ;
+        rdfs:label               "R" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  6 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  6 .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  3 .
+
+saro:versionControl  a           saro:Topic ;
+        rdfs:label               "version control" ;
+        saro:frequencyOfMention  3 .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  3 .
+
+saro:jira  a                     saro:Tool ;
+        rdfs:label               "Jira" ;
+        saro:frequencyOfMention  6 .
+
+saro:javascript  a               saro:Tool ;
+        rdfs:label               "JavaScript" ;
+        saro:frequencyOfMention  6 .
+
+saro:seleniumWebdriver
+        a                        saro:Product ;
+        rdfs:label               "selenium webdriver" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "Design" ;
+        saro:frequencyOfMention  3 .
+
+saro:bdd  a                      saro:Topic ;
+        rdfs:label               "bdd" ;
+        saro:frequencyOfMention  9 .
+
+saro:oop  a                      saro:Topic ;
+        rdfs:label               "OOP" ;
+        saro:frequencyOfMention  3 .
+
+saro:programming  a              saro:Topic ;
+        rdfs:label               "programming" ;
+        saro:frequencyOfMention  6 .
+
+saro:svn  a                      saro:Tool ;
+        rdfs:label               "svn" ;
+        saro:frequencyOfMention  3 .
+
+saro:docker  a                   saro:Product ;
+        rdfs:label               "Docker" ;
+        saro:frequencyOfMention  3 .
+
+saro:git  a                      saro:Tool ;
+        rdfs:label               "Git" ;
+        saro:frequencyOfMention  6 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "Cloud" ;
+        saro:frequencyOfMention  12 .
+
+saro:finance  a                  saro:Topic ;
+        rdfs:label               "Finance" ;
+        saro:frequencyOfMention  3 .
+
+saro:c  a                        saro:Tool ;
+        rdfs:label               "c" ;
+        saro:frequencyOfMention  3 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "Agile" ;
+        saro:frequencyOfMention  3 .
+
+saro:saltStack  a                saro:Tool ;
+        rdfs:label               "Saltstack" ;
+        saro:frequencyOfMention  3 .
+
+saro:gherkin  a                  saro:Tool ;
+        rdfs:label               "Gherkin" ;
+        saro:frequencyOfMention  3 .
+

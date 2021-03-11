@@ -1,0 +1,112 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:adobe  a                    saro:Product ;
+        rdfs:label               "adobe" ;
+        saro:frequencyOfMention  6 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  6 .
+
+saro:oracle  a                   saro:Product ;
+        rdfs:label               "oracle" ;
+        saro:frequencyOfMention  3 .
+
+saro:scripting  a                saro:Tool ;
+        rdfs:label               "scripting" ;
+        saro:frequencyOfMention  3 .
+
+saro:vb.net  a                   saro:Tool ;
+        rdfs:label               "VB.Net" ;
+        saro:frequencyOfMention  3 .
+
+:tataConsultancyServices
+        a       saro:Recruiter , so:Organisation .
+
+:United_Kingdom  a  so:Place .
+
+saro:designPatterns  a           saro:Topic ;
+        rdfs:label               "design patterns" ;
+        saro:frequencyOfMention  6 .
+
+saro:xml  a                      saro:Tool ;
+        rdfs:label               "xml" ;
+        saro:frequencyOfMention  3 .
+
+saro:json  a                     saro:Product ;
+        rdfs:label               "json" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  9 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  3 .
+
+saro:sdlc  a                     saro:Topic ;
+        rdfs:label               "sdlc" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file18240833440192017395_tmp_0085D_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Solution Designer"@en ;
+        so:datePosted          "2021-02-12"^^xsd:date ;
+        so:hiringOrganisation  :tataConsultancyServices ;
+        so:jobLocation         :United_Kingdom ;
+        saro:requiresSkill     saro:adobe , saro:sdlc , saro:sql , saro:cobol , saro:soap , saro:design , saro:softwareDevelopment , saro:vb.net , saro:cloud , saro:xml , saro:tools , saro:designPatterns , saro:json , saro:development , saro:go , saro:analysis , saro:oracle , saro:networks , saro:scripting , saro:cad .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "Design" ;
+        saro:frequencyOfMention  37 .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file18240833440192017395_tmp_0085D
+        a               saro:JobPosting ;
+        saro:describes  :stream2file18240833440192017395_tmp_0085D_JobRole .
+
+saro:networks  a                 saro:Topic ;
+        rdfs:label               "networks" ;
+        saro:frequencyOfMention  2 .
+
+saro:cad  a                      saro:Topic ;
+        rdfs:label               "cad" ;
+        saro:frequencyOfMention  9 .
+
+saro:soap  a                     saro:Tool ;
+        rdfs:label               "soap" ;
+        saro:frequencyOfMention  3 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "Cloud" ;
+        saro:frequencyOfMention  3 .
+
+saro:softwareDevelopment
+        a                        saro:Topic ;
+        rdfs:label               "software development" ;
+        saro:frequencyOfMention  3 .
+
+saro:cobol  a                    saro:Tool ;
+        rdfs:label               "COBOL" ;
+        saro:frequencyOfMention  3 .
+

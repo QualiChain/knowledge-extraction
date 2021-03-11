@@ -1,0 +1,108 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:assurance  a                saro:Topic ;
+        rdfs:label               "assurance" ;
+        saro:frequencyOfMention  4 .
+
+saro:rest  a                     saro:Tool ;
+        rdfs:label               "rest" ;
+        saro:frequencyOfMention  3 .
+
+saro:automation  a               saro:Topic ;
+        rdfs:label               "automation" ;
+        saro:frequencyOfMention  9 .
+
+saro:selenium  a                 saro:Tool ;
+        rdfs:label               "Selenium" ;
+        saro:frequencyOfMention  3 .
+
+saro:monitoring  a               saro:Topic ;
+        rdfs:label               "monitoring" ;
+        saro:frequencyOfMention  4 .
+
+saro:productManagement
+        a                        saro:Topic ;
+        rdfs:label               "product management" ;
+        saro:frequencyOfMention  3 .
+
+saro:java  a                     saro:Tool ;
+        rdfs:label               "java" ;
+        saro:frequencyOfMention  6 .
+
+saro:fintech  a                  saro:Product ;
+        rdfs:label               "FinTech" ;
+        saro:frequencyOfMention  3 .
+
+saro:dataStructures  a           saro:Topic ;
+        rdfs:label               "data structures" ;
+        saro:frequencyOfMention  3 .
+
+saro:numpy  a                    saro:Tool ;
+        rdfs:label               "numpy" ;
+        saro:frequencyOfMention  6 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  3 .
+
+saro:machineLearning  a          saro:Topic ;
+        rdfs:label               "Machine Learning" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:customerSupport  a          saro:Topic ;
+        rdfs:label               "customer support" ;
+        saro:frequencyOfMention  3 .
+
+:alveoTechnology  a  saro:Recruiter , so:Organisation .
+
+:stream2file1022459400057602722_tmp_00BD1_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Quality Assurance Engineer"@en ;
+        so:hiringOrganisation  :alveoTechnology ;
+        saro:requiresSkill     saro:java , saro:sql , saro:tools , saro:automatedTests , saro:productManagement , saro:customerSupport , saro:python , saro:numpy , saro:monitoring , saro:performanceTesting , saro:dataStructures , saro:selenium , saro:development , saro:machineLearning , saro:rest , saro:fintech , saro:go , saro:assurance , saro:automation , saro:orchestration .
+
+saro:orchestration  a            saro:Topic ;
+        rdfs:label               "orchestration" ;
+        saro:frequencyOfMention  3 .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  9 .
+
+saro:performanceTesting
+        a                        saro:Topic ;
+        rdfs:label               "performance testing" ;
+        saro:frequencyOfMention  3 .
+
+saro:automatedTests  a           saro:Topic ;
+        rdfs:label               "automated tests" ;
+        saro:frequencyOfMention  3 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "Python" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file1022459400057602722_tmp_00BD1
+        a               saro:JobPosting ;
+        saro:describes  :stream2file1022459400057602722_tmp_00BD1_JobRole .
+

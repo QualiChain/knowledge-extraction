@@ -1,0 +1,146 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+:freshtechit  a  saro:Recruiter , so:Organisation .
+
+saro:ios  a                      saro:Product ;
+        rdfs:label               "ios" ;
+        saro:frequencyOfMention  12 .
+
+saro:automation  a               saro:Topic ;
+        rdfs:label               "automation" ;
+        saro:frequencyOfMention  3 .
+
+saro:architect  a                saro:Topic ;
+        rdfs:label               "Architect" ;
+        saro:frequencyOfMention  3 .
+
+saro:apache  a                   saro:Product ;
+        rdfs:label               "Apache" ;
+        saro:frequencyOfMention  3 .
+
+saro:php  a                      saro:Tool ;
+        rdfs:label               "PHP" ;
+        saro:frequencyOfMention  9 .
+
+saro:java  a                     saro:Tool ;
+        rdfs:label               "java" ;
+        saro:frequencyOfMention  3 .
+
+saro:azure  a                    saro:Tool ;
+        rdfs:label               "azure" ;
+        saro:frequencyOfMention  6 .
+
+saro:fintech  a                  saro:Product ;
+        rdfs:label               "FINTECH" ;
+        saro:frequencyOfMention  3 .
+
+saro:frontEnd  a                 saro:Topic ;
+        rdfs:label               "front end" ;
+        saro:frequencyOfMention  6 .
+
+saro:json  a                     saro:Product ;
+        rdfs:label               "json" ;
+        saro:frequencyOfMention  3 .
+
+saro:drupal  a                   saro:Tool ;
+        rdfs:label               "Drupal" ;
+        saro:frequencyOfMention  20 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  9 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  30 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  9 .
+
+saro:mvvm  a                     saro:Topic ;
+        rdfs:label               "mvvm" ;
+        saro:frequencyOfMention  3 .
+
+saro:fullstack  a                saro:Topic ;
+        rdfs:label               "fullstack" ;
+        saro:frequencyOfMention  3 .
+
+saro:swift  a                    saro:Tool ;
+        rdfs:label               "swift" ;
+        saro:frequencyOfMention  4 .
+
+saro:crm  a                      saro:Topic ;
+        rdfs:label               "CRM" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  6 .
+
+saro:developer  a                saro:Topic ;
+        rdfs:label               "developer" ;
+        saro:frequencyOfMention  6 .
+
+saro:scrum  a                    saro:Topic ;
+        rdfs:label               "scrum" ;
+        saro:frequencyOfMention  4 .
+
+:stream2file7809948475495248341_tmp_018BD_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "iOS Developer"@en ;
+        so:hiringOrganisation  :freshtechit ;
+        saro:requiresSkill     saro:python , saro:automation , saro:security , saro:frontEnd , saro:git , saro:json , saro:azure , saro:cloud , saro:bash , saro:scrum , saro:fullstack , saro:docker , saro:java , saro:fintech , saro:apache , saro:design , saro:mysql , saro:drupal , saro:architect , saro:webApplications , saro:mvvm , saro:go , saro:php , saro:development , saro:developer , saro:agile , saro:swift , saro:ios , saro:crm , saro:tools .
+
+saro:docker  a                   saro:Product ;
+        rdfs:label               "Docker" ;
+        saro:frequencyOfMention  3 .
+
+saro:git  a                      saro:Tool ;
+        rdfs:label               "Git" ;
+        saro:frequencyOfMention  3 .
+
+saro:mysql  a                    saro:Tool ;
+        rdfs:label               "mysql" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file7809948475495248341_tmp_018BD
+        a               saro:JobPosting ;
+        saro:describes  :stream2file7809948475495248341_tmp_018BD_JobRole .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "Cloud" ;
+        saro:frequencyOfMention  10 .
+
+saro:webApplications  a          saro:Topic ;
+        rdfs:label               "web applications" ;
+        saro:frequencyOfMention  3 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "Agile" ;
+        saro:frequencyOfMention  10 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "Python" ;
+        saro:frequencyOfMention  3 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  3 .
+
+saro:bash  a                     saro:Tool ;
+        rdfs:label               "Bash" ;
+        saro:frequencyOfMention  3 .
+

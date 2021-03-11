@@ -1,0 +1,108 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:automation  a               saro:Topic ;
+        rdfs:label               "automation" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file8597351871876694524_tmp_0118D_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "System Administrator"@en ;
+        so:hiringOrganisation  :understandingRecruitment ;
+        saro:requiresSkill     saro:cloud , saro:arm , saro:development , saro:agile , saro:developer , saro:react , saro:penetrationTesting , saro:security , saro:gulp , saro:reporting , saro:git , saro:automation , saro:administrator , saro:crm , saro:npm , saro:go , saro:javascript , saro:css3 , saro:github , saro:design .
+
+saro:react  a                    saro:Tool ;
+        rdfs:label               "react" ;
+        saro:frequencyOfMention  12 .
+
+:understandingRecruitment
+        a       saro:Recruiter , so:Organisation .
+
+saro:npm  a                      saro:Product ;
+        rdfs:label               "npm" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file8597351871876694524_tmp_0118D
+        a               saro:JobPosting ;
+        saro:describes  :stream2file8597351871876694524_tmp_0118D_JobRole .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  12 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:github  a                   saro:Tool ;
+        rdfs:label               "Github" ;
+        saro:frequencyOfMention  3 .
+
+saro:administrator  a            saro:Topic ;
+        rdfs:label               "administrator" ;
+        saro:frequencyOfMention  15 .
+
+saro:crm  a                      saro:Topic ;
+        rdfs:label               "CRM" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  6 .
+
+saro:developer  a                saro:Topic ;
+        rdfs:label               "developer" ;
+        saro:frequencyOfMention  9 .
+
+saro:javascript  a               saro:Tool ;
+        rdfs:label               "Javascript" ;
+        saro:frequencyOfMention  4 .
+
+saro:git  a                      saro:Tool ;
+        rdfs:label               "Git" ;
+        saro:frequencyOfMention  3 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "cloud" ;
+        saro:frequencyOfMention  9 .
+
+saro:arm  a                      saro:Tool ;
+        rdfs:label               "arm" ;
+        saro:frequencyOfMention  3 .
+
+saro:css3  a                     saro:Tool ;
+        rdfs:label               "css3" ;
+        saro:frequencyOfMention  3 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "Agile" ;
+        saro:frequencyOfMention  6 .
+
+saro:penetrationTesting
+        a                        saro:Topic ;
+        rdfs:label               "penetration testing" ;
+        saro:frequencyOfMention  3 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  35 .
+
+saro:gulp  a                     saro:Tool ;
+        rdfs:label               "gulp" ;
+        saro:frequencyOfMention  3 .
+

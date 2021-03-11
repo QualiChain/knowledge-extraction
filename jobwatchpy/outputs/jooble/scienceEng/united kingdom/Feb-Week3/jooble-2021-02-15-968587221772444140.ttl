@@ -1,0 +1,70 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+:cosmicFutures  a  saro:Recruiter , so:Organisation .
+
+saro:hardware  a                 saro:Topic ;
+        rdfs:label               "hardware" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file6591155915004822677_tmp_00A55_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Mechanical Engineer"@en ;
+        so:datePosted          "2021-02-13"^^xsd:date ;
+        so:hiringOrganisation  :cosmicFutures ;
+        so:jobLocation         :United_Kingdom ;
+        saro:requiresSkill     saro:go , saro:python , saro:security , saro:design , saro:hardware , saro:development , saro:network , saro:cad , saro:cryptography , saro:tools .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  3 .
+
+saro:cad  a                      saro:Topic ;
+        rdfs:label               "cad" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "Python" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  9 .
+
+:United_Kingdom  a  so:Place .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  3 .
+
+saro:network  a                  saro:Topic ;
+        rdfs:label               "network" ;
+        saro:frequencyOfMention  1 .
+
+:stream2file6591155915004822677_tmp_00A55
+        a               saro:JobPosting ;
+        saro:describes  :stream2file6591155915004822677_tmp_00A55_JobRole .
+
+saro:cryptography  a             saro:Topic ;
+        rdfs:label               "cryptography" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  10 .
+

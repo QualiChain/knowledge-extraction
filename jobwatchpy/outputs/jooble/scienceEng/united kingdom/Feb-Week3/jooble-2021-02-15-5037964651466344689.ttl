@@ -1,0 +1,88 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:assurance  a                saro:Topic ;
+        rdfs:label               "assurance" ;
+        saro:frequencyOfMention  3 .
+
+saro:scripting  a                saro:Tool ;
+        rdfs:label               "scripting" ;
+        saro:frequencyOfMention  3 .
+
+saro:automation  a               saro:Topic ;
+        rdfs:label               "Automation" ;
+        saro:frequencyOfMention  15 .
+
+:United_Kingdom  a  so:Place .
+
+:stream2file15098360902508746057_tmp_009AD_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Requirements Engineer"@en ;
+        so:datePosted          "2021-02-14"^^xsd:date ;
+        so:hiringOrganisation  :nationwideBuildingSociety ;
+        so:jobLocation         :United_Kingdom ;
+        saro:requiresSkill     saro:fintech , saro:cloud , saro:go , saro:development , saro:security , saro:tools , saro:automatedDeployment , saro:database , saro:design , saro:storage , saro:assurance , saro:automation , saro:scripting , saro:agile .
+
+saro:fintech  a                  saro:Product ;
+        rdfs:label               "fintech" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file15098360902508746057_tmp_009AD
+        a               saro:JobPosting ;
+        saro:describes  :stream2file15098360902508746057_tmp_009AD_JobRole .
+
+saro:database  a                 saro:Topic ;
+        rdfs:label               "database" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  6 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  11 .
+
+saro:storage  a                  saro:Topic ;
+        rdfs:label               "storage" ;
+        saro:frequencyOfMention  9 .
+
+:nationwideBuildingSociety
+        a       saro:Recruiter , so:Organisation .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "Cloud" ;
+        saro:frequencyOfMention  43 .
+
+saro:automatedDeployment
+        a                        saro:Topic ;
+        rdfs:label               "automated deployment" ;
+        saro:frequencyOfMention  3 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "agile" ;
+        saro:frequencyOfMention  13 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  3 .
+

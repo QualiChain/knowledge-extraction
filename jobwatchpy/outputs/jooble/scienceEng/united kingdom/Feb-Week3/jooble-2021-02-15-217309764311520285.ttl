@@ -1,0 +1,107 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:react  a                    saro:Tool ;
+        rdfs:label               "react" ;
+        saro:frequencyOfMention  3 .
+
+saro:selenium  a                 saro:Tool ;
+        rdfs:label               "Selenium" ;
+        saro:frequencyOfMention  3 .
+
+:United_Kingdom  a  so:Place .
+
+saro:java  a                     saro:Tool ;
+        rdfs:label               "java" ;
+        saro:frequencyOfMention  3 .
+
+saro:fintech  a                  saro:Product ;
+        rdfs:label               "fintech" ;
+        saro:frequencyOfMention  6 .
+
+saro:reactNative  a              saro:Tool ;
+        rdfs:label               "ReactNative" ;
+        saro:frequencyOfMention  3 .
+
+saro:frontEnd  a                 saro:Topic ;
+        rdfs:label               "Frontend" ;
+        saro:frequencyOfMention  18 .
+
+:stream2file4872650193714873179_tmp_009B9_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Engineer"@en ;
+        so:datePosted          "2021-02-12"^^xsd:date ;
+        so:hiringOrganisation  :alrec ;
+        so:jobLocation         :United_Kingdom ;
+        saro:requiresSkill     saro:userInterface , saro:tools , saro:design , saro:go , saro:fintech , saro:selenium , saro:linux , saro:automatedTests , saro:frontEnd , saro:mobileDevelopment , saro:rails , saro:android , saro:customerSupport , saro:finance , saro:developer , saro:react , saro:development , saro:reactNative , saro:java .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  9 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  15 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  9 .
+
+saro:mobileDevelopment
+        a                        saro:Topic ;
+        rdfs:label               "mobile development" ;
+        saro:frequencyOfMention  9 .
+
+saro:customerSupport  a          saro:Topic ;
+        rdfs:label               "customer support" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file4872650193714873179_tmp_009B9
+        a               saro:JobPosting ;
+        saro:describes  :stream2file4872650193714873179_tmp_009B9_JobRole .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  10 .
+
+saro:android  a                  saro:Product ;
+        rdfs:label               "Android" ;
+        saro:frequencyOfMention  4 .
+
+saro:developer  a                saro:Topic ;
+        rdfs:label               "developer" ;
+        saro:frequencyOfMention  15 .
+
+saro:linux  a                    saro:Product ;
+        rdfs:label               "Linux" ;
+        saro:frequencyOfMention  3 .
+
+saro:automatedTests  a           saro:Topic ;
+        rdfs:label               "automated tests" ;
+        saro:frequencyOfMention  3 .
+
+:alrec  a       saro:Recruiter , so:Organisation .
+
+saro:userInterface  a            saro:Topic ;
+        rdfs:label               "user interface" ;
+        saro:frequencyOfMention  3 .
+
+saro:rails  a                    saro:Tool ;
+        rdfs:label               "rails" ;
+        saro:frequencyOfMention  3 .
+
+saro:finance  a                  saro:Topic ;
+        rdfs:label               "finance" ;
+        saro:frequencyOfMention  3 .
+

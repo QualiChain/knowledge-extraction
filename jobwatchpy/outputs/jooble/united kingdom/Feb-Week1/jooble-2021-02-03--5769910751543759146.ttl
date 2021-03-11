@@ -1,0 +1,205 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  4 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:postgresql  a               saro:Tool ;
+        rdfs:label               "postgresql" ;
+        saro:frequencyOfMention  3 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  15 .
+
+saro:database  a                 saro:Topic ;
+        rdfs:label               "database" ;
+        saro:frequencyOfMention  77 .
+
+:damiaGroup  a  saro:Recruiter , so:Organisation .
+
+saro:dba  a                      saro:Topic ;
+        rdfs:label               "dba" ;
+        saro:frequencyOfMention  27 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  3 .
+
+saro:netty  a                    saro:Product ;
+        rdfs:label               "Netty" ;
+        saro:frequencyOfMention  3 .
+
+saro:s3  a                       saro:Tool ;
+        rdfs:label               "S3" ;
+        saro:frequencyOfMention  3 .
+
+saro:distributedDatabase
+        a                        saro:Topic ;
+        rdfs:label               "distributed database" ;
+        saro:frequencyOfMention  3 .
+
+saro:databaseAdministration
+        a                        saro:Topic ;
+        rdfs:label               "database administration" ;
+        saro:frequencyOfMention  3 .
+
+saro:administrator  a            saro:Topic ;
+        rdfs:label               "administrator" ;
+        saro:frequencyOfMention  4 .
+
+saro:nginx  a                    saro:Tool ;
+        rdfs:label               "Nginx" ;
+        saro:frequencyOfMention  3 .
+
+saro:oracle  a                   saro:Product ;
+        rdfs:label               "oracle" ;
+        saro:frequencyOfMention  18 .
+
+saro:chef  a                     saro:Product ;
+        rdfs:label               "chef" ;
+        saro:frequencyOfMention  3 .
+
+saro:monitoring  a               saro:Topic ;
+        rdfs:label               "monitoring" ;
+        saro:frequencyOfMention  6 .
+
+saro:disasterRecovery
+        a                        saro:Topic ;
+        rdfs:label               "disaster recovery" ;
+        saro:frequencyOfMention  3 .
+
+saro:unix  a                     saro:Product ;
+        rdfs:label               "unix" ;
+        saro:frequencyOfMention  3 .
+
+saro:lambda  a                   saro:Product ;
+        rdfs:label               "Lambda" ;
+        saro:frequencyOfMention  3 .
+
+saro:scripting  a                saro:Tool ;
+        rdfs:label               "scripting" ;
+        saro:frequencyOfMention  3 .
+
+saro:sybase  a                   saro:Product ;
+        rdfs:label               "sybase" ;
+        saro:frequencyOfMention  3 .
+
+saro:visualization  a            saro:Topic ;
+        rdfs:label               "Visualization" ;
+        saro:frequencyOfMention  3 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "agile" ;
+        saro:frequencyOfMention  3 .
+
+saro:elasticsearch  a            saro:Product ;
+        rdfs:label               "elasticsearch" ;
+        saro:frequencyOfMention  6 .
+
+saro:mongodb  a                  saro:Product ;
+        rdfs:label               "MongoDB" ;
+        saro:frequencyOfMention  3 .
+
+saro:spring  a                   saro:Tool ;
+        rdfs:label               "spring" ;
+        saro:frequencyOfMention  6 .
+
+saro:storage  a                  saro:Topic ;
+        rdfs:label               "Storage" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file12036913166921494450_tmp_01B45
+        a               saro:JobPosting ;
+        saro:describes  :stream2file12036913166921494450_tmp_01B45_JobRole .
+
+saro:less  a                     saro:Topic ;
+        rdfs:label               "less" ;
+        saro:frequencyOfMention  3 .
+
+saro:bigData  a                  saro:Topic ;
+        rdfs:label               "big data" ;
+        saro:frequencyOfMention  7 .
+
+:stream2file12036913166921494450_tmp_01B45_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Senior Database Administrator"@en ;
+        so:hiringOrganisation  :damiaGroup ;
+        saro:requiresSkill     saro:fintech , saro:lambda , saro:ec2 , saro:monitoring , saro:distributedDatabase , saro:oracle , saro:development , saro:disasterRecovery , saro:database , saro:postgresql , saro:virtualization , saro:unix , saro:security , saro:s3 , saro:nosql , saro:shellScripting , saro:databaseAdministration , saro:chef , saro:netty , saro:agile , saro:scripting , saro:elasticsearch , saro:cloud , saro:administrator , saro:nginx , saro:rhel , saro:sql , saro:tools , saro:apache , saro:spring , saro:powershell , saro:mongodb , saro:tomcat , saro:java , saro:visualization , saro:mysql , saro:bigData , saro:go , saro:dba , saro:programming , saro:sybase , saro:less , saro:memcached , saro:storage .
+
+saro:rhel  a                     saro:Product ;
+        rdfs:label               "rhel" ;
+        saro:frequencyOfMention  3 .
+
+saro:tomcat  a                   saro:Tool ;
+        rdfs:label               "tomcat" ;
+        saro:frequencyOfMention  3 .
+
+saro:virtualization  a           saro:Topic ;
+        rdfs:label               "Virtualization" ;
+        saro:frequencyOfMention  6 .
+
+saro:mysql  a                    saro:Tool ;
+        rdfs:label               "mysql" ;
+        saro:frequencyOfMention  15 .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  13 .
+
+saro:java  a                     saro:Tool ;
+        rdfs:label               "java" ;
+        saro:frequencyOfMention  3 .
+
+saro:memcached  a                saro:Product ;
+        rdfs:label               "memcached" ;
+        saro:frequencyOfMention  3 .
+
+saro:ec2  a                      saro:Tool ;
+        rdfs:label               "ec2" ;
+        saro:frequencyOfMention  6 .
+
+saro:shellScripting  a           saro:Topic ;
+        rdfs:label               "Shell Scripting" ;
+        saro:frequencyOfMention  3 .
+
+saro:fintech  a                  saro:Product ;
+        rdfs:label               "fintech" ;
+        saro:frequencyOfMention  3 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "Cloud" ;
+        saro:frequencyOfMention  9 .
+
+saro:nosql  a                    saro:Tool ;
+        rdfs:label               "nosql" ;
+        saro:frequencyOfMention  3 .
+
+saro:programming  a              saro:Topic ;
+        rdfs:label               "programming" ;
+        saro:frequencyOfMention  3 .
+
+saro:apache  a                   saro:Product ;
+        rdfs:label               "Apache" ;
+        saro:frequencyOfMention  3 .
+
+saro:powershell  a               saro:Tool ;
+        rdfs:label               "powershell" ;
+        saro:frequencyOfMention  3 .
+

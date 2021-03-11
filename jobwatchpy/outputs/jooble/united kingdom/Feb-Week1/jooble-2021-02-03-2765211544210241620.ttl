@@ -1,0 +1,78 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:dataScience  a              saro:Topic ;
+        rdfs:label               "data science" ;
+        saro:frequencyOfMention  6 .
+
+saro:dataStructures  a           saro:Topic ;
+        rdfs:label               "data structures" ;
+        saro:frequencyOfMention  3 .
+
+saro:computerScience  a          saro:Topic ;
+        rdfs:label               "computer science" ;
+        saro:frequencyOfMention  6 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file7149244144636644077_tmp_01BE9
+        a               saro:JobPosting ;
+        saro:describes  :stream2file7149244144636644077_tmp_01BE9_JobRole .
+
+saro:programming  a              saro:Topic ;
+        rdfs:label               "programming" ;
+        saro:frequencyOfMention  37 .
+
+saro:cPlusPlus  a                saro:Tool ;
+        rdfs:label               "c++" ;
+        saro:frequencyOfMention  6 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:statistics  a               saro:Topic ;
+        rdfs:label               "statistics" ;
+        saro:frequencyOfMention  3 .
+
+saro:database  a                 saro:Topic ;
+        rdfs:label               "database" ;
+        saro:frequencyOfMention  6 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  15 .
+
+saro:github  a                   saro:Tool ;
+        rdfs:label               "Github" ;
+        saro:frequencyOfMention  3 .
+
+saro:xml  a                      saro:Tool ;
+        rdfs:label               "xml" ;
+        saro:frequencyOfMention  6 .
+
+:sumoDigital  a  saro:Recruiter , so:Organisation .
+
+:stream2file7149244144636644077_tmp_01BE9_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Undergraduate Placement Programmer 2021/22 (ALL STUDIOS, UK)"@en ;
+        so:hiringOrganisation  :sumoDigital ;
+        saro:requiresSkill     saro:development , saro:computerScience , saro:statistics , saro:cPlusPlus , saro:xml , saro:go , saro:analytics , saro:dataStructures , saro:database , saro:analysis , saro:github , saro:dataScience , saro:programming .
+
+saro:analytics  a                saro:Topic ;
+        rdfs:label               "analytics" ;
+        saro:frequencyOfMention  6 .
+

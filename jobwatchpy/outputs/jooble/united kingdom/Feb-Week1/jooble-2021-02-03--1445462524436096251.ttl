@@ -1,0 +1,128 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:wordpress  a                saro:Tool ;
+        rdfs:label               "Wordpress" ;
+        saro:frequencyOfMention  3 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  3 .
+
+saro:networking  a               saro:Topic ;
+        rdfs:label               "networking" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file11301737418392650736_tmp_01AD9
+        a               saro:JobPosting ;
+        saro:describes  :stream2file11301737418392650736_tmp_01AD9_JobRole .
+
+saro:tcp  a                      saro:Tool ;
+        rdfs:label               "TCP" ;
+        saro:frequencyOfMention  6 .
+
+saro:magento  a                  saro:Product ;
+        rdfs:label               "Magento" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  3 .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  15 .
+
+saro:drupal  a                   saro:Tool ;
+        rdfs:label               "Drupal" ;
+        saro:frequencyOfMention  3 .
+
+saro:kafka  a                    saro:Tool ;
+        rdfs:label               "kafka" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file11301737418392650736_tmp_01AD9_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "System Accountant"@en ;
+        so:hiringOrganisation  :globalAccountingNetwork ;
+        saro:requiresSkill     saro:magento , saro:debian , saro:netsuite , saro:networking , saro:sql , saro:tcp , saro:kafka , saro:postgresql , saro:reporting , saro:finance , saro:linux , saro:development , saro:lua , saro:tools , saro:analysis , saro:wordpress , saro:networks , saro:hardware , saro:drupal , saro:projectManagement , saro:go , saro:security , saro:debugging , saro:python , saro:udp .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  3 .
+
+:globalAccountingNetwork
+        a       saro:Recruiter , so:Organisation .
+
+saro:linux  a                    saro:Product ;
+        rdfs:label               "Linux" ;
+        saro:frequencyOfMention  6 .
+
+saro:netsuite  a                 saro:Product ;
+        rdfs:label               "Netsuite" ;
+        saro:frequencyOfMention  11 .
+
+saro:debugging  a                saro:Topic ;
+        rdfs:label               "debugging" ;
+        saro:frequencyOfMention  3 .
+
+saro:projectManagement
+        a                        saro:Topic ;
+        rdfs:label               "project management" ;
+        saro:frequencyOfMention  3 .
+
+saro:networks  a                 saro:Topic ;
+        rdfs:label               "networks" ;
+        saro:frequencyOfMention  3 .
+
+saro:finance  a                  saro:Topic ;
+        rdfs:label               "finance" ;
+        saro:frequencyOfMention  40 .
+
+saro:hardware  a                 saro:Topic ;
+        rdfs:label               "hardware" ;
+        saro:frequencyOfMention  3 .
+
+saro:debian  a                   saro:Product ;
+        rdfs:label               "debian" ;
+        saro:frequencyOfMention  3 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "Python" ;
+        saro:frequencyOfMention  6 .
+
+saro:postgresql  a               saro:Tool ;
+        rdfs:label               "postgresql" ;
+        saro:frequencyOfMention  3 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  6 .
+
+saro:lua  a                      saro:Tool ;
+        rdfs:label               "lua" ;
+        saro:frequencyOfMention  6 .
+
+saro:udp  a                      saro:Tool ;
+        rdfs:label               "udp" ;
+        saro:frequencyOfMention  3 .
+

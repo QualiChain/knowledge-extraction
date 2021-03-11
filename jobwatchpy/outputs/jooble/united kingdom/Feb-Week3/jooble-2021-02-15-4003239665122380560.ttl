@@ -1,0 +1,187 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  54 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:hibernate  a                saro:Product ;
+        rdfs:label               "Hibernate" ;
+        saro:frequencyOfMention  3 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  7 .
+
+saro:database  a                 saro:Topic ;
+        rdfs:label               "database" ;
+        saro:frequencyOfMention  3 .
+
+saro:javascript  a               saro:Tool ;
+        rdfs:label               "Javascript" ;
+        saro:frequencyOfMention  6 .
+
+saro:json  a                     saro:Product ;
+        rdfs:label               "json" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  3 .
+
+saro:continuousIntegration
+        a                        saro:Topic ;
+        rdfs:label               "continuous integration" ;
+        saro:frequencyOfMention  3 .
+
+saro:angular  a                  saro:Product ;
+        rdfs:label               "angular" ;
+        saro:frequencyOfMention  9 .
+
+saro:oracle  a                   saro:Product ;
+        rdfs:label               "oracle" ;
+        saro:frequencyOfMention  3 .
+
+saro:networks  a                 saro:Topic ;
+        rdfs:label               "networks" ;
+        saro:frequencyOfMention  9 .
+
+saro:r  a                        saro:Tool ;
+        rdfs:label               "R" ;
+        saro:frequencyOfMention  6 .
+
+saro:css  a                      saro:Tool ;
+        rdfs:label               "css" ;
+        saro:frequencyOfMention  3 .
+
+saro:cisco  a                    saro:Product ;
+        rdfs:label               "cisco" ;
+        saro:frequencyOfMention  12 .
+
+saro:mvc  a                      saro:Topic ;
+        rdfs:label               "MVC" ;
+        saro:frequencyOfMention  3 .
+
+saro:softwareDevelopment
+        a                        saro:Topic ;
+        rdfs:label               "software development" ;
+        saro:frequencyOfMention  3 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "Agile" ;
+        saro:frequencyOfMention  12 .
+
+saro:azure  a                    saro:Tool ;
+        rdfs:label               "azure" ;
+        saro:frequencyOfMention  15 .
+
+saro:troubleshooting  a          saro:Topic ;
+        rdfs:label               "troubleshooting" ;
+        saro:frequencyOfMention  3 .
+
+saro:xml  a                      saro:Tool ;
+        rdfs:label               "xml" ;
+        saro:frequencyOfMention  3 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "Python" ;
+        saro:frequencyOfMention  3 .
+
+saro:spring  a                   saro:Tool ;
+        rdfs:label               "spring" ;
+        saro:frequencyOfMention  3 .
+
+saro:voip  a                     saro:Topic ;
+        rdfs:label               "voip" ;
+        saro:frequencyOfMention  3 .
+
+saro:html  a                     saro:Tool ;
+        rdfs:label               "html" ;
+        saro:frequencyOfMention  3 .
+
+saro:jpa  a                      saro:Tool ;
+        rdfs:label               "jpa" ;
+        saro:frequencyOfMention  3 .
+
+saro:webServices  a              saro:Topic ;
+        rdfs:label               "Web Services" ;
+        saro:frequencyOfMention  3 .
+
+saro:developer  a                saro:Topic ;
+        rdfs:label               "developer" ;
+        saro:frequencyOfMention  6 .
+
+saro:orchestration  a            saro:Topic ;
+        rdfs:label               "orchestration" ;
+        saro:frequencyOfMention  3 .
+
+saro:jquery  a                   saro:Tool ;
+        rdfs:label               "jquery" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file12892362925641068965_tmp_006E1_JobRole
+        a                        saro:JobRoleOrType ;
+        rdfs:label               "Cloud Engineer"@en ;
+        so:datePosted            "2021-02-10"^^xsd:date ;
+        so:hiringOrganisation    :thePeopleNetwork ;
+        so:jobLocation           :United_Kingdom ;
+        saro:requiresExperience  saro:java ;
+        saro:requiresSkill       saro:database , saro:automation , saro:userInterface , saro:oracle , saro:apache , saro:css , saro:java , saro:hibernate , saro:go , saro:r , saro:json , saro:troubleshooting , saro:powershell , saro:mvc , saro:cisco , saro:developer , saro:continuousIntegration , saro:html , saro:tools , saro:orchestration , saro:cloud , saro:voip , saro:design , saro:security , saro:xml , saro:webServices , saro:python , saro:tomcat , saro:networks , saro:azure , saro:angular , saro:spring , saro:softwareDevelopment , saro:jpa , saro:javascript , saro:jquery , saro:development , saro:agile .
+
+:stream2file12892362925641068965_tmp_006E1
+        a               saro:JobPosting ;
+        saro:describes  :stream2file12892362925641068965_tmp_006E1_JobRole .
+
+saro:tomcat  a                   saro:Tool ;
+        rdfs:label               "tomcat" ;
+        saro:frequencyOfMention  3 .
+
+saro:java  a                       saro:Tool ;
+        rdfs:label                 "java" ;
+        qc:experienceDurationText  "5 years commercial experience" ;
+        qc:minExperienceDuration   "P5Y" ;
+        saro:frequencyOfMention    27 .
+
+:thePeopleNetwork  a  saro:Recruiter , so:Organisation .
+
+saro:userInterface  a            saro:Topic ;
+        rdfs:label               "user interface" ;
+        saro:frequencyOfMention  6 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "cloud" ;
+        saro:frequencyOfMention  34 .
+
+:United_Kingdom  a  so:Place .
+
+saro:automation  a               saro:Topic ;
+        rdfs:label               "automation" ;
+        saro:frequencyOfMention  6 .
+
+saro:apache  a                   saro:Product ;
+        rdfs:label               "Apache" ;
+        saro:frequencyOfMention  3 .
+
+saro:powershell  a               saro:Tool ;
+        rdfs:label               "powershell" ;
+        saro:frequencyOfMention  3 .
+

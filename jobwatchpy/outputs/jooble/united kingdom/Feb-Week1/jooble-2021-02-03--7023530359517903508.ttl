@@ -1,0 +1,58 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:programming  a              saro:Topic ;
+        rdfs:label               "programming" ;
+        saro:frequencyOfMention  1 .
+
+saro:docker  a                   saro:Product ;
+        rdfs:label               "Docker" ;
+        saro:frequencyOfMention  1 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  2 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "Python" ;
+        saro:frequencyOfMention  1 .
+
+:trustInSodaLtd  a  saro:Recruiter , so:Organisation .
+
+saro:ansible  a                  saro:Tool ;
+        rdfs:label               "ansible" ;
+        saro:frequencyOfMention  1 .
+
+saro:chef  a                     saro:Product ;
+        rdfs:label               "chef" ;
+        saro:frequencyOfMention  1 .
+
+saro:sysadmin  a                 saro:Tool ;
+        rdfs:label               "SysAdmin" ;
+        saro:frequencyOfMention  1 .
+
+saro:linux  a                    saro:Product ;
+        rdfs:label               "Linux" ;
+        saro:frequencyOfMention  1 .
+
+:stream2file12600679542456560392_tmp_01935
+        a               saro:JobPosting ;
+        saro:describes  :stream2file12600679542456560392_tmp_01935_JobRole .
+
+:stream2file12600679542456560392_tmp_01935_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Site Reliability Engineer"@en ;
+        so:hiringOrganisation  :trustInSodaLtd ;
+        saro:requiresSkill     saro:chef , saro:sysadmin , saro:python , saro:docker , saro:go , saro:programming , saro:ansible , saro:linux .
+

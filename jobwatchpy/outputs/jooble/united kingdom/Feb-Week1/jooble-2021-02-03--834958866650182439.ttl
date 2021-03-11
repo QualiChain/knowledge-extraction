@@ -1,0 +1,134 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  6 .
+
+saro:networking  a               saro:Topic ;
+        rdfs:label               "networking" ;
+        saro:frequencyOfMention  3 .
+
+saro:automation  a               saro:Topic ;
+        rdfs:label               "automation" ;
+        saro:frequencyOfMention  3 .
+
+saro:visio  a                    saro:Tool ;
+        rdfs:label               "visio" ;
+        saro:frequencyOfMention  3 .
+
+saro:groovy  a                   saro:Tool ;
+        rdfs:label               "Groovy" ;
+        saro:frequencyOfMention  3 .
+
+saro:tcp  a                      saro:Tool ;
+        rdfs:label               "TCP" ;
+        saro:frequencyOfMention  6 .
+
+saro:monitoring  a               saro:Topic ;
+        rdfs:label               "monitoring" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file14504263734242259071_tmp_01389
+        a               saro:JobPosting ;
+        saro:describes  :stream2file14504263734242259071_tmp_01389_JobRole .
+
+saro:cisco  a                    saro:Product ;
+        rdfs:label               "cisco" ;
+        saro:frequencyOfMention  6 .
+
+saro:azure  a                    saro:Tool ;
+        rdfs:label               "azure" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:database  a                 saro:Topic ;
+        rdfs:label               "database" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  15 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  9 .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  12 .
+
+saro:wcf  a                      saro:Tool ;
+        rdfs:label               "wcf" ;
+        saro:frequencyOfMention  3 .
+
+saro:powershell  a               saro:Tool ;
+        rdfs:label               "powershell" ;
+        saro:frequencyOfMention  3 .
+
+saro:lambda  a                   saro:Product ;
+        rdfs:label               "Lambda" ;
+        saro:frequencyOfMention  3 .
+
+saro:sql  a                      saro:Tool ;
+        rdfs:label               "SQL" ;
+        saro:frequencyOfMention  3 .
+
+:sdl    a       saro:Recruiter , so:Organisation .
+
+saro:developer  a                saro:Topic ;
+        rdfs:label               "developer" ;
+        saro:frequencyOfMention  3 .
+
+saro:linux  a                    saro:Product ;
+        rdfs:label               "Linux" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file14504263734242259071_tmp_01389_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Information Technology Security Specialist"@en ;
+        so:hiringOrganisation  :sdl ;
+        saro:requiresSkill     saro:tcp , saro:storage , saro:go , saro:developer , saro:python , saro:lambda , saro:networking , saro:cisco , saro:siem , saro:cloud , saro:linux , saro:tools , saro:automation , saro:groovy , saro:security , saro:development , saro:agile , saro:reporting , saro:analysis , saro:visio , saro:powershell , saro:database , saro:monitoring , saro:sql , saro:git , saro:wcf , saro:azure .
+
+saro:storage  a                  saro:Topic ;
+        rdfs:label               "storage" ;
+        saro:frequencyOfMention  3 .
+
+saro:siem  a                     saro:Product ;
+        rdfs:label               "SIEM" ;
+        saro:frequencyOfMention  6 .
+
+saro:git  a                      saro:Tool ;
+        rdfs:label               "GIT" ;
+        saro:frequencyOfMention  3 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "Cloud" ;
+        saro:frequencyOfMention  24 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "agile" ;
+        saro:frequencyOfMention  3 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "Python" ;
+        saro:frequencyOfMention  6 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  138 .
+

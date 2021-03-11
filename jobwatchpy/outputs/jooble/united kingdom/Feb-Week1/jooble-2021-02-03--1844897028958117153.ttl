@@ -1,0 +1,204 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:puppet  a                   saro:Tool ;
+        rdfs:label               "Puppet" ;
+        saro:frequencyOfMention  3 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  3 .
+
+saro:lamp  a                     saro:Product ;
+        rdfs:label               "LAMP" ;
+        saro:frequencyOfMention  3 .
+
+saro:jboss  a                    saro:Product ;
+        rdfs:label               "JBoss" ;
+        saro:frequencyOfMention  3 .
+
+saro:computerScience  a          saro:Topic ;
+        rdfs:label               "computer science" ;
+        saro:frequencyOfMention  3 .
+
+saro:rest  a                     saro:Tool ;
+        rdfs:label               "rest" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  25 .
+
+saro:ansible  a                  saro:Tool ;
+        rdfs:label               "ansible" ;
+        saro:frequencyOfMention  7 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "design" ;
+        saro:frequencyOfMention  9 .
+
+saro:continuousIntegration
+        a                        saro:Topic ;
+        rdfs:label               "continuous integration" ;
+        saro:frequencyOfMention  3 .
+
+saro:windows  a                  saro:Product ;
+        rdfs:label               "windows" ;
+        saro:frequencyOfMention  3 .
+
+saro:networking  a               saro:Topic ;
+        rdfs:label               "networking" ;
+        saro:frequencyOfMention  6 .
+
+saro:iam  a                      saro:Topic ;
+        rdfs:label               "iam" ;
+        saro:frequencyOfMention  3 .
+
+saro:scripting  a                saro:Tool ;
+        rdfs:label               "scripting" ;
+        saro:frequencyOfMention  3 .
+
+saro:php  a                      saro:Tool ;
+        rdfs:label               "PHP" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file17035117974194621497_tmp_01A15_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "System Administration Specialist"@en ;
+        so:hiringOrganisation  :intrado ;
+        saro:requiresSkill     saro:vmware , saro:ansible , saro:powershell , saro:reporting , saro:rest , saro:apache , saro:tools , saro:iam , saro:scripting , saro:troubleshooting , saro:puppet , saro:python , saro:tomcat , saro:jboss , saro:design , saro:ec2 , saro:shell , saro:analysis , saro:continuousIntegration , saro:systemAdministration , saro:hardware , saro:tcp , saro:cloud , saro:jvm , saro:lamp , saro:orchestration , saro:security , saro:activeDirectory , saro:agile , saro:webApplications , saro:linux , saro:bash , saro:php , saro:docker , saro:development , saro:networking , saro:storage , saro:automation , saro:ldap , saro:computerScience , saro:windows , saro:go , saro:azure , saro:network .
+
+saro:webApplications  a          saro:Topic ;
+        rdfs:label               "web applications" ;
+        saro:frequencyOfMention  3 .
+
+saro:systemAdministration
+        a                        saro:Topic ;
+        rdfs:label               "System Administration" ;
+        saro:frequencyOfMention  1 .
+
+saro:shell  a                    saro:Tool ;
+        rdfs:label               "shell" ;
+        saro:frequencyOfMention  3 .
+
+saro:ldap  a                     saro:Tool ;
+        rdfs:label               "LDAP" ;
+        saro:frequencyOfMention  3 .
+
+saro:hardware  a                 saro:Topic ;
+        rdfs:label               "hardware" ;
+        saro:frequencyOfMention  3 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "agile" ;
+        saro:frequencyOfMention  3 .
+
+saro:azure  a                    saro:Tool ;
+        rdfs:label               "azure" ;
+        saro:frequencyOfMention  3 .
+
+saro:tcp  a                      saro:Tool ;
+        rdfs:label               "TCP" ;
+        saro:frequencyOfMention  3 .
+
+saro:troubleshooting  a          saro:Topic ;
+        rdfs:label               "troubleshooting" ;
+        saro:frequencyOfMention  3 .
+
+saro:python  a                   saro:Tool ;
+        rdfs:label               "python" ;
+        saro:frequencyOfMention  9 .
+
+saro:storage  a                  saro:Topic ;
+        rdfs:label               "storage" ;
+        saro:frequencyOfMention  12 .
+
+saro:network  a                  saro:Topic ;
+        rdfs:label               "network" ;
+        saro:frequencyOfMention  1 .
+
+:intrado  a     saro:Recruiter , so:Organisation .
+
+saro:orchestration  a            saro:Topic ;
+        rdfs:label               "Orchestration" ;
+        saro:frequencyOfMention  9 .
+
+:stream2file17035117974194621497_tmp_01A15
+        a               saro:JobPosting ;
+        saro:describes  :stream2file17035117974194621497_tmp_01A15_JobRole .
+
+saro:jvm  a                      saro:Tool ;
+        rdfs:label               "jvm" ;
+        saro:frequencyOfMention  3 .
+
+saro:linux  a                    saro:Product ;
+        rdfs:label               "Linux" ;
+        saro:frequencyOfMention  10 .
+
+saro:activeDirectory  a          saro:Tool ;
+        rdfs:label               "Active Directory" ;
+        saro:frequencyOfMention  3 .
+
+saro:tomcat  a                   saro:Tool ;
+        rdfs:label               "tomcat" ;
+        saro:frequencyOfMention  3 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  6 .
+
+saro:docker  a                   saro:Product ;
+        rdfs:label               "docker" ;
+        saro:frequencyOfMention  3 .
+
+saro:bash  a                     saro:Tool ;
+        rdfs:label               "bash" ;
+        saro:frequencyOfMention  3 .
+
+saro:ec2  a                      saro:Tool ;
+        rdfs:label               "ec2" ;
+        saro:frequencyOfMention  3 .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  6 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "cloud" ;
+        saro:frequencyOfMention  39 .
+
+saro:vmware  a                   saro:Product ;
+        rdfs:label               "vmware" ;
+        saro:frequencyOfMention  3 .
+
+saro:automation  a               saro:Topic ;
+        rdfs:label               "automation" ;
+        saro:frequencyOfMention  15 .
+
+saro:apache  a                   saro:Product ;
+        rdfs:label               "Apache" ;
+        saro:frequencyOfMention  3 .
+
+saro:powershell  a               saro:Tool ;
+        rdfs:label               "powershell" ;
+        saro:frequencyOfMention  9 .
+

@@ -1,0 +1,143 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:softwareEngineering
+        a                        saro:Topic ;
+        rdfs:label               "software engineering" ;
+        saro:frequencyOfMention  6 .
+
+saro:assurance  a                saro:Topic ;
+        rdfs:label               "assurance" ;
+        saro:frequencyOfMention  3 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  12 .
+
+:stream2file17238962368259247511_tmp_00D65_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Senior Investment Lead"@en ;
+        so:datePosted          "2021-02-10"^^xsd:date ;
+        so:hiringOrganisation  :intelliproGroupInc ;
+        so:jobLocation         :United_Kingdom ;
+        saro:requiresSkill     saro:assurance , saro:c , saro:html5 , saro:matlab , saro:continuousIntegration , saro:mvc , saro:agile , saro:github , saro:go , saro:xamarin , saro:asp.net , saro:sqlServer , saro:developer , saro:mobileDevelopment , saro:monitoring , saro:development , saro:design , saro:security , saro:continuousDeployment , saro:azure , saro:asp.netMvc , saro:simulation , saro:jira , saro:softwareEngineering , saro:analysis , saro:softwareDevelopment , saro:javascript .
+
+:stream2file17238962368259247511_tmp_00D65
+        a               saro:JobPosting ;
+        saro:describes  :stream2file17238962368259247511_tmp_00D65_JobRole .
+
+saro:matlab  a                   saro:Tool ;
+        rdfs:label               "matlab" ;
+        saro:frequencyOfMention  9 .
+
+saro:simulation  a               saro:Topic ;
+        rdfs:label               "simulation" ;
+        saro:frequencyOfMention  3 .
+
+saro:monitoring  a               saro:Topic ;
+        rdfs:label               "monitoring" ;
+        saro:frequencyOfMention  3 .
+
+:United_Kingdom  a  so:Place .
+
+saro:azure  a                    saro:Tool ;
+        rdfs:label               "azure" ;
+        saro:frequencyOfMention  6 .
+
+saro:html5  a                    saro:Tool ;
+        rdfs:label               "html5" ;
+        saro:frequencyOfMention  3 .
+
+saro:asp.netMvc  a               saro:Tool ;
+        rdfs:label               "asp.net mvc" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:sqlServer  a                saro:Product ;
+        rdfs:label               "sql server" ;
+        saro:frequencyOfMention  6 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  30 .
+
+saro:mvc  a                      saro:Topic ;
+        rdfs:label               "MVC" ;
+        saro:frequencyOfMention  3 .
+
+saro:asp.net  a                  saro:Tool ;
+        rdfs:label               "asp.net" ;
+        saro:frequencyOfMention  9 .
+
+saro:mobileDevelopment
+        a                        saro:Topic ;
+        rdfs:label               "mobile development" ;
+        saro:frequencyOfMention  6 .
+
+saro:github  a                   saro:Tool ;
+        rdfs:label               "GitHub" ;
+        saro:frequencyOfMention  3 .
+
+saro:javascript  a               saro:Tool ;
+        rdfs:label               "Javascript" ;
+        saro:frequencyOfMention  3 .
+
+saro:jira  a                     saro:Tool ;
+        rdfs:label               "Jira" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "Design" ;
+        saro:frequencyOfMention  21 .
+
+saro:developer  a                saro:Topic ;
+        rdfs:label               "developer" ;
+        saro:frequencyOfMention  3 .
+
+saro:continuousIntegration
+        a                        saro:Topic ;
+        rdfs:label               "continuous integration" ;
+        saro:frequencyOfMention  3 .
+
+:intelliproGroupInc  a  saro:Recruiter , so:Organisation .
+
+saro:continuousDeployment
+        a                        saro:Topic ;
+        rdfs:label               "continuous deployment" ;
+        saro:frequencyOfMention  3 .
+
+saro:xamarin  a                  saro:Product ;
+        rdfs:label               "xamarin" ;
+        saro:frequencyOfMention  9 .
+
+saro:c  a                        saro:Tool ;
+        rdfs:label               "c" ;
+        saro:frequencyOfMention  9 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "Agile" ;
+        saro:frequencyOfMention  15 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  6 .
+
+saro:softwareDevelopment
+        a                        saro:Topic ;
+        rdfs:label               "software development" ;
+        saro:frequencyOfMention  9 .
+

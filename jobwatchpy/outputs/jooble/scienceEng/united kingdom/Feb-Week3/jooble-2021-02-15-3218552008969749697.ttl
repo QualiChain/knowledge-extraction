@@ -1,0 +1,146 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:assurance  a                saro:Topic ;
+        rdfs:label               "assurance" ;
+        saro:frequencyOfMention  3 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  3 .
+
+saro:rest  a                     saro:Tool ;
+        rdfs:label               "REST" ;
+        saro:frequencyOfMention  9 .
+
+saro:regressionTesting
+        a                        saro:Topic ;
+        rdfs:label               "regression testing" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file18114025369566520362_tmp_00D81
+        a               saro:JobPosting ;
+        saro:describes  HTTP/1.1 200 OK
+Date: Mon, 15 Feb 2021 09:28:43 GMT
+Server:  
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: *
+Content-Type: text/plain
+Content-Length: 5294
+Cache-Control: max-age=43200
+Expires: Mon, 15 Feb 2021 21:28:43 GMT
+
+devoteam ;
+        so:jobLocation         :United_Kingdom ;
+        saro:requiresSkill     saro:programming , saro:analyst , saro:cloud , saro:c , saro:go , saro:security , saro:soa , saro:designPatterns , saro:softwareDevelopment , saro:analysis , saro:xslt , saro:webServices , saro:developer , saro:design , saro:xml , saro:troubleshooting , saro:assurance , saro:tools , saro:softwareDesign , saro:domainDrivenDesign , saro:spring , saro:uml , saro:soap , saro:reporting , saro:development , saro:regressionTesting , saro:rest .
+
+:United_Kingdom  a  so:Place .
+
+saro:designPatterns  a           saro:Topic ;
+        rdfs:label               "Design patterns" ;
+        saro:frequencyOfMention  3 .
+
+saro:xml  a                      saro:Tool ;
+        rdfs:label               "xml" ;
+        saro:frequencyOfMention  3 .
+
+saro:webServices  a              saro:Topic ;
+        rdfs:label               "Web Services" ;
+        saro:frequencyOfMention  6 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  12 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  39 .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "Design" ;
+        saro:frequencyOfMention  6 .
+
+saro:developer  a                saro:Topic ;
+        rdfs:label               "developer" ;
+        saro:frequencyOfMention  6 .
+
+saro:soa  a                      saro:Topic ;
+        rdfs:label               "SOA" ;
+        saro:frequencyOfMention  9 .
+
+saro:spring  a                   saro:Tool ;
+        rdfs:label               "spring" ;
+        saro:frequencyOfMention  3 .
+
+saro:troubleshooting  a          saro:Topic ;
+        rdfs:label               "troubleshooting" ;
+        saro:frequencyOfMention  3 .
+
+saro:softwareDesign  a           saro:Topic ;
+        rdfs:label               "software design" ;
+        saro:frequencyOfMention  3 .
+
+saro:uml  a                      saro:Tool ;
+        rdfs:label               "uml" ;
+        saro:frequencyOfMention  3 .
+
+saro:programming  a              saro:Topic ;
+        rdfs:label               "programming" ;
+        saro:frequencyOfMention  9 .
+
+saro:analyst  a                  saro:Topic ;
+        rdfs:label               "analyst" ;
+        saro:frequencyOfMention  6 .
+
+saro:soap  a                     saro:Tool ;
+        rdfs:label               "soap" ;
+        saro:frequencyOfMention  9 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "cloud" ;
+        saro:frequencyOfMention  3 .
+
+saro:c  a                        saro:Tool ;
+        rdfs:label               "c" ;
+        saro:frequencyOfMention  3 .
+
+saro:xslt  a                     saro:Tool ;
+        rdfs:label               "XSLT" ;
+        saro:frequencyOfMention  3 .
+
+saro:softwareDevelopment
+        a                        saro:Topic ;
+        rdfs:label               "software development" ;
+        saro:frequencyOfMention  6 .
+
+saro:domainDrivenDesign
+        a                        saro:Topic ;
+        rdfs:label               "Domain Driven Design" ;
+        saro:frequencyOfMention  3 .
+
+:devoteam  a    saro:Recruiter , so:Organisation .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  3 .
+

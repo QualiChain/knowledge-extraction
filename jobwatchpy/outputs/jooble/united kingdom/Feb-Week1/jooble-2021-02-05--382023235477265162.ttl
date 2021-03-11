@@ -1,0 +1,113 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  9 .
+
+saro:regressionTesting
+        a                        saro:Topic ;
+        rdfs:label               "regression testing" ;
+        saro:frequencyOfMention  6 .
+
+saro:jmeter  a                   saro:Tool ;
+        rdfs:label               "JMeter" ;
+        saro:frequencyOfMention  3 .
+
+saro:automation  a               saro:Topic ;
+        rdfs:label               "automation" ;
+        saro:frequencyOfMention  12 .
+
+saro:excel  a                    saro:Product ;
+        rdfs:label               "excel" ;
+        saro:frequencyOfMention  3 .
+
+saro:dataManagement  a           saro:Topic ;
+        rdfs:label               "data management" ;
+        saro:frequencyOfMention  6 .
+
+saro:apache  a                   saro:Product ;
+        rdfs:label               "Apache" ;
+        saro:frequencyOfMention  3 .
+
+saro:waterfall  a                saro:Topic ;
+        rdfs:label               "Waterfall" ;
+        saro:frequencyOfMention  3 .
+
+saro:stl  a                      saro:Topic ;
+        rdfs:label               "stl" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  12 .
+
+saro:sdlc  a                     saro:Topic ;
+        rdfs:label               "sdlc" ;
+        saro:frequencyOfMention  3 .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  3 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+:stream2file3775755738992761844_tmp_01E49
+        a               saro:JobPosting ;
+        saro:describes  :stream2file3775755738992761844_tmp_01E49_JobRole .
+
+:barclaySimpson  a  saro:Recruiter , so:Organisation .
+
+saro:jira  a                     saro:Tool ;
+        rdfs:label               "JIRA" ;
+        saro:frequencyOfMention  3 .
+
+saro:performanceTesting
+        a                        saro:Topic ;
+        rdfs:label               "performance testing" ;
+        saro:frequencyOfMention  3 .
+
+saro:unitTesting  a              saro:Topic ;
+        rdfs:label               "unit testing" ;
+        saro:frequencyOfMention  3 .
+
+saro:analyst  a                  saro:Topic ;
+        rdfs:label               "analyst" ;
+        saro:frequencyOfMention  10 .
+
+:stream2file3775755738992761844_tmp_01E49_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Analyst"@en ;
+        so:hiringOrganisation  :barclaySimpson ;
+        saro:requiresSkill     saro:regressionTesting , saro:jira , saro:jmeter , saro:go , saro:softwareDevelopment , saro:stl , saro:excel , saro:waterfall , saro:apache , saro:sdlc , saro:unitTesting , saro:development , saro:analyst , saro:tools , saro:finance , saro:dataManagement , saro:performanceTesting , saro:automation , saro:security , saro:agile , saro:analysis .
+
+saro:finance  a                  saro:Topic ;
+        rdfs:label               "Finance" ;
+        saro:frequencyOfMention  12 .
+
+saro:agile  a                    saro:Topic ;
+        rdfs:label               "Agile" ;
+        saro:frequencyOfMention  3 .
+
+saro:softwareDevelopment
+        a                        saro:Topic ;
+        rdfs:label               "software development" ;
+        saro:frequencyOfMention  3 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  13 .
+
