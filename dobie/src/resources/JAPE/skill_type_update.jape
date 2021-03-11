@@ -14,10 +14,12 @@ Rule: ProductJobSpecificSkill
 	AnnotationSet skillAnn = (AnnotationSet) bindings.get("labelproduct");
 	Annotation ann = skillAnn.iterator().next();
 	FeatureMap features = Factory.newFeatureMap();
-	features.put("kind", "product"); 
+	features.put("kind", "Product"); 
 	features.put("rule","ProductJobSpecificSkill");
 	
 	features.put("string", ann.getFeatures().get("string"));
+	features.put("label", ann.getFeatures().get("label"));
+
 		
 	outputAS.add(skillAnn.firstNode(), skillAnn.lastNode(), "SkillProductTemp" ,features);
 }
@@ -34,11 +36,12 @@ Rule: ToolJobSpecificSkill
 	AnnotationSet skillAnn = (AnnotationSet) bindings.get("labeltool");
 	Annotation ann = skillAnn.iterator().next();
 	FeatureMap features = Factory.newFeatureMap();
-	features.put("kind", "tool"); 
+	features.put("kind", "Tool"); 
 	features.put("rule","ToolJobSpecificSkill");
 
 	
 	features.put("string", ann.getFeatures().get("string"));
+	features.put("label", ann.getFeatures().get("label"));
 	
 	outputAS.add(skillAnn.firstNode(), skillAnn.lastNode(), "SkillToolTemp" ,features);
 }
@@ -54,11 +57,12 @@ Rule: TopicJobSpecificSkill
 	AnnotationSet skillAnn = (AnnotationSet) bindings.get("labeltopic");
 	Annotation ann = skillAnn.iterator().next();
 	FeatureMap features = Factory.newFeatureMap();
-	features.put("kind", "topic"); 
+	features.put("kind", "Topic"); 
 	features.put("rule","TopicJobSpecificSkill");
 
 	
 	features.put("string", ann.getFeatures().get("string"));
+	features.put("label", ann.getFeatures().get("label"));
 	
 	outputAS.add(skillAnn.firstNode(), skillAnn.lastNode(), "SkillTopicTemp" ,features);
 }

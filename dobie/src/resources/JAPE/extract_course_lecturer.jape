@@ -28,5 +28,6 @@ Rule:	Lecturer1
 		e.printStackTrace();
 	}	
 	features.put("string", str.trim());
+	features.put("label", str.trim());
 	outputAS.add(lecturers.firstNode(), lecturers.lastNode(), "LecturerTemp", features);
 }

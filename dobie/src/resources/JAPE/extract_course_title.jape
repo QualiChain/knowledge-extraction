@@ -27,6 +27,7 @@ Rule:	courseTitle1
 		e.printStackTrace();
 	}	
 	features.put("string", str);	
+	features.put("label", str);	
 
 			
 	outputAS.add(annotations.firstNode(), annotations.lastNode(), "CourseTitleTemp", features);

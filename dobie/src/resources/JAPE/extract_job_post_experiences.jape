@@ -29,6 +29,7 @@ Rule:	experience1
 	features.put("rule", "experience1");
 	features.put("kind", "digitOrStr");	
 	features.put("string", ann.getFeatures().get("string"));
+	features.put("label", ann.getFeatures().get("label"));
 	gate.Annotation durationPeriod = (gate.Annotation)duration.iterator().next();
 	features.put("durationPeriod", durationPeriod);	
 	features.put("durationText", durationText);	
@@ -80,6 +81,7 @@ Rule:	experience2
 	features.put("rule", "experience2");
 	features.put("kind", "bundledExperience");	
 	features.put("string", "str");	
+	features.put("label", "label");	
 	gate.Annotation durationPeriod = (gate.Annotation)duration.iterator().next();
 	features.put("durationPeriod", durationPeriod);	
 	features.put("durationText", durationText);	

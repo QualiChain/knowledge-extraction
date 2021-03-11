@@ -26,6 +26,7 @@ Rule:	qualification1
 	features.put("rule", "qualification1");
 	features.put("kind", "qualificationInSkillTopic");	
 	features.put("string", ann.getFeatures().get("string"));
+	features.put("label", ann.getFeatures().get("label"));
 	gate.Annotation certificateDegree = (gate.Annotation)degree.iterator().next();
 	features.put("certificateDegree", certificateDegree);	
 
@@ -36,7 +37,7 @@ Rule:	qualification1
 
 
 
-//Degree: BSc in Computer Science   
+//Degree: BSc in Computer Science 
 
 Rule:	qualification2
 	({SpaceToken.kind == control}{Token.root == "degree"}({Token.kind == punctuation})?({SpaceToken})?)
@@ -55,6 +56,7 @@ Rule:	qualification2
 	features.put("kind", "qualificationInSkillTopic");	
 
 	features.put("string", ann.getFeatures().get("string"));
+	features.put("label", ann.getFeatures().get("label"));
 	gate.Annotation certificateDegree = (gate.Annotation)degree.iterator().next();
 	features.put("certificateDegree", certificateDegree);	
 

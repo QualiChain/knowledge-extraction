@@ -33,6 +33,7 @@ Rule:	experienceCV
 	features.put("kind", "digitOrStr");	
 
 	features.put("string", ann.getFeatures().get("string") );
+	features.put("label", ann.getFeatures().get("label") );
 	gate.Annotation durationPeriod = (gate.Annotation)duration.iterator().next();
 	features.put("durationPeriod", durationPeriod);	
 	features.put("durationText", durationText);	

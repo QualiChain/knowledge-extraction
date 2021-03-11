@@ -24,6 +24,7 @@ import gate.creole.gazetteer.Gazetteer;
 import gate.creole.ontology.Ontology;
 import gate.gui.MainFrame;
 import gate.util.GateException;
+import gate.util.Out;
 import org.apache.commons.io.IOUtils;
 import org.apache.jena.query.*;
 import org.apache.jena.rdf.model.Model;
@@ -76,7 +77,7 @@ public class AnnotationSummary {
 			skillann.execute();
 
 			//Calculate the number of the skills - we take the absolute number
-			return displayDocumentFeatures(corpus, type, "" , "", "");
+			return displayDocumentFeatures(corpus, type, "" , "", "" , "" );
 			
 			//saveToXML(corpus);
 //            return saveToList(corpus);
@@ -92,16 +93,16 @@ public class AnnotationSummary {
         gr.buildCorpusWithDoc(u, type);
         gr.execute();
         Corpus corpus = gr.getCorpus();
-		return displayDocumentFeatures(corpus, type, "", "", "");
+		return displayDocumentFeatures(corpus, type, "", "", "", "" );
 //		return saveToList(corpus);
 	}
 
-	public List<String> generateJobWatchAnnotation (URL u, String type, String title, String location, String company) throws Exception {
+	public List<String> generateJobWatchAnnotation (URL u, String type, String title, String location, String company,  String datePosted) throws Exception {
 		GateResources gr = GateResources.getInstance();
 		gr.buildCorpusWithDoc(u, type);
 		gr.execute();
 		Corpus corpus = gr.getCorpus();
-		return displayDocumentFeatures(corpus, type, title, location, company);
+		return displayDocumentFeatures(corpus, type, title, location, company,  datePosted);
 //		return saveToList(corpus);
 	}
 
@@ -178,7 +179,7 @@ public class AnnotationSummary {
 
 
     }
-	private void produceRDF(Document currDoc, String type,  String title, String location, String company) throws Exception {
+	private void produceRDF(Document currDoc, String type,  String title, String location, String company, String datePosted) throws Exception {
 		System.out.println("Type of Document: " + type);
 
 		String filename = currDoc.getName();
@@ -187,6 +188,7 @@ public class AnnotationSummary {
 				: currDoc.getAnnotations(outputASname);
 
 		String skills = "";
+		String skillFrequency = "";
 		AnnotationSet skillTopics = outputAnnSet.get("SkillTopic");
 		for (Iterator itr = skillTopics.iterator(); itr.hasNext();){
 			Annotation skillTopic = (Annotation)itr.next();
@@ -194,18 +196,31 @@ public class AnnotationSummary {
 			FeatureMap features = skillTopic.getFeatures();
 //			features.get("frequencyOfMention");
 			skills = skills.concat("saro:" + features.get("string") + " , ");
+			skillFrequency = skillFrequency.concat("saro:" + features.get("string") + "	saro:frequencyOfMention	\"" +
+							features.get("frequencyOfMention")) + "\"^^xsd:integer ;\n" +
+							"	rdfs:label	\"" + features.get("label") + "\" ;\n" +
+							"	a	saro:" + features.get("kind") + " .\n";
 		}
 
 		AnnotationSet skillProducts = outputAnnSet.get("SkillProduct");
 		for ( Annotation skillProduct: skillProducts) {
 			FeatureMap features = skillProduct.getFeatures();
 			skills = skills.concat("saro:" + features.get("string") + " , ");
+			skillFrequency = skillFrequency.concat("saro:" + features.get("string") + "	saro:frequencyOfMention	\"" +
+					features.get("frequencyOfMention")) + "\"^^xsd:integer ;\n" +
+					"	rdfs:label	\"" + features.get("label") + "\" ;\n" +
+					"	a	saro:" + features.get("kind") + " .\n";
+
 		}
 
 		AnnotationSet skillTools = outputAnnSet.get("SkillTool");
 		for ( Annotation skillTool : skillTools) {
 			FeatureMap features = skillTool.getFeatures();
 			skills = skills.concat("saro:" + features.get("string") + " , ");
+			skillFrequency = skillFrequency.concat("saro:" + features.get("string") + "	saro:frequencyOfMention	\"" +
+					features.get("frequencyOfMention")) + "\"^^xsd:integer ;\n" +
+					"	rdfs:label	\"" + features.get("label") + "\" ;\n" +
+					"	a	saro:" + features.get("kind") + " .\n";
 		}
 		System.out.println("Name of Gate Document: " + filename);
 
@@ -296,19 +311,44 @@ public class AnnotationSummary {
 				}
 				organisationSql = ":" + organisation + "	a	so:Organisation , saro:Recruiter .";
 			}
+			String jobLocation = "";
+			String jobLocationSql = "";
+			if (location.length() > 0) {
+				location = location.replaceAll("-" , " ");
+				if (location.contains("(")) {
+					location = location.substring(0,location.indexOf("("));
+				}
+				if (location.contains(" ")) {
+					String[] splittedLocationName = location.toLowerCase().trim().split(" ");
+					for (int i = 0; i < splittedLocationName.length; i++) {
+						jobLocation += splittedLocationName[i].substring(0,1).toUpperCase() + splittedLocationName[i].substring(1) + "_";
+					}
+					jobLocation = jobLocation.substring(0,jobLocation.length()-1);
+				} else {
+					jobLocation = location;
+				}
+				jobLocationSql = ":" + jobLocation + "	a	so:Place .";
+			}
+
+
+
+
 
                     insertStatement = ":" + docName + "	a 	saro:JobPosting; \n" +
 					" 					saro:describes	:" + docName + "_JobRole" + " .\n" +
 					":" + docName + "_JobRole" + "	a	saro:JobRoleOrType ; \n" +
 					"					rdfs:label \"" + (title.equals("") ? "unknown" : title.trim()) + "\"@en ;\n" +
                     (company.equals("") ? "" : ("					so:hiringOrganisation	:" + organisation + "	;\n")) +
+                    (location.equals("") ? "" : ("					so:jobLocation	:" + jobLocation + "	;\n")) +
+                    //(link.equals("") ? "" : ("					so:URL	\"" + link.trim() + "\"	;\n")) +
+                    (datePosted.equals("") ? "" : ("				so:datePosted	\"" + datePosted + "\"^^xsd:date	;\n")) +
                     (skills.equals("") ? "" : ("					saro:requiresSkill	" + skills.substring(0,skills.lastIndexOf(",")) + "	;\n")) +
                     (exp.equals("") ? "" : ("					saro:requiresExperience	" + exp.substring(0,exp.lastIndexOf(",")) + "	;\n")) +
                     (quali.equals("") ? "" : ("					saro:requiresQualificaton	" + quali.substring(0,quali.lastIndexOf(",")) + "	;\n"));
 
-            insertStatement = insertStatement.substring(0, insertStatement.lastIndexOf(";")).concat(".");
+            insertStatement = insertStatement.substring(0, insertStatement.lastIndexOf(";")).concat(".\n");
 
-            insertStatement = insertStatement.concat(expInsert + qualiInsert + organisationSql);
+            insertStatement = insertStatement.concat(expInsert + qualiInsert + organisationSql  + jobLocationSql + skillFrequency);
 
 		}else if(type.equals(Consts.COURSE_TYPE)) {
             AnnotationSet courseTitlesAnn = outputAnnSet.get("CourseTitle");
@@ -337,8 +377,8 @@ public class AnnotationSummary {
                     (skills.equals("")? "" :(" 					saro:relatedTo	" + skills.substring(0,skills.lastIndexOf(","))  + " ;\n"));
 
 
-            insertStatement = insertStatement.substring(0, insertStatement.lastIndexOf(";")).concat(".");
-            insertStatement = insertStatement.concat(lecturerInsert);
+            insertStatement = insertStatement.substring(0, insertStatement.lastIndexOf(";")).concat(".\n");
+            insertStatement = insertStatement.concat(lecturerInsert + skillFrequency);
 
         }else if(type.equals(Consts.CV_TYPE)){
 			String firstName = "";
@@ -362,7 +402,7 @@ public class AnnotationSummary {
 									"			foaf:firstName	\"" + firstName  + "\"@en; \n" +
 									"			foaf:lastName	\"" + lastName  + "\"@en; \n" +
 						(gender.equals("")? "" : (" 	foaf:gender	\"" + gender + "\"@en ;\n"));
-				personQueryInsert = personQueryInsert.substring(0, personQueryInsert.lastIndexOf(";")).concat(".");
+				personQueryInsert = personQueryInsert.substring(0, personQueryInsert.lastIndexOf(";")).concat(".\n");
 			}
 
 			insertStatement = ":" + docName + "	a 	cv:CV; \n" +
@@ -370,8 +410,8 @@ public class AnnotationSummary {
                     (exp.equals("") ? "" : ("					qc:refersToExperience	" + exp.substring(0,exp.lastIndexOf(",")) + "	;\n")) +
                     (skills.equals("")? "" : (" 					qc:refersToAccomplishment	" + skills.substring(0,skills.lastIndexOf(","))  + " ;\n"));
 
-            insertStatement = insertStatement.substring(0, insertStatement.lastIndexOf(";")).concat(".");
-            insertStatement = insertStatement.concat(expInsert).concat(personQueryInsert);
+            insertStatement = insertStatement.substring(0, insertStatement.lastIndexOf(";")).concat(".\n");
+            insertStatement = insertStatement.concat(expInsert).concat(personQueryInsert).concat(skillFrequency);
 
 
         }else{
@@ -578,7 +618,7 @@ public class AnnotationSummary {
 		
 		
 			
-		private List<String> displayDocumentFeatures(Corpus corp, String type, String title, String location, String company) throws Exception {
+		private List<String> displayDocumentFeatures(Corpus corp, String type, String title, String location, String company,  String datePosted) throws Exception {
 			Iterator documentIterator = corp.iterator();
 			List<String> ttlFiles = new ArrayList<String>();
 			while(documentIterator.hasNext()) {
@@ -719,7 +759,7 @@ public class AnnotationSummary {
 				//important to use the parameter below to keep the default annotation set has all the annotation types for the evaluation related task
 				//params1.put("copyAnnotations","true"); 
 
-				produceRDF(currDoc, type, title, location, company);
+				produceRDF(currDoc, type, title, location, company, datePosted);
 				System.out.println("TTL file saved");
 				File ttl = new File(ttlFolder,currDoc.getName()+".ttl");
 				String RDFdata = IOUtils.toString(new FileInputStream(ttl), StandardCharsets.UTF_8);
@@ -929,6 +969,7 @@ public class AnnotationSummary {
 		Node endnode = null;
 		flag = false;
 		String kind = "";
+		String label = "";
 		Annotation durationPeriod = null;
 		AnnotationSet durationText = null;
 		AnnotationSet allExperiences = null;
@@ -941,6 +982,7 @@ public class AnnotationSummary {
 					count ++;
 					flag = true;
 					kind = annot.getFeatures().get("kind").toString();
+					label = annot.getFeatures().get("label").toString();
 					if(annsetName.equals("ExperienceTemp")) {
 						durationPeriod = (Annotation)annot.getFeatures().get("durationPeriod");
 						durationText = (AnnotationSet)annot.getFeatures().get("durationText");
@@ -959,6 +1001,7 @@ public class AnnotationSummary {
 				features1.put("frequencyOfMention",count);
 				features1.put("string", tempList.get(i));
 				features1.put("kind", kind);
+				features1.put("label", label);
 				if(annsetName.equals("ExperienceTemp")){
                     features1.put("durationPeriod", durationPeriod);
                     features1.put("durationText", durationText);
