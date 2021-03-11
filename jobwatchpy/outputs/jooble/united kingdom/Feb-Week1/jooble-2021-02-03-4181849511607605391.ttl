@@ -1,0 +1,42 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+:classyWheelerILd  a  saro:Recruiter , so:Organisation .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "Security" ;
+        saro:frequencyOfMention  1 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "go" ;
+        saro:frequencyOfMention  1 .
+
+:stream2file10840759546031590895_tmp_01949_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Sales Consultant"@en ;
+        so:hiringOrganisation  :classyWheelerILd ;
+        saro:requiresSkill     saro:go , saro:voip , saro:security , saro:cloud .
+
+saro:voip  a                     saro:Topic ;
+        rdfs:label               "voip" ;
+        saro:frequencyOfMention  1 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "Cloud" ;
+        saro:frequencyOfMention  1 .
+
+:stream2file10840759546031590895_tmp_01949
+        a               saro:JobPosting ;
+        saro:describes  :stream2file10840759546031590895_tmp_01949_JobRole .
+

@@ -1,0 +1,43 @@
+city,lat,lng,country,iso2,admin_name,capital,population,population_proper
+Dublin,53.3425,-6.2658,Ireland,IE,Dublin,primary,1173179,1173179
+Cork,51.9000,-8.4731,Ireland,IE,Cork,admin,208669,208669
+Galway,53.2729,-9.0418,Ireland,IE,Galway,admin,79504,79504
+Limerick,52.6653,-8.6238,Ireland,IE,Limerick,admin,58319,58319
+Waterford,52.2583,-7.1190,Ireland,IE,Waterford,admin,48369,48369
+Drogheda,53.7139,-6.3503,Ireland,IE,Louth,,40956,40956
+Dún Dealgan,54.0090,-6.4049,Ireland,IE,Louth,admin,39004,39004
+Swords,53.4597,-6.2181,Ireland,IE,Fingal,admin,33998,33998
+Tralee,52.2675,-9.6962,Ireland,IE,Kerry,admin,26384,22941
+Carlow,52.8306,-6.9317,Ireland,IE,Carlow,admin,24272,24272
+Dunleary,53.3000,-6.1400,Ireland,IE,Dún Laoghaire-Rathdown,admin,23857,23857
+Kilkenny,52.6477,-7.2561,Ireland,IE,Kilkenny,admin,22179,22179
+Naas,53.2158,-6.6669,Ireland,IE,Kildare,admin,21393,21393
+Sligo,54.2667,-8.4833,Ireland,IE,Sligo,admin,19452,19452
+Cobh,51.8510,-8.2967,Ireland,IE,Cork,,12347,12347
+Killarney,52.0588,-9.5072,Ireland,IE,Kerry,,11902,7300
+Shannon,52.7137,-8.8686,Ireland,IE,Clare,,8781,7506
+Dungarvan,52.0845,-7.6397,Ireland,IE,Waterford,,7991,7991
+Kildare,53.1569,-6.9090,Ireland,IE,Kildare,,7538,7538
+Carrigtohill,51.9000,-8.2667,Ireland,IE,Cork,,6665,6665
+Monaghan,54.2479,-6.9708,Ireland,IE,Monaghan,admin,5937,5937
+Dunboyne,53.4199,-6.4751,Ireland,IE,Meath,,5713,5713
+Roscrea,52.9547,-7.7971,Ireland,IE,Tipperary,,4910,4910
+Kinsale,51.7075,-8.5306,Ireland,IE,Cork,,4893,4893
+Ros Comáin,53.6333,-8.1833,Ireland,IE,Roscommon,admin,4860,4860
+Gweedore,55.0509,-8.2356,Ireland,IE,Donegal,,4065,4065
+Cashel,52.5167,-7.8894,Ireland,IE,Tipperary,,2936,2936
+Mullingar,53.5333,-7.3500,Ireland,IE,Westmeath,admin,,
+Tallaght,53.2878,-6.3411,Ireland,IE,South Dublin,admin,,
+Wicklow,52.9750,-6.0494,Ireland,IE,Wicklow,admin,,
+Clonmel,52.3550,-7.7039,Ireland,IE,Tipperary,admin,,
+Wexford,52.3342,-6.4575,Ireland,IE,Wexford,admin,,
+Ennis,52.8463,-8.9807,Ireland,IE,Clare,admin,,
+Longford,53.7333,-7.8000,Ireland,IE,Longford,admin,,
+Trim,53.5550,-6.7917,Ireland,IE,Meath,admin,,
+Carrick on Shannon,53.9469,-8.0900,Ireland,IE,Leitrim,admin,,
+Tullamore,53.2667,-7.5000,Ireland,IE,Offaly,admin,,
+Nenagh,52.8619,-8.1967,Ireland,IE,Tipperary,admin,,
+An Cabhán,53.9908,-7.3606,Ireland,IE,Cavan,admin,,
+Port Laoise,53.0309,-7.3008,Ireland,IE,Laois,admin,,
+Castlebar,53.8500,-9.3000,Ireland,IE,Mayo,admin,,
+Lifford,54.8356,-7.4779,Ireland,IE,Donegal,admin,,

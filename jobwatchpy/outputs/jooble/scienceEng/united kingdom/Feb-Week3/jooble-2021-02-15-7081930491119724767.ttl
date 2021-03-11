@@ -1,0 +1,225 @@
+fs:label               "programming" ;
+        saro:frequencyOfMention  9 .
+
+saro:scrum  a                    saro:Topic ;
+        rdfs:label               "scrum" ;
+        saro:frequencyOfMention  3 .
+ma#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+saro:development  a              saro:Topic ;
+        rdfs:label               "development" ;
+        saro:frequencyOfMention  26 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:postgresql  a               saro:Tool ;
+        rdfs:label               "postgresql" ;
+        saro:frequencyOfMention  3 .
+
+saro:assurance  a                saro:Topic ;
+        rdfs:label               "assurance" ;
+        saro:frequencyOfMention  3 .
+
+saro:puppet  a                   saro:Tool ;
+        rdfs:label               "Puppet" ;
+        saro:frequencyOfMention  3 .
+
+saro:hibernate  a                saro:Product ;
+        rdfs:label               "Hibernate" ;
+        saro:frequencyOfMention  3 .
+
+saro:security  a                 saro:Topic ;
+        rdfs:label               "security" ;
+        saro:frequencyOfMention  6 .
+
+saro:designPatterns  a           saro:Topic ;
+        rdfs:label               "design patterns" ;
+        saro:frequencyOfMention  6 .
+
+saro:rest  a                     saro:Tool ;
+        rdfs:label               "REST" ;
+        saro:frequencyOfMention  9 .
+
+saro:xslt  a                     saro:Tool ;
+        rdfs:label               "XSLT" ;
+        saro:frequencyOfMention  3 .
+
+saro:tools  a                    saro:Topic ;
+        rdfs:label               "tools" ;
+        saro:frequencyOfMention  15 .
+
+saro:ansible  a                  saro:Tool ;
+        rdfs:label               "ansible" ;
+        saro:frequencyOfMention  3 .
+
+saro:javaEE  a                   saro:Tool ;
+        rdfs:label               "Java EE" ;
+        saro:frequencyOfMention  3 .
+
+saro:domainDrivenDesign
+        a                        saro:Topic ;
+        rdfs:label               "Domain Driven Design" ;
+        saro:frequencyOfMention  6 .
+
+saro:maven  a                    saro:Tool ;
+        rdfs:label               "maven" ;
+        saro:frequencyOfMention  3 .
+
+saro:design  a                   saro:Topic ;
+        rdfs:label               "Design" ;
+        saro:frequencyOfMention  18 .
+
+saro:continuousIntegration
+        a                        saro:Topic ;
+        rdfs:label               "continuous integration" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file9750743679914541613_tmp_00D7D_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Senior Signature Issue Lead"@en ;
+        so:datePosted          "2021-02-09"^^xsd:date ;
+        so:hiringOrganisation  :deloitte ;
+        so:jobLocation         :United_Kingdom ;
+        saro:requiresSkill     saro:gradle , saro:oracle , saro:spring , saro:reporting , saro:troubleshooting , saro:monitoring , saro:uml , saro:amazonWebServices , saro:designPatterns , saro:hibernate , saro:java , saro:puppet , saro:ansible , saro:design , saro:cloud , saro:cucumber , saro:mongodb , saro:xslt , saro:tools , saro:continuousDeployment , saro:analysis , saro:mockito , saro:xml , saro:development , saro:postgresql , saro:developer , saro:jpa , saro:go , saro:domainDrivenDesign , saro:npm , saro:softwareDesign , saro:soap , saro:junit , saro:c , saro:softwareDevelopment , saro:scrum , saro:rest , saro:assurance , saro:less , saro:springMvc , saro:programming , saro:continuousIntegration , saro:security , saro:maven , saro:webServices , saro:unix , saro:javaEE , saro:soa .
+
+saro:oracle  a                   saro:Product ;
+        rdfs:label               "oracle" ;
+        saro:frequencyOfMention  3 .
+
+saro:amazonWebServices
+        a                        saro:Product ;
+        rdfs:label               "Amazon Web Services" ;
+        saro:frequencyOfMention  3 .
+
+saro:monitoring  a               saro:Topic ;
+        rdfs:label               "monitoring" ;
+        saro:frequencyOfMention  3 .
+
+saro:unix  a                     saro:Product ;
+        rdfs:label               "unix" ;
+        saro:frequencyOfMention  3 .
+
+saro:npm  a                      saro:Product ;
+        rdfs:label               "npm" ;
+        saro:frequencyOfMention  3 .
+
+:deloitte  a    saro:Recruiter , so:Organisation .
+
+saro:softwareDevelopment
+        a                        saro:Topic ;
+        rdfs:label               "software development" ;
+        saro:frequencyOfMention  6 .
+
+saro:troubleshooting  a          saro:Topic ;
+        rdfs:label               "troubleshooting" ;
+        saro:frequencyOfMention  3 .
+
+saro:xml  a                      saro:Tool ;
+        rdfs:label               "xml" ;
+        saro:frequencyOfMention  3 .
+
+saro:mongodb  a                  saro:Product ;
+        rdfs:label               "MongoDB" ;
+        saro:frequencyOfMention  3 .
+
+saro:soap  a                     saro:Tool ;
+        rdfs:label               "soap" ;
+        saro:frequencyOfMention  9 .
+
+saro:spring  a                   saro:Tool ;
+        rdfs:label               "spring" ;
+        saro:frequencyOfMention  24 .
+
+saro:gradle  a                   saro:Tool ;
+        rdfs:label               "gradle" ;
+        saro:frequencyOfMention  3 .
+
+saro:jpa  a                      saro:Tool ;
+        rdfs:label               "jpa" ;
+        saro:frequencyOfMention  3 .
+
+saro:continuousDeployment
+        a                        saro:Topic ;
+        rdfs:label               "continuous deployment" ;
+        saro:frequencyOfMention  3 .
+
+saro:webServices  a              saro:Topic ;
+        rdfs:label               "Web Services" ;
+        saro:frequencyOfMention  9 .
+
+saro:developer  a                saro:Topic ;
+        rdfs:label               "developer" ;
+        saro:frequencyOfMention  6 .
+
+saro:uml  a                      saro:Tool ;
+        rdfs:label               "uml" ;
+        saro:frequencyOfMention  3 .
+
+saro:mockito  a                  saro:Tool ;
+        rdfs:label               "mockito" ;
+        saro:frequencyOfMention  3 .
+
+saro:junit  a                    saro:Tool ;
+        rdfs:label               "junit" ;
+        saro:frequencyOfMention  3 .
+
+saro:cucumber  a                 saro:Tool ;
+        rdfs:label               "Cucumber" ;
+        saro:frequencyOfMention  3 .
+
+saro:soa  a                      saro:Topic ;
+        rdfs:label               "SOA" ;
+        saro:frequencyOfMention  9 .
+
+saro:less  a                     saro:Topic ;
+        rdfs:label               "less" ;
+        saro:frequencyOfMention  3 .
+
+saro:springMvc  a                saro:Topic ;
+        rdfs:label               "spring mvc" ;
+        saro:frequencyOfMention  3 .
+
+saro:analysis  a                 saro:Topic ;
+        rdfs:label               "analysis" ;
+        saro:frequencyOfMention  3 .
+
+saro:java  a                     saro:Tool ;
+        rdfs:label               "java" ;
+        saro:frequencyOfMention  3 .
+
+saro:c  a                        saro:Tool ;
+        rdfs:label               "c" ;
+        saro:frequencyOfMention  3 .
+
+:stream2file9750743679914541613_tmp_00D7D
+        a               saro:JobPosting ;
+        saro:describes  :stream2file9750743679914541613_tmp_00D7D_JobRole .
+
+saro:softwareDesign  a           saro:Topic ;
+        rdfs:label               "software design" ;
+        saro:frequencyOfMention  3 .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  3 .
+
+saro:cloud  a                    saro:Topic ;
+        rdfs:label               "Cloud" ;
+        saro:frequencyOfMention  9 .
+
+:United_Kingdom  a  so:Place .
+
+saro:programming  a              saro:Topic ;
+        rdj¯ª`3·Íü#eq¨QcrØNßV:cÓ:
+FÔóz£±9þþLæ½ûà6¬qwU|æáj¿B¹.gßW=\ð~¥­¥ÙgBÚÖ¹ò³5«¬¶¸Êýw±îKoÎQâfJÙY27jàõðô'*ÙßúØhãH3CìÁÑ³ÍÔîñ!qs?ìØ¦°/¼ÉîÜ#½¦®QnerT9ï5ÿã¨G'Äär|¢K¶

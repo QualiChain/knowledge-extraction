@@ -1,0 +1,54 @@
+@prefix :      <https://qualichain-project.eu/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix qc:    <http://w3id.org/qualichain/> .
+@prefix cv:    <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix esco:  <http://data.europa.eu/esco/model#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix so:    <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix saro:  <http://w3id.org/saro/> .
+
+:stream2file15784834917396078286_tmp_01F59_JobRole
+        a                      saro:JobRoleOrType ;
+        rdfs:label             "Indirect Tax Manager"@en ;
+        so:hiringOrganisation  :insightSelect ;
+        saro:requiresSkill     saro:assurance , saro:reporting , saro:r , saro:go , saro:netsuite , saro:gaap , saro:finance .
+
+:stream2file15784834917396078286_tmp_01F59
+        a               saro:JobPosting ;
+        saro:describes  :stream2file15784834917396078286_tmp_01F59_JobRole .
+
+saro:netsuite  a                 saro:Product ;
+        rdfs:label               "NetSuite" ;
+        saro:frequencyOfMention  3 .
+
+saro:assurance  a                saro:Topic ;
+        rdfs:label               "assurance" ;
+        saro:frequencyOfMention  3 .
+
+saro:finance  a                  saro:Topic ;
+        rdfs:label               "finance" ;
+        saro:frequencyOfMention  12 .
+
+saro:go  a                       saro:Product ;
+        rdfs:label               "Go" ;
+        saro:frequencyOfMention  6 .
+
+saro:reporting  a                saro:Topic ;
+        rdfs:label               "reporting" ;
+        saro:frequencyOfMention  9 .
+
+saro:r  a                        saro:Tool ;
+        rdfs:label               "R" ;
+        saro:frequencyOfMention  6 .
+
+saro:gaap  a                     saro:Product ;
+        rdfs:label               "gaap" ;
+        saro:frequencyOfMention  3 .
+
+:insightSelect  a  saro:Recruiter , so:Organisation .
+
